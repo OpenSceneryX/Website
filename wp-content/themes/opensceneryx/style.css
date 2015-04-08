@@ -1,0 +1,112 @@
+/*
+Theme Name: OpenSceneryX
+Description: OpenSceneryX theme, child of Twenty Eleven theme 
+Author: Austin Goudge
+Template: twentyeleven
+*/
+
+@import url("../twentyeleven/style.css");
+
+#page {
+	max-width: 1010px;
+}
+
+#site-title {
+	font-family: 'Book Antiqua', Georgia, Palatino, Times, 'Times New Roman', serif;
+	font-size: 32px;
+}
+
+#site-title a {
+	color: #33A;
+}
+
+#access {
+	background: #444;
+}
+
+#access a {
+	color:#fff;
+}
+
+.comment-author-aussi > article > div.comment-content {
+	color: #33A;
+}
+
+#google {
+	background-color: #33A;
+	display: block;
+	height: 30px;
+	min-width: 800px;
+	padding-left: 0.4em;
+	padding-top: 0.5em;
+}
+
+.single-airport span {
+	color: red;
+}
+
+.multiple-airports span {
+	color: red;
+}
+
+.tools span {
+	color: red;
+}
+
+.entry-content input {
+	margin: 0;
+}
+
+.entry-content label {
+	font-family: Georgia, "Bitstream Charter", serif;
+}
+
+ul.downloads li {
+	list-style-type: none;
+}
+
+img.downloadicon {
+	border: none;
+	vertical-align: middle;
+	margin: 0px 0.5em 0.5em 0px;
+}
+
+a.nounderline {
+	border-bottom: none;
+}
+
+.warning {
+	color: red;
+}
+
+.ddfmwrap {
+	font-family: Georgia, "Bitstream Charter", serif ! important;
+	width: 100% ! important;
+}
+
+.ddfm {
+	width: 100% ! important;
+	margin: 0 ! important;
+	padding: 0 ! important;
+}
+
+form.ddfm label {
+	font-weight: normal ! important;
+	margin: 0 1em 0 0 ! important;
+}
+
+form.ddfm .fmcheck label {
+	display: inline;
+	float: none;
+	clear: none;
+	text-align: left;
+	margin-left: 0.75em ! important;
+}
+
+form.ddfm .fmverify {
+	margin-right: 1em;
+}
+
+form.ddfm .fmverifyimg {
+	padding-top: 0.15em;
+}

@@ -1,0 +1,3857 @@
+# Copyright (C) 2015 WPtouch Pro
+# This file is distributed under the same license as the WPtouch Pro package.
+msgid ""
+msgstr "Project-Id-Version: WPtouch Pro 3.6.4\nReport-Msgid-Bugs-To: http://wordpress.org/tag/wptouch-pro-3\nPOT-Creation-Date: 2015-01-05 15:57:04+00:00\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPO-Revision-Date: 2015-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/html/help.php:1
+msgid "WPtouch Help & Account Links"
+msgstr "WPtouchヘルプ&アカウントリンク"
+
+#: admin/html/help.php:3
+msgid "Support Forums"
+msgstr "サポートフォーラム"
+
+#: admin/html/help.php:4
+msgid "Documentation"
+msgstr "文書"
+
+#: admin/html/help.php:5
+msgid "Account & Downloads"
+msgstr "アカウント & ダウンロード"
+
+#: admin/html/help.php:6
+msgid "BraveNewCode on Twitter"
+msgstr "TwitterのBraveNewCode"
+
+#: admin/html/help.php:7
+msgid "Plugin Licensing Terms"
+msgstr "プラグインライセンス諸条件"
+
+#: admin/html/notification-center.php:5
+msgid "What's in WPtouch Pro?"
+msgstr "WPtouch Pro版の最新情報"
+
+#: admin/html/notification-center.php:9
+msgid "License upgrade available"
+msgstr "ライセンスの更新が可能です"
+
+#: admin/html/notification-center.php:14
+msgid "Notifications"
+msgstr "通知"
+
+#: admin/html/notification-content.php:20
+msgid "No notifications"
+msgstr "通知なし"
+
+#: admin/html/plugin-area.php:10
+msgid "A new product version (%s) is available. %sRenew your license%s to download this update and receive additional product support."
+msgstr "新しい製品バージョン(%s)がご利用できます。%sライセンスの更新%sを行い、この更新をダウンロードして追加製品サポートを受け取る。"
+
+#: admin/html/plugin-area.php:12
+msgid "A new product version (%s) is available. Please %sactivate your license%s, or %spurchase a new license%s to enable updates and full product support."
+msgstr "新しい製品バージョン(%s)を利用できます。更新と完全な製品サポートを有効にして%sライセンスを有効にする%sまたは%s新しいライセンスを購入%sしてください。"
+
+#: admin/pages/custom/wptouch-admin-license.php:9
+msgid "License Details"
+msgstr "ライセンス詳細"
+
+#: admin/pages/custom/wptouch-admin-license.php:11 open/root-functions.php:262
+msgid "Note"
+msgstr "メモ"
+
+#: admin/pages/custom/wptouch-admin-license.php:12
+msgid "Once you activate, this page will be hidden."
+msgstr "アクティベートするとこのページは非表示になります。"
+
+#: admin/pages/custom/wptouch-admin-license.php:15
+msgid "It will only reappear if you reset your WPtouch Pro settings."
+msgstr "WPtouch Pro設定をリセットする際のみ、再び表示されます。"
+
+#: admin/pages/custom/wptouch-admin-license.php:18
+msgid "Account E-Mail Address"
+msgstr "アカウントメールアドレス"
+
+#: admin/pages/custom/wptouch-admin-license.php:19
+msgid "Product License Key"
+msgstr "プロダクトライセンスキー"
+
+#: admin/pages/custom/wptouch-admin-license.php:23
+msgid "Renew License"
+msgstr "ライセンスを更新"
+
+#: admin/pages/custom/wptouch-admin-license.php:25
+#: admin/settings/html/extension-browser-item.php:89
+#: admin/settings/html/theme-browser-item.php:136
+msgid "Activate"
+msgstr "有効にする"
+
+#: admin/pages/custom/wptouch-admin-license.php:28
+msgid "Clear License"
+msgstr "ライセンスをクリア"
+
+#: admin/pages/custom/wptouch-admin-license.php:39
+msgid "Success."
+msgstr "成功。"
+
+#: admin/pages/custom/wptouch-admin-license.php:40
+msgid "Activation Complete. Enjoy WPtouch Pro!"
+msgstr "アクティベーション完了。WPtouch Pro版をお楽しみください！"
+
+#: admin/pages/custom/wptouch-admin-license.php:44
+msgid "E-mail address or license key rejected"
+msgstr "メールアドレスまたはライセンスキーが拒否されました"
+
+#: admin/pages/custom/wptouch-admin-license.php:45
+msgid "The wptouch.com server rejected your E-Mail address and/or License Key. Please check they are correct and try again."
+msgstr "wptouch.comサーバーがメールアドレスと/またはライセンスキーを拒否しました。接続を確認して再試行してください。"
+
+#: admin/pages/custom/wptouch-admin-license.php:49
+msgid "Your license has expired."
+msgstr "ライセンスの有効期限が切れました。"
+
+#: admin/pages/custom/wptouch-admin-license.php:50
+msgid "%sRenew your license%s to continue to receive product updates and support."
+msgstr "%sライセンスを更新%sして製品の更新とサポートを受け取る。"
+
+#: admin/pages/custom/wptouch-admin-license.php:54
+msgid "No licenses remaining."
+msgstr "ライセンスキーが承認されません。"
+
+#: admin/pages/custom/wptouch-admin-license.php:55
+msgid "You have used all your activations. What do you want to do?"
+msgstr "全てのアクティベーションを使用しました。どうしますか？"
+
+#: admin/pages/custom/wptouch-admin-license.php:56
+msgid "Upgrade My License"
+msgstr "マイライセンスを更新"
+
+#: admin/pages/custom/wptouch-admin-license.php:57
+msgid "Contact support for assistance"
+msgstr "ヘルプサポートへ連絡"
+
+#: admin/pages/custom/wptouch-admin-license.php:61
+msgid "The server is unavailable."
+msgstr "サービスがご利用できません。"
+
+#: admin/pages/custom/wptouch-admin-license.php:62
+msgid "The wptouch.com server currently cannot authorize your License."
+msgstr "wptouch.comサーバーは現在ライセンスを認証できません。"
+
+#: admin/pages/custom/wptouch-admin-license.php:63
+msgid "Please %scontact us%s and let us know about it."
+msgstr "%s当社へ連絡%sしてそれについて教えてください。"
+
+#: admin/pages/wptouch-admin-general-settings.php:3 core/admin-menu.php:18
+#: themes/foundation/root-functions.php:10
+msgid "General"
+msgstr "一般"
+
+#: admin/pages/wptouch-admin-general-settings.php:4
+msgid "Compatibility"
+msgstr "互換性"
+
+#: admin/pages/wptouch-admin-general-settings.php:10
+msgid "Auto-detect"
+msgstr "自動検知"
+
+#: admin/pages/wptouch-admin-general-settings.php:47
+msgid "WPtouch Pro site title"
+msgstr "WPtouch Proサイトタイトル"
+
+#: admin/pages/wptouch-admin-general-settings.php:48
+msgid "If the title of your site is long, you can shorten it for display within WPtouch Pro themes."
+msgstr "サイトのタイトルが長い場合、WPtouch Proテーマ内で表示するために短くすることができます。"
+
+#: admin/pages/wptouch-admin-general-settings.php:55
+msgid "Display %sPowered by WPtouch Pro%s in footer"
+msgstr "フッターで%sPowered by WPtouch Pro%sを表示"
+
+#: admin/pages/wptouch-admin-general-settings.php:66
+msgid "Use my WPtouch Pro referral code to earn commission"
+msgstr "WPtouch Pro紹介コードを使って手数料を稼ぐ"
+
+#: admin/pages/wptouch-admin-general-settings.php:67
+msgid "Licensed users of WPtouch Pro can earn a commission for each sale they generate from their mobile website"
+msgstr "WPtouch Proの許可されたユーザーは彼らのモバイルウェブサイトから作成されたそれぞれのセールへの手数料を稼ぐ"
+
+#: admin/pages/wptouch-admin-general-settings.php:75
+msgid "Site Title & Byline"
+msgstr "サイトタイトル & 署名欄"
+
+#: admin/pages/wptouch-admin-general-settings.php:84
+msgid "Regionalization"
+msgstr "地域化"
+
+#: admin/pages/wptouch-admin-general-settings.php:90
+msgid "Language"
+msgstr "言語"
+
+#: admin/pages/wptouch-admin-general-settings.php:91
+msgid "The WPtouch Pro admin panel &amp; supported themes will be shown in this locale."
+msgstr "WPtouch Pro版　管理パネル &amp; このロケール内で対応テーマが表示されます。"
+
+#: admin/pages/wptouch-admin-general-settings.php:99
+msgid "Translate administration panel text"
+msgstr "アドミンパネルテキストを翻訳"
+
+#: admin/pages/wptouch-admin-general-settings.php:110
+msgid "Display Mode"
+msgstr "ディスプレイモード"
+
+#: admin/pages/wptouch-admin-general-settings.php:116
+msgid "Theme Display"
+msgstr "テーマディスプレイ"
+
+#: admin/pages/wptouch-admin-general-settings.php:121
+msgid "Normal (active for all mobile visitors)"
+msgstr "標準(全てのモバイルビジターに有効)"
+
+#: admin/pages/wptouch-admin-general-settings.php:122
+msgid "Preview (active only for logged-in site administrators)"
+msgstr "プレビュー(ログインサイト管理のみ有効)"
+
+#: admin/pages/wptouch-admin-general-settings.php:123
+msgid "Disabled (mobile theme will never show)"
+msgstr "無効(モバイルテーマは二度と表示されません)"
+
+#: admin/pages/wptouch-admin-general-settings.php:132
+msgid "Landing Page"
+msgstr "ランディングページ"
+
+#: admin/pages/wptouch-admin-general-settings.php:138
+msgid "WPtouch Pro landing page"
+msgstr "WPtouch Pro待ち受けページ"
+
+#: admin/pages/wptouch-admin-general-settings.php:143
+msgid "Default (same as WordPress)"
+msgstr "デフォルト (WordPressと同様)"
+
+#: admin/pages/wptouch-admin-general-settings.php:144
+msgid "Select from WordPress pages"
+msgstr "WordPressページから選択"
+
+#: admin/pages/wptouch-admin-general-settings.php:152
+msgid "Custom Slug or URL"
+msgstr "スラグまたはURLをカスタマイズ"
+
+#: admin/pages/wptouch-admin-general-settings.php:153
+msgid "Enter a Slug (i.e. \"/home\") or a full URL path"
+msgstr "スラグ(i.e. \"/ホーム\") または完全なURLパスを入力"
+
+#: admin/pages/wptouch-admin-general-settings.php:163
+msgid "Desktop / Mobile Switching"
+msgstr "デスクトップ / モバイル切替"
+
+#: admin/pages/wptouch-admin-general-settings.php:169
+msgid "1st time visitors see desktop theme"
+msgstr "最初のビジターがデスクトップテーマを確認できます"
+
+#: admin/pages/wptouch-admin-general-settings.php:170
+msgid "Your regular theme will be shown to 1st time mobile visitors."
+msgstr "通常のテーマは最初の携帯ビジターに表示されます。"
+
+#: admin/pages/wptouch-admin-general-settings.php:177
+msgid "Show switch link in mobile view"
+msgstr "携帯表示で切替リンクを表示"
+
+#: admin/pages/wptouch-admin-general-settings.php:178
+msgid "Will show toggle buttons in the theme's footer allowing users to switch to your desktop theme. Is not shown in Web-App Mode."
+msgstr "テーマフッター内でトグルボタンを表示してユーザーがデスクトップテーマに切替できるようにする。Web-Appモード内では表示されません。"
+
+#: admin/pages/wptouch-admin-general-settings.php:185
+msgid "Choose the target for the mobile switch link"
+msgstr "携帯切り替えリンクのターゲットを選択"
+
+#: admin/pages/wptouch-admin-general-settings.php:190
+msgid "Current page"
+msgstr "現在のページ"
+
+#: admin/pages/wptouch-admin-general-settings.php:191
+msgid "Home page"
+msgstr "ホームページ"
+
+#: admin/pages/wptouch-admin-general-settings.php:197
+msgid "Desktop theme switch buttons"
+msgstr "デスクトップテーマ切替ボタン"
+
+#: admin/pages/wptouch-admin-general-settings.php:198
+msgid "Allows visitors to switch from your desktop theme to your mobile theme. You can also customize the placement of Switch buttons by placing the wptouch_desktop_switch_link() template tag somewhere in your desktop theme."
+msgstr "ビジターがデスクトップテーマからモバイルテーマへ切替できるようにする。wptouch_desktop_switch_link()テンプレートタグをデスクトップテーマ内のどこかにタグを置いて切替ボタンの配置をカスタマイズできます。"
+
+#: admin/pages/wptouch-admin-general-settings.php:202
+msgid "Automatically inserted inline"
+msgstr "自動挿入インライン"
+
+#: admin/pages/wptouch-admin-general-settings.php:203
+msgid "Automatically inserted with AJAX (better for caching)"
+msgstr "AJAXで自動挿入(キャッシングにベター)"
+
+#: admin/pages/wptouch-admin-general-settings.php:204
+msgid "Template tag"
+msgstr "テンプレートタグ"
+
+#: admin/pages/wptouch-admin-general-settings.php:213
+msgid "Custom Code"
+msgstr "カスタムコード"
+
+#: admin/pages/wptouch-admin-general-settings.php:219
+msgid "HTML, JavaScript, statistics or custom code"
+msgstr "HTML、JavaScript、統計またはカスタムコード"
+
+#: admin/pages/wptouch-admin-general-settings.php:220
+msgid "Enter any custom code here to be output in the theme footer."
+msgstr "ここにカスタムコードを入力してテーマフォルダー内に出力する。"
+
+#: admin/pages/wptouch-admin-general-settings.php:230
+msgid "Custom Stylesheet"
+msgstr "カスタムスタイルシート"
+
+#: admin/pages/wptouch-admin-general-settings.php:236
+msgid "URL to a custom CSS file to load"
+msgstr "カスタムCSSファイルを読み込むためのURL"
+
+#: admin/pages/wptouch-admin-general-settings.php:237
+msgid "Useful if you have specific compatibility CSS you need to add."
+msgstr "もし追加が必要な特定の準拠CSSがあれば便利です。"
+
+#: admin/pages/wptouch-admin-general-settings.php:247
+msgid "Shortcodes"
+msgstr "ショートコード"
+
+#: admin/pages/wptouch-admin-general-settings.php:253
+msgid "Remove these shortcodes when WPtouch Pro is active"
+msgstr "WPtouch Proが起動中これらのスクリーンショットを削除"
+
+#: admin/pages/wptouch-admin-general-settings.php:254
+msgid "Enter a comma separated list of shortcodes to remove."
+msgstr "削除するにはショートコードのコンマで分けられたリストを入力してください。"
+
+#: admin/pages/wptouch-admin-general-settings.php:264
+msgid "Filter URLs"
+msgstr "URLをフィルター"
+
+#: admin/pages/wptouch-admin-general-settings.php:270
+msgid "Limit the function of WPtouch Pro on specific URLs/Pages"
+msgstr "URL/ページの特別なWPtouchプロ版の機能制限"
+
+#: admin/pages/wptouch-admin-general-settings.php:283
+msgid "Do not load WPtouch Pro on these URLs/pages"
+msgstr "これらのURL/ページでWPtouchプロ版を読み込まないでください"
+
+#: admin/pages/wptouch-admin-general-settings.php:284
+msgid "Only load WPtouch Pro on these URLs/pages"
+msgstr "これらのURL/ページではWPtouchプロのみを読み込んでください"
+
+#: admin/pages/wptouch-admin-general-settings.php:290
+msgid "Apply filter to these URLs/Pages"
+msgstr "これらのURL/ページにフィルターを適用"
+
+#: admin/pages/wptouch-admin-general-settings.php:291
+#: multi-ads/multi-ads.php:274
+msgid "Each permalink URL fragment should be on its own line and relative, e.g. \"/about\" or \"/products/store\""
+msgstr "各パーマリンクURLフレグメントは、独自のラインと関連がなければなりません　例. \"/about\" または \"/products/store\""
+
+#: admin/pages/wptouch-admin-general-settings.php:309
+msgid "Desktop Theme"
+msgstr "デスクトップテーマ"
+
+#: admin/pages/wptouch-admin-general-settings.php:315
+msgid "Try to include desktop theme functions.php file"
+msgstr "デスクトップテーマ機能.php ファイルを含んでください"
+
+#: admin/pages/wptouch-admin-general-settings.php:316
+msgid "This may be required for desktop themes with unique features that are not showing when WPtouch Pro is active."
+msgstr "WPtouch Proがアクティブになった際、表示されないユニークな機能でデスクトップテーマに必要になることがあります。"
+
+#: admin/pages/wptouch-admin-general-settings.php:323
+msgid "Method to load file"
+msgstr "ファイルの読み込み方法"
+
+#: admin/pages/wptouch-admin-general-settings.php:328
+msgid "Include file directly"
+msgstr "ファイルダイレクトリーを含む"
+
+#: admin/pages/wptouch-admin-general-settings.php:329
+msgid "Translate and create new files"
+msgstr "翻訳して新しいファイルを作成"
+
+#: admin/pages/wptouch-admin-general-settings.php:338
+msgid "Custom User-Agents"
+msgstr "カスタムユーザーエージェント"
+
+#: admin/pages/wptouch-admin-general-settings.php:344
+msgid "User-agents (line separated)"
+msgstr "ユーザーエージェント (行が分かれています)"
+
+#: admin/pages/wptouch-admin-general-settings.php:345
+msgid "Adding additional user-agents will force WPtouch Pro to be active for matching browsers."
+msgstr "ユーザーエージェントを追加すると、WPtouch Pro版がマッチするブラウザーが強制的にアクティブになります。"
+
+#: admin/pages/wptouch-admin-general-settings.php:359
+msgid "Backup &amp; Import"
+msgstr "バックアップ &amp; インポート"
+
+#: admin/pages/wptouch-admin-general-settings.php:365
+msgid "Automatically backup settings to the %s folder"
+msgstr "%sフォルダーの自動バックアップ設定"
+
+#: admin/pages/wptouch-admin-general-settings.php:367
+msgid "WPtouch Pro backups your settings each time they are saved."
+msgstr "WPtouch Proは保存される度にあなたの設定をバックアップします。"
+
+#: admin/pages/wptouch-admin-general-settings.php:380
+msgid "Tools &amp; Debug"
+msgstr "ツール &amp; デバッグ"
+
+#: admin/pages/wptouch-admin-general-settings.php:386
+msgid "Use jQuery 2.x in themes (faster for mobile devices) instead of WordPress' version"
+msgstr "WordPressのバージョンの代わりにテーマjQuery 2.x(モバイルデバイス用でより高速)使用。"
+
+#: admin/pages/wptouch-admin-general-settings.php:387
+msgid "jQuery 2.x is significantly smaller and faster than previous jQuery versions - may cause problems with other plugins, use carefully."
+msgstr "jQuery 2.xは以前のjQueryバージョンより顕著により小さく、高速です - 他のプラグインで問題が生じる場合があります、注意してご利用ください。"
+
+#: admin/pages/wptouch-admin-general-settings.php:394
+msgid "Show load times and query counts in the footer"
+msgstr "ロードタイムとクエリーコンテンツをフットバーで表示"
+
+#: admin/pages/wptouch-admin-general-settings.php:395
+msgid "Helps you find slow pages/posts on your site."
+msgstr "あなたのサイトのスローなページ/投稿を見つけるお手伝いをします。"
+
+#: admin/pages/wptouch-admin-general-settings.php:402
+msgid "Enable debug log"
+msgstr "デバッグログを有効にする"
+
+#: admin/pages/wptouch-admin-general-settings.php:403
+msgid "Creates a debug file to help diagnose installation issues."
+msgstr "デバッグファイルを作成してインストール問題を診断します。"
+
+#: admin/pages/wptouch-admin-general-settings.php:414
+msgid "WordPress Plugins"
+msgstr "WordPress プラグイン"
+
+#: admin/pages/wptouch-admin-general-settings.php:427
+msgid "Admin Mode"
+msgstr "アドミンモード"
+
+#: admin/pages/wptouch-admin-general-settings.php:433
+msgid "Admin panel settings shown"
+msgstr "アドミンパネル設定表示"
+
+#: admin/pages/wptouch-admin-general-settings.php:438
+msgid "Default"
+msgstr "デフォルト"
+
+#: admin/pages/wptouch-admin-general-settings.php:439
+#: admin/settings/html/button.php:5 admin/settings/html/checkbox.php:6
+#: admin/settings/html/checklist.php:13
+#: admin/settings/html/custom-latest-posts.php:4
+#: admin/settings/html/list.php:16 admin/settings/html/numeric.php:12
+#: admin/settings/html/post_type.php:13 admin/settings/html/radiolist.php:13
+#: admin/settings/html/text.php:8 admin/settings/html/textarea.php:9
+msgid "Advanced"
+msgstr "詳細設定"
+
+#: admin/pages/wptouch-admin-menus.php:3
+msgid "Theme Menus"
+msgstr "テーマメニュー"
+
+#: admin/pages/wptouch-admin-menus.php:4
+msgid "Menu Setup"
+msgstr "メニューセットアップ"
+
+#: admin/pages/wptouch-admin-menus.php:5
+msgid "Icon Upload & Sets"
+msgstr "アイコンアップデート＆設定"
+
+#: admin/pages/wptouch-admin-menus.php:22
+msgid "WordPress Pages"
+msgstr "WordPressページ"
+
+#: admin/pages/wptouch-admin-menus.php:28
+#: admin/settings/html/icon_menu_area.php:6
+#: infinity-cache/infinity-cache.php:217
+#: themes/foundation/modules/advertising/advertising.php:29
+#: themes/foundation/modules/media/media.php:59
+msgid "None"
+msgstr "なし"
+
+#: admin/pages/wptouch-admin-menus.php:66
+msgid "Menu Options"
+msgstr "メニューオプション"
+
+#: admin/pages/wptouch-admin-menus.php:72
+msgid "Enable parent items as links"
+msgstr "パアレントアイテムをリンクとして有効にする"
+
+#: admin/pages/wptouch-admin-menus.php:73
+msgid "If disabled, parent menu items will only toggle child items."
+msgstr "無効の場合、パアレントメニューアイテムがチャイルドアイテムのみ切り替えます。"
+
+#: admin/pages/wptouch-admin-menus.php:80
+msgid "Use menu icons"
+msgstr "メニューアイコンを使用"
+
+#: admin/pages/wptouch-admin-menus.php:104
+msgid "Icon Upload"
+msgstr "アイコンアップロード"
+
+#: admin/pages/wptouch-admin-menus.php:117
+msgid "Uploaded Icons"
+msgstr "アップロードされたアイコン"
+
+#: admin/pages/wptouch-admin-menus.php:130
+msgid "Icon Sets"
+msgstr "アイコン設定"
+
+#: admin/pages/wptouch-admin-themes-and-addons.php:3
+msgid "Themes"
+msgstr "テーマ"
+
+#: admin/pages/wptouch-admin-themes-and-addons.php:4
+msgid "Extensions"
+msgstr "拡張"
+
+#: admin/pages/wptouch-admin-touchboard.php:3 core/admin-menu.php:36
+#: core/admin-menu.php:40
+msgid "What's New"
+msgstr "新着情報"
+
+#: admin/settings/html/backup.php:1
+msgid "Download Backup File"
+msgstr "バックアップファイルをダウンロード"
+
+#: admin/settings/html/backup.php:2
+msgid "Restore Backup File"
+msgstr "バックアップファイルを復元"
+
+#: admin/settings/html/button.php:6 admin/settings/html/checkbox.php:7
+#: admin/settings/html/checklist.php:15
+#: admin/settings/html/custom-latest-posts.php:8
+#: admin/settings/html/list.php:20 admin/settings/html/numeric.php:16
+#: admin/settings/html/post_type.php:14 admin/settings/html/radiolist.php:15
+#: admin/settings/html/text.php:9 admin/settings/html/textarea.php:10
+msgid "New"
+msgstr "新しい"
+
+#: admin/settings/html/color.php:6
+msgid "Undo"
+msgstr "取り消し"
+
+#: admin/settings/html/color.php:7
+msgid "Desktop theme colors"
+msgstr "Desktopテーマカラー"
+
+#: admin/settings/html/color.php:7
+msgid "Palette"
+msgstr "パレット"
+
+#: admin/settings/html/custom-latest-posts.php:1
+msgid "Custom latest posts page"
+msgstr "カスタム最新投稿ページ"
+
+#: admin/settings/html/custom_icon_management.php:3
+msgid "No icons have been uploaded yet"
+msgstr "アップロードされたアイコンはありません"
+
+#: admin/settings/html/custom_icon_management.php:12
+#: admin/settings/html/image-upload.php:13
+#: admin/settings/html/theme-browser-item.php:144
+msgid "Delete"
+msgstr "削除"
+
+#: admin/settings/html/custom_icon_upload.php:3
+msgid "Upload Icon"
+msgstr "アイコンを読み込む"
+
+#: admin/settings/html/custom_icon_upload.php:4
+#: admin/settings/html/image-upload.php:15 core/class-wptouch-pro.php:601
+msgid "Upload Complete!"
+msgstr "アップロード完了！"
+
+#: admin/settings/html/custom_icon_upload.php:9
+msgid "Ready to upload"
+msgstr "アップロードの準備ができました"
+
+#: admin/settings/html/debuginfo.php:12
+msgid "View Debug File"
+msgstr "デバッグファイル表示"
+
+#: admin/settings/html/debuginfo.php:16 admin/settings/html/debuginfo.php:18
+msgid "Your Server Configuration"
+msgstr "サーバー設定"
+
+#: admin/settings/html/extension-browser-item.php:37
+#: admin/settings/html/theme-browser-item.php:56
+msgid "Updating..."
+msgstr "更新中..."
+
+#: admin/settings/html/extension-browser-item.php:37
+msgid "Upgrade to %s"
+msgstr "%sにアップグレード"
+
+#: admin/settings/html/extension-browser-item.php:39
+#: admin/settings/html/theme-browser-item.php:61
+msgid "Download %s Update"
+msgstr "%sアップデートをダウンロード"
+
+#: admin/settings/html/extension-browser-item.php:47
+#: admin/settings/html/installed_icon_sets_ajax.php:8
+#: admin/settings/html/installed_icon_sets_ajax.php:20
+#: admin/settings/html/theme-browser-item.php:75
+msgid "by %s"
+msgstr "%sで"
+
+#: admin/settings/html/extension-browser-item.php:53
+msgid "Extension location: %s"
+msgstr "拡張ロケーション: %s"
+
+#: admin/settings/html/extension-browser-item.php:54
+#: admin/settings/html/theme-browser-item.php:83
+msgid "Relative to your WordPress wp-content directory."
+msgstr "WordPress wp-コンテンツディレクトリーに関連。"
+
+#: admin/settings/html/extension-browser-item.php:63
+#: admin/settings/html/theme-browser-item.php:95
+msgid "Available in WPtouch Pro"
+msgstr "WPtouch Proで利用可能"
+
+#: admin/settings/html/extension-browser-item.php:67
+#: admin/settings/html/theme-browser-item.php:99
+msgid "More Info"
+msgstr "他の情報"
+
+#: admin/settings/html/extension-browser-item.php:70
+#: admin/settings/html/theme-browser-item.php:103 core/admin-menu.php:68
+msgid "Upgrade License"
+msgstr "アップグレードライセンス"
+
+#: admin/settings/html/extension-browser-item.php:72
+#: admin/settings/html/theme-browser-item.php:105
+msgid "Get License"
+msgstr "ライセンスゲット"
+
+#: admin/settings/html/extension-browser-item.php:80
+#: admin/settings/html/theme-browser-item.php:118
+msgid "Downloading..."
+msgstr "ダウンロード中..."
+
+#: admin/settings/html/extension-browser-item.php:80
+#: admin/settings/html/installed_icon_sets_ajax.php:21
+#: admin/settings/html/theme-browser-item.php:119
+msgid "Install"
+msgstr "インストール"
+
+#: admin/settings/html/extension-browser-item.php:82
+#: admin/settings/html/theme-browser-item.php:122
+msgid "Download"
+msgstr "ダウンロード"
+
+#: admin/settings/html/extension-browser-item.php:92
+#: admin/settings/html/theme-browser-item.php:132
+msgid "Setup"
+msgstr "設定"
+
+#: admin/settings/html/extension-browser-item.php:93
+msgid "Deactivate"
+msgstr "解除"
+
+#: admin/settings/html/extension-browser.php:2
+#: admin/settings/html/theme-browser.php:2
+msgid "Your server configuration is preventing WPtouch Pro from installing and updating from the Cloud. %sPlease visit %sthis article%s to follow the steps to enable Cloud install, or you can manually download and install into the wptouch-data/%s directory."
+msgstr "あなたのサーバー設定はCloudからのインストールと更新からWPtouch Proを防止します。%s%sこの記事%sを訪問してCloudのインストールをオンにするために手順に従ってください。または手動でダウンロードしてwptouch-data/%sディレクトリにインストールできます。"
+
+#: admin/settings/html/extension-browser.php:13
+msgid "Loading Cloud Extensions"
+msgstr "Cloud拡張読み込み中"
+
+#: admin/settings/html/icon_menu_area.php:5
+msgid "Check All"
+msgstr "全てチェック"
+
+#: admin/settings/html/icon_menu_area.php:7
+msgid "Reset"
+msgstr "再設定"
+
+#: admin/settings/html/icon_menu_area.php:9 bio/default/header-bottom.php:13
+#: classic-redux/default/header-bottom.php:23
+#: classic-redux/default/header-bottom.php:34
+#: classic-redux/default/header-bottom.php:114
+#: hammock/default/header-bottom.php:40
+#: mobilestore/default/header-bottom.php:57 prose/default/header-bottom.php:21
+#: scaffold/default/header-bottom.php:13
+msgid "Menu"
+msgstr "メニュー"
+
+#: admin/settings/html/icon_menu_area.php:31
+msgid "Active menus used in this theme."
+msgstr "このテーマ内で使用されたアクティブなメニュー。"
+
+#: admin/settings/html/icon_menu_area.php:35
+msgid "Show/Hide"
+msgstr "表示/非表示"
+
+#: admin/settings/html/icon_menu_area.php:36
+msgid "Menu Item"
+msgstr "メニューアイテム"
+
+#: admin/settings/html/icon_menu_area.php:56
+msgid "Icon Set"
+msgstr "アイコン設定"
+
+#: admin/settings/html/icon_menu_area.php:66
+msgid "Drag icons to associate them with menu items"
+msgstr "アイコンをドラッグしてメニューアイテムと関連づけてください"
+
+#: admin/settings/html/icon_menu_area.php:91
+msgid "You don't have any custom icons yet."
+msgstr "カスタムアイコンをまだ持っていません。"
+
+#: admin/settings/html/icon_menu_area.php:106
+msgid "Default Icon"
+msgstr "デフォルトアイコン"
+
+#: admin/settings/html/icon_menu_area.php:107
+msgid "applies to all unset icons"
+msgstr "全ての未設定アイコンへ適用"
+
+#: admin/settings/html/icon_menu_area.php:115
+msgid "Trash"
+msgstr "ゴミ箱"
+
+#: admin/settings/html/icon_menu_area.php:116
+msgid "drag icon here to reset"
+msgstr "ここにアイコンをドラッグして再設定"
+
+#: admin/settings/html/image-upload.php:11
+msgid "Upload"
+msgstr "アップロード"
+
+#: admin/settings/html/installed_icon_sets.php:2
+msgid "Gathering information about available icon sets..."
+msgstr "有効なアイコン設定についての情報取得中..."
+
+#: admin/settings/html/installed_icon_sets.php:4 core/notifications.php:215
+msgid "The %s%s%s directory is not currently writable. %sPlease fix this issue to enable installation of additional icon sets."
+msgstr "%s%s%sディレクトリーは現在書き込みできません。%s\nこの問題を解決して追加アイコン設定のインストールを有効にしてください。"
+
+#: admin/settings/html/installed_icon_sets_ajax.php:4
+#: core/class-wptouch-pro.php:1606 core/class-wptouch-pro.php:1607
+#: core/config.php:54
+msgid "Custom Icons"
+msgstr "カスタムアイコン"
+
+#: admin/settings/html/installed_icon_sets_ajax.php:9
+#: admin/settings/html/installed_icon_sets_ajax.php:22
+msgid "Installed"
+msgstr "インストール済"
+
+#: admin/settings/html/installed_icon_sets_ajax.php:21
+msgid "Installing..."
+msgstr "インストール中..."
+
+#: admin/settings/html/installed_icon_sets_ajax.php:23
+msgid "Unable to Install"
+msgstr "インストール不可"
+
+#: admin/settings/html/list.php:24 include/html/pro.php:1
+msgid "Pro"
+msgstr "プロ版"
+
+#: admin/settings/html/plugin-compat-ajax.php:11
+#: themes/foundation/modules/custom-posts/custom-posts.php:152
+msgid "Enable %s"
+msgstr "%sを有効にする"
+
+#: admin/settings/html/plugin-compat-ajax.php:12
+msgid "When unchecked, %s will be disabled for users viewing your WPtouch Pro theme."
+msgstr "チェックが外されると、%sがあなたのWPtouch Proテーマを表示できなくなります。"
+
+#: admin/settings/html/plugin-compat-ajax.php:20
+msgid "No plugins to disable."
+msgstr "無効にするプラグインなし。"
+
+#: admin/settings/html/plugin-compat.php:1
+msgid "Choose which plugins to include in your mobile theme"
+msgstr "モバイルテーマで含まれるプラグインを選択"
+
+#: admin/settings/html/plugin-compat.php:7
+msgid "Your active plugin list is refreshing"
+msgstr "アクティブプラグインリストが再読み込み中です"
+
+#: admin/settings/html/redirect.php:17
+msgid "WordPress Page"
+msgstr "WordPressページ"
+
+#: admin/settings/html/restore.php:2
+msgid "Please paste your encoded settings below and save to restore your settings."
+msgstr "エンコード済の設定を下記よりペーストして設定を保存してください。"
+
+#: admin/settings/html/theme-browser-item.php:10
+#: admin/settings/html/theme-browser-item.php:16
+msgid "Click to view screenshots"
+msgstr "クリックしてスクリーンショットを表示"
+
+#: admin/settings/html/theme-browser-item.php:58
+msgid "Update to %s"
+msgstr "%sにアップデート"
+
+#: admin/settings/html/theme-browser-item.php:70
+msgid "This theme supports %s devices"
+msgstr "このテーマは%sデバイスに対応しています"
+
+#: admin/settings/html/theme-browser-item.php:82
+msgid "Theme location: %s"
+msgstr "テーマロケーション: %s"
+
+#: admin/settings/html/theme-browser-item.php:110
+msgid "Buy Now"
+msgstr "今すぐ購入"
+
+#: admin/settings/html/theme-browser-item.php:140
+msgid "Copy"
+msgstr "コピー"
+
+#: admin/settings/html/theme-browser.php:22
+msgid "Loading Cloud Themes"
+msgstr "Cloudテーマを読み込み中"
+
+#: admin/settings/html/touchboard.php:6
+msgid "Quick Links"
+msgstr "クイックリンク"
+
+#: admin/settings/html/touchboard.php:8
+msgid "What's New Changelog"
+msgstr "最新情報変更ログ"
+
+#: admin/settings/html/touchboard.php:10
+msgid "Look at Pro Themes"
+msgstr "Proのテーマを見る"
+
+#: admin/settings/html/touchboard.php:11
+msgid "Look at Pro Extensions"
+msgstr "Proのエクステンションを見る"
+
+#: admin/settings/html/touchboard.php:12
+msgid "Look at Pro Features"
+msgstr "Pro機能を見る"
+
+#: admin/settings/html/touchboard.php:16
+msgid "Product Support"
+msgstr "製品サポート"
+
+#: admin/settings/html/touchboard.php:17
+msgid "Product Knowledgebase"
+msgstr "製品知識ベース"
+
+#: admin/settings/html/touchboard.php:18
+msgid "Manage Account"
+msgstr "アカウント管理"
+
+#: admin/settings/html/touchboard.php:19
+msgid "Manage License"
+msgstr "ライセンス管理"
+
+#: admin/settings/html/touchboard.php:21
+msgid "WPtouch User Guide"
+msgstr "WPtouchユーザーガイド"
+
+#: admin/settings/html/touchboard.php:28
+msgid "WPtouch News"
+msgstr "WPtouchニュース"
+
+#: admin/settings/html/touchboard.php:29
+msgid "Read More"
+msgstr "他を読む"
+
+#: admin/settings/html/touchboard.php:47
+msgid "%s Change Log"
+msgstr "%s変更ログ"
+
+#: admin/settings/html/user-agent-list.php:4
+#: admin/settings/html/user-agent-list.php:6
+msgid "WPtouch Pro will be active when any of the following user-agents or user-agent combinations are matched"
+msgstr "WPtouch Proは以下のユーザーエージェントまたはユーザーエージェントの組合せが一致したらアクティブになります"
+
+#: admin/settings/include/custom-latest-posts.php:14
+msgid "None (Use WordPress Settings)"
+msgstr "なし(WordPress設定を使用)"
+
+#: advanced-type/advanced-type.php:26
+msgid "%sAdvanced Type for WPtouch Pro%s requires %s to be enabled on your server in order to load web fonts. Please contact your server administrator or web host to enable this function."
+msgstr "ウェブフォントを読み込み、サーバーで有効にするため%sWPtouchプロ版の上級タイプ%sは%sが必要です。この機能を有効にするにはサーバーアドミンまたはウェブホストに連絡してください。"
+
+#: advanced-type/advanced-type.php:80
+msgid "Load Fonts"
+msgstr "フォントを読込む"
+
+#: advanced-type/advanced-type.php:81
+msgid "Could not load your fonts. Please check project/kit details and reload."
+msgstr "フォントを読み込めませんでした。プロジェクト/キット詳細を確認して再読込みしてください。"
+
+#: advanced-type/advanced-type.php:231 advanced-type/advanced-type.php:252
+msgid "Font Source"
+msgstr "フォントソース"
+
+#: advanced-type/advanced-type.php:237 advanced-type/advanced-type.php:258
+msgid "Select the source for your web fonts"
+msgstr "ウェブフォントのソースを選択"
+
+#: advanced-type/advanced-type.php:238
+msgid "Other options will become available once allow_url_fopen is enabled"
+msgstr "他のオプションはallow_url_fopenが有効になった際に利用できるようになります。"
+
+#: advanced-type/advanced-type.php:242 advanced-type/advanced-type.php:263
+msgid "Theme Font Pairings (Configure in Theme Settings)"
+msgstr "テーマフォントペアリング (テーマ設定で設定)"
+
+#: advanced-type/advanced-type.php:264
+msgid "Custom Google Fonts"
+msgstr "カスタムGoogleフォント"
+
+#: advanced-type/advanced-type.php:275
+msgid "Kit ID"
+msgstr "キットID"
+
+#: advanced-type/advanced-type.php:293
+msgid "Domain"
+msgstr "ドメイン"
+
+#: advanced-type/advanced-type.php:311
+msgid "Project"
+msgstr "プロジェクト"
+
+#: advanced-type/advanced-type.php:367
+msgid "Latin (Default)"
+msgstr "ラテン (デフォルト)"
+
+#: advanced-type/advanced-type.php:368
+msgid "Latin Extended"
+msgstr "ラテン拡張"
+
+#: advanced-type/advanced-type.php:369
+msgid "Cyrillic"
+msgstr "キリル文字"
+
+#: advanced-type/advanced-type.php:370
+msgid "Cyrillic Extended"
+msgstr "キリル文字拡張"
+
+#: advanced-type/advanced-type.php:371
+msgid "Greek"
+msgstr "ギリシャ文字"
+
+#: advanced-type/advanced-type.php:372
+msgid "Greek Extended"
+msgstr "ギリシャ文字拡張"
+
+#: advanced-type/advanced-type.php:373
+msgid "Devangari"
+msgstr "デバナーガリ文字"
+
+#: advanced-type/advanced-type.php:374
+msgid "Vietnamese"
+msgstr "ベトナム語"
+
+#: advanced-type/advanced-type.php:378
+msgid "Heading"
+msgstr "表題"
+
+#: advanced-type/advanced-type.php:379
+msgid "Body"
+msgstr "本文"
+
+#: advanced-type/advanced-type.php:380
+msgid "Meta"
+msgstr "メタ"
+
+#: advanced-type/advanced-type.php:405
+msgid "Load subsets"
+msgstr "サブ設定を読込み"
+
+#: advanced-type/advanced-type.php:415
+msgid "Font Selection"
+msgstr "フォント選択"
+
+#: bauhaus/default/header-bottom.php:13 bauhaus/default/header-bottom.php:15
+#: classic-redux/default/header-bottom.php:55
+#: hammock/default/header-bottom.php:82 scaffold/default/header-bottom.php:35
+#: simple/default/header-bottom.php:26
+msgid "Logout"
+msgstr "ログアウト"
+
+#: bauhaus/default/header-bottom.php:48 bio/default/header-bottom.php:24
+#: classic-redux/default/header-bottom.php:78
+#: scaffold/default/header-bottom.php:24
+msgid "Search this website"
+msgstr "このサイトを検索"
+
+#: bauhaus/default/header-bottom.php:49 bio/default/header-bottom.php:14
+#: bio/default/header-bottom.php:25 classic-redux/default/header-bottom.php:48
+#: classic-redux/default/header-bottom.php:80
+#: mobilestore/default/header-bottom.php:84
+#: scaffold/default/header-bottom.php:14 scaffold/default/header-bottom.php:25
+msgid "Search"
+msgstr "検索"
+
+#: bauhaus/default/nav-bar.php:6 cms/default/nav-bar.php:6
+#: themes/foundation/default/nav-bar.php:6
+msgid "previous post"
+msgstr "以前の投稿"
+
+#: bauhaus/default/nav-bar.php:13 cms/default/nav-bar.php:13
+#: themes/foundation/default/nav-bar.php:12
+msgid "next post"
+msgstr "次の投稿"
+
+#: bauhaus/default/post-loop.php:22 bio/default/post-loop.php:19
+#: classic-redux/default/post-loop.php:24
+msgid "by"
+msgstr "で"
+
+#: bauhaus/default/related-posts.php:4
+#: themes/foundation/default/related-posts.php:4
+msgid "Related"
+msgstr "関連"
+
+#: bauhaus/default/search.php:19 classic-redux/default/search.php:5
+#: themes/foundation/default/search.php:6
+msgid "You searched for \"%s\""
+msgstr "\"%s\"を検索中"
+
+#: bauhaus/default/search.php:27
+msgid "Show %s Results"
+msgstr "%sの結果を表示"
+
+#: bauhaus/default/search.php:52 bauhaus/default/search.php:69
+msgid "No results found"
+msgstr "結果なし"
+
+#: bauhaus/default/search.php:60 classic-redux/default/search.php:47
+#: themes/foundation/default/search.php:43
+msgid "Load more %s results"
+msgstr "より多くの%sの結果を読込む"
+
+#: bauhaus/default/single.php:16
+msgid "no comments"
+msgstr "コメントなし"
+
+#: bauhaus/default/single.php:16
+msgid "1 comment"
+msgstr "1コメント"
+
+#: bauhaus/default/single.php:16
+msgid "% comments"
+msgstr "%コメント"
+
+#: bauhaus/default/single.php:36 classic-redux/default/header-bottom.php:37
+#: classic-redux/default/header-bottom.php:63
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: bauhaus/default/single.php:39 classic-redux/default/header-bottom.php:41
+#: classic-redux/default/header-bottom.php:70
+msgid "Tags"
+msgstr "タグ"
+
+#: bauhaus/root-functions.php:125 classic-redux/root-functions.php:98
+msgid "Header Menu"
+msgstr "ヘッダーメニュー"
+
+#: bauhaus/root-functions.php:127 bio/root-functions.php:89
+#: classic-redux/root-functions.php:100 cms/root-functions.php:125
+#: cms/root-functions.php:134 hammock/root-functions.php:168
+#: mobilestore/root-functions.php:195 mobilestore/root-functions.php:207
+#: open/root-functions.php:353 prose/root-functions.php:207
+#: scaffold/root-functions.php:77 simple/root-functions.php:61
+#: simple/root-functions.php:72
+msgid "Choose a menu"
+msgstr "メニューを選択"
+
+#: bauhaus/root-functions.php:128
+msgid "Main menu selection"
+msgstr "メインメニュー選択"
+
+#: bauhaus/root-functions.php:135 bio/root-functions.php:97
+#: classic-redux/root-functions.php:108 cms/root-functions.php:141
+#: hammock/root-functions.php:176 open/root-functions.php:361
+#: prose/root-functions.php:215 scaffold/root-functions.php:85
+#: simple/root-functions.php:80
+msgid "Theme background"
+msgstr "テーマ背景"
+
+#: bauhaus/root-functions.php:136
+msgid "Header & Menu"
+msgstr "ヘッダー＆メニュー"
+
+#: bauhaus/root-functions.php:137 bio/root-functions.php:98
+#: classic-redux/root-functions.php:109 cms/root-functions.php:142
+#: hammock/root-functions.php:178 mobilestore/root-functions.php:239
+#: open/root-functions.php:362 prose/root-functions.php:217
+#: scaffold/root-functions.php:86 simple/root-functions.php:81
+msgid "Links"
+msgstr "リンク"
+
+#: bauhaus/root-functions.php:138
+msgid "Post/Page Headers"
+msgstr "投稿/ページヘッダー"
+
+#: bauhaus/root-functions.php:254
+msgid "Theme Shapes"
+msgstr "テーマシェイプ"
+
+#: bauhaus/root-functions.php:260
+msgid "Theme shape style"
+msgstr "テーマシェイプスタイル"
+
+#: bauhaus/root-functions.php:261
+msgid "Bauhaus will use this shape style throughout its appearance"
+msgstr "Bauhausは外見を通してこのシェイプスタイルを使用します"
+
+#: bauhaus/root-functions.php:265
+msgid "Circles"
+msgstr "サークル"
+
+#: bauhaus/root-functions.php:266
+msgid "Rounded squares"
+msgstr "ラウンドスクエア"
+
+#: bauhaus/root-functions.php:276
+msgid "Menu Style"
+msgstr "メニュースタイル"
+
+#: bauhaus/root-functions.php:282
+msgid "Menu animation style"
+msgstr "メニューアニメスタイル"
+
+#: bauhaus/root-functions.php:283
+msgid "Bauhaus can show your menu off-canvas or in a drop-down."
+msgstr "Bauhausがあなたのメニューのオフキャンバスまたはドロップダウンを表示。"
+
+#: bauhaus/root-functions.php:287
+msgid "Off-canvas"
+msgstr "オフキャンバス"
+
+#: bauhaus/root-functions.php:288
+msgid "Drop-down"
+msgstr "ドロップダウン"
+
+#: bauhaus/root-functions.php:306 bio/root-functions.php:131
+#: classic-redux/root-functions.php:244
+msgid "Post thumbnails"
+msgstr "サムネイルを投稿"
+
+#: bauhaus/root-functions.php:311 bio/root-functions.php:136
+#: classic-redux/root-functions.php:249
+msgid "No thumbnails"
+msgstr "サムネイルなし"
+
+#: bauhaus/root-functions.php:312 bio/root-functions.php:137
+#: classic-redux/root-functions.php:250
+msgid "Blog listing only"
+msgstr "ブログリストのみ"
+
+#: bauhaus/root-functions.php:313 bio/root-functions.php:138
+#: classic-redux/root-functions.php:251
+msgid "Blog listing, single posts"
+msgstr "ブログリスト、シングル投稿"
+
+#: bauhaus/root-functions.php:314 bio/root-functions.php:139
+msgid "Blog listing, single posts & pages"
+msgstr "ブログリスニング、シングル投稿 & ページ"
+
+#: bauhaus/root-functions.php:315 bio/root-functions.php:140
+msgid "All (blog, single, pages, search & archive)"
+msgstr "全て (ブログ、シングル、ページ、検索&アーカイブ)"
+
+#: bauhaus/root-functions.php:323 bio/root-functions.php:148
+#: classic-redux/root-functions.php:260
+msgid "Thumbnail Selection"
+msgstr "サムネイル選択"
+
+#: bauhaus/root-functions.php:328 bio/root-functions.php:153
+#: classic-redux/root-functions.php:265
+msgid "Post featured image"
+msgstr "特集画像を投稿"
+
+#: bauhaus/root-functions.php:329 bio/root-functions.php:154
+#: classic-redux/root-functions.php:266
+msgid "Post custom field"
+msgstr "カスタムフィールド投稿"
+
+#: bauhaus/root-functions.php:337 bio/root-functions.php:162
+#: classic-redux/root-functions.php:274
+msgid "Thumbnail custom field name"
+msgstr "サムネイルカスタムフィールド名"
+
+#: bauhaus/root-functions.php:348 classic-redux/root-functions.php:307
+msgid "Show post categories and tags"
+msgstr "投稿カテゴリーとタグ表示"
+
+#: bauhaus/root-functions.php:359 bio/root-functions.php:173
+#: classic-redux/root-functions.php:285
+msgid "Show post date"
+msgstr "投稿日表示"
+
+#: bauhaus/root-functions.php:370 bio/root-functions.php:184
+#: classic-redux/root-functions.php:296
+msgid "Show post author"
+msgstr "投稿著者を表示"
+
+#: bauhaus/root-functions.php:381
+msgid "Show comment bubbles on posts"
+msgstr "投稿のコメントバブルを表示"
+
+#: bauhaus/root-functions.php:392 bio/root-functions.php:195
+msgid "Show search in header"
+msgstr "ヘッダーで検索表示"
+
+#: bauhaus/root-functions.php:393 bio/root-functions.php:196
+msgid "Adds Search capability in the site header."
+msgstr "再とヘッダー内で検索キャパ追加"
+
+#: bauhaus/root-functions.php:403 bio/root-functions.php:206
+#: classic-redux/root-functions.php:318
+msgid "Use infinite scrolling for blog"
+msgstr "ブログで無限のスクロール使用"
+
+#: bio/root-functions.php:87 hammock/root-functions.php:166
+#: mobilestore/root-functions.php:193 open/root-functions.php:351
+#: prose/root-functions.php:205 scaffold/root-functions.php:75
+msgid "Primary Menu"
+msgstr "プライマリーメニュー"
+
+#: bio/root-functions.php:90 hammock/root-functions.php:169
+#: open/root-functions.php:354 scaffold/root-functions.php:78
+msgid "Menus are awesome!"
+msgstr "メニューがすごい！"
+
+#: classic-redux/default/header-bottom.php:45
+#: classic-redux/default/header-bottom.php:90
+msgid "Tweets"
+msgstr "ツイート"
+
+#: classic-redux/default/header-bottom.php:53
+#: hammock/default/header-bottom.php:80
+#: mobilestore/default/woocommerce/shop/form-login.php:31
+#: scaffold/default/header-bottom.php:33 simple/default/header-bottom.php:24
+#: themes/foundation/modules/login/login-html.php:20
+msgid "Login"
+msgstr "ログイン"
+
+#: classic-redux/default/header-bottom.php:94
+msgid "Follow %s on Twitter"
+msgstr "Twitterで%sをフォロー"
+
+#: classic-redux/default/index.php:34 cms/default/header-bottom.php:63
+#: open/default/index.php:45 themes/foundation/default/index.php:33
+msgid "newer posts"
+msgstr "新しい投稿"
+
+#: classic-redux/default/index.php:34 cms/default/header-bottom.php:59
+#: open/default/index.php:45 themes/foundation/default/index.php:33
+msgid "older posts"
+msgstr "以前の投稿"
+
+#: classic-redux/default/post-loop.php:33 prose/default/comments.php:10
+#: themes/foundation/default/comments.php:10
+msgid "no responses"
+msgstr "返答なし"
+
+#: classic-redux/default/post-loop.php:33 prose/default/comments.php:10
+#: themes/foundation/default/comments.php:10
+msgid "1 response"
+msgstr "1レス"
+
+#: classic-redux/default/post-loop.php:33 prose/default/comments.php:10
+#: themes/foundation/default/comments.php:10
+msgid "% responses"
+msgstr "%レス"
+
+#: classic-redux/default/post-loop.php:56
+msgid "Read This Post"
+msgstr "この投稿を読む"
+
+#: classic-redux/default/search.php:15 themes/foundation/default/search.php:16
+msgid "%s results"
+msgstr "%s結果"
+
+#: classic-redux/default/search.php:38 themes/foundation/default/search.php:34
+msgid "No search results found"
+msgstr "検索結果が見つかりませんでした"
+
+#: classic-redux/default/single.php:18
+msgid "Written by %s"
+msgstr "%sによって書き込まれました"
+
+#: classic-redux/root-functions.php:6 classic-redux/root-functions.php:363
+msgid "Tablets"
+msgstr "タブレット"
+
+#: classic-redux/root-functions.php:107 cms/root-functions.php:140
+#: open/root-functions.php:360 simple/root-functions.php:79
+msgid "Header background"
+msgstr "ヘッダー背景"
+
+#: classic-redux/root-functions.php:252
+msgid "All (blog, single, search and archive)"
+msgstr "全て(ブログ、シングル、サーチ、アーカイブ)"
+
+#: classic-redux/root-functions.php:329
+msgid "Use rounded corners"
+msgstr "丸端を使用"
+
+#: classic-redux/root-functions.php:347
+msgid "Show page title areas on pages"
+msgstr "ページのタイトルエリアを表示"
+
+#: classic-redux/root-functions.php:369
+msgid "Add tablet support"
+msgstr "タブレットサポート追加"
+
+#: classic-redux/root-functions.php:381
+msgid "Header Menu Area"
+msgstr "ヘッダーメニューエリア"
+
+#: classic-redux/root-functions.php:387
+msgid "Drop-down button says \"Menu\""
+msgstr "ドロップダウンボタンが\"メニュー\"を表示"
+
+#: classic-redux/root-functions.php:395
+msgid "Show tab bar"
+msgstr "タブバー表示"
+
+#: classic-redux/root-functions.php:403
+msgid "Tab-bar shows categories or tags"
+msgstr "タブバーがカテゴリーまたはタグ表示"
+
+#: classic-redux/root-functions.php:408
+msgid "Categories and tags"
+msgstr "カテゴリーとタグ"
+
+#: classic-redux/root-functions.php:409
+msgid "Categories only"
+msgstr "カテゴリーのみ"
+
+#: classic-redux/root-functions.php:410
+msgid "Tags only"
+msgstr "タグのみ"
+
+#: classic-redux/root-functions.php:411
+msgid "No categories or tags"
+msgstr "カテゴリーまたはタグなし"
+
+#: classic-redux/root-functions.php:417
+msgid "Max categories / tags"
+msgstr "最大カテゴリー / タグ"
+
+#: classic-redux/root-functions.php:435 cms/root-functions.php:268
+#: simple/root-functions.php:281
+msgid "CSS Effects"
+msgstr "CSS効果"
+
+#: classic-redux/root-functions.php:441 cms/root-functions.php:274
+msgid "Add a noise effect to the header and theme background"
+msgstr "ヘッダーとテーマ背景にノイズ効果を追加"
+
+#: classic-redux/root-functions.php:442 cms/root-functions.php:275
+#: simple/root-functions.php:288
+msgid "Will apply the effect overtop of any background image you upload."
+msgstr "アップロードした背景画像上に効果を適用。"
+
+#: cms/default/header-bottom.php:17
+msgid "menu"
+msgstr "メニュー"
+
+#: cms/default/header-bottom.php:24
+msgid "login"
+msgstr "ログイン"
+
+#: cms/default/header-bottom.php:28
+msgid "logout"
+msgstr "ログアウト"
+
+#: cms/default/header-bottom.php:41 simple/default/footer-top.php:3
+msgid "search this website"
+msgstr "このウェブサイトを検索"
+
+#: cms/default/header-bottom.php:42 simple/default/footer-top.php:5
+msgid "search"
+msgstr "検索"
+
+#: cms/default/single.php:12 themes/foundation/default/single.php:13
+msgid "By"
+msgstr "によって"
+
+#: cms/root-functions.php:51
+msgid "Alt Menu"
+msgstr "Alt　メニュー"
+
+#: cms/root-functions.php:123
+msgid "Main Menu"
+msgstr "メインメニュー"
+
+#: cms/root-functions.php:132
+msgid "Alternate Menu"
+msgstr "代替メニュー"
+
+#: cms/root-functions.php:180
+msgid "Show featured images on single posts"
+msgstr "1つの投稿で特集された画像を表示"
+
+#: cms/root-functions.php:197
+msgid "Show titles on pages"
+msgstr "ページでタイトル表示"
+
+#: cms/root-functions.php:212
+msgid "Category Slider"
+msgstr "カテゴリースライダー"
+
+#: cms/root-functions.php:218
+msgid "Enable category slider"
+msgstr "カテゴリースライダーを有効にする"
+
+#: cms/root-functions.php:231 simple/root-functions.php:262
+msgid "Tiled Background Image"
+msgstr "タイル背景画像"
+
+#: cms/root-functions.php:237 simple/root-functions.php:268
+msgid "(Scaled for retina displays)"
+msgstr "(Retinaディスプレイ用にスケール)"
+
+#: cms/root-functions.php:249
+msgid "Alternate Menu Title"
+msgstr "メニュータイトルを変更"
+
+#: cms/root-functions.php:255
+msgid "Alternate menu title (if used)"
+msgstr "メニュータイトルを変更 (使用する場合)"
+
+#: cms/root-functions.php:256
+msgid "If you use a second menu in CMS, this text will be used for the drop-down button title."
+msgstr "CMS内でセカンドメニューを使用する場合、このテキストがドロップダウンボタンタイトルで使用されます。"
+
+#: cms/root-functions.php:286
+msgid "Static Front Page"
+msgstr "固定フロントページ"
+
+#: cms/root-functions.php:292
+msgid "Static front page alternate content"
+msgstr "固定フロントページ代替コンテンツ"
+
+#: cms/root-functions.php:293
+msgid "Shows after the featured slider (if enabled), and replaces your Static Front Page content. HTML allowed."
+msgstr "機能スライダーの後に表示(有効な場合)してあなたの固定フロントページのコンテンツを置き換える。HTML許可。"
+
+#: core/addon-theme-installer.php:161
+msgid "No server support for directly downloading new Cloud packages."
+msgstr "新しいCloudパッケージを直接ダウンロードするサーバーサポートなし。"
+
+#: core/addon-theme-installer.php:166
+msgid "Unable to write to directory %s. Try relaxing permissions to allow writing to this location."
+msgstr "ディレクトリ%sに書き込めません。 リラックスできる許可を試してこのロケーションに書き込みを許可します。"
+
+#: core/addon-theme-installer.php:171
+msgid "No server support for unzipping files."
+msgstr "ファイルを解答するためのサーバーのサポートなし。"
+
+#: core/addon-theme-installer.php:181
+msgid "Unable to download the Cloud package."
+msgstr "Cloudパッケージをダウンロードできません。"
+
+#: core/admin-ajax.php:191
+msgid "Version %s"
+msgstr "バージョン%s"
+
+#: core/admin-ajax.php:197
+msgid "There is a temporary issue retrieving the change-log.  Please try again later."
+msgstr "変更ログを読み出し中に一時的な問題が発生しました。後で再試行してください。"
+
+#: core/admin-menu.php:41
+msgid "Core Settings"
+msgstr "コア設定"
+
+#: core/admin-menu.php:42
+msgid "Themes & Extensions"
+msgstr "テーマ&拡張"
+
+#: core/admin-menu.php:43
+msgid "Theme Settings"
+msgstr "テーマ設定"
+
+#: core/admin-menu.php:43
+msgid "%s Settings"
+msgstr "%s設定"
+
+#: core/admin-menu.php:48
+msgid "Extension Settings"
+msgstr "拡張設定"
+
+#: core/admin-menu.php:53 core/admin-menu.php:55
+msgid "Menus"
+msgstr "メニュー"
+
+#: core/admin-menu.php:61
+msgid "License"
+msgstr "ライセンス"
+
+#: core/admin-menu.php:66
+msgid "Upgrade to Pro"
+msgstr "Proにアップグレード"
+
+#: core/admin-page-templates.php:17
+msgid "Mobile Page Template"
+msgstr "モバイルページテンプレート"
+
+#: core/admin-render.php:25
+msgid "Your WPtouch Pro license has expired. Renew now at a discount to continue receiving product updates and support."
+msgstr "WPtouchプロ版ライセンスの有効期限が切れました。製品の更新とサポートを継続して受け取るには割引価格で更新してください。"
+
+#: core/admin-render.php:26
+msgid "Renew Now"
+msgstr "今すぐ更新"
+
+#: core/admin-render.php:33
+msgid "This copy of %s is currently unlicensed!"
+msgstr "%sのコピーは現在ライセンスが取得されていません！"
+
+#: core/admin-render.php:35
+msgid "Add a license %s"
+msgstr "ライセンス%s追加"
+
+#: core/admin-render.php:90
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: core/admin-render.php:91
+msgid "Preview Theme"
+msgstr "テーマプレビュー"
+
+#: core/admin-render.php:92
+msgid "Reset Settings"
+msgstr "リセット設定"
+
+#: core/class-wptouch-pro.php:354
+msgid "Automatic theme migration from uploads/wptouch-data directory failed. Please manually move these files to wp-content/wptouch-data, or %scontact support%s to address this issue."
+msgstr "アップロード/wptouch-データディレクトリからの自動テーマ統合に失敗しました。これらのファイルを手動でwp-content/wptouch-dataまたは%scontact support%sに移動してこの問題に対処してください。"
+
+#: core/class-wptouch-pro.php:374
+msgid "We were unable to install your WPtouch theme from the Cloud. Please visit %sthis article%s for more information."
+msgstr "CloudからWPtouchテーマをインストールできませんでした。詳細は%sこの記事%sに移動してください。"
+
+#: core/class-wptouch-pro.php:378
+msgid "Your server setup is preventing WPtouch from installing your active theme from the Cloud. Please visit %sthis article%s for more information on how to fix it."
+msgstr "あなたのサーバー設定はWPtouchがCloudから有効なテーマがインストールされることを防ぎます。修正法に関する他の情報は%sこの記事%sをご確認ください。"
+
+#: core/class-wptouch-pro.php:593
+msgid "Unsupported Browser"
+msgstr "サポートしていないブラウザー"
+
+#: core/class-wptouch-pro.php:594
+msgid "Theme Preview requires Chrome or Safari."
+msgstr "テーマのプレビューにはChromeまたはSafariが必要です。"
+
+#: core/class-wptouch-pro.php:595
+msgid "This will reset all WPtouch Pro settings.\nAre you sure?"
+msgstr "これで全てのWPtouch Pro設定が再設定されます。\n実行しますか？"
+
+#: core/class-wptouch-pro.php:596
+msgid "This will reset all WPtouch Pro menu and icon settings.\nAre you sure?"
+msgstr "全てのWPtouch Proメニューとアイコン設定が再設定されます。\n実行しますか？"
+
+#: core/class-wptouch-pro.php:597
+msgid "Offline"
+msgstr "オフライン"
+
+#: core/class-wptouch-pro.php:598
+msgid "You appear to be offline. Connect to the internet to see available BraveNewCloud items."
+msgstr "オフラインになっています。インターネットに接続して利用できるBraveNewCloudアイテムを表示する。"
+
+#: core/class-wptouch-pro.php:599
+msgid "The item failed to download for this reason: %reason%"
+msgstr "以下の理由でこのアイテムのダウンロードに失敗しました: %reason%"
+
+#: core/class-wptouch-pro.php:600
+msgid "You are about to reset your license information. Proceed?"
+msgstr "ライセンス情報を再設定します。処理しますか？"
+
+#: core/class-wptouch-pro.php:602
+msgid "Upload Failed: Not a valid image."
+msgstr "アップロード失敗: 有効な画像ではありません。"
+
+#: core/class-wptouch-pro.php:603
+msgid "Click to view theme demo"
+msgstr "クリックしてテーマデモを表示"
+
+#: core/class-wptouch-pro.php:1177
+#: themes/foundation/modules/webapp/webapp.php:12
+msgid "Settings"
+msgstr "設定"
+
+#: core/class-wptouch-pro.php:1213
+msgid "%s Changelog"
+msgstr "%s Changelog"
+
+#: core/class-wptouch-pro.php:2405
+msgid "Directory Problem"
+msgstr "ディレクトリー問題"
+
+#: core/class-wptouch-pro.php:2406
+msgid "One or more required directories could not be created"
+msgstr "1またはそれ以上必要なディレクトリーが作成できませんでした"
+
+#: core/globals.php:197
+msgid "smartphone"
+msgstr "スマートフォン"
+
+#: core/globals.php:199
+msgid "tablet"
+msgstr "タブレット"
+
+#: core/notifications.php:124
+msgid "Preview Mode Enabled"
+msgstr "プレビューモードを有効にしました"
+
+#: core/notifications.php:125
+msgid "Only logged-in admins can see the mobile theme right now. You can change this at any time in %sCore Settings%s under %sDisplay Mode%s."
+msgstr "現在ログインアドミンのみモバイルテーマを表示することができます。これは%sディスプレイモード%sの%s主要な設定%sでいつでも変更できます。"
+
+#: core/notifications.php:133
+msgid "Theme Presentation Disabled"
+msgstr "テーマプレゼン無効"
+
+#: core/notifications.php:134
+msgid "No one can see the mobile theme right now. You can change this at any time in %sCore Settings%s under %sDisplay Mode%s."
+msgstr "現在モバイルテーマが表示できません。これは%sディスプレイモード%sの%s主要な設定%sでいつでも変更できます。"
+
+#: core/notifications.php:145
+msgid "WPtouch Pro prefers pretty permalinks to be enabled within WordPress."
+msgstr "WPtouch ProはWordPress内で有効なかなりのパーマリンクを好みます。"
+
+#: core/notifications.php:155
+msgid "WPtouch Pro will not work fully in safe mode."
+msgstr "WPtouch Pro版はセーフモードで完全に起動しません。"
+
+#: core/notifications.php:165 core/notifications.php:175
+#: core/notifications.php:185
+msgid "Extra configuration is required. The plugin must be configured to exclude the user agents that WPtouch Pro uses."
+msgstr "追加設定が必要です。プラグインはWPtouch Pro版を使用するユーザーエージェントを排他するには設定が必要です。"
+
+#: core/notifications.php:195
+msgid "Extra configuration is required. Add paths to your active WPtouch Pro theme CSS and Javascript files as files to ignore in WPMinify."
+msgstr "追加設定が必要です。パスをアクティブなWPtouch Pro版のテーマCSSとJavascriptファイルに、WPMinify内で無視するファイルとして追加。"
+
+#: core/notifications.php:205
+msgid "This plugin may not work correctly in WPtouch Pro, and should be disabled in the Plugin Compatibility section."
+msgstr "このプラグインはWPtouch Proで正しく起動しません。プラグイン準拠セクション内で無効にしなければなりません。"
+
+#: core/notifications.php:214
+msgid "Icon Installation Issue"
+msgstr "アイコンインストール問題"
+
+#: hammock/default/functions.php:10 prose/default/functions.php:33
+msgid "Load more from this collection"
+msgstr "このコレクションからその他を読み込む"
+
+#: hammock/default/header-bottom.php:38 prose/default/header-bottom.php:19
+msgid "Collections"
+msgstr "コレクション"
+
+#: hammock/default/header-bottom.php:41 prose/default/header-bottom.php:22
+msgid "Options"
+msgstr "オプション"
+
+#: hammock/root-functions.php:61 prose/root-functions.php:76
+msgid "Show categories as \"collections\" in menu"
+msgstr "メニューの\"コレクション\"としてカテゴリーを表示"
+
+#: hammock/root-functions.php:72 prose/root-functions.php:98
+msgid "Maximum number of items in categories/collections"
+msgstr "カテゴリー/コレクション内の最大アイテム数"
+
+#: hammock/root-functions.php:88
+msgid "Animate the featured image on posts"
+msgstr "投稿で特集された画像をアニメーション化する"
+
+#: hammock/root-functions.php:102 open/root-functions.php:119
+#: prose/root-functions.php:117
+msgid "Header Image"
+msgstr "ヘッダー画像"
+
+#: hammock/root-functions.php:108 prose/root-functions.php:123
+msgid "Displayed behind header on pages and posts without featured images."
+msgstr "特集された画像なしでページと投稿のヘッダーの背後で表示。"
+
+#: hammock/root-functions.php:121 prose/root-functions.php:136
+msgid "Site Intro"
+msgstr "サイトイントロ"
+
+#: hammock/root-functions.php:127 prose/root-functions.php:142
+msgid "Displayed on post listing page below site name."
+msgstr "サイト名の下の投稿リストページに表示。"
+
+#: hammock/root-functions.php:177 prose/root-functions.php:216
+#: themes/foundation/root-functions.php:11
+msgid "Branding"
+msgstr "ブランド設定"
+
+#: include/add-ons/wordtwit-pro.php:179
+#: themes/foundation/modules/twitter/twitter.php:42
+msgid "%d second ago"
+msgid_plural "%d seconds ago"
+msgstr[0] "%d 秒前"
+msgstr[1] "%d 秒前"
+
+#: include/add-ons/wordtwit-pro.php:182
+#: themes/foundation/modules/twitter/twitter.php:45
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] "%d分前"
+msgstr[1] "%d分前"
+
+#: include/add-ons/wordtwit-pro.php:185
+#: themes/foundation/modules/twitter/twitter.php:48
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] "%d時間"
+msgstr[1] "%d時間"
+
+#: include/add-ons/wordtwit-pro.php:188
+#: themes/foundation/modules/twitter/twitter.php:51
+msgid "%d day ago"
+msgid_plural "%d days ago"
+msgstr[0] "%d日前"
+msgstr[1] "%d日前"
+
+#: include/html/desktop-switch.php:2
+msgid "Desktop Version"
+msgstr "デスクトップバージョン"
+
+#: include/html/desktop-switch.php:2
+msgid "Switch To Mobile Version"
+msgstr "モバイルバージョンにスイッチ"
+
+#: include/html/footer.php:8
+msgid "Powered by %s%s%s"
+msgstr "%s%s%sによって起動されています"
+
+#: include/html/footer.php:10
+msgid "Powered by<br/>%s%s%s"
+msgstr "制作者<br/>%s%s%s"
+
+#: include/html/load-times.php:2
+msgid "%d queries in %0.1f ms"
+msgstr "%0.1f msの%dクエリー"
+
+#: include/html/page-template.php:8
+msgid "Default Template"
+msgstr "デフォルトテンプレート"
+
+#: infinity-cache/infinity-cache.php:66 infinity-cache/infinity-cache.php:241
+msgid "Purge Page Cache"
+msgstr "ページキャッシュをパージ"
+
+#: infinity-cache/infinity-cache.php:134
+msgid "Enable Infinity Cache"
+msgstr "無制限のキャッシュを有効にする"
+
+#: infinity-cache/infinity-cache.php:142
+msgid "Create cache for desktop users"
+msgstr "デスクトップユーザーのキャッシュを作成"
+
+#: infinity-cache/infinity-cache.php:143
+msgid "If you are using another cache plugin such as W3, you can disable this."
+msgstr "W3のような他のキャッシュプラグインを使用中の場合、これを無効にできます。"
+
+#: infinity-cache/infinity-cache.php:164
+msgid "Compress output using GZIP"
+msgstr "GZIPを使用中の圧縮出力"
+
+#: infinity-cache/infinity-cache.php:174
+msgid "Maximum age of cached content"
+msgstr "キャッシュコンテンツの最大寿命"
+
+#: infinity-cache/infinity-cache.php:175
+msgid "Each cached page will automatically be regenerated after this period elapses"
+msgstr "各キャッシュページは自動でこの期間までの間、自動で登録されます"
+
+#: infinity-cache/infinity-cache.php:179 infinity-cache/infinity-cache.php:180
+#: infinity-cache/infinity-cache.php:181 infinity-cache/infinity-cache.php:182
+#: infinity-cache/infinity-cache.php:183
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d時間"
+msgstr[1] "%d時間"
+
+#: infinity-cache/infinity-cache.php:190
+msgid "Remove stale cache file interval"
+msgstr "ステイルキャッシュファイルインターバルを削除"
+
+#: infinity-cache/infinity-cache.php:195
+msgid "Hourly"
+msgstr "毎時"
+
+#: infinity-cache/infinity-cache.php:196
+msgid "Daily"
+msgstr "毎日"
+
+#: infinity-cache/infinity-cache.php:203
+msgid "Disable caching for any of these matched URL fragments"
+msgstr "これらの一致したURLのフラグメントのキャッシングを無効にする"
+
+#: infinity-cache/infinity-cache.php:204
+msgid "Add one URL fragment per line, i.e. %s, to not cache pages that contain each URL fragment"
+msgstr "各URLフラグメントを含むページをキャッチュしないように1ラインすなわち%sごとに1つのURLフラグメントを追加"
+
+#: infinity-cache/infinity-cache.php:212
+msgid "Content Distribution Network Service"
+msgstr "コンテンツ流通ネットワークサービス"
+
+#: infinity-cache/infinity-cache.php:213
+msgid "Using a content distribution network (CDN) can significantly enhance the responsiveness of your website."
+msgstr "コンテンツ流通ネットワーク(CDN)を使用すると、ウェブサイトの応答をかなり強化できます。"
+
+#: infinity-cache/infinity-cache.php:218
+#: themes/foundation/modules/login/login-html.php:30
+msgid "Sign-up"
+msgstr "サインアップ"
+
+#: infinity-cache/infinity-cache.php:226
+msgid "URL %d"
+msgstr "URL %d"
+
+#: infinity-cache/infinity-cache.php:227
+msgid "Add the URLs you have configured for your CDN, for example http://cdn%d.mysite.com. Add your domain for multisite as well."
+msgstr "CDNの設定を行ったURLを追加。例： http://cdn%d.mysite.com　同様に複数のサイトにドメインを追加する。"
+
+#: infinity-cache/infinity-cache.php:249
+msgid "Infinity Cache"
+msgstr "無制限キャッシュ"
+
+#: infinity-cache/infinity-cache.php:636
+msgid "An example for this URL is: %s%s%s."
+msgstr "このURLの例: %s%s%s"
+
+#: mobile-content/mobile-content.php:20
+msgid "WPtouch Alternate Mobile Content"
+msgstr "WPtouch代替モバイルコンテンツ"
+
+#: mobile-content/mobile-content.php:38
+msgid "Mobile Content"
+msgstr "モバイルコンテンツ"
+
+#: mobile-content/mobile-content.php:44
+msgid "Enable mobile content display"
+msgstr "モバイルコンテンツディスプレイを有効にする"
+
+#: mobilestore/default/functions.php:121
+#: mobilestore/default/woocommerce/checkout/form-login.php:16
+msgid "Login now"
+msgstr "今すぐログイン"
+
+#: mobilestore/default/functions.php:122
+msgid "Close"
+msgstr "閉じる"
+
+#: mobilestore/default/functions.php:123
+msgid "Add Company Name"
+msgstr "会社名を追加"
+
+#: mobilestore/default/functions.php:124
+msgid "Add Order Notes"
+msgstr "注文メモを追加"
+
+#: mobilestore/default/functions.php:125
+msgid "CVC"
+msgstr "CVC"
+
+#: mobilestore/default/functions.php:186
+msgid "view more products"
+msgstr "他の製品を表示"
+
+#: mobilestore/default/functions.php:204
+msgid "Added to cart"
+msgstr "カートに追加されました"
+
+#: mobilestore/default/header-bottom.php:9
+msgid "Product Categories"
+msgstr "製品カテゴリー"
+
+#: mobilestore/default/header-bottom.php:15
+msgid "Recently Viewed"
+msgstr "最近表示されました"
+
+#: mobilestore/default/header-bottom.php:20
+msgid "Site Menu"
+msgstr "サイトメニュー"
+
+#: mobilestore/default/header-bottom.php:72
+msgid "Cart"
+msgstr "カート"
+
+#: mobilestore/default/header-bottom.php:82
+msgid "Search the store"
+msgstr "ストアを検索"
+
+#: mobilestore/default/header-bottom.php:87
+msgid "Recent Searches"
+msgstr "最近の検索"
+
+#: mobilestore/default/header-bottom.php:87
+msgid "Clear"
+msgstr "クリア"
+
+#: mobilestore/default/header-bottom.php:104
+msgid "Back to blog index"
+msgstr "ブログインデックスに戻る"
+
+#: mobilestore/default/header-bottom.php:118
+msgid "sorting"
+msgstr "ソート中"
+
+#: mobilestore/default/header-bottom.php:119
+msgid "filter by"
+msgstr "以下でソート"
+
+#: mobilestore/default/post-loop.php:9 open/default/post-loop.php:9
+#: simple/default/post-loop.php:9
+msgid "Read This Post &rsaquo;"
+msgstr "この投稿を読む&rsaquo;"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:18
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:33
+msgid "Shipping #%d"
+msgstr "配送 #%d"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:20
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:35
+msgid "Shipping and Handling"
+msgstr "配送と出荷"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:74
+msgid "Please use the shipping calculator to see available shipping methods."
+msgstr "配送計算機を使用して配送方法を確認してください。"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:78
+msgid "Please continue to the checkout and enter your full address to see if there are any available shipping methods."
+msgstr "可能な配送方法があるかチェックアウトを継続して完全なアドレスを入力してください。"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:82
+#: mobilestore/default/woocommerce/cart/shipping-methods.php:68
+msgid "Please fill in your details to see available shipping methods."
+msgstr "詳細を記入して可能な配送方法を見る。"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:91
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:97
+msgid "There doesn&lsquo;t seem to be any available shipping methods. Please double check your address, or contact us if you need any help."
+msgstr "利用できる配送方法がないようです。住所を確認するか、当社までご連絡ください。"
+
+#: mobilestore/default/woocommerce/cart/cart-shipping.php:112
+#: mobilestore/default/woocommerce/cart/totals.php:46
+msgid "Shipping"
+msgstr "配送"
+
+#: mobilestore/default/woocommerce/cart/cart-totals.php:19
+#: mobilestore/default/woocommerce/cart/totals.php:28
+#: mobilestore/default/woocommerce/checkout/review-order.php:25
+msgid "Cart Subtotal"
+msgstr "カートの小計"
+
+#: mobilestore/default/woocommerce/cart/cart-totals.php:66
+#: mobilestore/default/woocommerce/cart/totals.php:121
+msgid " (taxes estimated for %s)"
+msgstr "(%sの予想される税)"
+
+#: mobilestore/default/woocommerce/cart/cart-totals.php:69
+#: mobilestore/default/woocommerce/cart/totals.php:123
+msgid "Note: Shipping and taxes are estimated%s and will be updated during checkout based on your billing and shipping information."
+msgstr "メモ: 配送と税金は%sと予想されます。請求書と配送情報に基づいてチェックアウト中に更新されます。"
+
+#: mobilestore/default/woocommerce/cart/cart.php:51
+msgid "Available on backorder"
+msgstr "入荷待ち"
+
+#: mobilestore/default/woocommerce/cart/cart.php:57
+msgid "Remove this item"
+msgstr "このアイテムを削除"
+
+#: mobilestore/default/woocommerce/cart/cart.php:83
+msgid "Update Cart"
+msgstr "カートを更新"
+
+#: mobilestore/default/woocommerce/cart/cart.php:93
+#: mobilestore/default/woocommerce/checkout/form-coupon.php:20
+msgid "Coupon"
+msgstr "クーポン"
+
+#: mobilestore/default/woocommerce/cart/cart.php:93
+#: mobilestore/default/woocommerce/checkout/form-coupon.php:20
+#: mobilestore/default/woocommerce/checkout/review-order.php:41
+msgid "Coupon code"
+msgstr "クーポンコード"
+
+#: mobilestore/default/woocommerce/cart/cart.php:93
+#: mobilestore/default/woocommerce/checkout/form-coupon.php:20
+#: mobilestore/default/woocommerce/checkout/review-order.php:43
+msgid "Apply"
+msgstr "適用"
+
+#: mobilestore/default/woocommerce/cart/cart.php:111
+msgid "Proceed to Checkout"
+msgstr "会計に進む"
+
+#: mobilestore/default/woocommerce/cart/mini-cart.php:24
+msgid "edit cart"
+msgstr "カートを編集"
+
+#: mobilestore/default/woocommerce/cart/mini-cart.php:29
+msgid "checkout"
+msgstr "会計"
+
+#: mobilestore/default/woocommerce/cart/mini-cart.php:73
+msgid "No products in the cart."
+msgstr "カードに製品がありません。"
+
+#: mobilestore/default/woocommerce/cart/mini-cart.php:81
+msgid "Subtotal"
+msgstr "小計"
+
+#: mobilestore/default/woocommerce/cart/mini-cart.php:89
+msgid "Checkout"
+msgstr "会計"
+
+#: mobilestore/default/woocommerce/cart/shipping-methods.php:32
+msgid "Free"
+msgstr "無料"
+
+#: mobilestore/default/woocommerce/cart/shipping-methods.php:76
+#: mobilestore/default/woocommerce/cart/totals.php:147
+msgid "Sorry, it seems that there are no available shipping methods for your location (%s)."
+msgstr "申し訳ございません。あなたのロケーション(%s)への配送手段がありません。"
+
+#: mobilestore/default/woocommerce/cart/shipping-methods.php:76
+#: mobilestore/default/woocommerce/cart/totals.php:147
+msgid "If you require assistance or wish to make alternate arrangements please contact us."
+msgstr "ヘルプが必要な場合、または別の手配が必要な方はご連絡ください。"
+
+#: mobilestore/default/woocommerce/cart/totals.php:22
+msgid "Cart Totals"
+msgstr "カート合計"
+
+#: mobilestore/default/woocommerce/cart/totals.php:35
+msgid "Cart Discount"
+msgstr "カード割引"
+
+#: mobilestore/default/woocommerce/cart/totals.php:35
+#: mobilestore/default/woocommerce/cart/totals.php:83
+msgid "[Remove]"
+msgstr "[削除]"
+
+#: mobilestore/default/woocommerce/cart/totals.php:83
+msgid "Order Discount"
+msgstr "注文割引"
+
+#: mobilestore/default/woocommerce/cart/totals.php:92
+#: mobilestore/default/woocommerce/checkout/review-order.php:94
+msgid "Order Total"
+msgstr "注文合計"
+
+#: mobilestore/default/woocommerce/cart/totals.php:105
+msgid "(Includes %s)"
+msgstr "(%sを含む)"
+
+#: mobilestore/default/woocommerce/cart/totals.php:135
+msgid "No shipping methods were found; please recalculate your shipping and enter your state/county and zip/postcode to ensure there are no other available methods for your location."
+msgstr "配送手段が見つかりません；配送を再計算してあなたの州/国と郵便番号を入力してあなたのロケーションに他の利用できる方法がないかご確認ください。"
+
+#: mobilestore/default/woocommerce/checkout/form-checkout.php:20
+msgid "You must be logged in to checkout."
+msgstr "ログインして会計に進んでください。"
+
+#: mobilestore/default/woocommerce/checkout/form-checkout.php:51
+msgid "Your Order"
+msgstr "あなたの注文"
+
+#: mobilestore/default/woocommerce/checkout/form-checkout.php:51
+msgid "Edit Items"
+msgstr "アイテム編集"
+
+#: mobilestore/default/woocommerce/checkout/form-login.php:16
+msgid "Shopped here before?"
+msgstr "以前こちらでお買い物をしましたか？"
+
+#: mobilestore/default/woocommerce/checkout/form-login.php:23
+msgid "Enter your login details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section."
+msgstr "以下のボックスにログイン詳細を入力してください。新しいお客様は請求書&amp;配送セクションにお進みください。"
+
+#: mobilestore/default/woocommerce/checkout/form-pay.php:19
+#: mobilestore/default/woocommerce/checkout/review-order.php:18
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:22
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:23
+#: mobilestore/default/woocommerce/emails/customer-invoice.php:27
+#: mobilestore/default/woocommerce/emails/customer-note.php:27
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:23
+#: mobilestore/default/woocommerce/order/order-details.php:20
+msgid "Product"
+msgstr "製品"
+
+#: mobilestore/default/woocommerce/checkout/form-pay.php:20
+msgid "Totals"
+msgstr "合計"
+
+#: mobilestore/default/woocommerce/checkout/form-pay.php:52
+msgid "Payment"
+msgstr "支払"
+
+#: mobilestore/default/woocommerce/checkout/form-pay.php:77
+msgid "Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements."
+msgstr "申し訳ございません。あなたのロケーションの利用できる支払方法がありません。ヘルプが必要な方、または別の手配をご希望の方はご連絡ください。"
+
+#: mobilestore/default/woocommerce/checkout/form-pay.php:87
+msgid "Pay for order"
+msgstr "注文の支払"
+
+#: mobilestore/default/woocommerce/checkout/form-shipping.php:31
+msgid "Ship to a different address?"
+msgstr "別の住所に配送しますか？"
+
+#: mobilestore/default/woocommerce/checkout/form-shipping.php:57
+msgid "Additional Information"
+msgstr "追加情報"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:19
+#: mobilestore/default/woocommerce/order/order-details.php:21
+msgid "Total"
+msgstr "合計"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:171
+msgid "Please fill in your details above to see available payment methods."
+msgstr "上記の詳細をご記入頂き可能な支払方法を表示してください。"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:173
+msgid "Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements."
+msgstr "申し訳ございません。あなたの州への利用可能な支払方法がありません。ヘルプが必要な方、または別の手配をご希望の方はご連絡ください。"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:184
+msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so."
+msgstr "あなたのブラウザがJavaScriptに対応していません。または無効です。注文する前に<em>合計を更新</em>ボタンをクリックしてください。 失敗すると上記の金額以上に請求される場合がございます。"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:184
+msgid "Update totals"
+msgstr "合計を更新"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:194
+msgid "I  accept the <a href=\"%s\" target=\"_blank\">terms &amp; conditions</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">利用規約</a>を承認します"
+
+#: mobilestore/default/woocommerce/checkout/review-order.php:200
+msgid "Place order"
+msgstr "注文する"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:13
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:13
+msgid "You have received an order from %s. Their order is as follows:"
+msgstr "%sからの注文を受け取りました。この注文は以下の通りです:"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:17
+msgid "Order: %s"
+msgstr "注文: %s"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:23
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:24
+#: mobilestore/default/woocommerce/emails/customer-invoice.php:28
+#: mobilestore/default/woocommerce/emails/customer-note.php:28
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:24
+msgid "Quantity"
+msgstr "品質"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:24
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:25
+#: mobilestore/default/woocommerce/emails/customer-invoice.php:29
+#: mobilestore/default/woocommerce/emails/customer-note.php:29
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:25
+msgid "Price"
+msgstr "価格"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:50
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:51
+#: mobilestore/default/woocommerce/emails/customer-note.php:55
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:51
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:38
+msgid "Customer details"
+msgstr "顧客詳細"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:53
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:54
+#: mobilestore/default/woocommerce/emails/customer-note.php:58
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:54
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:41
+#: mobilestore/default/woocommerce/emails/plain/customer-completed-order.php:41
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:49
+#: mobilestore/default/woocommerce/emails/plain/customer-processing-order.php:41
+msgid "Email:"
+msgstr "メール:"
+
+#: mobilestore/default/woocommerce/emails/admin-new-order.php:56
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:57
+#: mobilestore/default/woocommerce/emails/customer-note.php:61
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:57
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:44
+#: mobilestore/default/woocommerce/emails/plain/customer-completed-order.php:44
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:52
+#: mobilestore/default/woocommerce/emails/plain/customer-processing-order.php:44
+msgid "Tel:"
+msgstr "電話番号:"
+
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:14
+#: mobilestore/default/woocommerce/emails/plain/customer-completed-order.php:13
+msgid "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference:"
+msgstr "こんにちは。%sの最近の注文が完了しました。ご参考までに注文の詳細は以下の通りです："
+
+#: mobilestore/default/woocommerce/emails/customer-completed-order.php:18
+#: mobilestore/default/woocommerce/emails/customer-invoice.php:22
+#: mobilestore/default/woocommerce/emails/customer-note.php:22
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:18
+msgid "Order:"
+msgstr "注文:"
+
+#: mobilestore/default/woocommerce/emails/customer-invoice.php:16
+#: mobilestore/default/woocommerce/emails/plain/customer-invoice.php:14
+msgid "An order has been created for you on %s. To pay for this order please use the following link: %s"
+msgstr "注文が%sで作成されました。この注文の支払は以下のリンクをご利用ください: %s"
+
+#: mobilestore/default/woocommerce/emails/customer-invoice.php:16
+msgid "pay"
+msgstr "支払"
+
+#: mobilestore/default/woocommerce/emails/customer-new-account.php:14
+#: mobilestore/default/woocommerce/emails/plain/customer-new-account.php:13
+msgid "Thanks for creating an account on %s. Your username is <strong>%s</strong>."
+msgstr "%sでアカウントを作成頂きありがとうございます。ユーザー名は<strong>%s</strong>です。"
+
+#: mobilestore/default/woocommerce/emails/customer-new-account.php:16
+#: mobilestore/default/woocommerce/emails/plain/customer-new-account.php:15
+msgid "You can access your account area here: %s."
+msgstr "ここからアカウントにアクセスできます: %s"
+
+#: mobilestore/default/woocommerce/emails/customer-note.php:14
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:13
+msgid "Hello, a note has just been added to your order:"
+msgstr "こんにちは。メモが注文に追加されました:"
+
+#: mobilestore/default/woocommerce/emails/customer-note.php:18
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:21
+msgid "For your reference, your order details are shown below."
+msgstr "ご参考までに注文の詳細が以下に表示されます。"
+
+#: mobilestore/default/woocommerce/emails/customer-processing-order.php:14
+#: mobilestore/default/woocommerce/emails/plain/customer-processing-order.php:13
+msgid "Your order has been received and is now being processed. Your order details are shown below for your reference:"
+msgstr "注文を受け取りました。処理中です。ご参考までに注文の詳細は以下の通りです："
+
+#: mobilestore/default/woocommerce/emails/customer-reset-password.php:14
+#: mobilestore/default/woocommerce/emails/plain/customer-reset-password.php:13
+msgid "Someone requested that the password be reset for the following account:"
+msgstr "以下のアカウントのパスワード再設定がリクエストされました："
+
+#: mobilestore/default/woocommerce/emails/customer-reset-password.php:15
+#: mobilestore/default/woocommerce/emails/plain/customer-reset-password.php:15
+msgid "Username: %s"
+msgstr "ユーザー名: %s"
+
+#: mobilestore/default/woocommerce/emails/customer-reset-password.php:16
+#: mobilestore/default/woocommerce/emails/plain/customer-reset-password.php:16
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr "間違いであればこのメールを無視してください。エラーは発生しません。"
+
+#: mobilestore/default/woocommerce/emails/customer-reset-password.php:17
+#: mobilestore/default/woocommerce/emails/plain/customer-reset-password.php:17
+msgid "To reset your password, visit the following address:"
+msgstr "パスワードを再設定するには以下のアドレスを訪問してください："
+
+#: mobilestore/default/woocommerce/emails/customer-reset-password.php:20
+msgid "Click here to reset your password"
+msgstr "ここをクリックしてパスワードを再設定"
+
+#: mobilestore/default/woocommerce/emails/email-addresses.php:18
+#: mobilestore/default/woocommerce/emails/plain/email-addresses.php:12
+msgid "Billing address"
+msgstr "請求先"
+
+#: mobilestore/default/woocommerce/emails/email-addresses.php:28
+#: mobilestore/default/woocommerce/emails/plain/email-addresses.php:17
+msgid "Shipping address"
+msgstr "配送住所"
+
+#: mobilestore/default/woocommerce/emails/email-order-items.php:34
+msgid "This product is no longer available"
+msgstr "この製品はご利用になれません"
+
+#: mobilestore/default/woocommerce/emails/email-order-items.php:76
+msgid "Download %d:"
+msgstr "%dをダウンロード:"
+
+#: mobilestore/default/woocommerce/emails/email-order-items.php:78
+msgid "Download:"
+msgstr "ダウンロード:"
+
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:19
+#: mobilestore/default/woocommerce/emails/plain/customer-completed-order.php:19
+#: mobilestore/default/woocommerce/emails/plain/customer-invoice.php:20
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:27
+#: mobilestore/default/woocommerce/emails/plain/customer-processing-order.php:19
+msgid "Order number: %s"
+msgstr "注文番号: %s"
+
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:20
+#: mobilestore/default/woocommerce/emails/plain/customer-completed-order.php:20
+#: mobilestore/default/woocommerce/emails/plain/customer-invoice.php:21
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:28
+#: mobilestore/default/woocommerce/emails/plain/customer-processing-order.php:20
+msgid "Order date: %s"
+msgstr "注文日: %s"
+
+#: mobilestore/default/woocommerce/emails/plain/admin-new-order.php:20
+msgid "jS F Y"
+msgstr "timestamp"
+
+#: mobilestore/default/woocommerce/emails/plain/customer-completed-order.php:38
+#: mobilestore/default/woocommerce/emails/plain/customer-note.php:46
+#: mobilestore/default/woocommerce/emails/plain/customer-processing-order.php:38
+#: mobilestore/default/woocommerce/order/order-details.php:97
+msgid "Your details"
+msgstr "詳細"
+
+#: mobilestore/default/woocommerce/emails/plain/email-order-items.php:28
+msgid "Quantity: %s"
+msgstr "数量: %s"
+
+#: mobilestore/default/woocommerce/emails/plain/email-order-items.php:31
+msgid "Cost: %s"
+msgstr "価格: %s"
+
+#: mobilestore/default/woocommerce/loop/no-products-found.php:14
+msgid "No products were found matching your search."
+msgstr "検索に一致する製品が見つかりませんでした。"
+
+#: mobilestore/default/woocommerce/loop-shop.php:40
+msgid "No products found which match your selection."
+msgstr "あなたの選択に一致する製品が見つかりませんでした。"
+
+#: mobilestore/default/woocommerce/myaccount/my-account.php:19
+msgid "Hello <strong>%1$s</strong> (not %1$s? <a href=\"%2$s\">Sign out</a>)."
+msgstr "こんにちは<strong>%1$s</strong>さん (%1$sさんではないですか <a href=\"%2$s\">サインアウト</a>)。"
+
+#: mobilestore/default/woocommerce/myaccount/my-account.php:26
+msgid "<a href=\"%s\">Edit your password and account details</a>."
+msgstr "<a href=\"%s\">パスワードとアカウント詳細を編集</a>。"
+
+#: mobilestore/default/woocommerce/myaccount/my-orders.php:26
+msgid "Recent Orders"
+msgstr "最近の注文"
+
+#: mobilestore/default/woocommerce/myaccount/my-orders.php:40
+msgid "%s for %s item"
+msgid_plural "%s for %s items"
+msgstr[0] "%sアイテムの%s"
+msgstr[1] "%sアイテムの%s"
+
+#: mobilestore/default/woocommerce/myaccount/my-orders.php:49
+msgid "Pay"
+msgstr "支払"
+
+#: mobilestore/default/woocommerce/myaccount/my-orders.php:56
+#: prose/default/comments.php:48 themes/foundation/default/comments.php:48
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: mobilestore/default/woocommerce/myaccount/my-orders.php:62
+msgid "View"
+msgstr "表示"
+
+#: mobilestore/default/woocommerce/order/order-details.php:66
+msgid "Download file%s"
+msgstr "ダウンロードファイル%s"
+
+#: mobilestore/default/woocommerce/order/order-details.php:101
+msgid "Email"
+msgstr "メール"
+
+#: mobilestore/default/woocommerce/order/order-details.php:102
+msgid "Telephone"
+msgstr "電話番号"
+
+#: mobilestore/default/woocommerce/order/order-details.php:118
+msgid "Billing Address"
+msgstr "請求先"
+
+#: mobilestore/default/woocommerce/order/order-details.php:122
+#: mobilestore/default/woocommerce/order/order-details.php:137
+msgid "N/A"
+msgstr "なし"
+
+#: mobilestore/default/woocommerce/order/order-details.php:133
+msgid "Shipping Address"
+msgstr "配送先"
+
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:63
+msgid "Products tagged &ldquo;"
+msgstr "タグされた製品&ldquo;"
+
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:91
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:190
+msgid "Search results for &ldquo;"
+msgstr "&ldquo;の検索結果"
+
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:148
+msgid "Error 404"
+msgstr "エラー404"
+
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:194
+msgid "Posts tagged &ldquo;"
+msgstr "タグされた投稿&ldquo;"
+
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:199
+msgid "Author:"
+msgstr "著者:"
+
+#: mobilestore/default/woocommerce/shop/breadcrumb.php:204
+#: themes/foundation/root-functions.php:1092
+msgid "Page"
+msgstr "ページ"
+
+#: mobilestore/default/woocommerce/shop/form-login.php:20
+msgid "Username or email"
+msgstr "ユーザー名またはメール"
+
+#: mobilestore/default/woocommerce/shop/form-login.php:24
+msgid "Password"
+msgstr "パスワード"
+
+#: mobilestore/default/woocommerce/shop/form-login.php:33
+msgid "Lost Password?"
+msgstr "パスワードをお忘れですか？"
+
+#: mobilestore/root-functions.php:6
+msgid "Store"
+msgstr "ストア"
+
+#: mobilestore/root-functions.php:196
+msgid "Off-Canvas left menu"
+msgstr "オフキャンバス左メニュー"
+
+#: mobilestore/root-functions.php:205
+msgid "Footer Menu"
+msgstr "フッターメニュー"
+
+#: mobilestore/root-functions.php:208
+msgid "Menu shown in the MobileStore footer"
+msgstr "MobileStoreフッター内に表示されるメニュー"
+
+#: mobilestore/root-functions.php:215
+msgid "Menu & Cart Background"
+msgstr "メニュー&カート背景"
+
+#: mobilestore/root-functions.php:218
+msgid "Header & Footer Background"
+msgstr "ヘッダー&フッター背景"
+
+#: mobilestore/root-functions.php:270
+msgid "Primary Actions & Purchase Flow"
+msgstr "プライマリアクション&購入の流れ"
+
+#: mobilestore/root-functions.php:281
+msgid "Highlight Color"
+msgstr "ハイライトカラー"
+
+#: mobilestore/root-functions.php:397
+msgid "Product Listing"
+msgstr "製品リスト"
+
+#: mobilestore/root-functions.php:403
+msgid "Number of products shown per page in product listings"
+msgstr "製品リストのページごとの表示製品数"
+
+#: mobilestore/root-functions.php:411
+msgid "Product Pagination"
+msgstr "製品ページネーション"
+
+#: mobilestore/root-functions.php:412
+msgid "Use AJAX load more or traditional numbered pagination."
+msgstr "AJAX load moreまたは伝統的な数字ページネーションを使用。"
+
+#: mobilestore/root-functions.php:416
+msgid "Use AJAX load more"
+msgstr "AJAX load moreを使用"
+
+#: mobilestore/root-functions.php:417
+msgid "Use numbered pages"
+msgstr "数字ページを使用"
+
+#: mobilestore/root-functions.php:429
+msgid "Product Filters"
+msgstr "製品フィルター"
+
+#: mobilestore/root-functions.php:435
+msgid "Show WooCommerce product filters for"
+msgstr "WooCommerce製品フィルター表示"
+
+#: mobilestore/root-functions.php:450
+msgid "Site Sidebar"
+msgstr "サイトサイドバー"
+
+#: mobilestore/root-functions.php:456
+msgid "Show category menu in sidebar"
+msgstr "サイドバー内のカテゴリーメニュー表示"
+
+#: mobilestore/root-functions.php:464
+msgid "Show recently viewed products in sidebar"
+msgstr "サイドバー内の最近表示された製品を見る"
+
+#: mobilestore/root-functions.php:548
+msgid "Site logo display size"
+msgstr "サイトロゴディスプレイサイズ"
+
+#: mobilestore/root-functions.php:553
+msgid "Short (default)"
+msgstr "短い(デフォルト)"
+
+#: mobilestore/root-functions.php:554
+msgid "Tall (longer vertically for square logos)"
+msgstr "長い(四角のロゴを垂直に長く表示)"
+
+#: mobilestore/root-functions.php:561
+msgid "Show site description in large header"
+msgstr "大きなヘッダー内のサイト説明表示"
+
+#: multi-ads/multi-ads.php:246
+msgid "Header Ad"
+msgstr "ヘッダー広告"
+
+#: multi-ads/multi-ads.php:248
+msgid "Footer Ad"
+msgstr "フッター広告"
+
+#: multi-ads/multi-ads.php:250
+msgid "Pre-content Ad"
+msgstr "プレコンテンツ広告"
+
+#: multi-ads/multi-ads.php:252
+msgid "Post-content Ad"
+msgstr "ポストコンテンツ広告"
+
+#: multi-ads/multi-ads.php:254
+msgid "Mid-content Ad"
+msgstr "中心コンテンツ広告"
+
+#: multi-ads/multi-ads.php:267
+msgid "Ignored URLs"
+msgstr "無視されたURL"
+
+#: multi-ads/multi-ads.php:273
+msgid "Do not show ads on these URLs"
+msgstr "これらのURLに広告を表示しない"
+
+#: multi-ads/multi-ads.php:293
+msgid "Enabled"
+msgstr "有効"
+
+#: multi-ads/multi-ads.php:301
+msgid "Perform A/B test with secondary advertising unit"
+msgstr "二次広告単位でA/Bテストを実行"
+
+#: multi-ads/multi-ads.php:309
+msgid "Primary Advertising Unit"
+msgstr "一次広告単位"
+
+#: multi-ads/multi-ads.php:310
+msgid "HTML, CSS and JS are all accepted."
+msgstr "HTML、CSS、JSが全て承認されました。"
+
+#: multi-ads/multi-ads.php:317
+msgid "Secondary Advertising Unit"
+msgstr "二次広告単位"
+
+#: multi-ads/multi-ads.php:318
+msgid "If defined, secondary advertising code will be shown 50% of the time."
+msgstr "定義された場合、二次広告コードが半分の時間で表示されます。"
+
+#: multi-ads/multi-ads.php:325
+msgid "Display on archive/post listings"
+msgstr "アーカイブ/投稿リストで表示"
+
+#: multi-ads/multi-ads.php:333
+msgid "Display on single posts"
+msgstr "シングル投稿で表示"
+
+#: multi-ads/multi-ads.php:341
+msgid "Display on static pages"
+msgstr "戦略ページで表示"
+
+#: multi-ads/multi-ads.php:349
+msgid "Display on taxonomy listings"
+msgstr "分類法リストで表示"
+
+#: multi-ads/multi-ads.php:356
+msgid "Display in search results"
+msgstr "検索結果で表示"
+
+#: multi-ads/multi-ads.php:364
+msgid "Minimum characters in post/page to show ad."
+msgstr "広告表示のための投稿/ページ内の最小文字。"
+
+#: open/default/front-page.php:25
+msgid "We&lsquo;re <em>open</em> every %s %s."
+msgstr "毎%s %sに<em>あいて</em>います。"
+
+#: open/default/front-page.php:27
+msgid "Sorry, we&lsquo;re <em>closed</em> every %s."
+msgstr "毎%sは申し訳ありませんが<em>お休み</em>です。"
+
+#: open/default/functions.php:18 open/default/location.php:5
+#: simple/default/front-page.php:20
+msgid "Our Location"
+msgstr "当社ロケーション"
+
+#: open/default/functions.php:22 open/default/hours.php:5
+msgid "Our Hours"
+msgstr "営業時間"
+
+#: open/default/hours.php:12 open/root-functions.php:206
+msgid "Sunday"
+msgstr "日曜日"
+
+#: open/default/hours.php:13 open/root-functions.php:214
+msgid "Monday"
+msgstr "月曜日"
+
+#: open/default/hours.php:14 open/root-functions.php:222
+msgid "Tuesday"
+msgstr "火曜日"
+
+#: open/default/hours.php:15 open/root-functions.php:230
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: open/default/hours.php:16 open/root-functions.php:238
+msgid "Thursday"
+msgstr "木曜日"
+
+#: open/default/hours.php:17 open/root-functions.php:246
+msgid "Friday"
+msgstr "金曜日"
+
+#: open/default/hours.php:18 open/root-functions.php:254
+msgid "Saturday"
+msgstr "土曜日"
+
+#: open/default/hours.php:34
+msgid "Closed"
+msgstr "閉店"
+
+#: open/root-functions.php:77
+msgid "Open Homepage Menu"
+msgstr "ホームページメニューを開く"
+
+#: open/root-functions.php:83
+msgid "Show full menu on Open homepage"
+msgstr "オープンホームページで完全なメニューを表示"
+
+#: open/root-functions.php:84
+msgid "If disabled, only Location & Hours links will be shown"
+msgstr "無効の場合、ロケーション＆時間のリンクのみが表示されます"
+
+#: open/root-functions.php:100
+msgid "Tagline"
+msgstr "タグライン"
+
+#: open/root-functions.php:106
+msgid "Displayed below your logo on the homepage."
+msgstr "ホームページのロゴの下に表示されています。"
+
+#: open/root-functions.php:125
+msgid "Displayed behind header on pages."
+msgstr "ページのヘッダーの背後に表示されています。"
+
+#: open/root-functions.php:138
+msgid "Location"
+msgstr "ロケーション"
+
+#: open/root-functions.php:144 simple/root-functions.php:230
+msgid "Map address"
+msgstr "地図アドレス"
+
+#: open/root-functions.php:145
+msgid "Enter an address and a menu item for 'Our Location' will be shown."
+msgstr "住所を入力すると、'私達のロケーション'のメニューアイテムが表示されます。"
+
+#: open/root-functions.php:157
+msgid "Call to Action"
+msgstr "実行要請"
+
+#: open/root-functions.php:163
+msgid "Show call to action button at bottom of pages"
+msgstr "ページの下に実行要請表示"
+
+#: open/root-functions.php:164
+msgid "Give visitors a one-click action to follow and increase your conversions."
+msgstr "訪問者にワンクリックアクションを与え、あなたの会話をフォローして増やす。"
+
+#: open/root-functions.php:171
+msgid "Button Label"
+msgstr "ボタンラベル"
+
+#: open/root-functions.php:179
+msgid "Target URL"
+msgstr "ターゲットURL"
+
+#: open/root-functions.php:180
+msgid "Prefix your phone number with \"tel:\" to allow one-click phone calls."
+msgstr "\"tel:\"で電話番号を予め設定してワンクリック電話コールを許可する。"
+
+#: open/root-functions.php:192
+msgid "Hours"
+msgstr "時間"
+
+#: open/root-functions.php:198
+msgid "Use built-in Hours feature"
+msgstr "ビルトイン時間機能を使用"
+
+#: open/root-functions.php:199
+msgid "Add your hours and the current day's hours will appear on the homepage along with a menu item for 'Our Hours'."
+msgstr "あなたの時間を追加すると現在のその日の時間がホームページに'営業時間'のメニューアイテムと一緒に表示されます。"
+
+#: open/root-functions.php:207
+msgid "Will show as closed if left blank."
+msgstr "空白にすると閉まっていると表示されます。"
+
+#: open/root-functions.php:263
+msgid "Let visitors know about holidays, vacations, and other special hours"
+msgstr "休日、休暇、他の特別な時間について訪問者に知らせる"
+
+#: open/root-functions.php:359
+msgid "Main branding colour"
+msgstr "メインでブレンドする色"
+
+#: pro/modules/geolocation/geolocation.php:11
+msgid "Local Promotions"
+msgstr "ローカルプロモーション"
+
+#: pro/modules/geolocation/geolocation.php:17
+msgid "Enable location detection"
+msgstr "ロケーション検知を有効にする"
+
+#: pro/modules/geolocation/geolocation.php:25
+msgid "Address on which to center the geofence"
+msgstr "地理上のフェンスを真ん中にする住所"
+
+#: pro/modules/geolocation/geolocation.php:33
+msgid "Geofence Radius (in km)"
+msgstr "地理上のフェンス半径(km)"
+
+#: pro/modules/geolocation/geolocation.php:41
+msgid "Text to show to nearby visitors"
+msgstr "近くのビジターに表示するテキスト"
+
+#: pro/modules/geolocation/geolocation.php:49
+msgid "Encoded Location"
+msgstr "エンコードされたロケーション"
+
+#: pro/modules/webapp/webapp.php:129
+msgid "External link— open it in the browser?"
+msgstr "外部リンク - ブラウザーで開きますか？"
+
+#: pro/modules/webapp/webapp.php:130
+msgid "File link— Do you want to open it in the browser?"
+msgstr "ファイルリンク— ブラウザーで開きますか？"
+
+#: pro/professional.php:19
+msgid "Show WPML language switcher in theme footer"
+msgstr "テーマフッターのWPML言語切替"
+
+#: pro/professional.php:117
+msgid "License Expired"
+msgstr "ライセンスの有効期限が切れました"
+
+#: pro/professional.php:118
+msgid "Your product license has expired. Renew now to continue to receive feature and security updates."
+msgstr "あなたの製品ライセンスの有効期限が切れました。今すぐ更新して機能とセキュリティ更新を受け取ってください。"
+
+#: pro/professional.php:124
+msgid "License Missing"
+msgstr "ライセンスが見つかりません"
+
+#: pro/professional.php:125
+msgid "This installation of WPtouch Pro is currently unlicensed."
+msgstr "WPtouch Proのこのインストールは現在ライセンスが取得されていません。"
+
+#: pro/professional.php:138 pro/professional.php:145 pro/professional.php:153
+msgid "WPtouch Pro %s"
+msgstr "WPtouch Pro %s"
+
+#: pro/professional.php:139
+msgid "A new version of WPtouch Pro is available. Renew your license to re-enable product updates."
+msgstr "新しいWPtouchプロ版がご利用できます。あなたのライセンスを更新して製品更新を再度有効にしてください。"
+
+#: pro/professional.php:146
+msgid "A new version of WPtouch Pro is available. Please activate or purchase a license to enable product updates."
+msgstr "新しいWPtouchプロ版がご利用になれます。製品更新を有効にするにはライセンスを有効にするか購入してください。"
+
+#: pro/professional.php:154
+msgid "A new version of WPtouch Pro is available."
+msgstr "WPtouch Pro版の新バージョンがご利用できます。"
+
+#: pro/professional.php:167
+msgid "Theme Update Available"
+msgstr "利用可能なテーマアップデート"
+
+#: pro/professional.php:168 pro/professional.php:249
+msgid "One or more updates are available for your installed themes."
+msgstr "あなたのインストールしたテーマに1つ以上の利用できるアップデートがあります。"
+
+#: pro/professional.php:182
+msgid "Extension Update Available"
+msgstr "拡張更新がご利用できます"
+
+#: pro/professional.php:183 pro/professional.php:252
+msgid "One or more updates are available for your installed extensions."
+msgstr "あなたがインストールした拡張へのご利用できるアップデートが1つ以上あります。"
+
+#: pro/professional.php:196
+msgid "WPtouch Pro 3 cannot co-exist with WPtouch 1.x. Disable it first in the WordPress Plugins settings."
+msgstr "WPtouch Pro 3はWPtouch 1.xと別のものです。まずWordPressプラグイン設定で無効にしてください。"
+
+#: pro/professional.php:206
+msgid "WPtouch Pro 3 cannot co-exist with WPtouch Pro 2.x. Disable it first in the WordPress Plugins settings."
+msgstr "WPtouch Pro 3はWPtouch 2.xと別のものです。まずWordPressプラグイン設定で無効にしてください。"
+
+#: pro/professional.php:245
+msgid "WPtouch Pro: Theme &amp; Extension Updates Available"
+msgstr "WPtouchプロ版: テーマ &amp; 拡張更新可能"
+
+#: pro/professional.php:246
+msgid "One or more updates are available for your installed themes and extensions."
+msgstr "あなたがインストールしたテーマや拡張用の1つ以上の更新が利用できます。"
+
+#: pro/professional.php:248
+msgid "WPtouch Pro: Theme Updates Available"
+msgstr "WPtouchプロ版: テーマ更新利用可能"
+
+#: pro/professional.php:251
+msgid "WPtouch Pro: Extension Updates Available"
+msgstr "WPtouchプロ版: 拡張更新利用可能"
+
+#: pro/professional.php:378 pro/professional.php:402
+msgid "Unknown error"
+msgstr "不明なエラー"
+
+#: pro/professional.php:771
+msgid "%sYour customizations to %s have been saved as a new theme and the original reinstalled for your reference."
+msgstr "%sあなたのカスタマイゼーション%sが新しいテーマとして保存され、オリジナルが参照用に再度インストールされました。"
+
+#: pro/professional.php:775
+msgid "WPtouch Pro: Some themes or extensions could not be auto-updated. Please check the WPtouch Pro Themes &amp; Extensions page to manually update them."
+msgstr "WPtouchプロ版: いくつかのテーマまたは拡張が自動で更新されました。WPtouchプロ版テーマ&amp;拡張ページを確認して手動で更新してください。"
+
+#: pro/professional.php:777
+msgid "WPtouch Pro: Your themes and extensions have been automatically updated. Thank you for updating WPtouch Pro!"
+msgstr "WPtouchプロ版: あなたのテーマと拡張は自動で更新されました。WPtouch Pro版の更新ありがとうございます！"
+
+#: prose/default/comments.php:20 prose/default/comments.php:26
+#: themes/foundation/default/comments.php:20
+#: themes/foundation/default/comments.php:26
+msgid "Load More Comments&hellip;"
+msgstr "他のコメントを読み込む&hellip;"
+
+#: prose/default/comments.php:38 themes/foundation/default/comments.php:38
+msgid "Comments are closed"
+msgstr "コメントが閉鎖中です"
+
+#: prose/default/comments.php:51 themes/foundation/default/comments.php:51
+msgid "Leave a Reply"
+msgstr "返信を残す"
+
+#: prose/default/comments.php:51 themes/foundation/default/comments.php:51
+msgid "Leave a Reply to %s"
+msgstr "%sに返信を残す"
+
+#: prose/default/comments.php:54 themes/foundation/default/comments.php:54
+msgid "You must be %slogged in%s to post a comment."
+msgstr "コメントの投稿は%sログイン%sしてください。"
+
+#: prose/default/comments.php:61 themes/foundation/default/comments.php:61
+msgid "Logged in as"
+msgstr "右記としてログイン"
+
+#: prose/default/comments.php:61 themes/foundation/default/comments.php:61
+msgid "Log out"
+msgstr "ログアウト"
+
+#: prose/default/comments.php:65 themes/foundation/default/comments.php:65
+msgid "Name"
+msgstr "名前"
+
+#: prose/default/comments.php:67 themes/foundation/default/comments.php:67
+#: themes/foundation/modules/social-links/social-links.php:102
+msgid "E-Mail"
+msgstr "Eメール"
+
+#: prose/default/comments.php:69 themes/foundation/default/comments.php:69
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: prose/default/comments.php:77 themes/foundation/default/comments.php:77
+msgid "Publish"
+msgstr "公開する"
+
+#: prose/default/functions.php:34
+msgid "%d minute"
+msgstr "%d分"
+
+#: prose/default/functions.php:35
+msgid "%d minutes"
+msgstr "%d分"
+
+#: prose/default/functions.php:36
+msgid "%d minute remaining"
+msgstr "残り%d分"
+
+#: prose/default/functions.php:37
+msgid "%d minutes remaining"
+msgstr "残り%d分"
+
+#: prose/default/functions.php:38
+msgid "Share post"
+msgstr "投稿を共有"
+
+#: prose/default/header-bottom.php:43
+msgid "Reading Text Size"
+msgstr "テキストサイズを読む"
+
+#: prose/default/header-bottom.php:46
+msgid "Small"
+msgstr "小"
+
+#: prose/default/header-bottom.php:49
+msgid "Medium"
+msgstr "中"
+
+#: prose/default/header-bottom.php:52
+msgid "Large"
+msgstr "大"
+
+#: prose/default/header-bottom.php:55
+msgid "Text Sample"
+msgstr "テキストサンプル"
+
+#: prose/default/header-bottom.php:101
+msgid "Collection"
+msgstr "コレクション"
+
+#: prose/default/header-bottom.php:103
+msgid "Posts Tagged"
+msgstr "タグされた投稿"
+
+#: prose/default/related-posts.php:8
+msgid "Read Next"
+msgstr "次を読む"
+
+#: prose/default/single.php:31
+msgid "Discuss this post"
+msgstr "この投稿を議論する"
+
+#: prose/default/single.php:33
+msgid "View discussion"
+msgstr "議論を表示"
+
+#: prose/root-functions.php:65
+msgid "Show comments when reading posts"
+msgstr "投稿を読んでいる際、コメントを表示"
+
+#: prose/root-functions.php:66
+msgid "Comment form will not appear for posts with comments turned off."
+msgstr "コメントがオフになっている投稿はコメントフォームが表示されません。"
+
+#: prose/root-functions.php:87
+msgid "Use featured image as the header background when viewing single posts"
+msgstr "一回の投稿を表示中、ヘッダーの背景として特別な画像を使用"
+
+#: prose/root-functions.php:155
+msgid "Drop Caps"
+msgstr "ドロップキャプス"
+
+#: prose/root-functions.php:161
+msgid "Use a drop cap at the start of each blog post."
+msgstr "それぞれのブログ投稿の開始でドロップキャプスを使用。"
+
+#: prose/root-functions.php:208
+msgid "Off-canvas menu for Prose"
+msgstr "Proseのオフキャンバスメニュー"
+
+#: responsive-images/responsive-images.php:101
+msgid "Responsive Images"
+msgstr "反応が早い画像"
+
+#: responsive-images/responsive-images.php:107
+msgid "Include desktop optimizations for mobile devices"
+msgstr "モバイルでバイスのデスクトップ最適化を含む"
+
+#: responsive-images/responsive-images.php:108
+msgid "Normally only images on mobile are optimized"
+msgstr "通常モバイルの画像のみ最適化されます"
+
+#: responsive-images/responsive-images.php:115
+msgid "Performance preference"
+msgstr "パフォーマンス詳細設定"
+
+#: responsive-images/responsive-images.php:120
+msgid "Optimize for page speed"
+msgstr "ページ速度最適化"
+
+#: responsive-images/responsive-images.php:121
+msgid "Optimize for quality"
+msgstr "品質速度の最適化"
+
+#: simple/default/front-page.php:14
+msgid "Call Us"
+msgstr "当社に電話してください"
+
+#: simple/default/header-bottom.php:17
+msgid "Toggle Menu"
+msgstr "メニュー切替え"
+
+#: simple/root-functions.php:59
+msgid "Site Menu (Pulldown)"
+msgstr "サイトメニュー (プルダウン)"
+
+#: simple/root-functions.php:62
+msgid "Pull-down menu at top of pages"
+msgstr "トップページのプルダウンメニュー"
+
+#: simple/root-functions.php:70
+msgid "Front Page Menu"
+msgstr "フロントページメニュー"
+
+#: simple/root-functions.php:73
+msgid "Displayed below front page menu and content"
+msgstr "フロントページメニューとコンテンツの下にディスプレイされました"
+
+#: simple/root-functions.php:191
+msgid "Enable search on blog pages"
+msgstr "ブログページで検索を有効にする"
+
+#: simple/root-functions.php:205
+msgid "Homepage Call Us"
+msgstr "ホームページ　当社に電話してください"
+
+#: simple/root-functions.php:211
+msgid "Phone number"
+msgstr "電話番号"
+
+#: simple/root-functions.php:212
+msgid "Enter a phone number and a homepage menu item for 'call us' will be shown."
+msgstr "電話番号とホームページメニューアイテムを入力すると'当社に電話する'が表示されます。"
+
+#: simple/root-functions.php:224
+msgid "Homepage Location"
+msgstr "ホームページロケーション"
+
+#: simple/root-functions.php:231
+msgid "Enter an address and a homepage menu item for 'Our Location' will be shown."
+msgstr "アドレスを入力すると'当社ロケーション'のホームページメニューアイテムが表示されます。"
+
+#: simple/root-functions.php:243
+msgid "Front Page Content"
+msgstr "フロントページコンテンツ"
+
+#: simple/root-functions.php:249
+msgid "Front page alternate content"
+msgstr "フロントページ代替コンテンツ"
+
+#: simple/root-functions.php:250
+msgid "Shows above the front page menu (if enabled), HTML allowed."
+msgstr "フロントページメニューの上に表示(有効な場合)、HTML許可。"
+
+#: simple/root-functions.php:287
+msgid "Add a light noise effect to the drop-down menu and theme background"
+msgstr "ドロップダウンメニューとテーマ背景へ軽くノイズ効果を追加"
+
+#: themes/foundation/default/404.php:6
+msgid "404 Not Found"
+msgstr "404 Not Found"
+
+#: themes/foundation/default/404.php:8
+msgid "The post or page you requested is no longer available."
+msgstr "リクエストされた投稿やページは無効です。"
+
+#: themes/foundation/default/attachment.php:10
+msgid "Back to %s"
+msgstr "%sに戻る"
+
+#: themes/foundation/default/attachment.php:47
+msgid "&laquo; previous in gallery"
+msgstr "&laquo; ギャラリーの以前のもの"
+
+#: themes/foundation/default/attachment.php:49
+msgid "next in gallery &raquo;"
+msgstr "ギャラリーの次のもの &raquo;"
+
+#: themes/foundation/default/footer.php:10
+msgid "Back to top"
+msgstr "トップに戻る"
+
+#: themes/foundation/default/formerror.php:6
+msgid "Comment Error"
+msgstr "コメントエラー"
+
+#: themes/foundation/default/formerror.php:8
+msgid "Please enter all fields correctly to post a comment."
+msgstr "コメントの投稿は正しく全てのフィールドを入力してください。"
+
+#: themes/foundation/default/formerror.php:9
+msgid "Go back"
+msgstr "戻る"
+
+#: themes/foundation/default/one-comment.php:17
+msgid "Your comment is awaiting moderation"
+msgstr "コメントが適正化を待っています"
+
+#: themes/foundation/default/one-comment.php:21
+msgid "Reply"
+msgstr "返信"
+
+#: themes/foundation/default/switch-link.php:8
+msgid "mobile"
+msgstr "モバイル"
+
+#: themes/foundation/default/switch-link.php:9
+msgid "desktop"
+msgstr "デスクトップ"
+
+#: themes/foundation/modules/advertising/advertising.php:18
+msgid "Service"
+msgstr "サービス"
+
+#: themes/foundation/modules/advertising/advertising.php:24
+msgid "Choose a service"
+msgstr "サービスを選択"
+
+#: themes/foundation/modules/advertising/advertising.php:30
+msgid "Google Adsense"
+msgstr "Googleアドセンス"
+
+#: themes/foundation/modules/advertising/advertising.php:31
+msgctxt "Refers to a custom advertising service"
+msgid "Custom"
+msgstr "カスタム"
+
+#: themes/foundation/modules/advertising/advertising.php:41
+msgid "Google AdSense"
+msgstr "Google AdSense"
+
+#: themes/foundation/modules/advertising/advertising.php:44
+msgid "Publisher ID"
+msgstr "発行人ID"
+
+#: themes/foundation/modules/advertising/advertising.php:45
+msgid "Slot ID"
+msgstr "スロットID"
+
+#: themes/foundation/modules/advertising/advertising.php:49
+msgid "Code Type"
+msgstr "コードタイプ"
+
+#: themes/foundation/modules/advertising/advertising.php:61
+msgid "Custom Ads"
+msgstr "広告をカスタマイズ"
+
+#: themes/foundation/modules/advertising/advertising.php:64
+msgid "Mobile advertising script"
+msgstr "モバイル広告スクリプト"
+
+#: themes/foundation/modules/advertising/advertising.php:73
+msgid "Ad Presentation"
+msgstr "広告プレゼン"
+
+#: themes/foundation/modules/advertising/advertising.php:79
+msgid "Theme location"
+msgstr "テーマロケーション"
+
+#: themes/foundation/modules/advertising/advertising.php:84
+msgid "In the header"
+msgstr "ヘッダー内"
+
+#: themes/foundation/modules/advertising/advertising.php:85
+msgid "Above the page content"
+msgstr "ページコンテンツの上"
+
+#: themes/foundation/modules/advertising/advertising.php:86
+msgid "Below the page content"
+msgstr "ページコンテンツの下"
+
+#: themes/foundation/modules/advertising/advertising.php:96
+msgid "Active Pages"
+msgstr "アクティブページ"
+
+#: themes/foundation/modules/advertising/advertising.php:99
+msgid "Blog listings"
+msgstr "ブログリスト"
+
+#: themes/foundation/modules/advertising/advertising.php:100
+msgid "Single posts"
+msgstr "1回の投稿"
+
+#: themes/foundation/modules/advertising/advertising.php:101
+msgid "Static pages"
+msgstr "静的ページ"
+
+#: themes/foundation/modules/advertising/advertising.php:102
+msgid "Taxonomy"
+msgstr "分類法"
+
+#: themes/foundation/modules/advertising/advertising.php:103
+msgid "Search results"
+msgstr "検索結果"
+
+#: themes/foundation/modules/base/base.php:69
+msgid "Loading"
+msgstr "読み込み中"
+
+#: themes/foundation/modules/base/preview-bar.php:2
+msgid "Theme Preview"
+msgstr "テーマプレビュー"
+
+#: themes/foundation/modules/base/preview-bar.php:3
+msgid "Reload"
+msgstr "再読み込み"
+
+#: themes/foundation/modules/custom-posts/custom-posts.php:164
+msgid "Custom Post Support"
+msgstr "カスタム投稿サポート"
+
+#: themes/foundation/modules/custom-posts/custom-posts.php:170
+msgid "Enable custom post-type support"
+msgstr "カスタムポストタイプサポートを有効にする"
+
+#: themes/foundation/modules/custom-posts/custom-posts.php:182
+msgid "Custom Post Types"
+msgstr "カスタム投稿タイプ"
+
+#: themes/foundation/modules/featured/featured.php:268
+msgid "Featured Slider"
+msgstr "機能スライダー"
+
+#: themes/foundation/modules/featured/featured.php:274
+msgid "Enable featured slider"
+msgstr "機能スライダーを有効にする"
+
+#: themes/foundation/modules/featured/featured.php:275
+msgid "Requires at least 2 entries to contain featured images"
+msgstr "特集された画像を含む少なくとも2エントリーが必要です"
+
+#: themes/foundation/modules/featured/featured.php:282
+msgid "Maximum number of posts"
+msgstr "投稿最大数"
+
+#: themes/foundation/modules/featured/featured.php:287
+msgid "3 posts"
+msgstr "3投稿"
+
+#: themes/foundation/modules/featured/featured.php:288
+msgid "5 posts"
+msgstr "5投稿"
+
+#: themes/foundation/modules/featured/featured.php:289
+msgid "10 posts"
+msgstr "10投稿"
+
+#: themes/foundation/modules/featured/featured.php:295
+msgid "Automatically slide"
+msgstr "自動スライド"
+
+#: themes/foundation/modules/featured/featured.php:303
+msgid "Continuously slide"
+msgstr "継続スライド"
+
+#: themes/foundation/modules/featured/featured.php:311
+msgid "Grayscale images (CSS 3 effect)"
+msgstr "グレースケール画像 (CSS 3効果)"
+
+#: themes/foundation/modules/featured/featured.php:312
+msgid "Featured slider images will be in grayscale for devices that support CSS filters."
+msgstr "特集されたスライダー画像はCSSフィルターをサポートするデバイスにはグレースケールで表示されます。"
+
+#: themes/foundation/modules/featured/featured.php:327
+msgid "Featured slider posts also show in listings"
+msgstr "特集スライダー投稿がリスト内でも表示"
+
+#: themes/foundation/modules/featured/featured.php:335
+msgid "Slide transition speed"
+msgstr "推移速度をスライド"
+
+#: themes/foundation/modules/featured/featured.php:340
+msgid "Slow"
+msgstr "遅い"
+
+#: themes/foundation/modules/featured/featured.php:341
+msgid "Normal"
+msgstr "標準"
+
+#: themes/foundation/modules/featured/featured.php:342
+msgid "Fast"
+msgstr "速い"
+
+#: themes/foundation/modules/featured/featured.php:353
+msgid "Show latest posts"
+msgstr "最新の投稿を表示"
+
+#: themes/foundation/modules/featured/featured.php:354
+msgid "Show posts from a specific tag"
+msgstr "特別なタグから投稿を表示"
+
+#: themes/foundation/modules/featured/featured.php:355
+msgid "Show posts from a specific category"
+msgstr "特別なカテゴリーから投稿を表示"
+
+#: themes/foundation/modules/featured/featured.php:356
+msgid "Show posts from a specific post type"
+msgstr "特別な投稿タイプから投稿表示"
+
+#: themes/foundation/modules/featured/featured.php:357
+msgid "Show only specific posts or pages"
+msgstr "特定の投稿またはページのみを表示"
+
+#: themes/foundation/modules/featured/featured.php:363
+msgid "Only this tag"
+msgstr "このタグのみ"
+
+#: themes/foundation/modules/featured/featured.php:364
+#: themes/foundation/modules/featured/featured.php:373
+msgid "Enter the tag/category slug name"
+msgstr "タグ/カテゴリースラグ名を入力"
+
+#: themes/foundation/modules/featured/featured.php:372
+msgid "Only this category"
+msgstr "このカテゴリーのみ"
+
+#: themes/foundation/modules/featured/featured.php:381
+msgid "Only this post type"
+msgstr "この投稿タイプのみ"
+
+#: themes/foundation/modules/featured/featured.php:390
+msgid "Comma-separated list of post/page IDs"
+msgstr "コンマで区切られる投稿リスト/ページID"
+
+#: themes/foundation/modules/google-fonts/google-fonts.php:20
+msgid "Browser Fonts"
+msgstr "ブラウザーフォント"
+
+#: themes/foundation/modules/google-fonts/google-fonts.php:28
+msgid "Typography"
+msgstr "印刷"
+
+#: themes/foundation/modules/google-fonts/google-fonts.php:34
+msgid "Font style"
+msgstr "フォントスタイル"
+
+#: themes/foundation/modules/google-fonts/google-fonts.php:35
+msgid "Choose a Google font pairing designed for this theme, or default browser fonts."
+msgstr "このテーマのためにデザインされたGoogleフォントまたはデフォルトのブラウザーフォントを選択。"
+
+#: themes/foundation/modules/login/login-html.php:7
+msgid "Remember Me"
+msgstr "覚えておく"
+
+#: themes/foundation/modules/login/login-html.php:9
+msgid "Log In"
+msgstr "ログイン"
+
+#: themes/foundation/modules/login/login-html.php:31
+msgid "Lost password?"
+msgstr "パスワードをなくしましたか？"
+
+#: themes/foundation/modules/login/login.php:22
+msgid "Account Username"
+msgstr "アカウントユーザー名"
+
+#: themes/foundation/modules/login/login.php:23
+msgid "Account Password"
+msgstr "アカウントパスワード"
+
+#: themes/foundation/modules/login/login.php:32
+msgid "Login Form"
+msgstr "ログインフォーム"
+
+#: themes/foundation/modules/login/login.php:38
+msgid "Use fly-in login form"
+msgstr "フライインログインフォームを使用する"
+
+#: themes/foundation/modules/login/login.php:39
+msgid "Will add login links and allow mobile visitors to login to your website from mobile devices"
+msgstr "ログインリンクを追加して、モバイルビジターが携帯デバイスからあなたのウェブサイトにログインできるようにする"
+
+#: themes/foundation/modules/login/login.php:46
+msgid "Show \"Sign-up\" and \"Lost Password?\" links"
+msgstr "\"サインアップ\"と\"パスワードをなくしましたか?\"のリンクを表示"
+
+#: themes/foundation/modules/media/media.php:48
+msgid "Video Handling"
+msgstr "ビデオハンドリング"
+
+#: themes/foundation/modules/media/media.php:60
+msgid "CSS only (HTML5 videos)"
+msgstr "CSSのみ (HTML5ビデオ)"
+
+#: themes/foundation/modules/media/media.php:61
+msgid "FitVids Method"
+msgstr "FitVids方法"
+
+#: themes/foundation/modules/media/media.php:62
+msgid "Fluid-Width Method"
+msgstr "流動幅方法"
+
+#: themes/foundation/modules/related-posts/related-posts.php:9
+msgid "Related Posts"
+msgstr "関連の投稿"
+
+#: themes/foundation/modules/related-posts/related-posts.php:15
+msgid "Enable display of related content on single posts"
+msgstr "1つの投稿で関連するコンテンツのディスプレイをオンにする"
+
+#: themes/foundation/modules/related-posts/related-posts.php:23
+msgid "Ignore tags when identifying related posts"
+msgstr "関連の投稿を特定する際タグを無視"
+
+#: themes/foundation/modules/related-posts/related-posts.php:31
+msgid "Maximum number of related posts to show"
+msgstr "表示する関連の最大投稿数"
+
+#: themes/foundation/modules/sharing/sharing-html.php:2
+msgid "Share"
+msgstr "共有"
+
+#: themes/foundation/modules/sharing/sharing-html.php:3
+msgid "Tweet"
+msgstr "ツイート"
+
+#: themes/foundation/modules/sharing/sharing-html.php:5
+msgid "Mail"
+msgstr "メール"
+
+#: themes/foundation/modules/sharing/sharing.php:94
+msgid "Sharing"
+msgstr "共有中"
+
+#: themes/foundation/modules/sharing/sharing.php:100
+msgid "Show sharing links"
+msgstr "共有中のリンクを表示"
+
+#: themes/foundation/modules/sharing/sharing.php:101
+msgid "Will show Facebook, Twitter, Google+ and Email buttons on single posts."
+msgstr "シングル投稿でFacebook、Twitter、Google+、メールボタン表示。"
+
+#: themes/foundation/modules/sharing/sharing.php:108
+msgid "Show sharing links on pages"
+msgstr "ページで共有リンク表示"
+
+#: themes/foundation/modules/sharing/sharing.php:109
+msgid "Will show Facebook, Twitter, Google+ and Email buttons on pages as well as single posts."
+msgstr "1回の投稿と同様ページ上のFacebook、Twitter、Google+とEメールボタンが表示されます。"
+
+#: themes/foundation/modules/sharing/sharing.php:116
+msgid "Sharing links location"
+msgstr "リンクロケーション共有中"
+
+#: themes/foundation/modules/sharing/sharing.php:121
+msgid "Above post content"
+msgstr "上記投稿コンテンツ"
+
+#: themes/foundation/modules/sharing/sharing.php:122
+msgid "Below post content"
+msgstr "下記投稿コンテンツ"
+
+#: themes/foundation/modules/sharing/sharing.php:128
+msgid "Color scheme"
+msgstr "カラースキーム"
+
+#: themes/foundation/modules/sharing/sharing.php:133
+msgid "Theme colors"
+msgstr "テーマカラー"
+
+#: themes/foundation/modules/sharing/sharing.php:134
+msgid "Social network colors"
+msgstr "ソーシャルネットワークカラー"
+
+#: themes/foundation/modules/social-links/social-links.php:8
+msgid "Footer Social Links"
+msgstr "フッターソーシャルリンク"
+
+#: themes/foundation/modules/social-links/social-links.php:23
+msgid "Full URL to your Facebook page"
+msgstr "FacebookページへのフルURL"
+
+#: themes/foundation/modules/social-links/social-links.php:31
+msgid "Full URL to your Twitter profile"
+msgstr "TwitterプロフィールへのフルURL"
+
+#: themes/foundation/modules/social-links/social-links.php:39
+msgid "Full URL to your Google+ profile"
+msgstr "Google+プロフィールへのフルURL"
+
+#: themes/foundation/modules/social-links/social-links.php:47
+msgid "Full URL to your Instagram profile"
+msgstr "あなたのInstagramプロフィールへの完全なURL"
+
+#: themes/foundation/modules/social-links/social-links.php:54
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: themes/foundation/modules/social-links/social-links.php:55
+msgid "Full URL to your Tumblr profile"
+msgstr "Tumblrプロフィールへの完全なURL"
+
+#: themes/foundation/modules/social-links/social-links.php:63
+msgid "Full URL to your Pinterest page"
+msgstr "ピンタレストページへのフルURL"
+
+#: themes/foundation/modules/social-links/social-links.php:71
+msgid "Full URL to your Vimeo page"
+msgstr "VimeoページへのフルURL"
+
+#: themes/foundation/modules/social-links/social-links.php:79
+msgid "Full URL to your %s profile"
+msgstr "あなたの%sプロフィールへの完全なURL"
+
+#: themes/foundation/modules/social-links/social-links.php:86
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: themes/foundation/modules/social-links/social-links.php:87
+msgid "Full URL to your LinkedIn profile"
+msgstr "LinkedInプロフィールへのフルURL"
+
+#: themes/foundation/modules/social-links/social-links.php:95
+msgid "Full URL to your Yelp profile"
+msgstr "Yelpのプロフィールへの完全なURL"
+
+#: themes/foundation/modules/social-links/social-links.php:103
+msgid "E-Mail address"
+msgstr "メールアドレス"
+
+#: themes/foundation/modules/social-links/social-links.php:111
+msgid "Full URL to your RSS feed"
+msgstr "RSSフィードへのフルURL"
+
+#: themes/foundation/modules/tablets/tablets.php:35
+msgid "iPad"
+msgstr "iPad"
+
+#: themes/foundation/modules/tablets/tablets.php:41
+#: themes/foundation/modules/webapp/webapp.php:73
+#: themes/foundation/modules/webapp/webapp.php:91
+#: themes/foundation/modules/webapp/webapp.php:109
+#: themes/foundation/modules/webapp/webapp.php:128
+#: themes/foundation/modules/webapp/webapp.php:146
+#: themes/foundation/modules/webapp/webapp.php:165
+#: themes/foundation/modules/webapp/webapp.php:173
+#: themes/foundation/modules/webapp/webapp.php:191
+#: themes/foundation/modules/webapp/webapp.php:199
+#: themes/foundation/root-functions.php:441
+#: themes/foundation/root-functions.php:459
+msgid "%d by %d pixels (PNG)"
+msgstr "%dピクセル%dの(PNG)"
+
+#: themes/foundation/modules/twitter/twitter.php:66
+msgid "Disabled"
+msgstr "無効済"
+
+#: themes/foundation/modules/twitter/twitter.php:81
+msgid "Twitter account to use for Tweet display"
+msgstr "ツイート表示のために使用するTwitterアカウント"
+
+#: themes/foundation/modules/webapp/webapp.php:15
+msgid "Enable iOS Web-App Mode"
+msgstr "iOSウェブアプリモードを有効にする"
+
+#: themes/foundation/modules/webapp/webapp.php:19
+msgid "Enable persistence"
+msgstr "持続性を有効にする"
+
+#: themes/foundation/modules/webapp/webapp.php:20
+msgid "Loads the last visited URL for visitors on open."
+msgstr "開いている時の訪問者の最終訪問URLを読み込む。"
+
+#: themes/foundation/modules/webapp/webapp.php:27
+msgid "URLs to ignore in Web-App Mode"
+msgstr "Web-Appモード内で無視するURL"
+
+#: themes/foundation/modules/webapp/webapp.php:40
+msgid "Notice Message"
+msgstr "通知メッセージ"
+
+#: themes/foundation/modules/webapp/webapp.php:43
+msgid "Show a notice message for iPhone, iPod touch & iPad visitors about my Web-App"
+msgstr "Web-AppについてiPhone、iPod touch & iPadビジターへ通知メッセージを表示"
+
+#: themes/foundation/modules/webapp/webapp.php:43
+msgid "WPtouch shows a notice bubble on 1st visit letting users know about your Web-App enabled website on iOS devices."
+msgstr "WPtouchは最初の訪問でユーザーにWeb-Appについてお知らせバブルを表示し、iOSデバイスでウェブサイトを有効にします。"
+
+#: themes/foundation/modules/webapp/webapp.php:44
+msgid "Notice message contents"
+msgstr "通知メッセージコンテンツ"
+
+#: themes/foundation/modules/webapp/webapp.php:44
+msgid "[icon] is used to display the appropriate bookmark icon for your device. Do not remove it from your message."
+msgstr "[icon]はデバイスの適切なブックマークアイコンを表示するために使用されます。メッセージから削除しないでください。"
+
+#: themes/foundation/modules/webapp/webapp.php:48
+msgid "the notice message will be shown again for visitors"
+msgstr "通知メッセージはビジターに再度表示されます"
+
+#: themes/foundation/modules/webapp/webapp.php:53
+msgid "1 day until"
+msgstr "残り1日"
+
+#: themes/foundation/modules/webapp/webapp.php:54
+msgid "7 days until"
+msgstr "残り7日"
+
+#: themes/foundation/modules/webapp/webapp.php:55
+msgid "1 month until"
+msgstr "残り1ヶ月"
+
+#: themes/foundation/modules/webapp/webapp.php:56
+msgid "Every time"
+msgstr "毎回"
+
+#: themes/foundation/modules/webapp/webapp.php:67
+msgid "iPhone Startup Screen"
+msgstr "iPhoneスタートアップスクリーン"
+
+#: themes/foundation/modules/webapp/webapp.php:85
+msgid "Retina iPhone Startup Screen"
+msgstr "Retina iPhoneスタートアップスクリーン"
+
+#: themes/foundation/modules/webapp/webapp.php:103
+msgid "iPhone 5 Startup Screen"
+msgstr "iPhone 5スタートアップスクリーン"
+
+#: themes/foundation/modules/webapp/webapp.php:122
+msgid "iPhone 6 Startup Screen"
+msgstr "iPhone 6スタートアップスクリーン"
+
+#: themes/foundation/modules/webapp/webapp.php:140
+msgid "iPhone 6+ Startup Screen"
+msgstr "iPhone 6+スタートアップスクリーン"
+
+#: themes/foundation/modules/webapp/webapp.php:159
+msgid "iPad Mini and iPad Startup Screens"
+msgstr "iPad MiniとiPadスタートアップスクリーン"
+
+#: themes/foundation/modules/webapp/webapp.php:185
+msgid "Retina iPad Startup Screens"
+msgstr "Retina iPadスタートアップスクリーン"
+
+#: themes/foundation/root-functions.php:12
+msgid "Media Handling"
+msgstr "メディアハンドリング"
+
+#: themes/foundation/root-functions.php:13
+msgid "Web-App Mode"
+msgstr "ウェブアプリモード"
+
+#: themes/foundation/root-functions.php:14
+msgid "Bookmark Icons"
+msgstr "ブックマークアイコン"
+
+#: themes/foundation/root-functions.php:15
+msgid "Advertising"
+msgstr "広告"
+
+#: themes/foundation/root-functions.php:16
+msgid "Custom Content"
+msgstr "カスタムコンテンツ"
+
+#: themes/foundation/root-functions.php:49
+msgid "Language: "
+msgstr "言語:"
+
+#: themes/foundation/root-functions.php:139
+msgid "Install this Web-App on your home screen: tap [icon] then \"Add to Home Screen\""
+msgstr "ホームスクリーンにこのウェブアプリをインストール: [icon]、次に\"ホームスクリーンに追加\"をタップ"
+
+#: themes/foundation/root-functions.php:347
+msgid "Number of posts in post listings"
+msgstr "投稿リストの投稿数"
+
+#: themes/foundation/root-functions.php:348
+msgid "Overrides the WordPress Reading settings for \"Blog pages show at most\""
+msgstr "WordPressリーディング設定を\"ブログページを最大限に表示する\"に優先する"
+
+#: themes/foundation/root-functions.php:355
+msgid "Excluded categories"
+msgstr "除外カテゴリー"
+
+#: themes/foundation/root-functions.php:356
+msgid "Comma separated by category name"
+msgstr "カテゴリー名をコンマで区切る"
+
+#: themes/foundation/root-functions.php:363
+msgid "Excluded tags"
+msgstr "外部タグ"
+
+#: themes/foundation/root-functions.php:364
+msgid "Comma separated by tag name"
+msgstr "タグ名をコンマで区切る"
+
+#: themes/foundation/root-functions.php:371
+msgid "Allow nested comment replies from mobile visitors"
+msgstr "ネスト化したコメントにモバイル訪問者からの返信を許可する"
+
+#: themes/foundation/root-functions.php:372
+msgid "Will show a Reply link after each comment"
+msgstr "各コメントの後に返信リンクを表示"
+
+#: themes/foundation/root-functions.php:382
+msgid "Blog"
+msgstr "ブログ"
+
+#: themes/foundation/root-functions.php:393
+msgid "Show comments on pages"
+msgstr "ページにコメント表示"
+
+#: themes/foundation/root-functions.php:394
+msgid "Overrides the WordPress settings for showing comments on pages."
+msgstr "ページ上にコメントを表示してWordPress設定を優先にする。"
+
+#: themes/foundation/root-functions.php:404
+#: themes/foundation/root-functions.php:1141
+msgid "Pages"
+msgstr "ページ"
+
+#: themes/foundation/root-functions.php:417
+msgid "Icon Title"
+msgstr "アイコンタイトル"
+
+#: themes/foundation/root-functions.php:423
+msgid "Icon title"
+msgstr "アイコンタイトル"
+
+#: themes/foundation/root-functions.php:424
+msgid "When visitors bookmark your website, this will be the title shown."
+msgstr "あなたのウェブサイトをビジターが訪問すると、タイトルが表示されます。"
+
+#: themes/foundation/root-functions.php:435
+msgid "Android"
+msgstr "Android"
+
+#: themes/foundation/root-functions.php:453
+msgid "iPhone & iPod touch"
+msgstr "iPhone & iPod touch"
+
+#: themes/foundation/root-functions.php:489
+msgid "Theme Colors"
+msgstr "テーマカラー"
+
+#: themes/foundation/root-functions.php:501
+msgid "(Scaled by themes to fit logo areas as needed)"
+msgstr "(必要なロゴエリアに合うテーマによって計れます)"
+
+#: themes/foundation/root-functions.php:512
+msgid "Site Logo"
+msgstr "サイトロゴ"
+
+#: themes/foundation/root-functions.php:521
+msgid "Smart App Banner"
+msgstr "スマートアプリバナー"
+
+#: themes/foundation/root-functions.php:527
+msgid "Enter your app's %sApp Store ID%s"
+msgstr "アプリの%sApp Store ID%sを入力してください"
+
+#: themes/foundation/root-functions.php:528
+msgid "Your app's unique identifier. Find your ID from the iTunes Link Maker: Search for your app. In the link it provides, your app ID is the nine-digit number in between id and ?mt. For example Angry Birds's ID is 343200656."
+msgstr "あなたのアプリのユニークなID。iTunesリンクメーカーよりIDを見つける: あなたのアプリを検索。提供するリンク内で、あなたのアプリIDはidと?mtで9桁です。例 Angry Birds ID: 343200656"
+
+#: themes/foundation/root-functions.php:540
+msgid "Theme Footer"
+msgstr "テーマフッター"
+
+#: themes/foundation/root-functions.php:543
+msgid "Custom footer content (HTML is allowed)"
+msgstr "カスタムフッターコンテンツ (HTMLが許可されています)"
+
+#: themes/foundation/root-functions.php:543
+msgid "You can add custom footer content that will be displayed below the switch link."
+msgstr "切替リンクの下にディスプレイされるカスタムフッターコンテンツを追加できます。"
+
+#: themes/foundation/root-functions.php:919
+msgid "search results for '%s'"
+msgstr "'%s'の検索結果"
+
+#: themes/foundation/root-functions.php:921
+msgid "%sCategories &rsaquo;%s %s"
+msgstr "%sカテゴリー &rsaquo;%s %s"
+
+#: themes/foundation/root-functions.php:923
+msgid "Tags &rsaquo; %s"
+msgstr "タグ &rsaquo; %s"
+
+#: themes/foundation/root-functions.php:925
+#: themes/foundation/root-functions.php:927
+#: themes/foundation/root-functions.php:929
+msgid "Archives &rsaquo; %s"
+msgstr "アーカイブ &rsaquo; %s"
+
+#: themes/foundation/root-functions.php:944
+msgid "Load more from this category"
+msgstr "このカテゴリーからもっと読み込む"
+
+#: themes/foundation/root-functions.php:946
+msgid "Load more tagged like this"
+msgstr "このように他のタグを読み込む"
+
+#: themes/foundation/root-functions.php:948
+msgid "Load more from this day"
+msgstr "この日から他を読み込む"
+
+#: themes/foundation/root-functions.php:950
+msgid "Load more from this month"
+msgstr "今月からもっと読み込む"
+
+#: themes/foundation/root-functions.php:952
+msgid "Load more from this year"
+msgstr "今年からもっと読み込む"
+
+#: themes/foundation/root-functions.php:954
+msgid "Load more in this section"
+msgstr "このセクションでもっと読み込む"
+
+#: themes/foundation/root-functions.php:956
+msgid "Load more entries"
+msgstr "他のエントリーを読み込む"
+
+#: themes/foundation/root-functions.php:1090
+msgid "Post"
+msgstr "投稿"
+
+#. Plugin Name of the plugin/theme
+msgid "WPtouch Pro"
+msgstr "WPtouch Pro"
+
+#. #-#-#-#-#  wptouch-pro-3.pot (WPtouch Pro 3.6.4)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  wptouch-pro-3.pot (WPtouch Pro 3.6.4)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://www.wptouch.com/"
+msgstr "http://www.wptouch.com/"
+
+#. Description of the plugin/theme
+msgid "The easy way to create great mobile experiences with your WordPress website."
+msgstr "あなたのWordPressウェブサイトで素晴しいモバイルエクスペリエンスを作成できる簡単な方法です。"
+
+#. Author of the plugin/theme
+msgid "BraveNewCode Inc."
+msgstr "BraveNewCode Inc."

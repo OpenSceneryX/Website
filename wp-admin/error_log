@@ -1,0 +1,9 @@
+[10-Oct-2008 17:08:40] not well-formed (invalid token) at line 21, column 58
+[11-Oct-2008 03:54:15] not well-formed (invalid token) at line 61, column 58
+[11-Oct-2008 05:31:12] not well-formed (invalid token) at line 69, column 58
+[11-Oct-2008 09:42:34] not well-formed (invalid token) at line 109, column 58
+[15-Oct-2008 18:08:08] not well-formed (invalid token) at line 101, column 124
+[05-Nov-2008 13:55:21] not well-formed (invalid token) at line 118, column 13
+[09-Nov-2008 15:16:46] not well-formed (invalid token) at line 29, column 101
+[03-Dec-2008 11:04:08] not well-formed (invalid token) at line 29, column 112
+[16-Dec-2008 08:35:09] PHP Warning:  Attempt to assign property of non-object in /home/txodiqgd/public_html/blog/wp-includes/rss.php on line 449
