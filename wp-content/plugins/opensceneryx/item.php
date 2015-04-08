@@ -24,9 +24,9 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
-				Hello World
+				<?php include $osxItemPath; ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer();

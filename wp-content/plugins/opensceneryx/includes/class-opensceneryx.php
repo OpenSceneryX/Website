@@ -38,7 +38,7 @@ class OpenSceneryX {
     */
     function osxURLHandler()
     {
-        global $wp_query;
+        global $wp_query, $osxItemPath;
 
         if (!empty($_SERVER['REQUEST_URI'])) {
             $urlVars = explode('/', $_SERVER['REQUEST_URI']);
@@ -64,8 +64,11 @@ class OpenSceneryX {
                     return;
             }
 
+            $docPath = implode(array_slice($urlVars, 1), '/');
+            $osxItemPath = ABSPATH . $docPath;
+
             $template = $this->pluginDirPath . 'item.php';
-            load_template($template);
+            require($template);
             die;
         }
     }
