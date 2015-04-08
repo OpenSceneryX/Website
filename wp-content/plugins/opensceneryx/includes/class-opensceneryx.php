@@ -54,6 +54,7 @@ class OpenSceneryX {
             $wp_query->is_404 = false;
 
             switch ($urlVars[1]) {
+                case 'doc':
                 case 'facades':
                 case 'forests':
                 case 'lines':
