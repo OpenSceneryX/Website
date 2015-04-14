@@ -30,6 +30,7 @@ class OpenSceneryX {
 
         add_action('wp', array($this, 'osxLibraryPage'));
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
+        add_filter('pre_post_link', array($this, 'osxPermalink'));
     }
 
     function osxLibraryPage() {
@@ -72,7 +73,7 @@ class OpenSceneryX {
             $post->post_type = 'osxitem';
             $post->post_author = 1;
             $post->post_parent = 745;
-            $post->guid = $osxItemPath;
+            $post->guid = $docPath;
 
             $wp_query->queried_object = $post;
             $wp_query->post = $post;
@@ -102,4 +103,14 @@ class OpenSceneryX {
         return $classes;
     }
 
+    function osxPermalink($url)
+    {
+        global $wp_query;
+
+        if ($wp_query->post->post_type == 'osxitem') {
+            return $wp_query->post->guid;
+        }
+
+        return $url;
+    }
 }
