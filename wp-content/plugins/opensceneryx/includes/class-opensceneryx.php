@@ -31,6 +31,7 @@ class OpenSceneryX {
         // We want to intercept all requests to parse the URL
         #add_action('template_redirect', array($this, 'osxURLHandler'));
         add_action('wp', array($this, 'osxLibraryPage'));
+        add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
     }
 
     function osxLibraryPage() {
@@ -88,6 +89,18 @@ class OpenSceneryX {
             $wp_query->is_page = true;
             $wp_query->is_post = false;
         }
+    }
+
+    function osxMenuClasses($classes, $page, $depth, $args, $currentPage)
+    {
+        global $wp_query;
+
+        if ($wp_query->post->post_type == 'osxitem') {
+            $pageItemClass = 'page-item-' . $wp_query->post->post_parent;
+            $classes = str_replace('current_page_item', '', $classes);
+            $classes = str_replace($pageItemClass, $pageItemClass . ' current_page_item', $classes);
+        }
+        return $classes;
     }
 
     /**
