@@ -1,6 +1,6 @@
 /*
 Theme Name: OpenSceneryX
-Description: OpenSceneryX theme, child of Twenty Eleven theme 
+Description: OpenSceneryX theme, child of Twenty Eleven theme
 Author: Austin Goudge
 Template: twentyeleven
 */
@@ -185,17 +185,28 @@ div.deprecatedVirtualPath {
 	padding: 0.25em 0.5em 0.25em 0.5em;
 }
 
+div.virtualPath p,
+div.deprecatedVirtualPath p {
+    margin: 0;
+}
+
 div.thumbnailcontainer {
-	float: left;
-	height: 375px;
-	width: 300px;
-	padding-right: 1em;
+    display: inline-block;
+    width: 180px;
+    height: 100%;
+    margin: 0 0.25em 1em 0;
 	text-align: center;
+    line-height: 1.25;
+    vertical-align: top;
+    background-color: #F5F5FF;
 }
 
 div.thumbnailcontainer img {
-	max-height: 300px;
-	margin: 0;
+	margin: 0.25em 0 0 0;
+}
+
+div.thumbnailcontainer p {
+    margin: 0;
 }
 
 div.objectlogocontainer {
@@ -233,7 +244,7 @@ ul.inline {
 }
 
 ul.inline li { display: inline; }
-ul.inline li:after { content: " | "; } 
+ul.inline li:after { content: " | "; }
 ul.inline li:last-child:after { content: ""; }
 
 div#breadcrumbs ul.inline {
@@ -354,7 +365,7 @@ ul.menu, ul.menu ul {
 
 ul.menu a {
   display: block;
-  text-decoration: none;	
+  text-decoration: none;
 }
 
 ul.menu li {
@@ -364,7 +375,7 @@ ul.menu li {
 /* Top level items */
 ul.menu li a {
 	background-color: #444;
-  color: #fff;	
+  color: #fff;
   padding: 0.5em;
   border: none;
 }
