@@ -73,7 +73,7 @@ class OpenSceneryX {
             $post->post_title = 'Fake Title';
             $post->post_type = 'osxitem';
             $post->post_author = 1;
-            $post->post_parent = 111;
+            $post->post_parent = 745;
             $post->guid = $osxItemPath;
 
             $wp_query->queried_object = $post;
