@@ -82,6 +82,7 @@ class OpenSceneryX {
             $wp_query->posts = array($post);
 
             $wp_query->is_single = true;
+            $wp_query->is_singular = true;
             $wp_query->is_404 = false;
             $wp_query->is_posts_page = false;
             $wp_query->is_page = true;
