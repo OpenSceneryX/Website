@@ -35,7 +35,7 @@ class OpenSceneryX {
 
     function osxLibraryPage() {
         global $wp_query;
-        
+
         if (!empty($_SERVER['REQUEST_URI'])) {
             $urlVars = explode('/', $_SERVER['REQUEST_URI']);
 
@@ -70,21 +70,22 @@ class OpenSceneryX {
             $post->post_excerpt = '';
             $post->post_status = 'publish';
             $post->post_title = 'Fake Title';
-            $post->post_type = 'page';
+            $post->post_type = 'osxitem';
             $post->post_author = 1;
             $post->post_parent = 111;
             $post->guid = $osxItemPath;
-            
+
             $wp_query->queried_object = $post;
             $wp_query->post = $post;
             $wp_query->found_posts = 1;
             $wp_query->post_count = 1;
             $wp_query->max_num_pages = 1;
-            $wp_query->is_single = 1;
-            $wp_query->is_404 = false;
-            $wp_query->is_posts_page = 1;
             $wp_query->posts = array($post);
-            $wp_query->page = false;
+
+            $wp_query->is_single = true;
+            $wp_query->is_404 = false;
+            $wp_query->is_posts_page = false;
+            $wp_query->is_page = true;
             $wp_query->is_post = false;
         }
     }
