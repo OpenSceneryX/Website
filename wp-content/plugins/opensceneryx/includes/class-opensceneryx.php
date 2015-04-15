@@ -31,6 +31,8 @@ class OpenSceneryX {
         add_action('wp', array($this, 'osxLibraryPage'));
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
         add_filter('pre_post_link', array($this, 'osxPermalink'));
+        add_filter('the_content', array($this, 'osxContent'));
+        add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
     }
 
     function osxLibraryPage() {
@@ -62,14 +64,16 @@ class OpenSceneryX {
             $docPath = implode(array_slice($urlVars, 1, -1), '/');
             $osxItemPath = ABSPATH . $docPath;
 
-            $id=-42;
+            $details = $this->osxParseFolder($osxItemPath);
+
+            $id = -42;
             $post = new stdClass();
             $post->ID = $id;
             $post->post_category = array('uncategorized'); //Add some categories. an array()???
-            $post->post_content = file_get_contents($osxItemPath);
+            $post->post_title = $details['title'];
+            $post->post_content = $details['content'];
             $post->post_excerpt = '';
             $post->post_status = 'publish';
-            $post->post_title = 'Fake Title';
             $post->post_type = 'osxitem';
             $post->post_author = 1;
             $post->post_parent = 745;
@@ -112,5 +116,46 @@ class OpenSceneryX {
         }
 
         return $url;
+    }
+
+    function osxContent($content)
+    {
+        if (function_exists('yoast_breadcrumb')) {
+            $content = yoast_breadcrumb('<p id="breadcrumbs">', '</p>', false) . $content;
+        }
+
+        return $content;
+    }
+
+    function osxBreadcrumbs($breadcrumbs)
+    {
+        global $wp_query;
+//print_r($breadcrumbs);
+        if ($wp_query->post->post_type == 'osxitem') {
+
+        }
+
+        return $breadcrumbs;
+    }
+
+    function osxParseFolder($path)
+    {
+        $result = array('title' => 'Not Found', 'content' => '');
+
+        if (is_file($path . '/category.txt')) {
+            $contents = file_get_contents($path . '/category.txt');
+            $matches = array();
+echo $contents;
+            if (preg_match("/Title:\s+(.*)/", $contents, $matches) === 1) {
+                $result['title'] = $matches[1];
+            }
+            
+
+
+        } elseif (is_file($path . '/info.txt')) {
+            return file_get_contents($path . '/info.txt');
+        }
+
+        return $result;
     }
 }
