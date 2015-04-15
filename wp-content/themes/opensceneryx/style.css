@@ -7,6 +7,13 @@ Template: twentyeleven
 
 @import url("../twentyeleven/style.css");
 
+.singular .entry-header,
+.singular .entry-content,
+.singular footer.entry-meta,
+.singular #comments-title {
+	width: 100%;
+}
+
 #page {
 	max-width: 1010px;
 }
