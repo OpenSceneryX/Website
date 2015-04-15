@@ -41,7 +41,7 @@ class OpenSceneryX {
         if (!empty($_SERVER['REQUEST_URI'])) {
             $urlVars = explode('/', $_SERVER['REQUEST_URI']);
 
-            if (count($urlVars) < 2) {
+            if (count($urlVars) < 1) {
                 return;
             }
 
@@ -61,7 +61,7 @@ class OpenSceneryX {
                     return;
             }
 
-            $docPath = implode(array_slice($urlVars, 1, -1), '/');
+            $docPath = implode(array_slice($urlVars, 1), '/');
             $osxItemPath = ABSPATH . $docPath;
 
             $details = $this->osxParseFolder($osxItemPath);
@@ -76,7 +76,7 @@ class OpenSceneryX {
             $post->post_status = 'publish';
             $post->post_type = 'osxitem';
             $post->post_author = 1;
-            $post->post_parent = 745;
+            $post->post_parent = 753;
             $post->guid = $docPath;
 
             $wp_query->queried_object = $post;
@@ -140,21 +140,67 @@ class OpenSceneryX {
 
     function osxParseFolder($path)
     {
-        $result = array('title' => 'Not Found', 'content' => '');
-
         if (is_file($path . '/category.txt')) {
-            $contents = file_get_contents($path . '/category.txt');
-            $matches = array();
-echo $contents;
-            if (preg_match("/Title:\s+(.*)/", $contents, $matches) === 1) {
-                $result['title'] = $matches[1];
-            }
-            
-
-
+            return $this->osxParseCategory($path . '/category.txt');
         } elseif (is_file($path . '/info.txt')) {
             return file_get_contents($path . '/info.txt');
         }
+
+        return $result;
+    }
+    
+    function osxParseCategory($path)
+    {
+        $result = array('title' => 'Not Found', 'content' => '');
+        $contents = file_get_contents($path);
+        $lines = explode(PHP_EOL, $contents);
+        $matches = array();
+        $foundSubcat = false;
+        $foundItem = false;
+
+        foreach ($lines as $line) {
+            if (preg_match('/Title:\s+(.*)/', $line, $matches) === 1) {
+                $result['title'] = $matches[1];
+                continue;
+            }
+
+            if (preg_match('/Sub-category:\s+"(.*?)"\s+"(.*?)"/', $line, $matches) === 1) {
+                if (!$foundSubcat) {
+                    $foundSubcat = true;
+                    $result['content'] .= '<h2>Sub-categories</h2>';
+                }
+                $result['content'] .= $this->osxGetSubcatHTML($path, $matches[1], $matches[2]);
+                continue;
+            }
+                
+            if (preg_match('/Item:\s+"(.*?)"\s+"(.*?)"/', $line, $matches) === 1) {
+                if (!$foundItem) {
+                    $foundItem = true;
+                    $result['content'] .= '<h2>Objects</h2>';
+                }
+                $result['content'] .= $this->osxGetItemHTML($path, $matches[1], $matches[2]);
+                continue;
+            }
+		}
+		
+		return $result; 
+    }
+    
+    function osxGetSubcatHTML($parentPath, $subCategoryTitle, $subCategoryPath)
+    {
+        return "<h3 class='inline'><a href='" . $subCategoryPath . "'>" . $subCategoryTitle . "</a></h3>\n";
+    }
+
+    function osxGetItemHTML($parentPath, $itemTitle, $itemPath)
+    {
+        $result = "<div class='thumbnailcontainer'>\n";
+		$result .= "<h4><a href='/" . $itemPath . "'>" . $itemTitle . "</a></h4><a href='/" . $itemPath . "' class='nounderline'>";
+	//			if (sceneryObject.screenshotFilePath != ""):
+		$result .= "<img src='/" . $itemPath . "/screenshot.jpg' alt='Screenshot of " . str_replace("'", "&apos;", $itemTitle) . "' />";
+	//			else:
+	//				htmlFileContent += "<img src='/doc/screenshot_missing.png' alt='No Screenshot Available' />"
+		$result .=  "</a>\n";
+		$result .=  "</div>\n";
 
         return $result;
     }
