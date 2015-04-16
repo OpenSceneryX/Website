@@ -31,6 +31,9 @@ if (!defined( 'WPINC')) {
 }
 
 require_once plugin_dir_path(__FILE__) . 'includes/class-opensceneryx.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxitem.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxcategory.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxobject.php';
 
 function runOpenSceneryX($pluginDirPath)
 {
