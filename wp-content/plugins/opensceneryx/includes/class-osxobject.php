@@ -42,6 +42,11 @@ class OSXObject extends OSXItem {
         $matches = array();
 
         foreach ($lines as $line) {
+            if (preg_match('/^Ancestor:\s+"(.*)"\s+"(.*)"/', $line, $matches) === 1) {
+                $this->ancestors[] = array('title' => $matches[1], 'url' => $matches[2]);
+                continue;
+            }
+
             if (preg_match('/^Title:\s+(.*)/', $line, $matches) === 1) {
                 $this->title = $matches[1];
                 continue;

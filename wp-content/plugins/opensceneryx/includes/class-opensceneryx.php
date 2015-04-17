@@ -24,6 +24,8 @@
 class OpenSceneryX {
     protected $pluginDirPath;
 
+    protected $osxItem;
+
     public function run($pluginDirPath)
     {
         $this->pluginDirPath = $pluginDirPath;
@@ -64,14 +66,14 @@ class OpenSceneryX {
             $docPath = implode(array_slice($urlVars, 1), '/');
             $osxItemPath = ABSPATH . $docPath;
 
-            $osxItem = $this->osxParseFolder($osxItemPath, $docPath);
+            $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath);
 
             $id = -42;
             $post = new stdClass();
             $post->ID = $id;
             $post->post_category = array('uncategorized'); //Add some categories. an array()???
-            $post->post_title = $osxItem->title;
-            $post->post_content = $osxItem->getHTML();
+            $post->post_title = $this->osxItem->title;
+            $post->post_content = $this->osxItem->getHTML();
             $post->post_excerpt = '';
             $post->post_status = 'publish';
             $post->post_type = 'osxitem';
@@ -132,7 +134,13 @@ class OpenSceneryX {
         global $wp_query;
 
         if ($wp_query->post->post_type == 'osxitem') {
+             $breadcrumbs = array(array('text' => 'Catalogue', 'url' => '/catalogue', 'allow_html' => true));
 
+            foreach ($this->osxItem->ancestors as $ancestor) {
+                $breadcrumbs[] = array('text' => $ancestor['title'], 'url' => $ancestor['url'], 'allow_html' => true);
+            }
+
+            $breadcrumbs[] = array('text' => $this->osxItem->title, 'allow_html' => true);
         }
 
         return $breadcrumbs;

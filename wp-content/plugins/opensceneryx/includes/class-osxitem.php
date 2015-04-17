@@ -11,6 +11,8 @@ class OSXItem {
 
     public $title = "Undefined";
 
+    public $ancestors = array();
+
     function __construct($path, $url) {
         $this->path = $path;
         $this->url = $url;
