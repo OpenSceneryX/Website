@@ -5,9 +5,9 @@
  */
 class OSXCategory extends OSXItem {
 
-    public $subcategories = array();
+    protected $subcategories = array();
 
-    public $items = array();
+    protected $items = array();
 
     function __construct($path, $url) {
         parent::__construct($path, $url);

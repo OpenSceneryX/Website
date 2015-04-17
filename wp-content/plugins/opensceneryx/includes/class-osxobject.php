@@ -5,30 +5,32 @@
  */
 class OSXObject extends OSXItem {
 
-    public $virtualPaths = array();
-    public $deprecatedVirtualPaths = array();
+    protected $textures = array();
 
-    public $authors = array();
-    public $authorEmails = array();
-    public $authorURLs = array();
-    public $textureAuthors = array();
-    public $textureAuthorEmails = array();
-    public $textureAuthorURLs = array();
-    public $conversionAuthors = array();
-    public $conversionAuthorEmails = array();
-    public $conversionAuthorURLs = array();
+    protected $virtualPaths = array();
+    protected $deprecatedVirtualPaths = array();
 
-    public $width = null;
-    public $height = null;
-    public $depth = null;
+    protected $authors = array();
+    protected $authorEmails = array();
+    protected $authorURLs = array();
+    protected $textureAuthors = array();
+    protected $textureAuthorEmails = array();
+    protected $textureAuthorURLs = array();
+    protected $conversionAuthors = array();
+    protected $conversionAuthorEmails = array();
+    protected $conversionAuthorURLs = array();
 
-    public $description = null;
+    protected $width = null;
+    protected $height = null;
+    protected $depth = null;
 
-    public $animated = false;
+    protected $description = null;
 
-    public $logo = null;
+    protected $animated = false;
 
-    public $note = null;
+    protected $logo = null;
+
+    protected $note = null;
 
 
     function __construct($path, $url) {
@@ -42,13 +44,24 @@ class OSXObject extends OSXItem {
         $matches = array();
 
         foreach ($lines as $line) {
+            if (preg_match('/^Title:\s+(.*)/', $line, $matches) === 1) {
+                $this->title = $matches[1];
+                continue;
+            }
+
             if (preg_match('/^Ancestor:\s+"(.*)"\s+"(.*)"/', $line, $matches) === 1) {
                 $this->ancestors[] = array('title' => $matches[1], 'url' => $matches[2]);
                 continue;
             }
 
-            if (preg_match('/^Title:\s+(.*)/', $line, $matches) === 1) {
-                $this->title = $matches[1];
+            if (preg_match('/^Texture:\s+(.*)/', $line, $matches) === 1) {
+                $this->textures[] = array('name' => $matches[1], 'sharedwith' => array());
+                continue;
+            }
+
+            if (preg_match('/^Texture Shared With:\s+"(.*)"\s+"(.*)"/', $line, $matches) === 1) {
+                $texture = end(array_keys($this->textures));
+                $texture['sharedwith'][] = array('title' => $matches[1], 'url' => $matches[2]);
                 continue;
             }
 
@@ -241,7 +254,20 @@ class OSXObject extends OSXItem {
             $result .= "</li>\n";
         }
 
-        $result .= "</ul>";
+        foreach ($this->textures as $texture) {
+            if (count($texture['sharedwith']) > 0) {
+                $result .= "<li><span class='fieldTitle'>Texture '" . $texture['name'] . "' shared with:</span>\n";
+                $result .= "<ul>\n";
+
+                foreach ($texture['sharedwith'] as $item) {
+                    $result .= "<li><span class='fieldValue'><a href='/" . $item['url'] . "'>" . $item['title'] . "</a></span></li>\n";
+                }
+
+                $result .= "</ul></li>\n";
+            }
+        }
+
+        $result .= "</ul>\n";
 
         return $result;
     }
