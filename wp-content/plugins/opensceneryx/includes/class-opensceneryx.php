@@ -52,7 +52,6 @@ class OpenSceneryX {
             }
 
 		    switch ($urlVars[1]) {
-                case 'doc':
                 case 'facades':
                 case 'forests':
                 case 'lines':
