@@ -145,10 +145,10 @@ abstract class OSXLibraryItem extends OSXItem {
                 $this->description = $matches[1];
                 continue;
             }
+            
+            // Default is to append to the description.  This handles any amount of extra text at the end of the file
+            $this->description .= $line;
         }
-
-        // Default is to append to the description.  This handles any amount of extra text at the end of the file
-		$this->description .= $line;
     }
 
     public function getHTML() {
