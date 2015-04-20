@@ -13,6 +13,8 @@ class OSXItem {
 
     public $ancestors = array();
 
+    protected $fileLines = array();
+
     function __construct($path, $url) {
         $this->path = $path;
         $this->url = $url;

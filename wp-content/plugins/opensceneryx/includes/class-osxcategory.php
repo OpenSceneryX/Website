@@ -11,15 +11,17 @@ class OSXCategory extends OSXItem {
 
     function __construct($path, $url) {
         parent::__construct($path, $url);
+
+        $contents = file_get_contents($this->path . '/category.txt');
+        $this->fileLines = explode(PHP_EOL, $contents);
+
         $this->parse();
     }
 
-    function parse() {
-        $contents = file_get_contents($this->path . '/category.txt');
-        $lines = explode(PHP_EOL, $contents);
+    protected function parse() {
         $matches = array();
 
-        foreach ($lines as $line) {
+        foreach ($this->fileLines as $line) {
             if (preg_match('/^Title:\s+(.*)/', $line, $matches) === 1) {
                 $this->title = $matches[1];
                 continue;
@@ -37,7 +39,7 @@ class OSXCategory extends OSXItem {
 		}
     }
 
-    function getHTML() {
+    public function getHTML() {
         $result = '';
 
         if (count($this->subcategories > 0)) {

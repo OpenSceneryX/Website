@@ -65,7 +65,7 @@ class OpenSceneryX {
             $docPath = implode(array_slice($urlVars, 1), '/');
             $osxItemPath = ABSPATH . $docPath;
 
-            $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath);
+            $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
 
             $id = -42;
             $post = new stdClass();
@@ -145,12 +145,23 @@ class OpenSceneryX {
         return $breadcrumbs;
     }
 
-    function osxParseFolder($path, $url)
+    function osxParseFolder($path, $url, $itemType)
     {
         if (is_file($path . '/category.txt')) {
             return new OSXCategory($path, $url);
         } elseif (is_file($path . '/info.txt')) {
-            return new OSXObject($path, $url);
+            switch ($itemType) {
+                case 'facades':
+                    return new OSXFacade($path, $url);
+                case 'forests':
+                    return new OSXForest($path, $url);
+                case 'lines':
+                    return new OSXLine($path, $url);
+                case 'objects':
+                    return new OSXObject($path, $url);
+                case 'polygons':
+                    return new OSXPolygon($path, $url);
+            }
         }
     }
 }
