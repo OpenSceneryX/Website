@@ -120,8 +120,8 @@ class OpenSceneryX {
     }
 
     function osxContent($content)
-    {
-        if (function_exists('yoast_breadcrumb')) {
+    {   
+        if (is_singular() && !is_front_page() && function_exists('yoast_breadcrumb')) {
             $content = yoast_breadcrumb('<p id="breadcrumbs">', '</p>', false) . $content;
         }
 
