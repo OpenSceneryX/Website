@@ -50,9 +50,8 @@ class OSXPolygon extends OSXLibraryItem {
     }
 
     protected function getTypeSpecificHTML() {
-        $result = "<h2>Polygon-specific Details</h2>\n";
-        $result .= "<ul>\n";
-
+        $result = "";
+        
         if ($this->textureScaleH !== null && $this->textureScaleV !== null) {
             $result .= "<li><span class='fieldTitle'>Texture Scale:</span> <span class='fieldValue'>h: " . $this->textureScaleH . "m, v: " + $this->textureScaleV + "m</span></li>\n";
         }
@@ -69,7 +68,10 @@ class OSXPolygon extends OSXLibraryItem {
             $result .= "<li><span class='fieldTitle'>Surface Type:</span> <span class='fieldValue'>" . $this->surfaceName . "</span></li>\n";
         }
 
-        $result .= "</ul>\n";
+        if ($result != "") {
+            $result = "<h2>Polygon-specific Details</h2><ul>\n" . $result . "</ul>\n";
+        }
+        
         return $result;
     }
 }

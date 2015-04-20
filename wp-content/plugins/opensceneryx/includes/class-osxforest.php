@@ -14,6 +14,12 @@ class OSXForest extends OSXLibraryItem {
     }
 
     protected function getTypeSpecificHTML() {
-        return "";
+        $result = "";
+        
+        if ($result != "") {
+            $result = "<h2>Forest-specific Details</h2><ul>\n" . $result . "</ul>\n";
+        }
+
+        return $result;
     }
 }

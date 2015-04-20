@@ -14,6 +14,12 @@ class OSXLine extends OSXLibraryItem {
     }
 
     protected function getTypeSpecificHTML() {
-        return "";
+        $result = "";
+        
+        if ($result != "") {
+            $result = "<h2>Line-specific Details</h2><ul>\n" . $result . "</ul>\n";
+        }
+
+        return $result;
     }
 }

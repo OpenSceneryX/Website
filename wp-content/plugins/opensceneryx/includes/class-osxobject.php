@@ -45,9 +45,8 @@ class OSXObject extends OSXLibraryItem {
     }
 
     protected function getTypeSpecificHTML() {
-        $result = "<h2>Object-specific Details</h2>\n";
-        $result .= "<ul>\n";
-
+        $result = "";
+        
         if ($this->width !== null && $this->height !== null && $this->depth !== null) {
             $result .= "<li><span class='fieldTitle'>Dimensions:</span>\n";
             $result .= "<ul class='dimensions'>\n";
@@ -58,7 +57,10 @@ class OSXObject extends OSXLibraryItem {
             $result .= "</li>\n";
         }
 
-        $result .= "</ul>\n";
+        if ($result != "") {
+            $result = "<h2>Object-specific Details</h2><ul>\n" . $result . "</ul>\n";
+        }
+        
         return $result;
     }
 }

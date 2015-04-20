@@ -14,6 +14,12 @@ class OSXFacade extends OSXLibraryItem {
     }
 
     protected function getTypeSpecificHTML() {
-        return "";
+        $result = "";
+        
+        if ($result != "") {
+            $result = "<h2>Facade-specific Details</h2><ul>\n" . $result . "</ul>\n";
+        }
+
+        return $result;
     }
 }
