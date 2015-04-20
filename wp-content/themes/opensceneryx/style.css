@@ -68,6 +68,9 @@ Template: twentyeleven
 	font-family: Georgia, "Bitstream Charter", serif;
 }
 
+.entry-content h2, .entry-content h3, .entry-content h4 {
+	clear: none;
+}
 ul.downloads li {
 	list-style-type: none;
 }
@@ -133,7 +136,7 @@ div#toc h4 {
 	padding-top: 0.5em;
 }
 
-h4.inline {
+h3.inline, h4.inline {
 	display:inline;
 	padding-right: 1em;
 }
