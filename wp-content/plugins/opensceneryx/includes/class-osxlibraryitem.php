@@ -155,7 +155,7 @@ abstract class OSXLibraryItem extends OSXItem {
         $result = '';
 
         if (count($this->virtualPaths) > 0) {
-            $result .= "<div class='virtualPath'><h2>Virtual Paths</h2>\n";
+            $result .= "<div class='virtualPath'><h2>Paths</h2>\n";
 
             foreach ($this->virtualPaths as $virtualPath) {
                 $result .= $virtualPath . "<br />\n";

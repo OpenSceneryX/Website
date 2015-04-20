@@ -37,12 +37,12 @@ class OSXPolygon extends OSXLibraryItem {
                 continue;
             }
 
-            if (preg_match('/^Layer Group Offset:\s+(.*)/', $line, $matches) === 1) {
+            if (preg_match('/^Layer Offset:\s+(.*)/', $line, $matches) === 1) {
                 $this->layerGroupOffset = $matches[1];
                 continue;
             }
 
-            if (preg_match('/^Surface:\s+(.*)/', $line, $matches) === 1) {
+            if (preg_match('/^Surface Type:\s+(.*)/', $line, $matches) === 1) {
                 $this->surfaceName = $matches[1];
                 continue;
             }
@@ -53,7 +53,7 @@ class OSXPolygon extends OSXLibraryItem {
         $result = "";
         
         if ($this->textureScaleH !== null && $this->textureScaleV !== null) {
-            $result .= "<li><span class='fieldTitle'>Texture Scale:</span> <span class='fieldValue'>h: " . $this->textureScaleH . "m, v: " + $this->textureScaleV + "m</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>Texture Scale:</span> <span class='fieldValue'>h: " . $this->textureScaleH . "m, v: " . $this->textureScaleV . "m</span></li>\n";
         }
 
         if ($this->layerGroupName !== null) {
