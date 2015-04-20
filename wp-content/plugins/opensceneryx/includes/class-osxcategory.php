@@ -55,7 +55,7 @@ class OSXCategory extends OSXItem {
 
             foreach ($this->items as $item) {
                 $result .= "<div class='thumbnailcontainer'>\n";
-                $result .= "<h4><a href='/" . $item['path'] . "'>" . $item['title'] . "</a></h4><a href='/" . $item['path'] . "' class='nounderline'>";
+                $result .= "<h3><a href='/" . $item['path'] . "'>" . $item['title'] . "</a></h3><a href='/" . $item['path'] . "' class='nounderline'>";
                 if (is_file($item['path'] . '/screenshot.jpg')) {
                     $result .= "<img src='/" . $item['path'] . "/screenshot.jpg' alt='Screenshot of " . \str_replace("'", "&apos;", $item['title']) . "' />";
                 } else {
@@ -66,6 +66,8 @@ class OSXCategory extends OSXItem {
             }
         }
 
+        $result .= "<div class='clear'>&nbsp;</div>";
+        
         return $result;
     }
 }

@@ -253,6 +253,8 @@ abstract class OSXLibraryItem extends OSXItem {
             }
         }
 
+        $result .= "<div class='clear'>&nbsp;</div>";
+        
         return $result;
     }
 
