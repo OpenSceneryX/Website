@@ -3,7 +3,7 @@
 /**
  * Description of OSXItem
  */
-class OSXItem {
+abstract class OSXItem {
 
     public $path;
 
@@ -19,4 +19,6 @@ class OSXItem {
         $this->path = $path;
         $this->url = $url;
     }
+    
+    abstract protected function parse();
 }
