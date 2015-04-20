@@ -45,11 +45,6 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
-            if (preg_match('/^Ancestor:\s+"(.*)"\s+"(.*)"/', $line, $matches) === 1) {
-                $this->ancestors[] = array('title' => $matches[1], 'url' => $matches[2]);
-                continue;
-            }
-
             if (preg_match('/^Texture:\s+(.*)/', $line, $matches) === 1) {
                 $this->textures[] = array('name' => $matches[1], 'sharedwith' => array());
                 continue;

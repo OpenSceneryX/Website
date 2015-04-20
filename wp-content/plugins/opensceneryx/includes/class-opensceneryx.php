@@ -51,7 +51,7 @@ class OpenSceneryX {
                 return;
             }
 
-		    switch ($urlVars[1]) {
+            switch ($urlVars[1]) {
                 case 'facades':
                 case 'forests':
                 case 'lines':
@@ -133,10 +133,12 @@ class OpenSceneryX {
         global $wp_query;
 
         if ($wp_query->post->post_type == 'osxitem') {
-             $breadcrumbs = array(array('text' => 'Catalogue', 'url' => '/catalogue', 'allow_html' => true));
+            $breadcrumbs = array();
+            $breadcrumbs[] = array('text' => 'Home', 'url' => '/', 'allow_html' => true);
+            $breadcrumbs[] = array('text' => 'Catalogue', 'url' => '/catalogue', 'allow_html' => true);
 
             foreach ($this->osxItem->ancestors as $ancestor) {
-                $breadcrumbs[] = array('text' => $ancestor['title'], 'url' => $ancestor['url'], 'allow_html' => true);
+                $breadcrumbs[] = array('text' => $ancestor->title, 'url' => '/' . $ancestor->url, 'allow_html' => true);
             }
 
             $breadcrumbs[] = array('text' => $this->osxItem->title, 'allow_html' => true);

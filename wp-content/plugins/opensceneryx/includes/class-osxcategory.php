@@ -36,7 +36,7 @@ class OSXCategory extends OSXItem {
                 $this->items[] = array('title' => $matches[1], 'path' => $matches[2]);
                 continue;
             }
-		}
+        }
     }
 
     public function getHTML() {
