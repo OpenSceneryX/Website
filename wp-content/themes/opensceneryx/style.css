@@ -270,6 +270,10 @@ ul.mainItemDetails li.note {
 	list-style-image: url(/doc/note.gif);
 }
 
+ul.mainItemDetails li.animated {
+	list-style-image: url(/doc/animated.gif);
+}
+
 ul.secondaryItemDetails {
 	font-size: 0.8em;
 }
