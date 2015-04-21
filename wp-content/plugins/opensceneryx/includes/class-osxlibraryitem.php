@@ -111,21 +111,6 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
-            if (preg_match('/^Width:\s+(.*)/', $line, $matches) === 1) {
-                $this->width = $matches[1];
-                continue;
-            }
-
-            if (preg_match('/^Height:\s+(.*)/', $line, $matches) === 1) {
-                $this->height = $matches[1];
-                continue;
-            }
-
-            if (preg_match('/^Depth:\s+(.*)/', $line, $matches) === 1) {
-                $this->depth = $matches[1];
-                continue;
-            }
-
             if (preg_match('/^Logo:\s+(.*)/', $line, $matches) === 1) {
                 $this->logo = $matches[1];
                 continue;
@@ -140,7 +125,7 @@ abstract class OSXLibraryItem extends OSXItem {
                 $this->description = $matches[1];
                 continue;
             }
-            
+
             // Default is to append to the description.  This handles any amount of extra text at the end of the file
             $this->description .= $line;
         }
@@ -249,7 +234,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         $result .= "<div class='clear'>&nbsp;</div>";
-        
+
         return $result;
     }
 
