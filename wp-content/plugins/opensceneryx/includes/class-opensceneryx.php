@@ -31,10 +31,15 @@ class OpenSceneryX {
         $this->pluginDirPath = $pluginDirPath;
 
         add_action('wp', array($this, 'osxLibraryPage'));
+        add_action('wp_enqueue_scripts', array($this, 'osxScripts'));
+
+        add_shortcode('osxinfo', array($this, 'osxInfoShortcode'));
+
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
         add_filter('pre_post_link', array($this, 'osxPermalink'));
         add_filter('the_content', array($this, 'osxContent'));
         add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
+
     }
 
     function osxLibraryPage() {
@@ -96,6 +101,26 @@ class OpenSceneryX {
         }
     }
 
+    function osxScripts()
+    {
+        wp_enqueue_script('versionInfo', '/doc/versionInfo.js');
+    }
+
+    function osxInfoShortcode($attrs)
+    {
+        if (!array_key_exists('data', $attrs)) {
+            return "ERROR: No 'data' parameter specified.  Allowed values: version, versiondate, authors, objectcount";
+        }
+
+        switch ($attrs['data']) {
+            case 'version': return "<script type='text/javascript'>document.write(osxVersion);</script>";
+            case 'versiondate': return "<script type='text/javascript'>document.write(osxVersionDate);</script>";
+            case 'authors': return "<script type='text/javascript'>document.write(osxAuthors);</script>";
+            case 'objectcount': return "<script type='text/javascript'>document.write(osxObjectCount);</script>";
+            default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount";
+        }
+    }
+
     function osxMenuClasses($classes, $page, $depth, $args, $currentPage)
     {
         global $wp_query;
@@ -120,7 +145,7 @@ class OpenSceneryX {
     }
 
     function osxContent($content)
-    {   
+    {
         if (is_singular() && !is_front_page() && function_exists('yoast_breadcrumb')) {
             $content = yoast_breadcrumb('<p id="breadcrumbs">', '</p>', false) . $content;
         }
