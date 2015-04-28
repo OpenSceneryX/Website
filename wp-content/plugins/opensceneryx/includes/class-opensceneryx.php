@@ -110,7 +110,7 @@ class OpenSceneryX {
     function osxInfoShortcode($attrs)
     {
         if (!array_key_exists('data', $attrs)) {
-            return "ERROR: No 'data' parameter specified.  Allowed values: version, versiondate, authors, objectcount";
+            return "ERROR: No 'data' parameter specified.  Allowed values: version, versiondate, authors, objectcount, developerpackdownload";
         }
 
         switch ($attrs['data']) {
@@ -118,7 +118,8 @@ class OpenSceneryX {
             case 'versiondate': return "<script type='text/javascript'>document.write(osxVersionDate);</script>";
             case 'authors': return "<script type='text/javascript'>document.write(osxAuthors);</script>";
             case 'objectcount': return "<script type='text/javascript'>document.write(osxObjectCount);</script>";
-            default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount";
+            case 'developerpackdownload': return "<script type='text/javascript'>document.write('<a href=\"/downloads/OpenSceneryX-DeveloperPack-' + osxVersion + '.zip\">OpenSceneryX Developer Pack ' + osxVersion + '</a>');</script>";
+            default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount, developerpackdownload";
         }
     }
 
