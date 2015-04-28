@@ -34,6 +34,7 @@ class OpenSceneryX {
         add_action('wp_enqueue_scripts', array($this, 'osxScripts'));
 
         add_shortcode('osxinfo', array($this, 'osxInfoShortcode'));
+        add_shortcode('osxreleasenotes', array($this, 'osxReleaseNotesShortcode'));
 
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
         add_filter('pre_post_link', array($this, 'osxPermalink'));
@@ -118,6 +119,17 @@ class OpenSceneryX {
             case 'authors': return "<script type='text/javascript'>document.write(osxAuthors);</script>";
             case 'objectcount': return "<script type='text/javascript'>document.write(osxObjectCount);</script>";
             default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount";
+        }
+    }
+
+    function osxReleaseNotesShortcode($attrs)
+    {
+        $releaseNotesPath = ABSPATH . 'doc/releaseNotes.html';
+
+        if (is_file($releaseNotesPath)) {
+            return file_get_contents($releaseNotesPath);
+        } else {
+            return "ERROR: No release notes found";
         }
     }
 
