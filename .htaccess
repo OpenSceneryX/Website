@@ -15,7 +15,16 @@
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} \.(html)$ [OR]
+
+# Remove .html if found
+RewriteRule ^(.*)/(.*?)\.html$ /$1 [L,R=301] 
+
+# Send library cataloguq requests to Wordpress
+RewriteCond %{REQUEST_FILENAME} /(facades|forests|lines|objects|polygons)/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.php [L]
+
+# Standard Wordpress
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]

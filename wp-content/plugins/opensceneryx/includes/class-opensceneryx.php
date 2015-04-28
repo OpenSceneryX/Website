@@ -24,26 +24,32 @@
 class OpenSceneryX {
     protected $pluginDirPath;
 
+    protected $osxItem;
+
     public function run($pluginDirPath)
     {
         $this->pluginDirPath = $pluginDirPath;
 
-        // We want to intercept all requests to parse the URL
-        add_action('template_redirect', array($this, 'osxURLHandler'));
+        add_action('wp', array($this, 'osxLibraryPage'));
+        add_action('wp_enqueue_scripts', array($this, 'osxScripts'));
+
+        add_shortcode('osxinfo', array($this, 'osxInfoShortcode'));
+        add_shortcode('osxreleasenotes', array($this, 'osxReleaseNotesShortcode'));
+
+        add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
+        add_filter('pre_post_link', array($this, 'osxPermalink'));
+        add_filter('the_content', array($this, 'osxContent'));
+        add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
+
     }
 
-    /**
-    * Parse the URL to check for an osx path (facades, forests, lines, objects, polygons).  If we find one, use a special
-    * template that includes the docs for the specific item
-    */
-    function osxURLHandler()
-    {
-        global $wp_query, $osxItemPath;
+    function osxLibraryPage() {
+        global $wp_query;
 
         if (!empty($_SERVER['REQUEST_URI'])) {
             $urlVars = explode('/', $_SERVER['REQUEST_URI']);
 
-            if (count($urlVars) < 2) {
+            if (count($urlVars) < 1) {
                 return;
             }
 
@@ -51,10 +57,7 @@ class OpenSceneryX {
                 return;
             }
 
-            $wp_query->is_404 = false;
-
             switch ($urlVars[1]) {
-                case 'doc':
                 case 'facades':
                 case 'forests':
                 case 'lines':
@@ -68,9 +71,137 @@ class OpenSceneryX {
             $docPath = implode(array_slice($urlVars, 1), '/');
             $osxItemPath = ABSPATH . $docPath;
 
-            $template = $this->pluginDirPath . 'item.php';
-            require($template);
-            die;
+            $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
+
+            $id = -42;
+            $post = new stdClass();
+            $post->ID = $id;
+            $post->post_category = array('uncategorized'); //Add some categories. an array()???
+            $post->post_title = $this->osxItem->title;
+            $post->post_content = $this->osxItem->getHTML();
+            $post->post_excerpt = '';
+            $post->post_status = 'publish';
+            $post->post_type = 'osxitem';
+            $post->post_author = 1;
+            $post->post_parent = 753;
+            $post->guid = $docPath;
+
+            $wp_query->queried_object = $post;
+            $wp_query->post = $post;
+            $wp_query->found_posts = 1;
+            $wp_query->post_count = 1;
+            $wp_query->max_num_pages = 1;
+            $wp_query->posts = array($post);
+
+            $wp_query->is_single = true;
+            $wp_query->is_singular = true;
+            $wp_query->is_404 = false;
+            $wp_query->is_posts_page = false;
+            $wp_query->is_page = true;
+            $wp_query->is_post = false;
+        }
+    }
+
+    function osxScripts()
+    {
+        wp_enqueue_script('versionInfo', '/doc/versionInfo.js');
+    }
+
+    function osxInfoShortcode($attrs)
+    {
+        if (!array_key_exists('data', $attrs)) {
+            return "ERROR: No 'data' parameter specified.  Allowed values: version, versiondate, authors, objectcount, developerpackdownload";
+        }
+
+        switch ($attrs['data']) {
+            case 'version': return "<script type='text/javascript'>document.write(osxVersion);</script>";
+            case 'versiondate': return "<script type='text/javascript'>document.write(osxVersionDate);</script>";
+            case 'authors': return "<script type='text/javascript'>document.write(osxAuthors);</script>";
+            case 'objectcount': return "<script type='text/javascript'>document.write(osxObjectCount);</script>";
+            case 'developerpackdownload': return "<script type='text/javascript'>document.write('<a href=\"/downloads/OpenSceneryX-DeveloperPack-' + osxVersion + '.zip\">OpenSceneryX Developer Pack ' + osxVersion + '</a>');</script>";
+            default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount, developerpackdownload";
+        }
+    }
+
+    function osxReleaseNotesShortcode($attrs)
+    {
+        $releaseNotesPath = ABSPATH . 'doc/releaseNotes.html';
+
+        if (is_file($releaseNotesPath)) {
+            return file_get_contents($releaseNotesPath);
+        } else {
+            return "ERROR: No release notes found";
+        }
+    }
+
+    function osxMenuClasses($classes, $page, $depth, $args, $currentPage)
+    {
+        global $wp_query;
+
+        if ($wp_query->post->post_type == 'osxitem') {
+            $pageItemClass = 'page-item-' . $wp_query->post->post_parent;
+            $classes = str_replace('current_page_item', '', $classes);
+            $classes = str_replace($pageItemClass, $pageItemClass . ' current_page_item', $classes);
+        }
+        return $classes;
+    }
+
+    function osxPermalink($url)
+    {
+        global $wp_query;
+
+        if ($wp_query->post->post_type == 'osxitem') {
+            return $wp_query->post->guid;
+        }
+
+        return $url;
+    }
+
+    function osxContent($content)
+    {
+        if (is_singular() && !is_front_page() && function_exists('yoast_breadcrumb')) {
+            $content = yoast_breadcrumb('<p id="breadcrumbs">', '</p>', false) . $content;
+        }
+
+        return $content;
+    }
+
+    function osxBreadcrumbs($breadcrumbs)
+    {
+        global $wp_query;
+
+        if ($wp_query->post->post_type == 'osxitem') {
+            $breadcrumbs = array();
+            $breadcrumbs[] = array('text' => 'Home', 'url' => '/', 'allow_html' => true);
+            $breadcrumbs[] = array('text' => 'Catalogue', 'url' => '/catalogue', 'allow_html' => true);
+
+            foreach ($this->osxItem->ancestors as $ancestor) {
+                $breadcrumbs[] = array('text' => $ancestor->title, 'url' => '/' . $ancestor->url, 'allow_html' => true);
+            }
+
+            $breadcrumbs[] = array('text' => $this->osxItem->title, 'allow_html' => true);
+        }
+
+        return $breadcrumbs;
+    }
+
+    function osxParseFolder($path, $url, $itemType)
+    {
+        if (is_file($path . '/category.txt')) {
+            return new OSXCategory($path, $url);
+        } elseif (is_file($path . '/info.txt')) {
+            switch ($itemType) {
+                case 'facades':
+                    return new OSXFacade($path, $url);
+                case 'forests':
+                    return new OSXForest($path, $url);
+                case 'lines':
+                    return new OSXLine($path, $url);
+                case 'objects':
+                    return new OSXObject($path, $url);
+                case 'polygons':
+                    return new OSXPolygon($path, $url);
+            }
         }
     }
 }

@@ -31,6 +31,14 @@ if (!defined( 'WPINC')) {
 }
 
 require_once plugin_dir_path(__FILE__) . 'includes/class-opensceneryx.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxitem.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxcategory.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxlibraryitem.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxfacade.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxforest.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxline.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxobject.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxpolygon.php';
 
 function runOpenSceneryX($pluginDirPath)
 {
@@ -39,4 +47,3 @@ function runOpenSceneryX($pluginDirPath)
 }
 
 runOpenSceneryX(plugin_dir_path(__FILE__));
-
