@@ -173,7 +173,7 @@ class OpenSceneryX {
         if ($wp_query->post->post_type == 'osxitem') {
             $breadcrumbs = array();
             $breadcrumbs[] = array('text' => 'Home', 'url' => '/', 'allow_html' => true);
-            $breadcrumbs[] = array('text' => 'Catalogue', 'url' => '/catalogue', 'allow_html' => true);
+            $breadcrumbs[] = array('text' => 'Contents', 'url' => '/contents', 'allow_html' => true);
 
             foreach ($this->osxItem->ancestors as $ancestor) {
                 $breadcrumbs[] = array('text' => $ancestor->title, 'url' => '/' . $ancestor->url, 'allow_html' => true);
