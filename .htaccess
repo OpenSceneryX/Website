@@ -16,10 +16,14 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
 
+# ReleaseNotes
+RewriteCond %{REQUEST_FILENAME} ReleaseNotes.html
+RewriteRule . /support/release-notes [L,R=301] 
+
 # Remove .html if found
 RewriteRule ^(.*)/(.*?)\.html$ /$1 [L,R=301] 
 
-# Send library cataloguq requests to Wordpress
+# Send library catalogue requests to Wordpress
 RewriteCond %{REQUEST_FILENAME} /(facades|forests|lines|objects|polygons)/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule . /index.php [L]

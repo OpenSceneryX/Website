@@ -125,7 +125,7 @@ class OpenSceneryX {
 
     function osxReleaseNotesShortcode($attrs)
     {
-        $releaseNotesPath = ABSPATH . 'doc/releaseNotes.html';
+        $releaseNotesPath = ABSPATH . 'doc/ReleaseNotes.html';
 
         if (is_file($releaseNotesPath)) {
             return file_get_contents($releaseNotesPath);
