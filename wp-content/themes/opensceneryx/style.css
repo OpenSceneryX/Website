@@ -60,14 +60,6 @@ Template: twentyeleven
 	color: red;
 }
 
-.entry-content input {
-	margin: 0;
-}
-
-.entry-content label {
-	font-family: Georgia, "Bitstream Charter", serif;
-}
-
 .entry-content h2, .entry-content h3, .entry-content h4 {
 	clear: none;
 }
@@ -88,44 +80,6 @@ a.nounderline {
 .warning {
 	color: red;
 }
-
-.ddfmwrap {
-	font-family: Georgia, "Bitstream Charter", serif ! important;
-	width: 100% ! important;
-}
-
-.ddfm {
-	width: 100% ! important;
-	margin: 0 ! important;
-	padding: 0 ! important;
-}
-
-form.ddfm label {
-	font-weight: normal ! important;
-	margin: 0 1em 0 0 ! important;
-}
-
-form.ddfm .fmcheck label {
-	display: inline;
-	float: none;
-	clear: none;
-	text-align: left;
-	margin-left: 0.75em ! important;
-}
-
-form.ddfm .fmverify {
-	margin-right: 1em;
-}
-
-form.ddfm .fmverifyimg {
-	padding-top: 0.15em;
-}
-
-
-
-
-
-
 
 div#toc h2 {
 	padding-top: 0.5em;
@@ -234,6 +188,10 @@ div.highlightbox {
 	border: 1px solid #AAAACC;
 	margin: 1em 0 2em;
 	padding: 1em 1.5em;
+}
+
+fieldset.highlightbox {
+        background-color: #EEEEFF ! important;
 }
 
 p#version {
