@@ -4,11 +4,11 @@ Plugin Name: Visual Form Builder
 Description: Dynamically build forms using a simple interface. Forms include jQuery validation, a basic logic-based verification system, and entry tracking.
 Author: Matthew Muro
 Author URI: http://matthewmuro.com
-Version: 2.8.2
+Version: 2.8.3
 */
 
 // Version number to output as meta tag
-define( 'VFB_VERSION', '2.8.2' );
+define( 'VFB_VERSION', '2.8.3' );
 
 /*
 This program is free software; you can redistribute it and/or modify
@@ -1614,8 +1614,8 @@ class Visual_Form_Builder{
 			<?php _e( 'Entries', 'visual-form-builder' ); ?>
 <?php
 			// If searched, output the query
-			if ( isset( $_REQUEST['s'] ) && !empty( $_REQUEST['s'] ) )
-				echo '<span class="subtitle">' . sprintf( __( 'Search results for "%s"' , 'visual-form-builder' ), $_REQUEST['s'] );
+			if ( isset( $_POST['s'] ) && !empty( $_POST['s'] ) )
+				echo '<span class="subtitle">' . sprintf( __( 'Search results for "%s"' , 'visual-form-builder' ), esc_html( $_POST['s'] ) );
 ?>
 		</h2>
 <?php
@@ -1790,8 +1790,8 @@ class Visual_Form_Builder{
 			echo sprintf( ' <a href="%1$s" class="add-new-h2">%2$s</a>', esc_url( admin_url( 'admin.php?page=vfb-add-new' ) ), esc_html( __( 'Add New', 'visual-form-builder' ) ) );
 
 			// If searched, output the query
-			if ( isset( $_REQUEST['s'] ) && !empty( $_REQUEST['s'] ) )
-				echo '<span class="subtitle">' . sprintf( __( 'Search results for "%s"' , 'visual-form-builder' ), $_REQUEST['s'] );
+			if ( isset( $_POST['s'] ) && !empty( $_POST['s'] ) )
+				echo '<span class="subtitle">' . sprintf( __( 'Search results for "%s"' , 'visual-form-builder' ), esc_html( $_POST['s'] ) );
 ?>
 		</h2>
 		<?php if ( empty( $form_nav_selected_id ) ) : ?>
