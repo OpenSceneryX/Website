@@ -13,16 +13,17 @@
 	</div><!-- #main -->
 
 	<div style="clear:both;">&nbsp;</div>
-	<div id="google">
-		<script type="text/javascript"><!--
-			google_ad_client = "pub-5631233433203577";
-			/* 728x15, created 18/03/08 */
-			google_ad_slot = "0268115694";
-			google_ad_width = 800;
-			google_ad_height = 30;
-		//-->
-		</script>
-		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	<div>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Responsive -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5631233433203577"
+                     data-ad-slot="2074123534"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 	</div>
 	<div style="clear:both;">&nbsp;</div>
 
