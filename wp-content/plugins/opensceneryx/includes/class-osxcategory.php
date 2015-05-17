@@ -44,10 +44,11 @@ class OSXCategory extends OSXItem {
 
         if (count($this->subcategories) > 0) {
             $result .= '<h2>Sub-categories</h2>';
-
+            $result .= '<div class="subcategories">';
             foreach ($this->subcategories as $subcategory) {
                 $result .= "<h3 class='inline'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
             }
+            $result .= '</div>';
         }
 
         if (count($this->items) > 0) {
