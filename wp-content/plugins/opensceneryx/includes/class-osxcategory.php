@@ -42,7 +42,7 @@ class OSXCategory extends OSXItem {
     public function getHTML() {
         $result = '';
 
-        if (count($this->subcategories > 0)) {
+        if (count($this->subcategories) > 0) {
             $result .= '<h2>Sub-categories</h2>';
 
             foreach ($this->subcategories as $subcategory) {
