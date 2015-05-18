@@ -208,6 +208,11 @@ fieldset.highlightbox {
         background-color: #EEEEFF ! important;
 }
 
+div.highlightbox h2 span {
+    line-height: 40px;
+    padding-left: 0.5em;
+}
+
 p#version {
 	padding: 0.5em 0 0 0;
 	margin: 0;
