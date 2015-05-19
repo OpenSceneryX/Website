@@ -72,6 +72,11 @@ class OpenSceneryX {
             $osxItemPath = ABSPATH . $docPath;
 
             $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
+            if ($this->osxItem == null) {
+                $wp_query->is_404 = true;
+                error_log('Library URL Not Found: ' . $_SERVER['REQUEST_URI']);
+                return;
+            }
 
             $id = -42;
             $post = new stdClass();
@@ -203,5 +208,7 @@ class OpenSceneryX {
                     return new OSXPolygon($path, $url);
             }
         }
+
+        return null;
     }
 }
