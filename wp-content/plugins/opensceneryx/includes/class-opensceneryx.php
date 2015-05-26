@@ -17,6 +17,11 @@
 */
 
 /**
+ * Additional credits:
+ * Maykel Loomans http://www.maykelloomans.com/ for the 'link_updated' code.
+ */
+
+/**
  * Main plugin class
  *
  * @author austin
@@ -32,6 +37,7 @@ class OpenSceneryX {
 
         add_action('wp', array($this, 'osxLibraryPage'));
         add_action('wp_enqueue_scripts', array($this, 'osxScripts'));
+        add_action('add_link', array($this, 'osxRefreshLinkUpdated'));
 
         add_shortcode('osxinfo', array($this, 'osxInfoShortcode'));
         add_shortcode('osxreleasenotes', array($this, 'osxReleaseNotesShortcode'));
@@ -110,6 +116,19 @@ class OpenSceneryX {
     function osxScripts()
     {
         wp_enqueue_script('versionInfo', '/doc/versionInfo.js');
+    }
+
+    /**
+     * Updates the link_updated field when a link is initially created
+     *
+     * @global $wpdb Wordpress DB object
+     * @global string $table_prefix Wordpress table prefix
+     * @param int $link The ID of the link being updated
+     */
+    function osxRefreshLinkUpdated($link)
+    {
+        global $wpdb, $table_prefix;
+        $wpdb->query('UPDATE ' . $table_prefix . 'links SET link_updated = NOW() WHERE link_id = ' . $link);
     }
 
     function osxInfoShortcode($attrs)
