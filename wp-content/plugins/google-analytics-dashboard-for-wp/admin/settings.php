@@ -112,11 +112,6 @@ final class GADWP_Settings
 					<?php if (isset($message)) echo $message; ?>
 						<table class="options">
                             <tr>
-                                <td colspan="2">
-                                    <?php printf(__('Read %s for more information about Frontend Features and Options.', 'ga-dash'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', 'https://deconf.com/google-analytics-dashboard-wordpress/?utm_source=gadwp_config&utm_medium=link&utm_content=frontend_screen&utm_campaign=gadwp', __('this documentation page', 'ga-dash')))?>
-						        </td>
-                            </tr>						
-                            <tr>
                                 <td colspan="2"><?php echo "<h2>" . __( "Permissions", 'ga-dash' ) . "</h2>"; ?></td>
                             </tr>
                             <tr>
@@ -219,11 +214,6 @@ final class GADWP_Settings
                     <div class="inside">
 					<?php if (isset($message)) echo $message; ?>
 						<table class="options">
-                            <tr>
-                                <td colspan="2">
-                                    <?php printf(__('Read %s for more information about Backend Features and Options.', 'ga-dash'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', 'https://deconf.com/google-analytics-dashboard-wordpress/?utm_source=gadwp_config&utm_medium=link&utm_content=backend_screen&utm_campaign=gadwp', __('this documentation page', 'ga-dash')))?>
-						        </td>
-                            </tr>						
                             <tr>
                                 <td colspan="2"><?php echo "<h2>" . __( "Permissions", 'ga-dash' ) . "</h2>"; ?></td>
                             </tr>
@@ -366,7 +356,6 @@ final class GADWP_Settings
         );
         self::navigation_tabs($tabs);
         ?>
-        <div class="gadwp-help"><?php printf(__('For more information about Tracking Options read %s.', 'ga-dash'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', 'https://deconf.com/google-analytics-dashboard-wordpress/?utm_source=gadwp_config&utm_medium=link&utm_content=tracking_screen&utm_campaign=gadwp', __('this documentation page', 'ga-dash')));?></div>
 					<?php if (isset($message)) echo $message; ?>
 					    <div id="gadwp-basic">
                             <table class="options">
@@ -600,10 +589,6 @@ final class GADWP_Settings
             }
         }
         ?>
-                                        
-                                        
-                                        
-                                        
                                         </table>
                                     </td>
                                 </tr>
@@ -677,11 +662,6 @@ final class GADWP_Settings
         ?>
 						<div id="gadwp-errors">
                         <table class="options">
-                            <tr>
-                                <td>
-                                    <?php printf(__('For errors and/or other issues check %s and related resources.', 'ga-dash'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', 'https://deconf.com/google-analytics-dashboard-wordpress/?utm_source=gadwp_config&utm_medium=link&utm_content=errors_screen&utm_campaign=gadwp', __('this documentation page', 'ga-dash')))?>
-						        </td>
-                            </tr>
                             <tr>
                                 <td>
                                     <?php echo "<h2>" . __( "Last Error detected", 'ga-dash' ) . "</h2>"; ?>
