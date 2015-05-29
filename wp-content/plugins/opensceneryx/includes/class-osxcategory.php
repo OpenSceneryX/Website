@@ -46,7 +46,7 @@ class OSXCategory extends OSXItem {
             $result .= '<h2>Sub-categories</h2>';
             $result .= '<div class="subcategories">';
             foreach ($this->subcategories as $subcategory) {
-                $result .= "<h3 class='inline'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
+                $result .= "<h3 class='inline folder'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
             }
             $result .= '</div>';
         }
@@ -68,7 +68,7 @@ class OSXCategory extends OSXItem {
         }
 
         $result .= "<div class='clear'>&nbsp;</div>";
-        
+
         return $result;
     }
 }

@@ -96,13 +96,27 @@ div#toc h4 {
 	padding-top: 0.5em;
 }
 
+h2.folder {
+    padding: 0.2em 0 0 3em;
+    background-image: url('folder_generic.png');
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
 h3 {
-        font-size: 0.75em ! important;
+    font-size: 0.75em ! important;
 }
 
 h3.inline, h4.inline {
 	display:inline;
 	padding-right: 1em;
+}
+
+h3.folder {
+    padding: 0.1em 1.5em 0 2em;
+    background-image: url('folder_generic.png');
+    background-repeat: no-repeat;
+    background-size: 1.5em;
 }
 
 img.screenshot {
