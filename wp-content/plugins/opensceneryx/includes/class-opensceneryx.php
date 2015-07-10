@@ -35,7 +35,6 @@ class OpenSceneryX {
     {
         $this->pluginDirPath = $pluginDirPath;
 
-        add_action('wp', array($this, 'osxLibraryPage'));
         add_action('wp_enqueue_scripts', array($this, 'osxScripts'));
         add_action('add_link', array($this, 'osxRefreshLinkUpdated'));
 
@@ -43,74 +42,68 @@ class OpenSceneryX {
         add_shortcode('osxreleasenotes', array($this, 'osxReleaseNotesShortcode'));
         add_shortcode('osxlinks', array($this, 'osxLinksShortcode'));
 
+        add_filter('the_posts', array($this, 'osxPosts'));
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
         add_filter('pre_post_link', array($this, 'osxPermalink'));
         add_filter('the_content', array($this, 'osxContent'));
         add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
     }
 
-    function osxLibraryPage() {
+    /**
+     * Hook for 'the_posts' filter - detect whether we are on an OSX library item or category page and manufacture
+     * a post if so.
+     *
+     * @global Query $wp_query The global wp_wuery object
+     * @param array $posts The array of posts to filter
+     * @return array Filtered posts array (always either the passed-in array or an array with a single OSX post in it)
+     */
+    function osxPosts($posts) {
         global $wp_query;
 
-        if (!empty($_SERVER['REQUEST_URI'])) {
-            $urlVars = explode('/', $_SERVER['REQUEST_URI']);
-
-            if (count($urlVars) < 1) {
-                return;
-            }
-
-            if (!$wp_query->is_404) {
-                return;
-            }
-
-            switch ($urlVars[1]) {
-                case 'facades':
-                case 'forests':
-                case 'lines':
-                case 'objects':
-                case 'polygons':
-                    break;
-                default:
-                    return;
-            }
-
-            $docPath = implode(array_slice($urlVars, 1), '/');
-            $osxItemPath = ABSPATH . $docPath;
-
-            $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
-            if ($this->osxItem == null) {
-                $wp_query->is_404 = true;
-                error_log('Library URL Not Found: ' . $_SERVER['REQUEST_URI']);
-                return;
-            }
-
-            $id = -42;
-            $post = new stdClass();
-            $post->ID = $id;
-            $post->post_category = array('uncategorized'); //Add some categories. an array()???
-            $post->post_title = $this->osxItem->title;
-            $post->post_content = $this->osxItem->getHTML();
-            $post->post_excerpt = '';
-            $post->post_status = 'publish';
-            $post->post_type = 'osxitem';
-            $post->post_author = 1;
-            $post->post_parent = 753;
-            $post->guid = $docPath;
-
-            $wp_query->queried_object = $post;
-            $wp_query->post = $post;
-            $wp_query->found_posts = 1;
-            $wp_query->post_count = 1;
-            $wp_query->max_num_pages = 1;
-            $wp_query->posts = array($post);
-
-            $wp_query->is_single = true;
-            $wp_query->is_singular = true;
-            $wp_query->is_404 = false;
-            $wp_query->is_posts_page = false;
-            $wp_query->is_page = true;
-            $wp_query->is_post = false;
+        if (empty($_SERVER['REQUEST_URI'])) {
+            return $posts;
         }
+
+        $urlVars = explode('/', $_SERVER['REQUEST_URI']);
+
+        if (count($urlVars) < 1) {
+            return $posts;
+        }
+
+        switch ($urlVars[1]) {
+            case 'facades':
+            case 'forests':
+            case 'lines':
+            case 'objects':
+            case 'polygons':
+                break;
+            default:
+                return $posts;
+        }
+
+        $docPath = implode(array_slice($urlVars, 1), '/');
+        $osxItemPath = ABSPATH . $docPath;
+
+        $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
+        if ($this->osxItem == null) {
+            error_log('Library URL Not Found: ' . $_SERVER['REQUEST_URI']);
+            return $posts;
+        }
+
+        $id = -42;
+        $post = new stdClass();
+        $post->ID = $id;
+        $post->post_category = array('uncategorized'); //Add some categories. an array()???
+        $post->post_title = $this->osxItem->title;
+        $post->post_content = $this->osxItem->getHTML();
+        $post->post_excerpt = '';
+        $post->post_status = 'publish';
+        $post->post_type = 'osxitem';
+        $post->post_author = 1;
+        $post->post_parent = 753;
+        $post->guid = $docPath;
+
+        return array($post);
     }
 
     function osxScripts()
