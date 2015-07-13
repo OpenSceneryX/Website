@@ -53,13 +53,10 @@ class OpenSceneryX {
      * Hook for 'the_posts' filter - detect whether we are on an OSX library item or category page and manufacture
      * a post if so.
      *
-     * @global Query $wp_query The global wp_wuery object
      * @param array $posts The array of posts to filter
      * @return array Filtered posts array (always either the passed-in array or an array with a single OSX post in it)
      */
     function osxPosts($posts) {
-        global $wp_query;
-
         if (empty($_SERVER['REQUEST_URI'])) {
             return $posts;
         }
@@ -103,8 +100,12 @@ class OpenSceneryX {
         $post->post_parent = 753;
         $post->guid = $docPath;
 
+        // This solves a problem with URLs which end in a number having that number duplicated (e.g. /2/ -> /2/2/)
+        remove_action('template_redirect', 'redirect_canonical');
+        
         return array($post);
     }
+
 
     function osxScripts()
     {

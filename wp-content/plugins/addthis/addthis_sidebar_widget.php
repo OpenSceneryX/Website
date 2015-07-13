@@ -1,9 +1,27 @@
 <?php
-/** 
- * Add this Widget that allows you to pick your poison, add a widget title, and share your content
+/**
+ * +--------------------------------------------------------------------------+
+ * | Copyright (c) 2008-2015 AddThis, LLC                                     |
+ * +--------------------------------------------------------------------------+
+ * | This program is free software; you can redistribute it and/or modify     |
+ * | it under the terms of the GNU General Public License as published by     |
+ * | the Free Software Foundation; either version 2 of the License, or        |
+ * | (at your option) any later version.                                      |
+ * |                                                                          |
+ * | This program is distributed in the hope that it will be useful,          |
+ * | but WITHOUT ANY WARRANTY; without even the implied warranty of           |
+ * | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            |
+ * | GNU General Public License for more details.                             |
+ * |                                                                          |
+ * | You should have received a copy of the GNU General Public License        |
+ * | along with this program; if not, write to the Free Software              |
+ * | Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA |
+ * +--------------------------------------------------------------------------+
  */
 
-
+/**
+ * AddThis Widget that allows you to pick your poison, add a widget title, and share your content
+ */
 class AddThisSidebarWidget extends WP_Widget {
 
 
@@ -19,8 +37,8 @@ class AddThisSidebarWidget extends WP_Widget {
         $control_ops = array( 'width' => 325);
 
         /* Create the widget. */
-        $this->WP_Widget( 'addthis-widget', 'AddThis Share', $widget_ops, $control_ops );
-    
+        $this->WP_Widget( 'addthis-widget', 'AddThis Sharing Buttons', $widget_ops, $control_ops );
+
     }
 
     /**
@@ -30,16 +48,16 @@ class AddThisSidebarWidget extends WP_Widget {
     {
         extract ( $args );
         $addthis_new_styles = _get_style_options();
-       
+
 
         $title = apply_filters('widget_title', $instance['title']);
-        
+
         echo $before_widget;
         if ($title)
                 echo $before_title . $title . $after_title;
-       
+
         printf(apply_filters('addthis_sidebar_style_output',  $addthis_new_styles[$instance['style']]['src']), '');
-        
+
         echo $after_widget;
     }
 
@@ -52,12 +70,12 @@ class AddThisSidebarWidget extends WP_Widget {
 
         $instance = $old_instance;
         $instance['title'] = strip_tags($new_instance['title']);
-      
+
         if (isset($addthis_new_styles[ $new_instance['style'] ] ) )
             $instance['style'] = strip_tags($new_instance['style']);
 
 
-        
+
 
         return $instance;
 
@@ -68,30 +86,59 @@ class AddThisSidebarWidget extends WP_Widget {
      */
     function form($instance)
     {
-        if (empty($instance))
-        {
+        global $cmsConnector;
+
+        if (empty($instance)) {
             $instance = array('style'=> '' , 'title' => '');
         }
 
-        $style = (empty( $instance['style'] ) ) ? addthis_style_default :   esc_attr($instance['style']);
-        $title = (empty( $instance['title'] ) ) ? '' :   esc_attr($instance['title']);
-      
+        $style = (empty($instance['style'])) ? addthis_style_default : esc_attr($instance['style']);
+        $title = (empty($instance['title'])) ? '' : esc_attr($instance['title']);
 
-        global $addthis_new_styles; 
+        global $addthis_new_styles;
 
         ?>
-            <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
+            <p>
+                <label for="<?php echo $this->get_field_id('title'); ?>">
+                    <?php _e('Title:'); ?>
+                    <input
+                        class="widefat"
+                        id="<?php echo $this->get_field_id('title'); ?>"
+                        name="<?php echo $this->get_field_name('title'); ?>"
+                        type="text"
+                        value="<?php echo $title; ?>"
+                    />
+                </label>
+            </p>
 
-            <p><label for="<?php echo $this->get_field_id('style');?>"><?php _e('Style:', 'addthis'); ?><br /></label></p>
-                <?php foreach ($addthis_new_styles as $k => $v)
-                {
-                 
-                        $checked = '';
-                    if ($k === $style)
-                        $checked = 'checked="checked"';
-                    
-                    echo '<div style="height:auto;"><input '.$checked.' style="margin:5px 5px 0 0;" type="radio" name="' . $this->get_field_name('style') . '" value="'.$k.'"><img align="middle" style="padding:5px 0" src="'. plugins_url( '/addthis/img/' .  $v['img'], basename(dirname(__FILE__)) )  .'" /></div>';
+            <p>
+                <label for="<?php echo $this->get_field_id('style');?>">
+                    <?php _e('Style:', 'addthis'); ?>
+                    <br />
+                </label>
+            </p>
+            <?php
+            foreach ($addthis_new_styles as $k => $v) {
+                $checked = '';
+                if ($k === $style) {
+                    $checked = 'checked="checked"';
                 }
+
+                echo '
+                    <div style="height:auto;">
+                        <input '.$checked.'
+                            style="margin:5px 5px 0 0;"
+                            type="radio"
+                            name="' . $this->get_field_name('style') . '"
+                            value="'.$k.'"
+                        />
+                        <img
+                            align="middle"
+                            style="padding:5px 0"
+                            src="'. $cmsConnector->getPluginImageFolderUrl() .  $v['img'] .'"
+                        />
+                    </div>';
+            }
                 ?>
         <?php
     }
