@@ -1,4 +1,24 @@
-(function($, window, document, undefined) {
+/**
+ * +--------------------------------------------------------------------------+
+ * | Copyright (c) 2008-2015 AddThis, LLC                                     |
+ * +--------------------------------------------------------------------------+
+ * | This program is free software; you can redistribute it and/or modify     |
+ * | it under the terms of the GNU General Public License as published by     |
+ * | the Free Software Foundation; either version 2 of the License, or        |
+ * | (at your option) any later version.                                      |
+ * |                                                                          |
+ * | This program is distributed in the hope that it will be useful,          |
+ * | but WITHOUT ANY WARRANTY; without even the implied warranty of           |
+ * | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            |
+ * | GNU General Public License for more details.                             |
+ * |                                                                          |
+ * | You should have received a copy of the GNU General Public License        |
+ * | along with this program; if not, write to the Free Software              |
+ * | Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA |
+ * +--------------------------------------------------------------------------+
+ */
+
+ (function($, window, document, undefined) {
 
 	var aboveshareNamespace = window.addthisnamespaces && window.addthisnamespaces['aboveshare'] ? addthisnamespaces['aboveshare']: 'addthis-share-above';
 	var belowshareNamespace = window.addthisnamespaces && window.addthisnamespaces['belowshare'] ? addthisnamespaces['belowshare']: 'addthis-share-below';
@@ -10,7 +30,7 @@
 
   // jQuery ready event
   $(function() {
-	  
+
 	  $('.above-smart-sharing-container .restore-default-options').hide();
 	  $('.below-smart-sharing-container .restore-default-options').hide();
 	  $('#below').tooltip({ position: { my: "left+15 center", at: "right center" } });
@@ -239,7 +259,7 @@
           else {
 
             self.getaboveSavedOrder(function(obj) {
-          	  
+
               defaults = restoreDefaults ? self.defaults: obj.rememberedDefaults;
 
               abovecurrentType = $('input[name="addthis_settings[above]"]:checked');
@@ -249,7 +269,7 @@
               }
 
               if(abovecurrentType.length) {
-              
+
               	if(abovecurrentType.attr('id') == 'large_toolbox_above') {
               		style = "horizontal";
               		abovecurrentType = "addthisButtons";
@@ -266,8 +286,8 @@
               		style = "";
               		abovecurrentType = "image";
               	}
-              	
-              	
+
+
 
                 addthisMappedDefaults = _.map(defaults, function(value) {
                   var service = _.where(self.thirdPartyButtons.services(), { 'service': value });
@@ -298,16 +318,16 @@
                   self.populateList({ elem: abovesharingSortable, services: addthisServices, exclude: self.addthisButtons.exclude, defaults: addthisMappedDefaults, type: 'sharing-buttons', buttonType: 'addthisButtons' });
 
                   self.populateList({ elem: aboveselectedSortable, services: addthisServices, exclude: self.addthisButtons.exclude, defaults: addthisMappedDefaults, type: 'selected-services', buttonType: 'addthisButtons' });
-                  
+
                 }
-                
+
                 if(abovecurrentType === 'thirdPartyButtons' && style === 'horizontal') {
                   self.populateList({ elem: abovesharingSortable, services: thirdPartyServices, exclude: self.thirdPartyButtons.exclude['horizontal'], defaults: thirdPartyMappedDefaults, type: 'sharing-buttons', style: 'horizontal', buttonType: 'thirdPartyButtons' });
 
                   self.populateList({ elem: aboveselectedSortable, services: thirdPartyServices, exclude: self.thirdPartyButtons.exclude['horizontal'], defaults: thirdPartyMappedDefaults, type: 'selected-services', style: 'horizontal', buttonType: 'thirdPartyButtons' });
-                  
+
                 }
-                
+
                 $('body').trigger('populatedList');
                 def.resolve();
 
@@ -326,7 +346,7 @@
         return def;
 
       },
-      
+
       'belowpopulateSharingServices': function(restoreDefaults, pageload) {
 
           var self = this,
@@ -350,12 +370,12 @@
             }
 
             else {
-   
+
               self.getbelowSavedOrder(function(obj) {
-            	  
+
                 defaults = restoreDefaults ? self.defaults: obj.rememberedDefaults;
-    
-               
+
+
                 belowcurrentType = $('input[name="addthis_settings[below]"]:checked');
 
                 if(!belowcurrentType.length) {
@@ -363,7 +383,7 @@
                 }
 
                 if(belowcurrentType.length) {
-                
+
                 	if(belowcurrentType.attr('id') == 'large_toolbox_below') {
                 		style = "horizontal";
                 		belowcurrentType = "addthisButtons";
@@ -380,7 +400,7 @@
                 		style = "";
                 		belowcurrentType = "image";
                 	}
-                	
+
                 	addthisMappedDefaults = _.map(defaults, function(value) {
                         var service = _.where(self.thirdPartyButtons.services(), { 'service': value });
                         if(service.length) {
@@ -405,7 +425,7 @@
                       addthisServices = self.sort({ defaults: addthisMappedDefaults, services: self.totalServices });
 
                       thirdPartyServices = self.sort({ defaults: thirdPartyMappedDefaults, services: self.totalServices });
-                      
+
                       if(belowcurrentType === 'addthisButtons') {
                     	  self.populateList({ elem: belowsharingSortable, services: addthisServices, exclude: self.addthisButtons.exclude, defaults: addthisMappedDefaults, type: 'sharing-buttons', buttonType: 'addthisButtons' });
 
@@ -418,7 +438,7 @@
                           self.populateList({ elem: belowselectedSortable, services: thirdPartyServices, exclude: self.thirdPartyButtons.exclude['horizontal'], defaults: thirdPartyMappedDefaults, type: 'selected-services', style: 'horizontal', buttonType: 'thirdPartyButtons' });
 
                         }
-                	
+
                 }
                 else {
                     $('body').trigger('populatedList');
@@ -580,7 +600,7 @@
     'getaboveSavedOrder': function(callback) {
 
         var self = this;
-        
+
         if(window.commonMethods && window.commonMethods.localStorageSettings) {
 
           commonMethods.localStorageSettings({ namespace: aboveshareNamespace, method: 'get' }, function(obj) {
@@ -600,11 +620,11 @@
         return self;
 
       },
-      
+
       'getbelowSavedOrder': function(callback) {
 
           var self = this;
-          
+
           if(window.commonMethods && window.commonMethods.localStorageSettings) {
 
             commonMethods.localStorageSettings({ namespace: belowshareNamespace, method: 'get' }, function(obj) {
@@ -634,7 +654,7 @@
         type = obj['type'],
         style = obj['style'],
         updatedItem = obj['item'],
-        
+
         currentService,
         elem = obj.elem,
         serviceItems = elem.find('li'),
@@ -671,13 +691,13 @@
         	self.aboveupdatePreview({ size: size, services: enabledDefaults, type: type, style: style, location: location });
 
           }, 1000);
-        
+
       }
 
       return self;
 
     },
-    
+
     'belowsaveOrder': function(obj) {
 
     	var self = this,
@@ -687,7 +707,7 @@
         type = obj['type'],
         style = obj['style'],
         updatedItem = obj['item'],
-        
+
         currentService,
         elem = obj.elem,
         serviceItems = elem.find('li'),
@@ -732,7 +752,7 @@
     },
 
     'aboveupdatePreview': function(obj) {
-    	
+
     	var self = this,
         size = obj['size'],
         style = obj['style'],
@@ -780,9 +800,8 @@
     		});
     	}
 
-        $('#above_previewContainer').html(buttons);
     },
-    
+
 
     'belowupdatePreview': function(obj) {
 
@@ -832,7 +851,6 @@
     	        });
     		});
     	}
-        $('#below_previewContainer').html(buttons);
     },
 
     'events': function() {
@@ -842,7 +860,7 @@
         aboveDisableSmartSharing = $('#above-disable-smart-sharing'),
         belowEnableSmartSharing = $('#below-enable-smart-sharing'),
         belowDisableSmartSharing = $('#below-disable-smart-sharing'),
-        
+
         sortableContainer,
         aboveradioInputs = $('input[name="addthis_settings[above]"]'),
         belowradioInputs = $('input[name="addthis_settings[below]"]'),
@@ -872,7 +890,6 @@
         sortableListItemsCloseIcons = sortableSelectedListItems.find('.close'),
         aboveRestoreDefaultOptions = $('.above-smart-sharing-container .restore-default-options'),
         belowRestoreDefaultOptions = $('.below-smart-sharing-container .restore-default-options'),
-        previewBox = $('#previewBox'),
         aboverestoreToDefault = _.debounce(function() {
           // Updates the personalization UI
         	self.abovepopulateSharingServices(true);
@@ -895,26 +912,13 @@
           trackPageView('/tracker/gtc/' + (window.page || '') + '/event/disable_customization');
         }, 1000, true);
 
-      //to show options upon save
-      if($('#above-chosen-list').val() != "") {
-    	  $('.above-smart-sharing-container #customizedMessage').show();
-    	  $('.above-smart-sharing-container #personalizedMessage').hide();
-//    	  $('.above-smart-sharing-container .customize-your-buttons').html('Your buttons are currently customized. <a href="#" class="above-customize-sharing-link customize-your-buttons">Show customization</a>.');
-      }
-      
-      if($('#below-chosen-list').val() != "") {
-    	  $('.below-smart-sharing-container #customizedMessage').show();
-    	  $('.below-smart-sharing-container #personalizedMessage').hide();
-//    	  $('.below-smart-sharing-container .customize-your-buttons').html('Your buttons are currently customized. <a href="#" class="below-customize-sharing-link customize-your-buttons">Show customization</a>.');
-      }
-
       aboveDisableSmartSharing.add(aboveradioInputs).not('#button_above').bind('click', function() {
 
     	  abovecurrentRadioInput = $('input[name="addthis_settings[above]"]:checked');
         if(!abovecurrentRadioInput.length) {
         	abovecurrentRadioInput = $('input[name="addthis_settings[above]"]').first();
         }
-        
+
         if(abovecurrentRadioInput.attr('id') == 'large_toolbox_above') {
         	abovecurrentStyle = "horizontal";
         	abovecurrentType = "addthisButtons";
@@ -941,7 +945,7 @@
         	  aboveButtons.hide();
           }
 
-          
+
           aboveradioInputs.addClass('disabled-smart-sharing');
 
           setTimeout(function() {
@@ -958,23 +962,18 @@
           $('.sharing-buttons-search').val('');
 
         }
-        
-        if(abovecurrentStyle === 'horizontal' && $('#above_previewContainer').width() < 380) {
-          $('#above_previewContainer').css({ 'width': '380px' });
-        }
 
         aboveSmartSharingInnerContainer.show();
-        $('.above-customize-sharing-link, .customize-sharing-checkbox').show();
 
       });
-      
+
       belowDisableSmartSharing.add(belowradioInputs).not('#button_below').bind('click', function() {
-    	  
+
     	  belowcurrentRadioInput = $('input[name="addthis_settings[below]"]:checked');
           if(!belowcurrentRadioInput.length) {
         	  belowcurrentRadioInput = $('input[name="addthis_settings[below]"]').first();
           }
-          
+
           if(belowcurrentRadioInput.attr('id') == 'large_toolbox_below') {
         	  belowcurrentStyle = "horizontal";
           	belowcurrentType = "addthisButtons";
@@ -1001,7 +1000,7 @@
           	  belowButtons.hide();
             }
 
-            
+
             belowradioInputs.addClass('disabled-smart-sharing');
 
             setTimeout(function() {
@@ -1018,40 +1017,22 @@
             $('.sharing-buttons-search').val('');
 
           }
-          
-          if(belowcurrentStyle === 'horizontal' && $('#below_previewContainer').width() < 380) {
-            $('#below_previewContainer').css({ 'width': '380px' });
-          }
 
           belowSmartSharingInnerContainer.show();
-          $('.below-customize-sharing-link, .customize-sharing-checkbox').show();
 
         });
 
       $('#button_above').click(function() {
         var self = $(this);
-        $('.previewbox').removeClass('previewboxbg');
         aboveSmartSharingInnerContainer.hide();
-        $('.above-customize-sharing-link, .customize-sharing-checkbox').hide();
-        $('#above_previewContainer').css({ 'width': '100%', 'margin-right': 'auto' });
       });
-      
+
       $('#button_below').click(function() {
           var self = $(this);
-          $('.previewbox').removeClass('previewboxbg');
           belowSmartSharingInnerContainer.hide();
-          $('.below-customize-sharing-link, .customize-sharing-checkbox').hide();
-          $('#below_previewContainer').css({ 'width': '100%', 'margin-right': 'auto' });
         });
 
       aboveEnableSmartSharing.bind('click', function() {
-    	if($('#above-chosen-list').val() != "") {
-    		$('.above-smart-sharing-container #customizedMessage').hide();
-    		$('#above-chosen-list').val('');
-        }
-    	else {
-    		$('.above-smart-sharing-container #customizedMessage').hide();
-    	}
 
         currentRadioInput = $('input[name="addthis_settings[above]"]:checked');
 
@@ -1066,17 +1047,12 @@
         currentRadioInput.click();
 
       });
-      
+
       belowEnableSmartSharing.bind('click', function() {
 
-    	  if($('#below-chosen-list').val() != "") {
-      		$('.below-smart-sharing-container #customizedMessage').hide();
-      		$('#below-chosen-list').val('');
-          } 
-    	  else {
-    		  $('.below-smart-sharing-container #customizedMessage').hide();
-    	  }
-    	  
+
+
+
           currentRadioInput = $('input[name="addthis_settings[below]"]:checked');
 
           disableCustomization();
@@ -1094,15 +1070,15 @@
       aboveDisableSmartSharing.bind('click', function() {
 
         aboveEnableCustomization();
-        
+
         aboveCustomizeButtons.show();
 
       });
-      
+
       belowDisableSmartSharing.bind('click', function() {
 
           belowEnableCustomization();
-          
+
           belowCustomizeButtons.show();
 
         });
@@ -1148,7 +1124,7 @@
         }, 0);
 
       });
-      
+
       belowDisableSmartSharing.one('click', function() {
 
           setTimeout(function() {
@@ -1208,7 +1184,7 @@
         }
 
         var abovesortableList = $('.above-smart-sharing-container .selected-services .sortable:visible');
-        
+        abovecurrentRadioInput = $('input[name="addthis_settings[above]"]:checked');
         if(abovecurrentRadioInput.attr('id') == 'large_toolbox_above') {
       		buttonstyle = "horizontal";
       		buttontype = "addthisButtons";
@@ -1233,7 +1209,7 @@
         self.abovesaveOrder({ tool: 'above', type: buttontype, elem: abovesortableList, size: buttonsize, style: buttonstyle, item: item || "" });
 
       });
-      
+
       $('.below_button_set .selected-services .sortable').bind('sortupdate', function(ev, item) {
 
           if($.isPlainObject(item)) {
@@ -1251,7 +1227,7 @@
           }
 
           var belowsortableList = $('.below-smart-sharing-container .selected-services .sortable:visible');
-          
+          belowcurrentRadioInput = $('input[name="addthis_settings[below]"]:checked');
           if(belowcurrentRadioInput.attr('id') == 'large_toolbox_below') {
         		buttonstyle = "horizontal";
         		buttontype = "addthisButtons";
@@ -1290,7 +1266,7 @@
         }, 0);
 
       });
-      
+
       belowRestoreDefaultOptions.bind('click', function(ev) {
 
           ev.preventDefault();
@@ -1345,7 +1321,7 @@
           $('.add-buttons-msg').hide();
 
           $('.below-smart-sharing-container .horizontal-drag').hide();
-          
+
           $('.above-smart-sharing-container .horizontal-drag').hide();
 
         }
@@ -1381,7 +1357,7 @@
         });
 
       });
-      
+
       $('.below-smart-sharing-container .sharing-buttons-search').bind('keyup', function(e) {
 
           var currentVal = $(this).val();
@@ -1425,7 +1401,7 @@
         }
 
       });
-      
+
       $('.below-smart-sharing-container .selected-services .sortable').bind({
 
           'mouseover': function() {
@@ -1453,7 +1429,7 @@
         }
 
       });
-      
+
       $('.below-smart-sharing-container .sharing-buttons .sortable').bind({
 
           'mouseover': function() {
@@ -1464,56 +1440,6 @@
           },
           'mouseout': function() {
             $('.below-smart-sharing-container .horizontal-drag').hide();
-          }
-
-        });
-
-      $('.above-customize-sharing-link').bind('click', function(ev) { 
-
-        var aboveSmartSharingLink = $('.above-smart-sharing-container .smart-sharing-link'),
-          customizeButtonLink = $('.above-smart-sharing-container .customize-your-buttons');
-
-        ev.preventDefault();
-
-        if($(this).is(customizeButtonLink)) {
-          customizeButtonLink.hide();
-          aboveSmartSharingLink.show();
-          if(!aboveDisableSmartSharing.is(':checked')) {
-        	  aboveDisableSmartSharing.prop('checked', true).trigger('click');
-          }
-        }
-
-        else if($(this).is(aboveSmartSharingLink)) {
-        	aboveSmartSharingLink.hide();
-          customizeButtonLink.show();
-          if(!aboveEnableSmartSharing.is(':checked')) {
-            aboveEnableSmartSharing.prop('checked', true).trigger('click');
-          }
-        }
-
-      });
-      
-      $('.below-customize-sharing-link').bind('click', function(ev) { 
-
-          var belowSmartSharingLink = $('.below-smart-sharing-container .smart-sharing-link'),
-            customizeButtonLink = $('.below-smart-sharing-container .customize-your-buttons');
-
-          ev.preventDefault();
-
-          if($(this).is(customizeButtonLink)) {
-            customizeButtonLink.hide();
-            belowSmartSharingLink.show();
-            if(!belowDisableSmartSharing.is(':checked')) {
-          	  belowDisableSmartSharing.prop('checked', true).trigger('click');
-            }
-          }
-
-          else if($(this).is(belowSmartSharingLink)) {
-        	  belowSmartSharingLink.hide();
-            customizeButtonLink.show();
-            if(!belowEnableSmartSharing.is(':checked')) {
-              belowEnableSmartSharing.prop('checked', true).trigger('click');
-            }
           }
 
         });
@@ -1618,6 +1544,32 @@
     });
 
   };
+
+  jQuery(document).ready(function($) {
+    if($('#above-disable-smart-sharing').attr('checked')){
+      setTimeout(function() {
+        window.customServicesAPI.abovepopulateSharingServices();
+      }, 0);
+      $('.above-smart-sharing-container .restore-default-options').show();
+      $('.above-smart-sharing-container .customize-buttons').show();
+      setTimeout(function() {
+        // Makes the new list sortable
+        $('.above-smart-sharing-container .sortable').sortable().disableSelection().sortable('option', 'connectWith', '.sortable');
+      }, 0);
+    }
+
+    if($('#below-disable-smart-sharing').attr('checked')){
+      setTimeout(function() {
+        window.customServicesAPI.belowpopulateSharingServices();
+      }, 0);
+      $('.below-smart-sharing-container .restore-default-options').show();
+      $('.below-smart-sharing-container .customize-buttons').show();
+      setTimeout(function() {
+        // Makes the new list sortable
+        $('.below-smart-sharing-container .sortable').sortable().disableSelection().sortable('option', 'connectWith', '.sortable');
+      }, 0);
+    }
+  });
 
 }(window.jQuery, window, document));
 

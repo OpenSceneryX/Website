@@ -1,3 +1,4 @@
+<?php
 /**
  * +--------------------------------------------------------------------------+
  * | Copyright (c) 2008-2015 AddThis, LLC                                     |
@@ -18,21 +19,20 @@
  * +--------------------------------------------------------------------------+
  */
 
-/*
- * Javascript for Addthis for Wordpress plugin
- */
-
-jQuery(document).ready(function($) {
-    jQuery('#async_load').change(function(){
-
-        var syncLoad = jQuery(this).is(':checked')?1:0;
-        var data     = {
-                            action: "at_async_loading",
-                            async_loading: syncLoad
-        };
-        jQuery('.at-loader').css('visibility', 'visible');
-        jQuery.post(ajaxurl, data, function(response){
-            jQuery('.at-loader').css('visibility', 'hidden');
-        });
-    });
-});
+if (!interface_exists('AddThisCmsConnectorInterface')) {
+	interface AddThisCmsConnectorInterface
+	{
+	    static function getCmsVersion();
+	    static function getCmsMinorVersion();
+	    static function getPluginVersion();
+	    static function getProductVersion();
+	    public function getSharingButtonLocations();
+	    public function getConfigs();
+	    public function getContentTypes();
+	    public function saveConfigs($configs = null);
+	    public function getSettingsPageUrl();
+	    public function getPluginCssFolderUrl();
+	    public function getPluginImageFolderUrl();
+	    public function getPluginJsFolderUrl();
+	}
+}
