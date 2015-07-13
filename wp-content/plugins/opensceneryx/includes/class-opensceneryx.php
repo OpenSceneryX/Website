@@ -100,6 +100,9 @@ class OpenSceneryX {
         $post->post_parent = 753;
         $post->guid = $docPath;
 
+        // This solves a problem with URLs which end in a number having that number duplicated (e.g. /2/ -> /2/2/)
+        remove_action('template_redirect', 'redirect_canonical');
+        
         return array($post);
     }
 
