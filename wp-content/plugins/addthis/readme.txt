@@ -1,9 +1,9 @@
 === AddThis Sharing Buttons ===
-Contributors: abramsm, srijith.v, vipinss, dnrahamim, jgrodel, bradaddthiscom, mkitzman, kirk-at-addthis, addthis_paul, addthis_matt, addthis_elsa, ribin_addthis
+Contributors: abramsm, srijith.v, vipinss, dnrahamim, jgrodel, bradaddthiscom, mkitzman, addthis_paul, addthis_matt, addthis_elsa, ribin_addthis, AddThis_Mike
 Tags: AddThis, addtoany, bookmark, bookmarking, email, e-mail, sharing buttons, share, share this, facebook, google+, pinterest, instagram, linkedin, whatsapp, social tools, website tools, twitter, content marketing, recommended content, conversion tool, subscription button, conversion tools, email tools, ecommerce tools, social marketing, personalization tools
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 5.0.8
+Stable tag: 5.0.12
 
 AddThis provides the best sharing tools to help you make your website smarter.
 
@@ -75,6 +75,25 @@ In the screen options you can enable the AddThis meta box. Check the box and sav
 PHP 5+ is preferred; PHP 4 is supported.
 
 == Changelog ==
+
+= 5.0.12 =
+* Fixing a bug that resets settings to defaults during the upgrade for users in AddThis mode
+* Reverting to pre-5.0.9 settings of plugin for upgrades from 5.0.9, 5.0.10 and 5.0.11
+
+= 5.0.11 =
+* Fixing overwrite of $addThisConfig global to resolve more PHP errors where a function is called from a non-object
+
+= 5.0.10 =
+* Fixing bug where all checkboxes get unchecked on first settings page save
+* Fixing PHP error with getConfigs() on a non-object in addthis_social_widget.php on line 1086
+
+= 5.0.9 =
+* Updated troubleshooting information available to AddThis support to be more in line with other plugins, including providing the anonymous profile IDs to help in moving over statistics to registered profile IDs upon request.
+* Improving the way variables are being shared to support global AddThis variables between AddThis plugins (not supported yet by any other plugin) and plugin specific settings. Specifically, this is to make sure things such as the profile ID or addthis_config settings are the same across all AddThis plugins.
+* Refactored the filter used on wp_trim_excerpt in WordPress mode to better interact with other modules' and themes' filters on wp_trim_excerpt, excerpt_length and excerpt_more (such as mh-magazine-lite)
+* Resolving issues with PHP errors for URLs with %s in them when using "Select Your Own" services
+* Resolving services bug, where once a user selected their own for above or below content, the custom services where always used, even if the user went back to Auto Personalization
+* Fixing bug with a PHP warning for undefined index below_chosen_list
 
 = 5.0.8 =
 * PHP notice fix for AddThisConfigs.php on line 204
@@ -346,7 +365,26 @@ Fixed nondeterministic bug with the_title(), causing the title to occasionally a
 
 == Upgrade Notice ==
 
-= 5.0.8 = 
+= 5.0.12 =
+* Fixing a bug that resets settings to defaults during the upgrade for users in AddThis mode
+* Reverting to pre-5.0.9 settings of plugin for upgrades from 5.0.9, 5.0.10 and 5.0.11
+
+= 5.0.11 =
+* Fixing overwrite of $addThisConfig global to resolve more PHP errors where a function is called from a non-object
+
+= 5.0.10 =
+* Fixing bug where all checkboxes get unchecked on first settings page save
+* Fixing PHP error with getConfigs() on a non-object in addthis_social_widget.php on line 1086
+
+= 5.0.9 =
+* Updated troubleshooting information available to AddThis support to be more in line with other plugins, including providing the anonymous profile IDs to help in moving over statistics to registered profile IDs upon request.
+* Improving the way variables are being shared to support global AddThis variables between AddThis plugins (not supported yet by any other plugin) and plugin specific settings. Specifically, this is to make sure things such as the profile ID or addthis_config settings are the same across all AddThis plugins.
+* Refactored the filter used on wp_trim_excerpt in WordPress mode to better interact with other modules' and themes' filters on wp_trim_excerpt, excerpt_length and excerpt_more (such as mh-magazine-lite)
+* Resolving issues with PHP errors for URLs with %s in them when using "Select Your Own" services
+* Resolving services bug, where once a user selected their own for above or below content, the custom services where always used, even if the user went back to Auto Personalization
+* Fixing bug with a PHP warning for undefined index below_chosen_list
+
+= 5.0.8 =
 * PHP notice fix for AddThisConfigs.php on line 204
 
 = 5.0.7 =

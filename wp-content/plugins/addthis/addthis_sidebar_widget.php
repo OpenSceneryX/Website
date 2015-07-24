@@ -31,13 +31,21 @@ class AddThisSidebarWidget extends WP_Widget {
     function AddThisSidebarWidget()
     {
 
-        $widget_ops = array( 'classname' => 'atwidget', 'description' => 'Make it wasy for your users to share content to over 300 destinations' );
+        $widget_ops = array(
+            'classname'   => 'atwidget',
+            'description' => 'Make it wasy for your users to share content to over 300 destinations'
+        );
 
         /* Widget control settings. */
-        $control_ops = array( 'width' => 325);
+        $control_ops = array('width' => 325);
 
         /* Create the widget. */
-        $this->WP_Widget( 'addthis-widget', 'AddThis Sharing Buttons', $widget_ops, $control_ops );
+        $this->WP_Widget(
+            'addthis-widget',
+            'AddThis Sharing Buttons',
+            $widget_ops,
+            $control_ops
+        );
 
     }
 
@@ -56,7 +64,7 @@ class AddThisSidebarWidget extends WP_Widget {
         if ($title)
                 echo $before_title . $title . $after_title;
 
-        printf(apply_filters('addthis_sidebar_style_output',  $addthis_new_styles[$instance['style']]['src']), '');
+        printf($addthis_new_styles[$instance['style']]['src'], '');
 
         echo $after_widget;
     }

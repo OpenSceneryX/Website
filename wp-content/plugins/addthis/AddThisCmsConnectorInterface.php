@@ -24,8 +24,6 @@ if (!interface_exists('AddThisCmsConnectorInterface')) {
 	{
 	    static function getCmsVersion();
 	    static function getCmsMinorVersion();
-	    static function getPluginVersion();
-	    static function getProductVersion();
 	    public function getSharingButtonLocations();
 	    public function getConfigs();
 	    public function getContentTypes();

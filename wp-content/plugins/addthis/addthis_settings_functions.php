@@ -25,7 +25,7 @@
 function _get_style_options()
 {
     global $addthis_new_styles;
-    return apply_filters('addthis_style_options', $addthis_new_styles );
+    return $addthis_new_styles;
 }
 
 /**
@@ -331,107 +331,85 @@ function _addthis_print_template_checkboxes($type) {
 
 function _addthis_print_services_picker($name, $options) {
 
+    $checkedValue = ' checked="checked"';
+    $autoServicesChecked = '';
+    $customServicesChecked = '';
+    $autoServicesKey = $name.'_auto_services';
+    if ($options[$autoServicesKey]) {
+        $autoServicesChecked = $checkedValue;
+    } else {
+        $customServicesChecked = $checkedValue;
+    }
 
     ?>
 
     <div class="<?php echo $name;?>_button_set select_row Sharing-Icons-options-container">
-                <div id="<?php echo $name;?>_custom_btns">
-                    <span class="<?php echo $name;?>-smart-sharing-container">
-                        <span class="smart-sharing-inner-container">
+        <div id="<?php echo $name;?>_custom_btns">
+            <span class="<?php echo $name;?>-smart-sharing-container">
+                <span class="smart-sharing-inner-container">
 
-                            <h4>Services:</h4>
-                            <p>AddThis boosts sharing by automatically showing the right buttons to
-                                each user based on their location and activity across the web.</p>
-                            <div class="above_option select_row">
-                                <span class="radio mt4">
-                                    <input
-                                        type="radio"
-                                        checked="checked"
-                                        name="addthis_settings[<?php echo $name;?>_sharing]"
-                                        id="<?php echo $name;?>-enable-smart-sharing"
-                                        value="<?php echo $name;?>-enable-smart-sharing"
-                                    />
-                                    <span class="addthis-checkbox-label">
-                                        <strong>Auto Personalization</strong>
-                                        <span> (recommended)</span>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="above_option select_row">
-                                <span class="radio mt4 addthis-checkbox-label">
-                                    <input type="radio" name="addthis_settings[<?php echo $name;?>_sharing]" id="<?php echo $name;?>-disable-smart-sharing" <?php $sharing_key = $name.'_sharing';echo ( $options[$sharing_key]  == $name."-disable-smart-sharing" ? 'checked="checked"' : ''); ?> value="<?php echo $name;?>-disable-smart-sharing">
-                                    <strong>Select Your Own</strong>
-                                </span>
-                            </div>
-
-                            <div class="customize-buttons">
-                                <div class="sharing-buttons">
-                                    <h4 class="sortable-heading">Button Options</h4>
-                                    <input type="text" class="sharing-buttons-search" placeholder="Find a service" maxlength="20" size="30" style="width: 230px; height: 41px; margin: 0;">
-                                    <ul class="sortable"></ul>
-                                </div>
-                                <div class="selected-services">
-                                    <h4 class="sortable-heading">Selected Buttons</h4>
-                                    <ul class="sortable" data-type="addthisButtons"></ul>
-                                </div>
-                            </div>
-                            <a href="#" class="restore-default-options" style="float: left; padding-left: 100px;">Restore default options</a>
-                            <div class="vertical-drag">
-                                <p>Drag up or down to reorder services</p>
-                            </div>
-                            <div class="horizontal-drag">
-                                <p>Drag across to add service</p>
-                            </div>
-                            <?php $list = $name.'_chosen_list'; ?>
-                            <input type="hidden" id="<?php echo $name?>-chosen-list" name="addthis_settings[<?php echo $name;?>_chosen_list]" value="<?php echo $options[$list];?>"/>
+                    <h4>Services:</h4>
+                    <p>AddThis boosts sharing by automatically showing the right buttons to
+                        each user based on their location and activity across the web.</p>
+                    <div class="above_option select_row">
+                        <span class="radio mt4">
+                            <input
+                                type="radio"
+                                checked="checked"
+                                name="addthis_settings[<?php echo $autoServicesKey; ?>]"
+                                id="<?php echo $name;?>-enable-smart-sharing"
+                                <?php echo $autoServicesChecked; ?>
+                                value="1"
+                            />
+                            <span class="addthis-checkbox-label">
+                                <strong>Auto Personalization</strong>
+                                <span> (recommended)</span>
+                            </span>
                         </span>
-                    </span>
-                    <script type="text/javascript">
-                        window.page = 'sharing-buttons';
-                    </script>
-               </div>
-             </div>
+                    </div>
+                    <div class="above_option select_row">
+                        <span class="radio mt4 addthis-checkbox-label">
+                            <input
+                                type="radio"
+                                name="addthis_settings[<?php echo $autoServicesKey; ?>]"
+                                id="<?php echo $name;?>-disable-smart-sharing"
+                                value="0"
+                                <?php echo $customServicesChecked; ?>
+                            >
+                            <strong>Select Your Own</strong>
+                        </span>
+                    </div>
 
+                    <div class="customize-buttons">
+                        <div class="sharing-buttons">
+                            <h4 class="sortable-heading">Button Options</h4>
+                            <input type="text" class="sharing-buttons-search" placeholder="Find a service" maxlength="20" size="30" style="width: 230px; height: 41px; margin: 0;">
+                            <ul class="sortable"></ul>
+                        </div>
+                        <div class="selected-services">
+                            <h4 class="sortable-heading">Selected Buttons</h4>
+                            <ul class="sortable" data-type="addthisButtons"></ul>
+                        </div>
+                    </div>
+                    <a href="#" class="restore-default-options" style="float: left; padding-left: 100px;">Restore default options</a>
+                    <div class="vertical-drag">
+                        <p>Drag up or down to reorder services</p>
+                    </div>
+                    <div class="horizontal-drag">
+                        <p>Drag across to add service</p>
+                    </div>
+                    <?php $list = $name.'_chosen_list'; ?>
+                    <input type="hidden" id="<?php echo $name?>-chosen-list" name="addthis_settings[<?php echo $name;?>_chosen_list]" value="<?php echo $options[$list];?>"/>
+                </span>
+            </span>
+            <script type="text/javascript">
+                window.page = 'sharing-buttons';
+            </script>
+        </div>
+    </div>
 
     <?php
     return true;
-}
-
-/**
- * Returns an array of template options
- * @return string[] an array of strings
- */
-function _addthis_deprecated_fields() {
-    $deletedFields = array(
-        'addthis_bitly_key',
-        'addthis_bitly_login',
-        'addthis_brand',
-        'addthis_copytracking1',
-        'addthis_copytracking2',
-        'addthis_copytrackingremove',
-        'addthis_fallback_username',
-        'addthis_for_wordpress',
-        'addthis_header_background',
-        'addthis_header_color',
-        'addthis_nag_username_ignore',
-        'addthis_options',
-        'addthis_password',
-        'addthis_show_stats',
-        'addthis_show_stats',
-        'addthis_showonarchives',
-        'addthis_showoncats',
-        'addthis_showonhome',
-        'addthis_showonpages',
-        'addthis_showonposts',
-        'addthis_sidebar_only',
-        'addthis_username',
-        'options',
-        'password',
-        'profile',
-        'username',
-    );
-
-    return $deletedFields;
 }
 
 /**

@@ -160,26 +160,6 @@ jQuery(document).ready(function($) {
         }
     };
 
-    var show_above =  $('input[name="addthis_settings[show_above]"]');
-    var show_below = $('input[name="addthis_settings[show_below]"]');
-    if ( $('#input[name="addthis_settings[show_above]"]').is(':checked'))
-    {
-        $('.above_option').toggleClass('hide');
-    }
-
-    if ( $('#input[name="addthis_settings[show_below]"]').is(':checked'))
-    {
-        $('.below_option').toggleClass('hide');
-    }
-
-    $('input[name="addthis_settings[show_above]"]').change( function() {
-        $('.above_option').toggleClass('hide');
-    });
-
-    $('input[name="addthis_settings[show_below]"]').change( function() {
-        $('.below_option').toggleClass('hide');
-    });
-
     var aboveCustomString = $('#above_custom_string');
     var aboveCustomStringShow = function(){
         if ( aboveCustomString.is(':checked'))
