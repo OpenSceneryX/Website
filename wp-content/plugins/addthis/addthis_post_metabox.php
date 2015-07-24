@@ -23,14 +23,22 @@ class addthis_post_metabox{
 
     function admin_init()
     {
-        $screens = apply_filters('addthis_post_metabox_screens', array('post', 'page') );
-        foreach($screens as $screen)
-        {
-        add_meta_box('addthis', 'AddThis', array($this, 'post_metabox'), $screen, 'side', 'default'  );
-        }
-        add_action('save_post', array($this, 'save_post') );
+        $screens = array('post', 'page');
 
-        add_filter('default_hidden_meta_boxes', array($this,  'default_hidden_meta_boxes' )  );
+        foreach($screens as $screen) {
+            add_meta_box(
+                'addthis',
+                'AddThis',
+                array($this, 'post_metabox'),
+                $screen,
+                'side',
+                'default'
+            );
+        }
+
+        add_action('save_post', array($this, 'save_post'));
+
+        add_filter('default_hidden_meta_boxes', array($this, 'default_hidden_meta_boxes'));
     }
 
     function default_hidden_meta_boxes($hidden)

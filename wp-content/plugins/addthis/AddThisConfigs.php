@@ -28,12 +28,13 @@ if (!class_exists('AddThisConfigs')) {
 
         protected $defaultConfigs = array(
             'above'                        => 'large_toolbox',
+            'above_chosen_list'            => '',
+            'above_auto_services'          => true,
             'above_custom_more'            => '',
             'above_custom_preferred'       => '',
             'above_custom_services'        => '',
             'above_custom_size'            => '',
             'above_custom_string'          => '',
-            'above_sharing'                => 'above-enable-smart-sharing',
             'addthis_508'                  => '',
             'addthis_above_enabled'        => false,
             'addthis_addressbar'           => false,
@@ -58,12 +59,13 @@ if (!class_exists('AddThisConfigs')) {
             'atversion'                    => 300,
             'atversion_update_status'      => 0,
             'below'                        => 'large_toolbox',
+            'below_chosen_list'            => '',
+            'below_auto_services'          => true,
             'below_custom_more'            => '',
             'below_custom_preferred'       => '',
             'below_custom_services'        => '',
             'below_custom_size'            => '',
             'below_custom_string'          => '',
-            'below_sharing'                => 'below-enable-smart-sharing',
             'credential_validation_status' => 0,
             'data_ga_property'             => '',
             'location'                     => 'below',
@@ -402,11 +404,13 @@ if (!class_exists('AddThisConfigs')) {
             }
 
             $pluginInfo = array();
+            $pluginInfo['info_status'] = 'enabled';
             $pluginInfo['cms_name'] = $this->cmsInterface->getCmsName();
             $pluginInfo['cms_version'] = $this->cmsInterface->getCmsVersion();
-            $pluginInfo['plugin_name'] = $this->cmsInterface->getPluginName();
+            $pluginInfo['plugin_name'] = $this->cmsInterface->plugin->getName();
             $pluginInfo['plugin_version'] = $this->cmsInterface->getPluginVersion();
             $pluginInfo['plugin_mode'] = $this->configs['addthis_plugin_controls'];
+            $pluginInfo['anonymous_profile_id'] = $this->getAnonymousProfileId();
 
             $json = json_encode($pluginInfo);
             return $json;

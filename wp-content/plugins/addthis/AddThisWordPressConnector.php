@@ -21,68 +21,98 @@
 
 require_once('AddThisCmsConnectorInterface.php');
 
-if (!class_exists('AddThisWordpressConnector')) {
-    Class AddThisWordpressConnector {
+if (!class_exists('AddThisWordPressConnector')) {
+    Class AddThisWordPressConnector {
         // implements AddThisCmsConnectorInterface {
 
         static $settingsVariableName = 'addthis_settings';
-        static $pluginVersion = '5.0.8';
-        static $settingsPageId = 'addthis_social_widget';
+        public $plugin = null;
         static $anonymousProfileIdPrefix = 'wp';
-        static $pluginName = "AddThis Sharing Buttons";
-        static $productPrefix = 'wpp';
         static $cmsName = "WordPress";
         protected $configs = null;
+        protected $sharedConfigVariableName = 'addthis_shared_settings';
+        protected $migratedConfigSettingsName = null;
 
         protected $defaultConfigs = array(
             'addthis_plugin_controls'      => 'WordPress',
         );
 
-        public $simpleConfigUpgradeMappings = array(
-            array(
-                'current' => array('addthis_above_showon_home', 'addthis_below_showon_home'),
-                'deprecated' => array('addthis_showonhome'),
-            ),
-            array(
-                'current' => array('addthis_above_showon_pages', 'addthis_below_showon_pages'),
-                'deprecated' => array('addthis_showonpages'),
-            ),
-            array(
-                'current' => array('addthis_above_showon_categories', 'addthis_below_showon_categories'),
-                'deprecated' => array('addthis_showoncats'),
-            ),
-            array(
-                'current' => array('addthis_above_showon_archives', 'addthis_below_showon_archives'),
-                'deprecated' => array('addthis_showonarchives'),
-            ),
-            array(
-                'current' => array('addthis_above_showon_posts', 'addthis_below_showon_posts'),
-                'deprecated' => array('addthis_showonposts'),
-            ),
-            array(
-                'current' => array('addthis_addressbar'),
-                'deprecated' => array('addthis_copytracking2', 'addthis_copytracking1'),
-            ),
+        static $simpleSharedConfigUpgradeMappings = array(
             array(
                 'current' => array('addthis_profile'),
                 'deprecated' => array('profile', 'pubid'),
             ),
         );
 
-        static function getPluginVersion() {
-            return self::$pluginVersion;
+        static $sharedVariables = array(
+            // general
+            'addthis_plugin_controls',
+            'addthis_profile',
+            'addthis_anonymous_profile',
+            'credential_validation_status',
+            'addthis_asynchronous_loading',
+            'addthis_environment',
+            // addthis_share
+            'addthis_twitter_template',
+            'addthis_bitly',
+            'addthis_share_json',
+            // addthis_config
+            'data_ga_property',
+            'addthis_language',
+            'atversion',
+            'addthis_append_data',
+            'addthis_addressbar',
+            'addthis_508',
+            'addthis_config_json',
+            'addthis_plugin_controls',
+        );
+
+        static $deprecatedSharedVariables = array(
+            'addthis_bitly_key',
+            'addthis_bitly_login',
+            'addthis_brand',
+            'addthis_copytracking1',
+            'addthis_copytracking2',
+            'addthis_copytrackingremove',
+            'addthis_fallback_username',
+            'addthis_for_wordpress',
+            'addthis_header_background',
+            'addthis_header_color',
+            'addthis_nag_username_ignore',
+            'addthis_options',
+            'addthis_password',
+            'addthis_show_stats',
+            'addthis_username',
+            'options',
+            'password',
+            'profile',
+            'username',
+        );
+
+        public function __construct($plugin) {
+            $this->plugin = $plugin;
+        }
+
+        public function getPluginVersion() {
+            return $this->plugin->getVersion();
         }
 
         static function getCmsName() {
             return self::$cmsName;
         }
 
-        static function getPluginName() {
-            return self::$pluginName;
+        public function getDeprecatedVariables() {
+            $sharedVars = self::$deprecatedSharedVariables;
+            $pluginVars = $this->plugin->getDeprecatedVariables();
+            $variables = array_merge($sharedVars, $pluginVars);
+            return $variables;
         }
 
-        static function getSettingsPageId() {
-            return self::$settingsPageId;
+        public function getSimpleConfigUpgradeMapping() {
+            $sharedVars = self::$simpleSharedConfigUpgradeMappings;
+            $pluginVars = $this->plugin->getSimpleConfigUpgradeMapping();
+            $mapping = array_merge($sharedVars, $pluginVars);
+            return $mapping;
         }
 
         static function getCmsVersion() {
@@ -99,9 +129,8 @@ if (!class_exists('AddThisWordpressConnector')) {
             return self::$anonymousProfileIdPrefix;
         }
 
-        static function getProductVersion() {
-            $productVersion = self::$productPrefix . '-' . self::getPluginVersion();
-            return $productVersion;
+        public function getProductVersion() {
+            return $this->plugin->getProductVersion();
         }
 
         /**
@@ -153,7 +182,7 @@ if (!class_exists('AddThisWordpressConnector')) {
         }
 
         public function getSettingsPageUrl() {
-            $url = admin_url("options-general.php?page=" . $this->getSettingsPageId());
+            $url = admin_url("options-general.php?page=" . $this->plugin->getSettingsPageId());
             return $url;
         }
 
@@ -162,17 +191,44 @@ if (!class_exists('AddThisWordpressConnector')) {
         }
 
         public function getConfigs($cache = false) {
-            if ($this->isPreviewMode()) {
-                $this->configs = get_transient(self::$settingsVariableName);
-            } elseif (!$cache || is_null($this->configs)) {
-                $this->configs = get_option(self::$settingsVariableName);
+            if ($cache && is_array($this->configs)) {
+                return $this->configs;
             }
 
-            if (!is_array($this->configs)) {
+            $plugin = $this->getPluginConfigVariables();
+            $shared = $this->getSharedConfigVariables();
+
+            if (is_array($plugin) && is_array($shared)) {
+                $this->configs = array_merge($plugin, $shared);
+            } else if (is_array($plugin)) {
+                $this->configs = $plugin;
+            } else if (is_array($shared)) {
+                $this->configs = $shared;
+            } else {
                 $this->configs = null;
             }
 
             return $this->configs;
+        }
+
+        public function getPluginConfigVariables() {
+            if ($this->isPreviewMode()) {
+                $plugin = get_transient($this->plugin->getConfigVariableName());
+            } else {
+                $plugin = get_option($this->plugin->getConfigVariableName());
+            }
+
+            return $plugin;
+        }
+
+        public function getSharedConfigVariables() {
+            if ($this->isPreviewMode()) {
+                $shared = get_transient($this->sharedConfigVariableName);
+            } else {
+                $shared = get_option($this->sharedConfigVariableName);
+            }
+
+            return $shared;
         }
 
         public function saveConfigs($configs = null) {
@@ -181,7 +237,17 @@ if (!class_exists('AddThisWordpressConnector')) {
             }
 
             if (is_array($configs)) {
-                update_option(self::$settingsVariableName, $configs);
+                $newPluginConfigs = $configs;
+                $newSharedConfigs = array();
+                foreach (self::$sharedVariables as $variable) {
+                    if(isset($configs[$variable])) {
+                        $newSharedConfigs[$variable] = $configs[$variable];
+                        unset($newPluginConfigs[$variable]);
+                    }
+                }
+
+                update_option($this->plugin->getConfigVariableName(), $newPluginConfigs);
+                update_option($this->sharedConfigVariableName, $newSharedConfigs);
                 $this->configs = $this->getConfigs();
             }
 
@@ -253,7 +319,7 @@ if (!class_exists('AddThisWordpressConnector')) {
         public function isUpgrade() {
             $this->getConfigs(true);
             if (   !isset($this->configs['addthis_plugin_version'])
-                || $this->configs['addthis_plugin_version'] != self::$pluginVersion
+                || $this->configs['addthis_plugin_version'] != $this->getPluginVersion()
             ) {
                 return true;
             }
@@ -261,15 +327,75 @@ if (!class_exists('AddThisWordpressConnector')) {
             return false;
         }
 
-        public function upgradeConfigs() {
+        private function migrationStatusVariable() {
+            $migrationVariable = $this->plugin->getSettingsPageId() . "_migrated_to";
+            return $migrationVariable;
+        }
+
+        private function recurseForOldConfigs($name) {
+            $configs = get_option($name);
+            if (!is_array($configs)) {
+                return null;
+            }
+            $this->migratedConfigSettingsName = $name;
+
+            $migrationVariable = $this->migrationStatusVariable();
+            if (   isset($configs[$migrationVariable])
+                && $configs[$migrationVariable] !== $this->plugin->getConfigVariableName()
+            ) {
+               $migratedConfigs = recurseForOldConfigs($configs[$migrationVariable]);
+               if (is_array($migrationVariable)) {
+                   $config = $migrationVariable;
+               }
+            }
+
+            return $configs;
+        }
+
+        private function getOldConfigs() {
             $this->getConfigs(true);
+            $migrationVariable = $this->migrationStatusVariable();
+
+            $oldConfigs = $this->recurseForOldConfigs($this->plugin->getOldConfigVariableName());
+
+            if (   !isset($oldConfigs[$migrationVariable])
+                || $oldConfigs[$migrationVariable] !== $this->plugin->getConfigVariableName()
+            ) {
+                if (is_array($this->configs) && is_array($oldConfigs)) {
+                    $this->configs = array_merge($oldConfigs, $this->configs);
+                } else if (is_array($oldConfigs)) {
+                    $this->configs = $oldConfigs;
+                }
+
+                $updatedOldConfigs[$migrationVariable] = $this->plugin->getConfigVariableName();
+                update_option($this->migratedConfigSettingsName, $updatedOldConfigs);
+            }
+
+            $badUpgradeVersions = array('5.0.9', '5.0.10', '5.0.11');
+            if (!empty($this->configs['addthis_plugin_version'])) {
+                $oldVersion = $this->configs['addthis_plugin_version'];
+            } else {
+                $oldVersion = 'unknown';
+            }
+
+            if (in_array($oldVersion, $badUpgradeVersions)) {
+                $this->configs = $oldConfigs;
+            }
+
+            return $this->configs;
+        }
+
+        public function upgradeConfigs() {
+            $this->getOldConfigs();
+
             if (is_null($this->configs)) {
                 return $this->configs;
             }
 
-            $this->configs['addthis_plugin_version'] = self::$pluginVersion;
+            $this->configs['addthis_plugin_version'] = $this->getPluginVersion();
 
-            foreach ($this->simpleConfigUpgradeMappings as $configUpgradeMapping) {
+            $upgradeMapping = $this->getSimpleConfigUpgradeMapping();
+            foreach ($upgradeMapping as $configUpgradeMapping) {
                 foreach ($configUpgradeMapping['current'] as $currentFieldName) {
                     foreach ($configUpgradeMapping['deprecated'] as $deprecatedFieldName) {
                         $this->getFromPreviousConfig($deprecatedFieldName, $currentFieldName);
@@ -304,6 +430,35 @@ if (!class_exists('AddThisWordpressConnector')) {
                 && !isset($this->configs['addthis_plugin_controls'])
             ) {
                 $this->configs['addthis_plugin_controls'] = "AddThis";
+            }
+
+            if (   isset($this->configs['above_sharing'])
+                && !isset($this->configs['above_auto_services'])
+            ) {
+                if($this->configs['above_sharing'] == 'above-disable-smart-sharing') {
+                    $this->configs['above_auto_services'] = false;
+                }
+                if($this->configs['above_sharing'] == 'above-enabled-smart-sharing') {
+                    $this->configs['above_auto_services'] = true;
+                }
+            }
+
+            if (   isset($this->configs['below_sharing'])
+                && !isset($this->configs['below_auto_services'])
+            ) {
+                if($this->configs['below_sharing'] == 'below-disable-smart-sharing') {
+                    $this->configs['below_auto_services'] = false;
+                }
+                if($this->configs['below_sharing'] == 'below-enabled-smart-sharing') {
+                    $this->configs['below_auto_services'] = true;
+                }
+            }
+
+            $deprecatedVariables = $this->getDeprecatedVariables();
+            foreach ($deprecatedVariables as $field) {
+                if (isset($this->configs[$field])) {
+                    unset($this->configs[$field]);
+                }
             }
 
             $this->saveConfigs();
@@ -496,10 +651,10 @@ if (!class_exists('AddThisWordpressConnector')) {
 
         public function addSettingsPage($htmlGeneratingFunction) {
             $hook_suffix = add_options_page(
-                'AddThis Sharing Buttons',
-                'AddThis Sharing Buttons',
+                $this->plugin->getName(),
+                $this->plugin->getName(),
                 'manage_options',
-                self::$settingsPageId,
+                $this->plugin->getSettingsPageId(),
                 $htmlGeneratingFunction
             );
 
