@@ -6,7 +6,7 @@
     }
   ],
   "require": {
-    "johnpbloch/wordpress": "4.2"
+    "johnpbloch/wordpress": "4.2.3"
   },
   "extra": {
     "wordpress-install-dir": "wp",
