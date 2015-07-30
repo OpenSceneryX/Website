@@ -105,12 +105,16 @@ if (!preg_match('/^(http:\/\/|https:\/\/)/', $domain)) {
     $domain = 'http://' . $domain;
 }
 // HTTP Protocol would normally be added at this point, but we want to switch between HTTP and HTTPS depending on environment
-define('WP_SITEURL', $domain); // No overriding within Admin...
-define('WP_HOME', $domain); // ...of either setting
+define( 'WP_SITEURL',                $domain . '/wp' );       // No overriding within Admin...
+define( 'WP_HOME',                   $domain );               // ...of either setting
+
+define( 'WP_CONTENT_DIR',            dirname( __FILE__ ) . '/custom' );   // Move all content (themes, plugins, uploads etc) to reside in a custom directory...
+define( 'WP_CONTENT_URL',            $domain . '/custom' );               // ...with matching custom content URL
 
 // Default to full blocking of updating/installation, unless WP_DEBUG is set (and as long as the server isn't Live). Never allow in-admin file editing
 define('DISALLOW_FILE_EDIT', true); // Disable file editing within Admin, still allow plugin/theme/core install/update
 define('DISALLOW_FILE_MODS', !$plugin_install); // Disable theme/plugin/core installation/updates & file editing within Admin
+
 
 /* That's all, stop editing! Happy blogging. */
 
