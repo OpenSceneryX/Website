@@ -9,6 +9,7 @@ custom/backup-db/
 custom/backups/
 custom/blogs.dir/
 custom/cache/
+custom/plugins/
 custom/upgrade/
 custom/uploads/
 custom/wp-cache-config.php
