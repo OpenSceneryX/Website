@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4844b36883bee3fe8de116b1309de8e5",
+    "hash": "3b183a7f5f82410f10869fb02047b7f6",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +103,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.2.3",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "56525f7941a9835ae64deafcaff15cd52336e467"
+                "reference": "7ba0030c15a88c63b3ba2e8ebee1215e211aa9a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/56525f7941a9835ae64deafcaff15cd52336e467",
-                "reference": "56525f7941a9835ae64deafcaff15cd52336e467",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/7ba0030c15a88c63b3ba2e8ebee1215e211aa9a1",
+                "reference": "7ba0030c15a88c63b3ba2e8ebee1215e211aa9a1",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-07-23 11:16:08"
+            "time": "2015-08-04 12:01:12"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -265,6 +265,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/mailgun",
+            "version": "1.3.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/mailgun/",
+                "reference": "tags/1.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailgun.1.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailgun/"
         },
         {
             "name": "wpackagist-plugin/move-wordpress-comments",
