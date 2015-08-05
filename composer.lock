@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b183a7f5f82410f10869fb02047b7f6",
+    "hash": "7a5d1993d3df317bb1963aed93e24d16",
     "packages": [
         {
             "name": "composer/installers",
@@ -265,26 +265,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
-        },
-        {
-            "name": "wpackagist-plugin/mailgun",
-            "version": "1.3.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/mailgun/",
-                "reference": "tags/1.3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailgun.1.3.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/mailgun/"
         },
         {
             "name": "wpackagist-plugin/move-wordpress-comments",
