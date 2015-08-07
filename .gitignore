@@ -9,6 +9,7 @@ custom/backup-db/
 custom/backups/
 custom/blogs.dir/
 custom/cache/
+custom/mu-plugins/
 custom/plugins/
 custom/upgrade/
 custom/uploads/
