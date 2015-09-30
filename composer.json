@@ -12,11 +12,11 @@
 				"johnpbloch/wordpress": "*"
 			},
             "type": "wordpress-core",
-            "version": "4.3",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.3"
+                "reference": "4.3.1"
             }
         }
     }
@@ -29,7 +29,7 @@
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.8.2",
     "wpackagist-plugin/move-wordpress-comments": "0.2.1.1",
     "wpackagist-plugin/redirection": "2.4.2",
-    "wpackagist-plugin/theme-my-login": "6.3.12",
+    "wpackagist-plugin/theme-my-login": "6.4",
     "wpackagist-plugin/visual-form-builder": "2.8.6",
     "wpackagist-plugin/w3-total-cache": "0.9.4.1",
     "wpackagist-plugin/wangguard": "1.6.2",
