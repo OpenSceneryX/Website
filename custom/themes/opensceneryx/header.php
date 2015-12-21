@@ -123,5 +123,6 @@
 			</nav><!-- #access -->
 	</header><!-- #branding -->
 
+    <?php if (!is_front_page()): ?><div class="tagline">OpenSceneryX - Free Scenery Objects for X-Plane®</div><?php endif; ?>
 
 	<div id="main">
