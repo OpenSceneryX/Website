@@ -23,8 +23,8 @@
   ],
   "require": {
     "wordpress/wordpress": "*",
-    "wpackagist-plugin/addthis": "5.2.1",
-    "wpackagist-plugin/akismet": "3.1.6",
+    "wpackagist-plugin/addthis": "5.2.3",
+    "wpackagist-plugin/akismet": "3.1.7",
     "wpackagist-plugin/cookie-notice": "1.2.34",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.9.1.2",
     "wpackagist-plugin/move-wordpress-comments": "0.2.1.1",
@@ -33,7 +33,7 @@
     "wpackagist-plugin/visual-form-builder": "2.8.6",
     "wpackagist-plugin/w3-total-cache": "0.9.4.1",
     "wpackagist-plugin/wangguard": "1.6.2",
-    "wpackagist-plugin/wordpress-seo": "3.0.6",
+    "wpackagist-plugin/wordpress-seo": "3.0.7",
 	"psycle-wordpress/wordpress-core-installer": "^1.0",
     "psycle-wordpress-plugins/mail-options": "^1.0"
   },

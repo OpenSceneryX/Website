@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cd628a67e9c5b50c73f4292c569fbe03",
-    "content-hash": "42303df38f31371527a9606c1c5dd81d",
+    "hash": "d6348a0822dd776f557663b5f5ae0723",
+    "content-hash": "2063255efbd0a4dbf83d095bacd57153",
     "packages": [
         {
             "name": "composer/installers",
@@ -193,15 +193,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "5.2.1",
+            "version": "5.2.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/5.2.1"
+                "reference": "tags/5.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.5.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.5.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -213,15 +213,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.6"
+                "reference": "tags/3.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -393,15 +393,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.0.6"
+                "reference": "tags/3.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.7.zip",
                 "reference": null,
                 "shasum": null
             },
