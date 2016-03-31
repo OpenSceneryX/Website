@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d6348a0822dd776f557663b5f5ae0723",
-    "content-hash": "2063255efbd0a4dbf83d095bacd57153",
+    "hash": "075c74c799b96d62f4ce83a3c6ca59b1",
+    "content-hash": "956fc7f26a571cca8aaedcf5043e401e",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.22",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -103,7 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "psycle-wordpress-plugins/mail-options",
@@ -128,16 +128,16 @@
         },
         {
             "name": "psycle-wordpress/wordpress-core-installer",
-            "version": "1.0.12",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Psycle/wordpress-core-installer.git",
-                "reference": "4761853349aca5483798b2e254305b6d5a2d02e9"
+                "reference": "36b9a26a299ec93e5cb662a596c0e66894dd5eb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Psycle/wordpress-core-installer/zipball/4761853349aca5483798b2e254305b6d5a2d02e9",
-                "reference": "4761853349aca5483798b2e254305b6d5a2d02e9",
+                "url": "https://api.github.com/repos/Psycle/wordpress-core-installer/zipball/36b9a26a299ec93e5cb662a596c0e66894dd5eb7",
+                "reference": "36b9a26a299ec93e5cb662a596c0e66894dd5eb7",
                 "shasum": ""
             },
             "require": {
@@ -176,15 +176,15 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-11-16 11:56:53"
+            "time": "2016-02-19 10:51:45"
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.4.1"
+                "reference": "4.4.2"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
@@ -193,15 +193,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "5.2.3",
+            "version": "5.3.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/5.2.3"
+                "url": "https://plugins.svn.wordpress.org/addthis/",
+                "reference": "tags/5.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.5.2.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -213,15 +213,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1.7",
+            "version": "3.1.9",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.7"
+                "url": "https://plugins.svn.wordpress.org/akismet/",
+                "reference": "tags/3.1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -236,7 +236,7 @@
             "version": "1.2.34",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/cookie-notice/",
+                "url": "https://plugins.svn.wordpress.org/cookie-notice/",
                 "reference": "tags/1.2.34"
             },
             "dist": {
@@ -253,15 +253,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "4.9.1.2",
+            "version": "4.9.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/4.9.1.2"
+                "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
+                "reference": "tags/4.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.1.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -276,7 +276,7 @@
             "version": "0.2.1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/move-wordpress-comments/",
+                "url": "https://plugins.svn.wordpress.org/move-wordpress-comments/",
                 "reference": "tags/0.2.1.1"
             },
             "dist": {
@@ -296,7 +296,7 @@
             "version": "2.4.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/redirection/",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
                 "reference": "tags/2.4.3"
             },
             "dist": {
@@ -313,15 +313,15 @@
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
-            "version": "6.4",
+            "version": "6.4.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/theme-my-login/",
-                "reference": "tags/6.4"
+                "url": "https://plugins.svn.wordpress.org/theme-my-login/",
+                "reference": "tags/6.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -333,15 +333,15 @@
         },
         {
             "name": "wpackagist-plugin/visual-form-builder",
-            "version": "2.8.6",
+            "version": "2.8.7",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/visual-form-builder/",
-                "reference": "tags/2.8.6"
+                "url": "https://plugins.svn.wordpress.org/visual-form-builder/",
+                "reference": "tags/2.8.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.8.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.8.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -356,7 +356,7 @@
             "version": "0.9.4.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/w3-total-cache/",
+                "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
                 "reference": "tags/0.9.4.1"
             },
             "dist": {
@@ -376,7 +376,7 @@
             "version": "1.6.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wangguard/",
+                "url": "https://plugins.svn.wordpress.org/wangguard/",
                 "reference": "tags/1.6.2"
             },
             "dist": {
@@ -393,15 +393,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.0.7",
+            "version": "3.1.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.0.7"
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
