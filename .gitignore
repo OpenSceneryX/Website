@@ -31,3 +31,4 @@ robots.txt
 manifest.xml
 manifest.xml.zip
 vendor/*
+.idea
