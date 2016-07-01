@@ -12,29 +12,29 @@
 				"johnpbloch/wordpress": "*"
 			},
             "type": "wordpress-core",
-            "version": "4.5.2",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.5.2"
+                "reference": "4.5.3"
             }
         }
     }
   ],
   "require": {
     "wordpress/wordpress": "*",
-    "wpackagist-plugin/addthis": "5.3.2",
-    "wpackagist-plugin/akismet": "3.1.10",
+    "wpackagist-plugin/addthis": "5.3.3",
+    "wpackagist-plugin/akismet": "3.1.11",
     "wpackagist-plugin/broken-link-checker": "1.11.2",
     "wpackagist-plugin/cookie-notice": "1.2.35",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.9.3.1",
     "wpackagist-plugin/move-wordpress-comments": "0.2.1.1",
-    "wpackagist-plugin/redirection": "2.4.4",
-    "wpackagist-plugin/theme-my-login": "6.4.4",
+    "wpackagist-plugin/redirection": "2.4.5",
+    "wpackagist-plugin/theme-my-login": "6.4.5",
     "wpackagist-plugin/visual-form-builder": "2.8.8",
     "wpackagist-plugin/w3-total-cache": "0.9.4.1",
-    "wpackagist-plugin/wangguard": "1.6.2",
-    "wpackagist-plugin/wordpress-seo": "3.2.5",
+    "wpackagist-plugin/wangguard": "1.7.1",
+    "wpackagist-plugin/wordpress-seo": "3.3.4",
     "wpackagist-theme/twentyeleven": "2.4",
 	"psycle-wordpress/wordpress-core-installer": "^1.0",
     "psycle-wordpress-plugins/mail-options": "^1.0"
