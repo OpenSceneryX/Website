@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5e4a90143a4cd488ff3370f36a48b6ba",
-    "content-hash": "0e747604ba95172bb4fa0592edbf755c",
+    "hash": "e60dc08927397bb61d3177e1885e996c",
+    "content-hash": "73f13e22591b9814a6410dece3db2c9b",
     "packages": [
         {
             "name": "composer/installers",
@@ -195,15 +195,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "5.3.2",
+            "version": "5.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/5.3.2"
+                "reference": "tags/5.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -215,15 +215,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1.10",
+            "version": "3.1.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.10"
+                "reference": "tags/3.1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.10.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.11.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -315,15 +315,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.4.4",
+            "version": "2.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.4.4"
+                "reference": "tags/2.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.2.4.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -335,15 +335,15 @@
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
-            "version": "6.4.4",
+            "version": "6.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/theme-my-login/",
-                "reference": "tags/6.4.4"
+                "reference": "tags/6.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -395,15 +395,15 @@
         },
         {
             "name": "wpackagist-plugin/wangguard",
-            "version": "1.6.2",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wangguard/",
-                "reference": "tags/1.6.2"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wangguard.1.6.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wangguard.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -415,15 +415,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.2.5",
+            "version": "3.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.2.5"
+                "reference": "tags/3.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.2.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
