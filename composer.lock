@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "386b0b192cd4a838cc12da932fd2bac4",
-    "content-hash": "a10edb72b5fdc6c678544965b5e6128a",
+    "hash": "5e4a90143a4cd488ff3370f36a48b6ba",
+    "content-hash": "0e747604ba95172bb4fa0592edbf755c",
     "packages": [
         {
             "name": "composer/installers",
@@ -182,11 +182,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.5.2",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.5.2"
+                "reference": "4.5.3"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
