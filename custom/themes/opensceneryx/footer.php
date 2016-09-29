@@ -55,7 +55,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>http://
+<?php wp_footer(); ?>
 
 </body>
 </html>
