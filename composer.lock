@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61d016c878641da4914391757b88f91e",
-    "content-hash": "af620b3254d9e6be60679f6fc27a7a44",
+    "hash": "f3fcdddccce26cb3ddd4432fa3151326",
+    "content-hash": "07dd87a3720871a19207fe59c33083c7",
     "packages": [
         {
             "name": "composer/installers",
@@ -442,15 +442,15 @@
         },
         {
             "name": "wpackagist-theme/twentyeleven",
-            "version": "2.4",
+            "version": "2.5",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentyeleven/",
-                "reference": "2.4"
+                "reference": "2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyeleven.2.4.zip",
+                "url": "https://downloads.wordpress.org/theme/twentyeleven.2.5.zip",
                 "reference": null,
                 "shasum": null
             },
