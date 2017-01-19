@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "64cefdb0960f7493f046c47d201744d8",
-    "content-hash": "2c8673c38bdf0f7ef4dfc1e9e2e446b3",
+    "hash": "5fced1c77e0b023a359009eb44fadd5b",
+    "content-hash": "2c4868248f0de71032335cf57c4eb9dd",
     "packages": [
         {
             "name": "composer/installers",
@@ -202,15 +202,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "5.3.3",
+            "version": "5.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/5.3.3"
+                "reference": "tags/5.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -262,15 +262,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-notice",
-            "version": "1.2.36.1",
+            "version": "1.2.37",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "tags/1.2.36.1"
+                "reference": "tags/1.2.37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.36.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.37.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -282,15 +282,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "4.9.3.2",
+            "version": "4.9.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "trunk"
+                "reference": "tags/4.9.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -322,15 +322,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.4.5",
+            "version": "2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.4.5"
+                "reference": "tags/2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.4.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.2.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -342,15 +342,15 @@
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
-            "version": "6.4.5",
+            "version": "6.4.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/theme-my-login/",
-                "reference": "tags/6.4.5"
+                "reference": "tags/6.4.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -382,15 +382,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.9.5",
+            "version": "0.9.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.9.5"
+                "reference": "tags/0.9.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -402,15 +402,15 @@
         },
         {
             "name": "wpackagist-plugin/wangguard",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wangguard/",
-                "reference": "tags/1.7.2"
+                "reference": "tags/1.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wangguard.1.7.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wangguard.1.7.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -422,15 +422,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.6",
+            "version": "4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.6"
+                "reference": "tags/4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
