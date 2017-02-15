@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3fcdddccce26cb3ddd4432fa3151326",
-    "content-hash": "07dd87a3720871a19207fe59c33083c7",
+    "hash": "872b7b1b6037474cec6a84adf520a0c8",
+    "content-hash": "19ad14650ce0b1487e796cef412cdd0b",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,11 +189,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.7.1",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.7.1"
+                "reference": "4.7.2"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
@@ -262,15 +262,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-notice",
-            "version": "1.2.37",
+            "version": "1.2.38",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "tags/1.2.37"
+                "reference": "tags/1.2.38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.37.zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.38.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -282,15 +282,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "4.9.5",
+            "version": "4.9.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/4.9.5"
+                "reference": "tags/4.9.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -422,15 +422,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.1",
+            "version": "4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.1"
+                "reference": "tags/4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.3.zip",
                 "reference": null,
                 "shasum": null
             },

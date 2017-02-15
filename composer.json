@@ -12,11 +12,11 @@
 				"johnpbloch/wordpress": "*"
 			},
             "type": "wordpress-core",
-            "version": "4.7.1",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.7.1"
+                "reference": "4.7.2"
             }
         }
     }
@@ -26,15 +26,15 @@
     "wpackagist-plugin/addthis": "5.3.4",
     "wpackagist-plugin/akismet": "3.2",
     "wpackagist-plugin/broken-link-checker": "1.11.2",
-    "wpackagist-plugin/cookie-notice": "1.2.37",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.9.5",
+    "wpackagist-plugin/cookie-notice": "1.2.38",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.9.6.1",
     "wpackagist-plugin/move-wordpress-comments": "0.2.1.1",
     "wpackagist-plugin/redirection": "2.5",
     "wpackagist-plugin/theme-my-login": "6.4.7",
     "wpackagist-plugin/visual-form-builder": "2.9.2",
     "wpackagist-plugin/w3-total-cache": "0.9.5.2",
     "wpackagist-plugin/wangguard": "1.7.3",
-    "wpackagist-plugin/wordpress-seo": "4.1",
+    "wpackagist-plugin/wordpress-seo": "4.3",
     "wpackagist-theme/twentyeleven": "2.5",
 	"psycle-wordpress/wordpress-core-installer": "^1.0",
     "psycle-wordpress-plugins/mail-options": "^1.0"
