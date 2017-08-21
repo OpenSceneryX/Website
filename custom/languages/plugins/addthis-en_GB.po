@@ -1,0 +1,50 @@
+# Translation of Plugins - Share Buttons by AddThis - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - Share Buttons by AddThis - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-07 20:32:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - Share Buttons by AddThis - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.addthis.com"
+msgstr "http://www.addthis.com"
+
+#. Author of the plugin/theme
+msgid "The AddThis Team"
+msgstr "The AddThis Team"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/addthis/"
+msgstr "https://en-gb.wordpress.org/plugins/addthis/"
+
+#. Plugin Name of the plugin/theme
+msgid "Share Buttons by AddThis"
+msgstr "Share Buttons by AddThis"
+
+#: backend/AddThisWidgetByDomClass.php:242
+msgid "Tool: "
+msgstr "Tool: "
+
+#: backend/AddThisWidgetByDomClass.php:200
+#: backend/AddThisWidgetByDomClass.php:498
+msgid "Title: "
+msgstr "Title: "
+
+#: backend/AddThisGlobalOptionsFeature.php:946
+msgid "Terms of Service"
+msgstr "Terms of Service"
+
+#: backend/AddThisGlobalOptionsFeature.php:941
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: backend/AddThisGlobalOptionsFeature.php:901
+#: backend/AddThisWidgetByDomClass.php:491
+msgid "the plugin's settings"
+msgstr "the plugin's settings"
