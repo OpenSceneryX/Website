@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad7ec1aa634f760cea418ab3783643df",
+    "content-hash": "6091417bab8e92511606709d87bc77f4",
     "packages": [
         {
             "name": "composer/installers",
@@ -211,15 +211,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "5.3.5",
+            "version": "6.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/5.3.5"
+                "reference": "tags/6.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.6.1.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -231,15 +231,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.3.2",
+            "version": "3.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.3.2"
+                "reference": "tags/3.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -251,15 +251,15 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.11.3",
+            "version": "1.11.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.11.3"
+                "reference": "tags/1.11.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.11.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.11.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -291,15 +291,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "5.0.1",
+            "version": "5.1.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/5.0.1"
+                "reference": "tags/5.1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.0.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.1.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -331,15 +331,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.6.2",
+            "version": "2.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.6.2"
+                "reference": "tags/2.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.6.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.2.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -371,15 +371,15 @@
         },
         {
             "name": "wpackagist-plugin/visual-form-builder",
-            "version": "2.9.2",
+            "version": "2.9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/visual-form-builder/",
-                "reference": "tags/2.9.2"
+                "reference": "tags/2.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.9.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.9.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -431,15 +431,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.9",
+            "version": "5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.9"
+                "reference": "tags/5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
