@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Google Analytics Dashboard for WP (GADWP) - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-10-10 07:24:00+0000\n"
+"PO-Revision-Date: 2017-12-19 11:52:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: en_GB\n"
 "Project-Id-Version: Plugins - Google Analytics Dashboard for WP (GADWP) - Stable (latest release)\n"
+
+#: admin/setup.php:362
+msgid "the release notes"
+msgstr "the release notes"
 
 #: admin/settings.php:870
 msgid "enable Google AMP Client Id API"
@@ -225,15 +229,15 @@ msgstr "Page Load Time"
 msgid "Time on Page"
 msgstr "Time on Page"
 
-#: tools/gapi.php:505
+#: tools/gapi.php:509
 msgid "Source:"
 msgstr "Source:"
 
-#: tools/gapi.php:505
+#: tools/gapi.php:509
 msgid "URI:"
 msgstr "URI:"
 
-#: admin/setup.php:178 tools/gapi.php:501
+#: admin/setup.php:178 tools/gapi.php:505
 msgid "404 Errors"
 msgstr "404 Errors"
 
@@ -261,11 +265,11 @@ msgstr "Invalid response"
 msgid "Tags:"
 msgstr "Tags:"
 
-#: tools/gapi.php:730
+#: tools/gapi.php:734
 msgid "Other"
 msgstr "Other"
 
-#: tools/gapi.php:667
+#: tools/gapi.php:671
 msgid "Devices"
 msgstr "Devices"
 
@@ -296,13 +300,13 @@ msgstr "Traffic"
 #. translators: Example: 'l, F j, Y' will become 'Thusday, November 17, 2015'
 #. For details see:
 #. http://php.net/manual/en/function.date.php#refsect1-function.date-parameters
-#: tools/gapi.php:392 tools/gapi.php:767
+#: tools/gapi.php:396 tools/gapi.php:771
 msgid "l, F j, Y"
 msgstr "l, F j, Y"
 
 #. translators: Example: 'F, Y' will become 'November, 2015' For details see:
 #. http://php.net/manual/en/function.date.php#refsect1-function.date-parameters
-#: tools/gapi.php:383
+#: tools/gapi.php:387
 msgid "F, Y"
 msgstr "F, Y"
 
@@ -335,43 +339,43 @@ msgid "Displays Google Analytics Reports and Real-Time Statistics in your Dashbo
 msgstr "Displays Google Analytics Reports and Real-Time Statistics in your Dashboard. Automatically inserts the tracking code in every page of your website."
 
 #. #-#-#-#-#  google-analytics-dashboard-for-wp-code.pot (Google Analytics
-#. Dashboard for WP (GADWP) 5.1.2.2)  #-#-#-#-#
+#. Dashboard for WP (GADWP) 5.1.2.5)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
 #. #-#-#-#-#  google-analytics-dashboard-for-wp-code.pot (Google Analytics
-#. Dashboard for WP (GADWP) 5.1.2.2)  #-#-#-#-#
+#. Dashboard for WP (GADWP) 5.1.2.5)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://deconf.com"
 msgstr "https://deconf.com"
 
-#: tools/gapi.php:715
+#: tools/gapi.php:719
 msgid "Type"
 msgstr "Type"
 
-#: tools/gapi.php:667
+#: tools/gapi.php:671
 msgid "Channels"
 msgstr "Channels"
 
-#: tools/gapi.php:605
+#: tools/gapi.php:609
 msgid "Cities from"
 msgstr "Cities from"
 
-#: tools/gapi.php:595
+#: tools/gapi.php:599
 msgid "Countries"
 msgstr "Countries"
 
-#: tools/gapi.php:353 tools/gapi.php:356 tools/gapi.php:758
+#: tools/gapi.php:357 tools/gapi.php:360 tools/gapi.php:762
 msgid "Date"
 msgstr "Date"
 
-#: tools/gapi.php:350
+#: tools/gapi.php:354
 msgid "Hour"
 msgstr "Hour"
 
-#: tools/gapi.php:342
+#: tools/gapi.php:346
 msgid "Unique Page Views"
 msgstr "Unique Page Views"
 
-#: tools/gapi.php:339
+#: tools/gapi.php:343
 msgid "Organic Searches"
 msgstr "Organic Searches"
 
@@ -475,12 +479,12 @@ msgstr "CAMPAIGN"
 msgid "SOCIAL"
 msgstr "SOCIAL"
 
-#: admin/setup.php:173 tools/gapi.php:473
+#: admin/setup.php:173 tools/gapi.php:477
 msgid "Pages"
 msgstr "Pages"
 
 #: admin/setup.php:167 admin/setup.php:186 front/widgets.php:40
-#: tools/gapi.php:345 tools/gapi.php:758
+#: tools/gapi.php:349 tools/gapi.php:762
 msgid "Sessions"
 msgstr "Sessions"
 
@@ -511,10 +515,6 @@ msgstr "Google Analytics Dashboard"
 #: admin/setup.php:362
 msgid "the plugin&#39;s settings page"
 msgstr "the plugin&#39;s settings page"
-
-#: admin/setup.php:362
-msgid "the documentation page"
-msgstr "the documentation page"
 
 #: admin/setup.php:362
 msgid "For details, check out %1$s and %2$s."
@@ -571,12 +571,12 @@ msgid "A JavaScript Error is blocking plugin resources!"
 msgstr "A JavaScript Error is blocking plugin resources!"
 
 #: admin/setup.php:175 admin/setup.php:276 front/setup.php:84
-#: tools/gapi.php:572
+#: tools/gapi.php:576
 msgid "Searches"
 msgstr "Searches"
 
 #: admin/setup.php:174 admin/setup.php:275 front/setup.php:83
-#: tools/gapi.php:537
+#: tools/gapi.php:541
 msgid "Referrers"
 msgstr "Referrers"
 
@@ -585,12 +585,12 @@ msgid "Location"
 msgstr "Location"
 
 #: admin/setup.php:171 admin/setup.php:189 admin/setup.php:273
-#: admin/setup.php:289 front/setup.php:81 front/setup.php:97 tools/gapi.php:336
+#: admin/setup.php:289 front/setup.php:81 front/setup.php:97 tools/gapi.php:340
 msgid "Bounce Rate"
 msgstr "Bounce Rate"
 
 #: admin/setup.php:170 admin/setup.php:188 admin/setup.php:272
-#: admin/setup.php:288 front/setup.php:80 front/setup.php:96 tools/gapi.php:333
+#: admin/setup.php:288 front/setup.php:80 front/setup.php:96 tools/gapi.php:337
 msgid "Page Views"
 msgstr "Page Views"
 
@@ -599,7 +599,7 @@ msgid "Organic"
 msgstr "Organic"
 
 #: admin/setup.php:168 admin/setup.php:187 admin/setup.php:270
-#: admin/setup.php:287 front/setup.php:78 front/setup.php:95 tools/gapi.php:330
+#: admin/setup.php:287 front/setup.php:78 front/setup.php:95 tools/gapi.php:334
 msgid "Users"
 msgstr "Users"
 
