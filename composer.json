@@ -35,7 +35,7 @@
     "wpackagist-plugin/w3-total-cache": "0.9.7",
     "wpackagist-plugin/wangguard": "1.7.3",
     "wpackagist-plugin/wordpress-seo": "7.5.1",
-    "wpackagist-theme/twentyeleven": "2.7",
+    "wpackagist-theme/twentyeleven": "2.8",
 	"psycle-wordpress/wordpress-core-installer": "^1.0",
     "psycle-wordpress-plugins/mail-options": "^1.0"
   },
