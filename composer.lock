@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d006239fe642331f3524d831c10ec36",
+    "content-hash": "5eb413fcba326fccc27ac7c647d6224e",
     "packages": [
         {
             "name": "composer/installers",
@@ -201,11 +201,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.9.2",
+            "version": "4.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.9.2"
+                "reference": "4.9.6"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
@@ -214,15 +214,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "6.1.2",
+            "version": "6.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/6.1.2"
+                "reference": "tags/6.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.6.1.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.6.1.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -234,15 +234,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.0.2"
+                "reference": "tags/4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.0.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.0.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -274,15 +274,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-notice",
-            "version": "1.2.41",
+            "version": "1.2.43",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "tags/1.2.41"
+                "reference": "tags/1.2.43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.41.zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.43.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -294,15 +294,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "5.1.2.5",
+            "version": "5.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/5.1.2.5"
+                "reference": "tags/5.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.1.2.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -334,15 +334,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.1.1",
+            "version": "3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.1.1"
+                "reference": "tags/3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -354,15 +354,15 @@
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
-            "version": "6.4.10",
+            "version": "6.4.12",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/theme-my-login/",
-                "reference": "tags/6.4.10"
+                "reference": "tags/6.4.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.10.zip",
+                "url": "https://downloads.wordpress.org/plugin/theme-my-login.6.4.12.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -374,15 +374,15 @@
         },
         {
             "name": "wpackagist-plugin/visual-form-builder",
-            "version": "2.9.4",
+            "version": "2.9.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/visual-form-builder/",
-                "reference": "tags/2.9.4"
+                "reference": "tags/2.9.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.9.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.9.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -394,15 +394,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.9.6",
+            "version": "0.9.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.9.6"
+                "reference": "tags/0.9.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -434,15 +434,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "6.2",
+            "version": "7.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/6.2"
+                "reference": "tags/7.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.6.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -454,15 +454,15 @@
         },
         {
             "name": "wpackagist-theme/twentyeleven",
-            "version": "2.7",
+            "version": "2.8",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentyeleven/",
-                "reference": "2.7"
+                "reference": "2.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyeleven.2.7.zip",
+                "url": "https://downloads.wordpress.org/theme/twentyeleven.2.8.zip",
                 "reference": null,
                 "shasum": null
             },
