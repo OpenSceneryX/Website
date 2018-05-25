@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d006239fe642331f3524d831c10ec36",
+    "content-hash": "ae34e17aec4b1e0d671e786042a70fb2",
     "packages": [
         {
             "name": "composer/installers",
@@ -201,11 +201,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.9.2",
+            "version": "4.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "4.9.2"
+                "reference": "4.9.6"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
