@@ -19,6 +19,9 @@ abstract class OSXLibraryItem extends OSXItem {
     protected $conversionAuthors = array();
     protected $conversionAuthorEmails = array();
     protected $conversionAuthorURLs = array();
+    protected $modificationAuthors = array();
+    protected $modificationAuthorEmails = array();
+    protected $modificationAuthorURLs = array();
 
     protected $description = null;
 
@@ -111,6 +114,20 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
+            if (preg_match('/^Author, modifications:\s+(.*)/', $line, $matches) === 1) {
+                $this->modificationAuthors[] = $matches[1];
+                continue;
+            }
+
+            if (preg_match('/^Email, modifications:\s+(.*)/', $line, $matches) === 1) {
+                $this->modificationAuthorEmails[] = $matches[1];
+                continue;
+            }
+
+            if (preg_match('/^URL, modifications:\s+(.*)/', $line, $matches) === 1) {
+                $this->modificationAuthorURLs[] = $matches[1];
+                continue;
+            }
             if (preg_match('/^Logo:\s+(.*)/', $line, $matches) === 1) {
                 $this->logo = $matches[1];
                 continue;
@@ -204,6 +221,19 @@ abstract class OSXLibraryItem extends OSXItem {
                     $result .= "<span class='fieldValue'><a href='" . $this->conversionAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->conversionAuthors[$i] . "</a></span>";
                 } else {
                     $result .= "<span class='fieldValue'>" . $this->conversionAuthors[$i] . "</span>";
+                }
+            }
+        }
+
+        $authorCount = count($this->modificationAuthors);
+        if ($authorCount > 0) {
+            $result .= "<li><span class='fieldTitle'>Object Modifications By:</span> ";
+
+            for ($i = 0; $i < $authorCount; $i++) {
+                if (isset($this->modificationAuthorURLs[$i])) {
+                    $result .= "<span class='fieldValue'><a href='" . $this->modificationAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->modificationAuthors[$i] . "</a></span>";
+                } else {
+                    $result .= "<span class='fieldValue'>" . $this->modificationAuthors[$i] . "</span>";
                 }
             }
         }
