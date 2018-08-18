@@ -9,6 +9,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $virtualPaths = array();
     protected $deprecatedVirtualPaths = array();
+    protected $externalVirtualPaths = array();
 
     protected $authors = array();
     protected $authorEmails = array();
@@ -66,6 +67,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             if (preg_match('/^Export Deprecated v(.*):\s+(.*)/', $line, $matches) === 1) {
                 $this->deprecatedVirtualPaths[] = array('version' => $matches[1], 'path' => $matches[2]);
+                continue;
+            }
+
+            if (preg_match('/^Export External (.*):\s+(.*)/', $line, $matches) === 1) {
+                $this->externalVirtualPaths[] = array('library' => $matches[1], 'path' => $matches[2]);
                 continue;
             }
 
@@ -166,6 +172,16 @@ abstract class OSXLibraryItem extends OSXItem {
 
             foreach ($this->deprecatedVirtualPaths as $deprecatedVirtualPath) {
                 $result .= "<strong>From v" . $deprecatedVirtualPath['version'] . "</strong>: " . $deprecatedVirtualPath['path'] . "<br />\n";
+            }
+
+            $result .= "</div>\n";
+        }
+
+        if (count($this->externalVirtualPaths) > 0) {
+            $result .= "<div class='externalVirtualPath'><h2>3rd Party Library Paths</h2>\n";
+
+            foreach ($this->externalVirtualPaths as $externalVirtualPath) {
+                $result .= "<strong>From '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
             }
 
             $result .= "</div>\n";

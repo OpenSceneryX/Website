@@ -189,8 +189,16 @@ div.deprecatedVirtualPath {
 	padding: 0.25em 0.5em 0.25em 0.5em;
 }
 
+div.externalVirtualPath {
+	margin-top: 0.2em;
+	display: block;
+	background-color: #eef;
+	padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
 div.virtualPath p,
-div.deprecatedVirtualPath p {
+div.deprecatedVirtualPath p,
+div.externalVirtualPath p {
     margin: 0;
 }
 
