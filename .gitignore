@@ -33,3 +33,5 @@ manifest.xml.zip
 vendor/*
 .idea
 custom/themes/twentyeleven
+doc
+extras
