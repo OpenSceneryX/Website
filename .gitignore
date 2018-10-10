@@ -17,11 +17,11 @@ custom/wp-cache-config.php
 local-config.php
 doc/*
 extras/*
-facades/*
-forests/*
-lines/*
-objects/*
-polygons/*
+facades
+forests
+lines
+objects
+polygons
 nbproject/*
 downloads/*
 repository/*
@@ -33,3 +33,5 @@ manifest.xml.zip
 vendor/*
 .idea
 custom/themes/twentyeleven
+doc
+extras

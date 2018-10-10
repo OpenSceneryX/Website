@@ -9,6 +9,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $virtualPaths = array();
     protected $deprecatedVirtualPaths = array();
+    protected $externalVirtualPaths = array();
 
     protected $authors = array();
     protected $authorEmails = array();
@@ -19,12 +20,21 @@ abstract class OSXLibraryItem extends OSXItem {
     protected $conversionAuthors = array();
     protected $conversionAuthorEmails = array();
     protected $conversionAuthorURLs = array();
+    protected $modificationAuthors = array();
+    protected $modificationAuthorEmails = array();
+    protected $modificationAuthorURLs = array();
 
     protected $description = null;
 
     protected $logo = null;
 
     protected $note = null;
+
+    /**
+     * @var boolean If true, author email addresses will be output.  This should only be enabled if an email obfuscator plugin is installed 
+     * or if a proxy service is used (such as Cloudflare) that obfuscates emails
+    */
+    const OUTPUT_EMAILS = true;
 
 
     function __construct($path, $url) {
@@ -63,6 +73,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             if (preg_match('/^Export Deprecated v(.*):\s+(.*)/', $line, $matches) === 1) {
                 $this->deprecatedVirtualPaths[] = array('version' => $matches[1], 'path' => $matches[2]);
+                continue;
+            }
+
+            if (preg_match('/^Export External (.*):\s+(.*)/', $line, $matches) === 1) {
+                $this->externalVirtualPaths[] = array('library' => $matches[1], 'path' => $matches[2]);
                 continue;
             }
 
@@ -111,6 +126,20 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
+            if (preg_match('/^Author, modifications:\s+(.*)/', $line, $matches) === 1) {
+                $this->modificationAuthors[] = $matches[1];
+                continue;
+            }
+
+            if (preg_match('/^Email, modifications:\s+(.*)/', $line, $matches) === 1) {
+                $this->modificationAuthorEmails[] = $matches[1];
+                continue;
+            }
+
+            if (preg_match('/^URL, modifications:\s+(.*)/', $line, $matches) === 1) {
+                $this->modificationAuthorURLs[] = $matches[1];
+                continue;
+            }
             if (preg_match('/^Logo:\s+(.*)/', $line, $matches) === 1) {
                 $this->logo = $matches[1];
                 continue;
@@ -154,6 +183,16 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
+        if (count($this->externalVirtualPaths) > 0) {
+            $result .= "<div class='externalVirtualPath'><h2>3rd Party Library Paths</h2>\n";
+
+            foreach ($this->externalVirtualPaths as $externalVirtualPath) {
+                $result .= "<strong>From '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
+            }
+
+            $result .= "</div>\n";
+        }
+
         if (is_file($this->path . "/screenshot.jpg")) {
             $result .= "<img class='screenshot' src='/" . $this->url . "/screenshot.jpg' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
         } else {
@@ -176,6 +215,8 @@ abstract class OSXLibraryItem extends OSXItem {
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->authorURLs[$i])) {
                     $result .= "<span class='fieldValue'><a href='" . $this->authorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->authors[$i] . "</a></span>";
+                } elseif (self::OUTPUT_EMAILS && isset($this->authorEmails[$i])) {
+                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->authorEmails[$i] . "'>" . $this->authors[$i] . "</a></span>";
                 } else {
                     $result .= "<span class='fieldValue'>" . $this->authors[$i] . "</span>";
                 }
@@ -189,6 +230,8 @@ abstract class OSXLibraryItem extends OSXItem {
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->textureAuthorURLs[$i])) {
                     $result .= "<span class='fieldValue'><a href='" . $this->textureAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->textureAuthors[$i] . "</a></span>";
+                } elseif (self::OUTPUT_EMAILS && isset($this->textureAuthorEmails[$i])) {
+                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->textureAuthorEmails[$i] . "'>" . $this->textureAuthors[$i] . "</a></span>";
                 } else {
                     $result .= "<span class='fieldValue'>" . $this->textureAuthors[$i] . "</span>";
                 }
@@ -202,8 +245,25 @@ abstract class OSXLibraryItem extends OSXItem {
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->conversionAuthorURLs[$i])) {
                     $result .= "<span class='fieldValue'><a href='" . $this->conversionAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->conversionAuthors[$i] . "</a></span>";
+                } elseif (self::OUTPUT_EMAILS && isset($this->conversionAuthorEmails[$i])) {
+                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->conversionAuthorEmails[$i] . "'>" . $this->conversionAuthors[$i] . "</a></span>";
                 } else {
                     $result .= "<span class='fieldValue'>" . $this->conversionAuthors[$i] . "</span>";
+                }
+            }
+        }
+
+        $authorCount = count($this->modificationAuthors);
+        if ($authorCount > 0) {
+            $result .= "<li><span class='fieldTitle'>Object Modifications By:</span> ";
+
+            for ($i = 0; $i < $authorCount; $i++) {
+                if (isset($this->modificationAuthorURLs[$i])) {
+                    $result .= "<span class='fieldValue'><a href='" . $this->modificationAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->modificationAuthors[$i] . "</a></span>";
+                } elseif (self::OUTPUT_EMAILS && isset($this->modificationAuthorEmails[$i])) {
+                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->modificationAuthorEmails[$i] . "'>" . $this->modificationAuthors[$i] . "</a></span>";
+                } else {
+                    $result .= "<span class='fieldValue'>" . $this->modificationAuthors[$i] . "</span>";
                 }
             }
         }
