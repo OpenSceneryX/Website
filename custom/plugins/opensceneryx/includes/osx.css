@@ -1,0 +1,14 @@
+div.osx-slick-slide {
+    text-align: center;
+}
+
+img.osx-slick-image {
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 6px;
+    max-width: 10vw;
+}
+
+a.osx-slick-title {
+    font-size: 0.75em;
+}

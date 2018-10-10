@@ -48,6 +48,15 @@ class OpenSceneryX {
         add_filter('pre_post_link', array($this, 'osxPermalink'));
         add_filter('the_content', array($this, 'osxContent'));
         add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
+
+        // Required by slick carousel
+        wp_enqueue_script('jQuery', '//code.jquery.com/jquery-1.11.0.min.js', array(), false, true);
+        wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
+        wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
+        wp_enqueue_style('slick', plugin_dir_url(__FILE__) . 'slick/slick.css');
+        wp_enqueue_style('slick-theme', plugin_dir_url(__FILE__) . 'slick/slick-theme.css');
+
+        wp_enqueue_style('osx', plugin_dir_url(__FILE__) . 'osx.css');
     }
 
     /**
@@ -186,15 +195,57 @@ class OpenSceneryX {
 
     function osxLatestItemsShortcode($atts) {
         extract(shortcode_atts(array(
-            'cssclass' => 'multiple-airports',
+            'cssclass' => 'latest-items',
             'count' => '10',
             ), $atts));
 
-        $latestItemsPath = ABSPATH . '../doc/latestItems.';
-        $result = '<ul>' . "\n";
+        $latestItemsPath = ABSPATH . '../doc/latestitems.tsv';
 
+        $result = '<div class="lazy ' . $cssclass . '">' . "\n";
+        $i = 0;
 
-        $result .= '</ul>' . "\n";
+        // Read TSV file containing all latest items
+        if (is_file($latestItemsPath)) {
+            $csvFile = file($latestItemsPath);
+            $data = [];
+            foreach ($csvFile as $line) {
+                $data[] = str_getcsv($line, "\t");
+            }
+        } else {
+            return "ERROR: No latest items found";
+        }
+
+        // Generate a range of numbers, shuffle and then pick the first n that we need
+        /*$numbers = range(0, count($data) - 1);
+        shuffle($numbers);
+        $numbers = array_slice($numbers, 0, $count);
+
+        foreach ($numbers as $number) {
+            $result .= '<div class="slide"><div class="image"><a href="' . $data[$number][1] . '"><img data-lazy="' . $data[$number][1] . 'screenshot.jpg"></a></div><a href="' . $data[$number][1] . '">' . $data[$number][0] . '</a></div>';
+        }*/
+
+        foreach ($data as $item) {
+            $result .= '<div class="osx-slick-slide"><a href="' . $item[1] . '"><img class="osx-slick-image" data-lazy="' . $item[1] . 'screenshot.jpg"></a><a class="osx-slick-title" href="' . $item[1] . '">' . $item[0] . '</a></div>';
+        }
+
+        $result .= '</div>' . "\n";
+
+        $slickScript = '<script type="text/javascript">
+            $(document).ready(function(){
+                $(".lazy").slick({
+                lazyLoad: "ondemand",
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                swipeToSlide: true,
+                waitForAnimate: false,
+                initialSlide: ' . rand(0, count($data) - 1) . '
+            });
+        });
+        </script>';
+        
+        wp_add_inline_script('slick', $slickScript, 'after');
 
         return $result;
     }
