@@ -14,6 +14,7 @@
 
 	<div style="clear:both;">&nbsp;</div>
 	<div>
+	<?php if (ENVIRONMENT != 'dev'): ?>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Responsive -->
                 <ins class="adsbygoogle"
@@ -23,7 +24,8 @@
                      data-ad-format="auto"></ins>
                 <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+        		</script>
+	<?php endif ?>
 	</div>
 	<div style="clear:both;">&nbsp;</div>
 
