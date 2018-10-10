@@ -41,6 +41,7 @@ class OpenSceneryX {
         add_shortcode('osxinfo', array($this, 'osxInfoShortcode'));
         add_shortcode('osxreleasenotes', array($this, 'osxReleaseNotesShortcode'));
         add_shortcode('osxlinks', array($this, 'osxLinksShortcode'));
+        add_shortcode('osxlatestitems', array($this, 'osxLatestItemsShortcode'));
 
         add_filter('the_posts', array($this, 'osxPosts'));
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
@@ -177,6 +178,21 @@ class OpenSceneryX {
                     . (time() - $bookmark->link_updated_f < $newLinkAge ? ' - <span>' . sprintf(__('NEW! %s'), date(get_option('links_updated_date_format'), $bookmark->link_updated_f + (get_option('gmt_offset') * 3600))) . '</span>' : '')
                     . '</li>' . "\n";
         }
+
+        $result .= '</ul>' . "\n";
+
+        return $result;
+    }
+
+    function osxLatestItemsShortcode($atts) {
+        extract(shortcode_atts(array(
+            'cssclass' => 'multiple-airports',
+            'count' => '10',
+            ), $atts));
+
+        $latestItemsPath = ABSPATH . '../doc/latestItems.';
+        $result = '<ul>' . "\n";
+
 
         $result .= '</ul>' . "\n";
 
