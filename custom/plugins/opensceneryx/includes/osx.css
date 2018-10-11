@@ -1,14 +1,47 @@
-div.osx-slick-slide {
-    text-align: center;
+/* Required to hold the caption, or any closest parent selector to  .osx-slick-caption */
+.slick-slide {
+    position: relative;
 }
 
+/* Add some space below the carousel */
+.slick-slider {
+    margin-bottom: 1.625em;
+}
+
+/* Customise left and right arrows */
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+/* Text caption overlay */
+.osx-slick-caption {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 6px;
+    margin: 6px;
+    max-width: 10vw;
+    min-width: 10vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.osx-slick-slide:hover .osx-slick-caption {
+    visibility: visible!important;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Carousel image */
 img.osx-slick-image {
     border: 1px solid #ddd;
     padding: 6px;
     margin: 6px;
     max-width: 10vw;
-}
-
-a.osx-slick-title {
-    font-size: 0.75em;
 }

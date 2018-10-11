@@ -197,12 +197,10 @@ class OpenSceneryX {
         extract(shortcode_atts(array(
             'cssclass' => 'latest-items',
             'count' => '10',
+            'title' => '<h2>Latest Additions</h2>'
             ), $atts));
 
         $latestItemsPath = ABSPATH . '../doc/latestitems.tsv';
-
-        $result = '<div class="lazy ' . $cssclass . '">' . "\n";
-        $i = 0;
 
         // Read TSV file containing all latest items
         if (is_file($latestItemsPath)) {
@@ -212,20 +210,16 @@ class OpenSceneryX {
                 $data[] = str_getcsv($line, "\t");
             }
         } else {
-            return "ERROR: No latest items found";
+            // No latest items found, return nothing
+            return "";
         }
 
-        // Generate a range of numbers, shuffle and then pick the first n that we need
-        /*$numbers = range(0, count($data) - 1);
-        shuffle($numbers);
-        $numbers = array_slice($numbers, 0, $count);
-
-        foreach ($numbers as $number) {
-            $result .= '<div class="slide"><div class="image"><a href="' . $data[$number][1] . '"><img data-lazy="' . $data[$number][1] . 'screenshot.jpg"></a></div><a href="' . $data[$number][1] . '">' . $data[$number][0] . '</a></div>';
-        }*/
+        // Uses http://kenwheeler.github.io/slick/ to present a carousel of latest additions
+        $result = $title;
+        $result .= '<div class="lazy ' . $cssclass . '">' . "\n";
 
         foreach ($data as $item) {
-            $result .= '<div class="osx-slick-slide"><a href="' . $item[1] . '"><img class="osx-slick-image" data-lazy="' . $item[1] . 'screenshot.jpg"></a><a class="osx-slick-title" href="' . $item[1] . '">' . $item[0] . '</a></div>';
+            $result .= '<div class="osx-slick-slide"><a href="/' . $item[1] . '"><img class="osx-slick-image" data-lazy="/' . $item[1] . 'screenshot.jpg"></a><div class="osx-slick-caption">' . $item[0] . '</div></div>';
         }
 
         $result .= '</div>' . "\n";
@@ -236,10 +230,10 @@ class OpenSceneryX {
                 lazyLoad: "ondemand",
                 slidesToShow: 5,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 2000,
                 swipeToSlide: true,
-                waitForAnimate: false,
+                dots: ' . (count($data) > 14 ? 'false' : 'true') . ',
                 initialSlide: ' . rand(0, count($data) - 1) . '
             });
         });
