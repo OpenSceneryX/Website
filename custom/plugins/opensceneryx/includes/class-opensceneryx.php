@@ -41,12 +41,22 @@ class OpenSceneryX {
         add_shortcode('osxinfo', array($this, 'osxInfoShortcode'));
         add_shortcode('osxreleasenotes', array($this, 'osxReleaseNotesShortcode'));
         add_shortcode('osxlinks', array($this, 'osxLinksShortcode'));
+        add_shortcode('osxlatestitems', array($this, 'osxLatestItemsShortcode'));
 
         add_filter('the_posts', array($this, 'osxPosts'));
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
         add_filter('pre_post_link', array($this, 'osxPermalink'));
         add_filter('the_content', array($this, 'osxContent'));
         add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
+
+        // Required by slick carousel
+        wp_enqueue_script('jQuery', '//code.jquery.com/jquery-1.11.0.min.js', array(), false, true);
+        wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
+        wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
+        wp_enqueue_style('slick', plugin_dir_url(__FILE__) . 'slick/slick.css');
+        wp_enqueue_style('slick-theme', plugin_dir_url(__FILE__) . 'slick/slick-theme.css');
+
+        wp_enqueue_style('osx', plugin_dir_url(__FILE__) . 'osx.css');
     }
 
     /**
@@ -179,6 +189,57 @@ class OpenSceneryX {
         }
 
         $result .= '</ul>' . "\n";
+
+        return $result;
+    }
+
+    function osxLatestItemsShortcode($atts) {
+        extract(shortcode_atts(array(
+            'cssclass' => 'latest-items',
+            'count' => '10',
+            'title' => '<h2>Latest Additions</h2>'
+            ), $atts));
+
+        $latestItemsPath = ABSPATH . '../doc/latestitems.tsv';
+
+        // Read TSV file containing all latest items
+        if (is_file($latestItemsPath)) {
+            $csvFile = file($latestItemsPath);
+            $data = [];
+            foreach ($csvFile as $line) {
+                $data[] = str_getcsv($line, "\t");
+            }
+        } else {
+            // No latest items found, return nothing
+            return "";
+        }
+
+        // Uses http://kenwheeler.github.io/slick/ to present a carousel of latest additions
+        $result = $title;
+        $result .= '<div class="lazy ' . $cssclass . '">' . "\n";
+
+        foreach ($data as $item) {
+            $result .= '<div class="osx-slick-slide"><a href="/' . $item[1] . '"><img class="osx-slick-image" data-lazy="/' . $item[1] . 'screenshot.jpg"></a><div class="osx-slick-caption">' . $item[0] . '</div></div>';
+        }
+
+        $result .= '</div>' . "\n";
+
+        $slickScript = '<script type="text/javascript">
+            $(document).ready(function(){
+                $(".lazy").slick({
+                lazyLoad: "ondemand",
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                swipeToSlide: true,
+                dots: ' . (count($data) > 14 ? 'false' : 'true') . ',
+                initialSlide: ' . rand(0, count($data) - 1) . '
+            });
+        });
+        </script>';
+        
+        wp_add_inline_script('slick', $slickScript, 'after');
 
         return $result;
     }
