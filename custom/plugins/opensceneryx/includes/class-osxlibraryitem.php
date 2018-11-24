@@ -214,11 +214,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->authorURLs[$i])) {
-                    $result .= "<span class='fieldValue'><a href='" . $this->authorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->authors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='" . $this->authorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->authors[$i] . "</a></span>";
                 } elseif (self::OUTPUT_EMAILS && isset($this->authorEmails[$i])) {
-                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->authorEmails[$i] . "'>" . $this->authors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='mailto:" . $this->authorEmails[$i] . "'>" . $this->authors[$i] . "</a></span> ";
                 } else {
-                    $result .= "<span class='fieldValue'>" . $this->authors[$i] . "</span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'>" . $this->authors[$i] . "</span> ";
                 }
             }
         }
@@ -229,11 +229,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->textureAuthorURLs[$i])) {
-                    $result .= "<span class='fieldValue'><a href='" . $this->textureAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->textureAuthors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='" . $this->textureAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->textureAuthors[$i] . "</a></span>";
                 } elseif (self::OUTPUT_EMAILS && isset($this->textureAuthorEmails[$i])) {
-                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->textureAuthorEmails[$i] . "'>" . $this->textureAuthors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='mailto:" . $this->textureAuthorEmails[$i] . "'>" . $this->textureAuthors[$i] . "</a></span> ";
                 } else {
-                    $result .= "<span class='fieldValue'>" . $this->textureAuthors[$i] . "</span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'>" . $this->textureAuthors[$i] . "</span>";
                 }
             }
         }
@@ -244,11 +244,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->conversionAuthorURLs[$i])) {
-                    $result .= "<span class='fieldValue'><a href='" . $this->conversionAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->conversionAuthors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='" . $this->conversionAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->conversionAuthors[$i] . "</a></span>";
                 } elseif (self::OUTPUT_EMAILS && isset($this->conversionAuthorEmails[$i])) {
-                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->conversionAuthorEmails[$i] . "'>" . $this->conversionAuthors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='mailto:" . $this->conversionAuthorEmails[$i] . "'>" . $this->conversionAuthors[$i] . "</a></span> ";
                 } else {
-                    $result .= "<span class='fieldValue'>" . $this->conversionAuthors[$i] . "</span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'>" . $this->conversionAuthors[$i] . "</span> ";
                 }
             }
         }
@@ -259,11 +259,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->modificationAuthorURLs[$i])) {
-                    $result .= "<span class='fieldValue'><a href='" . $this->modificationAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->modificationAuthors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='" . $this->modificationAuthorURLs[$i] . "' onclick='window.open(this.href);return false;'>" . $this->modificationAuthors[$i] . "</a></span>";
                 } elseif (self::OUTPUT_EMAILS && isset($this->modificationAuthorEmails[$i])) {
-                    $result .= "<span class='fieldValue'><a href='mailto:" . $this->modificationAuthorEmails[$i] . "'>" . $this->modificationAuthors[$i] . "</a></span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'><a href='mailto:" . $this->modificationAuthorEmails[$i] . "'>" . $this->modificationAuthors[$i] . "</a></span> ";
                 } else {
-                    $result .= "<span class='fieldValue'>" . $this->modificationAuthors[$i] . "</span>";
+                    $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'>" . $this->modificationAuthors[$i] . "</span> ";
                 }
             }
         }
