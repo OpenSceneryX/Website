@@ -146,7 +146,7 @@ class OpenSceneryX {
             case 'versiondate': return "<script type='text/javascript'>document.write(osxVersionDate);</script>";
             case 'authors': return "<script type='text/javascript'>document.write(osxAuthors);</script>";
             case 'objectcount': return "<script type='text/javascript'>document.write(osxObjectCount);</script>";
-            case 'developerpackdownload': return "<script type='text/javascript'>document.write('<a href=\"/downloads/OpenSceneryX-DeveloperPack-' + osxVersion + '.zip\">OpenSceneryX Developer Pack ' + osxVersion + '</a>');</script>";
+            case 'developerpackdownload': return "<script type='text/javascript'>document.write('<a href=\"https://downloads.opensceneryx.com/OpenSceneryX-DeveloperPack-' + osxVersion + '.zip\">OpenSceneryX Developer Pack ' + osxVersion + '</a>');</script>";
             default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount, developerpackdownload";
         }
     }
