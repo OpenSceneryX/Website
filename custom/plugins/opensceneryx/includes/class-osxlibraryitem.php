@@ -30,6 +30,8 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $note = null;
 
+    protected $screenshotPath = null;
+
     /**
      * @var boolean If true, author email addresses will be output.  This should only be enabled if an email obfuscator plugin is installed 
      * or if a proxy service is used (such as Cloudflare) that obfuscates emails
@@ -42,6 +44,13 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $contents = file_get_contents($this->path . '/info.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
+
+        if (is_file($this->path . "/screenshot.jpg")) {
+            $this->screenshotPath = "/" . $this->url . "screenshot.jpg";
+        }
+
+        // Intercept the yoast opengraph call
+        add_action('wpseo_opengraph', array($this, 'openGraph'));
 
         $this->parse();
     }
@@ -193,8 +202,8 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        if (is_file($this->path . "/screenshot.jpg")) {
-            $result .= "<img class='screenshot' src='/" . $this->url . "/screenshot.jpg' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
+        if ($this->screenshotPath !== null) {
+            $result .= "<img class='screenshot' src='" . $this->screenshotPath . "' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
         } else {
             $result .= "<img class='screenshot' src='/doc/screenshot_missing.png' alt='No Screenshot Available' />\n";
         }
@@ -296,6 +305,18 @@ abstract class OSXLibraryItem extends OSXItem {
         $result .= "<div class='clear'>&nbsp;</div>";
 
         return $result;
+    }
+
+    function openGraph() {
+        add_action('wpseo_add_opengraph_images', array($this, 'openGraphAddImages'));
+    }
+
+    function openGraphAddImages($object) {
+        if ($this->screenshotPath !== null) {
+            $object->add_image($this->screenshotPath);
+        } else {
+            $object->add_image("/doc/screenshot_missing.png");
+        }
     }
 
     protected abstract function getTypeSpecificHTML();
