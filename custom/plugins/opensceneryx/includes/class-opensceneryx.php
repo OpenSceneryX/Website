@@ -49,14 +49,10 @@ class OpenSceneryX {
         add_filter('the_content', array($this, 'osxContent'));
         add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
 
+        wp_enqueue_style('osx', plugin_dir_url(__FILE__) . 'osx.css');
         // Required by slick carousel
-        wp_enqueue_script('jQuery', '//code.jquery.com/jquery-1.11.0.min.js', array(), false, true);
-        wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
-        wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
         wp_enqueue_style('slick', plugin_dir_url(__FILE__) . 'slick/slick.css');
         wp_enqueue_style('slick-theme', plugin_dir_url(__FILE__) . 'slick/slick-theme.css');
-
-        wp_enqueue_style('osx', plugin_dir_url(__FILE__) . 'osx.css');
     }
 
     /**
@@ -88,6 +84,8 @@ class OpenSceneryX {
                 return $posts;
         }
 
+        // If we get here we are on an OSX path
+
         $docPath = implode(array_slice($urlVars, 1), '/');
         $osxItemPath = ABSPATH . '../' . $docPath;
 
@@ -109,6 +107,7 @@ class OpenSceneryX {
         $post->post_author = 1;
         $post->post_parent = 753;
         $post->guid = $docPath;
+        $post->filter = 'raw';
 
         // This solves a problem with URLs which end in a number having that number duplicated (e.g. /2/ -> /2/2/)
         remove_action('template_redirect', 'redirect_canonical');
@@ -120,6 +119,10 @@ class OpenSceneryX {
     function osxScripts()
     {
         wp_enqueue_script('versionInfo', '/../doc/versionInfo.js');
+        // Required by slick carousel
+        wp_enqueue_script('jQuery', '//code.jquery.com/jquery-1.11.0.min.js', array(), false, true);
+        wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
+        wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
     }
 
     /**
@@ -146,7 +149,7 @@ class OpenSceneryX {
             case 'versiondate': return "<script type='text/javascript'>document.write(osxVersionDate);</script>";
             case 'authors': return "<script type='text/javascript'>document.write(osxAuthors);</script>";
             case 'objectcount': return "<script type='text/javascript'>document.write(osxObjectCount);</script>";
-            case 'developerpackdownload': return "<script type='text/javascript'>document.write('<a href=\"/downloads/OpenSceneryX-DeveloperPack-' + osxVersion + '.zip\">OpenSceneryX Developer Pack ' + osxVersion + '</a>');</script>";
+            case 'developerpackdownload': return "<script type='text/javascript'>document.write('<a href=\"https://downloads.opensceneryx.com/OpenSceneryX-DeveloperPack-' + osxVersion + '.zip\">OpenSceneryX Developer Pack ' + osxVersion + '</a>');</script>";
             default: return "ERROR: 'data' parameter not recognised.  Allowed values: version, versiondate, authors, objectcount, developerpackdownload";
         }
     }
