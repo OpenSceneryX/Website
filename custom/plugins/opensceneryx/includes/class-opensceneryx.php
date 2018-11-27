@@ -84,6 +84,8 @@ class OpenSceneryX {
                 return $posts;
         }
 
+        // If we get here we are on an OSX path
+
         $docPath = implode(array_slice($urlVars, 1), '/');
         $osxItemPath = ABSPATH . '../' . $docPath;
 
@@ -105,6 +107,7 @@ class OpenSceneryX {
         $post->post_author = 1;
         $post->post_parent = 753;
         $post->guid = $docPath;
+        $post->filter = 'raw';
 
         // This solves a problem with URLs which end in a number having that number duplicated (e.g. /2/ -> /2/2/)
         remove_action('template_redirect', 'redirect_canonical');
