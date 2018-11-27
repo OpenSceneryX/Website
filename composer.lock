@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc234c69c89ddcf1522805826543b74a",
+    "content-hash": "23e6f7cc90a1d88431588613f98153a1",
     "packages": [
         {
             "name": "composer/installers",
@@ -214,15 +214,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "6.1.7",
+            "version": "6.1.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/6.1.7"
+                "reference": "tags/6.1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.6.1.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.6.1.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -234,15 +234,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.0.8",
+            "version": "4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.0.8"
+                "reference": "tags/4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.0.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -313,16 +313,16 @@
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
         },
         {
-            "name": "wpackagist-plugin/move-wordpress-comments",
-            "version": "0.2.1.1",
+            "name": "wpackagist-plugin/gutenberg",
+            "version": "4.5.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/move-wordpress-comments/",
-                "reference": "tags/0.2.1.1"
+                "url": "https://plugins.svn.wordpress.org/gutenberg/",
+                "reference": "tags/4.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/move-wordpress-comments.0.2.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.4.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -330,19 +330,19 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/move-wordpress-comments/"
+            "homepage": "https://wordpress.org/plugins/gutenberg/"
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.5",
+            "version": "3.6.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.5"
+                "reference": "tags/3.6.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.6.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -434,15 +434,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "8.4",
+            "version": "9.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/8.4"
+                "reference": "tags/9.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
