@@ -60,15 +60,7 @@ Template: twentyeleven
 	padding-top: 0.5em;
 }
 
-.single-airport span {
-	color: red;
-}
-
-.multiple-airports span {
-	color: red;
-}
-
-.tools span {
+.highlight-new span {
 	color: red;
 }
 
