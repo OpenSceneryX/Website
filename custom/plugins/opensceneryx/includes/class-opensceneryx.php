@@ -107,6 +107,8 @@ class OpenSceneryX {
         $post->post_author = 1;
         $post->post_parent = 753;
         $post->guid = $docPath;
+        $post->comment_status = 'closed';
+        $post->ping_status = 'closed';
         $post->filter = 'raw';
 
         // This solves a problem with URLs which end in a number having that number duplicated (e.g. /2/ -> /2/2/)
