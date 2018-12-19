@@ -196,7 +196,7 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "<div class='externalVirtualPath'><h2>3rd Party Library Paths</h2>\n";
 
             foreach ($this->externalVirtualPaths as $externalVirtualPath) {
-                $result .= "<strong>From '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
+                $result .= "<strong>To '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
             }
 
             $result .= "</div>\n";
