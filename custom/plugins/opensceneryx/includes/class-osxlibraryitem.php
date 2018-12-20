@@ -10,6 +10,7 @@ abstract class OSXLibraryItem extends OSXItem {
     protected $virtualPaths = array();
     protected $deprecatedVirtualPaths = array();
     protected $externalVirtualPaths = array();
+    protected $extendedVirtualPaths = array();
 
     protected $authors = array();
     protected $authorEmails = array();
@@ -87,6 +88,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             if (preg_match('/^Export External (.*):\s+(.*)/', $line, $matches) === 1) {
                 $this->externalVirtualPaths[] = array('library' => $matches[1], 'path' => $matches[2]);
+                continue;
+            }
+
+            if (preg_match('/^Export Extended:\s+(.*)/', $line, $matches) === 1) {
+                $this->extendedVirtualPaths[] = $matches[1];
                 continue;
             }
 
@@ -177,6 +183,16 @@ abstract class OSXLibraryItem extends OSXItem {
 
             foreach ($this->virtualPaths as $virtualPath) {
                 $result .= $virtualPath . "<br />\n";
+            }
+
+            $result .= "</div>\n";
+        }
+
+        if (count($this->extendedVirtualPaths) > 0) {
+            $result .= "<div class='extendedVirtualPath'><h2>Extended Library Paths</h2>\n";
+
+            foreach ($this->extendedVirtualPaths as $extendedVirtualPath) {
+                $result .= $extendedVirtualPath . "<br />\n";
             }
 
             $result .= "</div>\n";
