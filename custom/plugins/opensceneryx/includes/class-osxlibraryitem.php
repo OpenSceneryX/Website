@@ -320,6 +320,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $result .= "<div class='clear'>&nbsp;</div>";
 
+        $result .= "<p>Please note that you must download the library as a whole from the <a href='/'>OpenSceneryX home page</a>, we do not provide downloads for individual items. If you are a scenery developer and want to why this is, and how to use the library correctly in your sceneries, <a href='/support/scenery-developers/'>start here</a>.";
         return $result;
     }
 
