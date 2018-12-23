@@ -15,16 +15,18 @@
 	<div style="clear:both;">&nbsp;</div>
 	<div>
 	<?php if (ENVIRONMENT != 'dev'): ?>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Responsive -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-5631233433203577"
-                     data-ad-slot="2074123534"
-                     data-ad-format="auto"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-        		</script>
+		<!-- Matched Content -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-5631233433203577"
+			data-ad-slot="9063855707"
+			data-matched-content-rows-num="3"
+			data-matched-content-columns-num="3"
+			data-matched-content-ui-type="image_card_stacked"
+			data-ad-format="autorelaxed"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 	<?php endif ?>
 	</div>
 	<div style="clear:both;">&nbsp;</div>

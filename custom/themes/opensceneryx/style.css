@@ -60,15 +60,7 @@ Template: twentyeleven
 	padding-top: 0.5em;
 }
 
-.single-airport span {
-	color: red;
-}
-
-.multiple-airports span {
-	color: red;
-}
-
-.tools span {
+.highlight-new span {
 	color: red;
 }
 
@@ -182,6 +174,13 @@ div.virtualPath {
 	padding: 0.25em 0.5em 0.25em 0.5em;
 }
 
+div.extendedVirtualPath {
+	margin-top: 0.2em;
+	display: block;
+	background-color: rgb(255, 233, 204);
+	padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
 div.deprecatedVirtualPath {
 	margin-top: 0.2em;
 	display: block;
@@ -197,6 +196,7 @@ div.externalVirtualPath {
 }
 
 div.virtualPath p,
+div.extendedVirtualPath p,
 div.deprecatedVirtualPath p,
 div.externalVirtualPath p {
     margin: 0;

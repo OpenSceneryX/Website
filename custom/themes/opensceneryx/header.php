@@ -47,6 +47,15 @@
 	 */
 	wp_head();
 ?>
+<?php if (ENVIRONMENT != 'dev'): ?>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5631233433203577",
+          enable_page_level_ads: true
+     });
+</script>
+<?php endif ?>
 </head>
 
 <body <?php body_class(); ?>>

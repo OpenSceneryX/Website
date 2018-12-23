@@ -10,6 +10,7 @@ abstract class OSXLibraryItem extends OSXItem {
     protected $virtualPaths = array();
     protected $deprecatedVirtualPaths = array();
     protected $externalVirtualPaths = array();
+    protected $extendedVirtualPaths = array();
 
     protected $authors = array();
     protected $authorEmails = array();
@@ -87,6 +88,11 @@ abstract class OSXLibraryItem extends OSXItem {
 
             if (preg_match('/^Export External (.*):\s+(.*)/', $line, $matches) === 1) {
                 $this->externalVirtualPaths[] = array('library' => $matches[1], 'path' => $matches[2]);
+                continue;
+            }
+
+            if (preg_match('/^Export Extended:\s+(.*)/', $line, $matches) === 1) {
+                $this->extendedVirtualPaths[] = $matches[1];
                 continue;
             }
 
@@ -182,6 +188,16 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
+        if (count($this->extendedVirtualPaths) > 0) {
+            $result .= "<div class='extendedVirtualPath'><h2>Extended Library Paths</h2>\n";
+
+            foreach ($this->extendedVirtualPaths as $extendedVirtualPath) {
+                $result .= $extendedVirtualPath . "<br />\n";
+            }
+
+            $result .= "</div>\n";
+        }
+
         if (count($this->deprecatedVirtualPaths) > 0) {
             $result .= "<div class='deprecatedVirtualPath'><h2>Deprecated Paths</h2>\n";
 
@@ -196,7 +212,7 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "<div class='externalVirtualPath'><h2>3rd Party Library Paths</h2>\n";
 
             foreach ($this->externalVirtualPaths as $externalVirtualPath) {
-                $result .= "<strong>From '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
+                $result .= "<strong>To '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
             }
 
             $result .= "</div>\n";
@@ -304,6 +320,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $result .= "<div class='clear'>&nbsp;</div>";
 
+        $result .= "<p>Please note that you must download the library as a whole from the <a href='/'>OpenSceneryX home page</a>, we do not provide downloads for individual items. If you are a scenery developer and want to why this is, and how to use the library correctly in your sceneries, <a href='/support/scenery-developers/'>start here</a>.";
         return $result;
     }
 
