@@ -33,8 +33,10 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $screenshotPath = null;
 
+    protected $seasonal = null;
+
     /**
-     * @var boolean If true, author email addresses will be output.  This should only be enabled if an email obfuscator plugin is installed 
+     * @var boolean If true, author email addresses will be output.  This should only be enabled if an email obfuscator plugin is installed
      * or if a proxy service is used (such as Cloudflare) that obfuscates emails
     */
     const OUTPUT_EMAILS = true;
@@ -165,6 +167,11 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
+            if (preg_match('/^Seasonal:\s+(.*)/', $line, $matches) === 1) {
+                $this->seasonal = ($matches[1] == "True" || $matches[1] == "Yes");
+                continue;
+            }
+
             if (preg_match('/^Description:\s+(.*)/', $line, $matches) === 1) {
                 $this->description = $matches[1];
                 continue;
@@ -291,6 +298,10 @@ abstract class OSXLibraryItem extends OSXItem {
                     $result .= ($authorCount > 1 && $i > 0 ? ", " : "") . "<span class='fieldValue'>" . $this->modificationAuthors[$i] . "</span> ";
                 }
             }
+        }
+
+        if ($this->seasonal) {
+            $result .= "<li><span class='fieldTitle'>Has seasonal variants</span></li>\n";
         }
 
         if ($this->description !== null) {
