@@ -31,6 +31,8 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $note = null;
 
+    protected $since = null;
+
     protected $screenshotPath = null;
 
     protected $seasonal = null;
@@ -167,6 +169,11 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
+            if (preg_match('/^Since:\s+(.*)/', $line, $matches) === 1) {
+                $this->since = $matches[1];
+                continue;
+            }
+
             if (preg_match('/^Seasonal:\s+(.*)/', $line, $matches) === 1) {
                 $this->seasonal = ($matches[1] == "True" || $matches[1] == "Yes");
                 continue;
@@ -300,12 +307,12 @@ abstract class OSXLibraryItem extends OSXItem {
             }
         }
 
-        if ($this->seasonal) {
-            $result .= "<li><span class='fieldTitle'>Has seasonal variants</span></li>\n";
+        if ($this->since) {
+            $result .= "<li><span class='fieldTitle'>Available Since:</span> <span class='fieldValue'>" . $this->since . "</span></li>\n";
         }
 
-        if ($this->description !== null) {
-            $result .= "<li><span class='fieldTitle'>Description:</span> <span class='fieldValue'>" . $this->description . "</span></li>\n";
+        if ($this->seasonal) {
+            $result .= "<li><span class='fieldTitle'>Has seasonal variants</span></li>\n";
         }
 
         if ($this->note !== null) {
@@ -313,6 +320,11 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         $result .= "</ul>\n";
+
+        if ($this->description !== null) {
+            $result .= "<h2>Description</h2>\n";
+            $result .= "<div class='description'>" . $this->description . "</div>\n";
+        }
 
         $result .= $this->getTypeSpecificHTML();
 
