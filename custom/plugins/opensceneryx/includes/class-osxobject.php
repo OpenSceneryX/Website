@@ -22,6 +22,8 @@ class OSXObject extends OSXLibraryItem {
     protected $smokeBlack = false;
     protected $smokeWhite = false;
 
+    protected $wedRotationLockAngle = null;
+
     function __construct($path, $url) {
         parent::__construct($path, $url);
     }
@@ -91,6 +93,12 @@ class OSXObject extends OSXLibraryItem {
                 $this->smokeWhite = ($matches[1] == "True" || $matches[1] == "Yes");
                 continue;
             }
+
+            if (preg_match('/^Rotation Lock:\s+(.*)/', $line, $matches) === 1) {
+                $this->wedRotationLockAngle = $matches[1];
+                continue;
+            }
+
         }
     }
 
@@ -143,6 +151,10 @@ class OSXObject extends OSXLibraryItem {
 
         if ($this->smokeWhite) {
             $result .= "<li><span class='fieldValue'>Emits White Smoke</span></li>\n";
+        }
+
+        if ($this->wedRotationLockAngle != null) {
+            $result .= "<li><span class='fieldTitle'>Placement Locked at:</span> <span class='fieldValue'>" . $this->wedRotationLockAngle . "°</span> <span class='fieldTitle'>in WED</span></li>\n";
         }
 
         if ($result != "") {
