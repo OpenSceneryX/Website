@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "829bd3a69699153fb934073991747309",
+    "content-hash": "7ffd387bd67f62ccee42f83fe2f7f1b3",
     "packages": [
         {
             "name": "composer/installers",
@@ -234,15 +234,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.1",
+            "version": "4.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.1"
+                "reference": "tags/4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -314,15 +314,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "4.9.0",
+            "version": "5.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/4.9.0"
+                "reference": "tags/5.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.4.9.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.5.2.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -334,15 +334,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.7.2",
+            "version": "3.7.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.7.2"
+                "reference": "tags/3.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.7.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.7.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -354,15 +354,15 @@
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
-            "version": "7.0.12",
+            "version": "7.0.13",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/theme-my-login/",
-                "reference": "tags/7.0.12"
+                "reference": "tags/7.0.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-my-login.7.0.12.zip",
+                "url": "https://downloads.wordpress.org/plugin/theme-my-login.7.0.13.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -394,15 +394,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.9.7.1",
+            "version": "0.9.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.9.7.1"
+                "reference": "tags/0.9.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.7.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.7.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -434,15 +434,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "9.5",
+            "version": "10.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/9.5"
+                "reference": "tags/10.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.10.0.zip",
                 "reference": null,
                 "shasum": null
             },
