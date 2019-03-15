@@ -12,8 +12,5 @@ Email, conversion: The email address for the conversion author (please ensure th
 Width: The width of the object, include the abbreviated units (e.g. 10m, 10ft).
 Depth: The depth of the object, include the abbreviated units (e.g. 10m, 10ft).
 Height: The height of the object, include the abbreviated units (e.g. 10m, 10ft).
-Animated: Either "Yes" or delete this line if not animated.
-Revision: $Revision$
-Date: $Date$
 =====================
-Description: A description of the object.  Include any useful information including (if you wish) information about any real-world object the object may be based on.  As a minimum, just describe the physical features of the object.  URLs are allowed if desired e.g. <a href='http://forums.x-plane.org/index.php?showuser=2431'>aussi's X-Plane Profile</a>.
+Description: A description of the object.  Include any useful information including (if you wish) information about any real-world object the object may be based on.  As a minimum, just describe the physical features of the object.  Markdown formatting is supported, including tables.

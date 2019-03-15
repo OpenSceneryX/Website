@@ -445,3 +445,12 @@ ul.downloads li {
 ol {
 	margin-top: 0;
 }
+
+.entry-content div.description td {
+	border-top: none;
+}
+
+.entry-content div.description th {
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+}

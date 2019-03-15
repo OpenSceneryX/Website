@@ -52,7 +52,7 @@ class OSXCategory extends OSXItem {
         }
 
         if (count($this->items) > 0) {
-            $result .= '<h2>Objects</h2>';
+            $result .= '<h2>Items in this Category</h2>';
 
             foreach ($this->items as $item) {
                 $result .= "<div class='thumbnailcontainer'>\n";
