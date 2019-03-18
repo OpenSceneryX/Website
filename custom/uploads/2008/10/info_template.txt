@@ -9,8 +9,5 @@ Email, texture: The email address for the texture's author (please ensure they g
 Author, conversion: The name of the person who converted (and possibly modified) the object for X-Plane.  Delete this line if not applicable.
 URL, conversion: The URL for the conversion author.  Delete this line if not applicable.
 Email, conversion: The email address for the conversion author (please ensure they give permission to publish this).  Delete this line if not applicable.
-Width: The width of the object, include the abbreviated units (e.g. 10m, 10ft).
-Depth: The depth of the object, include the abbreviated units (e.g. 10m, 10ft).
-Height: The height of the object, include the abbreviated units (e.g. 10m, 10ft).
 =====================
 Description: A description of the object.  Include any useful information including (if you wish) information about any real-world object the object may be based on.  As a minimum, just describe the physical features of the object.  Markdown formatting is supported, including tables.
