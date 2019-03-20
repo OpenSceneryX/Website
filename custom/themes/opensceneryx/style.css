@@ -126,6 +126,7 @@ h3.folder {
 img.screenshot {
 	margin: 3px 0px 2px 2px;
 	float: right;
+	max-width: 500px;
 }
 
 img.icon {
