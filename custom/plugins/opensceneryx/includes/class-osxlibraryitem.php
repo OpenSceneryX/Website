@@ -33,7 +33,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $since = null;
 
-    protected $screenshotPath = null;
+    protected $screenshots = array();
 
     protected $seasonal = null;
 
@@ -50,14 +50,54 @@ abstract class OSXLibraryItem extends OSXItem {
         $contents = file_get_contents($this->path . '/info.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
 
-        if (is_file($this->path . "/screenshot.jpg")) {
-            $this->screenshotPath = "/" . $this->url . "screenshot.jpg";
+        foreach (glob($this->path . "/*.jpg") as $filename) {
+            $basename = basename($filename);
+            switch ($basename) {
+                case 'screenshot.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Summer (default) Variant');
+                    break;
+                case 'screenshot_spring.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Spring Variant');
+                    break;
+                case 'screenshot_autumn.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Autumn Variant');
+                    break;
+                case 'screenshot_winter.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (both snow and non-snow) Variant');
+                    break;
+                case 'screenshot_winter_no_snow.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (non-snow) Variant');
+                    break;
+                case 'screenshot_winter_snow.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (snow) Variant');
+                    break;
+                case 'screenshot_winter_deep_snow.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (deep snow) Variant');
+                    break;
+            }
         }
 
         // Intercept the yoast opengraph call
         add_action('wpseo_opengraph', array($this, 'openGraph'));
 
         $this->parse();
+    }
+
+    function enqueueScript() {
+        // Inject the slick slider code. Can't do this in the getHTML function below because that's too late
+        $slickScript = '<script type="text/javascript">
+                $(document).ready(function(){
+                    $(".slick-screenshots").slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    swipeToSlide: true,
+                    dots: true
+                });
+            });
+            </script>';
+
+        wp_add_inline_script('slick', $slickScript, 'after');
+
     }
 
     protected function parse() {
@@ -232,10 +272,20 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        if ($this->screenshotPath !== null) {
-            $result .= "<img class='screenshot' src='" . $this->screenshotPath . "' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
-        } else {
+        $ssCount = count($this->screenshots);
+        if ($ssCount == 0) {
             $result .= "<img class='screenshot' src='/doc/screenshot_missing.png' alt='No Screenshot Available' />\n";
+        } elseif ($ssCount == 1) {
+            $result .= "<img class='screenshot' src='" . $this->screenshots[0]['path'] . "' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
+        } else {
+            // Uses http://kenwheeler.github.io/slick/ to present a carousel of screenshots
+            $result .= '<div class="slick-screenshots">' . "\n";
+
+            foreach ($this->screenshots as $screenshot) {
+                $result .= '<div class="osx-slick-slide"><img class="osx-slick-image-screenshot" src="' . $screenshot['path'] . '"><div class="osx-slick-caption-screenshot">' . $screenshot['caption'] . '</div></div>';
+            }
+
+            $result .= '</div>' . "\n";
         }
 
         if ($this->logo !== null) {

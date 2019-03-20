@@ -90,6 +90,8 @@ class OpenSceneryX {
         $osxItemPath = ABSPATH . '../' . $docPath;
 
         $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
+        add_action('wp_enqueue_scripts', array($this->osxItem, 'enqueueScript'));
+
         if ($this->osxItem == null) {
             error_log('Library URL Not Found: ' . $_SERVER['REQUEST_URI']);
             return $posts;
@@ -243,7 +245,7 @@ class OpenSceneryX {
             });
         });
         </script>';
-        
+
         wp_add_inline_script('slick', $slickScript, 'after');
 
         return $result;

@@ -13,7 +13,7 @@
     color: black;
 }
 
-/* Text caption overlay */
+/* Text caption overlay for new items */
 .osx-slick-caption {
     visibility: hidden;
     position: absolute;
@@ -30,6 +30,21 @@
     font-size: 0.75em;
 }
 
+/* Text caption overlay for screenshots */
+.osx-slick-caption-screenshot {
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 6px;
+    margin: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 0.75em;
+}
+
+
 .osx-slick-slide:hover .osx-slick-caption {
     visibility: visible!important;
     opacity: 1;
@@ -38,10 +53,21 @@
     z-index: 2;
 }
 
-/* Carousel image */
+/* Carousel image for new items */
 img.osx-slick-image {
     border: 1px solid #ddd;
     padding: 6px;
     margin: 6px;
     max-width: 10vw;
+}
+
+/* Carousel image for screenshots */
+img.osx-slick-image-screenshot {
+    padding: 6px;
+    margin: 6px;
+}
+
+div.slick-screenshots {
+    width: 500px;
+    float: right
 }
