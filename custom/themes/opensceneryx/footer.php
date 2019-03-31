@@ -1,12 +1,12 @@
 <?php
 /**
- * The template for displaying the footer.
+ * Template for displaying the footer
  *
  * Contains the closing of the id=main div and all content after
  *
  * @package WordPress
  * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.2
+ * @since Twenty Eleven 1.0
  */
 ?>
 
@@ -34,11 +34,14 @@
 	<footer id="colophon" role="contentinfo">
 
 			<?php
-				/* A sidebar in the footer? Yep. You can can customize
+				/*
+				 * A sidebar in the footer? Yep. You can customize
 				 * your footer with three columns of widgets.
 				 */
-				get_sidebar( 'footer' );
-			?>
+				if ( ! is_404() ) {
+					get_sidebar( 'footer' );
+				}
+				?>
 
 			<div id="site-generator">
 				<div style='float:left; margin-top: 1em; margin-left: 1em;'>
