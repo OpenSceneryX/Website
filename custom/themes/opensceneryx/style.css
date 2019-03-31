@@ -455,3 +455,43 @@ ol {
 	border-bottom: 1px solid #ddd;
 	font-weight: bold;
 }
+
+.tooltip {
+	border-bottom: none;
+	color: green; outline: none;
+	font-weight: bold;
+	cursor: help;
+	text-decoration: none;
+  position: relative;
+}
+
+.tooltip-right {
+	float: right;
+}
+
+.tooltip span {
+  margin-left: -999em;
+	position: absolute;
+	padding: 0.8em 1em;
+	background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
+
+.tooltip:hover span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  margin-left: 0;
+  width: 250px;
+}
+
+.tooltip-right:hover span {
+	left: auto;
+	right: 0;
+}
+
+

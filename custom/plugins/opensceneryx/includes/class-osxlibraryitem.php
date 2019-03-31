@@ -234,7 +234,7 @@ abstract class OSXLibraryItem extends OSXItem {
         $result = '';
 
         if (count($this->virtualPaths) > 0) {
-            $result .= "<div class='virtualPath'><h2>Paths</h2>\n";
+            $result .= "<div class='virtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>Scenery developers, use these paths to insert this item into your sceneries. You will see them inside <a href='https://developer.x-plane.com/tools/worldeditor/' target='_blank'>WED</a> and <a href='https://marginal.org.uk/x-planescenery/tools.html' target='_blank'>OverlayEditor</a>.</span></dfn><h2>Paths</h2>\n";
 
             foreach ($this->virtualPaths as $virtualPath) {
                 $result .= $virtualPath . "<br />\n";
@@ -244,7 +244,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if (count($this->extendedVirtualPaths) > 0) {
-            $result .= "<div class='extendedVirtualPath'><h2>Extended Library Paths</h2>\n";
+            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend the built-in X-Plane® libraries, so can enhance the core simulator.</span></dfn><h2>Extended Library Paths</h2>\n";
 
             foreach ($this->extendedVirtualPaths as $extendedVirtualPath) {
                 $result .= $extendedVirtualPath . "<br />\n";
@@ -254,7 +254,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if (count($this->deprecatedVirtualPaths) > 0) {
-            $result .= "<div class='deprecatedVirtualPath'><h2>Deprecated Paths</h2>\n";
+            $result .= "<div class='deprecatedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths were published in earlier versions of OpenSceneryX but should no longer be used. They are supported for backward-compatibility.</span></dfn><h2>Deprecated Paths</h2>\n";
 
             foreach ($this->deprecatedVirtualPaths as $deprecatedVirtualPath) {
                 $result .= "<strong>From v" . $deprecatedVirtualPath['version'] . "</strong>: " . $deprecatedVirtualPath['path'] . "<br />\n";
@@ -264,7 +264,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if (count($this->externalVirtualPaths) > 0) {
-            $result .= "<div class='externalVirtualPath'><h2>3rd Party Library Paths</h2>\n";
+            $result .= "<div class='externalVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths are used where a 3rd party library has been merged into OpenSceneryX. They allow you to replace the 3rd party library with OpenSceneryX, but still allow older scenery packages to work. Scenery designers, you should use the OpenSceneryX paths instead, and if you are updating an old package then if possible please replace these paths with the new OpenSceneryX equivalents. </span></dfn><h2>3rd Party Library Paths</h2>\n";
 
             foreach ($this->externalVirtualPaths as $externalVirtualPath) {
                 $result .= "<strong>To '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
@@ -359,11 +359,11 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if ($this->since) {
-            $result .= "<li><span class='fieldTitle'>Available Since:</span> <span class='fieldValue'>" . $this->since . "</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>Available Since</span> <dfn class='tooltip'>ⓘ<span>This item was added in OpenSceneryX version " . $this->since . "</span></dfn>: <span class='fieldValue'>" . $this->since . "</span></li>\n";
         }
 
         if ($this->seasonal) {
-            $result .= "<li><span class='fieldTitle'>Has seasonal variants</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>Has seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX.</span></dfn></li>\n";
         }
 
         if ($this->note !== null) {
@@ -381,7 +381,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         foreach ($this->textures as $texture) {
             if (count($texture['sharedwith']) > 0) {
-                $result .= "<li><span class='fieldTitle'>Texture '" . $texture['name'] . "' shared with:</span>\n";
+                $result .= "<li><span class='fieldTitle'>Texture&nbsp;'" . $texture['name'] . "'&nbsp;shared with <dfn class='tooltip'>ⓘ<span>This item uses textures that are shared with other items for efficiency.</span></dfn>:\n";
                 $result .= "<ul>\n";
 
                 foreach ($texture['sharedwith'] as $item) {
