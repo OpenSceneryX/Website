@@ -115,7 +115,8 @@ abstract class OSXLibraryItem extends OSXItem {
             }
 
             if (preg_match('/^Texture Shared With:\s+"(.*)"\s+"(.*)"/', $line, $matches) === 1) {
-                $texture = end(array_keys($this->textures));
+                end($this->textures);
+                $texture = &$this->textures[key($this->textures)]; // Reference to (not value of) last texture
                 $texture['sharedwith'][] = array('title' => $matches[1], 'url' => $matches[2]);
                 continue;
             }
