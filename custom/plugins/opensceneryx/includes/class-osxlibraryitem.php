@@ -244,7 +244,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if (count($this->extendedVirtualPaths) > 0) {
-            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend the built-in X-Plane® libraries, so can enhance the core simulator.</span></dfn><h2>Extended Library Paths</h2>\n";
+            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend the built-in X-Plane® libraries, so are used to enhance the core simulator.</span></dfn><h2>Extended Library Paths</h2>\n";
 
             foreach ($this->extendedVirtualPaths as $extendedVirtualPath) {
                 $result .= $extendedVirtualPath . "<br />\n";
@@ -264,7 +264,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if (count($this->externalVirtualPaths) > 0) {
-            $result .= "<div class='externalVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths are used where a 3rd party library has been merged into OpenSceneryX. They allow you to replace the 3rd party library with OpenSceneryX, but still allow older scenery packages to work. Scenery designers, you should use the OpenSceneryX paths instead, and if you are updating an old package then if possible please replace these paths with the new OpenSceneryX equivalents. </span></dfn><h2>3rd Party Library Paths</h2>\n";
+            $result .= "<div class='externalVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths are used where a 3rd party library has been merged into OpenSceneryX. They allow you to replace the 3rd party library with OpenSceneryX, but still allow older scenery packages to work. Scenery developers, you should use the OpenSceneryX paths instead, and if you are updating an old package then if possible please replace these paths with the new OpenSceneryX equivalents. </span></dfn><h2>3rd Party Library Paths</h2>\n";
 
             foreach ($this->externalVirtualPaths as $externalVirtualPath) {
                 $result .= "<strong>To '" . $externalVirtualPath['library'] . "'</strong>: " . $externalVirtualPath['path'] . "<br />\n";
