@@ -455,3 +455,8 @@ ol {
 	border-bottom: 1px solid #ddd;
 	font-weight: bold;
 }
+
+tt {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 90%;
+}
