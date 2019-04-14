@@ -126,6 +126,7 @@ h3.folder {
 img.screenshot {
 	margin: 3px 0px 2px 2px;
 	float: right;
+	max-width: 500px;
 }
 
 img.icon {
@@ -453,4 +454,9 @@ ol {
 .entry-content div.description th {
 	border-bottom: 1px solid #ddd;
 	font-weight: bold;
+}
+
+tt {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 90%;
 }

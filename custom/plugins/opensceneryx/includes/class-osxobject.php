@@ -108,9 +108,9 @@ class OSXObject extends OSXLibraryItem {
         if ($this->width !== null && $this->height !== null && $this->depth !== null) {
             $result .= "<li><span class='fieldTitle'>Dimensions:</span>\n";
             $result .= "<ul class='dimensions'>\n";
-            $result .= "<li id='width'><span class='fieldTitle'>w:</span> " . $this->width . "</li>\n";
-            $result .= "<li id='height'><span class='fieldTitle'>h:</span> " . $this->height . "</li>\n";
-            $result .= "<li id='depth'><span class='fieldTitle'>d:</span> " . $this->depth . "</li>\n";
+            $result .= "<li id='width'><span class='fieldTitle'>w:</span> " . $this->width . "m</li>\n";
+            $result .= "<li id='height'><span class='fieldTitle'>h:</span> " . $this->height . "m</li>\n";
+            $result .= "<li id='depth'><span class='fieldTitle'>d:</span> " . $this->depth . "m</li>\n";
             $result .= "</ul>\n";
             $result .= "</li>\n";
         }
