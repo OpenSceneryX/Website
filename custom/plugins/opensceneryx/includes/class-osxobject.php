@@ -108,9 +108,9 @@ class OSXObject extends OSXLibraryItem {
         if ($this->width !== null && $this->height !== null && $this->depth !== null) {
             $result .= "<li><span class='fieldTitle'>Dimensions</span> <dfn class='tooltip'>ⓘ<span>These are the outermost bounds of the object.</span></dfn>:\n";
             $result .= "<ul class='dimensions'>\n";
-            $result .= "<li id='width'><span class='fieldTitle'>w:</span> " . $this->width . "m</li>\n";
-            $result .= "<li id='height'><span class='fieldTitle'>h:</span> " . $this->height . "m</li>\n";
-            $result .= "<li id='depth'><span class='fieldTitle'>d:</span> " . $this->depth . "m</li>\n";
+            $result .= "<li id='width'><span class='fieldTitle'>w:</span> " . self::dimension($this->width, self::UNITS_METRES) . " (" . self::dimension($this->width, self::UNITS_FEET) . ")</li>\n";
+            $result .= "<li id='height'><span class='fieldTitle'>h:</span> " . self::dimension($this->height, self::UNITS_METRES) . " (" . self::dimension($this->height, self::UNITS_FEET) . ")</li>\n";
+            $result .= "<li id='depth'><span class='fieldTitle'>d:</span> " . self::dimension($this->depth, self::UNITS_METRES) . " (" . self::dimension($this->depth, self::UNITS_FEET) . ")</li>\n";
             $result .= "</ul>\n";
             $result .= "</li>\n";
         }
@@ -121,7 +121,7 @@ class OSXObject extends OSXLibraryItem {
 
         if (count($this->lods) > 0) {
             foreach ($this->lods as $lod) {
-                $result .= "<li><span class='fieldTitle'>LOD Range</span> <dfn class='tooltip'>ⓘ<span>This object contains multiple Levels of Detail (LODs). To improve frame rate, simpler models are used at further distances. For more information, <a href='https://developer.x-plane.com/article/obj8-file-format-specification/#ATTR_LOD_ltneargt_ltfargt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . $lod['min'] . " to " . $lod['max'] . "</span></li>\n";
+                $result .= "<li><span class='fieldTitle'>LOD Range</span> <dfn class='tooltip'>ⓘ<span>This object contains multiple Levels of Detail (LODs). To improve frame rate, simpler models are used at further distances. For more information, <a href='https://developer.x-plane.com/article/obj8-file-format-specification/#ATTR_LOD_ltneargt_ltfargt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . self::dimension($lod['min'], self::UNITS_METRES) . " to " . self::dimension($lod['max'], self::UNITS_METRES) . " (" . self::dimension($lod['min'], self::UNITS_MILES) . " to " . self::dimension($lod['max'], self::UNITS_MILES) . ")</span></li>\n";
             }
         }
 

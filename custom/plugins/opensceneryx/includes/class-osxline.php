@@ -49,7 +49,7 @@ class OSXLine extends OSXLibraryItem {
         }
 
         if ($this->lineWidth !== null) {
-            $result .= "<li><span class='fieldTitle'>Line Width</span> <dfn class='tooltip'>ⓘ<span>This line has a width of " . $this->lineWidth . "m. Note that if this item includes multiple lines, this is the width of the widest.</span></dfn>: <span class='fieldValue'>" . $this->lineWidth . "m</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>Line Width</span> <dfn class='tooltip'>ⓘ<span>This line has a width of " . self::dimension($this->lineWidth, self::UNITS_METRES) . " (" . self::dimension($this->lineWidth, self::UNITS_FEET) . "). Note that if this item includes multiple lines, this is the width of the widest.</span></dfn>: <span class='fieldValue'>" . self::dimension($this->lineWidth, self::UNITS_METRES) . " (" . self::dimension($this->lineWidth, self::UNITS_FEET) . ")</span></li>\n";
         }
 
         if ($this->mirror) {
