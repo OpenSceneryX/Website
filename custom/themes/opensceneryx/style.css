@@ -494,4 +494,7 @@ ol {
 	right: 0;
 }
 
-
+tt {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 90%;
+}
