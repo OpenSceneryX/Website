@@ -121,7 +121,7 @@ class OSXObject extends OSXLibraryItem {
 
         if (count($this->lods) > 0) {
             foreach ($this->lods as $lod) {
-                $result .= "<li><span class='fieldTitle'>LOD Range:</span> <span class='fieldValue'>" . $lod['min'] . " to " . $lod['max'] . "</span></li>\n";
+                $result .= "<li><span class='fieldTitle'>LOD Range</span> <dfn class='tooltip'>ⓘ<span>This object contains multiple Levels of Detail (LODs). To improve frame rate, simpler models are used at further distances. For more information, <a href='https://developer.x-plane.com/article/obj8-file-format-specification/#ATTR_LOD_ltneargt_ltfargt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . $lod['min'] . " to " . $lod['max'] . "</span></li>\n";
             }
         }
 
