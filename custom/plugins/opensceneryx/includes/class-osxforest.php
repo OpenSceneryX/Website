@@ -72,11 +72,11 @@ class OSXForest extends OSXLibraryItem {
         $result = "";
 
         if ($this->spacingX !== null && $this->spacingZ !== null) {
-            $result .= "<li><span class='fieldTitle'>Spacing X / Z </span><dfn class='tooltip'>ⓘ<span>The items in this forest use " . $this->spacingX . "m spacing in the X dimension and " . $this->spacingZ . "m spacing in the Z dimension. For more information, <a href='https://developer.x-plane.com/article/forest-for-file-format-specification/#SPACING_ltx_spacinggt_ltz_spacinggt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . $this->spacingX . "m / " . $this->spacingZ . "m</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>Spacing X / Z </span><dfn class='tooltip'>ⓘ<span>The items in this forest use " . self::dimension($this->spacingX, self::UNITS_METRES) . " (" . self::dimension($this->spacingX, self::UNITS_FEET) . ") spacing in the X dimension and " . self::dimension($this->spacingZ, self::UNITS_METRES) . " (" . self::dimension($this->spacingZ, self::UNITS_FEET) . ") spacing in the Z dimension. For more information, <a href='https://developer.x-plane.com/article/forest-for-file-format-specification/#SPACING_ltx_spacinggt_ltz_spacinggt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . self::dimension($this->spacingX, self::UNITS_METRES) . " / " . self::dimension($this->spacingZ, self::UNITS_METRES) . " (" . self::dimension($this->spacingX, self::UNITS_FEET). " / " . self::dimension($this->spacingZ, self::UNITS_FEET) . ")</span></li>\n";
         }
 
         if ($this->randomX !== null && $this->randomZ !== null) {
-            $result .= "<li><span class='fieldTitle'>Random X / Z </span><dfn class='tooltip'>ⓘ<span>The items in this forest can deviate from the spacing by up to " . $this->spacingX . "m in the X dimension and " . $this->spacingZ . "m in the Z dimension. For more information, <a href='https://developer.x-plane.com/article/forest-for-file-format-specification/#RANDOM_ltx_spacinggt_ltz_spacinggt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . $this->randomX . "m / " . $this->randomZ . "m</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>Random X / Z </span><dfn class='tooltip'>ⓘ<span>The items in this forest can deviate from the spacing by up to " . self::dimension($this->randomX, self::UNITS_METRES) . " (" . self::dimension($this->randomX, self::UNITS_FEET) . ") in the X dimension and " . self::dimension($this->randomZ, self::UNITS_METRES) . " (" . self::dimension($this->randomZ, self::UNITS_FEET) . ") in the Z dimension. For more information, <a href='https://developer.x-plane.com/article/forest-for-file-format-specification/#RANDOM_ltx_spacinggt_ltz_spacinggt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . self::dimension($this->randomX, self::UNITS_METRES) . " / " . self::dimension($this->randomZ, self::UNITS_METRES) . " (" . self::dimension($this->randomX, self::UNITS_FEET). " / " . self::dimension($this->randomZ, self::UNITS_FEET) . ")</span></li>\n";
         }
 
         if ($this->skipSurfaces !== null) {
@@ -92,7 +92,7 @@ class OSXForest extends OSXLibraryItem {
         }
 
         if ($this->lod !== null) {
-            $result .= "<li><span class='fieldTitle'>LOD Range </span><dfn class='tooltip'>ⓘ<span>This forest is drawn up to a distance of " . $this->lod . "m from the user. For more information, <a href='https://developer.x-plane.com/article/forest-for-file-format-specification/#LOD_ltmax_lodgt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . $this->lod . "</span></li>\n";
+            $result .= "<li><span class='fieldTitle'>LOD Range </span><dfn class='tooltip'>ⓘ<span>This forest is drawn up to a distance of " . self::dimension($this->lod, self::UNITS_METRES) . " (" . self::dimension($this->lod, self::UNITS_MILES) . ") from the user. For more information, <a href='https://developer.x-plane.com/article/forest-for-file-format-specification/#LOD_ltmax_lodgt' target='_blank'>see the official documentation</a>.</span></dfn>: <span class='fieldValue'>" . self::dimension($this->lod, self::UNITS_METRES) . " (" . self::dimension($this->lod, self::UNITS_MILES) . ")</span></li>\n";
         }
 
         if ($result != "") {
