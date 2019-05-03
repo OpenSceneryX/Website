@@ -47,7 +47,8 @@ class OpenSceneryX {
         add_filter('page_css_class', array($this, 'osxMenuClasses'), 10, 5);
         add_filter('pre_post_link', array($this, 'osxPermalink'));
         add_filter('the_content', array($this, 'osxContent'));
-        add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs'));
+        add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs')); // Override Yoast breadcrumbs
+        add_filter('wpseo_json_ld_search_url', array($this, 'osxJSONLDSeachUrl')); // Override Yoast JSON LD search
 
         wp_enqueue_style('osx', plugin_dir_url(__FILE__) . 'osx.css');
         // Required by slick carousel
@@ -300,6 +301,12 @@ class OpenSceneryX {
         }
 
         return $breadcrumbs;
+    }
+
+    function osxJSONLDSeachUrl() {
+        // Supply our Google CSE Search URL so that the main Google search engine can use this for its Sitelinks searchbox if it cares to
+        // Without this override, the default behaviour is to use the built-in Wordpress search which only searches posts and pages.
+        return 'https://cse.google.co.uk/cse?cx=partner-pub-5631233433203577:vypgar-6zdh&ie=UTF-8&q={search_term_string}&sa=Search';
     }
 
     function osxParseFolder($path, $url, $itemType)
