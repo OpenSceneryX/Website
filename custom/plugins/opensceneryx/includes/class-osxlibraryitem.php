@@ -74,6 +74,9 @@ abstract class OSXLibraryItem extends OSXItem {
                 case 'screenshot_winter_deep_snow.jpg':
                     $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (deep snow) Variant');
                     break;
+                case 'screenshot_winter_terramaxx_deep_snow.jpg':
+                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (deep snow TerraMaxx) Variant');
+                    break;
             }
         }
 
