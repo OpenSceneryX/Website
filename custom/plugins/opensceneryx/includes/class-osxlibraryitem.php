@@ -82,6 +82,8 @@ abstract class OSXLibraryItem extends OSXItem {
 
         // Intercept the yoast opengraph call
         add_action('wpseo_opengraph', array($this, 'openGraph'));
+        // Intercept the yoast twitter image call
+        add_filter('wpseo_twitter_image', array($this, 'twitterImage'), 10, 1);
 
         $this->parse();
     }
@@ -406,10 +408,20 @@ abstract class OSXLibraryItem extends OSXItem {
     }
 
     function openGraphAddImages($object) {
-        if ($this->screenshotPath !== null) {
-            $object->add_image($this->screenshotPath);
+        $ssCount = count($this->screenshots);
+        if ($ssCount > 0) {
+            $object->add_image($this->screenshots[0]['path']);
         } else {
             $object->add_image("/doc/screenshot_missing.png");
+        }
+    }
+
+    function twitterImage($img) {
+        $ssCount = count($this->screenshots);
+        if ($ssCount > 0) {
+            return $this->screenshots[0]['path'];
+        } else {
+            return "/doc/screenshot_missing.png";
         }
     }
 
