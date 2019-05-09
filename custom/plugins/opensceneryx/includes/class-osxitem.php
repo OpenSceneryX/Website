@@ -55,5 +55,9 @@ abstract class OSXItem {
         }
     }
 
+    function enqueueScript() {
+        // Default does nothing, subclasses can override
+    }
+
     abstract protected function parse();
 }
