@@ -68,6 +68,10 @@ Template: twentyeleven
 	clear: none;
 }
 
+.entry-content h2 {
+	font-size: 1.4em;
+}
+
 .thumbnailcontainer h3 {
         line-height: 1.5;
         padding: 0.5em;
