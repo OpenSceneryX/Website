@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.9.7.2",
+    "version": "0.9.7.5",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -771,7 +771,6 @@
     "timelimit.cdn_purge": 300,
     "timelimit.cdn_import": 600,
     "timelimit.cdn_test": 300,
-    "timelimit.cdn_container_create": 300,
     "timelimit.domain_rename": 120,
     "timelimit.minify_recommendations": 600,
     "common.instance_id": 1804112178,
@@ -784,6 +783,7 @@
     "extensions.active_frontend": [],
     "plugin.license_key": "",
     "plugin.type": "",
+    "timelimit.cdn_container_create": 300,
     "cdn.netdna.alias": "",
     "cdn.netdna.consumerkey": "",
     "cdn.netdna.consumersecret": "",
