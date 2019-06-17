@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a15be5fbe24c831e6fa5b2ccf747c43b",
+    "content-hash": "4547c2b99828aeee7bd7e41ff59da283",
     "packages": [
         {
             "name": "composer/installers",
@@ -201,11 +201,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "5.1.1",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.1.1"
+                "reference": "5.2.1"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
@@ -214,17 +214,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "6.1.8",
+            "version": "6.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/6.1.8"
+                "reference": "tags/6.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.6.1.8.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/addthis.6.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -234,17 +232,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.1.1"
+                "reference": "tags/4.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -254,17 +250,15 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.11.5",
+            "version": "1.11.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.11.5"
+                "reference": "tags/1.11.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.11.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.11.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -282,9 +276,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.46.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.46.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -294,17 +286,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "5.3.7",
+            "version": "5.3.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/5.3.7"
+                "reference": "tags/5.3.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -314,17 +304,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "5.2.0",
+            "version": "5.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/5.2.0"
+                "reference": "tags/5.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.5.2.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.5.9.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -334,17 +322,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.7.3",
+            "version": "4.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.7.3"
+                "reference": "tags/4.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.7.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/redirection.4.3.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -354,17 +340,15 @@
         },
         {
             "name": "wpackagist-plugin/theme-my-login",
-            "version": "7.0.13",
+            "version": "7.0.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/theme-my-login/",
-                "reference": "tags/7.0.13"
+                "reference": "tags/7.0.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-my-login.7.0.13.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/theme-my-login.7.0.14.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -373,38 +357,16 @@
             "homepage": "https://wordpress.org/plugins/theme-my-login/"
         },
         {
-            "name": "wpackagist-plugin/visual-form-builder",
-            "version": "2.9.9",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/visual-form-builder/",
-                "reference": "tags/2.9.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/visual-form-builder.2.9.9.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/visual-form-builder/"
-        },
-        {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.9.7.2",
+            "version": "0.9.7.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.9.7.2"
+                "reference": "tags/0.9.7.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.7.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.7.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -422,9 +384,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wangguard.1.7.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wangguard.1.7.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -434,17 +394,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "10.0",
+            "version": "11.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/10.0"
+                "reference": "tags/11.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.10.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -454,17 +412,15 @@
         },
         {
             "name": "wpackagist-theme/twentyeleven",
-            "version": "3.2",
+            "version": "3.3",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentyeleven/",
-                "reference": "3.2"
+                "reference": "3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyeleven.3.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentyeleven.3.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
