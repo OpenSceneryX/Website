@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Google Analytics Dashboard for WP by ExactMetrics (formerly GADWP) - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-16 11:38:29+0000\n"
+"PO-Revision-Date: 2019-05-02 15:29:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -799,7 +799,7 @@ msgstr "Network Setup"
 msgid "Properties refreshed."
 msgstr "Properties refreshed."
 
-#: admin/settings.php:1545 admin/settings.php:1907 admin/widgets.php:35
+#: admin/widgets.php:35 admin/settings.php:1545 admin/settings.php:1907
 msgid "Authorize Plugin"
 msgstr "Authorise Plugin"
 
@@ -813,7 +813,7 @@ msgstr "Automatic Updates"
 
 #: admin/settings.php:1479
 msgid "Theme Color:"
-msgstr "Theme Color:"
+msgstr "Theme Colour:"
 
 #: admin/settings.php:1464
 msgid "Lock Selection"
@@ -1095,6 +1095,6 @@ msgstr "Something went wrong, check %1$s or %2$s."
 msgid "Settings saved."
 msgstr "Settings saved."
 
-#: front/item-reports.php:30 admin/settings.php:445 admin/item-reports.php:53
+#: front/item-reports.php:30 admin/item-reports.php:53 admin/settings.php:445
 msgid "Analytics"
 msgstr "Analytics"
