@@ -158,6 +158,12 @@ img.miniobjecticon {
 	height: 1em;
 }
 
+p.inline-image-bullet img {
+	border: none;
+	padding: 0 0.5em 0 1em;
+	margin: none;
+}
+
 p.warning {
 	background-color: #fcc;
 	color: #ff0000;
