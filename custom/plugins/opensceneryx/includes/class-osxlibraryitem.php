@@ -35,7 +35,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $screenshots = array();
 
-    protected $seasonal = null;
+    protected $seasons = array();
 
     /**
      * @var boolean If true, author email addresses will be output.  This should only be enabled if an email obfuscator plugin is installed
@@ -220,8 +220,8 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
-            if (preg_match('/^Seasonal:\s+(.*)/', $line, $matches) === 1) {
-                $this->seasonal = ($matches[1] == "True" || $matches[1] == "Yes");
+            if (preg_match('/^Season (.*):\s+True/', $line, $matches) === 1) {
+                $this->seasons[] = $matches[1];
                 continue;
             }
 
@@ -367,7 +367,8 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "<li><span class='fieldTitle'>Available Since</span> <dfn class='tooltip'>ⓘ<span>This item was added in OpenSceneryX version " . $this->since . "</span></dfn>: <span class='fieldValue'>" . $this->since . "</span></li>\n";
         }
 
-        if ($this->seasonal) {
+        $seasonCount = count($this->seasons);
+        if ($seasonCount > 0) {
             $result .= "<li><span class='fieldTitle'>Has seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX.</span></dfn></li>\n";
         }
 
