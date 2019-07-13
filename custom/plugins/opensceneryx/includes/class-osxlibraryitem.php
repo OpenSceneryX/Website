@@ -7,6 +7,8 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $textures = array();
 
+    protected $filePath = null;
+
     protected $virtualPaths = array();
     protected $deprecatedVirtualPaths = array();
     protected $externalVirtualPaths = array();
@@ -91,8 +93,8 @@ abstract class OSXLibraryItem extends OSXItem {
     function enqueueScript() {
         // Inject the slick slider code. Can't do this in the getHTML function below because that's too late
         $slickScript = '<script type="text/javascript">
-                $(document).ready(function(){
-                    $(".slick-screenshots").slick({
+            $(document).ready(function(){
+                $(".slick-screenshots").slick({
                     autoplay: true,
                     autoplaySpeed: 2000,
                     swipeToSlide: true,
@@ -101,8 +103,77 @@ abstract class OSXLibraryItem extends OSXItem {
             });
             </script>';
 
-        wp_add_inline_script('slick', $slickScript, 'after');
+        $threejsScript = '<script type="text/javascript">
+            $(document).ready(function(){
+                var scene = new THREE.Scene();
+                var container = $(".threejs-container")
+                var camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
+                var renderer = new THREE.WebGLRenderer();
 
+                renderer.setSize(container.width(), container.height());
+                //renderer.setSize( window.innerWidth, window.innerHeight );
+                container.append( renderer.domElement );
+                scene.background = new THREE.Color(0xffffff);
+
+                var keyLight = new THREE.DirectionalLight(0xffffff, 1.0);
+                keyLight.position.set(-100, 0, 100);
+
+                var fillLight = new THREE.DirectionalLight(0xffffff, 0.75);
+                fillLight.position.set(100, 0, 100);
+
+                var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+                backLight.position.set(100, 0, -100).normalize();
+
+                scene.add(keyLight);
+                scene.add(fillLight);
+                scene.add(backLight);
+
+                var objLoader = new THREE.XPlaneObjLoader();
+                objLoader.setPath("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/");
+
+                objLoader.load("' . basename($this->filePath) . '", function (object) {
+                    scene.add(object);
+
+                    // Dynamically determine the bounding box and set the camera distance accordingly
+                    var bBox = new THREE.Box3().setFromObject(object);
+                    var bBoxSize = new THREE.Vector3();
+                    var bBoxCenter = new THREE.Vector3();
+
+                    bBox.getSize(bBoxSize);
+                    bBox.getCenter(bBoxCenter);
+
+                    // Center object in scene. We don\'t need to adjust the Y position, our models always have y=0 on the ground plane.
+                    object.translateX(-bBoxCenter.x);
+                    object.translateY(-bBoxCenter.y);
+                    object.translateZ(-bBoxCenter.z);
+
+                    // Calculate the camera distance based on the maximum dimensions of the model
+                    var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
+                    var pos = scene.position;
+                    camera.position.set(pos.x, pos.y, dist * 1.7);
+                    camera.lookAt(pos);
+                });
+
+                scene.rotation.x = 0.25;
+
+                var animate = function () {
+                    requestAnimationFrame( animate );
+                    //controls.update();
+
+                    //scene.rotation.x += 0.01;
+                    scene.rotation.y += 0.01;
+
+                    renderer.render(scene, camera);
+                };
+
+                animate();
+            });
+            </script>';
+
+        // Append the inline scripts. These must be appended to a named script already in the queue.
+        // The named scripts are enqueued in class-opensceneryx
+        wp_add_inline_script('slick', $slickScript, 'after');
+        wp_add_inline_script('xpobjloader', $threejsScript, 'after');
     }
 
     protected function parse() {
@@ -225,6 +296,12 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
+            if (preg_match('/^File Path:\s+(.*)/', $line, $matches) === 1) {
+                $this->filePath = $matches[1];
+                continue;
+            }
+
+
             if (preg_match('/^Description:\s+(.*)/', $line, $matches) === 1) {
                 $this->description = $matches[1];
                 continue;
@@ -277,6 +354,8 @@ abstract class OSXLibraryItem extends OSXItem {
 
             $result .= "</div>\n";
         }
+
+        $result .= '<div class="threejs-container"></div>' . "\n";
 
         $ssCount = count($this->screenshots);
         if ($ssCount == 0) {
