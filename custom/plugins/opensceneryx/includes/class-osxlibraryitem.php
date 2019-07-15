@@ -111,22 +111,20 @@ abstract class OSXLibraryItem extends OSXItem {
                 var renderer = new THREE.WebGLRenderer();
 
                 renderer.setSize(container.width(), container.height());
-                //renderer.setSize( window.innerWidth, window.innerHeight );
                 container.append( renderer.domElement );
                 scene.background = new THREE.Color(0xffffff);
 
-                var keyLight = new THREE.DirectionalLight(0xffffff, 1.0);
-                keyLight.position.set(-100, 0, 100);
+                var controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.autoRotate = true;
 
-                var fillLight = new THREE.DirectionalLight(0xffffff, 0.75);
-                fillLight.position.set(100, 0, 100);
+                var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+                var ambientLight = new THREE.AmbientLight( 0x404040 );
+                var sunLight = new THREE.DirectionalLight(0xfdb813, 1.5);
+                sunLight.position.set(1000, -1000, 1000);
 
-                var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
-                backLight.position.set(100, 0, -100).normalize();
-
-                scene.add(keyLight);
-                scene.add(fillLight);
-                scene.add(backLight);
+                scene.add(skyLight);
+                scene.add(ambientLight);
+                scene.add(sunLight);
 
                 var objLoader = new THREE.XPlaneObjLoader();
                 objLoader.setPath("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/");
@@ -142,7 +140,7 @@ abstract class OSXLibraryItem extends OSXItem {
                     bBox.getSize(bBoxSize);
                     bBox.getCenter(bBoxCenter);
 
-                    // Center object in scene. We don\'t need to adjust the Y position, our models always have y=0 on the ground plane.
+                    // Center object in scene.
                     object.translateX(-bBoxCenter.x);
                     object.translateY(-bBoxCenter.y);
                     object.translateZ(-bBoxCenter.z);
@@ -158,11 +156,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
                 var animate = function () {
                     requestAnimationFrame( animate );
-                    //controls.update();
-
-                    //scene.rotation.x += 0.01;
-                    scene.rotation.y += 0.01;
-
+                    controls.update();
                     renderer.render(scene, camera);
                 };
 
@@ -173,7 +167,7 @@ abstract class OSXLibraryItem extends OSXItem {
         // Append the inline scripts. These must be appended to a named script already in the queue.
         // The named scripts are enqueued in class-opensceneryx
         wp_add_inline_script('slick', $slickScript, 'after');
-        wp_add_inline_script('xpobjloader', $threejsScript, 'after');
+        wp_add_inline_script('3xpobjloader', $threejsScript, 'after');
     }
 
     protected function parse() {

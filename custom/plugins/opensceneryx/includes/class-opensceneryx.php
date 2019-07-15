@@ -130,8 +130,9 @@ class OpenSceneryX {
         wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
         // Required by three.js 3d renderer
         wp_enqueue_script('three.js', '//cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js', array(), false, true);
-        wp_enqueue_script('ddsloader', plugin_dir_url(__FILE__) . 'three.js/DDSLoader.js', array('three.js'), false, true);
-        wp_enqueue_script('xpobjloader', plugin_dir_url(__FILE__) . 'three.js/XPlaneObjLoader.js', array('three.js', 'ddsloader'), false, true);
+        wp_enqueue_script('3ddsloader', plugin_dir_url(__FILE__) . 'three.js/DDSLoader.js', array('three.js'), false, true);
+        wp_enqueue_script('3orbitcontrols', plugin_dir_url(__FILE__) . 'three.js/OrbitControls.js', array('three.js'), false, true);
+        wp_enqueue_script('3xpobjloader', plugin_dir_url(__FILE__) . 'three.js/XPlaneObjLoader.js', array('three.js', '3ddsloader'), false, true);
     }
 
     /**
