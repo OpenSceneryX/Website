@@ -119,7 +119,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
                 var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
                 var ambientLight = new THREE.AmbientLight( 0x404040 );
-                var sunLight = new THREE.DirectionalLight(0xfdb813, 1.5);
+                var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
                 sunLight.position.set(1000, -1000, 1000);
 
                 scene.add(skyLight);
@@ -151,8 +151,6 @@ abstract class OSXLibraryItem extends OSXItem {
                     camera.position.set(pos.x, pos.y, dist * 1.7);
                     camera.lookAt(pos);
                 });
-
-                scene.rotation.x = 0.25;
 
                 var animate = function () {
                     requestAnimationFrame( animate );
