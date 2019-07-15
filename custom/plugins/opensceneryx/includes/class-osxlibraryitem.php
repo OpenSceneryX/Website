@@ -103,69 +103,8 @@ abstract class OSXLibraryItem extends OSXItem {
             });
             </script>';
 
-        $threejsScript = '<script type="text/javascript">
-            $(document).ready(function(){
-                var scene = new THREE.Scene();
-                var container = $(".threejs-container")
-                var camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
-                var renderer = new THREE.WebGLRenderer();
-
-                renderer.setSize(container.width(), container.height());
-                container.append( renderer.domElement );
-                scene.background = new THREE.Color(0xffffff);
-
-                var controls = new THREE.OrbitControls(camera, renderer.domElement);
-                controls.autoRotate = true;
-
-                var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
-                var ambientLight = new THREE.AmbientLight( 0x404040 );
-                var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
-                sunLight.position.set(1000, -1000, 1000);
-
-                scene.add(skyLight);
-                scene.add(ambientLight);
-                scene.add(sunLight);
-
-                var objLoader = new THREE.XPlaneObjLoader();
-                objLoader.setPath("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/");
-
-                objLoader.load("' . basename($this->filePath) . '", function (object) {
-                    scene.add(object);
-
-                    // Dynamically determine the bounding box and set the camera distance accordingly
-                    var bBox = new THREE.Box3().setFromObject(object);
-                    var bBoxSize = new THREE.Vector3();
-                    var bBoxCenter = new THREE.Vector3();
-
-                    bBox.getSize(bBoxSize);
-                    bBox.getCenter(bBoxCenter);
-
-                    // Center object in scene.
-                    object.translateX(-bBoxCenter.x);
-                    object.translateY(-bBoxCenter.y);
-                    object.translateZ(-bBoxCenter.z);
-
-                    // Calculate the camera distance based on the maximum dimensions of the model
-                    var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
-                    var pos = scene.position;
-                    camera.position.set(pos.x, pos.y, dist * 1.7);
-                    camera.lookAt(pos);
-                });
-
-                var animate = function () {
-                    requestAnimationFrame( animate );
-                    controls.update();
-                    renderer.render(scene, camera);
-                };
-
-                animate();
-            });
-            </script>';
-
-        // Append the inline scripts. These must be appended to a named script already in the queue.
-        // The named scripts are enqueued in class-opensceneryx
+        wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
         wp_add_inline_script('slick', $slickScript, 'after');
-        wp_add_inline_script('3xpobjloader', $threejsScript, 'after');
     }
 
     protected function parse() {
