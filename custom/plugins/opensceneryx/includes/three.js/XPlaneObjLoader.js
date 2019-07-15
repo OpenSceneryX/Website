@@ -55,14 +55,14 @@ THREE.XPlaneObjLoader = ( function () {
 
 			},
 
-			addVertex: function ( a, b, c ) {
+			addVertex: function ( a, b, c, transx, transy, transz ) {
 
 				var src = this.vertices;
 				var dst = this.object.geometry.vertices;
 
-				dst.push( src[ a + 0 ], src[ a + 1 ], src[ a + 2 ] );
-				dst.push( src[ b + 0 ], src[ b + 1 ], src[ b + 2 ] );
-				dst.push( src[ c + 0 ], src[ c + 1 ], src[ c + 2 ] );
+				dst.push( src[ a + 0 ] + transx, src[ a + 1 ] + transy, src[ a + 2 ] + transz );
+				dst.push( src[ b + 0 ] + transx, src[ b + 1 ] + transy, src[ b + 2 ] + transz );
+				dst.push( src[ c + 0 ] + transx, src[ c + 1 ] + transy, src[ c + 2 ] + transz );
 
 			},
 
@@ -99,7 +99,7 @@ THREE.XPlaneObjLoader = ( function () {
 
 			},
 
-			addFace: function ( a, b, c, ua, ub, uc, na, nb, nc ) {
+			addFace: function ( a, b, c, ua, ub, uc, na, nb, nc, transx, transy, transz ) {
 
 				var vLen = this.vertices.length;
 
@@ -107,7 +107,7 @@ THREE.XPlaneObjLoader = ( function () {
 				var ib = this.parseVertexIndex( b, vLen );
 				var ic = this.parseVertexIndex( c, vLen );
 
-				this.addVertex( ia, ib, ic );
+				this.addVertex( ia, ib, ic, transx, transy, transz );
 
 				if ( ua !== undefined && ua !== '' ) {
 
@@ -154,8 +154,10 @@ THREE.XPlaneObjLoader = ( function () {
 
 		this.manager = ( manager !== undefined ) ? manager : THREE.DefaultLoadingManager;
 
-		this.material = new THREE.MeshStandardMaterial();
-		this.material.side = THREE.BackSide;
+		this.material = new THREE.MeshLambertMaterial();
+		// This is a bit naughty. We should really use THREE.BackSide but some animated segments only contain separate sides of the model in different animated sections,
+		// which we are ignoring for the moment. Should revert this once animations are implemented.
+		this.material.side = THREE.DoubleSide;
 		this.material.transparent = true;
 
 	}
@@ -258,6 +260,12 @@ THREE.XPlaneObjLoader = ( function () {
 			var lines = text.split( '\n' );
 			var line = '';
 			var foundLOD = false;
+			// Our rudimentary animation approach is draw ONE set of mesh for each animation nesting level, i.e. the first mesh encountered at that level
+			// animNest tracks the current nesting level. animTrack is an array of booleans - as we encounter mesh at each nesting level, that index is set to true in the array
+			var animNest = 0;
+			var animTrack = [];
+			// We need to track translations, as in some models animated sections _always_ have some translation. If we don't do this, animated parts may appear in odd places.
+			var animTrans = [0, 0, 0];
 
 			// Faster to just trim left side of the line. Use if available.
 			var trimLeft = ( typeof ''.trimLeft === 'function' );
@@ -277,8 +285,24 @@ THREE.XPlaneObjLoader = ( function () {
 
 				switch ( data[ 0 ] ) {
 
+					case 'ANIM_begin':
+						animNest++;
+						break;
+
+					case 'ANIM_end':
+						animNest--;
+						// Clear any stored translation
+						animTrans = [0, 0, 0];
+						break;
+
+					case 'ANIM_trans':
+						// There can be multiple ANIM_trans in a single animated block, often used to translate, rotate, then translate back. We therefore need to add the
+						// translations together
+						animTrans = [ animTrans[ 0 ] + parseFloat(data[ 1 ]), animTrans[ 1 ] + parseFloat(data[ 2 ]), animTrans[ 2 ] + parseFloat(data[ 3 ])];
+						break;
+
 					case 'ATTR_LOD':
-						// Ignore everything after second LOD. This could be improved to detect the closest LOD or even to be able to pick a LOD from the model.
+						// Ignore everything after second LOD. This could be improved to detect the closest LOD or even to be able to select a LOD from the model.
 						if ( foundLOD ) break lineloop;
 						else foundLOD = true;
 						break;
@@ -297,6 +321,11 @@ THREE.XPlaneObjLoader = ( function () {
 						break;
 
 					case 'LINES':
+						// If we already have mesh at this animation nesting level, ignore any further
+						if (animNest > 0 && animTrack[animNest]) break;
+						// Ignore any further animated mesh at this level
+						if (animNest > 0) animTrack[animNest] = true;
+
 						// TODO: Implement lines
 						break;
 
@@ -305,6 +334,11 @@ THREE.XPlaneObjLoader = ( function () {
 						break;
 
 					case 'TRIS':
+						// If we already have mesh at this animation nesting level, ignore any further
+						if (animNest > 0 && animTrack[animNest]) break;
+						// Ignore any further animated mesh at this level
+						if (animNest > 0) animTrack[animNest] = true;
+
 						// Build our face data from the number of tris specified
 						var index = parseInt( data[ 1 ] );
 						var count = parseInt( data[ 2 ] );
@@ -315,7 +349,8 @@ THREE.XPlaneObjLoader = ( function () {
 							state.addFace(
 								state.indices[ j ], state.indices[ j + 1 ], state.indices[ j + 2 ],
 								state.indices[ j ], state.indices[ j + 1 ], state.indices[ j + 2 ],
-								state.indices[ j ], state.indices[ j + 1 ], state.indices[ j + 2 ]
+								state.indices[ j ], state.indices[ j + 1 ], state.indices[ j + 2 ],
+								animTrans[ 0 ], animTrans[ 1 ], animTrans[ 2 ]
 							);
 
 						}
@@ -348,8 +383,6 @@ THREE.XPlaneObjLoader = ( function () {
 						);*/
 						break;
 
-					case 'ANIM_begin':
-					case 'ANIM_end':
 					case 'ANIM_hide':
 					case 'ANIM_keyframe_loop':
 					case 'ANIM_rotate':
@@ -357,7 +390,6 @@ THREE.XPlaneObjLoader = ( function () {
 					case 'ANIM_rotate_end':
 					case 'ANIM_rotate_key':
 					case 'ANIM_show':
-					case 'ANIM_trans':
 					case 'ANIM_trans_begin':
 					case 'ANIM_trans_end':
 					case 'ANIM_trans_key':
