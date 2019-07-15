@@ -16,6 +16,55 @@ class OSXPolygon extends OSXLibraryItem {
         parent::__construct($path, $url);
     }
 
+    function enqueueScript() {
+        parent::enqueueScript();
+
+        $threejsScript = '<script type="text/javascript">
+            $(document).ready(function(){
+                var scene = new THREE.Scene();
+                var container = $(".threejs-container")
+                var camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
+                var renderer = new THREE.WebGLRenderer();
+
+                renderer.setSize(container.width(), container.height());
+                container.append( renderer.domElement );
+                scene.background = new THREE.Color(0xffffff);
+
+                var controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.autoRotate = true;
+
+                var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+                var ambientLight = new THREE.AmbientLight( 0x404040 );
+                var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
+                sunLight.position.set(1000, -1000, 1000);
+
+                scene.add(skyLight);
+                scene.add(ambientLight);
+                scene.add(sunLight);
+
+                var polLoader = new THREE.XPlanePolLoader();
+                polLoader.setPath("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/");
+
+                polLoader.load("' . basename($this->filePath) . '", function (object) {
+                    scene.add(object);
+                    camera.position.set(0, 1, 1.7);
+                    camera.lookAt(pos);
+                });
+
+                var animate = function () {
+                    requestAnimationFrame( animate );
+                    controls.update();
+                    renderer.render(scene, camera);
+                };
+
+                animate();
+            });
+            </script>';
+
+        wp_enqueue_script('3xppolloader', plugin_dir_url(__FILE__) . 'three.js/XPlanePolLoader.js', array('three.js', '3ddsloader'), false, true);
+        wp_add_inline_script('3xppolloader', $threejsScript, 'after');
+    }
+
     protected function parse() {
         parent::parse();
 
