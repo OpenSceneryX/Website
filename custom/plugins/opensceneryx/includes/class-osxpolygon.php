@@ -33,7 +33,7 @@ class OSXPolygon extends OSXLibraryItem {
                 var controls = new THREE.OrbitControls(camera, renderer.domElement);
                 controls.autoRotate = true;
 
-                var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+                var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
                 var ambientLight = new THREE.AmbientLight( 0x404040 );
                 var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
                 sunLight.position.set(1000, -1000, 1000);
@@ -48,7 +48,6 @@ class OSXPolygon extends OSXLibraryItem {
                 polLoader.load("' . basename($this->filePath) . '", function (object) {
                     scene.add(object);
                     camera.position.set(0, 1, 1.7);
-                    camera.lookAt(pos);
                 });
 
                 var animate = function () {

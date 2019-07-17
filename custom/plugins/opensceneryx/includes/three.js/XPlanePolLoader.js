@@ -156,6 +156,7 @@ THREE.XPlanePolLoader = ( function () {
 					case 'NO_SHADOW':
 					case 'SPECULAR':
 					case 'SURFACE':
+					case 'TEX_WIDTH':
 					case 'TEXTURE_CONTROL':
 					case 'TEXTURE_DETAIL':
 					case 'TEXTURE_LIT':
@@ -179,7 +180,7 @@ THREE.XPlanePolLoader = ( function () {
 
 			// Create underlying surface to provide contrast for our polygon
 			var geometry = new THREE.BoxGeometry( 1.5, 0.01, 1.5 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00aa00 } );
+			var material = new THREE.MeshBasicMaterial( { color: 0x008000 } );
 			var plane = new THREE.Mesh( geometry, material );
 			container.add( plane );
 
