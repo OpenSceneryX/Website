@@ -13,7 +13,7 @@ THREE.XPlaneForLoader = ( function () {
 
 		this.material = new THREE.MeshLambertMaterial();
 		this.material.side = THREE.DoubleSide;
-		// Set alphaTest to get a good result for transparent textures. See https://threejsfundamentals.org/threejs/lessons/threejs-transparency.html
+		// Set alphaTest to get a fairly good result for transparent textures. Non trivial problem though, see https://threejsfundamentals.org/threejs/lessons/threejs-transparency.html
 		this.material.alphaTest = 0.5;
 		this.material.transparent = true;
 
@@ -59,7 +59,8 @@ THREE.XPlaneForLoader = ( function () {
 			var ddsPath = splitPath.concat(['dds']).join('.');
 			var pngPath = splitPath.concat(['png']).join('.');
 
-			ddsLoader.load(
+			// DDS Texture loading currently disabled because of this bug https://github.com/mrdoob/three.js/issues/4316 - Compressed DDS textures load upside down
+			/*ddsLoader.load(
 				// resource URL
 				ddsPath,
 
@@ -75,7 +76,7 @@ THREE.XPlaneForLoader = ( function () {
 				undefined,
 
 				// onError callback
-				function ( err ) {
+				function ( err ) {*/
 					textureLoader.load(
 						// resource URL
 						pngPath,
@@ -96,8 +97,8 @@ THREE.XPlaneForLoader = ( function () {
 							console.error( 'Could not load texture. Tried ' + ddsPath + ' and ' + pngPath );
 						}
 					);
-				}
-			);
+				/*}
+			);*/
 
 			return this;
 
@@ -161,14 +162,11 @@ THREE.XPlaneForLoader = ( function () {
 						break;
 
 					case 'TREE':
-						// Each TREE defines a tree: <s> <t> <w> <y> <offset> <frequency> <min height> <max height> <quads> <type>
-						trees.push([ parseInt(data[ 1 ]), parseInt(data[ 2 ]), parseInt(data[ 3 ]), parseInt(data[ 4 ]), parseInt(data[ 5 ]), parseInt(data[ 6 ]), parseInt(data[ 7 ]), parseInt(data[ 8 ]), parseInt(data[ 9 ]), parseInt(data[ 10 ])]);
+						// Each TREE defines a tree: <s> <t> <w> <y> <offset> <frequency> <min height> <max height> <quads> <type> <name>
+						trees.push([ parseFloat(data[ 1 ]), parseFloat(data[ 2 ]), parseFloat(data[ 3 ]), parseFloat(data[ 4 ]), parseFloat(data[ 5 ]), parseFloat(data[ 6 ]), parseFloat(data[ 7 ]), parseFloat(data[ 8 ]), parseInt(data[ 9 ]), parseInt(data[ 10 ])]);
 						break;
 
 					case 'GROUP':
-					case 'LOD':
-					case 'SKIP_SURFACE':
-					case 'Y_QUAD':
 						// Really need to support this
 					case 'CHOICE_PARAMS':
 						// Really need to support this
@@ -176,7 +174,11 @@ THREE.XPlaneForLoader = ( function () {
 						// Really need to support this
 					case 'HEIGHT_PARAMS':
 						// Really need to support this
+					case 'Y_QUAD':
+						// Really need to support this
+					case 'LOD':
 					case 'NO_SHADOW':
+					case 'SKIP_SURFACE':
 						// Lines we are ignoring right now (some may be implemented later)
 						break;
 
@@ -213,26 +215,26 @@ THREE.XPlaneForLoader = ( function () {
 			for ( var i = 0; i < treesPerRow * treesPerRow; i++)
 				plantedTrees.push( trees[species[i]] );
 
-			console.log(plantedTrees);
-
-
 			var container = new THREE.Group();
-
-			// Create underlying surface to provide contrast for our trees
-			var geometry = new THREE.BoxGeometry( 1.5, 0.01, 1.5 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00aa00 } );
-			var plane = new THREE.Mesh( geometry, material );
-			container.add( plane );
 
 			// Create trees, dimensions proportional to loaded texture
 			for ( var i = 0; i < plantedTrees.length; i++ ) {
-				this.addTree( container, plantedTrees[i], i, spacingX, spacingZ, randomX, randomZ, scaleX, scaleY );
+					this.addTree( container, plantedTrees[i], i, spacingX, spacingZ, randomX, randomZ, scaleX, scaleY );
 			}
 
-			//var geometry = new THREE.PlaneGeometry( scaleX / Math.max( scaleX, scaleY ), scaleY / Math.max( scaleX, scaleY ) );
-			//var tree = new THREE.Mesh( geometry, this.material );
-			//container.add( tree );
-			//tree.translateY( 0.001 );
+			// Create underlying surface to provide contrast for our trees
+			var bBox = new THREE.Box3().setFromObject(container);
+			var bBoxSize = new THREE.Vector3();
+			var bBoxCenter = new THREE.Vector3();
+			bBox.getSize(bBoxSize);
+			bBox.getCenter(bBoxCenter);
+
+			var geometry = new THREE.BoxGeometry( bBoxSize.x, 0.01, bBoxSize.z );
+			var material = new THREE.MeshBasicMaterial( { color: 0x00aa00 } );
+			var plane = new THREE.Mesh( geometry, material );
+			plane.translateX(bBoxCenter.x);
+			plane.translateZ(bBoxCenter.z);
+			container.add( plane );
 
 			console.timeEnd( 'XPlaneForLoader' );
 
@@ -252,44 +254,44 @@ THREE.XPlaneForLoader = ( function () {
 			var normals = [];
 			var uvs = [];
 
-			var scope = this
+			var scope = this;
 
 			for ( var i = 0; i < treeData[8]; i++ ) {
 				var quadRotation = Math.PI * ( treeRotation + i / treeData[8] );        // tree rotation
 				var quadX = treeW * Math.sin( quadRotation );
 				var quadZ = treeW * Math.cos( quadRotation );
 
-				// Tri 1
+				// Tri 1, point 1
 				vertices.push( treeX - quadX * ( treeData[4] / treeData[2] ), 0.0, treeZ - quadZ * ( treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( treeData[0] / scaleX, 1 - treeData[1] / scaleY );
-
+				uvs.push( treeData[0] / scaleX, treeData[1] / scaleY );
+				// Tri 1, point 2
 				vertices.push( treeX + quadX * ( 1.0 - treeData[4] / treeData[2] ), 0.0, treeZ + quadZ * ( 1.0 - treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, 1 - treeData[1] / scaleY );
-
+				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, treeData[1] / scaleY );
+				// Tri 1, point 3
 				vertices.push( treeX + quadX * ( 1.0 - treeData[4] / treeData[2] ), treeH, treeZ + quadZ * ( 1.0 - treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, 1 - ( treeData[1] + treeData[3] ) / scaleY );
+				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, ( treeData[1] + treeData[3] ) / scaleY );
 
-				// Tri 2
+				// Tri 2, point 1
 				vertices.push( treeX - quadX * ( treeData[4] / treeData[2] ), 0.0, treeZ - quadZ * ( treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( treeData[0] / scaleX, 1 - treeData[1] / scaleY );
-
+				uvs.push( treeData[0] / scaleX, treeData[1] / scaleY );
+				// Tri 2, point 3
 				vertices.push( treeX + quadX * ( 1.0 - treeData[4] / treeData[2] ), treeH, treeZ + quadZ * ( 1.0 - treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, 1 - ( treeData[1] + treeData[3] ) / scaleY );
-
+				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, ( treeData[1] + treeData[3] ) / scaleY );
+				// Tri 2, point 4
 				vertices.push( treeX - quadX * (treeData[4] / treeData[2] ), treeH, treeZ - quadZ * ( treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( treeData[0] / scaleX, 1 - ( treeData[1] + treeData[3] ) / scaleY );
+				uvs.push( treeData[0] / scaleX, ( treeData[1] + treeData[3] ) / scaleY );
 			}
 
 			var geometry = new THREE.BufferGeometry( );
 			geometry.addAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
-			geometry.addAttribute( 'uv', new THREE.Float32BufferAttribute( uvs, 2 ) );
 			geometry.addAttribute( 'normal', new THREE.Float32BufferAttribute( normals, 3 ) );
+			geometry.addAttribute( 'uv', new THREE.Float32BufferAttribute( uvs, 2 ) );
 
 			var polygon = new THREE.Mesh( geometry, scope.material );
 			container.add( polygon );

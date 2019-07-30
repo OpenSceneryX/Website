@@ -202,12 +202,14 @@ THREE.XPlaneObjLoader = ( function () {
 			var ddsPath = splitPath.concat(['dds']).join('.');
 			var pngPath = splitPath.concat(['png']).join('.');
 
-			ddsLoader.load(
+			// DDS Texture loading currently disabled because of this bug https://github.com/mrdoob/three.js/issues/4316 - Compressed DDS textures load upside down
+			/*ddsLoader.load(
 				// resource URL
 				ddsPath,
 
 				// onLoad callback
 				function ( texture ) {
+					texture.anisotropy = 16;
 					scope.material.map = texture;
 					scope.material.map.needsUpdate = true;
 					scope.material.needsUpdate = true;
@@ -217,13 +219,14 @@ THREE.XPlaneObjLoader = ( function () {
 				undefined,
 
 				// onError callback
-				function ( err ) {
+				function ( err ) {*/
 					textureLoader.load(
 						// resource URL
 						pngPath,
 
 						// onLoad callback
 						function ( texture ) {
+							texture.anisotropy = 16;
 							scope.material.map = texture;
 							scope.material.map.needsUpdate = true;
 							scope.material.needsUpdate = true;
@@ -237,8 +240,8 @@ THREE.XPlaneObjLoader = ( function () {
 							console.error( 'Could not load texture. Tried ' + ddsPath + ' and ' + pngPath );
 						}
 					);
-				}
-			);
+				/*}
+			);*/
 
 			return this;
 
@@ -456,6 +459,13 @@ THREE.XPlaneObjLoader = ( function () {
 					case 'ATTR_specular_rgb':
 					case 'BUMP_LEVEL':
 					case 'COCKPIT_REGION':
+					case 'DECAL':
+					case 'DECAL_KEYED':
+					case 'DECAL_LIB':
+					case 'DECAL_PARAMS':
+					case 'DECAL_PARAMS_PROJ':
+					case 'DECAL_RGBA':
+					case 'DITHER_ALPHA':
 					case 'IF':
 					case 'ELSE':
 					case 'EMITTER':
@@ -472,6 +482,7 @@ THREE.XPlaneObjLoader = ( function () {
 					case 'LIGHT_SPILL_CUSTOM':
 					case 'LIGHTS':
 					case 'MAGNET':
+					case 'NO_ALPHA':
 					case 'NO_BLEND':
 					case 'NO_SHADOW':
 					case 'POINT_COUNTS':
@@ -482,11 +493,14 @@ THREE.XPlaneObjLoader = ( function () {
 					case 'smoke_black':
 					case 'smoke_white':
 					case 'SPECULAR':
+					case 'TEXTURE_CONTROL':
+					case 'TEXTURE_DETAIL':
 					case 'TEXTURE_LIT':
 					case 'TEXTURE_LIT_NOWRAP':
 					case 'TEXTURE_NORMAL':
 					case 'TEXTURE_NORMAL_NOWRAP':
 					case 'TEXTURE_NOWRAP':
+					case 'TEXTURE_TILE':
 					case 'TILTED':
 					case 'TWO_SIDED':
 					case 'VLIGHT':
@@ -511,8 +525,6 @@ THREE.XPlaneObjLoader = ( function () {
 				var object = state.objects[ i ];
 				var geometry = object.geometry;
 				var material = this.material;
-				var isLine = ( geometry.type === 'Line' );
-				var isPoints = ( geometry.type === 'Points' );
 
 				if ( geometry.vertices.length === 0 ) continue;
 
@@ -544,25 +556,8 @@ THREE.XPlaneObjLoader = ( function () {
 				}
 
 				// Create mesh
-
-				var mesh;
-
-				if ( isLine ) {
-
-					mesh = new THREE.LineSegments( buffergeometry, material );
-
-				} else if ( isPoints ) {
-
-					mesh = new THREE.Points( buffergeometry, material );
-
-				} else {
-
-					mesh = new THREE.Mesh( buffergeometry, material );
-
-				}
-
+				var mesh = new THREE.Mesh( buffergeometry, material );
 				mesh.name = object.name;
-
 				container.add( mesh );
 
 			}
