@@ -24,10 +24,20 @@ class OSXForest extends OSXLibraryItem {
         parent::enqueueScript();
 
         $threejsScript = '<script type="text/javascript">
+            var currentObject = null;
+            var scene = null;
+            var camera = null;
+
             $(document).ready(function(){
-                var scene = new THREE.Scene();
+                $(".season-button").click(function() {
+                    if ($(this).attr("id") == "summer") var fileName = "forest.for";
+                    else var fileName = "forest_" + $(this).attr("id") + ".for";
+                    load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", fileName);
+                });
+
+                scene = new THREE.Scene();
                 var container = $(".threejs-container")
-                var camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
+                camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
                 var renderer = new THREE.WebGLRenderer();
 
                 renderer.setSize(container.width(), container.height());
@@ -37,7 +47,7 @@ class OSXForest extends OSXLibraryItem {
                 var controls = new THREE.OrbitControls(camera, renderer.domElement);
                 controls.autoRotate = true;
 
-                var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+                var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
                 var ambientLight = new THREE.AmbientLight( 0x404040 );
                 var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
                 sunLight.position.set(1000, -1000, 1000);
@@ -46,11 +56,25 @@ class OSXForest extends OSXLibraryItem {
                 scene.add(ambientLight);
                 scene.add(sunLight);
 
-                var forLoader = new THREE.XPlaneForLoader();
-                forLoader.setPath("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/");
+                load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", "' . basename($this->filePath) . '");
 
-                forLoader.load("' . basename($this->filePath) . '", function (object) {
+                var animate = function () {
+                    requestAnimationFrame( animate );
+                    controls.update();
+                    renderer.render(scene, camera);
+                };
+
+                animate();
+            });
+
+            function load3dPreview(urlBase, fileName) {
+                var forLoader = new THREE.XPlaneForLoader();
+                forLoader.setPath(urlBase);
+
+                forLoader.load(fileName, function (object) {
+                    if (currentObject) scene.remove(currentObject);
                     scene.add(object);
+                    currentObject = object;
 
                     // Dynamically determine the bounding box and set the camera distance accordingly
                     var bBox = new THREE.Box3().setFromObject(object);
@@ -71,15 +95,8 @@ class OSXForest extends OSXLibraryItem {
                     camera.position.set(pos.x, pos.y, dist * 1.7);
                     camera.lookAt(pos);
                 });
+            }
 
-                var animate = function () {
-                    requestAnimationFrame( animate );
-                    controls.update();
-                    renderer.render(scene, camera);
-                };
-
-                animate();
-            });
             </script>';
 
         wp_enqueue_script('3xpforloader', plugin_dir_url(__FILE__) . 'three.js/XPlaneForLoader.js', array('three.js', '3ddsloader'), false, true);

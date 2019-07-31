@@ -37,7 +37,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
     protected $screenshots = array();
 
-    protected $seasons = array();
+    protected $seasons = array('summer');
 
     /**
      * @var boolean If true, author email addresses will be output.  This should only be enabled if an email obfuscator plugin is installed
@@ -52,59 +52,16 @@ abstract class OSXLibraryItem extends OSXItem {
         $contents = file_get_contents($this->path . '/info.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
 
-        foreach (glob($this->path . "/*.jpg") as $filename) {
-            $basename = basename($filename);
-            switch ($basename) {
-                case 'screenshot.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Summer (default) Variant');
-                    break;
-                case 'screenshot_spring.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Spring Variant');
-                    break;
-                case 'screenshot_autumn.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Autumn Variant');
-                    break;
-                case 'screenshot_winter.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (both snow and non-snow) Variant');
-                    break;
-                case 'screenshot_winter_no_snow.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (non-snow) Variant');
-                    break;
-                case 'screenshot_winter_snow.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (snow) Variant');
-                    break;
-                case 'screenshot_winter_deep_snow.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (deep snow) Variant');
-                    break;
-                case 'screenshot_winter_terramaxx_deep_snow.jpg':
-                    $this->screenshots[] = array('path' => "/" . $this->url . basename($filename), 'caption' => 'Winter (deep snow TerraMaxx) Variant');
-                    break;
-            }
-        }
-
         // Intercept the yoast opengraph call
         add_action('wpseo_opengraph', array($this, 'openGraph'));
         // Intercept the yoast twitter image call
         add_filter('wpseo_twitter_image', array($this, 'twitterImage'), 10, 1);
 
         $this->parse();
-    }
 
-    function enqueueScript() {
-        // Inject the slick slider code. Can't do this in the getHTML function below because that's too late
-        $slickScript = '<script type="text/javascript">
-            $(document).ready(function(){
-                $(".slick-screenshots").slick({
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    swipeToSlide: true,
-                    dots: true
-                });
-            });
-            </script>';
-
-        wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
-        wp_add_inline_script('slick', $slickScript, 'after');
+        foreach ($this->seasons as $season) {
+            $this->screenshots[] = array('path' => "/" . $this->url . "screenshot" . ($season == 'summer' ? "" : "_" . $season) . ".jpg", 'caption' => $this->getHRSeason($season));
+        }
     }
 
     protected function parse() {
@@ -288,22 +245,6 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $result .= '<div class="threejs-container"></div>' . "\n";
 
-        $ssCount = count($this->screenshots);
-        if ($ssCount == 0) {
-            $result .= "<img class='screenshot' src='/doc/screenshot_missing.png' alt='No Screenshot Available' />\n";
-        } elseif ($ssCount == 1) {
-            $result .= "<img class='screenshot' src='" . $this->screenshots[0]['path'] . "' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
-        } else {
-            // Uses http://kenwheeler.github.io/slick/ to present a carousel of screenshots
-            $result .= '<div class="slick-screenshots">' . "\n";
-
-            foreach ($this->screenshots as $screenshot) {
-                $result .= '<div class="osx-slick-slide"><img class="osx-slick-image-screenshot" src="' . $screenshot['path'] . '"><div class="osx-slick-caption-screenshot">' . $screenshot['caption'] . '</div></div>';
-            }
-
-            $result .= '</div>' . "\n";
-        }
-
         if ($this->logo !== null) {
             $result .= "<div class='objectlogocontainer'>\n";
             $result .= "<img src='/doc/" . $this->logo . "' alt='Object branding logo' />\n";
@@ -378,8 +319,16 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         $seasonCount = count($this->seasons);
-        if ($seasonCount > 0) {
-            $result .= "<li><span class='fieldTitle'>Has seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX.</span></dfn></li>\n";
+        if ($seasonCount > 1) {
+            $result .= "<li><span class='fieldTitle'>Seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX. Click a season to see a 3D preview.</span></dfn>: \n";
+            $result .= "<ul>\n";
+
+            foreach ($this->seasons as $season) {
+                $result .= "<li><a id='" . $season . "' class='season-button' >" . $this->getHRSeason($season) . "</a></li>\n";
+            }
+
+            $result .= "</ul>\n";
+            $result .= "</li>";
         }
 
         if ($this->note !== null) {
@@ -433,6 +382,27 @@ abstract class OSXLibraryItem extends OSXItem {
             return $this->screenshots[0]['path'];
         } else {
             return "/doc/screenshot_missing.png";
+        }
+    }
+
+    private function getHRSeason($season) {
+        switch ($season) {
+            case 'summer':
+                return 'Summer (default) Variant';
+            case 'spring':
+                return 'Spring Variant';
+            case 'autumn':
+                return 'Autumn Variant';
+            case 'winter':
+                return 'Winter (both snow and non-snow) Variant';
+            case 'winter_no_snow':
+                return 'Winter (non-snow) Variant';
+            case 'winter_snow':
+                return 'Winter (snow) Variant';
+            case 'winter_deep_snow':
+                return 'Winter (deep snow) Variant';
+            case 'winter_terramaxx_deep_snow':
+                return 'Winter (deep snow TerraMaxx) Variant';
         }
     }
 
