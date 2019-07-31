@@ -230,7 +230,7 @@ THREE.XPlaneForLoader = ( function () {
 			bBox.getCenter(bBoxCenter);
 
 			var geometry = new THREE.BoxGeometry( bBoxSize.x, 0.01, bBoxSize.z );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00aa00 } );
+			var material = new THREE.MeshBasicMaterial( { color: 0x008000 } );
 			var plane = new THREE.Mesh( geometry, material );
 			plane.translateX(bBoxCenter.x);
 			plane.translateZ(bBoxCenter.z);

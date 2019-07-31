@@ -158,6 +158,8 @@ THREE.XPlaneObjLoader = ( function () {
 		// This is a bit naughty. We should really use THREE.BackSide but some animated segments only contain separate sides of the model in different animated sections,
 		// which we are ignoring for the moment. Should revert this once animations are implemented.
 		this.material.side = THREE.DoubleSide;
+		// Set alphaTest to get a fairly good result for transparent textures. Non trivial problem though, see https://threejsfundamentals.org/threejs/lessons/threejs-transparency.html
+		this.material.alphaTest = 0.5;
 		this.material.transparent = true;
 
 	}
