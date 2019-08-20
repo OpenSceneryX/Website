@@ -32,6 +32,7 @@
     "wpackagist-plugin/theme-my-login": "7.0.14",
     "wpackagist-plugin/w3-total-cache": "0.9.7.5",
     "wpackagist-plugin/wordpress-seo": "11.4",
+    "wpackagist-plugin/wp-google-search": "1.0.8",
     "wpackagist-theme/twentyeleven": "3.3",
 	"psycle-wordpress/wordpress-core-installer": "^1.0",
     "psycle-wordpress-plugins/mail-options": "^1.0"
