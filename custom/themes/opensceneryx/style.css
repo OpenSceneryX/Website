@@ -466,6 +466,11 @@ ol {
 	font-weight: bold;
 }
 
+tt {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 90%;
+}
+
 .tooltip {
 	border-bottom: none;
 	color: green; outline: none;
@@ -502,9 +507,4 @@ ol {
 .tooltip-right:hover span {
 	left: auto;
 	right: 0;
-}
-
-tt {
-	font-family: "Lucida Console", Monaco, monospace;
-	font-size: 90%;
 }
