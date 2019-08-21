@@ -141,8 +141,8 @@ abstract class OSXLibraryItem extends OSXItem {
                 continue;
             }
 
-            if (preg_match('/^Export Extended:\s+(.*)/', $line, $matches) === 1) {
-                $this->extendedVirtualPaths[] = $matches[1];
+            if (preg_match('/^Export Core (.*)\s+(.*):\s+(.*)/', $line, $matches) === 1) {
+                $this->coreVirtualPaths[] = array('method' => $matches[1], 'partial' => $matches[2], 'path' => $matches[3]);
                 continue;
             }
 
@@ -248,11 +248,11 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        if (count($this->extendedVirtualPaths) > 0) {
-            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend the built-in X-Plane® libraries, so are used to enhance the core simulator.</span></dfn><h2>Extended Library Paths</h2>\n";
+        if (count($this->coreVirtualPaths) > 0) {
+            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend or override the built-in X-Plane® libraries, so are used to enhance the core simulator.</span></dfn><h2>Core X-Plane® Library Paths</h2>\n";
 
-            foreach ($this->extendedVirtualPaths as $extendedVirtualPath) {
-                $result .= $extendedVirtualPath . "<br />\n";
+            foreach ($this->coreVirtualPaths as $coreVirtualPath) {
+                $result .= "<strong>To " . $coreVirtualPath['partial'] . " (" . ($coreVirtualPath['method'] == 'Export' ? "overridden" : "extended") . ")</strong>: " . $coreVirtualPath['path'] . "<br />\n";
             }
 
             $result .= "</div>\n";
