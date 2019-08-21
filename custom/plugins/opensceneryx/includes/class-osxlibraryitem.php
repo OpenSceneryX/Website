@@ -249,7 +249,7 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         if (count($this->coreVirtualPaths) > 0) {
-            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend or override the built-in X-Plane® libraries, so are used to enhance the core simulator. This feature is optional and each type of override can be enabled and disabled during installation.</span></dfn><h2>Core X-Plane® Library Paths</h2>\n";
+            $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend or override the built-in X-Plane® libraries, so are used to enhance the core simulator.<br />Those items marked as <em>'extended'</em> are mixed in with the existing X-Plane® items, while those marked as <em>'overridden'</em> completely replace them.</span></dfn><h2>Core X-Plane® Library Paths</h2>\n";
 
             foreach ($this->coreVirtualPaths as $coreVirtualPath) {
                 $result .= "<strong>To " . $coreVirtualPath['partial'] . " (" . ($coreVirtualPath['method'] == 'Export' ? "overridden" : "extended") . ")</strong>: " . $coreVirtualPath['path'] . "<br />\n";
