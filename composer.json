@@ -12,11 +12,11 @@
 				"johnpbloch/wordpress": "*"
 			},
             "type": "wordpress-core",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.2.1"
+                "reference": "5.2.2"
             }
         }
     }
