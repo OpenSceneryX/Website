@@ -310,7 +310,7 @@ class OpenSceneryX {
     function osxJSONLDSeachUrl() {
         // Supply our Google CSE Search URL so that the main Google search engine can use this for its Sitelinks searchbox if it cares to
         // Without this override, the default behaviour is to use the built-in Wordpress search which only searches posts and pages.
-        return 'https://cse.google.co.uk/cse?cx=partner-pub-5631233433203577:vypgar-6zdh&ie=UTF-8&q={search_term_string}&sa=Search';
+        return home_url() . '/search_gcse/?={search_term_string}';
     }
 
     function osxParseFolder($path, $url, $itemType)
