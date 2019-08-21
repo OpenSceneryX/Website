@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ee8d60d92bd7502d21815c89d68409b",
+    "content-hash": "784748f060556691dd2ad47460efd46f",
     "packages": [
         {
             "name": "composer/installers",
@@ -216,15 +216,15 @@
         },
         {
             "name": "wpackagist-plugin/addthis",
-            "version": "6.2.3",
+            "version": "6.2.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/addthis/",
-                "reference": "tags/6.2.3"
+                "reference": "tags/6.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis.6.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/addthis.6.2.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -288,15 +288,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "5.3.8",
+            "version": "5.3.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/5.3.8"
+                "reference": "tags/5.3.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -306,15 +306,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "4.3.1",
+            "version": "4.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/4.3.1"
+                "reference": "tags/4.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.4.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.4.3.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -360,15 +360,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.4",
+            "version": "11.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.4"
+                "reference": "tags/11.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
