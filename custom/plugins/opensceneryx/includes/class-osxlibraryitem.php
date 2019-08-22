@@ -203,7 +203,7 @@ abstract class OSXLibraryItem extends OSXItem {
     public function getHTML() {
         $result = '';
 
-        if (count($this->virtualPaths) > 0) {
+        if (is_array($this->virtualPaths) && count($this->virtualPaths) > 0) {
             $result .= "<div class='virtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>Scenery developers, use these paths to insert this item into your sceneries. You will see them inside <a href='https://developer.x-plane.com/tools/worldeditor/' target='_blank'>WED</a> and <a href='https://marginal.org.uk/x-planescenery/tools.html' target='_blank'>OverlayEditor</a>.</span></dfn><h2>Paths</h2>\n";
 
             foreach ($this->virtualPaths as $virtualPath) {
@@ -213,7 +213,7 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        if (count($this->coreVirtualPaths) > 0) {
+        if (is_array($this->coreVirtualPaths) && count($this->coreVirtualPaths) > 0) {
             $result .= "<div class='extendedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths extend or override the built-in X-Plane® libraries, so are used to enhance the core simulator.<br />Those items marked as <em>'extended'</em> are mixed in with the existing X-Plane® items, while those marked as <em>'overridden'</em> completely replace them.</span></dfn><h2>Core X-Plane® Library Paths</h2>\n";
 
             foreach ($this->coreVirtualPaths as $coreVirtualPath) {
@@ -223,7 +223,7 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        if (count($this->deprecatedVirtualPaths) > 0) {
+        if (is_array($this->deprecatedVirtualPaths) && count($this->deprecatedVirtualPaths) > 0) {
             $result .= "<div class='deprecatedVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths were published in earlier versions of OpenSceneryX but should no longer be used. They are supported for backward-compatibility.</span></dfn><h2>Deprecated Paths</h2>\n";
 
             foreach ($this->deprecatedVirtualPaths as $deprecatedVirtualPath) {
@@ -233,7 +233,7 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        if (count($this->externalVirtualPaths) > 0) {
+        if (is_array($this->externalVirtualPaths) && count($this->externalVirtualPaths) > 0) {
             $result .= "<div class='externalVirtualPath'><dfn class='tooltip tooltip-right'>ⓘ<span>These paths are used where a 3rd party library has been merged into OpenSceneryX. They allow you to replace the 3rd party library with OpenSceneryX, but still allow older scenery packages to work. Scenery developers, you should use the OpenSceneryX paths instead, and if you are updating an old package then if possible please replace these paths with the new OpenSceneryX equivalents. </span></dfn><h2>3rd Party Library Paths</h2>\n";
 
             foreach ($this->externalVirtualPaths as $externalVirtualPath) {
