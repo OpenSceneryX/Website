@@ -127,22 +127,22 @@ abstract class OSXLibraryItem extends OSXItem {
             }
 
             if (preg_match('/^Export:\s+(.*)/', $line, $matches) === 1) {
-                $this->virtualPaths[] = $matches[1];
+                $this->virtualPaths[] = $this->addTypeExtension($matches[1]);
                 continue;
             }
 
             if (preg_match('/^Export Deprecated v(.*):\s+(.*)/', $line, $matches) === 1) {
-                $this->deprecatedVirtualPaths[] = array('version' => $matches[1], 'path' => $matches[2]);
+                $this->deprecatedVirtualPaths[] = array('version' => $matches[1], 'path' => $this->addTypeExtension($matches[2]));
                 continue;
             }
 
             if (preg_match('/^Export External (.*):\s+(.*)/', $line, $matches) === 1) {
-                $this->externalVirtualPaths[] = array('library' => $matches[1], 'path' => $matches[2]);
+                $this->externalVirtualPaths[] = array('library' => $matches[1], 'path' => $this->addTypeExtension($matches[2]));
                 continue;
             }
 
             if (preg_match('/^Export Core (.*)\s+(.*):\s+(.*)/', $line, $matches) === 1) {
-                $this->coreVirtualPaths[] = array('method' => $matches[1], 'partial' => $matches[2], 'path' => $matches[3]);
+                $this->coreVirtualPaths[] = array('method' => $matches[1], 'partial' => $matches[2], 'path' => $this->addTypeExtension($matches[3]));
                 continue;
             }
 
@@ -425,5 +425,22 @@ abstract class OSXLibraryItem extends OSXItem {
         }
     }
 
+    /**
+     * Add the type file extension to a path if it doesn't already end with it
+     */
+    protected function addTypeExtension($path) {
+        $extension = $this->getTypeExtension();
+        if (substr_compare($path, $extension, -strlen($extension)) === 0) return $path;
+        else return $path . $extension;
+    }
+
+    /**
+     * Classes must override to provide class-specific description HTML
+     */
     protected abstract function getTypeSpecificHTML();
+
+    /**
+     * Classes must override to provide the file extension for the type
+     */
+    protected abstract function getTypeExtension();
 }

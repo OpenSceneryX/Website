@@ -176,4 +176,8 @@ class OSXFacade extends OSXLibraryItem {
 
         return $result;
     }
+
+    protected function getTypeExtension() {
+        return ".fac";
+    }
 }

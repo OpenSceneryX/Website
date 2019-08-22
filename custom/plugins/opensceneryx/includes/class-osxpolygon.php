@@ -74,4 +74,8 @@ class OSXPolygon extends OSXLibraryItem {
 
         return $result;
     }
+
+    protected function getTypeExtension() {
+        return ".pol";
+    }
 }
