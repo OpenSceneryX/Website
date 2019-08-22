@@ -245,4 +245,8 @@ class OSXObject extends OSXLibraryItem {
 
         return $result;
     }
+
+    protected function getTypeExtension() {
+        return ".obj";
+    }
 }

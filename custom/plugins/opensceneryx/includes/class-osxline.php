@@ -110,4 +110,8 @@ class OSXLine extends OSXLibraryItem {
 
         return $result;
     }
+
+    protected function getTypeExtension() {
+        return ".lin";
+    }
 }
