@@ -101,4 +101,8 @@ class OSXForest extends OSXLibraryItem {
 
         return $result;
     }
+
+    protected function getTypeExtension() {
+        return ".for";
+    }
 }
