@@ -56,9 +56,9 @@
 				</div>
 				<div style='margin: 5px; padding: 1px; text-align: left;'>The OpenSceneryX library is licensed under a <a rel='license' href='https://creativecommons.org/licenses/by-nc-nd/3.0/' onclick='window.open(this.href);return false;'>Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License</a>. 'The Work' is defined as the library as a whole and by using the library you signify agreement to these terms. <strong>You must obtain the permission of the author(s) if you wish to distribute individual files from this library for any purpose</strong>, as this constitutes a derivative work, which is forbidden under the licence.</div>
 				<div style='margin-top: 4em; margin-left: 1em'>
-					<a rel='external' class='nounderline' href='https://twitter.com/opensceneryx' onclick='window.open(this.href);return false;'><img alt='Follow OpenSceneryX on Twitter' class='icon' src='/extras/twitter_follow.png' height='30' style='margin-right:1em;'/></a>
-					<a rel='external' class='nounderline' href='https://www.youtube.com/channel/UC_RpLfiDitXXLkd101LL2CA' onclick='window.open(this.href);return false;'><img alt="OpenSceneryX on YouTube" class='icon' src="/extras/yt_logo.png" height='30' style='margin-right:1em;'></a>
-					<a rel='external' class='nounderline' href='https://www.facebook.com/OpenSceneryX/' onclick='window.open(this.href);return false;'><img alt='Follow OpenSceneryX on Facebook' class='icon' src='/extras/facebook_follow.svg' height='30' style='margin-right:1em;'/></a>
+					<a rel='external' class='nounderline' href='https://twitter.com/opensceneryx' onclick='window.open(this.href);return false;'><img alt='Follow OpenSceneryX on Twitter' class='icon' src='/extras/twitter_follow.png' height='30' style='margin-right:1em;margin-bottom:1em;'/></a>
+					<a rel='external' class='nounderline' href='https://www.youtube.com/channel/UC_RpLfiDitXXLkd101LL2CA' onclick='window.open(this.href);return false;'><img alt="OpenSceneryX on YouTube" class='icon' src="/extras/yt_logo.png" height='30' style='margin-right:1em;margin-bottom:1em;'></a>
+					<a rel='external' class='nounderline' href='https://www.facebook.com/OpenSceneryX/' onclick='window.open(this.href);return false;'><img alt='Follow OpenSceneryX on Facebook' class='icon' src='/extras/facebook_follow.svg' height='30' style='margin-right:1em;margin-bottom:1em;'/></a>
 				</div>
 				<div style='clear:both;'>&nbsp;</div>
 			</div>
