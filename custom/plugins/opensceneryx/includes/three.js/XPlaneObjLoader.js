@@ -407,6 +407,7 @@ THREE.XPlaneObjLoader = ( function () {
 					case 'ATTR_cockpit_region':
 					case 'ATTR_cull':
 					case 'ATTR_depth':
+					case 'ATTR_diffuse_rgb':
 					case 'ATTR_draped':
 					case 'ATTR_draw_disable':
 					case 'ATTR_draw_enable':
