@@ -243,7 +243,26 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        $result .= '<div class="threejs-container"></div>' . "\n";
+        // Dirty hack to reinstate flat screenshots for Facades, until we have got 3D previews working
+        if (get_class($this) == "OSXFacade") {
+            $ssCount = count($this->screenshots);
+            if ($ssCount == 0) {
+                $result .= "<img class='screenshot' src='/doc/screenshot_missing.png' alt='No Screenshot Available' />\n";
+            } elseif ($ssCount == 1) {
+                $result .= "<img class='screenshot' src='" . $this->screenshots[0]['path'] . "' alt='Screenshot of " . \str_replace("'", "&apos;", $this->title) . "' />\n";
+            } else {
+                // Uses http://kenwheeler.github.io/slick/ to present a carousel of screenshots
+                $result .= '<div class="slick-screenshots">' . "\n";
+
+                foreach ($this->screenshots as $screenshot) {
+                    $result .= '<div class="osx-slick-slide"><img class="osx-slick-image-screenshot" src="' . $screenshot['path'] . '"><div class="osx-slick-caption-screenshot">' . $screenshot['caption'] . '</div></div>';
+                }
+
+                $result .= '</div>' . "\n";
+            }
+        } else {
+            $result .= '<div class="threejs-container"></div>' . "\n";
+        }
 
         if ($this->logo !== null) {
             $result .= "<div class='objectlogocontainer'>\n";
