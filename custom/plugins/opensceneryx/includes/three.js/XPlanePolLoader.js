@@ -162,6 +162,7 @@ THREE.XPlanePolLoader = ( function () {
 					case 'TEXTURE_DETAIL':
 					case 'TEXTURE_LIT':
 					case 'TEXTURE_LIT_NOWRAP':
+					case 'TEXTURE_NORMAL':
 					case 'TWO_SIDED':
 						// Lines we are ignoring right now (some may be implemented later)
 						break;
