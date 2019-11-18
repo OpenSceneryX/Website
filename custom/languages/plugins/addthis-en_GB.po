@@ -1,29 +1,33 @@
-# Translation of Plugins - Share Buttons by AddThis - Stable (latest release) in English (UK)
-# This file is distributed under the same license as the Plugins - Share Buttons by AddThis - Stable (latest release) package.
+# Translation of Plugins - WordPress Share Buttons Plugin – AddThis - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - WordPress Share Buttons Plugin – AddThis - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-08-07 20:32:11+0000\n"
+"PO-Revision-Date: 2019-11-02 17:13:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: en_GB\n"
-"Project-Id-Version: Plugins - Share Buttons by AddThis - Stable (latest release)\n"
+"Project-Id-Version: Plugins - WordPress Share Buttons Plugin – AddThis - Stable (latest release)\n"
 
-#. Author URI of the plugin/theme
+#. Description of the plugin
+msgid "Set up sharing tools from AddThis right in WordPress. With AddThis you can see how your users are engaging with your content, provide a personalized experience for each user and encourage them to share your content in their social networks. Follow tools, recommended content, conversion tools and social analytics available to registered accounts at addthis.com."
+msgstr "Set up sharing tools from AddThis right in WordPress. With AddThis you can see how your users are engaging with your content, provide a personalised experience for each user and encourage them to share your content in their social networks. Follow tools, recommended content, conversion tools and social analytics available to registered accounts at addthis.com."
+
+#. Author URI of the plugin
 msgid "http://www.addthis.com"
 msgstr "http://www.addthis.com"
 
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "The AddThis Team"
 msgstr "The AddThis Team"
 
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
 msgid "https://wordpress.org/plugins/addthis/"
 msgstr "https://en-gb.wordpress.org/plugins/addthis/"
 
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 msgid "Share Buttons by AddThis"
 msgstr "Share Buttons by AddThis"
 
@@ -36,15 +40,15 @@ msgstr "Tool: "
 msgid "Title: "
 msgstr "Title: "
 
-#: backend/AddThisGlobalOptionsFeature.php:946
+#: backend/AddThisGlobalOptionsFeature.php:976
 msgid "Terms of Service"
 msgstr "Terms of Service"
 
-#: backend/AddThisGlobalOptionsFeature.php:941
+#: backend/AddThisGlobalOptionsFeature.php:971
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: backend/AddThisGlobalOptionsFeature.php:901
 #: backend/AddThisWidgetByDomClass.php:491
+#: backend/AddThisGlobalOptionsFeature.php:931
 msgid "the plugin's settings"
 msgstr "the plugin's settings"
