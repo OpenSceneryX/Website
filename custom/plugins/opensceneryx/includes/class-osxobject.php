@@ -28,6 +28,88 @@ class OSXObject extends OSXLibraryItem {
         parent::__construct($path, $url);
     }
 
+    function enqueueScript() {
+        parent::enqueueScript();
+
+        $threejsScript = '<script type="text/javascript">
+            var currentObject = null;
+            var scene = null;
+            var camera = null;
+
+            $(document).ready(function(){
+                $(".season-button").click(function() {
+                    if ($(this).attr("id") == "summer") var fileName = "object.obj";
+                    else var fileName = "object_" + $(this).attr("id") + ".obj";
+                    load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", fileName);
+                });
+
+                scene = new THREE.Scene();
+                var container = $(".threejs-container")
+                camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
+                var renderer = new THREE.WebGLRenderer();
+
+                renderer.setSize(container.width(), container.height());
+                container.append( renderer.domElement );
+                scene.background = new THREE.Color(0xffffff);
+
+                var controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.autoRotate = true;
+
+                var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
+                var ambientLight = new THREE.AmbientLight( 0x404040 );
+                var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
+                sunLight.position.set(1000, -1000, 1000);
+
+                scene.add(skyLight);
+                scene.add(ambientLight);
+                scene.add(sunLight);
+
+                load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", "' . basename($this->filePath) . '");
+
+                var animate = function () {
+                    requestAnimationFrame( animate );
+                    controls.update();
+                    renderer.render(scene, camera);
+                };
+
+                animate();
+            });
+
+            function load3dPreview(urlBase, fileName) {
+                var objLoader = new THREE.XPlaneObjLoader();
+                objLoader.setPath(urlBase);
+
+                objLoader.load(fileName, function (object) {
+                    if (currentObject) scene.remove(currentObject);
+                    scene.add(object);
+                    currentObject = object;
+
+                    // Dynamically determine the bounding box and set the camera distance accordingly
+                    var bBox = new THREE.Box3().setFromObject(object);
+                    var bBoxSize = new THREE.Vector3();
+                    var bBoxCenter = new THREE.Vector3();
+
+                    bBox.getSize(bBoxSize);
+                    bBox.getCenter(bBoxCenter);
+
+                    // Center object in scene.
+                    object.translateX(-bBoxCenter.x);
+                    object.translateY(-bBoxCenter.y);
+                    object.translateZ(-bBoxCenter.z);
+
+                    // Calculate the camera distance based on the maximum dimensions of the model
+                    var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
+                    var pos = scene.position;
+                    camera.position.set(pos.x, pos.y, dist * 1.7);
+                    camera.lookAt(pos);
+                });
+            }
+            </script>';
+
+        wp_enqueue_script('3xpobjloader', plugin_dir_url(__FILE__) . 'three.js/XPlaneObjLoader.js', array('three.js', '3ddsloader'), false, true);
+        wp_add_inline_script('3xpobjloader', $threejsScript, 'after');
+    }
+
     protected function parse() {
         parent::parse();
 
