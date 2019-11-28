@@ -198,37 +198,43 @@ THREE.XPlaneForLoader = ( function () {
 			var species = [];
 			var varieties = trees.length;
 			var plantedTrees = [];
-			for ( var i = 0; i < treesPerRow * treesPerRow; i++) species.push(0);
-
-			for ( var i = varieties - 1; i > 0; i-- ) {
-				for ( var j = 0; j < Math.round( trees[i][5] / 100.0 * treesPerRow * treesPerRow ); j++ ) {
-					var cnt = 10;     // needed in case the tree percentages add up to more than 100%
-					do {
-						var where = Math.round( treesPerRow * treesPerRow * Math.random() );
-						if ( !species[where] ) {
-							species[where] = i;
-							break;
-						}
-					} while (cnt--);
-				}
-			}
-			for ( var i = 0; i < treesPerRow * treesPerRow; i++)
-				plantedTrees.push( trees[species[i]] );
-
 			var container = new THREE.Group();
 
-			// Create trees, dimensions proportional to loaded texture
-			for ( var i = 0; i < plantedTrees.length; i++ ) {
-					this.addTree( container, plantedTrees[i], i, spacingX, spacingZ, randomX, randomZ, scaleX, scaleY );
+			// A valid forest file can contain no trees at all (omitting plants in winter, for example)
+			if (trees.length > 0) {
+				for ( var i = 0; i < treesPerRow * treesPerRow; i++) species.push(0);
+
+				for ( var i = varieties - 1; i > 0; i-- ) {
+					for ( var j = 0; j < Math.round( trees[i][5] / 100.0 * treesPerRow * treesPerRow ); j++ ) {
+						var cnt = 10;     // needed in case the tree percentages add up to more than 100%
+						do {
+							var where = Math.round( treesPerRow * treesPerRow * Math.random() );
+							if ( !species[where] ) {
+								species[where] = i;
+								break;
+							}
+						} while (cnt--);
+					}
+				}
+				for ( var i = 0; i < treesPerRow * treesPerRow; i++)
+					plantedTrees.push( trees[species[i]] );
+
+				// Create trees, dimensions proportional to loaded texture
+				for ( var i = 0; i < plantedTrees.length; i++ ) {
+						this.addTree( container, plantedTrees[i], i, spacingX, spacingZ, randomX, randomZ, scaleX, scaleY );
+				}
+
+				var bBox = new THREE.Box3().setFromObject(container);
+			} else {
+				var bBox = new THREE.Box3(new THREE.Vector3(0, 0, 0), new THREE.Vector3(1, 1, 1));
 			}
 
-			// Create underlying surface to provide contrast for our trees
-			var bBox = new THREE.Box3().setFromObject(container);
 			var bBoxSize = new THREE.Vector3();
 			var bBoxCenter = new THREE.Vector3();
 			bBox.getSize(bBoxSize);
 			bBox.getCenter(bBoxCenter);
 
+			// Create underlying surface to provide contrast for our trees
 			var geometry = new THREE.BoxGeometry( bBoxSize.x, 0.01, bBoxSize.z );
 			var material = new THREE.MeshBasicMaterial( { color: 0x008000 } );
 			var plane = new THREE.Mesh( geometry, material );
