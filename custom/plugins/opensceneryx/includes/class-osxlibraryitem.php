@@ -412,16 +412,20 @@ abstract class OSXLibraryItem extends OSXItem {
                 return 'Spring Variant';
             case 'autumn':
                 return 'Autumn Variant';
+            case 'autumn_sam':
+                return 'Autumn Variant, specific to SAM';
             case 'winter':
-                return 'Winter (both snow and non-snow) Variant';
+                return 'Winter (fallback for both snow and non-snow) Variant';
             case 'winter_no_snow':
                 return 'Winter (non-snow) Variant';
             case 'winter_snow':
                 return 'Winter (snow) Variant';
+            case 'winter_sam_snow':
+                return 'Winter (snow) Variant, specific to SAM';
             case 'winter_deep_snow':
                 return 'Winter (deep snow) Variant';
             case 'winter_terramaxx_deep_snow':
-                return 'Winter (deep snow TerraMaxx) Variant';
+                return 'Winter (deep snow) Variant, specific to TerraMaxx';
         }
     }
 
