@@ -4,7 +4,8 @@
  * Description of OSXDecal
  */
 class OSXDecal extends OSXLibraryItem {
-
+    const FILENAME_ROOT = "decal";
+    const FILENAME_EXT= "dcl";
 
     function __construct($path, $url) {
         parent::__construct($path, $url);
@@ -40,6 +41,6 @@ class OSXDecal extends OSXLibraryItem {
     }
 
     protected function getTypeExtension() {
-        return ".dcl";
+        return "." . self::FILENAME_EXT;
     }
 }

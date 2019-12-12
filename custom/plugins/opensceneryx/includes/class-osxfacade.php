@@ -1,9 +1,11 @@
 <?php
 
 /**
- * Description of OSXObject
+ * Description of OSXFacade
  */
 class OSXFacade extends OSXLibraryItem {
+    const FILENAME_ROOT = "facade";
+    const FILENAME_EXT= "fac";
 
     protected $type = null;
 
@@ -178,6 +180,6 @@ class OSXFacade extends OSXLibraryItem {
     }
 
     protected function getTypeExtension() {
-        return ".fac";
+        return "." . self::FILENAME_EXT;
     }
 }
