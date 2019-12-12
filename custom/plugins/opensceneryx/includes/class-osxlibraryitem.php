@@ -243,8 +243,8 @@ abstract class OSXLibraryItem extends OSXItem {
             $result .= "</div>\n";
         }
 
-        // Dirty hack to reinstate flat screenshots for Facades, until we have got 3D previews working
-        if (get_class($this) == "OSXFacade") {
+        // Flat screenshots for Decals (and Facades, until we have got 3D previews working)
+        if (get_class($this) == "OSXFacade" || get_class($this) == "OSXDecal") {
             $ssCount = count($this->screenshots);
             if ($ssCount == 0) {
                 $result .= "<img class='screenshot' src='/doc/screenshot_missing.png' alt='No Screenshot Available' />\n";

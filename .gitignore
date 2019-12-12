@@ -17,6 +17,7 @@ custom/wp-cache-config.php
 local-config.php
 doc/*
 extras/*
+decals
 facades
 forests
 lines

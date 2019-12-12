@@ -75,6 +75,7 @@ class OpenSceneryX {
         }
 
         switch ($urlVars[1]) {
+            case 'decals':
             case 'facades':
             case 'forests':
             case 'lines':
@@ -320,6 +321,8 @@ class OpenSceneryX {
             return new OSXCategory($path, $url);
         } elseif (is_file($path . '/info.txt')) {
             switch ($itemType) {
+                case 'decals':
+                    return new OSXDecal($path, $url);
                 case 'facades':
                     return new OSXFacade($path, $url);
                 case 'forests':
