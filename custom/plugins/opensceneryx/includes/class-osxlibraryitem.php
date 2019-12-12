@@ -60,7 +60,12 @@ abstract class OSXLibraryItem extends OSXItem {
         $this->parse();
 
         foreach ($this->seasons as $season) {
-            $this->screenshots[] = array('path' => "/" . $this->url . "screenshot" . ($season == 'summer' ? "" : "_" . $season) . ".jpg", 'caption' => $this->getHRSeason($season));
+            $ssFilename = "screenshot" . ($season == 'summer' ? "" : "_" . $season) . ".jpg";
+            if (file_exists($this->path . "/" . $ssFilename)) {
+                $this->screenshots[] = array('path' => "/" . $this->url . $ssFilename, 'caption' => $this->getHRSeason($season));
+            } else {
+                $this->screenshots[] = array('path' => "/doc/screenshot_missing.png", 'caption' => $this->getHRSeason($season));
+            }
         }
     }
 
