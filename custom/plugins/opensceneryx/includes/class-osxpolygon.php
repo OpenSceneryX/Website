@@ -1,9 +1,11 @@
 <?php
 
 /**
- * Description of OSXObject
+ * Description of OSXPolygon
  */
 class OSXPolygon extends OSXLibraryItem {
+    const FILENAME_ROOT = "polygon";
+    const FILENAME_EXT= "pol";
 
     protected $textureScaleH = null;
     protected $texturescaleV = null;
@@ -20,10 +22,20 @@ class OSXPolygon extends OSXLibraryItem {
         parent::enqueueScript();
 
         $threejsScript = '<script type="text/javascript">
+            var currentObject = null;
+            var scene = null;
+            var camera = null;
+
             $(document).ready(function(){
-                var scene = new THREE.Scene();
+                $(".season-button").click(function() {
+                    if ($(this).attr("id") == "summer") var fileName = "' . self::FILENAME_ROOT . '.' . self::FILENAME_EXT . '";
+                    else var fileName = "' . self::FILENAME_ROOT . '_" + $(this).attr("id") + ".' . self::FILENAME_EXT . '";
+                    load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", fileName);
+                });
+
+                scene = new THREE.Scene();
                 var container = $(".threejs-container")
-                var camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
+                camera = new THREE.PerspectiveCamera( 75, container.width() / container.height(), 0.1, 1000 );
                 var renderer = new THREE.WebGLRenderer();
 
                 renderer.setSize(container.width(), container.height());
@@ -42,13 +54,7 @@ class OSXPolygon extends OSXLibraryItem {
                 scene.add(ambientLight);
                 scene.add(sunLight);
 
-                var polLoader = new THREE.XPlanePolLoader();
-                polLoader.setPath("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/");
-
-                polLoader.load("' . basename($this->filePath) . '", function (object) {
-                    scene.add(object);
-                    camera.position.set(0, 1, 1.7);
-                });
+                load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", "' . basename($this->filePath) . '");
 
                 var animate = function () {
                     requestAnimationFrame( animate );
@@ -58,6 +64,16 @@ class OSXPolygon extends OSXLibraryItem {
 
                 animate();
             });
+
+            function load3dPreview(urlBase, fileName) {
+                var polLoader = new THREE.XPlanePolLoader();
+                polLoader.setPath(urlBase);
+
+                polLoader.load(fileName, function (object) {
+                    scene.add(object);
+                    camera.position.set(0, 1, 1.7);
+                });
+            }
             </script>';
 
         wp_enqueue_script('3xppolloader', plugin_dir_url(__FILE__) . 'three.js/XPlanePolLoader.js', array('three.js', '3ddsloader'), false, true);
@@ -124,6 +140,6 @@ class OSXPolygon extends OSXLibraryItem {
     }
 
     protected function getTypeExtension() {
-        return ".pol";
+        return "." . self::FILENAME_EXT;
     }
 }

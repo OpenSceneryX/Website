@@ -75,6 +75,7 @@ class OpenSceneryX {
         }
 
         switch ($urlVars[1]) {
+            case 'decals':
             case 'facades':
             case 'forests':
             case 'lines':
@@ -129,9 +130,9 @@ class OpenSceneryX {
         wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
         wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
         // Required by three.js 3d renderer
-        wp_enqueue_script('three.js', '//cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js', array(), false, true);
-        wp_enqueue_script('3ddsloader', plugin_dir_url(__FILE__) . 'three.js/DDSLoader.js', array('three.js'), false, true);
-        wp_enqueue_script('3orbitcontrols', plugin_dir_url(__FILE__) . 'three.js/OrbitControls.js', array('three.js'), false, true);
+        wp_enqueue_script('three.js', '//unpkg.com/three@0.111.0/build/three.min.js', array(), false, true);
+        wp_enqueue_script('3ddsloader', '//unpkg.com/three@0.111.0/examples/js/loaders/DDSLoader.js', array('three.js'), false, true);
+        wp_enqueue_script('3orbitcontrols', '//unpkg.com/three@0.111.0/examples/js/controls/OrbitControls.js', array('three.js'), false, true);
         // Scripts for specific item types should be included in the class enqueueScript() method
     }
 
@@ -320,6 +321,8 @@ class OpenSceneryX {
             return new OSXCategory($path, $url);
         } elseif (is_file($path . '/info.txt')) {
             switch ($itemType) {
+                case 'decals':
+                    return new OSXDecal($path, $url);
                 case 'facades':
                     return new OSXFacade($path, $url);
                 case 'forests':

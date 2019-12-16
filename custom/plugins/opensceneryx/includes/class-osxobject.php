@@ -4,6 +4,8 @@
  * Description of OSXObject
  */
 class OSXObject extends OSXLibraryItem {
+    const FILENAME_ROOT = "object";
+    const FILENAME_EXT= "obj";
 
     protected $width = null;
     protected $height = null;
@@ -38,8 +40,8 @@ class OSXObject extends OSXLibraryItem {
 
             $(document).ready(function(){
                 $(".season-button").click(function() {
-                    if ($(this).attr("id") == "summer") var fileName = "object.obj";
-                    else var fileName = "object_" + $(this).attr("id") + ".obj";
+                    if ($(this).attr("id") == "summer") var fileName = "' . self::FILENAME_ROOT . '.' . self::FILENAME_EXT . '";
+                    else var fileName = "' . self::FILENAME_ROOT . '_" + $(this).attr("id") + ".' . self::FILENAME_EXT . '";
                     load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", fileName);
                 });
 
@@ -247,6 +249,6 @@ class OSXObject extends OSXLibraryItem {
     }
 
     protected function getTypeExtension() {
-        return ".obj";
+        return "." . self::FILENAME_EXT;
     }
 }

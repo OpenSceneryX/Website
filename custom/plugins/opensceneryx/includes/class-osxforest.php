@@ -1,9 +1,11 @@
 <?php
 
 /**
- * Description of OSXObject
+ * Description of OSXForest
  */
 class OSXForest extends OSXLibraryItem {
+    const FILENAME_ROOT = "forest";
+    const FILENAME_EXT= "for";
 
     protected $spacingX = null;
     protected $spacingZ = null;
@@ -30,8 +32,8 @@ class OSXForest extends OSXLibraryItem {
 
             $(document).ready(function(){
                 $(".season-button").click(function() {
-                    if ($(this).attr("id") == "summer") var fileName = "forest.for";
-                    else var fileName = "forest_" + $(this).attr("id") + ".for";
+                    if ($(this).attr("id") == "summer") var fileName = "' . self::FILENAME_ROOT . '.' . self::FILENAME_EXT . '";
+                    else var fileName = "' . self::FILENAME_ROOT . '_" + $(this).attr("id") + ".' . self::FILENAME_EXT . '";
                     load3dPreview("' . DOWNLOADS_DOMAIN . '/library/' . dirname($this->filePath) . '/", fileName);
                 });
 
@@ -186,6 +188,6 @@ class OSXForest extends OSXLibraryItem {
     }
 
     protected function getTypeExtension() {
-        return ".for";
+        return "." . self::FILENAME_EXT;
     }
 }
