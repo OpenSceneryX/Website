@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1258dccf2f52cd1fc2a3d23aaab61b45",
+    "content-hash": "3ca0a6dfc7d7f4879a52226ea5cd226b",
     "packages": [
         {
             "name": "composer/installers",
@@ -303,6 +303,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/gtranslate",
+            "version": "2.8.50",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/gtranslate/",
+                "reference": "tags/2.8.50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gtranslate.2.8.50.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/gtranslate/"
         },
         {
             "name": "wpackagist-plugin/redirection",
