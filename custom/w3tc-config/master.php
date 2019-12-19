@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.10.2",
+    "version": "0.11.0",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -20,6 +20,7 @@
     ],
     "dbcache.memcached.username": "",
     "dbcache.memcached.password": "",
+    "dbcache.memcached.binary_protocol": true,
     "dbcache.redis.persistent": true,
     "dbcache.redis.servers": [
         "127.0.0.1:6379"
@@ -56,6 +57,33 @@
         "\\bfound_rows\\(\\)",
         "\\bw3tc_request_data\\b"
     ],
+    "lazyload.enabled": false,
+    "lazyload.process_img": true,
+    "lazyload.process_background": true,
+    "lazyload.exclude": [
+        "avia-bg-style-fixed",
+        "data-bgposition=",
+        "data-envira-src=",
+        "data-large_image=",
+        "data-lazy-original=",
+        "data-lazy-src=",
+        "data-lazyload=",
+        "data-lazysrc=",
+        "data-no-lazy=",
+        "data-src=",
+        "data-srcset=",
+        "fullurl=",
+        "lazy-slider-img=",
+        "loading=\"eager\"",
+        "no-lazy",
+        "rev-slidebg",
+        "soliloquy-image",
+        "swatch-img",
+        "w3-total-cache",
+        "woocommerce\/assets\/images\/placeholder.png",
+        "wpcf7_captcha"
+    ],
+    "lazyload.embed_method": "async_head",
     "objectcache.configuration_overloaded": false,
     "objectcache.enabled": false,
     "objectcache.debug": false,
@@ -71,6 +99,7 @@
     "objectcache.memcached.aws_autodiscovery": false,
     "objectcache.memcached.username": "",
     "objectcache.memcached.password": "",
+    "objectcache.memcached.binary_protocol": true,
     "objectcache.redis.persistent": true,
     "objectcache.redis.servers": [
         "127.0.0.1:6379"
@@ -113,6 +142,7 @@
     "pgcache.memcached.aws_autodiscovery": false,
     "pgcache.memcached.username": "",
     "pgcache.memcached.password": "",
+    "pgcache.memcached.binary_protocol": true,
     "pgcache.redis.persistent": true,
     "pgcache.redis.servers": [
         "127.0.0.1:6379"
@@ -240,6 +270,7 @@
     "minify.memcached.aws_autodiscovery": false,
     "minify.memcached.username": "",
     "minify.memcached.password": "",
+    "minify.memcached.binary_protocol": true,
     "minify.redis.persistent": true,
     "minify.redis.servers": [
         "127.0.0.1:6379"
