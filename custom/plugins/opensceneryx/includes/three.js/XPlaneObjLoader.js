@@ -205,7 +205,7 @@ THREE.XPlaneObjLoader = ( function () {
 			var pngPath = splitPath.concat(['png']).join('.');
 
 			// DDS Texture loading currently disabled because of this bug https://github.com/mrdoob/three.js/issues/4316 - Compressed DDS textures load upside down
-			/*ddsLoader.load(
+			ddsLoader.load(
 				// resource URL
 				ddsPath,
 
@@ -221,7 +221,7 @@ THREE.XPlaneObjLoader = ( function () {
 				undefined,
 
 				// onError callback
-				function ( err ) {*/
+				function ( err ) {
 					textureLoader.load(
 						// resource URL
 						pngPath,
@@ -242,8 +242,8 @@ THREE.XPlaneObjLoader = ( function () {
 							console.error( 'Could not load texture. Tried ' + ddsPath + ' and ' + pngPath );
 						}
 					);
-				/*}
-			);*/
+				}
+			);
 
 			return this;
 
