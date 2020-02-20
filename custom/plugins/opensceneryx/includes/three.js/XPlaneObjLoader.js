@@ -488,6 +488,7 @@ THREE.XPlaneObjLoader = ( function () {
 					case 'NO_ALPHA':
 					case 'NO_BLEND':
 					case 'NO_SHADOW':
+					case 'PARTICLE_SYSTEM':
 					case 'POINT_COUNTS':
 					case 'REQUIRE_WET':
 					case 'REQUIRE_DRY':

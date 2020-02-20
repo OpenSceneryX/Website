@@ -158,10 +158,14 @@ THREE.XPlaneLinLoader = ( function () {
 						this.loadTexture( this.path + data[ 1 ] );
 						break;
 
+					case 'ALIGN':
+					case 'END_CAP':
 					case 'LAYER_GROUP':
 					case 'LOD':
 					case 'MIRROR':
 					case 'SPECULAR':
+					case 'START_CAP':
+					case 'TEX_HEIGHT':
 					case 'TEXTURE_NORMAL':
 						// Lines we are ignoring right now (some may be implemented later)
 						break;
