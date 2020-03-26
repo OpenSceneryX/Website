@@ -36,9 +36,9 @@
 
 			var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-			var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+			var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
 			var ambientLight = new THREE.AmbientLight( 0x404040 );
-			var sunLight = new THREE.DirectionalLight(0xfdb813, 1.5);
+			var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
 			sunLight.position.set(1000, -1000, 1000);
 
 			scene.add(skyLight);
