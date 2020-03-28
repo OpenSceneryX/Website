@@ -130,9 +130,9 @@ class OpenSceneryX {
         wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
         wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
         // Required by three.js 3d renderer
-        wp_enqueue_script('three.js', '//unpkg.com/three@0.111.0/build/three.min.js', array(), false, true);
-        wp_enqueue_script('3ddsloader', '//unpkg.com/three@0.111.0/examples/js/loaders/DDSLoader.js', array('three.js'), false, true);
-        wp_enqueue_script('3orbitcontrols', '//unpkg.com/three@0.111.0/examples/js/controls/OrbitControls.js', array('three.js'), false, true);
+        wp_enqueue_script('three.js', '//unpkg.com/three@0.115/build/three.min.js', array(), false, true);
+        wp_enqueue_script('3ddsloader', '//unpkg.com/three@0.115/examples/js/loaders/DDSLoader.js', array('three.js'), false, true);
+        wp_enqueue_script('3orbitcontrols', '//unpkg.com/three@0.115/examples/js/controls/OrbitControls.js', array('three.js'), false, true);
         // Scripts for specific item types should be included in the class enqueueScript() method
     }
 

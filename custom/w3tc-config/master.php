@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.11.0",
+    "version": "0.12.0",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -789,7 +789,6 @@
             ]
         }
     },
-    "common.support": "",
     "common.track_usage": true,
     "common.tweeted": false,
     "config.check": true,
@@ -819,8 +818,10 @@
         "swarmify": "w3-total-cache\/Extension_Swarmify_Plugin.php"
     },
     "extensions.active_frontend": [],
+    "extensions.active_dropin": [],
     "plugin.license_key": "",
     "plugin.type": "",
+    "common.support": "",
     "timelimit.cdn_container_create": 300,
     "cdn.netdna.alias": "",
     "cdn.netdna.consumerkey": "",

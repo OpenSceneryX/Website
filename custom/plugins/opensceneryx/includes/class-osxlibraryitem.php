@@ -343,16 +343,23 @@ abstract class OSXLibraryItem extends OSXItem {
         }
 
         $seasonCount = count($this->seasons);
-        if ($seasonCount > 1) {
-            $result .= "<li><span class='fieldTitle'>Seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX. Click a season to see a 3D preview.</span></dfn>: \n";
-            $result .= "<ul>\n";
 
-            foreach ($this->seasons as $season) {
-                $result .= "<li><a id='" . $season . "' class='season-button' >" . $this->getHRSeason($season) . "</a></li>\n";
+        if (get_class($this) == "OSXFacade" || get_class($this) == "OSXDecal") {
+            if ($seasonCount > 0) {
+                $result .= "<li><span class='fieldTitle'>Has seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX.</span></dfn></li>\n";
             }
+        } else {
+            if ($seasonCount > 1) {
+                $result .= "<li><span class='fieldTitle'>Seasonal variants</span> <dfn class='tooltip'>ⓘ<span>This item changes with the seasons. You can choose the method to use when installing OpenSceneryX. Click a season to see a 3D preview.</span></dfn>: \n";
+                $result .= "<ul>\n";
 
-            $result .= "</ul>\n";
-            $result .= "</li>";
+                foreach ($this->seasons as $season) {
+                    $result .= "<li><a id='" . $season . "' class='season-button' >" . $this->getHRSeason($season) . "</a></li>\n";
+                }
+
+                $result .= "</ul>\n";
+                $result .= "</li>";
+            }
         }
 
         if ($this->note !== null) {
