@@ -27,7 +27,7 @@ class OSXObject extends OSXLibraryItem {
     protected $wedRotationLockAngle = null;
 
     function __construct($path, $url) {
-        parent::__construct($path, $url);
+        parent::__construct($path, $url, 'osxobject');
     }
 
     function enqueueScript() {

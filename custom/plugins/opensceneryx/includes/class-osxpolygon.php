@@ -15,7 +15,7 @@ class OSXPolygon extends OSXLibraryItem {
     protected $surfaceName = null;
 
     function __construct($path, $url) {
-        parent::__construct($path, $url);
+        parent::__construct($path, $url, 'osxpolygon');
     }
 
     function enqueueScript() {

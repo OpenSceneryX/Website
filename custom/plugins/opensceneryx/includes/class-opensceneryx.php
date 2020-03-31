@@ -107,7 +107,7 @@ class OpenSceneryX {
         $post->post_content = $this->osxItem->getHTML();
         $post->post_excerpt = '';
         $post->post_status = 'publish';
-        $post->post_type = 'osxitem';
+        $post->post_type = $this->osxItem->getType();
         $post->post_author = 1;
         $post->post_parent = 753;
         $post->guid = $docPath;
@@ -262,7 +262,7 @@ class OpenSceneryX {
     {
         global $wp_query;
 
-        if ($wp_query->post->post_type == 'osxitem') {
+        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
             $pageItemClass = 'page-item-' . $wp_query->post->post_parent;
             $classes = str_replace('current_page_item', '', $classes);
             $classes = str_replace($pageItemClass, $pageItemClass . ' current_page_item', $classes);
@@ -274,7 +274,7 @@ class OpenSceneryX {
     {
         global $wp_query;
 
-        if ($wp_query->post->post_type == 'osxitem') {
+        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
             return $wp_query->post->guid;
         }
 
@@ -294,7 +294,7 @@ class OpenSceneryX {
     {
         global $wp_query;
 
-        if ($wp_query->post->post_type == 'osxitem') {
+        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
             $breadcrumbs = array();
             $breadcrumbs[] = array('text' => 'Home', 'url' => '/', 'allow_html' => true);
             $breadcrumbs[] = array('text' => 'Contents', 'url' => '/contents', 'allow_html' => true);
@@ -318,7 +318,7 @@ class OpenSceneryX {
     function osxParseFolder($path, $url, $itemType)
     {
         if (is_file($path . '/category.txt')) {
-            return new OSXCategory($path, $url);
+            return new OSXCategory($path, $url, 'osxcategory-' . $itemType);
         } elseif (is_file($path . '/info.txt')) {
             switch ($itemType) {
                 case 'decals':

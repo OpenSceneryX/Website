@@ -8,7 +8,7 @@ class OSXDecal extends OSXLibraryItem {
     const FILENAME_EXT= "dcl";
 
     function __construct($path, $url) {
-        parent::__construct($path, $url);
+        parent::__construct($path, $url, 'osxdecal');
     }
 
     function enqueueScript() {

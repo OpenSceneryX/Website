@@ -8,7 +8,7 @@ class OSXLine extends OSXLibraryItem {
     const FILENAME_EXT= "lin";
 
     function __construct($path, $url) {
-        parent::__construct($path, $url);
+        parent::__construct($path, $url, 'osxline');
     }
 
     function enqueueScript() {

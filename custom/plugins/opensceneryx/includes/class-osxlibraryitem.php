@@ -46,8 +46,8 @@ abstract class OSXLibraryItem extends OSXItem {
     const OUTPUT_EMAILS = true;
 
 
-    function __construct($path, $url) {
-        parent::__construct($path, $url);
+    function __construct($path, $url, $type) {
+        parent::__construct($path, $url, $type);
 
         $contents = file_get_contents($this->path . '/info.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
