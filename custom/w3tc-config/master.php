@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.12.0",
+    "version": "0.13.1",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -8,6 +8,7 @@
     "cluster.messagebus.sns.topic_arn": "",
     "dbcache.configuration_overloaded": false,
     "dbcache.debug": false,
+    "dbcache.debug_purge": false,
     "dbcache.enabled": false,
     "dbcache.engine": "file",
     "dbcache.file.gc": 3600,
@@ -81,12 +82,14 @@
         "swatch-img",
         "w3-total-cache",
         "woocommerce\/assets\/images\/placeholder.png",
-        "wpcf7_captcha"
+        "wpcf7_captcha",
+        "skip_lazy"
     ],
     "lazyload.embed_method": "async_head",
     "objectcache.configuration_overloaded": false,
     "objectcache.enabled": false,
     "objectcache.debug": false,
+    "objectcache.debug_purge": false,
     "objectcache.enabled_for_wp_admin": true,
     "objectcache.fallback_transients": true,
     "objectcache.engine": "file",
@@ -130,6 +133,7 @@
     "pgcache.enabled": false,
     "pgcache.comment_cookie_ttl": 1800,
     "pgcache.debug": false,
+    "pgcache.debug_purge": false,
     "pgcache.engine": "file_generic",
     "pgcache.file.gc": 3600,
     "pgcache.file.nfs": false,
@@ -601,6 +605,8 @@
     "browsercache.security.csp.frame.ancestors": "",
     "browsercache.security.csp.sandbox": "",
     "browsercache.security.csp.default": "",
+    "browsercache.security.fp": false,
+    "browsercache.security.fp.values": [],
     "mobile.configuration_overloaded": false,
     "mobile.enabled": false,
     "mobile.rgroups": {
