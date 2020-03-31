@@ -239,8 +239,8 @@ THREE.XPlaneLinLoader = ( function () {
 
 				geometry = new THREE.BufferGeometry( );
 
-				geometry.addAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
-				geometry.addAttribute( 'uv', new THREE.Float32BufferAttribute( uvs, 2 ) );
+				geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
+				geometry.setAttribute( 'uv', new THREE.Float32BufferAttribute( uvs, 2 ) );
 				geometry.computeVertexNormals();
 				polygon = new THREE.Mesh( geometry, scope.material );
 				container.add( polygon );
