@@ -9,8 +9,8 @@ class OSXCategory extends OSXItem {
 
     protected $items = array();
 
-    function __construct($path, $url) {
-        parent::__construct($path, $url);
+    function __construct($path, $url, $type) {
+        parent::__construct($path, $url, $type);
 
         $contents = file_get_contents($this->path . '/category.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
@@ -46,7 +46,7 @@ class OSXCategory extends OSXItem {
             $result .= '<h2>Sub-categories</h2>';
             $result .= '<div class="subcategories">';
             foreach ($this->subcategories as $subcategory) {
-                $result .= "<h3 class='inline folder'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
+                $result .= "<h3 class='inline " . $this->getType() . "'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
             }
             $result .= '</div>';
         }

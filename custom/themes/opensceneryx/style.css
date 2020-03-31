@@ -73,8 +73,8 @@ Template: twentyeleven
 }
 
 .thumbnailcontainer h3 {
-        line-height: 1.5;
-        padding: 0.5em;
+    line-height: 1.5;
+    padding: 0.5em;
 }
 
 ul.downloads li {
@@ -104,27 +104,73 @@ div#toc h4 {
 	padding-top: 0.5em;
 }
 
-h2.folder {
+article[class*="osx"] > header > h1 {
+	padding: 0.2em 0 0 1.7em;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+}
+
+h2[class*="osx"] {
     padding: 0.2em 0 0 3em;
-    background-image: url('folder_generic.png');
     background-repeat: no-repeat;
     background-size: 2em;
 }
 
+h3[class*="osx"] {
+    padding: 0.1em 1.5em 0 2em;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+}
+
+article.osxdecal > header > h1,
+article.osxcategory-decals > header > h1,
+h2.osxdecal,
+h3.osxcategory-decals {
+	background-image: url('images/icons/decal.svg');
+}
+
+article.osxfacade > header > h1,
+article.osxcategory-facades > header > h1,
+h2.osxfacade,
+h3.osxcategory-facades {
+	background-image: url('images/icons/facade.svg');
+}
+
+article.osxforest > header > h1,
+article.osxcategory-forests > header > h1,
+h2.osxforest,
+h3.osxcategory-forests {
+	background-image: url('images/icons/forest.svg');
+}
+
+article.osxline > header > h1,
+article.osxcategory-lines > header > h1,
+h2.osxline,
+h3.osxcategory-lines {
+	background-image: url('images/icons/line.svg');
+}
+
+article.osxobject > header > h1,
+article.osxcategory-objects > header > h1,
+h2.osxobject,
+h3.osxcategory-objects {
+	background-image: url('images/icons/object.svg');
+}
+
+article.osxpolygon > header > h1,
+article.osxcategory-polygons > header > h1,
+h2.osxpolygon,
+h3.osxcategory-polygons {
+	background-image: url('images/icons/polygon.svg');
+}
+
 h3 {
-    font-size: 0.75em ! important;
+    font-size: 0.95em ! important;
 }
 
 h3.inline, h4.inline {
 	display:inline;
 	padding-right: 1em;
-}
-
-h3.folder {
-    padding: 0.1em 1.5em 0 2em;
-    background-image: url('folder_generic.png');
-    background-repeat: no-repeat;
-    background-size: 1.5em;
 }
 
 img.screenshot {

@@ -11,6 +11,9 @@ abstract class OSXItem {
 
     public $title = "Undefined";
 
+    // The item type is used as the CSS class on the container <article>. All subclasses should set this, default to 'osxitem'.
+    private $type = "osxitem";
+
     public $ancestors = array();
 
     protected $fileLines = array();
@@ -21,11 +24,16 @@ abstract class OSXItem {
     const UNITS_MILES = 2;
 
 
-    function __construct($path, $url) {
+    function __construct($path, $url, $type) {
         $this->path = $path;
         $this->url = $url;
+        $this->type = $type;
 
         $this->buildAncestors();
+    }
+
+    public function getType() {
+        return $this->type;
     }
 
     protected static function dimension($m, $units) {
@@ -50,7 +58,7 @@ abstract class OSXItem {
             $url = dirname($url);
 
             if (is_file($path . '/category.txt')) {
-                array_unshift($this->ancestors, new OSXCategory($path, $url));
+                array_unshift($this->ancestors, new OSXCategory($path, $url, 'osxcategory-' . $this->type));
             }
         }
     }
