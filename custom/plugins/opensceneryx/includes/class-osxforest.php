@@ -19,7 +19,7 @@ class OSXForest extends OSXLibraryItem {
     protected $lod = null;
 
     function __construct($path, $url) {
-        parent::__construct($path, $url, 'osxforest');
+        parent::__construct($path, $url, 'forest');
     }
 
     function enqueueScript() {
