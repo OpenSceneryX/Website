@@ -107,7 +107,7 @@ class OpenSceneryX {
         $post->post_content = $this->osxItem->getHTML();
         $post->post_excerpt = '';
         $post->post_status = 'publish';
-        $post->post_type = $this->osxItem->getType();
+        $post->post_type = $this->osxItem->getCSSClass();
         $post->post_author = 1;
         $post->post_parent = 753;
         $post->guid = $docPath;
@@ -318,7 +318,7 @@ class OpenSceneryX {
     function osxParseFolder($path, $url, $itemType)
     {
         if (is_file($path . '/category.txt')) {
-            return new OSXCategory($path, $url, 'osxcategory-' . $itemType);
+            return new OSXCategory($path, $url, $itemType);
         } elseif (is_file($path . '/info.txt')) {
             switch ($itemType) {
                 case 'decals':

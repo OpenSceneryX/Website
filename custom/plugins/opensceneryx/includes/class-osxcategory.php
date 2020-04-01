@@ -9,8 +9,8 @@ class OSXCategory extends OSXItem {
 
     protected $items = array();
 
-    function __construct($path, $url, $type) {
-        parent::__construct($path, $url, $type);
+    function __construct($path, $url, $itemType) {
+        parent::__construct($path, $url, $itemType);
 
         $contents = file_get_contents($this->path . '/category.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
@@ -46,7 +46,7 @@ class OSXCategory extends OSXItem {
             $result .= '<h2>Sub-categories</h2>';
             $result .= '<div class="subcategories">';
             foreach ($this->subcategories as $subcategory) {
-                $result .= "<h3 class='inline " . $this->getType() . "'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
+                $result .= "<h3 class='inline " . $this->getCSSClass() . "'><a href='" . $subcategory['path'] . "'>" . $subcategory['title'] . "</a></h3>\n";
             }
             $result .= '</div>';
         }
@@ -70,5 +70,23 @@ class OSXCategory extends OSXItem {
         $result .= "<div class='clear'>&nbsp;</div>";
 
         return $result;
+    }
+
+    public function getCSSClass() {
+        // Note that itemType for categories is plural
+        return 'osxcategory-' . $this->itemType;
+    }
+
+    /**
+     * Ensure we highlight the appropriate menu items
+     */
+    public function menuItemClasses($classes, $item, $args) {
+        // The main menu location on our theme is 'primary'
+        if ('primary' !== $args->theme_location) return $classes;
+
+        // Highlight our item type in the menu. 'Contents' is highlighted by the superclass.
+        if (ucfirst($this->itemType) == $item->title) $classes[] = 'current-menu-item';
+
+        return parent::menuItemClasses($classes, $item, $args);
     }
 }

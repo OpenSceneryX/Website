@@ -46,8 +46,8 @@ abstract class OSXLibraryItem extends OSXItem {
     const OUTPUT_EMAILS = true;
 
 
-    function __construct($path, $url, $type) {
-        parent::__construct($path, $url, $type);
+    function __construct($path, $url, $itemType) {
+        parent::__construct($path, $url, $itemType);
 
         $contents = file_get_contents($this->path . '/info.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
@@ -439,6 +439,23 @@ abstract class OSXLibraryItem extends OSXItem {
             case 'winter_terramaxx_deep_snow':
                 return 'Winter (deep snow) Variant, specific to TerraMaxx';
         }
+    }
+
+    public function getCSSClass() {
+        return 'osx' . $this->itemType;
+    }
+
+    /**
+     * Ensure we highlight the appropriate menu items
+     */
+    public function menuItemClasses($classes, $item, $args) {
+        // The main menu location on our theme is 'primary'
+        if ('primary' !== $args->theme_location) return $classes;
+
+        // Highlight our menu item, which is a plural version of the itemType, with first letter capitalised. 'Contents' is highlighted by the superclass.
+        if (ucfirst($this->itemType . 's') == $item->title) $classes[] = 'current-menu-item';
+
+        return parent::menuItemClasses($classes, $item, $args);
     }
 
     /**

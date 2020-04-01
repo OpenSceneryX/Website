@@ -11,8 +11,8 @@ abstract class OSXItem {
 
     public $title = "Undefined";
 
-    // The item type is used as the CSS class on the container <article>. All subclasses should set this, default to 'osxitem'.
-    private $type = "osxitem";
+    // The item type is used to generate the CSS class on the container <article> and is also used to find the item to highlight in the menu, default just to 'item'.
+    protected $itemType = "item";
 
     public $ancestors = array();
 
@@ -24,16 +24,28 @@ abstract class OSXItem {
     const UNITS_MILES = 2;
 
 
-    function __construct($path, $url, $type) {
+    function __construct($path, $url, $itemType) {
         $this->path = $path;
         $this->url = $url;
-        $this->type = $type;
+        $this->itemType = $itemType;
+
+        // Intercept the main navigation menu call
+        add_filter('nav_menu_css_class', array($this, 'menuItemClasses'), 10, 3);
 
         $this->buildAncestors();
     }
 
-    public function getType() {
-        return $this->type;
+    /**
+     * Ensure we highlight the appropriate menu items
+     */
+    public function menuItemClasses($classes, $item, $args) {
+        // The main menu location on our theme is 'primary'
+        if ('primary' !== $args->theme_location) return $classes;
+
+        // We are on a library item page, always highlight the 'Contents' item
+        if ('Contents' == $item->title) $classes[] = 'current-menu-item';
+
+        return array_unique($classes);
     }
 
     protected static function dimension($m, $units) {
@@ -58,7 +70,7 @@ abstract class OSXItem {
             $url = dirname($url);
 
             if (is_file($path . '/category.txt')) {
-                array_unshift($this->ancestors, new OSXCategory($path, $url, 'osxcategory-' . $this->type));
+                array_unshift($this->ancestors, new OSXCategory($path, $url, $this->type));
             }
         }
     }
@@ -68,4 +80,6 @@ abstract class OSXItem {
     }
 
     abstract protected function parse();
+
+    abstract public function getCSSClass();
 }

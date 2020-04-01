@@ -107,13 +107,15 @@ div#toc h4 {
 article[class*="osx"] > header > h1 {
 	padding: 0.2em 0 0 1.7em;
     background-repeat: no-repeat;
-    background-size: 1.5em;
+	background-size: 1.5em;
+	line-height: 36px ! important;
 }
 
 h2[class*="osx"] {
     padding: 0.2em 0 0 3em;
     background-repeat: no-repeat;
-    background-size: 2em;
+	background-size: 2em;
+	font-size: 3em;
 }
 
 h3[class*="osx"] {

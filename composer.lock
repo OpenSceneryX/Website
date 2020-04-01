@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d0c85ac9cb07792950486294f0315c0",
+    "content-hash": "e1ce168b717ff898e02b144792ce1b09",
     "packages": [
         {
             "name": "composer/installers",
@@ -205,11 +205,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "5.3.2",
+            "version": "5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.3.2"
+                "reference": "5.4"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
@@ -416,15 +416,15 @@
         },
         {
             "name": "wpackagist-theme/twentyeleven",
-            "version": "3.3",
+            "version": "3.4",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentyeleven/",
-                "reference": "3.3"
+                "reference": "3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyeleven.3.3.zip"
+                "url": "https://downloads.wordpress.org/theme/twentyeleven.3.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"

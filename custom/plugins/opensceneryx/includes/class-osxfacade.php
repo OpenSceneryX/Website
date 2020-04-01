@@ -32,7 +32,7 @@ class OSXFacade extends OSXLibraryItem {
     protected $basementDepth = null;
 
     function __construct($path, $url) {
-        parent::__construct($path, $url, 'osxfacade');
+        parent::__construct($path, $url, 'facade');
     }
 
     protected function parse() {
