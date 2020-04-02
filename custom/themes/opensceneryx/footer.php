@@ -14,7 +14,7 @@
 
 	<div style="clear:both;">&nbsp;</div>
 	<div>
-	<?php if (ENVIRONMENT != 'dev'): ?>
+	<?php if (ENVIRONMENT != 'dev' && strpos($wp->request, 'login') === false): ?>
 		<!-- Matched Content -->
 		<ins class="adsbygoogle"
 			style="display:block"
