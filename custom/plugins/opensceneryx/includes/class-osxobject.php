@@ -207,7 +207,7 @@ class OSXObject extends OSXLibraryItem {
         }
 
         if ($this->animated) {
-            $result .= "<li class='animated'><span class='fieldTitle'>Animated</span> <dfn class='tooltip'>ⓘ<span>This object contains animation.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Animated</span> <dfn class='tooltip'>ⓘ<span>This object contains animation.</span></dfn></li>\n";
         }
 
         if (count($this->lods) > 0) {
