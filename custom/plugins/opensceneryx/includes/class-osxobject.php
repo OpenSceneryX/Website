@@ -249,7 +249,7 @@ class OSXObject extends OSXLibraryItem {
         }
 
         if ($this->samStaticAircraftDoors > 0) {
-            $result .= "<li><span class='fieldTitle'>Has support for SAM animations, with </span><span class='fieldValue'>" . $this->samStaticAircraftDoors . "</span> <span class='fieldTitle'>door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . "</span> <dfn class='tooltip'>ⓘ<span>This object has " . $this->samStaticAircraftDoors . " door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . " that support" . ($this->samStaticAircraftDoors > 1 ? "" : "s") . " <a href='https://stairport-sceneries.com' target='_blank'>Scenery Animation Manager (SAM)</a> animated jetways.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Has support for SAM animations, with </span><span class='fieldValue'>" . $this->samStaticAircraftDoors . "</span> <span class='fieldTitle'>door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . "</span> <dfn class='tooltip'>ⓘ<span>This object has " . $this->samStaticAircraftDoors . " door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . " that support" . ($this->samStaticAircraftDoors > 1 ? "" : "s") . " <a href='https://stairport-sceneries.com' target='_blank'>Scenery Animation Manager (SAM)</a> animated jetways. For more information on using SAM in your sceneries, take a look at the <a href='https://stairportscenerieshelp.freshdesk.com/support/home' target='_blank'>SAM developer documentation here</a>.</span></dfn></li>\n";
         }
 
         if ($result != "") {
