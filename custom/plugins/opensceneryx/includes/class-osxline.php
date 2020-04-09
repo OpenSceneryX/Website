@@ -117,7 +117,7 @@ class OSXLine extends OSXLibraryItem {
         }
 
         if ($this->mirror) {
-            $result .= "<li><span class='fieldValue'>Mirrored</span> <dfn class='tooltip'>ⓘ<span>X-Plane may reverse the texture direction of this line to form clean cuts at sharp corners. For more information, <a href='https://developer.x-plane.com/article/painted-line-lin-file-format-specification/' target='_blank'>see the official documentation on the .lin format</a>.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Mirrored</span> <dfn class='tooltip'>ⓘ<span>X-Plane may reverse the texture direction of this line to form clean cuts at sharp corners. For more information, <a href='https://developer.x-plane.com/article/painted-line-lin-file-format-specification/' target='_blank'>see the official documentation on the .lin format</a>.</span></dfn></li>\n";
         }
 
         if ($result != "") {

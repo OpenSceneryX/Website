@@ -337,15 +337,8 @@ div#breadcrumbs ul.inline {
 	display: inline;
 }
 
-ul.mainItemDetails {
-}
-
 ul.mainItemDetails li.note {
 	list-style-image: url(/doc/note.gif);
-}
-
-ul.mainItemDetails li.animated {
-	list-style-image: url(/doc/animated.gif);
 }
 
 ul.secondaryItemDetails {
@@ -379,10 +372,6 @@ ul.dimensions li#depth {left: 50px; top: 40px;}
 .fieldTitle {
 	font-weight: bold;
 }
-
-.fieldValue {
-}
-
 
 /*Credits: Dynamic Drive CSS Library */
 /*URL: http://www.dynamicdrive.com/style/ */

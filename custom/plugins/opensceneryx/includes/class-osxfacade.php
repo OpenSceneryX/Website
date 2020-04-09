@@ -133,13 +133,13 @@ class OSXFacade extends OSXLibraryItem {
         }
 
         if ($this->graded) {
-            $result .= "<li><span class='fieldValue'>Graded</span> <dfn class='tooltip'>ⓘ<span>This facade is graded, where the center of the first wall is placed on the terrain and the facade is then kept in a flat plane. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Graded</span> <dfn class='tooltip'>ⓘ<span>This facade is graded, where the center of the first wall is placed on the terrain and the facade is then kept in a flat plane. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
         } else {
-            $result .= "<li><span class='fieldValue'>Draped</span> <dfn class='tooltip'>ⓘ<span>This facade is draped, where every vertex of the facade’s polygon is individually placed on the terrain. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Draped</span> <dfn class='tooltip'>ⓘ<span>This facade is draped, where every vertex of the facade’s polygon is individually placed on the terrain. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
         }
 
         if ($this->ring) {
-            $result .= "<li><span class='fieldValue'>Ring facade</span> <dfn class='tooltip'>ⓘ<span>This facade is a ring, where X-Plane® automatically connects the last facade point to the first, closing the loop. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Ring facade</span> <dfn class='tooltip'>ⓘ<span>This facade is a ring, where X-Plane® automatically connects the last facade point to the first, closing the loop. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
         }
 
         if ($this->wallSurfaceType !== null) {
@@ -151,7 +151,7 @@ class OSXFacade extends OSXLibraryItem {
         }
 
         if ($this->doubled) {
-            $result .= "<li><span class='fieldValue'>Doubled</span> <dfn class='tooltip'>ⓘ<span>This facade is drawn with walls facing both inside and outside. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Doubled</span> <dfn class='tooltip'>ⓘ<span>This facade is drawn with walls facing both inside and outside. For more information, <a href='https://developer.x-plane.com/article/x-plane-10-facade-fac-file-format-specification/' target='_blank'>see the official documentation</a>.</span></dfn></li>\n";
         }
 
         if ($this->floorsMin !== null) {
