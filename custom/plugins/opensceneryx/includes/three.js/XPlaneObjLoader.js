@@ -204,13 +204,13 @@ THREE.XPlaneObjLoader = ( function () {
 			var ddsPath = splitPath.concat(['dds']).join('.');
 			var pngPath = splitPath.concat(['png']).join('.');
 
-			// DDS Texture loading currently disabled because of this bug https://github.com/mrdoob/three.js/issues/4316 - Compressed DDS textures load upside down
 			ddsLoader.load(
 				// resource URL
 				ddsPath,
 
 				// onLoad callback
 				function ( texture ) {
+					texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
 					texture.anisotropy = 16;
 					scope.material.map = texture;
 					scope.material.map.needsUpdate = true;
@@ -228,6 +228,7 @@ THREE.XPlaneObjLoader = ( function () {
 
 						// onLoad callback
 						function ( texture ) {
+							texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
 							texture.anisotropy = 16;
 							scope.material.map = texture;
 							scope.material.map.needsUpdate = true;
@@ -379,7 +380,7 @@ THREE.XPlaneObjLoader = ( function () {
 						);
 						state.uvs.push(
 							parseFloat( data[ 7 ] ),
-							parseFloat( data[ 8 ] )
+							parseFloat( 1.0 - data[ 8 ] )
 						);
 						/*state.colors.push(
 							Math.random(),

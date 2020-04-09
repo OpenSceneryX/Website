@@ -59,13 +59,13 @@ THREE.XPlaneForLoader = ( function () {
 			var ddsPath = splitPath.concat(['dds']).join('.');
 			var pngPath = splitPath.concat(['png']).join('.');
 
-			// DDS Texture loading currently disabled because of this bug https://github.com/mrdoob/three.js/issues/4316 - Compressed DDS textures load upside down
 			ddsLoader.load(
 				// resource URL
 				ddsPath,
 
 				// onLoad callback
 				function ( texture ) {
+					texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
 					texture.anisotropy = 16;
 					scope.material.map = texture;
 					scope.material.map.needsUpdate = true;
@@ -83,6 +83,7 @@ THREE.XPlaneForLoader = ( function () {
 
 						// onLoad callback
 						function ( texture ) {
+							texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
 							texture.anisotropy = 16;
 							scope.material.map = texture;
 							scope.material.map.needsUpdate = true;
@@ -269,28 +270,28 @@ THREE.XPlaneForLoader = ( function () {
 				// Tri 1, point 1
 				vertices.push( treeX - quadX * ( treeData[4] / treeData[2] ), 0.0, treeZ - quadZ * ( treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( treeData[0] / scaleX, treeData[1] / scaleY );
+				uvs.push( treeData[0] / scaleX, 1.0 - treeData[1] / scaleY );
 				// Tri 1, point 2
 				vertices.push( treeX + quadX * ( 1.0 - treeData[4] / treeData[2] ), 0.0, treeZ + quadZ * ( 1.0 - treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, treeData[1] / scaleY );
+				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, 1.0 - treeData[1] / scaleY );
 				// Tri 1, point 3
 				vertices.push( treeX + quadX * ( 1.0 - treeData[4] / treeData[2] ), treeH, treeZ + quadZ * ( 1.0 - treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, ( treeData[1] + treeData[3] ) / scaleY );
+				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, 1.0 - ( treeData[1] + treeData[3] ) / scaleY );
 
 				// Tri 2, point 1
 				vertices.push( treeX - quadX * ( treeData[4] / treeData[2] ), 0.0, treeZ - quadZ * ( treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( treeData[0] / scaleX, treeData[1] / scaleY );
+				uvs.push( treeData[0] / scaleX, 1.0 - treeData[1] / scaleY );
 				// Tri 2, point 3
 				vertices.push( treeX + quadX * ( 1.0 - treeData[4] / treeData[2] ), treeH, treeZ + quadZ * ( 1.0 - treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, ( treeData[1] + treeData[3] ) / scaleY );
+				uvs.push( ( treeData[0] + treeData[2] ) / scaleX, 1.0 - ( treeData[1] + treeData[3] ) / scaleY );
 				// Tri 2, point 4
 				vertices.push( treeX - quadX * (treeData[4] / treeData[2] ), treeH, treeZ - quadZ * ( treeData[4] / treeData[2] ) );
 				normals.push( 0.0, 1.0, 0.0 );
-				uvs.push( treeData[0] / scaleX, ( treeData[1] + treeData[3] ) / scaleY );
+				uvs.push( treeData[0] / scaleX, 1.0 - ( treeData[1] + treeData[3] ) / scaleY );
 			}
 
 			var geometry = new THREE.BufferGeometry( );
