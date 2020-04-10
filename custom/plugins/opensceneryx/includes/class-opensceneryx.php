@@ -88,6 +88,12 @@ class OpenSceneryX {
 
         // If we get here we are on an OSX path
 
+        // First, look for a page with the same URL. If so, we load it and inject the content at the top. This allows content for landing
+        // pages such as /objects/, /decals/ etc. to be content managed.
+        $existingPage = get_page_by_path($_SERVER['REQUEST_URI'], OBJECT, 'page');
+        if ($existingPage == null) $existingContent = '';
+        else $existingContent = $existingPage->post_content;
+
         $docPath = implode(array_slice($urlVars, 1), '/');
         $osxItemPath = ABSPATH . '../' . $docPath;
 
@@ -104,7 +110,7 @@ class OpenSceneryX {
         $post->ID = $id;
         $post->post_category = array('uncategorized'); //Add some categories. an array()???
         $post->post_title = $this->osxItem->title;
-        $post->post_content = $this->osxItem->getHTML();
+        $post->post_content = $existingContent . $this->osxItem->getHTML();
         $post->post_excerpt = '';
         $post->post_status = 'publish';
         $post->post_type = $this->osxItem->getCSSClass();
