@@ -188,15 +188,39 @@ THREE.XPlanePolLoader = ( function () {
 			container.add( plane );
 
 			// Create polygon, dimensions proportional to loaded texture
-			var geometry = new THREE.BoxGeometry( scaleH / Math.max( scaleH, scaleV ), 0.01, scaleV / Math.max( scaleH, scaleV ) );
+			var normalisedPolygonWidth = scaleH / Math.max( scaleH, scaleV ); // 0 to 1
+			var normalisedPolygonHeight = scaleV / Math.max( scaleH, scaleV ); // 0 to 1
+
+			var vertices = [];
+			vertices.push( normalisedPolygonWidth / 2, 0.02, normalisedPolygonHeight / 2 );
+			vertices.push( normalisedPolygonWidth / 2, 0.02, -normalisedPolygonHeight / 2 );
+			vertices.push( -normalisedPolygonWidth / 2, 0.02, -normalisedPolygonHeight / 2 );
+
+			vertices.push( -normalisedPolygonWidth / 2, 0.02, -normalisedPolygonHeight / 2 );
+			vertices.push( -normalisedPolygonWidth / 2, 0.02, normalisedPolygonHeight / 2 );
+			vertices.push( normalisedPolygonWidth / 2, 0.02, normalisedPolygonHeight / 2 );
+
+			var uvs = [];
+			uvs.push( 1, 1 );
+			uvs.push( 1, 0 );
+			uvs.push( 0, 0 );
+
+			uvs.push( 0, 0 );
+			uvs.push( 0, 1 );
+			uvs.push( 1, 1 );
+
+			geometry = new THREE.BufferGeometry( );
+
+			geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
+			geometry.setAttribute( 'uv', new THREE.Float32BufferAttribute( uvs, 2 ) );
+			geometry.computeVertexNormals();
+
 			var polygon = new THREE.Mesh( geometry, this.material );
 			container.add( polygon );
-			polygon.translateY( 0.001 );
 
 			console.timeEnd( 'XPlanePolLoader' );
 
 			return container;
-
 		}
 
 	};
