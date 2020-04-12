@@ -30,6 +30,7 @@ class OpenSceneryX {
     protected $pluginDirPath;
 
     protected $osxItem;
+    private $existingPostMeta = '';
 
     public function run($pluginDirPath)
     {
@@ -49,6 +50,7 @@ class OpenSceneryX {
         add_filter('the_content', array($this, 'osxContent'));
         add_filter('wpseo_breadcrumb_links', array($this, 'osxBreadcrumbs')); // Override Yoast breadcrumbs
         add_filter('wpseo_json_ld_search_url', array($this, 'osxJSONLDSeachUrl')); // Override Yoast JSON LD search
+        add_filter('wpseo_metadesc', array($this, 'osxMetaDescription')); // Override Yoast meta description
 
         wp_enqueue_style('osx', plugin_dir_url(__FILE__) . 'osx.css');
         // Required by slick carousel
@@ -91,8 +93,14 @@ class OpenSceneryX {
         // First, look for a page with the same URL. If so, we load it and inject the content at the top. This allows content for landing
         // pages such as /objects/, /decals/ etc. to be content managed.
         $existingPage = get_page_by_path($_SERVER['REQUEST_URI'], OBJECT, 'page');
-        if ($existingPage == null) $existingContent = '';
-        else $existingContent = $existingPage->post_content;
+        if ($existingPage == null) {
+            $existingContent = '';
+        } else {
+            // We can inject existing post content below
+            $existingContent = $existingPage->post_content;
+            // Need to store this in a property to access it later in the Yoast meta hook
+            $this->existingPostMeta = get_post_meta($existingPage->ID, '_yoast_wpseo_metadesc', true);
+        }
 
         $docPath = implode(array_slice($urlVars, 1), '/');
         $osxItemPath = ABSPATH . '../' . $docPath;
@@ -313,6 +321,16 @@ class OpenSceneryX {
         }
 
         return $breadcrumbs;
+    }
+
+    function osxMetaDescription($description) {
+        global $wp_query;
+
+        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
+            return $this->existingPostMeta;
+        } else {
+            return $description;
+        }
     }
 
     function osxJSONLDSeachUrl() {
