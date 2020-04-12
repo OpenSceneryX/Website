@@ -73,8 +73,20 @@ div.slick-screenshots {
 }
 
 div.threejs-container {
-    width: 500px;
-    height: 500px;
     display: block;
-    float: right
+    height: 500px;
+}
+
+@media (min-width: 651px) {
+    div.threejs-container, div.threejs-container > canvas {
+        width: 500px;
+        float: right;
+    }
+}
+
+@media (max-width: 650px) {
+    div.threejs-container, div.threejs-container > canvas {
+        width: 100%;
+        float: none;
+    }
 }
