@@ -31,6 +31,7 @@ abstract class OSXItem {
 
         // Intercept the main navigation menu call
         add_filter('nav_menu_css_class', array($this, 'menuItemClasses'), 10, 3);
+        add_filter('wpseo_metadesc', array($this, 'getMetaDescription')); // Override Yoast meta description
 
         $this->buildAncestors();
     }
@@ -82,4 +83,6 @@ abstract class OSXItem {
     abstract protected function parse();
 
     abstract public function getCSSClass();
+
+    abstract public function getMetaDescription($description);
 }
