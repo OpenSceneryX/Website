@@ -445,6 +445,11 @@ abstract class OSXLibraryItem extends OSXItem {
         return 'osx' . $this->itemType;
     }
 
+    public function getMetaDescription($description) {
+        // Just return the description.
+        return $this->description;
+    }
+
     /**
      * Ensure we highlight the appropriate menu items
      */

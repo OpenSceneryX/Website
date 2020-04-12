@@ -77,6 +77,31 @@ class OSXCategory extends OSXItem {
         return 'osxcategory-' . $this->itemType;
     }
 
+    public function getMetaDescription($description) {
+        // Yoast description always takes precedence. This allows any category to be overridden with
+        // a CMS-managed page
+        if ($description) return $description;
+
+        // Build a description for the category, containing its name, sub-categories and sub-items
+        $result = 'A set of ' . $this->title . ' ' . $this->itemType . ', containing';
+
+        if (count($this->subcategories) > 0) {
+            $result .= ' the following sub-categories: ';
+            $result .= '"' . $this->subcategories[0]['title'] . '"';
+            for ($i = 1; $i < count($this->subcategories); $i++) $result .= ', "' . $this->subcategories[$i]['title'] . '"';
+        } else {
+            $result .= ' no sub-categories';
+        }
+
+        if (count($this->items) > 0) {
+            $result .= ' and the following ' . $this->itemType . ': ';
+            $result .= '"' . $this->items[0]['title'] . '"';
+            for ($i = 1; $i < count($this->items); $i++) $result .= ', "' . $this->items[$i]['title'] . '"';
+        }
+
+        return $result;
+    }
+
     /**
      * Ensure we highlight the appropriate menu items
      */

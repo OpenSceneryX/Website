@@ -421,6 +421,11 @@ ul.dimensions li#depth {left: 50px; top: 40px;}
 	min-width: 5em;
 }
 
+/* Stop the search form from growing over the top of the menu, causing problems on mobile */
+#searchform {
+	height: 32px;
+}
+
 /* Collapsing menu */
 
 a.foldable {
