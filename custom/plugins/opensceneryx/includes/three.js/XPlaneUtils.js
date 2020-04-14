@@ -13,7 +13,9 @@ THREE.XPlaneUtils = {
         var ddsLoader = new THREE.DDSLoader();
 
         // Spec says that even if the specified texture has a .png suffix, X-Plane will attempt to load a DDS
-        // texture with equivalent .dds extension first. So we do the same.
+        // texture with equivalent .dds extension first. However, DDS textures are not supported on many mobile
+        // devices so we load the .png first.
+
         var splitPath = path.split('.');
         // Remove extension
         splitPath.pop();
@@ -21,9 +23,9 @@ THREE.XPlaneUtils = {
         var ddsPath = splitPath.concat(['dds']).join('.');
         var pngPath = splitPath.concat(['png']).join('.');
 
-        ddsLoader.load(
+        textureLoader.load(
             // resource URL
-            ddsPath,
+            pngPath,
 
             // onLoad callback
             function ( texture ) {
@@ -35,9 +37,9 @@ THREE.XPlaneUtils = {
 
             // onError callback
             function ( err ) {
-                textureLoader.load(
+                ddsLoader.load(
                     // resource URL
-                    pngPath,
+                    ddsPath,
 
                     // onLoad callback
                     function ( texture ) {
