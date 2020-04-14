@@ -46,62 +46,7 @@ THREE.XPlaneForLoader = ( function () {
 
 		loadTexture: function ( path ) {
 
-			var scope = this;
-			var textureLoader = new THREE.TextureLoader();
-			var ddsLoader = new THREE.DDSLoader();
-
-			// Spec says that even if the specified texture has a .png suffix, X-Plane will attempt to load a DDS
-			// texture with equivalent .dds extension first. So we do the same.
-			var splitPath = path.split('.');
-			// Remove extension
-			splitPath.pop();
-
-			var ddsPath = splitPath.concat(['dds']).join('.');
-			var pngPath = splitPath.concat(['png']).join('.');
-
-			ddsLoader.load(
-				// resource URL
-				ddsPath,
-
-				// onLoad callback
-				function ( texture ) {
-					texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
-					texture.anisotropy = 16;
-					scope.material.map = texture;
-					scope.material.map.needsUpdate = true;
-					scope.material.needsUpdate = true;
-				},
-
-				// onProgress callback
-				undefined,
-
-				// onError callback
-				function ( err ) {
-					textureLoader.load(
-						// resource URL
-						pngPath,
-
-						// onLoad callback
-						function ( texture ) {
-							texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
-							texture.anisotropy = 16;
-							scope.material.map = texture;
-							scope.material.map.needsUpdate = true;
-							scope.material.needsUpdate = true;
-						},
-
-						// onProgress callback
-						undefined,
-
-						// onError callback
-						function ( err ) {
-							console.error( 'Could not load texture. Tried ' + ddsPath + ' and ' + pngPath );
-						}
-					);
-				}
-			);
-
-			return this;
+			THREE.XPlaneUtils.loadTexture(this.material, path);
 
 		},
 
