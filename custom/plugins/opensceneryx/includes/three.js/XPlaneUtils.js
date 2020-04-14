@@ -8,6 +8,7 @@ THREE.XPlaneUtils = {
 
 	loadTexture: function ( material, path, wrap = false, mode = THREE.XPlaneUtils.textureModes.STANDARD ) {
 
+        var scope = this;
         var textureLoader = new THREE.TextureLoader();
         var ddsLoader = new THREE.DDSLoader();
 
@@ -26,17 +27,7 @@ THREE.XPlaneUtils = {
 
             // onLoad callback
             function ( texture ) {
-                texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
-                texture.anisotropy = 16;
-                if (wrap) texture.wrapT = THREE.RepeatWrapping;
-                if (mode == THREE.XPlaneUtils.textureModes.STANDARD) {
-                    material.map = texture;
-                    material.map.needsUpdate = true;
-                } else if (mode == THREE.XPlaneUtils.textureModes.NORMAL) {
-                    material.normalMap = texture;
-                    material.normalMap.needsUpdate = true;
-                }
-                material.needsUpdate = true;
+                scope.textureLoaded(texture, material, wrap, mode);
             },
 
             // onProgress callback
@@ -50,17 +41,7 @@ THREE.XPlaneUtils = {
 
                     // onLoad callback
                     function ( texture ) {
-                        texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
-                        texture.anisotropy = 16;
-                        if (wrap) texture.wrapT = THREE.RepeatWrapping;
-                        if (mode == THREE.XPlaneUtils.textureModes.STANDARD) {
-                            material.map = texture;
-                            material.map.needsUpdate = true;
-                        } else if (mode == THREE.XPlaneUtils.textureModes.NORMAL) {
-                            material.normalMap = texture;
-                            material.normalMap.needsUpdate = true;
-                        }
-                        material.needsUpdate = true;
+                        scope.textureLoaded(texture, material, wrap, mode);
                     },
 
                     // onProgress callback
@@ -73,5 +54,23 @@ THREE.XPlaneUtils = {
                 );
             }
         );
+    },
+
+    textureLoaded: function ( texture, material, wrap, mode ) {
+
+        texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
+        texture.anisotropy = 16;
+
+        if (wrap) texture.wrapT = THREE.RepeatWrapping;
+
+        if (mode == THREE.XPlaneUtils.textureModes.STANDARD) {
+            material.map = texture;
+            material.map.needsUpdate = true;
+        } else if (mode == THREE.XPlaneUtils.textureModes.NORMAL) {
+            material.normalMap = texture;
+            material.normalMap.needsUpdate = true;
+        }
+
+        material.needsUpdate = true;
     },
 };
