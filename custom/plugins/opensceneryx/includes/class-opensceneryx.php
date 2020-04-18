@@ -147,6 +147,7 @@ class OpenSceneryX {
         wp_enqueue_script('three.js', '//unpkg.com/three@0.115/build/three.min.js', array(), false, true);
         wp_enqueue_script('3ddsloader', '//unpkg.com/three@0.115/examples/js/loaders/DDSLoader.js', array('three.js'), false, true);
         wp_enqueue_script('3orbitcontrols', '//unpkg.com/three@0.115/examples/js/controls/OrbitControls.js', array('three.js'), false, true);
+        wp_enqueue_script('3xputils', plugin_dir_url(__FILE__) . 'three.js/XPlaneUtils.js', array('three.js'), false, true);
         // Scripts for specific item types should be included in the class enqueueScript() method
     }
 

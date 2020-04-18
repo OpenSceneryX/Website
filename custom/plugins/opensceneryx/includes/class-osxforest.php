@@ -94,7 +94,7 @@ class OSXForest extends OSXLibraryItem {
                     // Calculate the camera distance based on the maximum dimensions of the model
                     var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
                     var pos = scene.position;
-                    camera.position.set(pos.x, pos.y, dist * 1.7);
+                    camera.position.set(pos.x, pos.y + bBoxSize.x / 4, dist * 1.7); // y position is half the width of the object, usually gives a sensible angle downwards
                     camera.lookAt(pos);
                 });
             }
