@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-24 17:32:24+0000\n"
+"PO-Revision-Date: 2020-04-04 12:47:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2583,7 +2583,7 @@ msgstr "Could not resume the theme."
 #. translators: %s: A link to install the Classic Editor plugin.
 #: wp-admin/edit-form-blocks.php:438
 msgid "The block editor requires JavaScript. Please enable JavaScript in your browser settings, or try the <a href=\"%s\">Classic Editor plugin</a>."
-msgstr "The Block Editor requires JavaScript. Please enable JavaScript in your browser settings, or try the <a href=\"%s\">Classic Editor</a> plugin."
+msgstr "The block editor requires JavaScript. Please enable JavaScript in your browser settings, or try the <a href=\"%s\">Classic Editor plugin</a>."
 
 #: wp-admin/post.php:47
 msgid "A post type mismatch has been detected."
@@ -9437,7 +9437,7 @@ msgstr "Translators"
 #. https://wordpress.org/about/license
 #: wp-admin/freedoms.php:107
 msgid "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the WordPress license, we don&#8217;t recommend them."
-msgstr "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible licence, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the WordPress license, we don&#8217;t recommend them."
+msgstr "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible licence, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the WordPress licence, we don&#8217;t recommend them."
 
 #. translators: %s: https://wordpressfoundation.org/trademark-policy
 #: wp-admin/freedoms.php:95
@@ -9447,7 +9447,7 @@ msgstr "WordPress grows when people like you tell their friends about it, and th
 #. translators: %s: https://wordpress.org/about/license
 #: wp-admin/freedoms.php:55
 msgid "WordPress is Free and open source software, built by a distributed community of mostly volunteer developers from around the world. WordPress comes with some awesome, worldview-changing rights courtesy of its <a href=\"%s\">license</a>, the GPL."
-msgstr "WordPress is Free and open source software, built by a distributed community of mostly volunteer developers from around the world. WordPress comes with some awesome, worldview-changing rights courtesy of its <a href=\"%s\">license</a>, the GPL."
+msgstr "WordPress is free and open source software, built by a distributed community of mostly volunteer developers from around the world. WordPress comes with some awesome, worldview-changing rights courtesy of its <a href=\"%s\">licence</a>, the GPL."
 
 #: wp-admin/credits.php:140
 msgid "Project Leaders"

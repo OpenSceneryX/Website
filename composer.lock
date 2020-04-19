@@ -4,32 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1ce168b717ff898e02b144792ce1b09",
+    "content-hash": "5ee7c129b645e1b357e313f8bfabac82",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
+                "composer/composer": "1.6.* || 2.0.*@dev",
+                "composer/semver": "1.0.* || 2.0.*@dev",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": "^1.2.4",
+                "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
@@ -128,7 +131,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2020-02-07T10:39:20+00:00"
+            "time": "2020-04-07T06:57:05+00:00"
         },
         {
             "name": "psycle-wordpress-plugins/mail-options",
@@ -272,15 +275,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-notice",
-            "version": "1.2.51",
+            "version": "1.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-notice/",
-                "reference": "tags/1.2.51"
+                "reference": "tags/1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.51.zip"
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.3.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -343,6 +346,24 @@
             "homepage": "https://wordpress.org/plugins/redirection/"
         },
         {
+            "name": "wpackagist-plugin/responsive-menu",
+            "version": "3.1.28",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/responsive-menu/",
+                "reference": "tags/3.1.28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/responsive-menu.3.1.28.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/responsive-menu/"
+        },
+        {
             "name": "wpackagist-plugin/theme-my-login",
             "version": "7.0.15",
             "source": {
@@ -362,15 +383,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.13.1",
+            "version": "0.13.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.13.1"
+                "reference": "tags/0.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -380,15 +401,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "13.4",
+            "version": "13.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/13.4"
+                "reference": "tags/13.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -440,5 +461,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
