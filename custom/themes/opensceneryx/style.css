@@ -426,6 +426,19 @@ ul.dimensions li#depth {left: 50px; top: 40px;}
 	height: 32px;
 }
 
+@media (max-width: 650px) {
+	#branding #searchform {
+		top: 2.6em !important; /* Move the search form down a little so it doesn't overlap the language picker */
+	}
+}
+
+@media (max-width: 480px) {
+	#gtranslate_wrapper {
+		top: 5px ! important; /* Drop the language picker down a little so it's not right on the top edge on mobile */
+		right: 7.6% ! important; /* Align the right edge of the language picker with the right edge of the search box and page content */
+	}
+}
+
 /* Collapsing menu */
 
 a.foldable {
