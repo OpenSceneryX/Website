@@ -428,14 +428,37 @@ ul.dimensions li#depth {left: 50px; top: 40px;}
 
 @media (max-width: 650px) {
 	#branding #searchform {
-		top: 2.6em !important; /* Move the search form down a little so it doesn't overlap the language picker */
+		top: 2.1em !important; /* Move the search form down a little */
 	}
 }
 
 @media (max-width: 480px) {
 	#gtranslate_wrapper {
-		top: 5px ! important; /* Drop the language picker down a little so it's not right on the top edge on mobile */
-		right: 7.6% ! important; /* Align the right edge of the language picker with the right edge of the search box and page content */
+		display: none; /* Hide the language picker on mobile - we show it in the burger menu */
+	}
+
+	#responsive-menu-title, #responsive-menu-title-image {
+		padding: 0px ! important; /* Lose all padding on the burger menu header panel (OSX graphic) */
+		margin: 0px ! important; /* Lose all margins on the burger menu header panel (OSX graphic) */
+	}
+
+	.switcher {
+		width: 100% ! important; /* Make the language picker the full width of the menu */
+	}
+
+	.switcher .option {
+		width: 100% ! important;  /* Make the language picker the full width of the menu */
+	}
+
+	.switcher .selected {
+		padding-right: 5px ! important; /* Give some space to the right of the dropdown arrow in the language picker */
+	}
+
+	.switcher a {
+		width: 100% ! important;
+		background-position-x: right ! important; /* Position the language picker dropdown arrow on the right */
+		padding: 3px 5px ! important; /* Make the language picker a little larger */
+		border: none ! important; /* Lose all borders on the language picker */
 	}
 }
 
