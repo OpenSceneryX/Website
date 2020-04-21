@@ -369,6 +369,11 @@ ul.dimensions li#width {left: 35px; top: -15px;}
 ul.dimensions li#height {right: 55px; top: 25px; text-align: right;}
 ul.dimensions li#depth {left: 50px; top: 40px;}
 
+div.three aside {
+	margin-bottom: 0.1em; /* Make three footer area widgets more compact */
+	text-align: right;
+}
+
 .fieldTitle {
 	font-weight: bold;
 }
