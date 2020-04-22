@@ -181,7 +181,7 @@ img.screenshot {
 	max-width: 500px;
 }
 
-img.icon {
+img.icon, input.icon {
 	border: none;
 	vertical-align: bottom;
 }
@@ -368,6 +368,33 @@ ul.dimensions li {
 ul.dimensions li#width {left: 35px; top: -15px;}
 ul.dimensions li#height {right: 55px; top: 25px; text-align: right;}
 ul.dimensions li#depth {left: 50px; top: 40px;}
+
+#site-generator {
+	padding: 2.2em 3em; /* Increase the left and right padding slightly in the grey area of the footer */
+	line-height: 1.5em;
+}
+
+div.footer-logo {
+	width: 120px;
+	float: left;
+	padding-top: 0.5em;
+}
+
+div.footer-text {
+	text-align: left;
+	margin-left: 120px;
+}
+
+div.footer-social {
+	margin-top: 4em;
+	margin-left: 1em'
+}
+
+div.footer-social img {
+	margin-right: 1em;
+	margin-bottom: 1em;
+	height: 30px;
+}
 
 div.three aside {
 	margin-bottom: 0.1em; /* Make three footer area widgets more compact */
