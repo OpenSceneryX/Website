@@ -142,6 +142,6 @@
 			</nav><!-- #access -->
 	</header><!-- #branding -->
 
-    <?php if (!is_front_page()): ?><div class="tagline">OpenSceneryX - Free Scenery Objects for X-Plane®</div><?php endif; ?>
+    <?php if (!is_front_page()): ?><div class="tagline">OpenSceneryX - Free 3D Scenery Objects for the X-Plane® Flight Simulator</div><?php endif; ?>
 
 	<div id="main">
