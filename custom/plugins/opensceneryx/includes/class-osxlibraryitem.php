@@ -362,16 +362,18 @@ abstract class OSXLibraryItem extends OSXItem {
             }
         }
 
-        if ($this->note !== null) {
-            $result .= "<li class='note'><span class='fieldTitle'>Important Note:</span> <span class='fieldValue'>" . $this->note . "</span></li>\n";
-        }
-
         $result .= "</ul>\n";
 
         if ($this->description !== null) {
-            $result .= "<h2>Description</h2>\n";
+            $result .= "<h2 class='description'>Description</h2>\n";
             $result .= "<div class='description'>" . $this->description . "</div>\n";
         }
+
+        if ($this->note !== null) {
+            $result .= "<h2 class='warning'>⚠︎ Important Note</h2>\n";
+            $result .= "<div class='warning'>" . $this->note . "</div>\n";
+        }
+
 
         $result .= $this->getTypeSpecificHTML();
 

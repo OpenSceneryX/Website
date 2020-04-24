@@ -92,7 +92,7 @@ a.nounderline {
 }
 
 .warning {
-	color: red;
+	color: red ! important;
 }
 
 div#toc h2 {
@@ -166,6 +166,10 @@ h3.osxcategory-polygons {
 	background-image: url('images/icons/polygon.svg');
 }
 
+h2.note {
+	color: red;
+}
+
 h3 {
     font-size: 0.95em ! important;
 }
@@ -214,7 +218,7 @@ p.inline-image-bullet img {
 
 p.warning {
 	background-color: #fcc;
-	color: #ff0000;
+	color: red;
 	padding: 0.5em;
 }
 
@@ -335,10 +339,6 @@ div#breadcrumbs ul.inline {
 	line-height: 2.0em;
 	float: left;
 	display: inline;
-}
-
-ul.mainItemDetails li.note {
-	list-style-image: url(/doc/note.gif);
 }
 
 ul.secondaryItemDetails {
@@ -571,11 +571,13 @@ ol {
 	margin-top: 0;
 }
 
-.entry-content div.description td {
+.entry-content div.description td,
+.entry-content div.note td {
 	border-top: none;
 }
 
-.entry-content div.description th {
+.entry-content div.description th,
+.entry-content div.note th {
 	border-bottom: 1px solid #ddd;
 	font-weight: bold;
 }
