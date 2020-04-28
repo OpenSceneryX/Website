@@ -458,13 +458,32 @@ div.three aside {
 	height: 32px;
 }
 
-@media (max-width: 650px) {
-	#branding #searchform {
-		top: 2.1em !important; /* Move the search form down a little */
+@media only screen and (max-device-width: 320px) {
+	/* For some reason the no border mobile view in Twenty Seventeen only goes down to 320px wide. Continue it to narrower widths */
+	body {
+		padding: 0;
+	}
+	#page {
+		margin-top: 0;
+	}
+	#branding {
+		border-top: none;
 	}
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 650px) and (min-width: 480px) {
+	/* Between the mobile and intermediate breaks, need to move the burger menu down and across to allow for the larger outer page margins */
+	button#responsive-menu-button {
+		top: 3.5em ! important;
+		left: 8.9% ! important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#branding #searchform {
+		top: 2.1em !important; /* Move the search form down a little */
+	}
+
 	#gtranslate_wrapper {
 		display: none; /* Hide the language picker on mobile - we show it in the burger menu */
 	}
