@@ -18,7 +18,7 @@
     </IfModule>
 </FilesMatch>
 <IfModule mod_headers.c>
-    Header set Referrer-Policy ""
+    Header set Referrer-Policy "origin"
 </IfModule>
 # END W3TC Browser Cache
 

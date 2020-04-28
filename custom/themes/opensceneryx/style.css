@@ -7,6 +7,10 @@ Template: twentyeleven
 
 @import url("../twentyeleven/style.css");
 
+a {
+	cursor: pointer;
+}
+
 .singular .entry-header,
 .singular .entry-content,
 .singular footer.entry-meta,
@@ -92,7 +96,7 @@ a.nounderline {
 }
 
 .warning {
-	color: red;
+	color: red ! important;
 }
 
 div#toc h2 {
@@ -166,6 +170,10 @@ h3.osxcategory-polygons {
 	background-image: url('images/icons/polygon.svg');
 }
 
+h2.note {
+	color: red;
+}
+
 h3 {
     font-size: 0.95em ! important;
 }
@@ -214,7 +222,7 @@ p.inline-image-bullet img {
 
 p.warning {
 	background-color: #fcc;
-	color: #ff0000;
+	color: red;
 	padding: 0.5em;
 }
 
@@ -337,10 +345,6 @@ div#breadcrumbs ul.inline {
 	display: inline;
 }
 
-ul.mainItemDetails li.note {
-	list-style-image: url(/doc/note.gif);
-}
-
 ul.secondaryItemDetails {
 	font-size: 0.8em;
 }
@@ -458,13 +462,32 @@ div.three aside {
 	height: 32px;
 }
 
-@media (max-width: 650px) {
-	#branding #searchform {
-		top: 2.1em !important; /* Move the search form down a little */
+@media only screen and (max-device-width: 320px) {
+	/* For some reason the no border mobile view in Twenty Seventeen only goes down to 320px wide. Continue it to narrower widths */
+	body {
+		padding: 0;
+	}
+	#page {
+		margin-top: 0;
+	}
+	#branding {
+		border-top: none;
 	}
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 650px) and (min-width: 480px) {
+	/* Between the mobile and intermediate breaks, need to move the burger menu down and across to allow for the larger outer page margins */
+	button#responsive-menu-button {
+		top: 3.5em ! important;
+		left: 8.9% ! important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#branding #searchform {
+		top: 2.1em !important; /* Move the search form down a little */
+	}
+
 	#gtranslate_wrapper {
 		display: none; /* Hide the language picker on mobile - we show it in the burger menu */
 	}
@@ -571,11 +594,13 @@ ol {
 	margin-top: 0;
 }
 
-.entry-content div.description td {
+.entry-content div.description td,
+.entry-content div.note td {
 	border-top: none;
 }
 
-.entry-content div.description th {
+.entry-content div.description th,
+.entry-content div.note th {
 	border-bottom: 1px solid #ddd;
 	font-weight: bold;
 }
