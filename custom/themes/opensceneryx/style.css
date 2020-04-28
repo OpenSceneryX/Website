@@ -7,6 +7,10 @@ Template: twentyeleven
 
 @import url("../twentyeleven/style.css");
 
+a {
+	cursor: pointer;
+}
+
 .singular .entry-header,
 .singular .entry-content,
 .singular footer.entry-meta,
