@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ee7c129b645e1b357e313f8bfabac82",
+    "content-hash": "5bbe724e4d228cf23706b5490cccd84f",
     "packages": [
         {
             "name": "composer/installers",
@@ -208,11 +208,11 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "5.4",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.4"
+                "reference": "5.4.1"
             },
             "replace": {
                 "johnpbloch/wordpress": "*"
@@ -239,15 +239,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "4.1.4",
+            "version": "4.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.1.4"
+                "reference": "tags/4.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.4.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -383,15 +383,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.13.2",
+            "version": "0.13.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.13.2"
+                "reference": "tags/0.13.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -401,15 +401,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "13.5",
+            "version": "14.0.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/13.5"
+                "reference": "tags/14.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.14.0.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
