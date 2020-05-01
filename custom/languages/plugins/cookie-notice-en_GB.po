@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Cookie Notice for GDPR &amp; CCPA - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-15 18:01:53+0000\n"
+"PO-Revision-Date: 2020-04-30 11:31:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -259,9 +259,17 @@ msgstr "Synchronise with WordPress Privacy Policy page."
 msgid "Enable privacy policy link."
 msgstr "Enable privacy policy link."
 
+#: cookie-notice.php:902
+msgid "Select the method for displaying the revoke button - automatic (in the banner) or manual using <code>[cookies_revoke]</code> shortcode."
+msgstr "Select the method for displaying the revoke button - automatic (in the banner) or manual using <code>[cookies_revoke]</code> shortcode."
+
 #: cookie-notice.php:894
 msgid "The text of the button to revoke the consent."
 msgstr "The text of the button to revoke the cookie consent."
+
+#: cookie-notice.php:889
+msgid "Enable to give to the user the possibility to revoke their consent <i>(requires \"Refuse consent\" option enabled)</i>."
+msgstr "Enable to give to the user the possibility to revoke their consent <i>(requires \"Refuse consent\" option enabled)</i>."
 
 #: cookie-notice.php:874
 msgid "The code to be used in your site footer, before the closing body tag."
@@ -338,6 +346,10 @@ msgstr "http://www.dfactory.eu/"
 #. Author of the plugin
 msgid "dFactory"
 msgstr "dFactory"
+
+#. Description of the plugin
+msgid "Cookie Notice allows you to elegantly inform users that your site uses cookies and helps you comply with the EU GDPR cookie law and CCPA regulations."
+msgstr "Cookie Notice allows you to elegantly inform users that your site uses cookies and helps you comply with the EU GDPR cookie law and CCPA regulations."
 
 #. Plugin URI of the plugin
 msgid "http://www.dfactory.eu/plugins/cookie-notice/"
