@@ -29,7 +29,7 @@
 
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-			var renderer = new THREE.WebGLRenderer();
+			var renderer = new THREE.WebGLRenderer({ antialias: true });
 			var mainObject = null;
 
 			renderer.setSize( window.innerWidth, window.innerHeight );
@@ -38,9 +38,9 @@
 
 			var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-			var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
+			var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 1.0 );
 			var ambientLight = new THREE.AmbientLight( 0x404040 );
-			var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
+			var sunLight = new THREE.DirectionalLight(0xdddddd, 1.0);
 			sunLight.position.set(1000, -1000, 1000);
 
 			scene.add(skyLight);
@@ -94,12 +94,12 @@
 				// Calculate the camera distance based on the maximum dimensions of the model
 				var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
 				var pos = scene.position;
-				camera.position.set(pos.x, pos.y, dist * 1.2);
+				camera.position.set(pos.x, pos.y + bBoxSize.x / 2, dist * 1.7); // y position is half the width of the object, usually gives a sensible angle downwards
 				camera.lookAt(pos);
 				controls.update();
 			});
 
-			scene.rotation.x = 0.25;
+			//scene.rotation.x = 0.25;
 			scene.rotation.y = 0.75;
 
 			var animate = function () {
