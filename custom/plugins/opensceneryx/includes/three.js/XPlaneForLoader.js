@@ -46,7 +46,7 @@ THREE.XPlaneForLoader = ( function () {
 
 		loadTexture: function ( path ) {
 
-			THREE.XPlaneUtils.loadTexture(this.material, path);
+			THREE.XPlaneUtils.loadTexture(this.material, path, true);
 
 		},
 
