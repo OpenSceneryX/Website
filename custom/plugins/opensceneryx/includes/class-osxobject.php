@@ -59,9 +59,9 @@ class OSXObject extends OSXLibraryItem {
                 var controls = new THREE.OrbitControls(camera, renderer.domElement);
                 controls.autoRotate = true;
 
-                var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
+                var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 1.0 );
                 var ambientLight = new THREE.AmbientLight( 0x404040 );
-                var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
+                var sunLight = new THREE.DirectionalLight(0xdddddd, 0.6);
                 sunLight.position.set(1000, -1000, 1000);
 
                 scene.add(skyLight);
