@@ -79,12 +79,15 @@
 				scene.add(mainObject);
 
 				// Dynamically determine the bounding box and set the camera distance accordingly
-				var bBox = new THREE.Box3().setFromObject(mainObject);
+				var bBox = new THREE.Box3().setFromObject(object);
 				var bBoxSize = new THREE.Vector3();
 				var bBoxCenter = new THREE.Vector3();
 
 				bBox.getSize(bBoxSize);
 				bBox.getCenter(bBoxCenter);
+
+				// Important to rotate first, then translate
+				mainObject.rotateY(2.2);
 
 				// Center object in scene.
 				mainObject.translateX(-bBoxCenter.x);
@@ -98,9 +101,6 @@
 				camera.lookAt(pos);
 				controls.update();
 			});
-
-			//scene.rotation.x = 0.25;
-			scene.rotation.y = 0.75;
 
 			var animate = function () {
 				requestAnimationFrame( animate );
