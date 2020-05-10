@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Description of OSXObject
+ * Description of OSXLibraryItem
  */
 abstract class OSXLibraryItem extends OSXItem {
 
@@ -271,7 +271,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         if ($this->logo !== null) {
             $result .= "<div class='objectlogocontainer'>\n";
-            $result .= "<img src='/doc/" . $this->logo . "' alt='Object branding logo' />\n";
+            $result .= "<img src='/doc/" . $this->logo . "' alt='Branding logo' />\n";
             $result .= "</div>\n";
         }
 
@@ -310,7 +310,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $authorCount = count($this->conversionAuthors);
         if ($authorCount > 0) {
-            $result .= "<li><span class='fieldTitle'>Object Conversion By:</span> ";
+            $result .= "<li><span class='fieldTitle'>Conversion By:</span> ";
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->conversionAuthorURLs[$i])) {
@@ -325,7 +325,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $authorCount = count($this->modificationAuthors);
         if ($authorCount > 0) {
-            $result .= "<li><span class='fieldTitle'>Object Modifications By:</span> ";
+            $result .= "<li><span class='fieldTitle'>Modifications By:</span> ";
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->modificationAuthorURLs[$i])) {
