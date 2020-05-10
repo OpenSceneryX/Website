@@ -40,7 +40,7 @@ class OSXLine extends OSXLibraryItem {
 
                 var skyLight = new THREE.HemisphereLight( 0xd1f3ff, 0xa0a0a0, 0.6 );
                 var ambientLight = new THREE.AmbientLight( 0x404040 );
-                var sunLight = new THREE.DirectionalLight(0xfff7d1, 0.4 );
+                var sunLight = new THREE.DirectionalLight(0xffffff, 0.4 );
                 sunLight.position.set(-10000, -20000, -10000);
 
                 scene.add(skyLight);
