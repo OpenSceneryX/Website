@@ -45,10 +45,10 @@ class OSXPolygon extends OSXLibraryItem {
                 var controls = new THREE.OrbitControls(camera, renderer.domElement);
                 controls.autoRotate = true;
 
-                var skyLight = new THREE.HemisphereLight( 0xffffff, 0x080808, 0.7 );
+                var skyLight = new THREE.HemisphereLight( 0xd1f3ff, 0xa0a0a0, 0.6 );
                 var ambientLight = new THREE.AmbientLight( 0x404040 );
-                var sunLight = new THREE.DirectionalLight(0xdddddd, 1.5);
-                sunLight.position.set(1000, -1000, 1000);
+                var sunLight = new THREE.DirectionalLight(0xfff7d1, 0.4 );
+                sunLight.position.set(-10000, -20000, -10000);
 
                 scene.add(skyLight);
                 scene.add(ambientLight);
