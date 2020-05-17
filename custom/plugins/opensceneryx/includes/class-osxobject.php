@@ -7,6 +7,7 @@ class OSXObject extends OSXLibraryItem {
     const FILENAME_ROOT = "object";
     const FILENAME_EXT= "obj";
 
+    protected $tris = null;
     protected $width = null;
     protected $height = null;
     protected $depth = null;
@@ -120,6 +121,11 @@ class OSXObject extends OSXLibraryItem {
         $matches = array();
 
         foreach ($this->fileLines as $line) {
+            if (preg_match('/^Tris:\s+(.*)/', $line, $matches) === 1) {
+                $this->tris = $matches[1];
+                continue;
+            }
+
             if (preg_match('/^Width:\s+(.*)/', $line, $matches) === 1) {
                 $this->width = $matches[1];
                 continue;
@@ -206,8 +212,16 @@ class OSXObject extends OSXLibraryItem {
             $result .= "</li>\n";
         }
 
+        if ($this->tris) {
+            $result .= "<li><span class='fieldTitle'>Number of Triangles: </span><span class='fieldValue'>" . $this->tris . "</span> <dfn class='tooltip'>ⓘ<span>The number of triangles (TRIs) in this object. This is an indication of the complexity of the object.</span></dfn></li>\n";
+        }
+
         if ($this->animated) {
             $result .= "<li><span class='fieldTitle'>Animated</span> <dfn class='tooltip'>ⓘ<span>This object contains animation.</span></dfn></li>\n";
+        }
+
+        if ($this->samStaticAircraftDoors > 0) {
+            $result .= "<li><span class='fieldTitle'>Has support for SAM animations, with </span><span class='fieldValue'>" . $this->samStaticAircraftDoors . "</span> <span class='fieldTitle'>door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . "</span> <dfn class='tooltip'>ⓘ<span>This object has " . $this->samStaticAircraftDoors . " door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . " that support" . ($this->samStaticAircraftDoors > 1 ? "" : "s") . " <a href='https://stairport-sceneries.com' target='_blank'>Scenery Animation Manager (SAM)</a> animated jetways. For more information on using SAM in your sceneries, take a look at the <a href='https://stairportscenerieshelp.freshdesk.com/support/home' target='_blank'>SAM developer documentation here</a>.</span></dfn></li>\n";
         }
 
         if (count($this->lods) > 0) {
@@ -245,11 +259,7 @@ class OSXObject extends OSXLibraryItem {
         }
 
         if ($this->wedRotationLockAngle != null) {
-            $result .= "<li><span class='fieldTitle'>Placement Locked at: </span> <span class='fieldValue'>" . $this->wedRotationLockAngle . "°</span> <span class='fieldTitle'>in WED</span> <dfn class='tooltip'>ⓘ<span>Scenery developers, when adding this object using <a href='https://developer.x-plane.com/tools/worldeditor/' target='_blank'>WED version 2.1 or higher</a>, the rotation will be locked at " . $this->wedRotationLockAngle . "°. This is because this object is designed to rotate in the wind, and to align with the correct wind direction in X-Plane® the placement angle must be locked at this value. If you are using <a href='https://marginal.org.uk/x-planescenery/tools.html' target='_blank'>OverlayEditor</a> or an older version of <a href='https://developer.x-plane.com/tools/worldeditor/' target='_blank'>WED</a> then please ensure you set the rotation to " . $this->wedRotationLockAngle . "°.</span></dfn></li>\n";
-        }
-
-        if ($this->samStaticAircraftDoors > 0) {
-            $result .= "<li><span class='fieldTitle'>Has support for SAM animations, with </span><span class='fieldValue'>" . $this->samStaticAircraftDoors . "</span> <span class='fieldTitle'>door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . "</span> <dfn class='tooltip'>ⓘ<span>This object has " . $this->samStaticAircraftDoors . " door" . ($this->samStaticAircraftDoors > 1 ? "s" : "") . " that support" . ($this->samStaticAircraftDoors > 1 ? "" : "s") . " <a href='https://stairport-sceneries.com' target='_blank'>Scenery Animation Manager (SAM)</a> animated jetways. For more information on using SAM in your sceneries, take a look at the <a href='https://stairportscenerieshelp.freshdesk.com/support/home' target='_blank'>SAM developer documentation here</a>.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Placement Locked at: </span><span class='fieldValue'>" . $this->wedRotationLockAngle . "°</span> <span class='fieldTitle'>in WED</span> <dfn class='tooltip'>ⓘ<span>Scenery developers, when adding this object using <a href='https://developer.x-plane.com/tools/worldeditor/' target='_blank'>WED version 2.1 or higher</a>, the rotation will be locked at " . $this->wedRotationLockAngle . "°. This is because this object is designed to rotate in the wind, and to align with the correct wind direction in X-Plane® the placement angle must be locked at this value. If you are using <a href='https://marginal.org.uk/x-planescenery/tools.html' target='_blank'>OverlayEditor</a> or an older version of <a href='https://developer.x-plane.com/tools/worldeditor/' target='_blank'>WED</a> then please ensure you set the rotation to " . $this->wedRotationLockAngle . "°.</span></dfn></li>\n";
         }
 
         if ($result != "") {
