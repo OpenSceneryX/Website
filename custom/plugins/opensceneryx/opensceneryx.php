@@ -40,6 +40,7 @@ require_once plugin_dir_path(__FILE__) . 'includes/class-osxforest.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-osxline.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-osxobject.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-osxpolygon.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-osxogimagepresenter.php';
 
 function runOpenSceneryX($pluginDirPath)
 {
