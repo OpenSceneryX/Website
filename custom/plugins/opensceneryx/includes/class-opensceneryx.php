@@ -324,6 +324,12 @@ class OpenSceneryX {
         return $breadcrumbs;
     }
 
+    /**
+     * Override the post meta.  If we're on one of our pages, and a CMS-controlled page exists, use its meta which we stored earlier
+     * when we loaded the page. Otherwise, use the passed-in meta.
+     *
+     * Note that each OSX-specific class also has the ability to override post meta in its getMetaDescription() method.
+     */
     function osxMetaDescription($description) {
         global $wp_query;
 
