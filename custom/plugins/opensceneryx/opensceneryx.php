@@ -30,22 +30,25 @@ if (!defined( 'WPINC')) {
     die;
 }
 
-require_once plugin_dir_path(__FILE__) . 'includes/class-opensceneryx.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxitem.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxcategory.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxlibraryitem.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxdecal.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxfacade.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxforest.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxline.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxobject.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxpolygon.php';
-require_once plugin_dir_path(__FILE__) . 'includes/class-osxogimagepresenter.php';
+function runOpenSceneryX() {
+    $pluginDirPath = plugin_dir_path(__FILE__);
 
-function runOpenSceneryX($pluginDirPath)
-{
+    require_once $pluginDirPath . 'includes/class-opensceneryx.php';
+    require_once $pluginDirPath . 'includes/class-osxitem.php';
+    require_once $pluginDirPath . 'includes/class-osxcategory.php';
+    require_once $pluginDirPath . 'includes/class-osxlibraryitem.php';
+    require_once $pluginDirPath . 'includes/class-osxdecal.php';
+    require_once $pluginDirPath . 'includes/class-osxfacade.php';
+    require_once $pluginDirPath . 'includes/class-osxforest.php';
+    require_once $pluginDirPath . 'includes/class-osxline.php';
+    require_once $pluginDirPath . 'includes/class-osxobject.php';
+    require_once $pluginDirPath . 'includes/class-osxpolygon.php';
+    require_once $pluginDirPath . 'includes/class-osxogimagepresenter.php';
+
     $osx = new OpenSceneryX();
     $osx->run($pluginDirPath);
 }
 
-runOpenSceneryX(plugin_dir_path(__FILE__));
+if (!wp_installing()) {
+    add_action('plugins_loaded', 'runOpenSceneryX');
+}

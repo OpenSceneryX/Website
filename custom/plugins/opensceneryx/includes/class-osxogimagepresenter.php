@@ -2,10 +2,6 @@
 
 use Yoast\WP\SEO\Presenters\Open_Graph\Image_Presenter;
 
-require_once WP_CONTENT_DIR . "/plugins/wordpress-seo/src/presenters/abstract-presenter.php";
-require_once WP_CONTENT_DIR . "/plugins/wordpress-seo/src/presenters/abstract-indexable-presenter.php";
-require_once WP_CONTENT_DIR . "/plugins/wordpress-seo/src/presenters/open-graph/image-presenter.php";
-
 /**
  * We extend the Yoast Image_Presenter class because although we could use it as-is, there is a bug in that class which
  * means it doesn't calculate the width and height and just outputs the width and height of the default image.
