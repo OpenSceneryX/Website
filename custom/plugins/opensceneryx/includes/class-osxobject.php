@@ -213,7 +213,7 @@ class OSXObject extends OSXLibraryItem {
         }
 
         if ($this->tris) {
-            $result .= "<li><span class='fieldTitle'>Number of Triangles: </span><span class='fieldValue'>" . $this->tris . "</span> <dfn class='tooltip'>ⓘ<span>The number of triangles (TRIs) in this object. This is an indication of the complexity of the object.</span></dfn></li>\n";
+            $result .= "<li><span class='fieldTitle'>Number of Triangles: </span><span class='fieldValue'>" . $this->tris . "</span> <dfn class='tooltip'>ⓘ<span>The number of triangles (TRIs) in this object. This is an indication of the complexity of the object, but note that this is the total encompassing all LODs.</span></dfn></li>\n";
         }
 
         if ($this->animated) {
