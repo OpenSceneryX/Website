@@ -144,9 +144,9 @@ class OpenSceneryX {
         wp_enqueue_script('jQuery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), false, true);
         wp_enqueue_script('slick', plugin_dir_url(__FILE__) . 'slick/slick.min.js', array(), false, true);
         // Required by three.js 3d renderer
-        wp_enqueue_script('three.js', '//unpkg.com/three@0.115/build/three.min.js', array(), false, true);
-        wp_enqueue_script('3ddsloader', '//unpkg.com/three@0.115/examples/js/loaders/DDSLoader.js', array('three.js'), false, true);
-        wp_enqueue_script('3orbitcontrols', '//unpkg.com/three@0.115/examples/js/controls/OrbitControls.js', array('three.js'), false, true);
+        wp_enqueue_script('three.js', '//unpkg.com/three@0.117/build/three.min.js', array(), false, true);
+        wp_enqueue_script('3ddsloader', '//unpkg.com/three@0.117/examples/js/loaders/DDSLoader.js', array('three.js'), false, true);
+        wp_enqueue_script('3orbitcontrols', '//unpkg.com/three@0.117/examples/js/controls/OrbitControls.js', array('three.js'), false, true);
         wp_enqueue_script('3xputils', plugin_dir_url(__FILE__) . 'three.js/XPlaneUtils.js', array('three.js'), false, true);
         // Scripts for specific item types should be included in the class enqueueScript() method
     }
@@ -324,6 +324,12 @@ class OpenSceneryX {
         return $breadcrumbs;
     }
 
+    /**
+     * Override the post meta.  If we're on one of our pages, and a CMS-controlled page exists, use its meta which we stored earlier
+     * when we loaded the page. Otherwise, use the passed-in meta.
+     *
+     * Note that each OSX-specific class also has the ability to override post meta in its getMetaDescription() method.
+     */
     function osxMetaDescription($description) {
         global $wp_query;
 

@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.13.1",
+    "version": "0.14.1",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -61,6 +61,9 @@
     "lazyload.enabled": false,
     "lazyload.process_img": true,
     "lazyload.process_background": true,
+    "lazyload.googlemaps.google_maps_easy": false,
+    "lazyload.googlemaps.wp_google_maps": false,
+    "lazyload.googlemaps.wp_google_map_plugin": false,
     "lazyload.exclude": [
         "avia-bg-style-fixed",
         "data-bgposition=",

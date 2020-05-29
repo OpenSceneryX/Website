@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-07 15:53:44+0000\n"
+"PO-Revision-Date: 2020-05-22 22:03:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: en_GB\n"
 "Project-Id-Version: WordPress - 5.4.x - Development\n"
 
@@ -60,7 +60,7 @@ msgid "&#8221;"
 msgstr "&#8221;"
 
 #. translators: Opening curly double quote.
-#: wp-includes/formatting.php:101 wp-includes/formatting.php:5379
+#: wp-includes/formatting.php:101 wp-includes/formatting.php:5396
 msgctxt "opening curly double quote"
 msgid "&#8220;"
 msgstr "&#8220;"
@@ -77,23 +77,27 @@ msgstr ","
 msgid "number_format_decimal_point"
 msgstr "."
 
+#: wp-includes/rest-api.php:50
+msgid "Namespace must not start or end with a slash."
+msgstr "Namespace must not start or end with a slash."
+
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23769
+#: wp-includes/js/dist/block-editor.js:23760
 msgid "Block %1$s is at the beginning of the content and can’t be moved left"
 msgstr "Block %1$s is at the beginning of the content and can’t be moved left"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23764
+#: wp-includes/js/dist/block-editor.js:23755
 msgid "Block %1$s is at the beginning of the content and can’t be moved up"
 msgstr "Block %1$s is at the beginning of the content and can’t be moved up"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23729
+#: wp-includes/js/dist/block-editor.js:23720
 msgid "Block %1$s is at the end of the content and can’t be moved left"
 msgstr "Block %1$s is at the end of the content and can’t be moved left"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23724
+#: wp-includes/js/dist/block-editor.js:23715
 msgid "Block %1$s is at the end of the content and can’t be moved down"
 msgstr "Block %1$s is at the end of the content and can’t be moved down"
 
@@ -439,121 +443,121 @@ msgstr "Welcome Guide"
 msgid "Keyboard shortcuts"
 msgstr "Keyboard shortcuts"
 
-#: wp-includes/js/dist/block-editor.js:25291
+#: wp-includes/js/dist/block-editor.js:25282
 msgid "Remove multiple selected blocks."
 msgstr "Remove multiple selected blocks."
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23714
-#: wp-includes/js/dist/block-editor.js:23754
+#: wp-includes/js/dist/block-editor.js:23705
+#: wp-includes/js/dist/block-editor.js:23745
 msgid "Move %1$s block from position %2$d right to position %3$d"
 msgstr "Move %1$s block from position %2$d right to position %3$d"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23709
-#: wp-includes/js/dist/block-editor.js:23749
+#: wp-includes/js/dist/block-editor.js:23700
+#: wp-includes/js/dist/block-editor.js:23740
 msgid "Move %1$s block from position %2$d left to position %3$d"
 msgstr "Move %1$s block from position %2$d left to position %3$d"
 
-#: wp-includes/js/dist/block-editor.js:22539
+#: wp-includes/js/dist/block-editor.js:22530
 msgid "Tools offer different interactions for block selection & editing. To select, press Escape, to go back to editing, press Enter."
 msgstr "Tools offer different interactions for block selection & editing. To select, press Escape, to go back to editing, press Enter."
 
-#: wp-includes/js/dist/block-editor.js:21586
+#: wp-includes/js/dist/block-editor.js:21577
 msgid "Toggle between using the same value for all screen sizes or using a unique value per screen size."
 msgstr "Toggle between using the same value for all screen sizes or using a unique value per screen size."
 
-#: wp-includes/js/dist/block-editor.js:21583
+#: wp-includes/js/dist/block-editor.js:21574
 msgid "Use the same %s on all screensizes."
 msgstr "Use the same %s on all screen sizes."
 
-#: wp-includes/js/dist/block-editor.js:21574
+#: wp-includes/js/dist/block-editor.js:21565
 msgid "Large screens"
 msgstr "Large screens"
 
-#: wp-includes/js/dist/block-editor.js:21571
+#: wp-includes/js/dist/block-editor.js:21562
 msgid "Medium screens"
 msgstr "Medium screens"
 
-#: wp-includes/js/dist/block-editor.js:21568
+#: wp-includes/js/dist/block-editor.js:21559
 msgid "Small screens"
 msgstr "Small screens"
 
-#: wp-includes/js/dist/block-editor.js:21520
+#: wp-includes/js/dist/block-editor.js:21511
 msgctxt "Text labelling a interface as controlling a given layout property (eg: margin) for a given screen size."
 msgid "Controls the %1$s property for %2$s viewports."
 msgstr "Controls the %1$s property for %2$s viewports."
 
-#: wp-includes/js/dist/block-editor.js:20918
+#: wp-includes/js/dist/block-editor.js:20909
 msgid "Open Media Library"
 msgstr "Open Media Library"
 
-#: wp-includes/js/dist/block-editor.js:20825
+#: wp-includes/js/dist/block-editor.js:20816
 msgid "The media file has been replaced"
 msgstr "The media file has been replaced"
 
-#: wp-includes/js/dist/block-editor.js:20113
+#: wp-includes/js/dist/block-editor.js:20104
 msgid "Currently selected"
 msgstr "Currently selected"
 
-#: wp-includes/js/dist/block-editor.js:20065
+#: wp-includes/js/dist/block-editor.js:20056
 msgid "Recently updated"
 msgstr "Recently updated"
 
-#: wp-includes/js/dist/block-editor.js:19797
+#: wp-includes/js/dist/block-editor.js:19788
 msgid "Search or type url"
 msgstr "Search or type URL"
 
-#: wp-includes/js/dist/block-editor.js:19716
+#: wp-includes/js/dist/block-editor.js:19707
 msgid "Press ENTER to add this link"
 msgstr "Press ENTER to add this link"
 
-#: wp-includes/js/dist/block-editor.js:19666
+#: wp-includes/js/dist/block-editor.js:19657
 msgid "Currently selected link settings"
 msgstr "Currently selected link settings"
 
-#: wp-includes/js/dist/block-editor.js:19200
+#: wp-includes/js/dist/block-editor.js:19191
 msgid "Image size"
 msgstr "Image size"
 
-#: wp-includes/js/dist/block-editor.js:19068
+#: wp-includes/js/dist/block-editor.js:19059
 msgid "Gradient Presets"
 msgstr "Gradient Presets"
 
-#: wp-includes/js/dist/block-editor.js:19001
+#: wp-includes/js/dist/block-editor.js:18992
 msgid "Editor footer"
 msgstr "Editor footer"
 
-#: wp-includes/js/dist/block-editor.js:18720
+#: wp-includes/js/dist/block-editor.js:18711
 msgid "Select a variation to start with."
 msgstr "Select a variation to start with."
 
-#: wp-includes/js/dist/block-editor.js:18718
+#: wp-includes/js/dist/block-editor.js:18709
 msgid "Choose variation"
 msgstr "Choose variation"
 
-#: wp-includes/js/dist/block-editor.js:18195
-#: wp-includes/js/dist/block-editor.js:18449
+#: wp-includes/js/dist/block-editor.js:18186
+#: wp-includes/js/dist/block-editor.js:18440
 msgctxt "Generic label for block inserter button"
 msgid "Add block"
 msgstr "Add block"
 
 #. translators: %s: the name of the block when there is only one
-#: wp-includes/js/dist/block-editor.js:18193
-#: wp-includes/js/dist/block-editor.js:18447
+#: wp-includes/js/dist/block-editor.js:18184
+#: wp-includes/js/dist/block-editor.js:18438
 msgctxt "directly add the only allowed block"
 msgid "Add %s"
 msgstr "Add %s"
 
 #. translators: %s: the name of the block that has been added
-#: wp-includes/js/dist/block-editor.js:18141
-#: wp-includes/js/dist/block-editor.js:18400
+#: wp-includes/js/dist/block-editor.js:18132
+#: wp-includes/js/dist/block-editor.js:18391
 msgid "%s block added"
 msgstr "%s block added"
 
-#: wp-includes/js/dist/block-editor.js:15314
+#: wp-includes/js/dist/block-editor.js:15305
 msgid "Multiple selected blocks"
 msgstr "Multiple selected blocks"
 
@@ -626,7 +630,7 @@ msgid "(%s: color %s)"
 msgstr "(%s: colour %s)"
 
 #: wp-includes/js/dist/block-editor.js:7226
-#: wp-includes/js/dist/block-editor.js:19122
+#: wp-includes/js/dist/block-editor.js:19113
 msgid "Gradient"
 msgstr "Gradient"
 
@@ -937,7 +941,7 @@ msgstr "Please enter your username or email address. You will receive an email m
 msgid "Media upload failed. If this is a photo or a large image, please scale it down and try again."
 msgstr "Media upload failed. If this is a photo or a large image, please scale it down and try again."
 
-#: wp-includes/js/dist/block-editor.js:18014
+#: wp-includes/js/dist/block-editor.js:18005
 msgid "No Preview Available."
 msgstr "No Preview Available."
 
@@ -996,8 +1000,8 @@ msgstr "Media list"
 msgid "Filter Media"
 msgstr "Filter Media"
 
-#: wp-includes/js/dist/block-editor.js:18592
-#: wp-includes/js/dist/block-editor.js:18669
+#: wp-includes/js/dist/block-editor.js:18583
+#: wp-includes/js/dist/block-editor.js:18660
 msgid "Block navigation"
 msgstr "Block navigation"
 
@@ -1043,13 +1047,13 @@ msgstr "Post Content"
 msgid "Post content settings"
 msgstr "Post content settings"
 
-#: wp-includes/js/dist/block-editor.js:24047
-#: wp-includes/js/dist/block-editor.js:24053
+#: wp-includes/js/dist/block-editor.js:24038
+#: wp-includes/js/dist/block-editor.js:24044
 msgid "Move right"
 msgstr "Move right"
 
-#: wp-includes/js/dist/block-editor.js:24047
-#: wp-includes/js/dist/block-editor.js:24053
+#: wp-includes/js/dist/block-editor.js:24038
+#: wp-includes/js/dist/block-editor.js:24044
 msgid "Move left"
 msgstr "Move left"
 
@@ -1161,8 +1165,8 @@ msgstr "One of the hardest things to do in technology is disrupt yourself."
 msgid "Upload a file or pick one from your media library."
 msgstr "Upload a file or pick one from your media library."
 
-#: wp-includes/js/dist/block-editor.js:19633
-#: wp-includes/js/dist/block-editor.js:22899
+#: wp-includes/js/dist/block-editor.js:19624
+#: wp-includes/js/dist/block-editor.js:22890
 #: wp-includes/js/dist/block-library.js:9741
 #: wp-includes/js/dist/block-library.js:13578
 msgid "Open in new tab"
@@ -1386,40 +1390,40 @@ msgstr "Display these keyboard shortcuts."
 msgid "More tools & options"
 msgstr "More tools & options"
 
-#: wp-includes/js/dist/block-editor.js:26355
+#: wp-includes/js/dist/block-editor.js:26351
 msgid "Separate multiple classes with spaces."
 msgstr "Separate multiple classes with spaces."
 
-#: wp-includes/js/dist/block-editor.js:26253
+#: wp-includes/js/dist/block-editor.js:26249
 msgid "Learn more about anchors"
 msgstr "Learn more about anchors"
 
-#: wp-includes/js/dist/block-editor.js:26251
+#: wp-includes/js/dist/block-editor.js:26247
 msgid "Enter a word or two — without spaces — to make a unique web address just for this heading, called an “anchor.” Then, you’ll be able to link directly to this section of your page."
 msgstr "Enter a word or two — without spaces — to make a unique web address just for this heading, called an “anchor\". Then, you’ll be able to link directly to this section of your page."
 
-#: wp-includes/js/dist/block-editor.js:23541
+#: wp-includes/js/dist/block-editor.js:23532
 msgid "Default Style"
 msgstr "Default Style"
 
-#: wp-includes/js/dist/block-editor.js:21280
+#: wp-includes/js/dist/block-editor.js:21271
 msgid "Upload a video file, pick one from your media library, or add one with a URL."
 msgstr "Upload a video file, pick one from your media library, or add one with a URL."
 
-#: wp-includes/js/dist/block-editor.js:21278
+#: wp-includes/js/dist/block-editor.js:21269
 #: wp-includes/js/dist/block-library.js:5201
 msgid "Upload an image file, pick one from your media library, or add one with a URL."
 msgstr "Upload an image file, pick one from your media library, or add one with a URL."
 
-#: wp-includes/js/dist/block-editor.js:21276
+#: wp-includes/js/dist/block-editor.js:21267
 msgid "Upload an audio file, pick one from your media library, or add one with a URL."
 msgstr "Upload an audio file, pick one from your media library, or add one with a URL."
 
-#: wp-includes/js/dist/block-editor.js:21273
+#: wp-includes/js/dist/block-editor.js:21264
 msgid "Upload a media file or pick one from your media library."
 msgstr "Upload a media file or pick one from your media library."
 
-#: wp-includes/js/dist/block-editor.js:18755
+#: wp-includes/js/dist/block-editor.js:18746
 msgid "Skip"
 msgstr "Skip"
 
@@ -1427,27 +1431,27 @@ msgstr "Skip"
 msgid "This color combination may be hard for people to read."
 msgstr "This colour combination may be hard for people to read."
 
-#: wp-includes/js/dist/block-editor.js:18315
+#: wp-includes/js/dist/block-editor.js:18306
 msgid "Add a block"
 msgstr "Add a block"
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "While writing, you can press <kbd>/</kbd> to quickly insert new blocks."
 msgstr "While writing, you can press <kbd>/</kbd> to quickly insert new blocks."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "Browse through the library to learn more about what each block does."
 msgstr "Browse through the library to learn more about what each block does."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "There are blocks available for all kinds of content: insert text, headings, images, lists, videos, tables, and lots more."
 msgstr "There are blocks available for all kinds of content: insert text, headings, images, lists, videos, tables, and lots more."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "Welcome to the wonderful world of blocks! Blocks are the basis of all content within the editor."
 msgstr "Welcome to the wonderful world of blocks! Blocks are the basis of all content within the editor."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "Content blocks"
 msgstr "Content blocks"
 
@@ -1455,22 +1459,22 @@ msgstr "Content blocks"
 msgid "Vivid purple"
 msgstr "Vivid purple"
 
-#: wp-includes/js/dist/block-editor.js:18854
+#: wp-includes/js/dist/block-editor.js:18845
 msgctxt "Block vertical alignment setting label"
 msgid "Change vertical alignment"
 msgstr "Change vertical alignment"
 
-#: wp-includes/js/dist/block-editor.js:18830
+#: wp-includes/js/dist/block-editor.js:18821
 msgctxt "Block vertical alignment setting"
 msgid "Vertically Align Bottom"
 msgstr "Vertically Align Bottom"
 
-#: wp-includes/js/dist/block-editor.js:18826
+#: wp-includes/js/dist/block-editor.js:18817
 msgctxt "Block vertical alignment setting"
 msgid "Vertically Align Middle"
 msgstr "Vertically Align Middle"
 
-#: wp-includes/js/dist/block-editor.js:18822
+#: wp-includes/js/dist/block-editor.js:18813
 msgctxt "Block vertical alignment setting"
 msgid "Vertically Align Top"
 msgstr "Vertically Align Top"
@@ -1591,7 +1595,7 @@ msgstr "WordPress version %s"
 msgid "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 msgstr "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 
-#: wp-includes/formatting.php:4786
+#: wp-includes/formatting.php:4803
 msgid "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 msgstr "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 
@@ -1742,7 +1746,7 @@ msgstr "Added:"
 msgid "Whether posts of this status may have floating published dates."
 msgstr "Whether posts of this status may have floating published dates."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:392
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:415
 msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "Sorry, you are not allowed to delete revisions of this post."
 
@@ -1817,12 +1821,12 @@ msgid "Confirm your administration email"
 msgstr "Confirm your administration email"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: wp-includes/formatting.php:3810
+#: wp-includes/formatting.php:3827
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
 
-#: wp-includes/class-wp-customize-manager.php:5466
+#: wp-includes/class-wp-customize-manager.php:5493
 msgctxt "Original Size"
 msgid "Original"
 msgstr "Original"
@@ -2228,11 +2232,11 @@ msgstr "Feature deactivated"
 msgid "Block Manager"
 msgstr "Block Manager"
 
-#: wp-includes/js/dist/block-editor.js:24772
+#: wp-includes/js/dist/block-editor.js:24763
 msgid "Change block type or style"
 msgstr "Change block type or style"
 
-#: wp-includes/js/dist/block-editor.js:23348
+#: wp-includes/js/dist/block-editor.js:23339
 #: wp-includes/js/dist/block-library.js:5790
 #: wp-includes/js/dist/block-library.js:6922
 #: wp-includes/js/dist/block-library.js:17706
@@ -2251,7 +2255,7 @@ msgctxt "keyboard key"
 msgid "Backspace"
 msgstr "Backspace"
 
-#: wp-includes/js/dist/block-editor.js:21720
+#: wp-includes/js/dist/block-editor.js:21711
 msgid "More rich text controls"
 msgstr "More rich text controls"
 
@@ -2469,12 +2473,12 @@ msgid "Embed Crowdsignal (formerly Polldaddy) content."
 msgstr "Embed Crowdsignal (formerly Polldaddy) content."
 
 #. translators: %s: rest_api_init
-#: wp-includes/rest-api.php:52
+#: wp-includes/rest-api.php:58
 msgid "REST API routes must be registered on the %s action."
 msgstr "REST API routes must be registered on the %s action."
 
 #. translators: Used to join last two items in a list with more than 2 times.
-#: wp-includes/formatting.php:5053
+#: wp-includes/formatting.php:5070
 msgid "%1$s, and %2$s"
 msgstr "%1$s and %2$s"
 
@@ -2563,7 +2567,7 @@ msgid "Formats"
 msgstr "Formats"
 
 #. translators: Used to join items in a list with more than 2 items.
-#: wp-includes/formatting.php:5051
+#: wp-includes/formatting.php:5068
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
@@ -2580,7 +2584,7 @@ msgstr "https://wordpress.org/support/update-php/"
 #. translators: %s: Time duration in second or seconds.
 #. translators: Time difference between two dates, in seconds. %s: Number of
 #. seconds.
-#: wp-includes/functions.php:537 wp-includes/formatting.php:3723
+#: wp-includes/functions.php:537 wp-includes/formatting.php:3740
 msgid "%s second"
 msgid_plural "%s seconds"
 msgstr[0] "%s second"
@@ -2677,7 +2681,7 @@ msgid "Top toolbar"
 msgstr "Top toolbar"
 
 #. translators: %d: number of words
-#: wp-includes/js/dist/block-editor.js:23478
+#: wp-includes/js/dist/block-editor.js:23469
 msgid "%d word"
 msgid_plural "%d words"
 msgstr[0] "%d word"
@@ -2703,15 +2707,15 @@ msgstr "Permalink"
 msgid "To edit the featured image, you need permission to upload media."
 msgstr "To edit the featured image, you need permission to upload media."
 
-#: wp-includes/js/dist/block-editor.js:21263
+#: wp-includes/js/dist/block-editor.js:21254
 msgid "To edit this block, you need permission to upload media."
 msgstr "To edit this block, you need permission to upload media."
 
-#: wp-includes/js/dist/block-editor.js:18536
+#: wp-includes/js/dist/block-editor.js:18527
 msgid "(selected block)"
 msgstr "(selected block)"
 
-#: wp-includes/js/dist/block-editor.js:15693
+#: wp-includes/js/dist/block-editor.js:15684
 msgid "Block tools"
 msgstr "Block Tools"
 
@@ -2745,12 +2749,12 @@ msgstr "Start writing with text or HTML"
 msgid "Type text or HTML"
 msgstr "Type text or HTML"
 
-#: wp-includes/js/dist/block-editor.js:16588
+#: wp-includes/js/dist/block-editor.js:16579
 #: wp-includes/js/dist/block-library.js:3382
 msgid "Start writing or type / to choose a block"
 msgstr "Start writing or type / to choose a block"
 
-#: wp-includes/js/dist/block-editor.js:24748
+#: wp-includes/js/dist/block-editor.js:24739
 msgid "Block icon"
 msgstr "Block icon"
 
@@ -3203,7 +3207,7 @@ msgstr "photo"
 msgid "Insert an image to make a visual statement."
 msgstr "Insert an image to make a visual statement."
 
-#: wp-includes/js/dist/block-editor.js:19208
+#: wp-includes/js/dist/block-editor.js:19199
 msgid "Image dimensions"
 msgstr "Image dimensions"
 
@@ -3773,7 +3777,7 @@ msgstr "Exit Code Editor"
 msgid "Editing Code"
 msgstr "Editing Code"
 
-#: wp-includes/js/dist/block-editor.js:18987
+#: wp-includes/js/dist/block-editor.js:18978
 msgid "Editor settings"
 msgstr "Editor settings"
 
@@ -3789,7 +3793,7 @@ msgid "Close settings"
 msgstr "Close settings"
 
 #. translators: %d: number of blocks
-#: wp-includes/js/dist/block-editor.js:23474
+#: wp-includes/js/dist/block-editor.js:23465
 msgid "%d block"
 msgid_plural "%d blocks"
 msgstr[0] "%d block"
@@ -3831,11 +3835,11 @@ msgstr "Document panels"
 msgid "Open publish panel"
 msgstr "Open publish panel"
 
-#: wp-includes/js/dist/block-editor.js:18980
+#: wp-includes/js/dist/block-editor.js:18971
 msgid "Editor content"
 msgstr "Editor content"
 
-#: wp-includes/js/dist/block-editor.js:18994
+#: wp-includes/js/dist/block-editor.js:18985
 msgid "Editor publish"
 msgstr "Editor publish"
 
@@ -3872,19 +3876,19 @@ msgstr "Forward-slash"
 msgid "Change the block type after adding a new paragraph."
 msgstr "Change the block type after adding a new paragraph."
 
-#: wp-includes/js/dist/block-editor.js:25282
+#: wp-includes/js/dist/block-editor.js:25273
 msgid "Insert a new block after the selected block(s)."
 msgstr "Insert a new block after the selected block(s)."
 
-#: wp-includes/js/dist/block-editor.js:25273
+#: wp-includes/js/dist/block-editor.js:25264
 msgid "Insert a new block before the selected block(s)."
 msgstr "Insert a new block before the selected block(s)."
 
-#: wp-includes/js/dist/block-editor.js:25264
+#: wp-includes/js/dist/block-editor.js:25255
 msgid "Remove the selected block(s)."
 msgstr "Remove the selected block(s)."
 
-#: wp-includes/js/dist/block-editor.js:25255
+#: wp-includes/js/dist/block-editor.js:25246
 msgid "Duplicate the selected block(s)."
 msgstr "Duplicate the selected block(s)."
 
@@ -3892,7 +3896,7 @@ msgstr "Duplicate the selected block(s)."
 msgid "Block shortcuts"
 msgstr "Block shortcuts"
 
-#: wp-includes/js/dist/block-editor.js:25302
+#: wp-includes/js/dist/block-editor.js:25293
 msgid "Select all text when typing. Press again to select all blocks."
 msgstr "Select all text when typing. Press again to select all blocks."
 
@@ -3904,7 +3908,7 @@ msgstr "Selection shortcuts"
 msgid "Switch between Visual editor and Code editor."
 msgstr "Switch between visual editor and code editor."
 
-#: wp-includes/js/dist/block-editor.js:25319
+#: wp-includes/js/dist/block-editor.js:25310
 msgid "Navigate to the nearest toolbar."
 msgstr "Navigate to the nearest toolbar."
 
@@ -3981,7 +3985,7 @@ msgstr "Code editor"
 msgid "Visual editor"
 msgstr "Visual editor"
 
-#: wp-includes/js/dist/block-editor.js:18971
+#: wp-includes/js/dist/block-editor.js:18962
 msgid "Editor top bar"
 msgstr "Editor top bar"
 
@@ -4098,15 +4102,15 @@ msgstr "Vivid red"
 msgid "Pale pink"
 msgstr "Pale pink"
 
-#: wp-includes/js/dist/block-editor.js:26348
+#: wp-includes/js/dist/block-editor.js:26344
 msgid "Additional CSS class(es)"
 msgstr "Additional CSS class(es)"
 
-#: wp-includes/js/dist/block-editor.js:26250
+#: wp-includes/js/dist/block-editor.js:26246
 msgid "HTML anchor"
 msgstr "HTML anchor"
 
-#: wp-includes/js/dist/block-editor.js:21032
+#: wp-includes/js/dist/block-editor.js:21023
 #: wp-includes/js/dist/block-library.js:9739
 msgid "Link settings"
 msgstr "Link settings"
@@ -4151,7 +4155,7 @@ msgstr "Document Statistics"
 msgid "Content structure"
 msgstr "Content structure"
 
-#: wp-includes/js/dist/block-editor.js:23219
+#: wp-includes/js/dist/block-editor.js:23210
 msgid "Skip to the selected block"
 msgstr "Skip to the selected block"
 
@@ -4488,37 +4492,37 @@ msgstr "no title"
 msgid "Order"
 msgstr "Order"
 
-#: wp-includes/js/dist/block-editor.js:21102
+#: wp-includes/js/dist/block-editor.js:21093
 msgid "Paste or type URL"
 msgstr "Paste or type URL"
 
-#: wp-includes/js/dist/block-editor.js:17978
+#: wp-includes/js/dist/block-editor.js:17969
 #: wp-includes/js/dist/edit-post.js:1385
 msgid "Manage all reusable blocks"
 msgstr "Manage all reusable blocks"
 
-#: wp-includes/js/dist/block-editor.js:17964
+#: wp-includes/js/dist/block-editor.js:17955
 msgid "Reusable"
 msgstr "Reusable"
 
-#: wp-includes/js/dist/block-editor.js:17916
+#: wp-includes/js/dist/block-editor.js:17907
 msgctxt "blocks"
 msgid "Most used"
 msgstr "Most used"
 
-#: wp-includes/js/dist/block-editor.js:17909
+#: wp-includes/js/dist/block-editor.js:17900
 #: wp-includes/js/dist/edit-post.js:3432
 msgid "Available block types"
 msgstr "Available block types"
 
-#: wp-includes/js/dist/block-editor.js:17897
-#: wp-includes/js/dist/block-editor.js:17900
+#: wp-includes/js/dist/block-editor.js:17888
+#: wp-includes/js/dist/block-editor.js:17891
 #: wp-includes/js/dist/edit-post.js:3419
 msgid "Search for a block"
 msgstr "Search for a block"
 
 #: wp-includes/js/dist/editor.js:11722
-#: wp-includes/js/dist/block-editor.js:17839
+#: wp-includes/js/dist/block-editor.js:17830
 msgid "%d result found."
 msgid_plural "%d results found."
 msgstr[0] "%d result found."
@@ -4564,15 +4568,15 @@ msgstr "This colour combination may be hard for people to read. Try using a brig
 msgid "This color combination may be hard for people to read. Try using a darker background color and/or a brighter text color."
 msgstr "This colour combination may be hard for people to read. Try using a darker background colour and/or a brighter text colour."
 
-#: wp-includes/js/dist/block-editor.js:24805
+#: wp-includes/js/dist/block-editor.js:24796
 msgid "Transform To:"
 msgstr "Transform To:"
 
-#: wp-includes/js/dist/block-editor.js:24798
+#: wp-includes/js/dist/block-editor.js:24789
 msgid "Block Styles"
 msgstr "Block Styles"
 
-#: wp-includes/js/dist/block-editor.js:24772
+#: wp-includes/js/dist/block-editor.js:24763
 msgid "Change type of %d block"
 msgid_plural "Change type of %d blocks"
 msgstr[0] "Change type of %d block"
@@ -4590,87 +4594,87 @@ msgstr "Convert to Regular Block"
 msgid "Add to Reusable blocks"
 msgstr "Add to reusable blocks"
 
-#: wp-includes/js/dist/block-editor.js:24636
+#: wp-includes/js/dist/block-editor.js:24627
 msgid "Remove Block"
 msgid_plural "Remove Blocks"
 msgstr[0] "Remove Block"
 msgstr[1] ""
 
-#: wp-includes/js/dist/block-editor.js:24624
+#: wp-includes/js/dist/block-editor.js:24615
 msgid "Insert After"
 msgstr "Insert After"
 
-#: wp-includes/js/dist/block-editor.js:24620
+#: wp-includes/js/dist/block-editor.js:24611
 msgid "Insert Before"
 msgstr "Insert Before"
 
-#: wp-includes/js/dist/block-editor.js:24616
+#: wp-includes/js/dist/block-editor.js:24607
 msgid "Duplicate"
 msgstr "Duplicate"
 
 #: wp-includes/js/dist/block-editor.js:13760
-#: wp-includes/js/dist/block-editor.js:24599
+#: wp-includes/js/dist/block-editor.js:24590
 msgid "More options"
 msgstr "More options"
 
-#: wp-includes/js/dist/block-editor.js:24424
+#: wp-includes/js/dist/block-editor.js:24415
 msgid "Edit visually"
 msgstr "Edit visually"
 
-#: wp-includes/js/dist/block-editor.js:24424
+#: wp-includes/js/dist/block-editor.js:24415
 msgid "Edit as HTML"
 msgstr "Edit as HTML"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
-#: wp-includes/js/dist/block-editor.js:23809
+#: wp-includes/js/dist/block-editor.js:23800
 msgid "Move %1$d block from position %2$d down by one place"
 msgid_plural "Move %1$d blocks from position %2$d down by one place"
 msgstr[0] "Move %1$d block from position %2$d down by one place"
 msgstr[1] "Move %1$d blocks from position %2$d down by one place"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
-#: wp-includes/js/dist/block-editor.js:23804
+#: wp-includes/js/dist/block-editor.js:23795
 msgid "Move %1$d block from position %2$d up by one place"
 msgid_plural "Move %1$d blocks from position %2$d up by one place"
 msgstr[0] "Move %1$d block from position %2$d up by one place"
 msgstr[1] "Move %1$d blocks from position %2$d up by one place"
 
-#: wp-includes/js/dist/block-editor.js:23799
+#: wp-includes/js/dist/block-editor.js:23790
 msgid "Blocks cannot be moved down as they are already at the bottom"
 msgstr "Blocks cannot be moved down as they are already at the bottom"
 
-#: wp-includes/js/dist/block-editor.js:23795
+#: wp-includes/js/dist/block-editor.js:23786
 msgid "Blocks cannot be moved up as they are already at the top"
 msgstr "Blocks cannot be moved up as they are already at the top"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23774
+#: wp-includes/js/dist/block-editor.js:23765
 msgid "Block %1$s is at the beginning of the content and can’t be moved right"
 msgstr "Block %1$s is at the beginning of the content and can’t be moved right"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23744
+#: wp-includes/js/dist/block-editor.js:23735
 msgid "Move %1$s block from position %2$d up to position %3$d"
 msgstr "Move %1$s block from position %2$d up to position %3$d"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23734
+#: wp-includes/js/dist/block-editor.js:23725
 msgid "Block %1$s is at the end of the content and can’t be moved right"
 msgstr "Block %1$s is at the end of the content and can’t be moved right"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23704
+#: wp-includes/js/dist/block-editor.js:23695
 msgid "Move %1$s block from position %2$d down to position %3$d"
 msgstr "Move %1$s block from position %2$d down to position %3$d"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23695
+#: wp-includes/js/dist/block-editor.js:23686
 msgid "Block %s is the only block, and cannot be moved"
 msgstr "Block %s is the only block, and cannot be moved"
 
-#: wp-includes/js/dist/block-editor.js:16209
+#: wp-includes/js/dist/block-editor.js:16200
 msgid "Block: %s"
 msgstr "Block: %s"
 
@@ -4685,7 +4689,7 @@ msgid "Resolve"
 msgstr "Resolve"
 
 #: wp-includes/js/dist/block-editor.js:14030
-#: wp-includes/js/dist/block-editor.js:24474
+#: wp-includes/js/dist/block-editor.js:24465
 msgid "Convert to Blocks"
 msgstr "Convert to Blocks"
 
@@ -4702,12 +4706,12 @@ msgstr "Convert to Classic Block"
 msgid "This block has encountered an error and cannot be previewed."
 msgstr "This block has encountered an error and cannot be previewed."
 
-#: wp-includes/js/dist/block-editor.js:16608
+#: wp-includes/js/dist/block-editor.js:16599
 #: wp-includes/js/dist/block-directory.js:1262
 msgid "Add block"
 msgstr "Add block"
 
-#: wp-includes/js/dist/block-editor.js:23593
+#: wp-includes/js/dist/block-editor.js:23584
 msgid "No block selected."
 msgstr "No block selected."
 
@@ -4805,7 +4809,7 @@ msgstr "Add item"
 
 #: wp-includes/js/dist/components.js:35173
 #: wp-includes/js/dist/components.js:35322
-#: wp-includes/js/dist/block-editor.js:19250
+#: wp-includes/js/dist/block-editor.js:19241
 msgid "Reset"
 msgstr "Reset"
 
@@ -4820,9 +4824,9 @@ msgstr "Normal"
 #: wp-includes/media-template.php:173
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
 #: wp-includes/functions.php:7441
-#: wp-includes/class-wp-customize-manager.php:4277
-#: wp-includes/class-wp-customize-manager.php:5599
-#: wp-includes/class-wp-customize-manager.php:5620
+#: wp-includes/class-wp-customize-manager.php:4304
+#: wp-includes/class-wp-customize-manager.php:5626
+#: wp-includes/class-wp-customize-manager.php:5647
 #: wp-includes/js/dist/components.js:34651 wp-includes/js/dist/editor.js:8930
 msgid "(opens in a new tab)"
 msgstr "(opens in a new tab)"
@@ -4966,13 +4970,13 @@ msgstr "Custom colour picker"
 
 #: wp-includes/js/dist/components.js:24023
 #: wp-includes/js/dist/components.js:36349
-#: wp-includes/js/dist/block-editor.js:20371
+#: wp-includes/js/dist/block-editor.js:20362
 msgid "No results."
 msgstr "No results."
 
 #: wp-includes/js/dist/components.js:24021
 #: wp-includes/js/dist/components.js:36349
-#: wp-includes/js/dist/block-editor.js:20369
+#: wp-includes/js/dist/block-editor.js:20360
 msgid "%d result found, use up and down arrow keys to navigate."
 msgid_plural "%d results found, use up and down arrow keys to navigate."
 msgstr[0] "%d result found, use up and down arrow keys to navigate."
@@ -5010,7 +5014,7 @@ msgstr "Blocks list navigation"
 msgid "Filter blocks list"
 msgstr "Filter blocks list"
 
-#: wp-includes/post.php:273 wp-includes/js/dist/block-editor.js:17993
+#: wp-includes/post.php:273 wp-includes/js/dist/block-editor.js:17984
 #: wp-includes/js/dist/edit-post.js:3436
 msgid "No blocks found."
 msgstr "No blocks found."
@@ -5720,16 +5724,16 @@ msgid "Something went wrong."
 msgstr "Something went wrong."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4044
+#: wp-includes/class-wp-customize-manager.php:4071
 msgid "%s is already customizing this changeset. Do you want to take over?"
 msgstr "%s is already customising this changeset. Do you want to take over?"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4042
+#: wp-includes/class-wp-customize-manager.php:4069
 msgid "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s is already customising this changeset. Please wait until they are done to try customising. Your latest changes have been auto-saved."
 
-#: wp-includes/class-wp-customize-manager.php:4250
+#: wp-includes/class-wp-customize-manager.php:4277
 msgid "Update anyway, even though it might break your site?"
 msgstr "Update anyway, even though it might break your site?"
 
@@ -5749,7 +5753,7 @@ msgid "Installed"
 msgstr "Installed"
 
 #. translators: %s: Property of an object.
-#: wp-includes/rest-api.php:1279
+#: wp-includes/rest-api.php:1285
 msgid "%1$s is not a valid property of Object."
 msgstr "%1$s is not a valid property of Object."
 
@@ -5785,7 +5789,7 @@ msgid "Schedule"
 msgstr "Schedule"
 
 #: wp-includes/script-loader.php:1157
-#: wp-includes/class-wp-customize-manager.php:4761
+#: wp-includes/class-wp-customize-manager.php:4788
 msgctxt "customizer changeset action/button label"
 msgid "Schedule"
 msgstr "Schedule"
@@ -5818,33 +5822,33 @@ msgstr "%s has taken over and is currently customising."
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "Looks like something&#8217;s gone wrong. Wait a couple of seconds, and then try again."
 
-#: wp-includes/class-wp-customize-manager.php:4236
+#: wp-includes/class-wp-customize-manager.php:4263
 msgid "Take over"
 msgstr "Take over"
 
-#: wp-includes/class-wp-customize-manager.php:4232
+#: wp-includes/class-wp-customize-manager.php:4259
 msgid "Go back"
 msgstr "Go back"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4049
+#: wp-includes/class-wp-customize-manager.php:4076
 msgid "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s is already customising this site. Please wait until they are done to try customising. Your latest changes have been autosaved."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4051
+#: wp-includes/class-wp-customize-manager.php:4078
 msgid "%s is already customizing this site. Do you want to take over?"
 msgstr "%s is already customising this site. Do you want to take over?"
 
-#: wp-includes/class-wp-customize-manager.php:3331
+#: wp-includes/class-wp-customize-manager.php:3358
 msgid "Sorry, you are not allowed to take over."
 msgstr "Sorry, you are not allowed to take over."
 
-#: wp-includes/class-wp-customize-manager.php:3322
+#: wp-includes/class-wp-customize-manager.php:3349
 msgid "No changeset found to take over"
 msgstr "No changeset found to take over"
 
-#: wp-includes/class-wp-customize-manager.php:3311
+#: wp-includes/class-wp-customize-manager.php:3338
 msgid "Security check failed."
 msgstr "Security check failed."
 
@@ -5882,11 +5886,11 @@ msgctxt "menu locations"
 msgid "View All Locations"
 msgstr "View All Locations"
 
-#: wp-includes/class-wp-customize-manager.php:4966
+#: wp-includes/class-wp-customize-manager.php:4993
 msgid "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 msgstr "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 
-#: wp-includes/class-wp-customize-manager.php:4965
+#: wp-includes/class-wp-customize-manager.php:4992
 msgid "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
 msgstr "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
 
@@ -6613,67 +6617,67 @@ msgstr[1] "Your theme can display menus in %s locations."
 msgid "Your theme can display menus in one location."
 msgstr "Your theme can display menus in one location."
 
-#: wp-includes/class-wp-customize-manager.php:5655
+#: wp-includes/class-wp-customize-manager.php:5682
 msgid "CSS code"
 msgstr "CSS code"
 
 #. translators: 1: Link to user profile, 2: Additional link attributes, 3:
 #. Accessibility text.
 #: wp-includes/widgets/class-wp-widget-custom-html.php:311
-#: wp-includes/class-wp-customize-manager.php:5614
+#: wp-includes/class-wp-customize-manager.php:5641
 msgid "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
 msgstr "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:326
-#: wp-includes/class-wp-customize-manager.php:5607
+#: wp-includes/class-wp-customize-manager.php:5634
 msgid "Screen reader users: when in forms mode, you may need to press the Esc key twice."
 msgstr "Screen reader users: when in forms mode, you may need to press the Esc key twice."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:325
-#: wp-includes/class-wp-customize-manager.php:5606
+#: wp-includes/class-wp-customize-manager.php:5633
 msgid "To move away from this area, press the Esc key followed by the Tab key."
 msgstr "To move away from this area, press the Esc key followed by the Tab key."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:324
-#: wp-includes/class-wp-customize-manager.php:5605
+#: wp-includes/class-wp-customize-manager.php:5632
 msgid "In the editing area, the Tab key enters a tab character."
 msgstr "In the editing area, the Tab key enters a tab character."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:322
-#: wp-includes/class-wp-customize-manager.php:5603
+#: wp-includes/class-wp-customize-manager.php:5630
 msgid "When using a keyboard to navigate:"
 msgstr "When using a keyboard to navigate:"
 
-#: wp-includes/class-wp-customize-manager.php:5593
+#: wp-includes/class-wp-customize-manager.php:5620
 msgid "Add your own CSS code here to customize the appearance and layout of your site."
 msgstr "Add your own CSS code here to customise the appearance and layout of your site."
 
-#: wp-includes/class-wp-customize-manager.php:5545
+#: wp-includes/class-wp-customize-manager.php:5572
 msgid "Your homepage displays"
 msgstr "Your homepage displays"
 
-#: wp-includes/class-wp-customize-manager.php:5528
+#: wp-includes/class-wp-customize-manager.php:5555
 msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
 msgstr "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
 
-#: wp-includes/class-wp-customize-manager.php:5526
+#: wp-includes/class-wp-customize-manager.php:5553
 msgid "Homepage Settings"
 msgstr "Homepage Settings"
 
 #. translators: %s: Site icon size in pixels.
-#: wp-includes/class-wp-customize-manager.php:5100
+#: wp-includes/class-wp-customize-manager.php:5127
 msgid "Site Icons should be square and at least %s pixels."
 msgstr "Site Icons should be square and at least %s pixels."
 
-#: wp-includes/class-wp-customize-manager.php:5098
+#: wp-includes/class-wp-customize-manager.php:5125
 msgid "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!"
 msgstr "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!"
 
-#: wp-includes/class-wp-customize-manager.php:4994
+#: wp-includes/class-wp-customize-manager.php:5021
 msgid "WordPress.org themes"
 msgstr "WordPress.org themes"
 
-#: wp-includes/class-wp-customize-manager.php:4979
+#: wp-includes/class-wp-customize-manager.php:5006
 msgid "Installed themes"
 msgstr "Installed themes"
 
@@ -6681,40 +6685,40 @@ msgstr "Installed themes"
 msgid "Publish Settings"
 msgstr "Publish Settings"
 
-#: wp-includes/class-wp-customize-manager.php:4280
+#: wp-includes/class-wp-customize-manager.php:4307
 msgid "Copied"
 msgstr "Copied"
 
-#: wp-includes/class-wp-customize-manager.php:4274
+#: wp-includes/class-wp-customize-manager.php:4301
 msgid "Preview Link"
 msgstr "Preview Link"
 
-#: wp-includes/class-wp-customize-manager.php:4271
+#: wp-includes/class-wp-customize-manager.php:4298
 msgid "See how changes would look live on your website, and share the preview with people who can't access the Customizer."
 msgstr "See how changes would look live on your website, and share the preview with people who can't access the Customiser."
 
-#: wp-includes/class-wp-customize-manager.php:4269
+#: wp-includes/class-wp-customize-manager.php:4296
 msgid "Share Preview Link"
 msgstr "Share Preview Link"
 
-#: wp-includes/class-wp-customize-manager.php:3139
+#: wp-includes/class-wp-customize-manager.php:3166
 msgid "Changes trashed successfully."
 msgstr "Changes binned successfully."
 
-#: wp-includes/class-wp-customize-manager.php:3120
+#: wp-includes/class-wp-customize-manager.php:3147
 msgid "Changes have already been trashed."
 msgstr "Changes have already been binned."
 
-#: wp-includes/class-wp-customize-manager.php:3112
-#: wp-includes/class-wp-customize-manager.php:3132
+#: wp-includes/class-wp-customize-manager.php:3139
+#: wp-includes/class-wp-customize-manager.php:3159
 msgid "Unable to trash changes."
 msgstr "Unable to bin changes."
 
-#: wp-includes/class-wp-customize-manager.php:3101
+#: wp-includes/class-wp-customize-manager.php:3128
 msgid "No changes saved yet, so there is nothing to trash."
 msgstr "No changes saved yet, so there is nothing to bin."
 
-#: wp-includes/class-wp-customize-manager.php:3091
+#: wp-includes/class-wp-customize-manager.php:3118
 msgid "There was an authentication problem. Please reload and try again."
 msgstr "There was an authentication problem. Please reload and try again."
 
@@ -7111,22 +7115,22 @@ msgid "Updated!"
 msgstr "Updated!"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:1365
+#: wp-includes/rest-api.php:1371
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s must be less than or equal to %2$d"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:1362
+#: wp-includes/rest-api.php:1368
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s must be less than %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:1357
+#: wp-includes/rest-api.php:1363
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s must be greater than or equal to %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:1354
+#: wp-includes/rest-api.php:1360
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s must be greater than %2$d"
 
@@ -7562,7 +7566,7 @@ msgid "Invalid slug."
 msgstr "Invalid slug."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:717
-#: wp-includes/rest-api.php:1338 wp-includes/user.php:3568
+#: wp-includes/rest-api.php:1344 wp-includes/user.php:3568
 msgid "Invalid email address."
 msgstr "Invalid email address."
 
@@ -7575,12 +7579,12 @@ msgstr "Invalid comment content."
 msgid "Invalid JSONP callback function."
 msgstr "Invalid JSONP callback function."
 
-#: wp-includes/post.php:4036
+#: wp-includes/post.php:4045
 msgid "Invalid page template."
 msgstr "Invalid page template."
 
-#: wp-includes/script-loader.php:1211 wp-includes/rest-api.php:1332
-#: wp-includes/post.php:3736
+#: wp-includes/script-loader.php:1211 wp-includes/rest-api.php:1338
+#: wp-includes/post.php:3739
 msgid "Invalid date."
 msgstr "Invalid date."
 
@@ -7905,7 +7909,7 @@ msgstr "Hide Controls"
 msgid "Document Preview"
 msgstr "Document Preview"
 
-#: wp-includes/class-wp-customize-manager.php:5227
+#: wp-includes/class-wp-customize-manager.php:5254
 msgid "Header Media"
 msgstr "Header Media"
 
@@ -7939,7 +7943,7 @@ msgstr "HTML caption for the attachment, transformed for display."
 msgid "Caption for the attachment, as it exists in the database."
 msgstr "Caption for the attachment, as it exists in the database."
 
-#: wp-includes/class-wp-customize-manager.php:6002
+#: wp-includes/class-wp-customize-manager.php:6029
 msgid "Please enter a valid YouTube URL."
 msgstr "Please enter a valid YouTube URL."
 
@@ -7976,7 +7980,7 @@ msgstr "The post does not support binning. Set '%s' to delete."
 msgid "The comment does not support trashing. Set '%s' to delete."
 msgstr "The comment does not support binning. Set '%s' to delete."
 
-#: wp-includes/class-wp-customize-manager.php:5341
+#: wp-includes/class-wp-customize-manager.php:5368
 msgid "Or, enter a YouTube URL:"
 msgstr "Or, enter a YouTube URL:"
 
@@ -8026,7 +8030,7 @@ msgstr "Sorry, trackbacks are closed for this item."
 msgid "I really need an ID for this to work."
 msgstr "I really need an ID for this to work."
 
-#: wp-includes/class-wp-customize-manager.php:5566
+#: wp-includes/class-wp-customize-manager.php:5593
 msgid "Homepage"
 msgstr "Homepage"
 
@@ -8055,42 +8059,42 @@ msgid "Item selected."
 msgstr "Item selected."
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1386
+#: wp-includes/rest-api.php:1392
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1381
+#: wp-includes/rest-api.php:1387
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1376
+#: wp-includes/rest-api.php:1382
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1371
+#: wp-includes/rest-api.php:1377
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 
 #. translators: %s: IP address.
-#: wp-includes/rest-api.php:1344
+#: wp-includes/rest-api.php:1350
 msgid "%s is not a valid IP address."
 msgstr "%s is not a valid IP address."
 
 #. translators: 1: Parameter, 2: List of types.
 #. translators: 1: Parameter, 2: Type name.
-#: wp-includes/rest-api.php:1231 wp-includes/rest-api.php:1241
-#: wp-includes/rest-api.php:1267 wp-includes/rest-api.php:1295
-#: wp-includes/rest-api.php:1310 wp-includes/rest-api.php:1315
-#: wp-includes/rest-api.php:1320 wp-includes/rest-api.php:1325
+#: wp-includes/rest-api.php:1237 wp-includes/rest-api.php:1247
+#: wp-includes/rest-api.php:1273 wp-includes/rest-api.php:1301
+#: wp-includes/rest-api.php:1316 wp-includes/rest-api.php:1321
+#: wp-includes/rest-api.php:1326 wp-includes/rest-api.php:1331
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s is not of type %2$s."
 
 #. translators: 1: Parameter, 2: List of valid values.
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1363
-#: wp-includes/rest-api.php:1304
+#: wp-includes/rest-api.php:1310
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s is not one of %2$s."
 
@@ -9054,110 +9058,110 @@ msgid "Post"
 msgstr "Post"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:5977
+#: wp-includes/class-wp-customize-manager.php:6004
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 msgstr "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 
-#: wp-includes/class-wp-customize-manager.php:5969
+#: wp-includes/class-wp-customize-manager.php:5996
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr "This video file is too large to use as a header video. Try a shorter video or optimise the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 
-#: wp-includes/class-wp-customize-manager.php:5928
+#: wp-includes/class-wp-customize-manager.php:5955
 msgid "Unrecognized background setting."
 msgstr "Unrecognised background setting."
 
-#: wp-includes/class-wp-customize-manager.php:5919
-#: wp-includes/class-wp-customize-manager.php:5923
+#: wp-includes/class-wp-customize-manager.php:5946
+#: wp-includes/class-wp-customize-manager.php:5950
 msgid "Invalid value for background size."
 msgstr "Invalid value for background size."
 
-#: wp-includes/class-wp-customize-manager.php:5915
+#: wp-includes/class-wp-customize-manager.php:5942
 msgid "Invalid value for background position Y."
 msgstr "Invalid value for background position Y."
 
-#: wp-includes/class-wp-customize-manager.php:5911
+#: wp-includes/class-wp-customize-manager.php:5938
 msgid "Invalid value for background position X."
 msgstr "Invalid value for background position X."
 
-#: wp-includes/class-wp-customize-manager.php:5907
+#: wp-includes/class-wp-customize-manager.php:5934
 msgid "Invalid value for background attachment."
 msgstr "Invalid value for background attachment."
 
-#: wp-includes/class-wp-customize-manager.php:5903
+#: wp-includes/class-wp-customize-manager.php:5930
 msgid "Invalid value for background repeat."
 msgstr "Invalid value for background repeat."
 
-#: wp-includes/class-wp-customize-manager.php:5597
+#: wp-includes/class-wp-customize-manager.php:5624
 msgid "Learn more about CSS"
 msgstr "Learn more about CSS"
 
-#: wp-includes/class-wp-customize-manager.php:5633
+#: wp-includes/class-wp-customize-manager.php:5660
 msgid "Additional CSS"
 msgstr "Additional CSS"
 
-#: wp-includes/class-wp-customize-manager.php:5503
+#: wp-includes/class-wp-customize-manager.php:5530
 msgid "Scroll with Page"
 msgstr "Scroll with Page"
 
-#: wp-includes/class-wp-customize-manager.php:5485
+#: wp-includes/class-wp-customize-manager.php:5512
 msgid "Repeat Background Image"
 msgstr "Repeat Background Image"
 
-#: wp-includes/class-wp-customize-manager.php:5462
-#: wp-includes/js/dist/block-editor.js:19235
+#: wp-includes/class-wp-customize-manager.php:5489
+#: wp-includes/js/dist/block-editor.js:19226
 msgid "Image Size"
 msgstr "Image Size"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:93
-#: wp-includes/class-wp-customize-manager.php:5440
+#: wp-includes/class-wp-customize-manager.php:5467
 msgid "Image Position"
 msgstr "Image Position"
 
-#: wp-includes/class-wp-customize-manager.php:5412
+#: wp-includes/class-wp-customize-manager.php:5439
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "Custom"
 
-#: wp-includes/class-wp-customize-manager.php:5411
+#: wp-includes/class-wp-customize-manager.php:5438
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "Repeat"
 
-#: wp-includes/class-wp-customize-manager.php:5410
-#: wp-includes/class-wp-customize-manager.php:5467
+#: wp-includes/class-wp-customize-manager.php:5437
+#: wp-includes/class-wp-customize-manager.php:5494
 msgid "Fit to Screen"
 msgstr "Fit to Screen"
 
-#: wp-includes/class-wp-customize-manager.php:5408
+#: wp-includes/class-wp-customize-manager.php:5435
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "Default"
 
-#: wp-includes/class-wp-customize-manager.php:5404
+#: wp-includes/class-wp-customize-manager.php:5431
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "Preset"
 
-#: wp-includes/class-wp-customize-manager.php:5327
+#: wp-includes/class-wp-customize-manager.php:5354
 msgid "Header Video"
 msgstr "Header Video"
 
 #. translators: 1: .mp4, 2: Header height in pixels.
-#: wp-includes/class-wp-customize-manager.php:5249
+#: wp-includes/class-wp-customize-manager.php:5276
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "Upload your video in %1$s format and minimise its file size for best results. Your theme recommends a height of %2$s pixels."
 
 #. translators: 1: .mp4, 2: Header width in pixels.
-#: wp-includes/class-wp-customize-manager.php:5242
+#: wp-includes/class-wp-customize-manager.php:5269
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "Upload your video in %1$s format and minimise its file size for best results. Your theme recommends a width of %2$s pixels."
 
 #. translators: 1: .mp4, 2: Header size in pixels.
-#: wp-includes/class-wp-customize-manager.php:5235
+#: wp-includes/class-wp-customize-manager.php:5262
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "Upload your video in %1$s format and minimise its file size for best results. Your theme recommends dimensions of %2$s pixels."
 
-#: wp-includes/class-wp-customize-manager.php:5228
+#: wp-includes/class-wp-customize-manager.php:5255
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "If you add a video, the image will be used as a fallback while the video loads."
 
@@ -9169,23 +9173,23 @@ msgid "Search themes&hellip;"
 msgstr "Search themes&hellip;"
 
 #. translators: %s: Theme name.
-#: wp-includes/class-wp-customize-manager.php:4844
+#: wp-includes/class-wp-customize-manager.php:4871
 msgid "Showing details for theme: %s"
 msgstr "Showing details for theme: %s"
 
 #. translators: %d: Number of themes being displayed, which cannot currently
 #. consider singular vs. plural forms.
-#: wp-includes/class-wp-customize-manager.php:4842
+#: wp-includes/class-wp-customize-manager.php:4869
 msgid "Displaying %d themes"
 msgstr "Displaying %d themes"
 
 #. translators: %d: Number of theme search results, which cannot currently
 #. consider singular vs. plural forms.
-#: wp-includes/class-wp-customize-manager.php:4840
+#: wp-includes/class-wp-customize-manager.php:4867
 msgid "%d themes found"
 msgstr "%d themes found"
 
-#: wp-includes/class-wp-customize-manager.php:4838
+#: wp-includes/class-wp-customize-manager.php:4865
 msgid "Are you sure you want to delete this theme?"
 msgstr "Are you sure you want to delete this theme?"
 
@@ -9554,7 +9558,7 @@ msgid "Image crop area preview. Requires mouse interaction."
 msgstr "Image crop area preview. Requires mouse interaction."
 
 #. translators: %s: Documentation URL.
-#: wp-includes/formatting.php:4785
+#: wp-includes/formatting.php:4802
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 msgstr "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 
@@ -9602,7 +9606,7 @@ msgstr "Link options"
 msgid "Link inserted."
 msgstr "Link inserted."
 
-#: wp-includes/script-loader.php:1122 wp-includes/js/dist/block-editor.js:20477
+#: wp-includes/script-loader.php:1122 wp-includes/js/dist/block-editor.js:20468
 msgid "Link selected."
 msgstr "Link selected."
 
@@ -9654,7 +9658,7 @@ msgstr "The constant %1$s <strong>is deprecated</strong>. Use the boolean consta
 
 #. translators: 1: Panel ID, 2: Link to 'customize_loaded_components' filter
 #. reference.
-#: wp-includes/class-wp-customize-manager.php:3851
+#: wp-includes/class-wp-customize-manager.php:3878
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 
@@ -9762,20 +9766,20 @@ msgstr "Close dialogue"
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 
-#: wp-includes/class-wp-customize-manager.php:5139
+#: wp-includes/class-wp-customize-manager.php:5166
 msgid "Choose logo"
 msgstr "Choose logo"
 
-#: wp-includes/class-wp-customize-manager.php:5137
+#: wp-includes/class-wp-customize-manager.php:5164
 msgid "No logo selected"
 msgstr "No logo selected"
 
-#: wp-includes/class-wp-customize-manager.php:5134
+#: wp-includes/class-wp-customize-manager.php:5161
 msgid "Change logo"
 msgstr "Change logo"
 
-#: wp-includes/class-wp-customize-manager.php:5133
-#: wp-includes/class-wp-customize-manager.php:5138
+#: wp-includes/class-wp-customize-manager.php:5160
+#: wp-includes/class-wp-customize-manager.php:5165
 msgid "Select logo"
 msgstr "Select logo"
 
@@ -9830,28 +9834,28 @@ msgid "Invalid object type."
 msgstr "Invalid object type."
 
 #: wp-includes/class-wp-editor.php:1389
-#: wp-includes/js/dist/block-editor.js:20523
+#: wp-includes/js/dist/block-editor.js:20514
 msgid "Paste URL or type to search"
 msgstr "Paste URL or type to search"
 
-#: wp-includes/class-wp-customize-manager.php:5125
+#: wp-includes/class-wp-customize-manager.php:5152
 msgid "Logo"
 msgstr "Logo"
 
-#: wp-includes/class-wp-customize-manager.php:5074
-#: wp-includes/class-wp-customize-manager.php:5182
+#: wp-includes/class-wp-customize-manager.php:5101
+#: wp-includes/class-wp-customize-manager.php:5209
 msgid "Display Site Title and Tagline"
 msgstr "Display Site Title and Tagline"
 
-#: wp-includes/class-wp-customize-manager.php:4931
+#: wp-includes/class-wp-customize-manager.php:4958
 msgid "Enter mobile preview mode"
 msgstr "Enter mobile preview mode"
 
-#: wp-includes/class-wp-customize-manager.php:4928
+#: wp-includes/class-wp-customize-manager.php:4955
 msgid "Enter tablet preview mode"
 msgstr "Enter tablet preview mode"
 
-#: wp-includes/class-wp-customize-manager.php:4924
+#: wp-includes/class-wp-customize-manager.php:4951
 msgid "Enter desktop preview mode"
 msgstr "Enter desktop preview mode"
 
@@ -10194,24 +10198,24 @@ msgstr "Invalid shortcode name: Empty name given."
 msgid "Permalink saved"
 msgstr "Permalink saved"
 
-#: wp-includes/rest-api.php:917
+#: wp-includes/rest-api.php:923
 msgid "Cookie nonce is invalid"
 msgstr "Cookie nonce is invalid"
 
 #. translators: 1: Function name, 2: WordPress version number, 3: Error
 #. message.
-#: wp-includes/rest-api.php:565
+#: wp-includes/rest-api.php:571
 msgid "%1$s (since %2$s; %3$s)"
 msgstr "%1$s (since %2$s; %3$s)"
 
 #. translators: 1: Function name, 2: WordPress version number.
-#: wp-includes/rest-api.php:544 wp-includes/rest-api.php:568
+#: wp-includes/rest-api.php:550 wp-includes/rest-api.php:574
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (since %2$s; no alternative available)"
 
 #. translators: 1: Function name, 2: WordPress version number, 3: New function
 #. name.
-#: wp-includes/rest-api.php:541
+#: wp-includes/rest-api.php:547
 msgid "%1$s (since %2$s; use %3$s instead)"
 msgstr "%1$s (since %2$s; use %3$s instead)"
 
@@ -10498,7 +10502,7 @@ msgid "Press return or enter to open this section"
 msgstr "Press return or enter to open this section"
 
 #. translators: %s: Document title from the preview.
-#: wp-includes/class-wp-customize-manager.php:4481
+#: wp-includes/class-wp-customize-manager.php:4508
 msgid "Live Preview: %s"
 msgstr "Live Preview: %s"
 
@@ -10519,7 +10523,7 @@ msgstr "The post type %1$s is not registered, so it may not be reliable to check
 #. translators: 1: "type => link", 2: "taxonomy => link_category"
 #. translators: 1: caller_get_posts, 2: ignore_sticky_posts
 #: wp-includes/category.php:46 wp-includes/category-template.php:360
-#: wp-includes/class-wp-query.php:1810
+#: wp-includes/class-wp-query.php:1806
 msgid "%1$s is deprecated. Use %2$s instead."
 msgstr "%1$s is deprecated. Use %2$s instead."
 
@@ -10541,7 +10545,7 @@ msgstr "Toggle section: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/script-loader.php:1915 wp-includes/formatting.php:3871
+#: wp-includes/script-loader.php:1915 wp-includes/formatting.php:3888
 #: wp-includes/js/dist/editor.js:12766
 msgctxt "Word count type. Do not translate!"
 msgid "words"
@@ -10647,11 +10651,11 @@ msgstr "Hide image"
 msgid "Hide header image"
 msgstr "Hide header image"
 
-#: wp-includes/class-wp-customize-manager.php:5096
+#: wp-includes/class-wp-customize-manager.php:5123
 msgid "Site Icon"
 msgstr "Site Icon"
 
-#: wp-includes/class-wp-customize-manager.php:5021
+#: wp-includes/class-wp-customize-manager.php:5048
 msgid "Site Identity"
 msgstr "Site Identity"
 
@@ -11793,7 +11797,7 @@ msgstr "Bulk Select"
 
 #. translators: %s: Taxonomy label, %l: List of terms formatted as per
 #. $term_template.
-#: wp-includes/taxonomy.php:4341
+#: wp-includes/taxonomy.php:4343
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -12064,7 +12068,7 @@ msgstr "Show Video List"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:130
 #: wp-includes/media-template.php:1166
-#: wp-includes/js/dist/block-editor.js:22909
+#: wp-includes/js/dist/block-editor.js:22900
 msgid "Link CSS Class"
 msgstr "Link CSS Class"
 
@@ -12535,8 +12539,8 @@ msgstr "Image Details"
 msgid "Insert Read More tag"
 msgstr "Insert Read More tag"
 
-#: wp-includes/js/dist/block-editor.js:22520
-#: wp-includes/js/dist/block-editor.js:22526
+#: wp-includes/js/dist/block-editor.js:22511
+#: wp-includes/js/dist/block-editor.js:22517
 #: wp-includes/js/dist/edit-post.js:1328
 msgid "Tools"
 msgstr "Tools"
@@ -12616,7 +12620,7 @@ msgid "Find and replace"
 msgstr "Find and replace"
 
 #: wp-includes/media-template.php:1179 wp-includes/media.php:3884
-#: wp-includes/js/dist/block-editor.js:20789
+#: wp-includes/js/dist/block-editor.js:20780
 msgid "Replace"
 msgstr "Replace"
 
@@ -12748,13 +12752,13 @@ msgstr "Select an area to move this widget into:"
 
 #: wp-includes/class-wp-customize-widgets.php:699
 #: wp-includes/class-wp-customize-nav-menus.php:1028
-#: wp-includes/js/dist/block-editor.js:24050
+#: wp-includes/js/dist/block-editor.js:24041
 msgid "Move up"
 msgstr "Move up"
 
 #: wp-includes/class-wp-customize-widgets.php:698
 #: wp-includes/class-wp-customize-nav-menus.php:1029
-#: wp-includes/js/dist/block-editor.js:24056
+#: wp-includes/js/dist/block-editor.js:24047
 msgid "Move down"
 msgstr "Move down"
 
@@ -12958,7 +12962,7 @@ msgstr "Translation Updates"
 msgid "The theme directory \"%s\" does not exist."
 msgstr "The theme directory \"%s\" does not exist."
 
-#: wp-includes/class-wp-query.php:1470
+#: wp-includes/class-wp-query.php:1466
 msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
 msgstr "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
@@ -13028,7 +13032,7 @@ msgstr "Empty"
 
 #. translators: Time difference between two dates, in years. %s: Number of
 #. years.
-#: wp-includes/formatting.php:3765
+#: wp-includes/formatting.php:3782
 msgid "%s year"
 msgid_plural "%s years"
 msgstr[0] "%s year"
@@ -13036,7 +13040,7 @@ msgstr[1] "%s years"
 
 #. translators: Time difference between two dates, in months. %s: Number of
 #. months.
-#: wp-includes/formatting.php:3758
+#: wp-includes/formatting.php:3775
 msgid "%s month"
 msgid_plural "%s months"
 msgstr[0] "%s month"
@@ -13044,7 +13048,7 @@ msgstr[1] "%s months"
 
 #. translators: Time difference between two dates, in weeks. %s: Number of
 #. weeks.
-#: wp-includes/formatting.php:3751
+#: wp-includes/formatting.php:3768
 msgid "%s week"
 msgid_plural "%s weeks"
 msgstr[0] "%s week"
@@ -13087,7 +13091,7 @@ msgstr "g:i a"
 msgid "F j, Y"
 msgstr "j F Y"
 
-#: wp-includes/js/dist/block-editor.js:23524
+#: wp-includes/js/dist/block-editor.js:23515
 msgid "Not set"
 msgstr "Not set"
 
@@ -13190,8 +13194,8 @@ msgstr "Invalid user ID."
 msgid "Random Order"
 msgstr "Random Order"
 
-#: wp-includes/media.php:3936 wp-includes/js/dist/block-editor.js:20940
-#: wp-includes/js/dist/block-editor.js:21358
+#: wp-includes/media.php:3936 wp-includes/js/dist/block-editor.js:20931
+#: wp-includes/js/dist/block-editor.js:21349
 msgid "Insert from URL"
 msgstr "Insert from URL"
 
@@ -13258,7 +13262,7 @@ msgstr "Manage Video"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:28
 #: wp-includes/post.php:2740 wp-includes/js/dist/editor.js:8565
-#: wp-includes/js/dist/block-editor.js:21292
+#: wp-includes/js/dist/block-editor.js:21283
 #: wp-includes/js/dist/block-library.js:21833
 msgid "Video"
 msgstr "Video"
@@ -13295,7 +13299,7 @@ msgstr "Insert into page"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:28
 #: wp-includes/post.php:2731 wp-includes/js/dist/editor.js:8568
-#: wp-includes/js/dist/block-editor.js:21288
+#: wp-includes/js/dist/block-editor.js:21279
 #: wp-includes/js/dist/block-library.js:9205
 msgid "Audio"
 msgstr "Audio"
@@ -13378,7 +13382,7 @@ msgstr "Drop files to upload"
 msgid "Create Gallery"
 msgstr "Create Gallery"
 
-#: wp-includes/media.php:3900 wp-includes/js/dist/block-editor.js:21400
+#: wp-includes/media.php:3900 wp-includes/js/dist/block-editor.js:21391
 msgid "Media Library"
 msgstr "Media Library"
 
@@ -13437,14 +13441,14 @@ msgstr ""
 
 #: wp-includes/media-template.php:772 wp-includes/media-template.php:847
 #: wp-includes/media-template.php:1120
-#: wp-includes/js/dist/block-editor.js:22842
+#: wp-includes/js/dist/block-editor.js:22833
 #: wp-includes/js/dist/block-library.js:7851
 msgid "Media File"
 msgstr "Media File"
 
 #: wp-includes/media-template.php:779 wp-includes/media-template.php:844
 #: wp-includes/media-template.php:1123
-#: wp-includes/js/dist/block-editor.js:22847
+#: wp-includes/js/dist/block-editor.js:22838
 #: wp-includes/js/dist/block-library.js:7848
 msgid "Attachment Page"
 msgstr "Attachment Page"
@@ -13550,7 +13554,7 @@ msgstr "Insert Media"
 msgid "View Attachment Page"
 msgstr "View Attachment Page"
 
-#: wp-includes/js/dist/block-editor.js:25311
+#: wp-includes/js/dist/block-editor.js:25302
 msgid "Clear selection."
 msgstr "Clear selection."
 
@@ -13619,11 +13623,11 @@ msgstr "Text"
 msgid "Skip to toolbar"
 msgstr "Skip to toolbar"
 
-#: wp-includes/class-wp-customize-manager.php:5194
+#: wp-includes/class-wp-customize-manager.php:5221
 msgid "Header Text Color"
 msgstr "Header Text Colour"
 
-#: wp-includes/class-wp-customize-manager.php:5160
+#: wp-includes/class-wp-customize-manager.php:5187
 msgid "Colors"
 msgstr "Colours"
 
@@ -13659,7 +13663,7 @@ msgid "Sorry, you are not allowed to publish this page."
 msgstr "Sorry, you are not allowed to publish this page."
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:54
-#: wp-includes/class-wp-customize-manager.php:5255
+#: wp-includes/class-wp-customize-manager.php:5282
 msgid "Header Image"
 msgstr "Header Image"
 
@@ -13702,16 +13706,16 @@ msgid_plural "Site name must be at least %s characters."
 msgstr[0] "Site name must be at least %s character."
 msgstr[1] "Site name must be at least %s characters."
 
-#: wp-includes/class-wp-customize-manager.php:5550
+#: wp-includes/class-wp-customize-manager.php:5577
 msgid "A static page"
 msgstr "A static page"
 
 #: wp-includes/customize/class-wp-customize-background-image-control.php:33
-#: wp-includes/class-wp-customize-manager.php:5364
+#: wp-includes/class-wp-customize-manager.php:5391
 msgid "Background Image"
 msgstr "Background Image"
 
-#: wp-includes/class-wp-customize-manager.php:5218
+#: wp-includes/class-wp-customize-manager.php:5245
 #: wp-includes/js/dist/block-editor.js:7575
 msgid "Background Color"
 msgstr "Background Colour"
@@ -13734,7 +13738,7 @@ msgstr "Remove Image"
 msgid "Sorry, you are not allowed to edit this comment."
 msgstr "Sorry, you are not allowed to edit this comment."
 
-#: wp-includes/class-wp-customize-manager.php:5584
+#: wp-includes/class-wp-customize-manager.php:5611
 msgid "Posts page"
 msgstr "Posts page"
 
@@ -13749,15 +13753,15 @@ msgstr "Allowed Files"
 #: wp-includes/customize/class-wp-customize-media-control.php:236
 #: wp-includes/customize/class-wp-customize-media-control.php:247
 #: wp-includes/customize/class-wp-customize-media-control.php:257
-#: wp-includes/class-wp-customize-manager.php:5135
+#: wp-includes/class-wp-customize-manager.php:5162
 #: wp-includes/class-wp-editor.php:1387 wp-includes/js/dist/edit-post.js:1145
 #: wp-includes/js/dist/block-directory.js:1501
 msgid "Remove"
 msgstr "Remove"
 
-#: wp-includes/js/dist/block-editor.js:20932
-#: wp-includes/js/dist/block-editor.js:21414
-#: wp-includes/js/dist/block-editor.js:21427
+#: wp-includes/js/dist/block-editor.js:20923
+#: wp-includes/js/dist/block-editor.js:21405
+#: wp-includes/js/dist/block-editor.js:21418
 msgid "Upload"
 msgstr "Upload"
 
@@ -13877,7 +13881,7 @@ msgid "Error: The themes directory is either empty or doesn&#8217;t exist. Pleas
 msgstr "Error: the themes directory is either empty or doesn&#8217;t exist. Please check your installation."
 
 #. translators: %s: Document title from the preview.
-#: wp-includes/class-wp-customize-manager.php:4478
+#: wp-includes/class-wp-customize-manager.php:4505
 msgid "Customize: %s"
 msgstr "Customise: %s"
 
@@ -13887,15 +13891,15 @@ msgstr "Customise: %s"
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Select &mdash;"
 
-#: wp-includes/class-wp-customize-manager.php:5055
+#: wp-includes/class-wp-customize-manager.php:5082
 msgid "Tagline"
 msgstr "Tagline"
 
-#: wp-includes/class-wp-customize-manager.php:5549
+#: wp-includes/class-wp-customize-manager.php:5576
 msgid "Your latest posts"
 msgstr "Your latest posts"
 
-#: wp-includes/js/dist/block-editor.js:23604
+#: wp-includes/js/dist/block-editor.js:23595
 msgid "Styles"
 msgstr "Styles"
 
@@ -13936,7 +13940,7 @@ msgid "Edit Site"
 msgstr "Edit Site"
 
 #: wp-includes/script-loader.php:1298 wp-includes/script-loader.php:1391
-#: wp-includes/post.php:4573
+#: wp-includes/post.php:4582
 msgctxt "tag delimiter"
 msgid ","
 msgstr ","
@@ -14046,7 +14050,7 @@ msgstr "Create a Configuration File"
 msgid "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file."
 msgstr "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file."
 
-#: wp-includes/class-wp-customize-manager.php:5596
+#: wp-includes/class-wp-customize-manager.php:5623
 msgid "https://codex.wordpress.org/CSS"
 msgstr "https://codex.wordpress.org/CSS"
 
@@ -14158,7 +14162,7 @@ msgstr "<strong>Error</strong>: site URL already taken."
 msgid "Documentation"
 msgstr "Documentation"
 
-#: wp-includes/general-template.php:4197 wp-includes/formatting.php:3859
+#: wp-includes/general-template.php:4197 wp-includes/formatting.php:3876
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -14226,7 +14230,7 @@ msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Blue"
 
-#: wp-includes/formatting.php:4767
+#: wp-includes/formatting.php:4784
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "The timezone you have entered is not valid. Please select a valid timezone."
 
@@ -14578,7 +14582,7 @@ msgid "Blavatar"
 msgstr "Blavatar"
 
 #. translators: %s: Taxonomy name.
-#: wp-includes/post.php:3969
+#: wp-includes/post.php:3978
 msgid "Invalid taxonomy: %s."
 msgstr "Invalid taxonomy: %s."
 
@@ -14642,7 +14646,7 @@ msgid "F, Y"
 msgstr "F Y"
 
 #. translators: Used to join items in a list with only 2 items.
-#: wp-includes/formatting.php:5055
+#: wp-includes/formatting.php:5072
 msgid "%1$s and %2$s"
 msgstr "%1$s and %2$s"
 
@@ -14915,15 +14919,15 @@ msgstr "This site has been archived or suspended."
 msgid "The given object ID is not that of a menu item."
 msgstr "The given object ID is not that of a menu item."
 
-#: wp-includes/formatting.php:4708
+#: wp-includes/formatting.php:4725
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 
-#: wp-includes/formatting.php:4695
+#: wp-includes/formatting.php:4712
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 
-#: wp-includes/formatting.php:4585
+#: wp-includes/formatting.php:4602
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 
@@ -15342,7 +15346,7 @@ msgstr "Comment author name and email are required."
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:361
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:828
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:398
-#: wp-includes/post.php:3609 wp-includes/post.php:4185
+#: wp-includes/post.php:3612 wp-includes/post.php:4194
 #: wp-includes/revision.php:308
 msgid "Invalid post ID."
 msgstr "Invalid post ID."
@@ -15581,7 +15585,7 @@ msgstr "Stylesheet is missing."
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "The parent theme is missing. Please install the \"%s\" parent theme."
 
-#: wp-includes/taxonomy.php:4414
+#: wp-includes/taxonomy.php:4416
 msgid "Invalid object ID."
 msgstr "Invalid object ID."
 
@@ -15711,7 +15715,7 @@ msgstr "of"
 #: wp-includes/script-loader.php:839
 #: wp-includes/widgets/class-wp-widget-media-image.php:28
 #: wp-includes/class-wp-editor.php:1216 wp-includes/js/dist/editor.js:8553
-#: wp-includes/js/dist/block-editor.js:21290
+#: wp-includes/js/dist/block-editor.js:21281
 #: wp-includes/js/dist/block-library.js:5200
 #: wp-includes/js/dist/block-library.js:5775
 msgid "Image"
@@ -15769,15 +15773,15 @@ msgstr "Cannot create a user with an empty login name."
 msgid "Cannot create a revision of a revision"
 msgstr "Cannot create a revision of a revision"
 
-#: wp-includes/post.php:3938
+#: wp-includes/post.php:3947
 msgid "Could not insert post into the database"
 msgstr "Could not insert post into the database"
 
-#: wp-includes/post.php:3923
+#: wp-includes/post.php:3932
 msgid "Could not update post in the database"
 msgstr "Could not update post in the database"
 
-#: wp-includes/post.php:3656
+#: wp-includes/post.php:3659
 msgid "Content, title, and excerpt are empty."
 msgstr "Content, title, and excerpt are empty."
 
@@ -16062,8 +16066,8 @@ msgstr "Comments Feed"
 msgid "Insert Page Break tag"
 msgstr "Insert Page Break tag"
 
-#: wp-includes/class-wp-customize-manager.php:5409
-#: wp-includes/class-wp-customize-manager.php:5468
+#: wp-includes/class-wp-customize-manager.php:5436
+#: wp-includes/class-wp-customize-manager.php:5495
 msgid "Fill Screen"
 msgstr "Fill Screen"
 
@@ -16072,13 +16076,13 @@ msgid "Quote"
 msgstr "Quote"
 
 #: wp-includes/class-wp-editor.php:1257
-#: wp-includes/js/dist/block-editor.js:22956
+#: wp-includes/js/dist/block-editor.js:22947
 msgid "Remove link"
 msgstr "Remove link"
 
 #: wp-includes/script-loader.php:643 wp-includes/class-wp-editor.php:1261
-#: wp-includes/js/dist/block-editor.js:22622
-#: wp-includes/js/dist/block-editor.js:22920
+#: wp-includes/js/dist/block-editor.js:22613
+#: wp-includes/js/dist/block-editor.js:22911
 msgid "Insert link"
 msgstr "Insert link"
 
@@ -16100,7 +16104,7 @@ msgstr "Letter"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:137
 #: wp-includes/media-template.php:1162
-#: wp-includes/js/dist/block-editor.js:22903
+#: wp-includes/js/dist/block-editor.js:22894
 msgid "Link Rel"
 msgstr "Link Rel"
 
@@ -16227,7 +16231,7 @@ msgstr "New document"
 msgid "Paste"
 msgstr "Paste"
 
-#: wp-includes/class-wp-customize-manager.php:4280
+#: wp-includes/class-wp-customize-manager.php:4307
 #: wp-includes/class-wp-editor.php:1175
 msgid "Copy"
 msgstr "Copy"
@@ -16781,7 +16785,7 @@ msgid ", "
 msgstr ", "
 
 #. translators: Time difference between two dates, in days. %s: Number of days.
-#: wp-includes/formatting.php:3744
+#: wp-includes/formatting.php:3761
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s day"
@@ -16790,7 +16794,7 @@ msgstr[1] "%s days"
 #. translators: %s: Time duration in hour or hours.
 #. translators: Time difference between two dates, in hours. %s: Number of
 #. hours.
-#: wp-includes/functions.php:525 wp-includes/formatting.php:3737
+#: wp-includes/functions.php:525 wp-includes/formatting.php:3754
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s hour"
@@ -16798,7 +16802,7 @@ msgstr[1] "%s hours"
 
 #. translators: Time difference between two dates, in minutes (min=minute). %s:
 #. Number of minutes.
-#: wp-includes/formatting.php:3730
+#: wp-includes/formatting.php:3747
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s min"
@@ -17070,7 +17074,7 @@ msgstr "Visit %s&#8217;s website"
 msgid "Meta"
 msgstr "Meta"
 
-#: wp-includes/js/dist/block-editor.js:20065
+#: wp-includes/js/dist/block-editor.js:20056
 msgid "Search results for %s"
 msgstr "Search results for %s"
 
@@ -17156,7 +17160,7 @@ msgid "&laquo; Previous Page"
 msgstr "&laquo; Previous Page"
 
 #: wp-includes/js/dist/components.js:39290
-#: wp-includes/js/dist/block-editor.js:21561
+#: wp-includes/js/dist/block-editor.js:21552
 msgid "All"
 msgstr "All"
 
@@ -17217,7 +17221,7 @@ msgstr "Plugin:"
 #: wp-includes/customize/class-wp-customize-media-control.php:235
 #: wp-includes/customize/class-wp-customize-media-control.php:246
 #: wp-includes/customize/class-wp-customize-media-control.php:256
-#: wp-includes/class-wp-customize-manager.php:5136
+#: wp-includes/class-wp-customize-manager.php:5163
 #: wp-includes/js/dist/components.js:33463
 #: wp-includes/js/dist/components.js:35215
 #: wp-includes/js/dist/block-library.js:18937
@@ -17227,7 +17231,7 @@ msgstr "Default"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:84
 #: wp-includes/media-template.php:1108 wp-includes/class-wp-editor.php:1328
-#: wp-includes/js/dist/block-editor.js:19224
+#: wp-includes/js/dist/block-editor.js:19215
 msgid "Height"
 msgstr "Height"
 
@@ -17244,7 +17248,7 @@ msgid "Email"
 msgstr "Email"
 
 #: wp-includes/class-wp-xmlrpc-server.php:545
-#: wp-includes/class-wp-customize-manager.php:5038
+#: wp-includes/class-wp-customize-manager.php:5065
 msgid "Site Title"
 msgstr "Site Title"
 
@@ -17274,8 +17278,8 @@ msgstr "Themes"
 msgid "Sites"
 msgstr "Sites"
 
-#: wp-includes/js/dist/block-editor.js:22622
-#: wp-includes/js/dist/block-editor.js:22920
+#: wp-includes/js/dist/block-editor.js:22613
+#: wp-includes/js/dist/block-editor.js:22911
 msgid "Edit link"
 msgstr "Edit link"
 
@@ -17315,7 +17319,7 @@ msgstr "<strong>Error</strong>: please enter a username."
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
 #: wp-includes/media-template.php:1103 wp-includes/class-wp-editor.php:1329
-#: wp-includes/js/dist/block-editor.js:19213
+#: wp-includes/js/dist/block-editor.js:19204
 #: wp-includes/js/dist/format-library.js:927
 msgid "Width"
 msgstr "Width"
@@ -17398,16 +17402,16 @@ msgstr "Edit Media"
 msgid "New Page"
 msgstr "New Page"
 
-#: wp-includes/media.php:3881 wp-includes/js/dist/block-editor.js:22535
+#: wp-includes/media.php:3881 wp-includes/js/dist/block-editor.js:22526
 msgid "Select"
 msgstr "Select"
 
 #: wp-includes/script-loader.php:841 wp-includes/script-loader.php:1165
 #: wp-includes/script-loader.php:1968
-#: wp-includes/class-wp-customize-manager.php:5627
+#: wp-includes/class-wp-customize-manager.php:5654
 #: wp-includes/class-wp-editor.php:1183 wp-includes/class-wp-editor.php:1840
 #: wp-includes/js/dist/components.js:33272
-#: wp-includes/js/dist/block-editor.js:22639
+#: wp-includes/js/dist/block-editor.js:22630
 #: wp-includes/js/dist/edit-post.js:3179 wp-includes/js/dist/edit-post.js:3503
 #: wp-includes/js/dist/edit-post.js:3848
 msgid "Close"
@@ -17457,7 +17461,7 @@ msgstr "Search"
 #: wp-includes/script-loader.php:696 wp-includes/script-loader.php:875
 #: wp-includes/widgets/class-wp-widget-text.php:538
 #: wp-includes/widgets/class-wp-widget-text.php:553
-#: wp-includes/class-wp-customize-manager.php:4207
+#: wp-includes/class-wp-customize-manager.php:4234
 msgid "Dismiss"
 msgstr "Dismiss"
 
@@ -17519,7 +17523,7 @@ msgstr "Image URL"
 
 #: wp-includes/media.php:3877 wp-includes/media.php:4442
 #: wp-includes/class-wp-editor.php:1233
-#: wp-includes/js/dist/block-editor.js:21285
+#: wp-includes/js/dist/block-editor.js:21276
 msgid "Media"
 msgstr "Media"
 
@@ -17657,7 +17661,7 @@ msgid "Reply"
 msgstr "Reply"
 
 #: wp-includes/script-loader.php:1154 wp-includes/script-loader.php:1324
-#: wp-includes/class-wp-customize-manager.php:4756
+#: wp-includes/class-wp-customize-manager.php:4783
 #: wp-includes/js/dist/editor.js:11076
 msgid "Save Draft"
 msgstr "Save Draft"
@@ -17673,8 +17677,8 @@ msgstr "Content"
 #: wp-includes/script-loader.php:1100 wp-includes/script-loader.php:1164
 #: wp-includes/script-loader.php:1312 wp-includes/media.php:3882
 #: wp-includes/class-wp-editor.php:1182 wp-includes/class-wp-editor.php:1886
-#: wp-includes/js/dist/block-editor.js:21334
-#: wp-includes/js/dist/block-editor.js:21337
+#: wp-includes/js/dist/block-editor.js:21325
+#: wp-includes/js/dist/block-editor.js:21328
 msgid "Cancel"
 msgstr "Cancel"
 
@@ -17688,9 +17692,9 @@ msgid "Recent Comments"
 msgstr "Recent Comments"
 
 #: wp-includes/media-template.php:1441
-#: wp-includes/class-wp-customize-manager.php:4234
+#: wp-includes/class-wp-customize-manager.php:4261
 #: wp-includes/class-wp-editor.php:1249
-#: wp-includes/js/dist/block-editor.js:24823
+#: wp-includes/js/dist/block-editor.js:24814
 #: wp-includes/js/dist/block-library.js:14219
 msgid "Preview"
 msgstr "Preview"
@@ -17700,8 +17704,8 @@ msgstr "Preview"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/js/dist/block-editor.js:19806
-#: wp-includes/js/dist/block-editor.js:22646
+#: wp-includes/js/dist/block-editor.js:19797
+#: wp-includes/js/dist/block-editor.js:22637
 msgid "Submit"
 msgstr "Submit"
 
@@ -17761,7 +17765,7 @@ msgid "Name"
 msgstr "Name"
 
 #: wp-includes/class-wp-editor.php:1219
-#: wp-includes/js/dist/block-editor.js:23614
+#: wp-includes/js/dist/block-editor.js:23605
 msgid "Advanced"
 msgstr "Advanced"
 
@@ -17816,7 +17820,7 @@ msgid "Excerpt"
 msgstr "Excerpt"
 
 #: wp-includes/script-loader.php:1152 wp-includes/script-loader.php:1320
-#: wp-includes/class-wp-customize-manager.php:4751
+#: wp-includes/class-wp-customize-manager.php:4778
 #: wp-includes/js/dist/editor.js:9397 wp-includes/js/dist/edit-post.js:4970
 msgid "Publish"
 msgstr "Publish"
@@ -17828,8 +17832,8 @@ msgstr "Comments"
 
 #: wp-includes/class-wp-customize-widgets.php:777 wp-includes/media.php:3921
 #: wp-includes/class-wp-editor.php:1390
-#: wp-includes/js/dist/block-editor.js:20691
-#: wp-includes/js/dist/block-editor.js:21108
+#: wp-includes/js/dist/block-editor.js:20682
+#: wp-includes/js/dist/block-editor.js:21099
 #: wp-includes/js/dist/block-library.js:23595
 #: wp-includes/js/dist/format-library.js:933
 msgid "Apply"
@@ -17852,9 +17856,9 @@ msgstr "%s ago"
 #: wp-includes/class-wp-editor.php:1388
 #: wp-includes/class-walker-comment.php:242
 #: wp-includes/class-walker-comment.php:392 wp-includes/js/dist/editor.js:12394
-#: wp-includes/js/dist/block-editor.js:20132
-#: wp-includes/js/dist/block-editor.js:20751
-#: wp-includes/js/dist/block-editor.js:22532
+#: wp-includes/js/dist/block-editor.js:20123
+#: wp-includes/js/dist/block-editor.js:20742
+#: wp-includes/js/dist/block-editor.js:22523
 #: wp-includes/js/dist/block-library.js:17817
 msgid "Edit"
 msgstr "Edit"
@@ -17880,8 +17884,8 @@ msgstr "Comment"
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:94
 #: wp-includes/class-wp-editor.php:1265 wp-includes/class-wp-editor.php:1845
 #: wp-includes/class-wp-customize-nav-menus.php:1194
-#: wp-includes/js/dist/block-editor.js:20567
-#: wp-includes/js/dist/block-editor.js:21101
+#: wp-includes/js/dist/block-editor.js:20558
+#: wp-includes/js/dist/block-editor.js:21092
 #: wp-includes/js/dist/block-library.js:13557
 msgid "URL"
 msgstr "URL"

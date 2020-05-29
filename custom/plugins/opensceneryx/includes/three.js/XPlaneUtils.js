@@ -62,8 +62,12 @@ THREE.XPlaneUtils = {
 
         texture.flipY = false; // Never flip texture because DDS compressed textures are never flipped and we can't detect or change that due to https://github.com/mrdoob/three.js/issues/4316
         texture.anisotropy = 16;
+        texture.wrapS = THREE.RepeatWrapping;
 
-        if (wrap) texture.wrapT = THREE.RepeatWrapping;
+        if (wrap) {
+            texture.wrapT = THREE.RepeatWrapping;
+            texture.wrapS = THREE.RepeatWrapping;
+        }
 
         if (mode == THREE.XPlaneUtils.textureModes.STANDARD) {
             material.map = texture;

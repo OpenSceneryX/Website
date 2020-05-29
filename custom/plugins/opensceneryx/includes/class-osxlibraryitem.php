@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Description of OSXObject
+ * Description of OSXLibraryItem
  */
 abstract class OSXLibraryItem extends OSXItem {
 
@@ -52,8 +52,15 @@ abstract class OSXLibraryItem extends OSXItem {
         $contents = file_get_contents($this->path . '/info.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
 
+        // Implement a presenter for the opengraph image. We only need this because there is a bug in the default implementation that means
+        // that the width and height are not set correctly. Once fixed, remove this presenter and just use the wpseo_opengraph_image filter.
+        // Disabled for the moment because if we include this with Yoast 14.2, we get two sets of og:image tags output to the page. We may
+        // still need this once we can override the default og:image.
+        //add_filter('wpseo_frontend_presenters', array($this, 'addPresenters'));
+
         // Intercept the yoast opengraph call
-        add_action('wpseo_opengraph', array($this, 'openGraph'));
+        add_filter('wpseo_opengraph_image', array($this, 'ogImage'), 10, 1);
+
         // Intercept the yoast twitter image call
         add_filter('wpseo_twitter_image', array($this, 'twitterImage'), 10, 1);
 
@@ -271,7 +278,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         if ($this->logo !== null) {
             $result .= "<div class='objectlogocontainer'>\n";
-            $result .= "<img src='/doc/" . $this->logo . "' alt='Object branding logo' />\n";
+            $result .= "<img src='/doc/" . $this->logo . "' alt='Branding logo' />\n";
             $result .= "</div>\n";
         }
 
@@ -310,7 +317,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $authorCount = count($this->conversionAuthors);
         if ($authorCount > 0) {
-            $result .= "<li><span class='fieldTitle'>Object Conversion By:</span> ";
+            $result .= "<li><span class='fieldTitle'>Conversion By:</span> ";
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->conversionAuthorURLs[$i])) {
@@ -325,7 +332,7 @@ abstract class OSXLibraryItem extends OSXItem {
 
         $authorCount = count($this->modificationAuthors);
         if ($authorCount > 0) {
-            $result .= "<li><span class='fieldTitle'>Object Modifications By:</span> ";
+            $result .= "<li><span class='fieldTitle'>Modifications By:</span> ";
 
             for ($i = 0; $i < $authorCount; $i++) {
                 if (isset($this->modificationAuthorURLs[$i])) {
@@ -396,16 +403,12 @@ abstract class OSXLibraryItem extends OSXItem {
         return $result;
     }
 
-    function openGraph() {
-        add_action('wpseo_add_opengraph_images', array($this, 'openGraphAddImages'));
-    }
-
-    function openGraphAddImages($object) {
+    function ogImage($img) {
         $ssCount = count($this->screenshots);
         if ($ssCount > 0) {
-            $object->add_image($this->screenshots[0]['path']);
+            return $this->screenshots[0]['path'];
         } else {
-            $object->add_image("/doc/screenshot_missing.png");
+            return "/doc/screenshot_missing.png";
         }
     }
 
@@ -472,6 +475,14 @@ abstract class OSXLibraryItem extends OSXItem {
         $extension = $this->getTypeExtension();
         if (substr_compare($path, $extension, -strlen($extension)) === 0) return $path;
         else return $path . $extension;
+    }
+
+    /**
+     * Add a custom presenter for Open Graph Images. Only needed until Yoast fix the missing image width and height calculations in their class.
+     */
+    public function addPresenters($presenters) {
+        $presenters[] = new OSXOGImagePresenter();
+        return $presenters;
     }
 
     /**
