@@ -54,7 +54,9 @@ abstract class OSXLibraryItem extends OSXItem {
 
         // Implement a presenter for the opengraph image. We only need this because there is a bug in the default implementation that means
         // that the width and height are not set correctly. Once fixed, remove this presenter and just use the wpseo_opengraph_image filter.
-        add_filter('wpseo_frontend_presenters', array($this, 'addPresenters'));
+        // Disabled for the moment because if we include this with Yoast 14.2, we get two sets of og:image tags output to the page. We may
+        // still need this once we can override the default og:image.
+        //add_filter('wpseo_frontend_presenters', array($this, 'addPresenters'));
 
         // Intercept the yoast opengraph call
         add_filter('wpseo_opengraph_image', array($this, 'ogImage'), 10, 1);
