@@ -225,15 +225,15 @@ class OpenSceneryX {
     function osxLatestItemsShortcode($atts) {
         extract(shortcode_atts(array(
             'cssclass' => 'latest-items',
-            'count' => '10',
-            'title' => '<h2>Latest Additions</h2>'
+            'version' => 'latest',
+            'format' => 'slider'
             ), $atts));
 
-        $latestItemsPath = ABSPATH . '../doc/latestitems.tsv';
+        $versionItemsPath = ABSPATH . '../doc/versions/' . $version . '.tsv';
 
-        // Read TSV file containing all latest items
-        if (is_file($latestItemsPath)) {
-            $csvFile = file($latestItemsPath);
+        // Read TSV file containing items from the specified version
+        if (is_file($versionItemsPath)) {
+            $csvFile = file($versionItemsPath);
             $data = [];
             foreach ($csvFile as $line) {
                 $data[] = str_getcsv($line, "\t");
@@ -243,32 +243,54 @@ class OpenSceneryX {
             return "";
         }
 
-        // Uses http://kenwheeler.github.io/slick/ to present a carousel of latest additions
-        $result = $title;
-        $result .= '<div class="lazy ' . $cssclass . '">' . "\n";
+        switch ($format) {
+            case 'slider':
 
-        foreach ($data as $item) {
-            $result .= '<div class="osx-slick-slide"><a href="/' . $item[1] . '"><img class="osx-slick-image" data-lazy="/' . $item[1] . 'screenshot.jpg"></a><div class="osx-slick-caption">' . $item[0] . '</div></div>';
+                // Uses http://kenwheeler.github.io/slick/ to present a carousel of latest additions
+                $result = '<div class="lazy ' . $cssclass . '">' . "\n";
+
+                foreach ($data as $item) {
+                    $result .= '<div class="osx-slick-slide"><a href="/' . $item[1] . '"><img class="osx-slick-image" data-lazy="/' . $item[1] . 'screenshot.jpg"></a><div class="osx-slick-caption">' . $item[0] . '</div></div>';
+                }
+
+                $result .= '</div>' . "\n";
+
+                $slickScript = '<script type="text/javascript">
+                    $(document).ready(function(){
+                        $(".lazy").slick({
+                        lazyLoad: "ondemand",
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        swipeToSlide: true,
+                        dots: ' . (count($data) > 14 ? 'false' : 'true') . ',
+                        initialSlide: ' . rand(0, count($data) - 1) . '
+                    });
+                });
+                </script>';
+
+                wp_add_inline_script('slick', $slickScript, 'after');
+            break;
+
+            case 'list':
+                $result = '<ul class="itemlist">' . "\n";
+
+                foreach ($data as $item) {
+                    $result .= '<li><a href="/' . $item[1] . '"><img src="/' . $item[1] . 'screenshot.jpg">' . $item[0] . '</a></li>' . "\n";
+                }
+
+                $result .= '</ul>' . "\n";
+            break;
+
+            case 'thumbnails':
+                $result = "";
+
+                foreach ($data as $item) {
+                    $result .= '<div class="thumbnailcontainer"><a href="/' . $item[1] . '"><img src="/' . $item[1] . 'screenshot.jpg"></a><div class="caption">' . $item[0] . '</div></div>';
+                }
+            break;
         }
-
-        $result .= '</div>' . "\n";
-
-        $slickScript = '<script type="text/javascript">
-            $(document).ready(function(){
-                $(".lazy").slick({
-                lazyLoad: "ondemand",
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                swipeToSlide: true,
-                dots: ' . (count($data) > 14 ? 'false' : 'true') . ',
-                initialSlide: ' . rand(0, count($data) - 1) . '
-            });
-        });
-        </script>';
-
-        wp_add_inline_script('slick', $slickScript, 'after');
 
         return $result;
     }

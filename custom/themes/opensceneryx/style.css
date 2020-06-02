@@ -327,7 +327,8 @@ div.clear {
 	clear:both;
 }
 
-ul.inline {
+ul.inline,
+ul.itemlist {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -335,9 +336,18 @@ ul.inline {
 	list-style-image: url(/doc/bullet_object.gif);
 }
 
-ul.inline li { display: inline; }
+ul.inline li,
+ul.itemlist li {
+	display: inline;
+}
+
 ul.inline li:after { content: " | "; }
 ul.inline li:last-child:after { content: ""; }
+
+ul.itemlist li a img {
+	width: 75px;
+}
+
 
 div#breadcrumbs ul.inline {
 	line-height: 2.0em;
