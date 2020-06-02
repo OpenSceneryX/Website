@@ -185,7 +185,7 @@ class OpenSceneryX {
         $releaseNotesPath = ABSPATH . '../doc/ReleaseNotes.html';
 
         if (is_file($releaseNotesPath)) {
-            return file_get_contents($releaseNotesPath);
+            return do_shortcode(file_get_contents($releaseNotesPath));
         } else {
             return "ERROR: No release notes found";
         }
