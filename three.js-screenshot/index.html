@@ -52,14 +52,19 @@
 
 			if (path.endsWith(".fac")) {
 				var xPlaneLoader = new THREE.XPlaneFacLoader();
+				var cameraDistance = 1.7;
 			} else if (path.endsWith(".for")) {
 				var xPlaneLoader = new THREE.XPlaneForLoader();
+				var cameraDistance = 1.7;
 			} else if (path.endsWith(".lin")) {
 				var xPlaneLoader = new THREE.XPlaneLinLoader();
+				var cameraDistance = 1.0;
 			} else if (path.endsWith(".obj")) {
 				var xPlaneLoader = new THREE.XPlaneObjLoader();
+				var cameraDistance = 1.7;
 			} else if (path.endsWith(".pol")) {
 				var xPlaneLoader = new THREE.XPlanePolLoader();
+				var cameraDistance = 1.0;
 			}
 
 			var parts = path.split('/');
@@ -87,7 +92,7 @@
 				bBox.getCenter(bBoxCenter);
 
 				// Important to rotate first, then translate
-				mainObject.rotateY(2.2);
+				mainObject.rotateY(-1.0);
 
 				// Center object in scene.
 				mainObject.translateX(-bBoxCenter.x);
@@ -97,7 +102,7 @@
 				// Calculate the camera distance based on the maximum dimensions of the model
 				var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
 				var pos = scene.position;
-				camera.position.set(pos.x, pos.y + bBoxSize.x / 2, dist * 1.7); // y position is half the width of the object, usually gives a sensible angle downwards
+				camera.position.set(pos.x, pos.y + bBoxSize.x / 2, dist * cameraDistance); // y position is half the width of the object, usually gives a sensible angle downwards
 				camera.lookAt(pos);
 				controls.update();
 			});
