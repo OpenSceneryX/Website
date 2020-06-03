@@ -5,7 +5,7 @@
 
 THREE.XPlaneLinLoader = ( function () {
 
-	var lineRepetition = 3.0;
+	var lineRepetition = 2.0;
 
 	function XPlaneLinLoader( manager ) {
 
@@ -140,7 +140,7 @@ THREE.XPlaneLinLoader = ( function () {
 
 			// Create underlying surface to provide contrast for our lines
 			var geometry = new THREE.BoxGeometry( 1.1, 0.01, 1.1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x008000 } );
+			var material = new THREE.MeshBasicMaterial( { color: 0x808080 } );
 			var plane = new THREE.Mesh( geometry, material );
 			container.add( plane );
 

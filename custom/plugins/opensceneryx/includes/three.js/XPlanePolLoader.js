@@ -63,6 +63,7 @@ THREE.XPlanePolLoader = ( function () {
 			var trimLeft = ( typeof ''.trimLeft === 'function' );
 
 			var scaleH, scaleV = 1;
+			var surface = "default";
 
 			for ( var i = 0, l = lines.length; i < l; i++ ) {
 
@@ -88,6 +89,10 @@ THREE.XPlanePolLoader = ( function () {
 						scaleV = parseFloat(data[ 2 ]);
 						break;
 
+					case 'SURFACE':
+						surface = data[ 1 ];
+						break;
+
 					case 'BUMP_LEVEL':
 					case 'DECAL':
 					case 'DECAL_KEYED':
@@ -102,7 +107,6 @@ THREE.XPlanePolLoader = ( function () {
 					case 'NO_BLEND':
 					case 'NO_SHADOW':
 					case 'SPECULAR':
-					case 'SURFACE':
 					case 'TEX_WIDTH':
 					case 'TEXTURE_CONTROL':
 					case 'TEXTURE_DETAIL':
@@ -128,7 +132,25 @@ THREE.XPlanePolLoader = ( function () {
 
 			// Create underlying surface to provide contrast for our polygon
 			var geometry = new THREE.BoxGeometry( 1.5, 0.01, 1.5 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x008000 } );
+
+			switch (surface) {
+				case 'water': var surfaceColour = 0x000080; break;
+				case 'concrete': var surfaceColour = 0xf4f4f4; break;
+				case 'asphalt':
+				case 'shoulder':
+				case 'blastpad':
+					var surfaceColour = 0x808080;
+					break;
+				case 'grass': var surfaceColour = 0x008000; break;
+				case 'dirt':
+				case 'lakebed':
+					var surfaceColour = 0x907f6e;
+					break;
+				case 'gravel': var surfaceColour = 0xb8a880; break;
+				case 'snow': var surfaceColour = 0xeeebf0; break;
+				default: var surfaceColour = 0x008000;
+			}
+			var material = new THREE.MeshBasicMaterial( { color: surfaceColour } );
 			var plane = new THREE.Mesh( geometry, material );
 			container.add( plane );
 
