@@ -76,11 +76,6 @@ a {
 	font-size: 1.4em;
 }
 
-.thumbnailcontainer h3 {
-    line-height: 1.5;
-    padding: 0.5em;
-}
-
 ul.downloads li {
 	list-style-type: none;
 }
@@ -274,22 +269,38 @@ div.externalVirtualPath p {
 }
 
 div.thumbnailcontainer {
-    display: inline-block;
-    width: 180px;
+	position: relative;
+	display: inline-block;
+	padding: 6px;
     height: 100%;
-    margin: 0 0.25em 1em 0;
-	text-align: center;
-    line-height: 1.25;
-    vertical-align: top;
-    background-color: #F5F5FF;
 }
 
 div.thumbnailcontainer img {
-	margin: 0.25em 0 0 0;
+    border: 1px solid #ddd;
+    width: 150px;
 }
 
-div.thumbnailcontainer p {
-    margin: 0;
+div.thumbnailcontainer div.caption {
+    /* visibility: hidden; */
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+	padding: 6px;
+	margin-bottom: 12px;
+    width: 138px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 0.75em;
+}
+
+div.thumbnailcontainer:hover div.caption {
+    visibility: visible ! important;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 2;
 }
 
 div.objectlogocontainer {
@@ -327,7 +338,8 @@ div.clear {
 	clear:both;
 }
 
-ul.inline {
+ul.inline,
+ul.itemlist {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -335,9 +347,18 @@ ul.inline {
 	list-style-image: url(/doc/bullet_object.gif);
 }
 
-ul.inline li { display: inline; }
+ul.inline li,
+ul.itemlist li {
+	display: inline;
+}
+
 ul.inline li:after { content: " | "; }
 ul.inline li:last-child:after { content: ""; }
+
+ul.itemlist li a img {
+	width: 75px;
+}
+
 
 div#breadcrumbs ul.inline {
 	line-height: 2.0em;

@@ -15,6 +15,9 @@ class OSXCategory extends OSXItem {
         $contents = file_get_contents($this->path . '/category.txt');
         $this->fileLines = explode(PHP_EOL, $contents);
 
+        # Stop WP adding spurious </p> tags inside our shortcode output
+        remove_filter('the_content', 'wpautop');
+
         $this->parse();
     }
 
@@ -56,14 +59,14 @@ class OSXCategory extends OSXItem {
 
             foreach ($this->items as $item) {
                 $result .= "<div class='thumbnailcontainer'>\n";
-                $result .= "<h3><a href='/" . $item['path'] . "'>" . $item['title'] . "</a></h3><a href='/" . $item['path'] . "' class='nounderline'>";
+                $result .= "<a href='/" . $item['path'] . "'>";
+
                 if (is_file($item['path'] . '/screenshot.jpg')) {
                     $result .= "<img src='/" . $item['path'] . "/screenshot.jpg' alt='Screenshot of " . \str_replace("'", "&apos;", $item['title']) . "' />";
                 } else {
                     $result .= "<img src='/doc/screenshot_missing.png' alt='No Screenshot Available' />";
                 }
-                $result .=  "</a>\n";
-                $result .=  "</div>\n";
+                $result .= "</a><div class='caption'>" . $item['title'] . "</div></div>\n";
             }
         }
 
