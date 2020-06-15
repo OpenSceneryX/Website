@@ -1,0 +1,40 @@
+# Translation of Plugins - Responsive Menu &#8211; Create Mobile-Friendly Menu - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - Responsive Menu &#8211; Create Mobile-Friendly Menu - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-12 15:04:14+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - Responsive Menu &#8211; Create Mobile-Friendly Menu - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://peterfeatherstone.com"
+msgstr "https://peterfeatherstone.com"
+
+#. Author of the plugin/theme
+msgid "Peter Featherstone"
+msgstr "Peter Featherstone"
+
+#: responsive-menu.php:24
+msgid "Responsive Menu requires PHP 5.4 or higher to function and has therefore been automatically disabled. You are still on %s.%sPlease speak to your webhost about upgrading your PHP version. For more information please visit %s"
+msgstr "Responsive Menu requires PHP 5.4 or higher to function and has therefore been automatically disabled. You are still on %s.%sPlease speak to your webhost about upgrading your PHP version. For more information please visit %s"
+
+#. Tags of the plugin/theme
+msgid "responsive, menu, responsive menu"
+msgstr "responsive, menu, responsive menu"
+
+#. Plugin URI of the plugin/theme
+msgid "https://responsive.menu"
+msgstr "https://responsive.menu"
+
+#. Description of the plugin/theme
+msgid "Highly Customisable Responsive Menu Plugin for WordPress"
+msgstr "Highly Customisable Responsive Menu Plugin for WordPress"
+
+#. Plugin Name of the plugin/theme
+msgid "Responsive Menu"
+msgstr "Responsive Menu"

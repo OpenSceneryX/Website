@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Redirection - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-30 11:25:32+0000\n"
+"PO-Revision-Date: 2020-06-06 15:55:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,134 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: en_GB\n"
 "Project-Id-Version: Plugins - Redirection - Stable (latest release)\n"
+
+#: redirection-strings.php:680
+msgid "Relocate to domain"
+msgstr "Relocate to domain"
+
+#: redirection-strings.php:679
+msgid "Want to redirect the entire site? Enter a domain to redirect everything, except WordPress login and admin. Enabling this option will disable any site aliases or canonical settings."
+msgstr "Want to redirect the entire site? Enter a domain to redirect everything, except WordPress login and admin. Enabling this option will disable any site aliases or canonical settings."
+
+#: redirection-strings.php:678
+msgid "Relocate Site"
+msgstr "Relocate Site"
+
+#: redirection-strings.php:671
+msgid "Add CORS Presets"
+msgstr "Add CORS Presets"
+
+#: redirection-strings.php:670
+msgid "Add Security Presets"
+msgstr "Add Security Presets"
+
+#: redirection-strings.php:669
+msgid "Add Header"
+msgstr "Add Header"
+
+#: redirection-strings.php:664
+msgid "You should update your site URL to match your canonical settings: {{code}}%(current)s{{/code}} ⇒ {{code}}%(site)s{{/code}}"
+msgstr "You should update your site URL to match your canonical settings: {{code}}%(current)s{{/code}} ⇒ {{code}}%(site)s{{/code}}"
+
+#: redirection-strings.php:663
+msgid "Preferred domain"
+msgstr "Preferred domain"
+
+#: redirection-strings.php:662
+msgid "{{strong}}Warning{{/strong}}: ensure your HTTPS is working before forcing a redirect."
+msgstr "{{strong}}Warning{{/strong}}: ensure your HTTPS is working before forcing a redirect."
+
+#: redirection-strings.php:661
+msgid "Force a redirect from HTTP to HTTPS - {{code}}%(site)s{{/code}} ⇒ {{code}}%(siteHTTPS)s{{/code}}"
+msgstr "Force a redirect from HTTP to HTTPS – {{code}}%(site)s{{/code}} ⇒ {{code}}%(siteHTTPS)s{{/code}}"
+
+#: redirection-strings.php:660
+msgid "Canonical Settings"
+msgstr "Canonical Settings"
+
+#: redirection-strings.php:659
+msgid "Add www to domain - {{code}}%(site)s{{/code}} ⇒ {{code}}%(siteWWW)s{{/code}}"
+msgstr "Add www to domain – {{code}}%(site)s{{/code}} ⇒ {{code}}%(siteWWW)s{{/code}}"
+
+#: redirection-strings.php:658
+msgid "Remove www from domain - {{code}}%(siteWWW)s{{/code}} ⇒ {{code}}%(site)s{{/code}}"
+msgstr "Remove www from domain – {{code}}%(siteWWW)s{{/code}} ⇒ {{code}}%(site)s{{/code}}"
+
+#: redirection-strings.php:657
+msgid "Don't set a preferred domain - {{code}}%(site)s{{/code}}"
+msgstr "Don't set a preferred domain – {{code}}%(site)s{{/code}}"
+
+#: redirection-strings.php:656
+msgid "Add Alias"
+msgstr "Add Alias"
+
+#: redirection-strings.php:655
+msgid "No aliases"
+msgstr "No aliases"
+
+#: redirection-strings.php:654
+msgid "Alias"
+msgstr "Alias"
+
+#: redirection-strings.php:653
+msgid "Aliased Domain"
+msgstr "Aliased Domain"
+
+#: redirection-strings.php:652
+msgid "You will need to configure your system (DNS and server) to pass requests for these domains to this WordPress install."
+msgstr "You will need to configure your system (DNS and server) to pass requests for these domains to this WordPress installation."
+
+#: redirection-strings.php:651
+msgid "A site alias is another domain that you want to be redirected to this site. For example, an old domain, or a subdomain. This will redirect all URLs, including WordPress login and admin."
+msgstr "A site alias is another domain that you want to be redirected to this site. For example, an old domain, or a subdomain. This will redirect all URLs, including WordPress login and admin."
+
+#: redirection-strings.php:650
+msgid "Site Aliases"
+msgstr "Site Aliases"
+
+#: redirection-strings.php:584
+msgid "The companion plugin Search Regex allows you to search and replace data on your site. It also supports Redirection, and is handy if you want to bulk update a lot of redirects."
+msgstr "The companion plugin Search Regex allows you to search and replace data on your site. It also supports Redirection, and is handy if you want to bulk update a lot of redirects."
+
+#: redirection-strings.php:583
+msgid "Need to search and replace?"
+msgstr "Need to search and replace?"
+
+#: redirection-strings.php:572
+msgid "Options on this page can cause problems if used incorrectly. You can {{link}}temporarily disable them{{/link}} to make changes."
+msgstr "Options on this page can cause problems if used incorrectly. You can {{link}}temporarily disable them{{/link}} to make changes."
+
+#: redirection-strings.php:248
+msgid "Please wait, importing."
+msgstr "Please wait, importing."
+
+#: redirection-strings.php:246
+msgid "Continue"
+msgstr "Continue"
+
+#: redirection-strings.php:245
+msgid "The following plugins have been detected."
+msgstr "The following plugins have been detected."
+
+#: redirection-strings.php:244
+msgid "WordPress automatically creates redirects when you change a post URL. Importing these into Redirection will allow you to manage and monitor them."
+msgstr "WordPress automatically creates redirects when you change a post URL. Importing these into Redirection will allow you to manage and monitor them."
+
+#: redirection-strings.php:243
+msgid "Importing existing redirects from WordPress or other plugins is a good way to get started with Redirection. Check each set of redirects you wish to import."
+msgstr "Importing existing redirects from WordPress or other plugins is a good way to get started with Redirection. Check each set of redirects you wish to import."
+
+#: redirection-strings.php:242 redirection-strings.php:247
+msgid "Import Existing Redirects"
+msgstr "Import Existing Redirects"
+
+#: redirection-strings.php:207
+msgid "That's all there is to it - you are now redirecting! Note that the above is just an example."
+msgstr "That's all there is to it – you are now redirecting! Note that the above is just an example."
+
+#: redirection-strings.php:152
+msgid "If you want to redirect everything please use a site relocation or alias from the Site page."
+msgstr "If you want to redirect everything, please use a site relocation or alias from the Site page."
 
 #: redirection-strings.php:683
 msgid "Value"
@@ -567,7 +695,7 @@ msgstr "Exact match"
 
 #: redirection-strings.php:235
 msgid "Caching software (e.g Cloudflare)"
-msgstr "Caching software (e.g Cloudflare)"
+msgstr "Caching software (e.g. Cloudflare)"
 
 #: redirection-strings.php:233
 msgid "A security plugin (e.g Wordfence)"
@@ -624,7 +752,7 @@ msgstr "(Example) The source URL is your old or original URL"
 #. translators: 1: server PHP version. 2: required PHP version.
 #: redirection.php:38
 msgid "Disabled! Detected PHP %1$s, need PHP %2$s+"
-msgstr "Disabled! Detected PHP %s, need PHP 5.4+"
+msgstr "Disabled! Detected PHP %1$s, need PHP %2$s+"
 
 #: redirection-strings.php:293
 msgid "A database upgrade is in progress. Please continue to finish."
