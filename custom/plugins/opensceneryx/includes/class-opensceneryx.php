@@ -129,8 +129,10 @@ class OpenSceneryX {
         $post->ping_status = 'closed';
         $post->filter = 'raw';
 
-        // This solves a problem with URLs which end in a number having that number duplicated (e.g. /2/ -> /2/2/)
-        remove_action('template_redirect', 'redirect_canonical');
+        // From v5.5.0, WP will more strictly throw a 404 if it doesn't think the URL is valid (from /wp/wp-includes/class-wp handle404())
+        // This happens for some of our manufactured pages, where the URL ends with a number.
+        // We register a pre_handle_404 action to tell WP that we're handling the 404 (even if it's not actually a 404 at all).
+        add_action('pre_handle_404', function () { return true; } );
 
         return array($post);
     }
