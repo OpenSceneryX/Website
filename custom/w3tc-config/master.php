@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "0.15.1",
+    "version": "2.1.1",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -299,9 +299,9 @@
         "google_ad_",
         "RSPEAK_"
     ],
-    "minify.css.combine": false,
     "minify.css.enable": true,
     "minify.css.engine": "css",
+    "minify.css.method": "both",
     "minify.css.http2push": false,
     "minify.css.strip.comments": false,
     "minify.css.strip.crlf": false,
@@ -311,6 +311,7 @@
     "minify.js.http2push": false,
     "minify.js.enable": true,
     "minify.js.engine": "js",
+    "minify.js.method": "both",
     "minify.js.combine.header": false,
     "minify.js.header.embed_type": "blocking",
     "minify.js.combine.body": false,
@@ -834,6 +835,7 @@
     "plugin.license_key": "",
     "plugin.type": "",
     "jquerymigrate.disabled": false,
+    "minify.css.combine": false,
     "common.support": "",
     "timelimit.cdn_container_create": 300,
     "cdn.netdna.alias": "",
