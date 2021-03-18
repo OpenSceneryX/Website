@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Eleven package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-31 21:27:53+0000\n"
+"PO-Revision-Date: 2020-12-09 08:29:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: en_GB\n"
 "Project-Id-Version: Themes - Twenty Eleven\n"
 
@@ -19,9 +19,9 @@ msgstr "The 2011 theme for WordPress is sophisticated, lightweight, and adaptabl
 msgid "Twenty Eleven"
 msgstr "Twenty Eleven"
 
-#: functions.php:751
-msgid "Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved."
-msgstr "Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved."
+#: functions.php:752
+msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
+msgstr "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
 
 #: inc/theme-options.php:121
 msgid "<a href=\"https://wordpress.org/support/article/appearance-customize-screen/\" target=\"_blank\">Documentation on Theme Options</a>"
@@ -232,8 +232,8 @@ msgstr "Colour Scheme"
 #. translators: 1: Time, 2: Date, 3: Image permalink, 4: Image width, 5: Image
 #. height, 6: Parent permalink, 7: Parent post title, 8: Parent post title.
 #: image.php:35
-msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
-msgstr "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\">%2$s</abbr></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s\" rel=\"gallery\">%8$s</a>"
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Go to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Go to %7$s\" rel=\"gallery\">%8$s</a>"
 
 #: image.php:23
 msgid "Next &rarr;"
@@ -247,15 +247,15 @@ msgstr "&larr; Previous"
 msgid "Image navigation"
 msgstr "Image navigation"
 
-#: functions.php:924
+#: functions.php:925
 msgid "Skip to secondary content"
 msgstr "Skip to secondary content"
 
-#: functions.php:922
+#: functions.php:923
 msgid "Skip to primary content"
 msgstr "Skip to primary content"
 
-#: header.php:147
+#: header.php:148
 msgid "Main menu"
 msgstr "Main menu"
 
@@ -266,25 +266,25 @@ msgstr "Page %s"
 
 #. translators: 1: The permalink, 2: Time, 3: Date and time, 4: Date and time,
 #. 5: Author posts, 6: Author post link text, 7: Author display name.
-#: functions.php:797
+#: functions.php:798
 msgid "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
 msgstr "<span class=\"sep\">Posted on </span><a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" rel=\"author\">%7$s</a></span></span>"
 
-#: functions.php:770
+#: functions.php:771
 msgid "Reply <span>&darr;</span>"
 msgstr "Reply <span>&darr;</span>"
 
-#: functions.php:749
+#: functions.php:750
 msgid "Your comment is awaiting moderation."
 msgstr "Your comment is awaiting moderation."
 
 #. translators: 1: Date, 2: Time.
-#: functions.php:738
+#: functions.php:739
 msgid "%1$s at %2$s"
 msgstr "%1$s at %2$s"
 
 #. translators: 1: Comment author, 2: Date and time.
-#: functions.php:731
+#: functions.php:732
 msgid "%1$s on %2$s <span class=\"says\">said:</span>"
 msgstr "%1$s on %2$s <span class=\"says\">said:</span>"
 
@@ -300,7 +300,7 @@ msgstr "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Older posts"
 
-#: single.php:21 functions.php:605
+#: functions.php:605 single.php:21
 msgid "Post navigation"
 msgstr "Post navigation"
 
@@ -394,25 +394,25 @@ msgid "Status"
 msgstr "Status"
 
 #. translators: %s: Author name.
-#: content-single.php:88
+#: content-single.php:90
 msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
 
 #. translators: 1: Categories list, 2: Tag list, 3: Permalink, 4: Post title,
 #. 5: Author name, 6: Author URL.
-#: content-single.php:49
+#: content-single.php:50
 msgid "This entry was posted by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "This entry was posted by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #. translators: 1: Categories list, 2: Tag list, 3: Permalink, 4: Post title,
 #. 5: Author name, 6: Author URL.
-#: content-single.php:46
+#: content-single.php:47
 msgid "This entry was posted in %1$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "This entry was posted in %1$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #. translators: 1: Categories list, 2: Tag list, 3: Permalink, 4: Post title,
 #. 5: Author name, 6: Author URL.
-#: content-single.php:43
+#: content-single.php:44
 msgid "This entry was posted in %1$s and tagged %2$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "This entry was posted in %1$s and tagged %2$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
@@ -425,7 +425,7 @@ msgid "Link"
 msgstr "Link"
 
 #. translators: %s: Author display name.
-#: content-image.php:51 functions.php:804
+#: content-image.php:51 functions.php:805
 msgid "View all posts by %s"
 msgstr "View all posts by %s"
 
@@ -441,20 +441,20 @@ msgstr "Image"
 
 #. translators: 1: CSS classes, 2: List of tags.
 #. translators: 1: CSS classes, 2: Tag list.
-#: content-gallery.php:97 content-image.php:77 content-quote.php:73
-#: content.php:82
+#: content-quote.php:77 content.php:86 content-image.php:80
+#: content-gallery.php:101
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
 msgstr "<span class=\"%1$s\">Tagged</span> %2$s"
 
 #. translators: 1: CSS classes, 2: List of categories.
 #. translators: 1: CSS classes, 2: Category list.
-#: content-gallery.php:81 content-image.php:65 content-quote.php:57
-#: content.php:64
+#: content-quote.php:59 content.php:66 content-image.php:66
+#: content-gallery.php:83
 msgid "<span class=\"%1$s\">Posted in</span> %2$s"
 msgstr "<span class=\"%1$s\">Posted in</span> %2$s"
 
 #. translators: %s: Post title.
-#: content-gallery.php:52 showcase.php:129
+#: showcase.php:129 content-gallery.php:52
 msgid "Permalink to %s"
 msgstr "Permalink to %s"
 
@@ -470,76 +470,77 @@ msgid "Gallery"
 msgstr "Gallery"
 
 #. translators: 1: Category list, 3: Post permalink, 4: Post title.
-#: content-featured.php:42
+#: content-featured.php:43
 msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #. translators: 1: Category list, 2: Tag list, 3: Post permalink, 4: Post
 #. title.
-#: content-featured.php:39
+#: content-featured.php:40
 msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
 
 #. translators: Used between list items, there is a space after the comma.
-#: content-gallery.php:75 content-gallery.php:88 content-image.php:59
-#: content-image.php:71 content-single.php:37 content-single.php:40
-#: content-quote.php:51 content-quote.php:64 content-featured.php:36
-#: content-featured.php:47 content.php:58 content.php:73
+#: content-single.php:37 content-single.php:40 content-quote.php:52
+#: content-quote.php:67 content.php:59 content.php:76 content-image.php:59
+#: content-image.php:73 content-featured.php:36 content-featured.php:49
+#: content-gallery.php:76 content-gallery.php:91
 msgid ", "
 msgstr ", "
 
-#: content-gallery.php:110 content-aside.php:53 content-status.php:66
-#: content-image.php:87 content-single.php:62 content-link.php:53
-#: content-intro.php:26 content-page.php:28 content-quote.php:86 image.php:46
-#: functions.php:712 functions.php:743 content-featured.php:54 content.php:96
+#: content-single.php:64 content-status.php:66 content-quote.php:90
+#: content.php:100 content-image.php:90 image.php:46 content-page.php:28
+#: content-featured.php:56 content-link.php:53 functions.php:712
+#: functions.php:744 content-intro.php:26 content-gallery.php:114
+#: content-aside.php:53
 msgid "Edit"
 msgstr "Edit"
 
-#: content-gallery.php:107 content-aside.php:51 content-status.php:64
-#: content-image.php:83 content-link.php:51 content-quote.php:83
-#: showcase.php:220 content.php:93
+#: content-status.php:64 content-quote.php:87 content.php:97
+#: content-image.php:86 content-link.php:51 showcase.php:220
+#: content-gallery.php:111 content-aside.php:51
 msgid "<b>%</b> Replies"
 msgstr "<b>%</b> Replies"
 
-#: content-gallery.php:107 content-aside.php:51 content-status.php:64
-#: content-image.php:83 content-link.php:51 content-quote.php:83
-#: showcase.php:220 content.php:93
+#: content-status.php:64 content-quote.php:87 content.php:97
+#: content-image.php:86 content-link.php:51 showcase.php:220
+#: content-gallery.php:111 content-aside.php:51
 msgid "<b>1</b> Reply"
 msgstr "<b>1</b> Reply"
 
-#: content-gallery.php:107 content-aside.php:51 content-status.php:64
-#: content-image.php:83 content-link.php:51 content-quote.php:83
-#: showcase.php:220 content.php:93
+#: content-status.php:64 content-quote.php:87 content.php:97
+#: content-image.php:86 content-link.php:51 showcase.php:220
+#: content-gallery.php:111 content-aside.php:51
 msgid "Leave a reply"
 msgstr "Leave a Reply"
 
-#: content-gallery.php:63 content-aside.php:39 content-status.php:52
-#: content-image.php:33 content-single.php:27 content-link.php:39
-#: content-intro.php:21 content-page.php:21 content-quote.php:39 image.php:122
-#: content-featured.php:26 content.php:45
+#: content-single.php:27 content-status.php:52 content-quote.php:39
+#: content.php:45 content-image.php:33 image.php:122 content-page.php:21
+#: content-featured.php:26 content-link.php:39 content-intro.php:21
+#: content-gallery.php:63 content-aside.php:39
 msgid "Pages:"
 msgstr "Pages:"
 
-#: content-gallery.php:34 content-aside.php:35 content-status.php:48
-#: content-image.php:29 content-link.php:35 content-quote.php:35
-#: functions.php:459 content.php:41
+#: content-status.php:48 content-quote.php:35 content.php:41
+#: content-image.php:29 content-link.php:35 functions.php:459
+#: content-gallery.php:34 content-aside.php:35
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 
-#: content-aside.php:24 content-status.php:24 content-image.php:23
-#: content-link.php:24 content-quote.php:24 content.php:30
+#: content-status.php:24 content-quote.php:24 content.php:30
+#: content-image.php:23 content-link.php:24 content-aside.php:24
 msgctxt "comments number"
 msgid "%"
 msgstr "%"
 
-#: content-aside.php:24 content-status.php:24 content-image.php:23
-#: content-link.php:24 content-quote.php:24 content.php:30
+#: content-status.php:24 content-quote.php:24 content.php:30
+#: content-image.php:23 content-link.php:24 content-aside.php:24
 msgctxt "comments number"
 msgid "1"
 msgstr "1"
 
-#: content-aside.php:24 content-status.php:24 content-image.php:23
-#: content-link.php:24 content-quote.php:24 content.php:30
+#: content-status.php:24 content-quote.php:24 content.php:30
+#: content-image.php:23 content-link.php:24 content-aside.php:24
 msgid "Reply"
 msgstr "Reply"
 
@@ -579,9 +580,9 @@ msgstr "This post is password protected. Enter the password to view any comments
 msgid "Category Archives: %s"
 msgstr "Category Archives: %s"
 
-#. translators: %s: Author name.
 #. translators: Author display name.
-#: content-single.php:80 author.php:70
+#. translators: %s: Author name.
+#: author.php:70 content-single.php:82
 msgid "About %s"
 msgstr "About %s"
 
@@ -590,12 +591,12 @@ msgstr "About %s"
 msgid "Author Archives: %s"
 msgstr "Author Archives: %s"
 
-#: archive.php:71 index.php:44 tag.php:70 category.php:70 author.php:106
+#: index.php:44 author.php:106 archive.php:71 tag.php:70 category.php:70
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 msgstr "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 
-#: archive.php:67 index.php:40 tag.php:66 search.php:52 category.php:66
-#: author.php:102
+#: index.php:40 author.php:102 archive.php:67 tag.php:66 category.php:66
+#: search.php:52
 msgid "Nothing Found"
 msgstr "Nothing Found"
 
