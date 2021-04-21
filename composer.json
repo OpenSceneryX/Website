@@ -9,11 +9,11 @@
         "package": {
             "name": "wordpress/wordpress",
             "type": "wordpress-core",
-            "version": "5.6.2",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.6.2"
+                "reference": "5.7.1"
             }
         }
     }
