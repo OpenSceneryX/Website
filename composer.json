@@ -3,23 +3,9 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    },
-    {
-        "type": "package",
-        "package": {
-            "name": "wordpress/wordpress",
-            "type": "wordpress-core",
-            "version": "5.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.7.1"
-            }
-        }
     }
   ],
   "require": {
-    "wordpress/wordpress": "*",
     "wpackagist-plugin/addthis": "6.2.6",
     "wpackagist-plugin/akismet": "4.1.9",
     "wpackagist-plugin/broken-link-checker": "1.11.15",
@@ -33,7 +19,8 @@
     "wpackagist-plugin/wordpress-seo": "16.1.1",
     "wpackagist-plugin/wp-google-search": "1.0.9",
     "wpackagist-theme/twentyeleven": "3.7",
-    "psycle-wordpress-plugins/mail-options": "^1.0"
+    "psycle-wordpress-plugins/mail-options": "^1.0",
+    "johnpbloch/wordpress": "5.7.1"
   },
   "extra": {
     "wordpress-install-dir": "wp",
