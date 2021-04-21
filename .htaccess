@@ -22,35 +22,25 @@
 </IfModule>
 # END W3TC Browser Cache
 
-# BEGIN W3TC Page Cache core
+# Send OSX library catalogue requests to Wordpress
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteCond %{HTTP:Accept-Encoding} gzip
-    RewriteRule .* - [E=W3TC_ENC:_gzip]
-    RewriteCond %{HTTP_COOKIE} w3tc_preview [NC]
-    RewriteRule .* - [E=W3TC_PREVIEW:_preview]
-    RewriteCond %{REQUEST_METHOD} !=POST
-    RewriteCond %{QUERY_STRING} =""
-    RewriteCond %{HTTP_COOKIE} !(comment_author|wp\-postpass|w3tc_logged_out|wordpress_logged_in|wptouch_switch_toggle) [NC]
-    RewriteCond %{REQUEST_URI} \/$
-    RewriteCond "%{DOCUMENT_ROOT}/custom/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" -f
-    RewriteRule .* "/custom/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" [L]
+RewriteCond %{REQUEST_FILENAME} /(decals|facades|forests|lines|objects|polygons)/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.php [L]
 </IfModule>
-# END W3TC Page Cache core
+
 # BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
 
 # Remove .html if found
 RewriteRule ^(.*)/(.*?)\.html$ /$1 [L,R=301]
-
-# Send library catalogue requests to Wordpress
-RewriteCond %{REQUEST_FILENAME} /(decals|facades|forests|lines|objects|polygons)/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule . /index.php [L]
 
 # Standard Wordpress
 RewriteCond %{REQUEST_FILENAME} !-f
