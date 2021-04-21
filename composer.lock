@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "871f337f182992de6d82b30d5b253e61",
+    "content-hash": "94914d72f65b4be35c6952fd2d5c5edd",
     "packages": [
         {
             "name": "composer/installers",
@@ -281,15 +281,15 @@
         },
         {
             "name": "wpackagist-plugin/gtranslate",
-            "version": "2.8.61",
+            "version": "2.8.62",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gtranslate/",
-                "reference": "tags/2.8.61"
+                "reference": "tags/2.8.62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gtranslate.2.8.61.zip"
+                "url": "https://downloads.wordpress.org/plugin/gtranslate.2.8.62.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -299,15 +299,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "5.0.1",
+            "version": "5.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/5.0.1"
+                "reference": "tags/5.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.5.0.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -317,15 +317,15 @@
         },
         {
             "name": "wpackagist-plugin/responsive-menu",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/responsive-menu/",
-                "reference": "tags/4.1.0"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/responsive-menu.4.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/responsive-menu.zip?timestamp=1618837108"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -353,15 +353,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/2.1.1"
+                "reference": "tags/2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
