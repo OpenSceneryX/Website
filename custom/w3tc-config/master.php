@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.1.1",
+    "version": "2.1.2",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -58,6 +58,7 @@
         "\\bfound_rows\\(\\)",
         "\\bw3tc_request_data\\b"
     ],
+    "docroot_fix.enable": false,
     "lazyload.enabled": false,
     "lazyload.process_img": true,
     "lazyload.process_background": true,
@@ -577,7 +578,9 @@
     "browsercache.other.w3tc": false,
     "browsercache.other.replace": false,
     "browsercache.other.querystring": false,
-    "browsercache.replace.exceptions": [],
+    "browsercache.replace.exceptions": [
+        ""
+    ],
     "browsercache.security.session.cookie_httponly": "",
     "browsercache.security.session.cookie_secure": "",
     "browsercache.security.session.use_only_cookies": "",
@@ -595,8 +598,8 @@
     "browsercache.security.pkp.extra": "maxage",
     "browsercache.security.pkp.report.url": "",
     "browsercache.security.pkp.report.only": "0",
-    "browsercache.security.referrer.policy": "false",
-    "browsercache.security.referrer.policy.directive": "0",
+    "browsercache.security.referrer.policy": true,
+    "browsercache.security.referrer.policy.directive": "origin",
     "browsercache.security.csp": false,
     "browsercache.security.csp.base": "",
     "browsercache.security.csp.frame": "",
