@@ -20,7 +20,7 @@
     "wpackagist-plugin/wp-google-search": "1.0.9",
     "wpackagist-theme/twentyeleven": "3.7",
     "psycle-wordpress-plugins/mail-options": "^1.0",
-    "johnpbloch/wordpress": "5.7.1"
+    "johnpbloch/wordpress": "5.7.2"
   },
   "extra": {
     "wordpress-install-dir": "wp",
