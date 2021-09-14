@@ -71,7 +71,7 @@ abstract class OSXItem {
             $url = dirname($url);
 
             if (is_file($path . '/category.txt')) {
-                array_unshift($this->ancestors, new OSXCategory($path, $url, $this->type));
+                array_unshift($this->ancestors, new OSXCategory($path, $url, $this->itemType));
             }
         }
     }
