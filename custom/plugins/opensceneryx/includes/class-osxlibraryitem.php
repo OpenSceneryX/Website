@@ -13,6 +13,7 @@ abstract class OSXLibraryItem extends OSXItem {
     protected $deprecatedVirtualPaths = array();
     protected $externalVirtualPaths = array();
     protected $extendedVirtualPaths = array();
+    protected $coreVirtualPaths = array();
 
     protected $authors = array();
     protected $authorEmails = array();

@@ -102,7 +102,7 @@ class OpenSceneryX {
             $this->existingPostMeta = get_post_meta($existingPage->ID, '_yoast_wpseo_metadesc', true);
         }
 
-        $docPath = implode(array_slice($urlVars, 1), '/');
+        $docPath = implode('/', array_slice($urlVars, 1));
         $osxItemPath = ABSPATH . '../' . $docPath;
 
         $this->osxItem = $this->osxParseFolder($osxItemPath, $docPath, $urlVars[1]);
