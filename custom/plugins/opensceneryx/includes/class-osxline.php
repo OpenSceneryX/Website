@@ -7,6 +7,11 @@ class OSXLine extends OSXLibraryItem {
     const FILENAME_ROOT = "line";
     const FILENAME_EXT= "lin";
 
+    protected $layerGroupName = null;
+    protected $layerGroupOffset = null;
+    protected $lineWidth = null;
+    protected $mirror = null;
+
     function __construct($path, $url) {
         parent::__construct($path, $url, 'line');
     }
