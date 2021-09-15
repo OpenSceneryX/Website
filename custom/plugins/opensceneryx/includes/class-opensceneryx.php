@@ -303,7 +303,7 @@ class OpenSceneryX {
     {
         global $wp_query;
 
-        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
+        if ($wp_query->post !== null && substr($wp_query->post->post_type, 0, 3) === 'osx') {
             $pageItemClass = 'page-item-' . $wp_query->post->post_parent;
             $classes = str_replace('current_page_item', '', $classes);
             $classes = str_replace($pageItemClass, $pageItemClass . ' current_page_item', $classes);
@@ -315,7 +315,7 @@ class OpenSceneryX {
     {
         global $wp_query;
 
-        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
+        if ($wp_query->post !== null && substr($wp_query->post->post_type, 0, 3) === 'osx') {
             return $wp_query->post->guid;
         }
 
@@ -335,7 +335,7 @@ class OpenSceneryX {
     {
         global $wp_query;
 
-        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
+        if ($wp_query->post !== null && substr($wp_query->post->post_type, 0, 3) === 'osx') {
             $breadcrumbs = array();
             $breadcrumbs[] = array('text' => 'Home', 'url' => '/', 'allow_html' => true);
             $breadcrumbs[] = array('text' => 'Contents', 'url' => '/contents', 'allow_html' => true);
@@ -359,7 +359,7 @@ class OpenSceneryX {
     function osxMetaDescription($description) {
         global $wp_query;
 
-        if (substr($wp_query->post->post_type, 0, 3) === 'osx') {
+        if ($wp_query->post !== null && substr($wp_query->post->post_type, 0, 3) === 'osx') {
             return $this->existingPostMeta;
         } else {
             return $description;
