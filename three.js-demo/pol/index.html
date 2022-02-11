@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+        <script src="/three.js/build/three.min.js"></script>
+        <script src="/three.js/examples/js/controls/OrbitControls.js"></script>
+        <script src="/three.js/examples/js/loaders/DDSLoader.js"></script>
+        <script src="/three.js/examples/js/loaders/XPlanePolLoader.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+			var renderer = new THREE.WebGLRenderer();
+			var mainObject = null;
+
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+			scene.background = new THREE.Color(0xffffff);
+
+			var controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls.autoRotate = true;
+			//controls.enableDamping = true;
+			//controls.dampingFactor = 0.25;
+			//controls.enableZoom = true;
+
+			var skyLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+			var ambientLight = new THREE.AmbientLight( 0x404040 );
+			var sunLight = new THREE.DirectionalLight(0xfdb813, 1.5);
+			sunLight.position.set(1000, -1000, 1000);
+
+			//var keyLight = new THREE.DirectionalLight(0xffffff, 1.0);
+			//keyLight.position.set(-100, 0, 100);
+
+			//var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+			//backLight.position.set(100, 0, -100).normalize();
+
+			scene.add(skyLight);
+			scene.add(ambientLight);
+			//scene.add(keyLight);
+			scene.add(sunLight);
+			//scene.add(backLight);
+
+			//var axesHelper = new THREE.AxesHelper( 5 );
+			//scene.add( axesHelper );
+
+			var objLoader = new THREE.XPlanePolLoader();
+
+			objLoader.setPath('http://osxdownloads.local/library/polygons/airport/runway/characters/0/1/');
+
+
+			objLoader.load('polygon.pol', function (object) {
+				mainObject = object;
+				scene.add(mainObject);
+
+				// Dynamically determine the bounding box and set the camera distance accordingly
+				var bBox = new THREE.Box3().setFromObject(mainObject);
+				var bBoxSize = new THREE.Vector3();
+				var bBoxCenter = new THREE.Vector3();
+
+				bBox.getSize(bBoxSize);
+				bBox.getCenter(bBoxCenter);
+
+				// Center object in scene.
+				mainObject.translateX(-bBoxCenter.x);
+				mainObject.translateY(-bBoxCenter.y);
+				mainObject.translateZ(-bBoxCenter.z);
+
+				// Calculate the camera distance based on the maximum dimensions of the model
+				var dist = Math.max(bBoxSize.x, bBoxSize.y, bBoxSize.z) / (2 * Math.tan(camera.fov * Math.PI / 360));
+				var pos = scene.position;
+				camera.position.set(pos.x, pos.y, dist * 1.7);
+				camera.lookAt(pos);
+				controls.update();
+			});
+
+			scene.rotation.x = 0.25;
+
+			var animate = function () {
+				requestAnimationFrame( animate );
+				controls.update();
+
+				//scene.rotation.x += 0.01;
+				//mainObject.rotation.y += 0.01;
+
+				renderer.render(scene, camera);
+			};
+
+			animate();
+		</script>
+	</body>
+</html>
