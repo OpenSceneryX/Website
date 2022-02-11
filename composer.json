@@ -20,7 +20,7 @@
     "wpackagist-plugin/wp-google-search": "*",
     "wpackagist-theme/twentyeleven": "*",
     "psycle-wordpress-plugins/mail-options": "^1.0",
-    "johnpbloch/wordpress": "5.8.1"
+    "johnpbloch/wordpress": "5.8.3"
   },
   "extra": {
     "wordpress-install-dir": "wp",
@@ -28,6 +28,12 @@
         "custom/mu-plugins/{$name}": ["type:wordpress-muplugin"],
         "custom/plugins/{$name}/": ["type:wordpress-plugin"],
         "custom/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true
     }
   }
 }
