@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.1.8",
+    "version": "2.2.1",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -806,7 +806,6 @@
             ]
         }
     },
-    "robots_block.enable": false,
     "common.track_usage": true,
     "common.tweeted": false,
     "config.check": true,
@@ -840,6 +839,11 @@
     "plugin.license_key": "",
     "plugin.type": "",
     "jquerymigrate.disabled": false,
+    "imageservice": {
+        "compression": "lossy",
+        "auto": "enabled"
+    },
+    "robots_block.enable": false,
     "minify.css.combine": false,
     "common.support": "",
     "timelimit.cdn_container_create": 300,
