@@ -1,0 +1,39 @@
+services:
+  app:
+    build:
+      dockerfile: ./docker/Dockerfile.dev
+      context: ../
+      args:
+        HOSTNAME: "osx.dev.psycle.com"
+    image: osx/app-dev
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - wp_network
+    container_name: osx-app
+    volumes:
+      - ../:/var/www/osx
+  node18:
+    container_name: osx-node18
+    image: node:18
+    platform: linux/amd64
+    working_dir: /var/www/osx
+    tty: true
+    entrypoint: [ "/bin/bash" ]
+    networks:
+      - wp_network
+    volumes:
+      - ../:/var/www/osx
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: osx-mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    restart: unless-stopped
+    networks:
+      - wp_network
+networks:
+  wp_network:
+    driver: bridge

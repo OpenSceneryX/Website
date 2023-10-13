@@ -1,0 +1,5 @@
+# Certificate key files
+/config/*.key
+
+# Volumes
+/volumes/*
