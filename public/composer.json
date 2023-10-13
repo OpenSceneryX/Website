@@ -6,7 +6,6 @@
     }
   ],
   "require": {
-    "wpackagist-plugin/addthis": "*",
     "wpackagist-plugin/akismet": "*",
     "wpackagist-plugin/broken-link-checker": "*",
     "wpackagist-plugin/cookie-notice": "*",
@@ -20,7 +19,7 @@
     "wpackagist-plugin/wp-google-search": "*",
     "wpackagist-theme/twentyeleven": "*",
     "psycle-wordpress-plugins/mail-options": "^1.0",
-    "johnpbloch/wordpress": "5.8.3"
+    "johnpbloch/wordpress": "6.3.2"
   },
   "extra": {
     "wordpress-install-dir": "wp",
