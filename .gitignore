@@ -34,3 +34,4 @@ public/custom/themes/twentyeleven
 public/doc
 public/extras
 public/google*.html
+.DS_Store
