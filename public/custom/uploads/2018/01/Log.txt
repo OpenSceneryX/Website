@@ -1,0 +1,903 @@
+log.txt for X-Plane 11.11r2 (build 111101 64-bit)
+ compiled on Dec 19 2017 15:24:05
+X-Plane started on Tue Jan  2 19:00:53 2018
+
+This log file is generated automatically by Laminar Research applications and contains diagnostics about your graphics hardware, installation, and any error conditions.
+If you need to contact tech support or file a bug, please send us this file. NOTE: this file is rewritten every time you start ANY of your X-System applications.
+
+Windows 10.0 (build 16299/2)
+This is a 64-bit version of Windows.
+CPU type: 8664
+Physical Memory (total for computer): 34020347904
+Maximum Virtual Memory (for X-Plane only): 140737488224256
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+CPU 0: Intel(R) Core(TM) i9-7960X CPU @ 2.80GHz  Speed (mhz): 2808
+
+X-System folder:'C:\X-Plane 11/', case sensitive=0
+
+WGL_ARB_buffer_region WGL_ARB_create_context WGL_ARB_create_context_no_error WGL_ARB_create_context_profile WGL_ARB_create_context_robustness WGL_ARB_context_flush_control WGL_ARB_extensions_string WGL_ARB_make_current_read WGL_ARB_multisample WGL_ARB_pbuffer WGL_ARB_pixel_format WGL_ARB_pixel_format_float WGL_ARB_render_texture WGL_ATI_pixel_format_float WGL_EXT_colorspace WGL_EXT_create_context_es_profile WGL_EXT_create_context_es2_profile WGL_EXT_extensions_string WGL_EXT_framebuffer_sRGB WGL_EXT_pixel_format_packed_float WGL_EXT_swap_control WGL_EXT_swap_control_tear WGL_NVX_DX_interop WGL_NV_DX_interop WGL_NV_DX_interop2 WGL_NV_copy_image WGL_NV_delay_before_swap WGL_NV_float_buffer WGL_NV_multisample_coverage WGL_NV_render_depth_texture WGL_NV_render_texture_rectangle 
+
+OpenGL Vendor    : NVIDIA Corporation
+OpenGL Render    : GeForce GTX 1080 Ti/PCIe/SSE2
+OpenGL Version   : 4.6.0 NVIDIA 388.31 (460/0)
+OpenGL Extensions: GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_win32 GL_EXT_win32_keyed_mutex GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_win32 GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_NVX_multigpu_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum GL_WIN_swap_hint WGL_EXT_swap_control 
+
+threaded_avail   : 1	aniso_avail      : 1	timer_avail      : 1	sync/fence       : 1
+pbo_avail        : 1	frameblit_avail  : 1	framebuffer_msaa : 1
+gpu_shad4_avail  : 1	shad_lod_avail   : 1	array_tex_avail  : 1	texture_rg       : 1
+tex_float_avail  : 1	seamless_avail   : 1	drawbuf2_avail   : 1	packed_stencil   : 1
+framebuffer_srgb : 1	copy_buf_avail   : 1	ubo_avail        : 1	gshader_avail    : 1
+base_vert_avail  : 1	tex_multi_avail  : 1
+instance_avail   : 1	tess_avail       : 1	viewport_arr     : 1	tex_storage      : 1
+buf_storage      : 1	program binary   : 1
+pinned_avail     : 0	debug_avail      : 1
+max tex units    : 32 (32/8)
+max iso filtering: 16.000000
+max texture size : 32768 (hardware limit)
+max point size   : 189.875000
+idx in vram      : 1
+GLSL Version     :4.60 NVIDIA/460
+(16/4096/124/192/32/4096/4096/65536)
+This video card is: DX10 or 11 - With instancing (found glMapBufferRange)
+CPU count        : 32
+OpenAL loaded: Resources/dlls/64/openal32.dll
+OpenAL devices: OpenAL Soft
+Open AL default device:OpenAL Soft
+OpenAL vendor	: OpenAL Community
+OpenAL renderer  : OpenAL Soft
+OpenAL version   : 1.1
+OpenAL hardware  : OpenAL Soft
+OpenAL extensions: ALC_ENUMERATE_ALL_EXT ALC_ENUMERATION_EXT ALC_EXT_CAPTURE ALC_EXT_DEDICATED ALC_EXT_disconnect ALC_EXT_EFX ALC_EXT_thread_local_context ALC_SOFTX_device_clock ALC_SOFTX_HRTF ALC_SOFT_loopback ALC_SOFTX_midi_interface ALC_SOFT_pause_device AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_block_alignment AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFT_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_MSADPCM AL_SOFT_source_latency AL_SOFT_source_length
+
+Fetching plugins for C:\X-Plane 11/Resources/plugins
+
+Loaded: C:\X-Plane 11/Resources/plugins/PluginAdmin/64/win.xpl (xpsdk.examples.pluginadmin).
+
+Loaded: C:\X-Plane 11/Resources/plugins/AutoGate/64/win.xpl (Marginal.AutoGate).
+
+2018-01-02 19:00:55 BetterPushback[xplane.c:538]: This is BetterPushback-v0.46 libacfutils-e0a4e23
+Loaded: C:\X-Plane 11/Resources/plugins/BetterPushback/64/win.xpl (skiselkov.BetterPushback).
+
+G64:   0.000: Gizmo64 Script Engine v17.08.08 Windows
+G64:   0.000: 	 built: Aug  8 2017, 06:23:33
+Loaded: C:\X-Plane 11/Resources/plugins/Gizmo64.plugin/64/win.xpl (gizmo.x-plugins.com).
+
+Ground Handling Plugin by JARDesign v.200317 for X-Plane 10/11
+Loaded: C:\X-Plane 11/Resources/plugins/GndHandling/win.xpl (jardesign.crew.ground.handling).
+
+Loaded: C:\X-Plane 11/Resources/plugins/XPUIPC/64/win.xpl (XPUIPC/XPWideFS.).
+
+Loaded: C:\X-Plane 11/Resources/plugins/xEnviro/64/win.xpl (css.aero.xenviro).
+
+2018-01-02 19:00:56 BetterPushback[xplane.c:184]: Failed to hide default X-Plane 11 tug: backup tug file already exists.
+G64:   0.739: Boot Count: 1
+G64:   1.097: Plugin Enabled.
+I found the following scenery packages (prioritized in this order):
+  0 Custom Scenery/UK2000_Birmingham_Xtreme Demo/
+  1 Custom Scenery/EHAM_Scenery_Pack/
+  2 Custom Scenery/X-Plane Landmarks - London/
+  3 Custom Scenery/EGTE-Exeter/
+  4 Custom Scenery/LIMJ xp11 tdg/
+  5 Custom Scenery/LSGS_Sion/
+  6 Custom Scenery/LIPZ_Scenery_Pack/
+  7 Custom Scenery/gt_library/
+  8 Custom Scenery/LFKC tdg/
+  9 Custom Scenery/LIPZ xp11 tdg/
+ 10 Custom Scenery/R2_Library/
+ 11 Custom Scenery/3D_people_library/
+ 12 Custom Scenery/Airport_ELLX-Luxembourg-Findel/
+ 13 Custom Scenery/BS2001 Object Library/
+ 14 Custom Scenery/CDB-Library/
+ 15 Custom Scenery/EDDM_4_0/
+ 16 Custom Scenery/ff_library_extended_LOD/
+ 17 Custom Scenery/FJS_Scenery_Library_v1.7/
+ 18 Custom Scenery/flags_of_the_world/
+ 19 Custom Scenery/MisterX_Library/
+ 20 Custom Scenery/THE-FRUIT-STAND Aircraft Library v3.0/
+ 21 Custom Scenery/The_Handy_Objects_Library/
+ 22 Custom Scenery/IT-LIBD_1.61/
+ 23 Custom Scenery/LFMN_Scenery_Pack/
+ 24 Custom Scenery/OpenSceneryX/
+ 25 Custom Scenery/LIMJ VFR tdg/
+ 26 Custom Scenery/LSGG xp11 static tdg/
+ 27 Custom Scenery/EGPH_Scenery_Pack/
+ 28 Custom Scenery/Heron's Nest/
+ 29 Custom Scenery/zzz_Heron's Nest Mesh/
+ 30 Custom Scenery/_DefaultStreets London-Heathrow/
+ 31 Custom Scenery/Aerosoft - EGLL Airport London-Heathrow/
+ 32 Custom Scenery/Nimbus Simulation - TFFJ - St Barts/
+ 33 Custom Scenery/Nimbus Simulation -Z- St Barts Mesh/
+ 34 Custom Scenery/Aerosoft - LSZA Airport Lugano/
+ 35 Custom Scenery/CYVR_Scenery_Pack/
+ 36 Custom Scenery/Aerosoft - EDDF Frankfurt/
+ 37 Custom Scenery/Aerosoft - EDLP Paderborn-Lippstadt/
+ 38 Custom Scenery/Aerosoft - EGLL Heathrow/
+ 39 Custom Scenery/Aerosoft - LFMN Nice Cote d Azur X/
+ 40 Custom Scenery/Aerosoft - LFPO Paris Orly/
+ 41 Custom Scenery/Aerosoft - LPFR Faro/
+ 42 Custom Scenery/Global Airports/
+ 43 Custom Scenery/KLAS Las Vegas Mc Carran/
+ 44 Custom Scenery/KSEA Demo Area/
+ 45 Custom Scenery/LOWI Demo Area/
+ 46 Global Scenery/X-Plane 11 Demo Areas/
+ 47 Global Scenery/X-Plane 11 Global Scenery/
+ 48 Resources/default scenery/1000 autogen/
+ 49 Resources/default scenery/1000 decals/
+ 50 Resources/default scenery/1000 forests/
+ 51 Resources/default scenery/1000 roads/
+ 52 Resources/default scenery/1000 urban terrain/
+ 53 Resources/default scenery/1000 world terrain/
+ 54 Resources/default scenery/700 roads/
+ 55 Resources/default scenery/900 beaches/
+ 56 Resources/default scenery/900 europe objects/
+ 57 Resources/default scenery/900 forests/
+ 58 Resources/default scenery/900 roads/
+ 59 Resources/default scenery/900 us objects/
+ 60 Resources/default scenery/900 world object placeholders/
+ 61 Resources/default scenery/airport decals/
+ 62 Resources/default scenery/airport scenery/
+ 63 Resources/default scenery/default apt dat/
+ 64 Resources/default scenery/default atc/
+ 65 Resources/default scenery/sim objects/
+ 66 Resources/tutorials/tutorials_Alaska/
+ 67 Resources/tutorials/tutorials_Hawaii/
+ 68 Resources/tutorials/tutorials_Seattle/
+
+0:00:00.000 D/HID: HID Bridge Running
+Fetching plugins for Custom Scenery/Airport_ELLX-Luxembourg-Findel/plugins
+
+Loaded: Custom Scenery/Airport_ELLX-Luxembourg-Findel/plugins/GroundTraffic/64/win.xpl (Marginal.GroundTraffic.Airport_ELLX-Luxembourg-Findel).
+
+Fetching plugins for Custom Scenery/EDDM_4_0/plugins
+
+Loaded: Custom Scenery/EDDM_4_0/plugins/GroundTraffic/64/win.xpl (Marginal.GroundTraffic.EDDM_4_0).
+
+Fetching plugins for Custom Scenery/Aerosoft - EGLL Airport London-Heathrow/plugins
+
+Loaded: Custom Scenery/Aerosoft - EGLL Airport London-Heathrow/plugins/GroundTraffic/64/win.xpl (Marginal.GroundTraffic.Aerosoft - EGLL Airport London-Heathrow).
+
+Fetching plugins for Custom Scenery/Nimbus Simulation - TFFJ - St Barts/plugins
+
+Loaded: Custom Scenery/Nimbus Simulation - TFFJ - St Barts/plugins/GroundTraffic/64/win.xpl (Marginal.GroundTraffic.Nimbus Simulation - TFFJ - St Barts).
+
+Could not find tile 37 name is -
+ (in sign '{@L}F-1' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}F-1' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}E-1' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}F-2' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}F-2' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}E-1' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}A-2' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}A-2' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}A-1' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+Could not find tile 37 name is -
+ (in sign '{@L}A-1' from airport EGTE:Custom Scenery/EGTE-Exeter/Earth nav data/apt.dat)
+ATC audio initialized.
+Initializing off screen memory.
+Initializing off screen memory complete.
+0:00:08.713 I/REN: Setting texture resolution read from prefs as 5
+0:00:08.713 I/REN: Setting |draw view indicator read from prefs as 1.
+0:00:08.713 I/REN: Setting |dim under high G-load or hypoxia read from prefs as 1.
+0:00:08.713 I/REN: Setting |draw hi-res planet textures from orbit read from prefs as 1.
+0:00:08.713 I/REN: Setting |draw forest fires and balloons read from prefs as 0.
+0:00:08.713 I/REN: Setting |draw birds and deer in nice weather read from prefs as 1.
+0:00:08.713 I/REN: Setting |draw aircraft carriers and frigates read from prefs as 1.
+0:00:08.713 I/REN: Setting |draw Aurora Borealis read from prefs as 0.
+0:00:08.713 I/REN: Setting |runways follow terrain contours read from prefs as 1.
+0:00:08.713 I/REN: Setting |3-d drawing detail read from prefs as 4.
+0:00:08.713 I/REN: Setting |water reflection detail read from prefs as 0.
+0:00:08.713 I/REN: Setting |draw parked aircraft at airports read from prefs as 1.
+0:00:08.713 I/REN: Setting compress textures to save VRAM read from prefs as 0.
+0:00:08.713 I/REN: Setting |Effects read from prefs as 3.
+0:00:08.713 I/REN: Setting |3-d shadows read from prefs as 0.
+0:00:08.713 I/REN: Setting |HDR anti-aliasing read from prefs as 2.
+0:00:08.713 I/REN: Setting |draw volumetric fog read from prefs as 1.
+0:00:08.713 I/REN: Setting |draw per pixel lighting read from prefs as 1.
+0:00:08.713 I/REN: Setting |atmospheric scattering read from prefs as 1.
+0:00:12.521 I/NET: WiFi 192.168.1.6
+0:00:12.521 I/NET: Teredo Tunneling Pseudo-Interface 2001:0:4137:9e76:24c4:1c07:a81f:b634
+0:00:12.946 D/HID: Hardware ADDED(044f, 0404) - Throttle - HOTAS Warthog at path \\?\hid#vid_044f&pid_0404#8&92fdecf&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:12.946 I/JOY: REGISTER Joystick device: Throttle - HOTAS Warthog - VID:1103PID:1028, this is a familiar device.
+0:00:12.946 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 10 (HID_Page_Button/0b) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 11 (HID_Page_Button/0c) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 12 (HID_Page_Button/0d) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 13 (HID_Page_Button/0e) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 14 (HID_Page_Button/0f) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 15 (HID_Page_Button/10) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 16 (HID_Page_Button/11) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 17 (HID_Page_Button/12) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 18 (HID_Page_Button/13) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 19 (HID_Page_Button/14) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 20 (HID_Page_Button/15) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 21 (HID_Page_Button/16) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 22 (HID_Page_Button/17) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 23 (HID_Page_Button/18) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 24 (HID_Page_Button/19) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 25 (HID_Page_Button/1a) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 26 (HID_Page_Button/1b) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 27 (HID_Page_Button/1c) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 28 (HID_Page_Button/1d) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 29 (HID_Page_Button/1e) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 30 (HID_Page_Button/1f) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	BUTTON Added Index: 31 (HID_Page_Button/20) for handle: 0000014EBCADF120
+0:00:12.946 D/HID: 	HATSWITCH Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Hatswitch) for handle: 0000014EBCADF120. It has 8 positions.
+0:00:12.946 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 0000014EBCADF120. Min/Max 0 - 1023
+0:00:12.946 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 0000014EBCADF120. Min/Max 0 - 1023
+0:00:12.946 D/HID: 	AXIS Added Index: 2 (HID_Page_GenericDesktop/HID_Usage_GD_Slider) for handle: 0000014EBCADF120. Min/Max 0 - 1023
+0:00:12.946 D/HID: 	AXIS Added Index: 3 (HID_Page_GenericDesktop/HID_Usage_GD_Z) for handle: 0000014EBCADF120. Min/Max 0 - 16383
+0:00:12.946 D/HID: 	AXIS Added Index: 4 (HID_Page_GenericDesktop/HID_Usage_GD_Rz) for handle: 0000014EBCADF120. Min/Max 0 - 16383
+0:00:12.946 D/HID: 	SKIPPED (ff/05) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/04) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/02) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/01) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/06) for handle: 0000014EBCADF120 because of usage page.
+0:00:12.946 D/HID: END HARDWARE
+0:00:12.946 E/JOY: UNCALIBRATED AXIS DETECTED: Throttle - HOTAS Warthog (VID:1103PID:1028) Axis #0, assigned to joy_use_none, has an expected min/max range of [0.000000, 1023.000000], but is calibrated for [0.500489, 0.500489]. You should recalibrate the device in the Settings menu.
+0:00:12.946 E/JOY: CALIBRATION OVERRIDE: Throttle - HOTAS Warthog (VID:1103PID:1028) Axis #0 forced to be treated as calibrated due to a user pref.
+0:00:12.946 E/JOY: UNCALIBRATED AXIS DETECTED: Throttle - HOTAS Warthog (VID:1103PID:1028) Axis #1, assigned to joy_use_none, has an expected min/max range of [0.000000, 1023.000000], but is calibrated for [0.500489, 0.530792]. You should recalibrate the device in the Settings menu.
+0:00:12.946 E/JOY: CALIBRATION OVERRIDE: Throttle - HOTAS Warthog (VID:1103PID:1028) Axis #1 forced to be treated as calibrated due to a user pref.
+0:00:12.946 D/HID: Hardware ADDED(044f, 0402) - Joystick - HOTAS Warthog at path \\?\hid#vid_044f&pid_0402#8&1f9c2ffd&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:12.946 I/JOY: REGISTER Joystick device: Joystick - HOTAS Warthog - VID:1103PID:1026, this is a familiar device.
+0:00:12.946 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 10 (HID_Page_Button/0b) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 11 (HID_Page_Button/0c) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 12 (HID_Page_Button/0d) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 13 (HID_Page_Button/0e) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 14 (HID_Page_Button/0f) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 15 (HID_Page_Button/10) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 16 (HID_Page_Button/11) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 17 (HID_Page_Button/12) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	BUTTON Added Index: 18 (HID_Page_Button/13) for handle: 0000014EBCADEEA0
+0:00:12.946 D/HID: 	HATSWITCH Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Hatswitch) for handle: 0000014EBCADEEA0. It has 8 positions.
+0:00:12.946 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 0000014EBCADEEA0. Min/Max 0 - 65535
+0:00:12.946 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 0000014EBCADEEA0. Min/Max 0 - 65535
+0:00:12.946 D/HID: 	SKIPPED (ff/02) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/01) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: 	SKIPPED (ff/03) for handle: 0000014EBCADEEA0 because of usage page.
+0:00:12.946 D/HID: END HARDWARE
+0:00:12.946 D/STM: Transitioning from state state_InitialLoading to state_QuickFlightWizard
+0:00:12.946 I/WIN: Opened window Primary V11 UI
+0:00:52.737 I/FCG: Applying changes from Flight Configuration screen
+0:00:52.737 I/FCG: Starting new flight in Aircraft/X-Aviation/IXEG 737 Classic/B733.acf at 12
+0:00:52.743 W/ATC: Found overlapping airports with overlapping controller freqs at KCEA and KIAB!
+0:00:52.743 W/ATC: Rewrote KAHN atc_ControllerRole_Del's freq: 13395 to 11800 for being in conflict!
+0:00:52.743 W/ATC: Rewrote KCEA atc_ControllerRole_Twr's freq: 12725 to 11802 for being in conflict!
+0:00:55.216 D/STM: Transitioning from state state_QuickFlightWizard to state_NormalLoading
+0:00:55.216 I/ACF: Loading airplane number 0 with Aircraft/X-Aviation/IXEG 737 Classic/B733.acf
+G64:  56.285:  Aircraft File: (Aircraft/X-Aviation/IXEG 737 Classic/B733.acf)
+G64:  56.288:       MD5 Hash: (1a939eb3069d32163aecb2aafe389ad9)
+G64:  56.288:    Description: (Boeing 737-300 Published by X-Aviation)
+G64:  56.288:         Author: (IXEG International X-Plane Development Group)
+G64:  56.288: Plugin Mode: Retail
+G64:  56.291: Boot Count: 2
+G64:  59.651: Livery Changed:(British Airways)  Folder:(Aircraft/X-Aviation/IXEG 737 Classic/liveries/British Airways/)
+0:00:59.757 I/FLT: Init dat_p0 type:loc_ram apt:EGBB start at:12
+0:01:00.764 I/SCN: DSF load time: 2149113 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+53-004.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 2149567 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+51-002.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 2150701 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+51-004.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 4875969 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+53-002.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 5285547 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+53-004.dsf (136573 tris)
+0:01:00.764 I/SCN: DSF load time: 5797119 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+51-004.dsf (240527 tris)
+0:01:00.764 I/SCN: DSF load time: 5805479 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+51-002.dsf (267457 tris)
+0:01:00.764 I/SCN: DSF load time: 3548005 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+53-002.dsf (334228 tris)
+0:01:00.764 I/SCN: DSF load time: 187307 for file Custom Scenery/X-Plane Landmarks - London/Earth nav data/+50-010/+51-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 312926 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+51-003.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 427157 for file Custom Scenery/_DefaultStreets London-Heathrow/Earth nav data/+50-010/+51-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 2434192 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+51-003.dsf (284797 tris)
+0:01:00.764 I/SCN: DSF load time: 135587 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+53-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 324503 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+53-003.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 1176362 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+53-001.dsf (166864 tris)
+0:01:00.764 I/SCN: DSF load time: 5086605 for file Custom Scenery/Aerosoft - EGLL Airport London-Heathrow/Earth nav data/+50-010/+51-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 265076 for file Custom Scenery/Aerosoft - EGLL Heathrow/Earth nav data/+50-010/+51-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 144635 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+51-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 4250085 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+53-003.dsf (378857 tris)
+0:01:00.764 I/SCN: DSF load time: 3851547 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+51-001.dsf (399650 tris)
+0:01:00.764 I/SCN: DSF load time: 4287 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+52-004.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 1855288 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+52-004.dsf (254553 tris)
+0:01:00.764 I/SCN: DSF load time: 12940 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+52-003.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 25672 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+52-001.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 2427813 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+52-003.dsf (282668 tris)
+0:01:00.764 I/SCN: DSF load time: 1594055 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+52-001.dsf (226907 tris)
+0:01:00.764 I/SCN: DSF load time: 775411 for file Custom Scenery/UK2000_Birmingham_Xtreme Demo/Earth nav data/+50-010/+52-002.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 184492 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+52-002.dsf (0 tris)
+0:01:00.764 I/SCN: DSF load time: 2775560 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+52-002.dsf (352694 tris)
+0:01:47.407 W/ATC: Could not find an appropriate flow at EGLD...attempting to autogen one on the fly
+0:01:47.407 W/ATC: Adding autogen'ed flow AUTOGEN: North to the list for EGLD
+0:01:48.163 D/STM: Transitioning from state state_NormalLoading to state_Normal
+0:01:48.163 D/FCG: MTBF set to 1000000.0 hours
+AutoGate: Can't buffer sound data.
+0:01:50.109 I/WIN: Opened window menu bar
+0:01:50.109 I/WIN: Opened window Replay overlay
+CUSTOM DATAREF (int): jd/diagnost/ghd
+0:02:37.862 I/WIN: Opened window Map Window
+0:02:43.551 I/WIN: Opened window Primary V11 UI
+0:02:54.498 I/FCG: Applying changes from Flight Configuration screen
+0:02:54.498 I/FCG: Starting new flight in Aircraft/X-Aviation/IXEG 737 Classic/B733.acf at 4
+0:02:54.498 I/FLT: Init dat_p0 type:loc_ram apt:EGBB start at:4
+0:02:54.718 D/FCG: MTBF set to 1000000.0 hours
+JARDesign Ground Handling 3D Sound Engine Disable 
+CUSTOM DATAREF (int): jd/diagnost/ghd
+0:03:12.290 I/ATC: Airport flow changed at EGTC!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGTC CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGTC. Advancing...
+0:03:12.290 I/ATC: Changing EGTC CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGTC. Advancing...
+0:03:12.290 I/ATC: Changing EGTC CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGFF!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGFF CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGFF. Advancing...
+0:03:12.290 I/ATC: Changing EGFF CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGFF. Advancing...
+0:03:12.290 I/ATC: Changing EGFF CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGNX!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGNX CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGNX. Advancing...
+0:03:12.290 I/ATC: Changing EGNX CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGNX. Advancing...
+0:03:12.290 I/ATC: Changing EGNX CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGSF!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGSF CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGSF. Advancing...
+0:03:12.290 I/ATC: Changing EGSF CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGSF. Advancing...
+0:03:12.290 I/ATC: Changing EGSF CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGSP!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGSP CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGSP. Advancing...
+0:03:12.290 I/ATC: Changing EGSP CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGSP. Advancing...
+0:03:12.290 I/ATC: Changing EGSP CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGGD!
+CurFlow: Runway 09 NewFlow: Runway 27
+0:03:12.290 I/ATC: Changing EGGD CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGGD. Advancing...
+0:03:12.290 I/ATC: Changing EGGD CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGGD. Advancing...
+0:03:12.290 I/ATC: Changing EGGD CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGCN!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGCN CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGCN. Advancing...
+0:03:12.290 I/ATC: Changing EGCN CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGCN. Advancing...
+0:03:12.290 I/ATC: Changing EGCN CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGGW!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGGW CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGGW. Advancing...
+0:03:12.290 I/ATC: Changing EGGW CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGGW. Advancing...
+0:03:12.290 I/ATC: Changing EGGW CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGLJ!
+CurFlow: 36 NewFlow: 18
+0:03:12.290 I/ATC: Changing EGLJ CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGLJ. Advancing...
+0:03:12.290 I/ATC: Changing EGLJ CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGLJ. Advancing...
+0:03:12.290 I/ATC: Changing EGLJ CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGGP!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGGP CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGGP. Advancing...
+0:03:12.290 I/ATC: Changing EGGP CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGGP. Advancing...
+0:03:12.290 I/ATC: Changing EGGP CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGLL!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGLL CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGLL. Advancing...
+0:03:12.290 I/ATC: Changing EGLL CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGLL. Advancing...
+0:03:12.290 I/ATC: Changing EGLL CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGNR!
+CurFlow: Runway 04 NewFlow: Runway 22
+0:03:12.290 I/ATC: Changing EGNR CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGNR. Advancing...
+0:03:12.290 I/ATC: Changing EGNR CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGNR. Advancing...
+0:03:12.290 I/ATC: Changing EGNR CabState from 2 to 0
+0:03:12.290 W/ATC: Could not find an appropriate flow at EGLD...attempting to autogen one on the fly
+0:03:12.290 W/ATC: Adding autogen'ed flow AUTOGEN: West to the list for EGLD
+0:03:12.290 I/ATC: Airport flow changed at EGLD!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGLD CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGLD. Advancing...
+0:03:12.290 I/ATC: Changing EGLD CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGLD. Advancing...
+0:03:12.290 I/ATC: Changing EGLD CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBW!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGBW CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBW. Advancing...
+0:03:12.290 I/ATC: Changing EGBW CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBW. Advancing...
+0:03:12.290 I/ATC: Changing EGBW CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGLM!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGLM CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGLM. Advancing...
+0:03:12.290 I/ATC: Changing EGLM CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGLM. Advancing...
+0:03:12.290 I/ATC: Changing EGLM CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGNW!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGNW CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGNW. Advancing...
+0:03:12.290 I/ATC: Changing EGNW CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGNW. Advancing...
+0:03:12.290 I/ATC: Changing EGNW CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGNE!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGNE CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGNE. Advancing...
+0:03:12.290 I/ATC: Changing EGNE CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGNE. Advancing...
+0:03:12.290 I/ATC: Changing EGNE CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBO!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGBO CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBO. Advancing...
+0:03:12.290 I/ATC: Changing EGBO CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBO. Advancing...
+0:03:12.290 I/ATC: Changing EGBO CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGCW!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGCW CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGCW. Advancing...
+0:03:12.290 I/ATC: Changing EGCW CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGCW. Advancing...
+0:03:12.290 I/ATC: Changing EGCW CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGNF!
+CurFlow: Runway 06 NewFlow: Runway 24
+0:03:12.290 I/ATC: Changing EGNF CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGNF. Advancing...
+0:03:12.290 I/ATC: Changing EGNF CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGNF. Advancing...
+0:03:12.290 I/ATC: Changing EGNF CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBG!
+CurFlow: Runway 10 Jet NewFlow: Runway 28 Jet
+0:03:12.290 I/ATC: Changing EGBG CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBG. Advancing...
+0:03:12.290 I/ATC: Changing EGBG CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBG. Advancing...
+0:03:12.290 I/ATC: Changing EGBG CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBN!
+CurFlow: Runway 03 NewFlow: Runway 21
+0:03:12.290 I/ATC: Changing EGBN CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBN. Advancing...
+0:03:12.290 I/ATC: Changing EGBN CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBN. Advancing...
+0:03:12.290 I/ATC: Changing EGBN CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBP!
+CurFlow: Runway 08L NewFlow: Runway 26
+0:03:12.290 I/ATC: Changing EGBP CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBP. Advancing...
+0:03:12.290 I/ATC: Changing EGBP CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBP. Advancing...
+0:03:12.290 I/ATC: Changing EGBP CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGTK!
+CurFlow: Runway 01 NewFlow: Runway 19
+0:03:12.290 I/ATC: Changing EGTK CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGTK. Advancing...
+0:03:12.290 I/ATC: Changing EGTK CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGTK. Advancing...
+0:03:12.290 I/ATC: Changing EGTK CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBJ!
+CurFlow: 09 Big NewFlow: 27 Small
+0:03:12.290 I/ATC: Changing EGBJ CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBJ. Advancing...
+0:03:12.290 I/ATC: Changing EGBJ CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBJ. Advancing...
+0:03:12.290 I/ATC: Changing EGBJ CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGCC!
+CurFlow: 05L NewFlow: 23R
+0:03:12.290 I/ATC: Changing EGCC CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGCC. Advancing...
+0:03:12.290 I/ATC: Changing EGCC CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGCC. Advancing...
+0:03:12.290 I/ATC: Changing EGCC CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EG74!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EG74 CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EG74. Advancing...
+0:03:12.290 I/ATC: Changing EG74 CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EG74. Advancing...
+0:03:12.290 I/ATC: Changing EG74 CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGTG!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGTG CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGTG. Advancing...
+0:03:12.290 I/ATC: Changing EGTG CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGTG. Advancing...
+0:03:12.290 I/ATC: Changing EGTG CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGLG!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGLG CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGLG. Advancing...
+0:03:12.290 I/ATC: Changing EGLG CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGLG. Advancing...
+0:03:12.290 I/ATC: Changing EGLG CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGUB!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGUB CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGUB. Advancing...
+0:03:12.290 I/ATC: Changing EGUB CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGUB. Advancing...
+0:03:12.290 I/ATC: Changing EGUB CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGYD!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGYD CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGYD. Advancing...
+0:03:12.290 I/ATC: Changing EGYD CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGYD. Advancing...
+0:03:12.290 I/ATC: Changing EGYD CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGWN!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGWN CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGWN. Advancing...
+0:03:12.290 I/ATC: Changing EGWN CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGWN. Advancing...
+0:03:12.290 I/ATC: Changing EGWN CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGDX!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGDX CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGDX. Advancing...
+0:03:12.290 I/ATC: Changing EGDX CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGDX. Advancing...
+0:03:12.290 I/ATC: Changing EGDX CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGSY!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGSY CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGSY. Advancing...
+0:03:12.290 I/ATC: Changing EGSY CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGSY. Advancing...
+0:03:12.290 I/ATC: Changing EGSY CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBE!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGBE CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBE. Advancing...
+0:03:12.290 I/ATC: Changing EGBE CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBE. Advancing...
+0:03:12.290 I/ATC: Changing EGBE CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBT!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGBT CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBT. Advancing...
+0:03:12.290 I/ATC: Changing EGBT CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBT. Advancing...
+0:03:12.290 I/ATC: Changing EGBT CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGYE!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGYE CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGYE. Advancing...
+0:03:12.290 I/ATC: Changing EGYE CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGYE. Advancing...
+0:03:12.290 I/ATC: Changing EGYE CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGOE!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGOE CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGOE. Advancing...
+0:03:12.290 I/ATC: Changing EGOE CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGOE. Advancing...
+0:03:12.290 I/ATC: Changing EGOE CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGBB!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGBB CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGBB. Advancing...
+0:03:12.290 I/ATC: Changing EGBB CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGBB. Advancing...
+0:03:12.290 I/ATC: Changing EGBB CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGXC!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGXC CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGXC. Advancing...
+0:03:12.290 I/ATC: Changing EGXC CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGXC. Advancing...
+0:03:12.290 I/ATC: Changing EGXC CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGVA!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGVA CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGVA. Advancing...
+0:03:12.290 I/ATC: Changing EGVA CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGVA. Advancing...
+0:03:12.290 I/ATC: Changing EGVA CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGWC!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGWC CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGWC. Advancing...
+0:03:12.290 I/ATC: Changing EGWC CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGWC. Advancing...
+0:03:12.290 I/ATC: Changing EGWC CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGXY!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGXY CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGXY. Advancing...
+0:03:12.290 I/ATC: Changing EGXY CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGXY. Advancing...
+0:03:12.290 I/ATC: Changing EGXY CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGUO!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGUO CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGUO. Advancing...
+0:03:12.290 I/ATC: Changing EGUO CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGUO. Advancing...
+0:03:12.290 I/ATC: Changing EGUO CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGNA!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGNA CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGNA. Advancing...
+0:03:12.290 I/ATC: Changing EGNA CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGNA. Advancing...
+0:03:12.290 I/ATC: Changing EGNA CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGCD!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGCD CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGCD. Advancing...
+0:03:12.290 I/ATC: Changing EGCD CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGCD. Advancing...
+0:03:12.290 I/ATC: Changing EGCD CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGOS!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGOS CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGOS. Advancing...
+0:03:12.290 I/ATC: Changing EGOS CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGOS. Advancing...
+0:03:12.290 I/ATC: Changing EGOS CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGXW!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGXW CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGXW. Advancing...
+0:03:12.290 I/ATC: Changing EGXW CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGXW. Advancing...
+0:03:12.290 I/ATC: Changing EGXW CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGXJ!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGXJ CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGXJ. Advancing...
+0:03:12.290 I/ATC: Changing EGXJ CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGXJ. Advancing...
+0:03:12.290 I/ATC: Changing EGXJ CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGDL!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGDL CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGDL. Advancing...
+0:03:12.290 I/ATC: Changing EGDL CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGDL. Advancing...
+0:03:12.290 I/ATC: Changing EGDL CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGWU!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: West
+0:03:12.290 I/ATC: Changing EGWU CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGWU. Advancing...
+0:03:12.290 I/ATC: Changing EGWU CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGWU. Advancing...
+0:03:12.290 I/ATC: Changing EGWU CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGXT!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGXT CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGXT. Advancing...
+0:03:12.290 I/ATC: Changing EGXT CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGXT. Advancing...
+0:03:12.290 I/ATC: Changing EGXT CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGUY!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGUY CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGUY. Advancing...
+0:03:12.290 I/ATC: Changing EGUY CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGUY. Advancing...
+0:03:12.290 I/ATC: Changing EGUY CabState from 2 to 0
+0:03:12.290 I/ATC: Airport flow changed at EGVN!
+CurFlow: AUTOGEN: North NewFlow: AUTOGEN: South
+0:03:12.290 I/ATC: Changing EGVN CabState from 0 to 1
+0:03:12.290 I/ATC: All departures are done at EGVN. Advancing...
+0:03:12.290 I/ATC: Changing EGVN CabState from 1 to 2
+0:03:12.290 I/ATC: All arrivals are done at EGVN. Advancing...
+0:03:12.290 I/ATC: Changing EGVN CabState from 2 to 0
+G64: 198.862: Boot Count: 3
+0:03:43.330 I/WIN: Opened window Settings
+0:05:00.080 I/WIN: Opened window Map Window
+0:05:05.394 I/WIN: Opened window Map Window
+0:06:49.552 I/WIN: Opened window Map Window
+0:07:59.577 I/WIN: Opened window Map Window
+2018-01-02 19:09:30 BetterPushback[acf_outline.c:198]: Error parsing acf file: property _wing/15/_Croot not found
+0:10:19.572 I/WIN: Opened window Settings
+0:10:24.038 I/JOY: 	Joystick - HOTAS Warthog Axis 1 assigned to joy_use_tiller
+0:10:55.495 I/WIN: Opened window Map Window
+0:16:49.149 I/WIN: Opened window Primary V11 UI
+0:16:57.510 I/FCG: Applying changes from Flight Configuration screen
+0:16:57.510 I/FCG: Starting new flight in Aircraft/X-Aviation/IXEG 737 Classic/B733.acf at Runway 15
+0:16:57.510 I/FLT: Init dat_p0 type:loc_tak apt:EGBB rwy:15
+0:16:58.956 D/FCG: MTBF set to 1000000.0 hours
+JARDesign Ground Handling 3D Sound Engine Disable 
+CUSTOM DATAREF (int): jd/diagnost/ghd
+G64:1032.062: Boot Count: 4
+0:20:07.617 I/WIN: Opened window ATC window
+0:21:02.485 I/WIN: Opened window Settings
+0:21:15.032 I/WIN: Opened window Settings
+0:23:36.520 I/WIN: Opened window Settings
+0:23:46.694 I/WIN: Opened window Settings
+0:23:49.883 I/JOY: 	Joystick - HOTAS Warthog Axis 1 assigned to joy_use_roll
+0:26:49.862 I/WIN: Opened window Settings
+0:27:47.079 I/WIN: Opened window Map Window
+0:28:40.835 I/WIN: Opened window Map Window
+0:29:57.210 I/SCN: DSF load time: 166280 for file Custom Scenery/Global Airports/Earth nav data/+50+000/+51+000.dsf (0 tris)
+0:29:57.210 I/SCN: DSF load time: 397398 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+53+000.dsf (26749 tris)
+0:29:59.747 I/SCN: DSF load time: 2518271 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+51+000.dsf (316617 tris)
+0:30:02.914 I/SCN: DSF load time: 24286 for file Custom Scenery/Global Airports/Earth nav data/+50+000/+52+000.dsf (0 tris)
+0:30:04.135 I/SCN: DSF load time: 1208280 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+52+000.dsf (173243 tris)
+0:30:13.160 I/WIN: Opened window Map Window
+0:35:45.167 I/WIN: Opened window Map Window
+0:36:00.889 I/SCN: DSF load time: 13480 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+50-003.dsf (0 tris)
+0:36:00.990 I/SCN: DSF load time: 63841 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+50-001.dsf (0 tris)
+0:36:01.946 I/SCN: DSF load time: 924348 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+50-001.dsf (81151 tris)
+0:36:02.007 I/SCN: DSF load time: 1119119 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+50-003.dsf (129860 tris)
+0:36:02.554 I/SCN: DSF load time: 11829 for file Custom Scenery/Global Airports/Earth nav data/+50+000/+50+000.dsf (0 tris)
+0:36:02.554 I/SCN: DSF load time: 22358 for file Custom Scenery/Global Airports/Earth nav data/+50-010/+50-002.dsf (0 tris)
+0:36:02.689 I/SCN: DSF load time: 788399 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+50+000.dsf (64686 tris)
+0:36:03.970 I/SCN: DSF load time: 1397376 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50-010/+50-002.dsf (134932 tris)
+0:36:56.521 I/WIN: Opened window Map Window
+0:37:06.148 I/WIN: Opened window Map Window
+0:38:08.925 I/WIN: Opened window Map Window
+0:39:04.578 W/SCN: Custom Scenery/Global Airports/Earth nav data/apt.dat:
+0:39:04.578 W/SCN: Traffic flow rule of airport EGHJ found in file indicated above does not contain a valid 1100 runway use rule. Without runway, the rule is incomplete. I'm ignoring this rule.
+0:39:04.578 W/SCN: Custom Scenery/Global Airports/Earth nav data/apt.dat:
+0:39:04.578 W/SCN: Traffic flow rule of airport EGHJ found in file indicated above does not contain a valid 1100 runway use rule. Without runway, the rule is incomplete. I'm ignoring this rule.
+0:39:51.878 I/WIN: Opened window Map Window
+0:41:22.844 I/ATC: Airport flow changed at EGDL!
+CurFlow: AUTOGEN: West NewFlow: AUTOGEN: South
+0:41:22.844 I/ATC: Changing EGDL CabState from 0 to 1
+0:41:22.844 I/ATC: All departures are done at EGDL. Advancing...
+0:41:22.844 I/ATC: Changing EGDL CabState from 1 to 2
+0:41:22.844 I/ATC: All arrivals are done at EGDL. Advancing...
+0:41:22.844 I/ATC: Changing EGDL CabState from 2 to 0
+0:41:43.841 I/WIN: Opened window Map Window
+0:42:12.936 I/SCN: DSF load time: 6605 for file Custom Scenery/Global Airports/Earth nav data/+50+000/+50+001.dsf (0 tris)
+0:42:12.936 I/SCN: DSF load time: 14174 for file Custom Scenery/Global Airports/Earth nav data/+50+000/+52+001.dsf (0 tris)
+0:42:14.161 I/SCN: DSF load time: 1211366 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+52+001.dsf (176246 tris)
+0:42:14.161 I/SCN: DSF load time: 1222595 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+50+001.dsf (140368 tris)
+0:42:15.292 I/SCN: DSF load time: 35753 for file Custom Scenery/Global Airports/Earth nav data/+50+000/+51+001.dsf (0 tris)
+0:42:16.085 I/SCN: DSF load time: 758945 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+000/+51+001.dsf (81600 tris)
+0:44:06.403 I/WIN: Opened window Map Window
+0:44:54.013 W/ATC: Could not find an appropriate flow at EGSM...attempting to autogen one on the fly
+0:44:54.013 W/ATC: Adding autogen'ed flow AUTOGEN: West to the list for EGSM
+0:45:13.767 I/WIN: Opened window Map Window
+0:46:02.862 I/WIN: Opened window Map Window
+0:46:55.297 I/WIN: Opened window Settings
+0:51:04.022 W/ATC: Could not find an appropriate flow at EGSM...attempting to autogen one on the fly
+0:51:04.022 W/ATC: Adding autogen'ed flow AUTOGEN: West to the list for EGSM
+0:54:34.275 I/WIN: Opened window Map Window
+0:54:37.179 I/WIN: Opened window Map Window
+0:54:54.383 I/WIN: Opened window Map Window
+0:55:03.601 I/WIN: Opened window Map Window
+0:56:07.213 I/WIN: Opened window Map Window
+0:56:10.856 I/WIN: Opened window Map Window
+0:56:24.969 I/WIN: Opened window Map Window
+0:57:22.645 I/WIN: Opened window Settings
+0:57:27.555 D/STM: Transitioning from state state_Normal to state_ShuttingDown
+G64:3448.194: Plugin Disabled.
+GndHandling:OAL_error(779)=No such error code
+JARDesign Ground Handling 3D Sound Engine Disable 
+Clean exit from threads.
+0:57:27.555 I/JOY: Control response for axis joy_use_ptch: 0.500000
+0:57:27.555 I/JOY: Control response for axis joy_use_roll: 0.500000
+0:57:27.555 I/JOY: Control response for axis joy_use_thro: 0.000000
+0:57:27.555 I/JOY: Control response for axis joy_use_thro: 0.000000
+0:57:27.555 I/JOY: Control response for axis joy_use_elev_tr: 0.000000
+0:57:27.555 I/JOY: Stability augmentation for axis joy_use_ptch: 0.500000
+0:57:27.555 I/JOY: Stability augmentation for axis joy_use_roll: 0.500000
+0:57:27.555 I/JOY: Stability augmentation for axis joy_use_thro: 0.000000
+0:57:27.555 I/JOY: Stability augmentation for axis joy_use_thro: 0.000000
+0:57:27.555 I/JOY: Stability augmentation for axis joy_use_elev_tr: 0.000000
+0:57:27.555 W/JOY: Multiple axes assigned to joy_use_thro:
+0:57:27.555 W/JOY:     Throttle - HOTAS Warthog (0000014EBCADF120) Axis 3
+0:57:27.555 W/JOY:     Throttle - HOTAS Warthog (0000014EBCADF120) Axis 4
+0:57:27.555 I/JOY: UNREGISTER Joystick device: Throttle - HOTAS Warthog - VID:1103PID:1028
+0:57:27.555 I/JOY: UNREGISTER Joystick device: Joystick - HOTAS Warthog - VID:1103PID:1026
+0:57:27.555 D/HID: HID Bridge Shutdown
+----- X-Plane has shut down -----

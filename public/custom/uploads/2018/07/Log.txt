@@ -1,0 +1,363 @@
+log.txt for X-Plane 11.25r2 (build 112503 64-bit)
+ compiled on Jul 11 2018 21:00:15
+X-Plane started on Fri Jul 27 20:52:55 2018
+
+This log file is generated automatically by Laminar Research applications and contains diagnostics about your graphics hardware, installation, and any error conditions.
+If you need to contact tech support or file a bug, please send us this file. NOTE: this file is rewritten every time you start ANY of your X-System applications.
+
+Windows 10.0 (build 17134/2)
+This is a 64-bit version of Windows.
+CPU type: 8664
+Physical Memory (total for computer): 34286968832
+Maximum Virtual Memory (for X-Plane only): 140737488224256
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+CPU 0: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz  Speed (mhz): 4008
+
+X-System folder:'D:\X-Plane 11/', case sensitive=0
+
+WGL_ARB_buffer_region WGL_ARB_create_context WGL_ARB_create_context_no_error WGL_ARB_create_context_profile WGL_ARB_create_context_robustness WGL_ARB_context_flush_control WGL_ARB_extensions_string WGL_ARB_make_current_read WGL_ARB_multisample WGL_ARB_pbuffer WGL_ARB_pixel_format WGL_ARB_pixel_format_float WGL_ARB_render_texture WGL_ATI_pixel_format_float WGL_EXT_colorspace WGL_EXT_create_context_es_profile WGL_EXT_create_context_es2_profile WGL_EXT_extensions_string WGL_EXT_framebuffer_sRGB WGL_EXT_pixel_format_packed_float WGL_EXT_swap_control WGL_EXT_swap_control_tear WGL_NVX_DX_interop WGL_NV_DX_interop WGL_NV_DX_interop2 WGL_NV_copy_image WGL_NV_delay_before_swap WGL_NV_float_buffer WGL_NV_multisample_coverage WGL_NV_render_depth_texture WGL_NV_render_texture_rectangle 
+
+OpenGL Vendor    : NVIDIA Corporation
+OpenGL Render    : GeForce GTX 1070/PCIe/SSE2
+OpenGL Version   : 4.6.0 NVIDIA 398.36 (460/0)
+OpenGL Extensions: GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_win32 GL_EXT_win32_keyed_mutex GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_win32 GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_NVX_multigpu_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum GL_WIN_swap_hint WGL_EXT_swap_control 
+
+threaded_avail   : 1	aniso_avail      : 1	timer_avail      : 1	sync/fence       : 1
+pbo_avail        : 1	frameblit_avail  : 1	framebuffer_msaa : 1
+gpu_shad4_avail  : 1	shad_lod_avail   : 1	array_tex_avail  : 1	texture_rg       : 1
+tex_float_avail  : 1	seamless_avail   : 1	drawbuf2_avail   : 1	packed_stencil   : 1
+framebuffer_srgb : 1	copy_buf_avail   : 1	ubo_avail        : 1	gshader_avail    : 1
+base_vert_avail  : 1	tex_multi_avail  : 1	depth_float_avail: 1
+instance_avail   : 1	tess_avail       : 1	viewport_arr     : 1	tex_storage      : 1
+buf_storage      : 1	multi_bind       : 1	clip_control     : 1	program binary   : 1
+debug_avail      : 1
+max tex units    : 32 (32/8)
+max iso filtering: 16.000000
+max samples      : 32
+max texture size : 32768 (hardware limit)
+max point size   : 189.875000
+idx in vram      : 1
+GLSL Version     :4.60 NVIDIA/460
+(16/4096/124/192/32/4096/4096/65536)
+This video card is: DX11+ VR Ready (found glMapBufferRange)
+CPU count        : 8
+OpenAL loaded: Resources/dlls/64/openal32.dll
+OpenAL devices: OpenAL Soft
+Open AL default device:OpenAL Soft
+OpenAL vendor	: OpenAL Community
+OpenAL renderer  : OpenAL Soft
+OpenAL version   : 1.1
+OpenAL hardware  : OpenAL Soft
+OpenAL extensions: ALC_ENUMERATE_ALL_EXT ALC_ENUMERATION_EXT ALC_EXT_CAPTURE ALC_EXT_DEDICATED ALC_EXT_disconnect ALC_EXT_EFX ALC_EXT_thread_local_context ALC_SOFTX_device_clock ALC_SOFTX_HRTF ALC_SOFT_loopback ALC_SOFTX_midi_interface ALC_SOFT_pause_device AL_EXT_ALAW AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_LOKI_quadriphonic AL_SOFT_block_alignment AL_SOFT_buffer_samples AL_SOFT_buffer_sub_data AL_SOFT_deferred_updates AL_SOFT_direct_channels AL_SOFT_loop_points AL_SOFT_MSADPCM AL_SOFT_source_latency AL_SOFT_source_length
+
+0:00:00.000 D/TRN: Unable to determine default language. May need to prompt the user to select.
+Fetching plugins for D:\X-Plane 11/Resources/plugins
+
+Loaded: D:\X-Plane 11/Resources/plugins/PluginAdmin/64/win.xpl (xpsdk.examples.pluginadmin).
+
+I found the following scenery packages (prioritized in this order):
+  0 Custom Scenery/X-Plane Landmarks - Chicago/
+  1 Custom Scenery/X-Plane Landmarks - Las Vegas/
+  2 Custom Scenery/X-Plane Landmarks - London/
+  3 Custom Scenery/X-Plane Landmarks - Sydney/
+  4 Custom Scenery/Aerosoft - EDDF Frankfurt/
+  5 Custom Scenery/Aerosoft - EDLP Paderborn-Lippstadt/
+  6 Custom Scenery/Aerosoft - EGLL Heathrow/
+  7 Custom Scenery/Aerosoft - LFMN Nice Cote d Azur X/
+  8 Custom Scenery/Aerosoft - LFPO Paris Orly/
+  9 Custom Scenery/Aerosoft - LPFR Faro/
+ 10 Custom Scenery/Global Airports/
+ 11 Custom Scenery/KSEA Demo Area/
+ 12 Custom Scenery/LOWI Demo Area/
+ 13 Global Scenery/X-Plane 11 Demo Areas/
+ 14 Global Scenery/X-Plane 11 Global Scenery/
+ 15 Resources/default scenery/1000 autogen/
+ 16 Resources/default scenery/1000 decals/
+ 17 Resources/default scenery/1000 forests/
+ 18 Resources/default scenery/1000 roads/
+ 19 Resources/default scenery/1000 urban terrain/
+ 20 Resources/default scenery/1000 world terrain/
+ 21 Resources/default scenery/700 roads/
+ 22 Resources/default scenery/900 beaches/
+ 23 Resources/default scenery/900 europe objects/
+ 24 Resources/default scenery/900 forests/
+ 25 Resources/default scenery/900 roads/
+ 26 Resources/default scenery/900 us objects/
+ 27 Resources/default scenery/900 world object placeholders/
+ 28 Resources/default scenery/airport decals/
+ 29 Resources/default scenery/airport scenery/
+ 30 Resources/default scenery/default apt dat/
+ 31 Resources/default scenery/default atc/
+ 32 Resources/default scenery/sim objects/
+ 33 Resources/tutorials/tutorials_Alaska/
+ 34 Resources/tutorials/tutorials_Hawaii/
+ 35 Resources/tutorials/tutorials_Seattle/
+
+ATC audio initialized.
+Initializing off screen memory.
+Initializing off screen memory complete.
+0:00:00.000 D/HID: HID Bridge Running
+0:00:10.214 I/REN: Setting texture resolution read from prefs as 4
+0:00:10.214 I/REN: Setting |draw view indicator defaulted to 1.
+0:00:10.214 I/REN: Setting |dim under high G-load or hypoxia defaulted to 1.
+0:00:10.214 I/REN: Setting |draw hi-res planet textures from orbit defaulted to 1.
+0:00:10.214 I/REN: Setting |draw forest fires and balloons defaulted to 0.
+0:00:10.214 I/REN: Setting |draw birds and deer in nice weather defaulted to 1.
+0:00:10.214 I/REN: Setting |draw aircraft carriers and frigates defaulted to 1.
+0:00:10.214 I/REN: Setting |draw Aurora Borealis defaulted to 0.
+0:00:10.214 I/REN: Setting |runways follow terrain contours defaulted to 1.
+0:00:10.214 I/REN: Setting |3-d drawing detail defaulted to 1.
+0:00:10.214 I/REN: Setting |water reflection detail defaulted to 0.
+0:00:10.214 I/REN: Setting |draw parked aircraft at airports defaulted to 0.
+0:00:10.214 I/REN: Setting compress textures to save VRAM defaulted to 1.
+0:00:10.214 I/REN: Setting |Effects defaulted to 2.
+0:00:10.214 I/REN: Setting |3-d shadows defaulted to 0.
+0:00:10.214 I/REN: Setting |HDR anti-aliasing defaulted to 0.
+0:00:10.214 I/REN: Setting |draw volumetric fog defaulted to 1.
+0:00:10.214 I/REN: Setting |draw per pixel lighting defaulted to 1.
+0:00:10.214 I/REN: Setting |atmospheric scattering defaulted to 1.
+0:00:13.399 I/NET: Ethernet 192.168.0.21
+0:00:13.753 D/HID: Hardware ADDED(045e, 02a1) - Controller (Xbox 360 Wireless Receiver for Windows) at path \\?\hid#vid_045e&pid_02a1&ig_00#7&134f033a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:13.753 I/JOY: REGISTER Joystick device: Controller (Xbox 360 Wireless Receiver for Windows) - VID:1118PID:673, this is the first time we've seen it.
+0:00:13.753 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 000000001A166860
+0:00:13.753 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 000000001A166860
+0:00:13.753 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 000000001A166860. Min/Max 0 - 65535
+0:00:13.753 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 000000001A166860. Min/Max 0 - 65535
+0:00:13.753 D/HID: 	AXIS Added Index: 2 (HID_Page_GenericDesktop/HID_Usage_GD_Ry) for handle: 000000001A166860. Min/Max 0 - 65535
+0:00:13.753 D/HID: 	AXIS Added Index: 3 (HID_Page_GenericDesktop/HID_Usage_GD_Rx) for handle: 000000001A166860. Min/Max 0 - 65535
+0:00:13.753 D/HID: 	AXIS Added Index: 4 (HID_Page_GenericDesktop/HID_Usage_GD_Z) for handle: 000000001A166860. Min/Max 0 - 65535
+0:00:13.753 D/HID: 	HATSWITCH Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Hatswitch) for handle: 000000001A166860. It has 8 positions.
+0:00:13.753 D/HID: END HARDWARE
+0:00:13.753 I/JOY: Setting default joystick configuration from file Resources/joystick configs/Xbox 360 Wired Controller - Windows.joy
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Axis 0 assigned to joy_use_ptch
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Axis 1 assigned to joy_use_roll
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Axis 2 assigned to joy_use_none
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Axis 3 assigned to joy_use_hdng
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Axis 4 assigned to joy_use_none
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 0 assigned to Flaps down a notch.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 1 assigned to Throttle down a bit.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 2 assigned to Throttle up a bit.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 3 assigned to Flaps up a notch.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 4 assigned to Zoom out.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 5 assigned to Zoom in.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 7 assigned to Pause the simulation.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 8 assigned to Toggle brakes regular effort.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Button 9 assigned to Landing gear toggle.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 1 assigned to Hat switch up.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 2 assigned to Hat switch up + right.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 3 assigned to Hat switch right.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 4 assigned to Hat switch down + right.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 5 assigned to Hat switch down.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 6 assigned to Hat switch down + left.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 7 assigned to Hat switch left.
+0:00:13.753 I/JOY: 	Controller (Xbox 360 Wireless Receiver for Windows) Hat switch 0 Direction 8 assigned to Hat switch up + left.
+0:00:13.753 D/STM: Transitioning from state state_InitialLoading to state_QuickFlightWizard
+0:00:13.753 I/OVR: User is entering the holodeck.
+0:00:13.753 I/WIN: Opened window Primary V11 UI
+0:00:14.090 I/MIS: Handling Event: mission_event_load
+0:00:14.090 I/MIS: Changing State From: mission_state_unloaded to mission_state_loading
+0:00:14.090 I/MIS: Starting mission: X-Plane Basics
+0:00:14.091 W/ATC: Found overlapping airports with overlapping controller freqs at KCEA and KIAB!
+0:00:14.091 W/ATC: Found overlapping airports with overlapping controller freqs at WSAC and WSSS!
+0:00:14.091 W/ATC: Found overlapping airports with overlapping controller freqs at RJCJ and RJCC!
+0:00:14.091 W/ATC: Found overlapping airports with overlapping controller freqs at WASS and WA1A!
+0:00:14.091 W/ATC: Found overlapping airports with overlapping controller freqs at KNSE and KNDZ!
+0:00:14.091 W/ATC: Rewrote KAHN atc_ControllerRole_Del's freq: 13395 to 11800 for being in conflict!
+0:00:14.091 W/ATC: Rewrote KCEA atc_ControllerRole_Twr's freq: 12725 to 11802 for being in conflict!
+0:00:14.091 W/ATC: Rewrote WSAC atc_ControllerRole_Twr's freq: 11825 to 11800 for being in conflict!
+0:00:14.091 W/ATC: Rewrote RJCJ atc_ControllerRole_Del's freq: 12190 to 11800 for being in conflict!
+0:00:14.091 W/ATC: Rewrote WASS atc_ControllerRole_Twr's freq: 12240 to 11800 for being in conflict!
+0:00:14.091 W/ATC: Rewrote KNSE atc_ControllerRole_Twr's freq: 12140 to 11800 for being in conflict!
+0:00:16.418 D/STM: Transitioning from state state_QuickFlightWizard to state_NormalLoading
+0:00:16.418 I/ACF: Loading airplane number 0 with Aircraft/Laminar Research/Cessna 172SP/Cessna_172SP.acf
+Fetching plugins for D:\X-Plane 11/Aircraft/Laminar Research/Cessna 172SP/plugins
+
+Loaded: D:\X-Plane 11/Aircraft/Laminar Research/Cessna 172SP/plugins/xlua/64/win.xpl (com.x-plane.xlua.1.0.0r1).
+
+0:00:18.199 I/FLT: Init dat_p0 type:loc_specify_lle lat:21.315000 lon:-157.915000 ele(ft):6000.000206 psi:0.000000 spd(kts):100.000001
+0:00:18.476 I/DSF: Warning for missing scenery file: +20-160
+0:00:18.476 I/DSF: Warning for missing scenery file: +22-158
+0:00:18.476 I/DSF: Warning for missing scenery file: +22-157
+0:00:18.476 I/SCN: DSF load time: 199621 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+22-160.dsf (0 tris)
+0:00:18.476 I/SCN: DSF load time: 732721 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+20-158.dsf (4659 tris)
+0:00:18.476 I/SCN: DSF load time: 1196664 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+22-160.dsf (81759 tris)
+0:00:18.476 I/DSF: Warning for missing scenery file: +20-159
+0:00:18.476 I/SCN: DSF load time: 93913 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-160.dsf (0 tris)
+0:00:18.476 I/SCN: DSF load time: 178072 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+20-157.dsf (0 tris)
+0:00:18.476 I/SCN: DSF load time: 542827 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-160.dsf (42559 tris)
+0:00:18.476 I/SCN: DSF load time: 33263 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-159.dsf (0 tris)
+0:00:18.476 I/SCN: DSF load time: 828401 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+20-157.dsf (94753 tris)
+0:00:18.476 I/SCN: DSF load time: 6666 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-157.dsf (0 tris)
+0:00:18.476 I/SCN: DSF load time: 581096 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-159.dsf (56198 tris)
+0:00:18.476 I/DSF: Warning for missing scenery file: +22-159
+0:00:18.476 I/SCN: DSF load time: 408678 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-157.dsf (55182 tris)
+0:00:18.476 I/SCN: DSF load time: 112111 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-158.dsf (0 tris)
+0:00:18.476 I/SCN: DSF load time: 600111 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-158.dsf (78782 tris)
+0:00:25.061 I/OVR: Reading VR conf file: Aircraft/Laminar Research/Cessna 172SP/Cessna_172SP_vrconfig.txt
+0:00:25.061 D/STM: Transitioning from state state_NormalLoading to state_Normal
+0:00:25.061 I/MIS: Handling Event: mission_event_dsf_loaded
+0:00:25.061 I/MIS: Changing State From: mission_state_loading to mission_state_loaded_ready
+0:00:25.061 I/MIS: Handling Event: mission_event_pregame_beginning
+0:00:25.061 I/MIS: Changing State From: mission_state_loaded_ready to mission_state_running_pregame
+0:00:25.061 D/ACT: Start Mission
+0:00:25.061 I/MIS: Handling Event: mission_event_pregame_ending
+0:00:25.061 I/MIS: Changing State From: mission_state_running_pregame to mission_state_pregame_done
+0:00:25.061 I/MIS: Handling Event: mission_event_mission_start
+0:00:25.061 I/MIS: Changing State From: mission_state_pregame_done to mission_state_running_mission
+0:00:25.061 D/ACT: Starting Wizard: Resources/wizards/intro.txt
+0:00:25.061 I/WIZ: Loaded tutorial file Resources/wizards/intro.txt
+0:00:25.061 I/OVR: User is leaving the holodeck.
+0:00:25.099 I/WIZ: Soloing ALL
+0:00:25.099 I/WIZ: Setting dataref sim/cockpit2/engine/actuators/throttle_ratio_all to 0.5
+0:00:25.099 I/WIZ: Setting dataref sim/cockpit2/autopilot/sync_hold_roll_deg to 0.0
+0:00:25.099 I/WIZ: Setting dataref sim/cockpit2/autopilot/sync_hold_pitch_deg to 0.0
+0:00:25.099 I/WIZ: Setting dataref sim/time/ground_speed to 0.0
+0:00:25.099 I/WIZ: Setting dataref iphone/settings/training_wheels to 1.0
+0:00:25.099 I/WIZ: Pressing command : sim/autopilot/servos_on
+0:00:25.099 I/WIZ: Pressing command : sim/autopilot/wing_leveler
+0:00:25.099 I/WIZ: Pressing command : sim/autopilot/pitch_sync
+0:00:26.447 I/WIN: Opened window menu bar
+0:00:26.447 I/WIN: Opened window Replay overlay
+0:00:29.998 D/ACT: Ending Mission - Complete
+0:00:29.998 I/MIS: Handling Event: mission_event_mission_end_complete
+0:00:29.998 I/MIS: Changing State From: mission_state_running_mission to mission_state_mission_done
+0:00:29.998 I/MIS: Ending mission: X-Plane Basics
+0:00:29.998 I/MIS: Handling Event: mission_event_postgame_start
+0:00:29.998 I/MIS: Changing State From: mission_state_mission_done to mission_state_running_postgame
+0:00:29.998 D/ACT: Ending PostGame
+0:00:29.998 I/MIS: Handling Event: mission_event_postgame_ending
+0:00:29.998 I/MIS: Changing State From: mission_state_running_postgame to mission_state_postgame_done
+0:00:29.998 I/OVR: User is entering the holodeck.
+0:00:32.345 I/OVR: User is leaving the holodeck.
+0:00:32.345 I/MIS: Handling Event: mission_event_unload
+0:00:32.345 I/MIS: Changing State From: mission_state_postgame_done to mission_state_unloaded
+0:00:32.353 I/OVR: User is entering the holodeck.
+0:00:32.353 I/WIN: Opened window Primary V11 UI
+0:01:10.151 I/JOY: Calibration complete.
+0:01:32.399 I/REN: Setting |3-d drawing detail set to 4.
+0:01:32.399 I/REN: Setting |water reflection detail set to 4.
+0:01:32.399 I/REN: Setting |Effects set to 3.
+0:01:36.119 I/DSF: Warning for missing scenery file: +20-160
+0:01:36.119 I/DSF: Warning for missing scenery file: +22-158
+0:01:36.119 I/SCN: DSF load time: 87072 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+22-160.dsf (0 tris)
+0:01:36.119 I/SCN: DSF load time: 193739 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+20-158.dsf (4659 tris)
+0:01:36.119 I/DSF: Warning for missing scenery file: +22-157
+0:01:36.119 I/SCN: DSF load time: 1523985 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+22-160.dsf (81759 tris)
+0:01:36.119 I/DSF: Warning for missing scenery file: +20-159
+0:01:36.119 I/SCN: DSF load time: 262422 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+20-157.dsf (0 tris)
+0:01:36.119 I/SCN: DSF load time: 23708 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-160.dsf (0 tris)
+0:01:36.119 I/SCN: DSF load time: 546973 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-160.dsf (42559 tris)
+0:01:36.119 I/SCN: DSF load time: 21621 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-159.dsf (0 tris)
+0:01:36.119 I/SCN: DSF load time: 984437 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+20-157.dsf (94753 tris)
+0:01:36.119 I/SCN: DSF load time: 992 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-157.dsf (0 tris)
+0:01:36.119 I/SCN: DSF load time: 593926 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-159.dsf (56198 tris)
+0:01:36.119 I/DSF: Warning for missing scenery file: +22-159
+0:01:36.119 I/SCN: DSF load time: 460200 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-157.dsf (55182 tris)
+0:01:36.119 I/SCN: DSF load time: 33072 for file Custom Scenery/Global Airports/Earth nav data/+20-160/+21-158.dsf (0 tris)
+0:01:36.119 I/SCN: DSF load time: 755643 for file Global Scenery/X-Plane 11 Demo Areas/Earth nav data/+20-160/+21-158.dsf (78782 tris)
+0:01:54.776 I/FCG: Applying changes from Flight Configuration screen
+0:01:54.776 I/FCG: Starting new flight in Aircraft/Laminar Research/Cirrus SF-50/CirrusSF50.acf at Runway 17
+0:01:54.776 D/STM: Transitioning from state state_Normal to state_NormalLoading
+0:01:54.776 I/ACF: Loading airplane number 0 with Aircraft/Laminar Research/Cirrus SF-50/CirrusSF50.acf
+Fetching plugins for D:\X-Plane 11/Aircraft/Laminar Research/Cirrus SF-50/plugins
+
+Loaded: D:\X-Plane 11/Aircraft/Laminar Research/Cirrus SF-50/plugins/xlua/64/win.xpl (com.x-plane.xlua.1.0.0r1).
+
+Clean exit from threads.
+0:01:54.792 I/FLT: Init dat_p0 type:loc_tak apt:ESMS rwy:17
+0:01:55.812 I/SCN: DSF load time: 23455 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+56+011.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 85516 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+54+013.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 90672 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+54+011.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 134600 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+56+013.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 420028 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+56+011.dsf (3232 tris)
+0:01:55.812 I/SCN: DSF load time: 2998567 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+54+011.dsf (61513 tris)
+0:01:55.812 I/SCN: DSF load time: 3148280 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+54+013.dsf (85585 tris)
+0:01:55.812 I/SCN: DSF load time: 4108076 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+56+013.dsf (242762 tris)
+0:01:55.812 I/SCN: DSF load time: 505711 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+55+011.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 102840 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+56+014.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 249047 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+54+014.dsf (6486 tris)
+0:01:55.812 I/SCN: DSF load time: 1064583 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+55+011.dsf (128699 tris)
+0:01:55.812 I/SCN: DSF load time: 1805839 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+56+014.dsf (275722 tris)
+0:01:55.812 I/SCN: DSF load time: 24980 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+54+012.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 134345 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+55+014.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 200215 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+56+012.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 619621 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+55+014.dsf (57257 tris)
+0:01:55.812 I/SCN: DSF load time: 884913 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+54+012.dsf (92482 tris)
+0:01:55.812 I/SCN: DSF load time: 1087026 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+56+012.dsf (121287 tris)
+0:01:55.812 I/SCN: DSF load time: 179434 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+55+012.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 991417 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+55+012.dsf (134654 tris)
+0:01:55.812 I/SCN: DSF load time: 33664 for file Custom Scenery/Global Airports/Earth nav data/+50+010/+55+013.dsf (0 tris)
+0:01:55.812 I/SCN: DSF load time: 947435 for file Global Scenery/X-Plane 11 Global Scenery/Earth nav data/+50+010/+55+013.dsf (143857 tris)
+0:02:15.409 I/OVR: Reading VR conf file: Aircraft/Laminar Research/Cirrus SF-50/CirrusSF50_vrconfig.txt
+0:02:15.409 D/STM: Transitioning from state state_NormalLoading to state_Normal
+0:02:15.409 I/FCG: Setting total number of aircraft to 4
+0:02:15.409 I/FCG: Loading AI aircraft Aircraft/Laminar Research/Sikorsky S-76/S-76C.acf
+0:02:15.409 I/ACF: Loading airplane number 1 with Aircraft/Laminar Research/Sikorsky S-76/S-76C.acf
+0:02:15.443 I/FLT: Init dat_p1 type:loc_general_area lat:55.439026 lon:14.242145 ele(ft):18004.389222 psi:134.630569 spd(kts):59.461208
+0:02:15.443 I/FCG: Loading AI aircraft Aircraft/Laminar Research/Baron B58/Baron_58.acf
+0:02:15.443 I/ACF: Loading airplane number 2 with Aircraft/Laminar Research/Baron B58/Baron_58.acf
+0:02:16.138 I/FLT: Init dat_p2 type:loc_general_area lat:55.004348 lon:14.018759 ele(ft):7349.050182 psi:207.713852 spd(kts):96.645360
+0:02:16.138 I/FCG: Loading AI aircraft Aircraft/Laminar Research/KingAir C90B/C90B.acf
+0:02:16.138 I/ACF: Loading airplane number 3 with Aircraft/Laminar Research/KingAir C90B/C90B.acf
+0:02:16.856 I/FLT: Init dat_p3 type:loc_general_area lat:55.803518 lon:11.925233 ele(ft):17029.978164 psi:133.268219 spd(kts):128.014477
+0:02:16.856 D/FCG: MTBF set to 10000.0 hours
+0:02:16.856 I/OVR: User is leaving the holodeck.
+0:02:19.538 D/JOY: Set center for joy_use_hdng axis to 0.080735
+0:02:19.538 I/ATC: Aircraft p=1 (N01XP) started at ESMS:Gate 18
+0:02:19.538 I/FLT: Init dat_p1 type:loc_ram apt:ESMS start at:Gate 18
+0:02:19.538 I/ATC: p=2 (N02XP) Popup FP filed to ESMS at 5000 via , type=2
+0:02:19.538 D/ATC: Validating altitude for p=2 (N02XP): filed: 5000 usable_rte_dist: 11.724905 maxDescent: 2000 maxAlt: 3000 minAlt: 5000 chosen_alt: 3000
+0:02:19.538 D/ATC: p=2 (N02XP): Cleared IFR
+0:02:19.538 I/FLT: Init dat_p2 type:loc_specify_lle lat:55.535976 lon:13.807998 ele(ft):5000.000038 psi:202.000000 spd(kts):167.250009
+0:02:19.538 D/ATC: p=2 (N02XP): Fly Heading: 206
+0:02:19.538 D/ATC: p=2 (N02XP): Maintain 2998ft
+0:02:19.538 I/ATC: Aircraft p=2 (N02XP) started airborne as an arrival at 55.535976, 13.807998, 230.840546
+0:02:19.538 I/ATC: Aircraft p=3 (N03XP) started at ESMS:Gate 10
+0:02:19.538 I/FLT: Init dat_p3 type:loc_ram apt:ESMS start at:Gate 10
+0:02:19.538 D/ATC: p=2 (N02XP): Fly Heading: 273
+0:02:19.538 D/ATC: p=2 (N02XP): Maintain 2998ft
+0:02:23.352 I/ATC: p=1 (N01XP) FP filed - ESMS to EKRN at 9000 via , type=2
+0:02:23.407 D/ATC: Validating altitude for p=1 (N01XP): filed: 9000 usable_rte_dist: 44.323227 maxDescent: 11000 maxAlt: 11000 minAlt: 9000 chosen_alt: 9000
+0:02:23.407 D/ATC: p=1 (N01XP): Cleared IFR
+0:02:23.407 W/ATC: Frequency 13300 for flow South flow runway 17 at ESMS seemed invalid and was overwriten!
+0:02:23.407 D/ATC: p=1 (N01XP): Squawk 4700
+0:02:23.452 D/ATC: p=1 (N01XP): Taxi (7 points issued)
+0:02:24.192 I/ATC: p=3 (N03XP) FP filed - ESMS to ETNH at 18000 via ALS , type=2
+0:02:24.251 D/ATC: Validating altitude for p=3 (N03XP): filed: 18000 usable_rte_dist: 128.479309 maxDescent: 32000 maxAlt: 32000 minAlt: 18000 chosen_alt: 18000
+0:02:24.251 D/ATC: p=3 (N03XP): Cleared IFR
+0:02:24.251 D/ATC: p=3 (N03XP): Squawk 4701
+0:02:24.295 D/ATC: p=3 (N03XP): Taxi (7 points issued)
+0:03:35.589 D/ATC: p=2 (N02XP): Fly Heading: 353
+0:03:35.589 D/ATC: p=2 (N02XP): Maintain 2998ft
+0:04:46.916 I/ATC: Adding p=1 (N01XP) into Hold Queue
+0:04:47.705 D/ATC: p=1 (N01XP): Taxi (3 points issued)
+0:04:47.705 I/ATC: Removing p=1 (N01XP) from Hold Queue
+0:04:47.705 I/ATC: Adding p=1 (N01XP) into Active Queue
+0:05:04.185 D/ATC: p=1 (N01XP): Takeoff: 17
+0:05:04.395 I/OVR: User is entering the holodeck.
+0:05:07.171 I/OVR: User is leaving the holodeck.
+0:05:07.171 I/SIM: User confirmed they want to quit
+0:05:07.191 D/STM: Transitioning from state state_Normal to state_ShuttingDown
+0:05:07.191 I/JOY: Control response for axis joy_use_ptch: 0.500000
+0:05:07.191 I/JOY: Control response for axis joy_use_roll: 0.500000
+0:05:07.191 I/JOY: Control response for axis joy_use_hdng: 0.500000
+0:05:07.191 I/JOY: Stability augmentation for axis joy_use_ptch: 0.500000
+0:05:07.191 I/JOY: Stability augmentation for axis joy_use_roll: 0.500000
+0:05:07.191 I/JOY: Stability augmentation for axis joy_use_hdng: 0.500000
+0:05:07.191 I/JOY: UNREGISTER Joystick device: Controller (Xbox 360 Wireless Receiver for Windows) - VID:1118PID:673
+0:05:07.191 D/HID: HID Bridge Shutdown
+----- X-Plane has shut down -----

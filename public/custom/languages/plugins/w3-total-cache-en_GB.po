@@ -1,0 +1,4067 @@
+# Translation of Plugins - W3 Total Cache - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - W3 Total Cache - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-05 10:06:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.9\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - W3 Total Cache - Stable (latest release)\n"
+
+#: Generic_AdminNotes.php:259 PageSpeed_Instructions.php:247
+msgid " and "
+msgstr " and "
+
+#: PgCache_ConfigLabels.php:23 PgCache_ConfigLabels.php:24
+msgid "Front page"
+msgstr "Front page"
+
+#: PgCache_ConfigLabels.php:24
+msgid "Posts page"
+msgstr "Posts page"
+
+#: Minify_ConfigLabels.php:68
+msgid "Clean"
+msgstr "Clean"
+
+#: inc/options/common/footer.php:51 inc/options/common/footer.php:52
+msgid "Forums"
+msgstr "Forums"
+
+#. translators: 1 HTML acronym for Content Delivery Network (CDN).
+#: Cdnfsd_GeneralPage_View.php:21 Cdnfsd_StackPath_Popup_View_Zone.php:43
+#: Cdnfsd_StackPath_Popup_View_Zone.php:51 Cdn_StackPath2_Page_View.php:19
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:17
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:31
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:62
+#: Cdn_StackPath_Widget_View_Unauthorized.php:16
+#: Cdn_StackPath_Widget_View_Unauthorized.php:33
+#: Extension_NewRelic_AdminNotes.php:23 Generic_Plugin_Admin.php:995
+#: PageSpeed_Instructions.php:383 PageSpeed_Instructions.php:397
+#: PageSpeed_Instructions.php:579 PageSpeed_Instructions.php:621
+#: PageSpeed_Instructions.php:644 Util_PageUrls.php:923
+msgid "CDN"
+msgstr "CDN"
+
+#. Description of the plugin
+msgid "The highest rated and most complete WordPress performance plugin. Dramatically improve the speed and user experience of your site. Add browser, page, object and database caching as well as minify and content delivery network (CDN) to WordPress."
+msgstr "The highest rated and most complete WordPress performance plugin. Dramatically improve the speed and user experience of your site. Add browser, page, object and database caching as well as minify and content delivery network (CDN) to WordPress."
+
+#. Plugin Name of the plugin
+#: Generic_Plugin_Admin.php:1095 SetupGuide_Plugin_Admin.php:1161
+#: SetupGuide_Plugin_Admin.php:1207 SetupGuide_Plugin_Admin.php:1279
+#: SetupGuide_Plugin_Admin.php:1308
+msgid "W3 Total Cache"
+msgstr "W3 Total Cache"
+
+#: Cdn_StackPath2_Page_View.php:63
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:71 Generic_WidgetServices.php:37
+msgid "Premium Services"
+msgstr "Premium Services"
+
+#: Generic_Plugin_WidgetNews.php:50
+msgid "News"
+msgstr "News"
+
+#: Extension_NewRelic_Widget.php:77
+msgid "view visualizations"
+msgstr "view visualisations"
+
+#: Generic_ConfigLabels.php:27
+msgid "Varnish servers:"
+msgstr "Varnish servers:"
+
+#: Generic_ConfigLabels.php:11
+msgid "Topic <acronym title=\"Identification\">ID</acronym>:"
+msgstr "Topic <acronym title=\"Identification\">ID</acronym>:"
+
+#: Generic_ConfigLabels.php:10
+msgid "<acronym title=\"Application Programming Interface\">API</acronym> secret:"
+msgstr "<acronym title=\"Application Programming Interface\">API</acronym> secret:"
+
+#: Generic_ConfigLabels.php:21
+msgid "Referrer groups"
+msgstr "Referrer groups"
+
+#: PgCache_ConfigLabels.php:57
+msgid "Handle <acronym title=\"Extensible Markup Language\">XML</acronym> mime type"
+msgstr "Handle <acronym title=\"Extensible Markup Language\">XML</acronym> mime type"
+
+#: PgCache_ConfigLabels.php:56
+msgid "Specify page headers:"
+msgstr "Specify page headers:"
+
+#: PgCache_ConfigLabels.php:55
+msgid "Non-trailing slash pages:"
+msgstr "Non-trailing slash pages:"
+
+#: PgCache_ConfigLabels.php:54
+msgid "Cache exception list:"
+msgstr "Cache exception list:"
+
+#: PgCache_ConfigLabels.php:48
+msgid "Rejected cookies:"
+msgstr "Rejected cookies:"
+
+#: PgCache_ConfigLabels.php:46
+msgid "Accepted query strings:"
+msgstr "Accepted query strings:"
+
+#: PgCache_ConfigLabels.php:45
+msgid "Comment cookie lifetime:"
+msgstr "Comment cookie lifetime:"
+
+#: PgCache_ConfigLabels.php:42
+msgid " Disable caching of HEAD <acronym title=\"Hypertext Transfer Protocol\">HTTP</acronym> requests"
+msgstr " Disable caching of HEAD <acronym title=\"Hypertext Transfer Protocol\">HTTP</acronym> requests"
+
+#: PgCache_ConfigLabels.php:39
+msgid "Purge sitemaps:"
+msgstr "Purge sitemaps:"
+
+#: PgCache_ConfigLabels.php:38
+msgid "Additional pages:"
+msgstr "Additional pages:"
+
+#: PgCache_ConfigLabels.php:36
+msgid "Specify the feed types to purge:"
+msgstr "Specify the feed types to purge:"
+
+#: PgCache_ConfigLabels.php:35
+msgid "Yearly archive pages"
+msgstr "Yearly archive pages"
+
+#: PgCache_ConfigLabels.php:34
+msgid "Monthly archive pages"
+msgstr "Monthly archive pages"
+
+#: PgCache_ConfigLabels.php:33
+msgid "Daily archive pages"
+msgstr "Daily archive pages"
+
+#: PgCache_ConfigLabels.php:32
+msgid "Post terms feeds"
+msgstr "Post terms feeds"
+
+#: PgCache_ConfigLabels.php:31
+msgid "Post author feed"
+msgstr "Post author feed"
+
+#: PgCache_ConfigLabels.php:30
+msgid "Post comments feed"
+msgstr "Post comments feed"
+
+#: PgCache_ConfigLabels.php:29
+msgid "Post terms pages"
+msgstr "Post terms pages"
+
+#: PgCache_ConfigLabels.php:28
+msgid "Post author pages"
+msgstr "Post author pages"
+
+#: PgCache_ConfigLabels.php:27
+msgid "Post comments pages"
+msgstr "Post comments pages"
+
+#: PgCache_ConfigLabels.php:26
+msgid "Blog feed"
+msgstr "Blog feed"
+
+#: PgCache_ConfigLabels.php:25
+msgid "Post page"
+msgstr "Post page"
+
+#: PgCache_ConfigLabels.php:21
+msgid "Sitemap <acronym title=\"Uniform Resource Indicator\">URL</acronym>:"
+msgstr "Sitemap <acronym title=\"Uniform Resource Indicator\">URL</acronym>:"
+
+#: PgCache_ConfigLabels.php:20
+msgid "Pages per interval:"
+msgstr "Pages per interval:"
+
+#: PgCache_ConfigLabels.php:19
+msgid "Update interval:"
+msgstr "Update interval:"
+
+#: PgCache_ConfigLabels.php:18
+msgid "Automatically prime the page cache"
+msgstr "Automatically prime the page cache"
+
+#: PgCache_ConfigLabels.php:17
+msgid "Don't cache pages for following user roles"
+msgstr "Don't cache pages for following user roles"
+
+#: PgCache_ConfigLabels.php:16
+msgid "Don't cache pages for logged in users"
+msgstr "Don't cache pages for logged in users"
+
+#: PgCache_ConfigLabels.php:15
+msgid "Cache 404 (not found) pages"
+msgstr "Cache 404 (not found) pages"
+
+#: PgCache_ConfigLabels.php:14
+msgid "Cache <acronym title=\"Uniform Resource Identifier\">URI</acronym>s with query string variables"
+msgstr "Cache <acronym title=\"Uniform Resource Identifier\">URI</acronym>s with query string variables"
+
+#: PgCache_ConfigLabels.php:12
+msgid "Cache feeds: site, categories, tags, comments"
+msgstr "Cache feeds: site, categories, tags, comments"
+
+#: PgCache_ConfigLabels.php:11
+msgid "Don't cache front page"
+msgstr "Don't cache front page"
+
+#: PgCache_ConfigLabels.php:10
+msgid "Cache posts page"
+msgstr "Cache posts page"
+
+#: PgCache_ConfigLabels.php:10
+msgid "Cache front page"
+msgstr "Cache front page"
+
+#: ObjectCache_ConfigLabels.php:14
+msgid "Flush all cache on post, comment etc changes."
+msgstr "Flush all cache on post, comment, etc., changes."
+
+#: ObjectCache_ConfigLabels.php:13
+msgid "Non-persistent groups:"
+msgstr "Non-persistent groups:"
+
+#: ObjectCache_ConfigLabels.php:12
+msgid "Global groups:"
+msgstr "Global groups:"
+
+#: ObjectCache_ConfigLabels.php:10
+msgid "Default lifetime of cache objects:"
+msgstr "Default lifetime of cache objects:"
+
+#: ObjectCache_ConfigLabels.php:8
+msgid "Object Cache:"
+msgstr "Object Cache:"
+
+#: ObjectCache_ConfigLabels.php:7
+msgid "Object Cache Method:"
+msgstr "Object Cache Method:"
+
+#: Extension_CloudFlare_GeneralPage_View.php:31
+#: Extension_CloudFlare_Page_View.php:119
+#: Extension_NewRelic_Page_View_Apm.php:173
+msgid "Cache time:"
+msgstr "Cache time:"
+
+#: Generic_ConfigLabels.php:23
+msgid "User Agent groups"
+msgstr "User Agent groups"
+
+#: Generic_ConfigLabels.php:22
+msgid "User Agents:"
+msgstr "User Agents:"
+
+#: Minify_ConfigLabels.php:82
+msgid "Disable all the built-in micro optimizations"
+msgstr "Disable all the built-in micro optimisations"
+
+#: Minify_ConfigLabels.php:81
+msgid "Preserve unnecessary semicolons"
+msgstr "Preserve unnecessary semicolons"
+
+#: Minify_ConfigLabels.php:80
+msgid "Minify only, do not obfuscate local symbols"
+msgstr "Minify only, do not obfuscate local symbols"
+
+#: Minify_ConfigLabels.php:78 Minify_ConfigLabels.php:83
+msgid "Line break after:"
+msgstr "Line break after:"
+
+#: Minify_ConfigLabels.php:74
+msgid "Line break removal (not safe, not applied when combine only is active)"
+msgstr "Line break removal (not safe, not applied when combine only is active)"
+
+#: Minify_ConfigLabels.php:71
+msgid "Wrap after:"
+msgstr "Wrap after:"
+
+#: Minify_ConfigLabels.php:69
+msgid "Hide comments"
+msgstr "Hide comments"
+
+#: Minify_ConfigLabels.php:66
+msgid "Line break removal"
+msgstr "Line break removal"
+
+#: Minify_ConfigLabels.php:64
+msgid "Regroup selectors:"
+msgstr "Regroup selectors:"
+
+#: Minify_ConfigLabels.php:63
+msgid "Case for properties:"
+msgstr "Case for properties:"
+
+#: Minify_ConfigLabels.php:62
+msgid "Optimize shorthands:"
+msgstr "Optimise shorthands:"
+
+#: Minify_ConfigLabels.php:61
+msgid "Compression:"
+msgstr "Compression:"
+
+#: Minify_ConfigLabels.php:59
+msgid "Add timestamp"
+msgstr "Add timestamp"
+
+#: Minify_ConfigLabels.php:58
+msgid "Preserve CSS"
+msgstr "Preserve CSS"
+
+#: Minify_ConfigLabels.php:57
+msgid "Discard invalid properties"
+msgstr "Discard invalid properties"
+
+#: Generic_AdminNotes.php:179
+msgid "deploy"
+msgstr "deploy"
+
+#: Cdn_AdminNotes.php:255
+msgid " <a href=\"?page=w3tc_cdn#configuration\">Specify it here</a>."
+msgstr " <a href=\"?page=w3tc_cdn#configuration\">Specify it here</a>."
+
+#: Cdn_AdminNotes.php:255
+msgid "A configuration issue prevents <acronym title=\"Content Delivery Network\">CDN</acronym> from working: "
+msgstr "A configuration issue prevents <acronym title=\"Content Delivery Network\">CDN</acronym> from working: "
+
+#: Cdn_AdminNotes.php:234 Cdn_AdminNotes.php:238 Cdn_AdminNotes.php:242
+#: Cdn_AdminNotes.php:246
+msgid "The <strong>\"Replace default hostname with\"</strong> field cannot be empty."
+msgstr "The <strong>\"Replace default hostname with\"</strong> field cannot be empty."
+
+#: Cdn_AdminNotes.php:230
+msgid "The <strong>\"Account name\", \"Account key\" and \"Container\"</strong> fields cannot be empty."
+msgstr "The <strong>\"Account name\", \"Account key\" and \"Container\"</strong> fields cannot be empty."
+
+#: Cdn_AdminNotes.php:226
+msgid "The <strong>\"Username\", \"API key\", \"Container\" and \"Replace default hostname with\"</strong> fields cannot be empty."
+msgstr "The <strong>\"Username\", \"API key\", \"Container\" and \"Replace default hostname with\"</strong> fields cannot be empty."
+
+#: Cdn_AdminNotes.php:222
+msgid "The <strong>\"Access key\", \"Secret key\" and \"Replace default hostname with\"</strong> fields cannot be empty."
+msgstr "The <strong>\"Access key\", \"Secret key\" and \"Replace default hostname with\"</strong> fields cannot be empty."
+
+#: Cdn_AdminNotes.php:218
+msgid "The <strong>\"Access key\", \"Secret key\", \"Bucket\" and \"Replace default hostname with\"</strong> fields cannot be empty."
+msgstr "The <strong>\"Access key\", \"Secret key\", \"Bucket\" and \"Replace default hostname with\"</strong> fields cannot be empty."
+
+#: Cdn_AdminNotes.php:214
+msgid "The <strong>\"Access key\", \"Secret key\" and \"Bucket\"</strong> fields cannot be empty."
+msgstr "The <strong>\"Access key\", \"Secret key\" and \"Bucket\"</strong> fields cannot be empty."
+
+#: Cdn_AdminNotes.php:191
+msgid "update the path"
+msgstr "update the path"
+
+#: Cdn_AdminNotes.php:188
+msgid "The uploads path found in the database (%s) is inconsistent with the actual path. Please manually adjust the upload path either in miscellaneous settings or if not using a custom path %s automatically to resolve the issue."
+msgstr "The uploads path found in the database (%s) is inconsistent with the actual path. Please manually adjust the upload path either in miscellaneous settings or if not using a custom path %s automatically to resolve the issue."
+
+#: Cdn_AdminNotes.php:181
+msgid "The uploads directory is not available. Default WordPress directories will be created: <strong>%s</strong>."
+msgstr "The uploads directory is not available. Default WordPress directories will be created: <strong>%s</strong>."
+
+#: Cdn_AdminNotes.php:119
+msgid "The <strong>CURL PHP</strong> extension is not available. Please install it to enable S3 or CloudFront functionality. %s"
+msgstr "The <strong>CURL PHP</strong> extension is not available. Please install it to enable S3 or CloudFront functionality. %s"
+
+#: ObjectCache_Plugin_Admin.php:38
+msgid "Object Cache: %s."
+msgstr "Object Cache: %s."
+
+#: DbCache_Plugin_Admin.php:64
+msgid "Database Cache: %s."
+msgstr "Database Cache: %s."
+
+#: Minify_Plugin_Admin.php:148
+msgid "Minify: %s."
+msgstr "Minify: %s."
+
+#: PgCache_Plugin_Admin.php:293
+msgid "Page Cache: %s."
+msgstr "Page Cache: %s."
+
+#: Extension_NewRelic_AdminNotes.php:25
+msgid "Browser Cache and use compression"
+msgstr "Browser Cache and use compression"
+
+#: Cdn_AdminNotes.php:282
+msgid "Encountered issue with CDN: %s."
+msgstr "Encountered issue with CDN: %s."
+
+#: Cdn_AdminNotes.php:279
+msgid "Install page"
+msgstr "Install page"
+
+#: Cdn_AdminNotes.php:277
+msgid "Encountered issue with CDN: %s. See %s for instructions of creating correct table."
+msgstr "Encountered issue with CDN: %s. See %s for instructions of creating correct table."
+
+#: Cdn_AdminNotes.php:159
+msgid "unsuccessful transfer queue"
+msgstr "unsuccessful transfer queue"
+
+#: Cdn_AdminNotes.php:156
+msgid "The %s has unresolved errors. Empty the queue to restore normal operation."
+msgstr "The %s has unresolved errors. Empty the queue to restore normal operation."
+
+#: Cdn_AdminNotes.php:101
+msgid "export the media library"
+msgstr "export the media library"
+
+#: Cdn_AdminNotes.php:98
+msgid "Settings that affect Browser Cache settings for files hosted by the CDN have been changed. To apply the new settings %s and %s. %s"
+msgstr "Settings that affect Browser Cache settings for files hosted by the CDN have been changed. To apply the new settings %s and %s. %s"
+
+#: Cdn_AdminNotes.php:85
+msgid "Make sure to %s and upload the %s, files to the <acronym title=\"Content Delivery Network\">CDN</acronym> to ensure proper operation. %s"
+msgstr "Make sure to %s and upload the %s, files to the <acronym title=\"Content Delivery Network\">CDN</acronym> to ensure proper operation. %s"
+
+#: Cdn_AdminNotes.php:43
+msgid "Upgraded WordPress? Please %s files now to ensure proper operation. %s"
+msgstr "Upgraded WordPress? Please %s files now to ensure proper operation. %s"
+
+#: Cdn_AdminNotes.php:29
+msgid "upload active theme files"
+msgstr "upload active theme files"
+
+#: Cdn_AdminNotes.php:26
+msgid "The active theme has changed, please %s now to ensure proper operation. %s"
+msgstr "The active theme has changed, please %s now to ensure proper operation. %s"
+
+#: Minify_Plugin_Admin.php:168
+msgid "Empty the minify cache"
+msgstr "Empty the minify cache"
+
+#: Minify_Plugin_Admin.php:128
+msgid "Recently an error occurred while creating the CSS / JS minify cache: %s. %s"
+msgstr "Recently an error occurred while creating the CSS / JS minify cache: %s. %s"
+
+#: ObjectCache_Plugin_Admin.php:63
+msgid "Empty the object cache"
+msgstr "Empty the object cache"
+
+#: Minify_Plugin_Admin.php:165 ObjectCache_Plugin_Admin.php:60
+msgid "The setting change(s) made either invalidate the cached data or modify the behavior of the site. %s now to provide a consistent user experience."
+msgstr "The setting change(s) made either invalidate the cached data or modify the behaviour of the site. %s now to provide a consistent user experience."
+
+#: Generic_AdminNotes.php:227
+msgid "minify settings"
+msgstr "minify settings"
+
+#: Generic_AdminNotes.php:213
+msgid "empty the page cache"
+msgstr "empty the page cache"
+
+#: Generic_Plugin_Admin.php:1059
+msgid "Required files and directories have been automatically created"
+msgstr "Required files and directories have been automatically created"
+
+#: Generic_Plugin_Admin.php:1009
+msgid "Pull Zone was automatically created."
+msgstr "Pull Zone was automatically created."
+
+#: Generic_Plugin_Admin.php:1008
+msgid "Edge mode has been disabled."
+msgstr "Edge mode has been disabled."
+
+#: Generic_Plugin_Admin.php:1007
+msgid "Edge mode has been enabled."
+msgstr "Edge mode has been enabled."
+
+#: Generic_Plugin_Admin.php:1006
+msgid "The add-in has been removed."
+msgstr "The add-in has been removed."
+
+#: Minify_ConfigLabels.php:55
+msgid "Sort Selectors (caution)"
+msgstr "Sort Selectors (caution)"
+
+#: Minify_ConfigLabels.php:54
+msgid "Sort Properties"
+msgstr "Sort Properties"
+
+#: Minify_ConfigLabels.php:52
+msgid "Remove last ;"
+msgstr "Remove last ;"
+
+#: Minify_ConfigLabels.php:51
+msgid "Lowercase selectors"
+msgstr "Lowercase selectors"
+
+#: Minify_ConfigLabels.php:50
+msgid "Compress font-weight"
+msgstr "Compress font-weight"
+
+#: Minify_ConfigLabels.php:49
+msgid "Compress colors"
+msgstr "Compress colours"
+
+#: Minify_ConfigLabels.php:48
+msgid "Remove unnecessary backslashes"
+msgstr "Remove unnecessary backslashes"
+
+#: Minify_ConfigLabels.php:46
+msgid "Line break removal (not applied when combine only is active)"
+msgstr "Line break removal (not applied when combine only is active)"
+
+#: Minify_ConfigLabels.php:45 Minify_ConfigLabels.php:73
+msgid "Preserved comment removal (not applied when combine only is active)"
+msgstr "Preserved comment removal (not applied when combine only is active)"
+
+#: Minify_ConfigLabels.php:43
+msgid "Compilation level:"
+msgstr "Compilation level:"
+
+#: Minify_ConfigLabels.php:39
+msgid "Pretty print"
+msgstr "Pretty print"
+
+#: Minify_ConfigLabels.php:33
+msgid "Never minify the following pages:"
+msgstr "Never minify the following pages:"
+
+#: Minify_ConfigLabels.php:31
+msgid "Update external files every:"
+msgstr "Update external files every:"
+
+#: Minify_ConfigLabels.php:30
+msgid "@import handling:"
+msgstr "@import handling:"
+
+#: Minify_ConfigLabels.php:27
+msgid "Before <span class=\"html-tag\">&lt;/body&gt;</span>"
+msgstr "Before <span class=\"html-tag\">&lt;/body&gt;</span>"
+
+#: Minify_ConfigLabels.php:25
+msgid "After <span class=\"html-tag\">&lt;body&gt;</span>"
+msgstr "After <span class=\"html-tag\">&lt;body&gt;</span>"
+
+#: inc/options/minify.php:281 inc/options/minify.php:638
+#: Minify_ConfigLabels.php:24 Minify_ConfigLabels.php:26
+#: Minify_ConfigLabels.php:28
+msgid "Combine only"
+msgstr "Combine only"
+
+#: Minify_ConfigLabels.php:23
+msgid "Embed type:"
+msgstr "Embed type:"
+
+#: Minify_ConfigLabels.php:21
+msgid "Ignored comment stems:"
+msgstr "Ignored comment stems:"
+
+#: Minify_ConfigLabels.php:20
+msgid "Don't minify feeds"
+msgstr "Don't minify feeds"
+
+#: Minify_ConfigLabels.php:19
+msgid "Inline <acronym title=\"JavaScript\">JS</acronym> minification"
+msgstr "Inline <acronym title=\"JavaScript\">JS</acronym> minification"
+
+#: Minify_ConfigLabels.php:18
+msgid "Inline <acronym title=\"Cascading Style Sheet\">CSS</acronym> minification"
+msgstr "Inline <acronym title=\"Cascading Style Sheet\">CSS</acronym> minification"
+
+#: Minify_ConfigLabels.php:16
+msgid "Minify error notification:"
+msgstr "Minify error notification:"
+
+#: Minify_ConfigLabels.php:15
+msgid "Disable minify for logged in users"
+msgstr "Disable minify for logged in users"
+
+#: Minify_ConfigLabels.php:14
+msgid "Rewrite <acronym title=\"Uniform Resource Locator\">URL</acronym> structure"
+msgstr "Rewrite <acronym title=\"Uniform Resource Locator\">URL</acronym> structure"
+
+#: Minify_ConfigLabels.php:13
+msgid "Minify mode:"
+msgstr "Minify mode:"
+
+#: Minify_ConfigLabels.php:12
+msgid "<acronym title=\"Cascading Style Sheets\">CSS</acronym> minifier:"
+msgstr "<acronym title=\"Cascading Style Sheets\">CSS</acronym> minifier:"
+
+#: Minify_ConfigLabels.php:11
+msgid "<acronym title=\"JavaScript\">JS</acronym> minifier:"
+msgstr "<acronym title=\"JavaScript\">JS</acronym> minifier:"
+
+#: Minify_ConfigLabels.php:10
+msgid "<acronym title=\"Hypertext Markup Language\">HTML</acronym> minifier:"
+msgstr "<acronym title=\"Hypertext Markup Language\">HTML</acronym> minifier:"
+
+#: Minify_ConfigLabels.php:8 UsageStatistics_Page_View.php:218
+msgid "Minify:"
+msgstr "Minify:"
+
+#: Generic_ConfigLabels.php:17
+msgid "Verify rewrite rules"
+msgstr "Verify rewrite rules"
+
+#: Generic_ConfigLabels.php:16
+msgid "Nginx server configuration file path"
+msgstr "Nginx server configuration file path"
+
+#: Generic_ConfigLabels.php:15
+msgid "Use single network configuration file for all sites."
+msgstr "Use single network configuration file for all sites."
+
+#: Extension_FragmentCache_Page_View.php:87
+msgid "Manual fragment groups:"
+msgstr "Manual fragment groups:"
+
+#: Extension_FragmentCache_Page_View.php:73
+msgid "Default lifetime of cached fragments:"
+msgstr "Default lifetime of cached fragments:"
+
+#: Extension_FragmentCache_GeneralPage_View.php:31
+msgid "Fragment Cache Method:"
+msgstr "Fragment Cache Method:"
+
+#: DbCache_ConfigLabels.php:15
+msgid "Reject query words:"
+msgstr "Reject query words:"
+
+#: DbCache_ConfigLabels.php:14
+msgid "Ignored query stems:"
+msgstr "Ignored query stems:"
+
+#: DbCache_ConfigLabels.php:13 PgCache_ConfigLabels.php:49
+msgid "Never cache the following pages:"
+msgstr "Never cache the following pages:"
+
+#: DbCache_ConfigLabels.php:12 Extension_FragmentCache_Page_View.php:80
+#: Minify_ConfigLabels.php:32 ObjectCache_ConfigLabels.php:11
+#: PgCache_ConfigLabels.php:44
+msgid "Garbage collection interval:"
+msgstr "Garbage collection interval:"
+
+#: DbCache_ConfigLabels.php:11 PgCache_ConfigLabels.php:43
+msgid "Maximum lifetime of cache objects:"
+msgstr "Maximum lifetime of cache objects:"
+
+#: Util_ConfigLabel.php:23
+msgid "Memcached hostname:port / <acronym title=\"Internet Protocol\">IP</acronym>:port:"
+msgstr "Memcached hostname:port / <acronym title=\"Internet Protocol\">IP</acronym>:port:"
+
+#: DbCache_ConfigLabels.php:10
+msgid "Don't cache queries for logged in users"
+msgstr "Don't cache queries for logged in users"
+
+#: DbCache_ConfigLabels.php:8
+msgid "Database Cache:"
+msgstr "Database Cache:"
+
+#: DbCache_ConfigLabels.php:7
+msgid "Database Cache Method:"
+msgstr "Database Cache Method:"
+
+#: Cdn_ConfigLabels.php:33
+msgid "Rejected files:"
+msgstr "Rejected files:"
+
+#: Cdn_ConfigLabels.php:32 Minify_ConfigLabels.php:36
+#: PgCache_ConfigLabels.php:47
+msgid "Rejected user agents:"
+msgstr "Rejected user agents:"
+
+#: Cdn_ConfigLabels.php:30
+msgid "Custom file list:"
+msgstr "Custom file list:"
+
+#: Cdn_ConfigLabels.php:29
+msgid "File types to import:"
+msgstr "File types to import:"
+
+#: Cdn_ConfigLabels.php:28
+msgid "Theme file types to upload:"
+msgstr "Theme file types to upload:"
+
+#: Cdn_ConfigLabels.php:27
+msgid "wp-includes file types to upload:"
+msgstr "wp-includes file types to upload:"
+
+#: Cdn_ConfigLabels.php:26
+msgid "Re-transfer cycle limit:"
+msgstr "Re-transfer cycle limit:"
+
+#: Cdn_ConfigLabels.php:25
+msgid "Re-transfer cycle interval:"
+msgstr "Re-transfer cycle interval:"
+
+#: Cdn_ConfigLabels.php:24
+msgid "Auto upload interval:"
+msgstr "Auto upload interval:"
+
+#: Cdn_ConfigLabels.php:23
+msgid "Export changed files automatically"
+msgstr "Export changed files automatically"
+
+#: Cdn_ConfigLabels.php:22
+msgid "Disable <acronym title=\"Content Delivery Network\">CDN</acronym> on the following pages:"
+msgstr "Disable <acronym title=\"Content Delivery Network\">CDN</acronym> on the following pages:"
+
+#: Cdn_ConfigLabels.php:21
+msgid "Disable <acronym title=\"Content Delivery Network\">CDN</acronym> for the following roles"
+msgstr "Disable <acronym title=\"Content Delivery Network\">CDN</acronym> for the following roles"
+
+#: Cdn_ConfigLabels.php:19
+msgid "Disable <acronym title=\"Content Delivery Network\">CDN</acronym> on <acronym title=\"Secure Sockets Layer\">SSL</acronym> pages"
+msgstr "Disable <acronym title=\"Content Delivery Network\">CDN</acronym> on <acronym title=\"Secure Sockets Layer\">SSL</acronym> pages"
+
+#: Cdn_ConfigLabels.php:18
+msgid "Add canonical header"
+msgstr "Add canonical header"
+
+#: Cdn_ConfigLabels.php:17
+msgid "Import external media library attachments"
+msgstr "Import external media library attachments"
+
+#: Cdn_ConfigLabels.php:16
+msgid "Force over-writing of existing files"
+msgstr "Force over-writing of existing files"
+
+#: Cdn_ConfigLabels.php:15
+msgid "Host custom files"
+msgstr "Host custom files"
+
+#: Cdn_ConfigLabels.php:14
+msgid "Host minified <acronym title=\"Cascading Style Sheet\">CSS</acronym> and <acronym title=\"JavaScript\">JS</acronym> files"
+msgstr "Host minified <acronym title=\"Cascading Style Sheet\">CSS</acronym> and <acronym title=\"JavaScript\">JS</acronym> files"
+
+#: Cdn_ConfigLabels.php:13
+msgid "Host theme files"
+msgstr "Host theme files"
+
+#: Cdn_ConfigLabels.php:12
+msgid "Host wp-includes/ files"
+msgstr "Host wp-includes/ files"
+
+#: Cdn_ConfigLabels.php:11
+msgid "Host attachments"
+msgstr "Host attachments"
+
+#: Cdn_ConfigLabels.php:8
+msgid "<acronym title=\"Content Delivery Network\">CDN</acronym> Type:"
+msgstr "<acronym title=\"Content Delivery Network\">CDN</acronym> Type:"
+
+#: Cdn_ConfigLabels.php:7
+msgid "<acronym title=\"Content Delivery Network\">CDN</acronym>:"
+msgstr "<acronym title=\"Content Delivery Network\">CDN</acronym>:"
+
+#: BrowserCache_ConfigLabels.php:38
+msgid "Enable <acronym title=\"Hypertext Transfer Protocol\">HTTP</acronym> (gzip) compression</label>"
+msgstr "Enable <acronym title=\"Hypertext Transfer Protocol\">HTTP</acronym> (gzip) compression</label>"
+
+#: BrowserCache_ConfigLabels.php:21 BrowserCache_ConfigLabels.php:41
+msgid "Disable cookies for static files"
+msgstr "Disable cookies for static files"
+
+#: BrowserCache_ConfigLabels.php:27 BrowserCache_ConfigLabels.php:36
+#: inc/options/browsercache.php:114
+msgid "Set entity tag (ETag)"
+msgstr "Set entity tag (ETag)"
+
+#: BrowserCache_ConfigLabels.php:15 BrowserCache_ConfigLabels.php:26
+#: BrowserCache_ConfigLabels.php:35
+msgid "Cache Control policy:"
+msgstr "Cache Control policy:"
+
+#: BrowserCache_ConfigLabels.php:13 BrowserCache_ConfigLabels.php:24
+#: BrowserCache_ConfigLabels.php:33
+msgid "Expires header lifetime:"
+msgstr "Expires header lifetime:"
+
+#: BrowserCache_ConfigLabels.php:10
+msgid "404 error exception list:"
+msgstr "404 error exception list:"
+
+#: BrowserCache_ConfigLabels.php:9
+msgid "Do not process 404 errors for static objects with WordPress"
+msgstr "Do not process 404 errors for static objects with WordPress"
+
+#: BrowserCache_ConfigLabels.php:8
+msgid "Prevent caching exception list:"
+msgstr "Prevent caching exception list:"
+
+#: BrowserCache_ConfigLabels.php:7
+msgid "Browser Cache:"
+msgstr "Browser Cache:"
+
+#: Generic_AdminNotes.php:183
+msgid "disable"
+msgstr "disable"
+
+#. translators: 1: HTML input button to view minify settings.
+#: Generic_AdminNotes.php:222
+msgid "check the %1$s to maintain the desired user experience"
+msgstr "check the %1$s to maintain the desired user experience"
+
+#. translators: 1: opening HTML strong tag, 2: clsoing HTML strong tag, 3: HTML
+#. line break, 4: HTML input button to hide message.
+#: Generic_AdminNotes.php:107
+msgid "Either the PHP configuration, web server configuration or a script in the WordPress installation has %1$szlib.output_compression%2$s enabled.%3$sPlease locate and disable this setting to ensure proper HTTP compression behavior. %4$s"
+msgstr "Either the PHP configuration, web server configuration or a script in the WordPress installation has %1$szlib.output_compression%2$s enabled.%3$sPlease locate and disable this setting to ensure proper HTTP compression behaviour. %4$s"
+
+#. translators: 1: HTML input button to clear the cache, 2: HTML input button
+#. to hide message.
+#: Generic_AdminNotes.php:255
+msgid "One or more plugins have been activated or deactivated, please %1$s. %2$s"
+msgstr "One or more plugins have been activated or deactivated, please %1$s. %2$s"
+
+#. translators: 1: opening HTML strong tag, 2: closing HTML strong tag, 3: HTML
+#. input button for hiding message.
+#: Generic_AdminNotes.php:73
+msgid "Unfortunately the PHP installation is incomplete, the %1$szlib module is missing%2$s. This is a core PHP module. Notify the server administrator. %3$s"
+msgstr "Unfortunately the PHP installation is incomplete, the %1$szlib module is missing%2$s. This is a core PHP module. Notify the server administrator. %3$s"
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: Extension_NewRelic_Page_View_Apm.php:310
+msgid "Use %1$sPHP%2$s function to set application name:"
+msgstr "Use %1$sPHP%2$s function to set application name:"
+
+#: Generic_Plugin.php:310 inc/options/common/top_nav_bar.php:20
+#: Root_AdminMenu.php:55 Root_AdminMenu.php:56 Util_PageUrls.php:890
+#: Util_PageUrls.php:894 Util_PageUrls.php:899 Util_PageUrls.php:904
+#: Util_PageUrls.php:909 Util_PageUrls.php:914 Util_PageUrls.php:919
+#: Util_PageUrls.php:924 Util_PageUrls.php:929 Util_PageUrls.php:940
+#: Util_PageUrls.php:962
+msgid "General Settings"
+msgstr "General Settings"
+
+#: Generic_Plugin.php:339 inc/options/common/footer.php:50
+#: inc/options/common/top_nav_bar.php:201
+#: inc/options/common/top_nav_bar.php:202 Root_AdminMenu.php:113
+#: Root_AdminMenu.php:114 Util_PageUrls.php:933
+msgid "Support"
+msgstr "Support"
+
+#: DbCache_Plugin.php:192 UsageStatistics_Page_View.php:311
+msgid "Database"
+msgstr "Database"
+
+#: Cdn_AdminActions.php:432 Cdn_AdminActions.php:436 Cdn_AdminActions.php:479
+msgid "Error: %s"
+msgstr "Error: %s"
+
+#: Cdn_Highwinds_Widget_View.php:15
+#: Cdn_StackPath2_Widget_View_Authorized.php:19
+#: Cdn_StackPath_Widget_View_Authorized.php:31
+msgid "Reports"
+msgstr "Reports"
+
+#: Extension_NewRelic_Service.php:96
+msgid "Operating System"
+msgstr "Operating System"
+
+#: Generic_Plugin.php:238 Generic_Plugin_Admin.php:191
+#: Generic_Plugin_Admin.php:200 Generic_Plugin_Admin.php:209
+#: Generic_Plugin_Admin.php:218 Generic_Plugin_Admin.php:227
+#: Generic_Plugin_Admin.php:241 Generic_Plugin_Admin.php:249
+#: Generic_Plugin_Admin.php:257 Generic_Plugin_Admin.php:265
+#: Generic_Plugin_Admin.php:273 Generic_Plugin_Admin.php:281
+#: Generic_Plugin_Admin.php:289 Generic_Plugin_Admin.php:300
+#: Generic_Plugin_Admin.php:308 Generic_Plugin_Admin.php:316
+#: Generic_Plugin_Admin.php:324 Generic_Plugin_Admin.php:332
+#: Generic_Plugin_Admin.php:342 Root_AdminMenu.php:166 Root_AdminMenu.php:167
+msgid "Performance"
+msgstr "Performance"
+
+#: Cdn_StackPath_Widget_View_Authorized.php:64
+msgid "Hits"
+msgstr "Hits"
+
+#: inc/options/common/top_nav_bar.php:80 Root_AdminMenu.php:137
+#: Root_AdminMenu.php:138 Util_PageUrls.php:966
+msgid "About"
+msgstr "About"
+
+#: Cdn_StackPath_Widget_View_Authorized.php:63 SetupGuide_Plugin_Admin.php:1341
+msgid "File"
+msgstr "File"
+
+#: Cdn_Highwinds_Widget_View.php:12
+#: Cdn_StackPath2_Widget_View_Authorized.php:18
+#: Cdn_StackPath_Widget_View_Authorized.php:30
+msgid "Manage"
+msgstr "Manage"
+
+#: Generic_Plugin.php:329 PageSpeed_Instructions.php:70
+#: PageSpeed_Instructions.php:87 PageSpeed_Instructions.php:359
+#: Root_AdminMenu.php:106 Root_AdminMenu.php:107
+msgid "FAQ"
+msgstr "FAQs"
+
+#: Extension_NewRelic_Service.php:48
+msgid "PHP version"
+msgstr "PHP version"
+
+#: extension-example/Extension_Example_Page_View.php:10
+#: Extensions_Plugin_Admin.php:75 Extensions_Plugin_Admin.php:76
+#: FeatureShowcase_Plugin_Admin.php:468 inc/options/common/top_nav_bar.php:62
+#: Util_PageUrls.php:950 Util_PageUrls.php:957 Util_PageUrls.php:970
+#: Util_PageUrls.php:975 Util_PageUrls.php:980
+msgid "Extensions"
+msgstr "Extensions"
+
+#: inc/options/common/top_nav_bar.php:88 Root_AdminMenu.php:125
+#: Root_AdminMenu.php:126 Util_PageUrls.php:944
+msgid "Install"
+msgstr "Install"
+
+#: lib/NetDNA/NetDNAPresentation.php:68
+msgid "Cancelled"
+msgstr "Cancelled"
+
+#: lib/NetDNA/NetDNAPresentation.php:74
+msgid "unknown"
+msgstr "unknown"
+
+#: lib/NetDNA/NetDNAPresentation.php:64
+msgid "Pending"
+msgstr "Pending"
+
+#: Cdn_Highwinds_Widget_View.php:38
+#: Cdn_StackPath2_Widget_View_Authorized.php:32
+#: Cdn_StackPath2_Widget_View_Authorized.php:37
+#: Cdn_StackPath_Widget_View_Authorized.php:59
+#: UsageStatistics_Page_View.php:203 UsageStatistics_Page_View.php:341
+#: UsageStatistics_Page_View.php:357 Util_PageSpeed.php:323
+#: Util_PageSpeed.php:506
+msgid "Requests"
+msgstr "Requests"
+
+#: lib/NetDNA/NetDNAPresentation.php:66
+msgid "Active"
+msgstr "Active"
+
+#: Generic_Plugin_Admin.php:1005
+msgid "New relic settings have been updated."
+msgstr "New relic settings have been updated."
+
+#: Generic_Plugin_Admin.php:1004
+msgid "Post successfully purged."
+msgstr "Post successfully purged."
+
+#: Generic_Plugin_Admin.php:1003
+msgid "Attachment successfully purged."
+msgstr "Attachment successfully purged."
+
+#: Generic_Plugin_Admin.php:1002
+msgid "Preview settings successfully deployed. Preview mode remains enabled until it's disabled. Continue testing new settings or disable preview mode if done."
+msgstr "Preview settings successfully deployed. Preview mode remains enabled until it's disabled. Continue testing new settings or disable preview mode if done."
+
+#: Generic_Plugin_Admin.php:1001
+msgid "Preview mode was successfully disabled"
+msgstr "Preview mode was successfully disabled"
+
+#: Generic_Plugin_Admin.php:1000
+msgid "Preview mode was successfully enabled"
+msgstr "Preview mode was successfully enabled"
+
+#: Generic_Plugin_Admin.php:999
+msgid "Settings successfully restored."
+msgstr "Settings successfully restored."
+
+#: Generic_Plugin_Admin.php:998
+msgid "Settings successfully imported."
+msgstr "Settings successfully imported."
+
+#: Generic_Plugin_Admin.php:997
+msgid "The support request has been successfully sent."
+msgstr "The support request has been successfully sent."
+
+#: Generic_Plugin_Admin.php:988
+msgid "Varnish servers successfully purged."
+msgstr "Varnish servers successfully purged."
+
+#: Generic_Plugin_Admin.php:987
+msgid "Media Query string has been successfully updated."
+msgstr "Media Query string has been successfully updated."
+
+#: Generic_Plugin_Admin.php:986
+msgid "Minify cache successfully emptied."
+msgstr "Minify cache successfully emptied."
+
+#: Generic_Plugin_Admin.php:985
+msgid "Fragment cache successfully emptied."
+msgstr "Fragment cache successfully emptied."
+
+#: Generic_Plugin_Admin.php:984
+msgid "Object cache successfully emptied."
+msgstr "Object cache successfully emptied."
+
+#: Generic_Plugin_Admin.php:983
+msgid "Database cache successfully emptied."
+msgstr "Database cache successfully emptied."
+
+#: Generic_Plugin_Admin.php:982
+msgid "Page cache successfully emptied."
+msgstr "Page cache successfully emptied."
+
+#: Generic_Plugin_Admin.php:981
+msgid "Disk cache(s) successfully emptied."
+msgstr "Disk cache(s) successfully emptied."
+
+#: Generic_Plugin_Admin.php:980
+msgid "Opcode cache(s) successfully emptied."
+msgstr "Opcode cache(s) successfully emptied."
+
+#: Generic_Plugin_Admin.php:979
+msgid "Memcached cache(s) successfully emptied."
+msgstr "Memcached cache(s) successfully emptied."
+
+#: Generic_Plugin_Admin.php:978
+msgid "All caches successfully emptied."
+msgstr "All caches successfully emptied."
+
+#: Generic_Plugin_Admin.php:976
+msgid "Plugin configuration successfully updated."
+msgstr "Plugin configuration successfully updated."
+
+#: Generic_Plugin_Admin.php:972
+msgid "Pull Zone could not be automatically created."
+msgstr "Pull Zone could not be automatically created."
+
+#: Generic_Plugin_Admin.php:951
+msgid "Unable to purge post."
+msgstr "Unable to purge post."
+
+#: Generic_Plugin_Admin.php:950
+msgid "Unable to purge attachment."
+msgstr "Unable to purge attachment."
+
+#: Generic_Plugin_Admin.php:941
+msgid "Configuration file could not be imported."
+msgstr "Configuration file could not be imported."
+
+#: Generic_Plugin_Admin.php:940
+msgid "Unable to upload config file."
+msgstr "Unable to upload config file."
+
+#: Generic_Plugin_Admin.php:939
+msgid "Please select config file."
+msgstr "Please select config file."
+
+#: Generic_Plugin_Admin.php:938
+msgid "Unable to send the support request."
+msgstr "Unable to send the support request."
+
+#: Generic_Plugin_Admin.php:910
+msgid "Please enter WP Admin password, be sure it's spelled correctly."
+msgstr "Please enter WP Admin password, but be sure it's spelled correctly."
+
+#: Generic_Plugin_Admin.php:909
+msgid "Please enter an administrator login. Create a temporary one just for this support case if needed."
+msgstr "Please enter an administrator login. Create a temporary one just for this support case if needed."
+
+#: Generic_Plugin_Admin.php:908
+msgid "Please describe the issue in the issue description field."
+msgstr "Please describe the issue in the issue description field."
+
+#: Generic_Plugin_Admin.php:907
+msgid "Please enter subject in the subject field."
+msgstr "Please enter subject in the subject field."
+
+#: Generic_Plugin_Admin.php:906
+msgid "Please enter your phone in the phone field."
+msgstr "Please enter your phone in the phone field."
+
+#: Generic_Plugin_Admin.php:905
+msgid "Please enter valid email address in the E-Mail field."
+msgstr "Please enter valid email address in the E-Mail field."
+
+#: Generic_Plugin_Admin.php:904
+msgid "Please enter your name in the Name field"
+msgstr "Please enter your name in the Name field"
+
+#: Generic_Plugin_Admin.php:895
+msgid "Please select request type."
+msgstr "Please select request type."
+
+#: Generic_Plugin_Admin.php:797
+msgid "Empty Caches"
+msgstr "Empty Caches"
+
+#: Extension_NewRelic_Plugin.php:206
+msgid "Application Monitoring using New Relic%s"
+msgstr "Application Monitoring using New Relic%s"
+
+#: Extension_FragmentCache_WpObjectCache.php:534
+msgid "Fragment Caching %d/%d fragments using %s%s"
+msgstr "Fragment Caching %d/%d fragments using %s%s"
+
+#: Minify_Plugin.php:321
+msgid "Minified using %s%s"
+msgstr "Minified using %s%s"
+
+#: Util_Ui.php:380
+msgid "Empty Fragment Cache"
+msgstr "Empty Fragment Cache"
+
+#: Util_Ui.php:373
+msgid "Empty Object Cache"
+msgstr "Empty Object Cache"
+
+#: Util_Ui.php:367
+msgid "Empty Minify Cache"
+msgstr "Empty Minify Cache"
+
+#: Util_Ui.php:361
+msgid "Empty Page Cache"
+msgstr "Empty Page Cache"
+
+#: Util_Ui.php:339
+msgid "Empty All Caches"
+msgstr "Empty All Caches"
+
+#: Extension_NewRelic_Plugin_Admin.php:158
+msgid "Please review the <a href=\"%s\">settings</a>."
+msgstr "Please review the <a href=\"%s\">settings</a>."
+
+#: Cdn_Plugin.php:588 Extension_NewRelic_Plugin.php:158
+msgid "logged in role is rejected"
+msgstr "logged in role is rejected"
+
+#: Extension_NewRelic_Plugin.php:148
+msgid "DONOTAUTORUM constant is defined"
+msgstr "DONOTAUTORUM constant is defined"
+
+#: Extension_NewRelic_Plugin.php:138 Extension_Swarmify_Plugin.php:104
+msgid "DOING_AJAX constant is defined"
+msgstr "DOING_AJAX constant is defined"
+
+#: Cdn_Core_Admin.php:701
+msgid "Purge from CDN"
+msgstr "Purge from CDN"
+
+#: ObjectCache_WpObjectCache_Regular.php:984
+msgid "DONOTCACHEOBJECT constant is defined"
+msgstr "DONOTCACHEOBJECT constant is defined"
+
+#: ObjectCache_WpObjectCache_Regular.php:982
+msgid "Object caching is disabled"
+msgstr "Object caching is disabled"
+
+#: Extension_NewRelic_Service.php:196
+msgid "API Key is invalid."
+msgstr "API Key is invalid."
+
+#: Extension_NewRelic_Service.php:191
+msgid "Configured license key does not match license key(s) in account: <br />%s <br />%s"
+msgstr "Configured licence key does not match licence key(s) in account: <br />%s <br />%s"
+
+#: Extension_NewRelic_Service.php:173 Extension_NewRelic_Service.php:183
+msgid "Application ID is not configured. Enter/Select application name."
+msgstr "Application ID is not configured. Enter/Select application name."
+
+#: Extension_NewRelic_Service.php:181
+msgid "Account ID is not configured."
+msgstr "Account ID is not configured."
+
+#: Extension_NewRelic_Service.php:167
+msgid "API Key is not configured."
+msgstr "API Key is not configured."
+
+#: Extension_NewRelic_Service.php:178
+msgid "PHP agent is not enabled."
+msgstr "PHP agent is not enabled."
+
+#: Extension_NewRelic_Service.php:176
+msgid "PHP module is not enabled."
+msgstr "PHP module is not enabled."
+
+#: Extension_NewRelic_Service.php:140
+msgid "Web Server"
+msgstr "Web Server"
+
+#: Extension_NewRelic_Service.php:46
+msgid "Supported"
+msgstr "Supported"
+
+#. translators: 1 HTML acronym for Content Delivery Network (CDN).
+#: Cdnfsd_CloudFront_Page_View.php:44 Cdnfsd_GeneralPage_View.php:21
+#: Cdnfsd_GeneralPage_View.php:34 Cdnfsd_GeneralPage_View.php:68
+#: Cdnfsd_GeneralPage_View.php:116 Cdnfsd_GeneralPage_View.php:137
+#: Cdnfsd_StackPath2_Page_View.php:54 Cdnfsd_StackPath_Page_View.php:48
+#: Cdnfsd_StackPath_Popup_View_Zone.php:42
+#: Cdnfsd_StackPath_Popup_View_Zone.php:50 Cdn_GeneralPage_View.php:22
+#: Cdn_GeneralPage_View.php:62 Cdn_GeneralPage_View.php:122
+#: Cdn_Highwinds_Page_View.php:35 Cdn_Highwinds_Page_View.php:92
+#: Cdn_Highwinds_Page_View.php:144
+#: Cdn_Highwinds_Popup_View_ConfigureCnamesForm.php:49
+#: Cdn_LimeLight_Page_View.php:63 Cdn_LimeLight_Page_View.php:95
+#: Cdn_Page_View_Fsd_HeaderActions.php:20 Cdn_RackSpaceCdn_Page_View.php:53
+#: Cdn_RackSpaceCdn_Page_View.php:91 Cdn_RackSpaceCdn_Page_View.php:146
+#: Cdn_RackSpaceCdn_Popup_View_ConfigureDomains.php:49
+#: Cdn_RackSpaceCloudFiles_Page_View.php:52
+#: Cdn_RackSpaceCloudFiles_Page_View.php:110
+#: Cdn_RackSpaceCloudFiles_Page_View.php:142 Cdn_StackPath2_Page_View.php:19
+#: Cdn_StackPath2_Page_View.php:83 Cdn_StackPath2_Page_View.php:114
+#: Cdn_StackPath2_Page_View.php:145 Cdn_StackPath2_Page_View.php:176
+#: Cdn_StackPath2_Page_View.php:272 Cdn_StackPath2_Page_View.php:304
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:17
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:31
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:62
+#: Cdn_StackPath_Page_View.php:54 Cdn_StackPath_Page_View.php:94
+#: Cdn_StackPath_Page_View.php:199 Cdn_StackPath_Page_View.php:231
+#: Cdn_StackPath_Widget_View_Unauthorized.php:16
+#: Cdn_StackPath_Widget_View_Unauthorized.php:33 Generic_Plugin_Admin.php:995
+#: inc/lightbox/self_test.php:122 inc/lightbox/self_test.php:247
+#: inc/lightbox/self_test.php:318 inc/options/about.php:21
+#: inc/options/about.php:99 inc/options/about.php:119 inc/options/about.php:141
+#: inc/options/about.php:226 inc/options/cdn.php:71 inc/options/cdn.php:93
+#: inc/options/cdn.php:149 inc/options/cdn.php:196 inc/options/cdn.php:227
+#: inc/options/cdn.php:265 inc/options/cdn.php:297 inc/options/cdn.php:392
+#: inc/options/cdn.php:411 inc/options/cdn.php:466 inc/options/cdn.php:493
+#: inc/options/cdn.php:593 inc/options/cdn.php:673 inc/options/cdn.php:701
+#: inc/options/cdn.php:738 inc/options/cdn.php:769 inc/options/cdn.php:796
+#: inc/options/cdn.php:838 inc/options/cdn.php:840 inc/options/cdn.php:874
+#: inc/options/cdn/akamai.php:87 inc/options/cdn/akamai.php:119
+#: inc/options/cdn/att.php:61 inc/options/cdn/att.php:93
+#: inc/options/cdn/azure.php:70 inc/options/cdn/cf.php:117
+#: inc/options/cdn/cf2.php:109 inc/options/cdn/cotendo.php:68
+#: inc/options/cdn/cotendo.php:100 inc/options/cdn/edgecast.php:61
+#: inc/options/cdn/edgecast.php:93 inc/options/cdn/ftp.php:214
+#: inc/options/cdn/mirror.php:47 inc/options/cdn/mirror.php:79
+#: inc/options/cdn/rscf.php:104 inc/options/cdn/s3.php:123
+#: inc/options/cdn/s3_compatible.php:99 inc/options/install.php:146
+#: inc/options/install.php:150 inc/popup/cdn_import_library.php:57
+#: inc/popup/cdn_purge.php:19 Root_AdminMenu.php:97 Root_AdminMenu.php:100
+#: Util_Ui.php:1571
+msgid "Content Delivery Network"
+msgstr "Content Delivery Network"
+
+#: Licensing_Plugin_Admin.php:249
+msgid "The W3 Total Cache license key is activated for this site."
+msgstr "The W3 Total Cache licence key is activated for this site."
+
+#: Licensing_Plugin_Admin.php:245
+msgid "The W3 Total Cache license key is deactivated for this site."
+msgstr "The W3 Total Cache licence key is deactivated for this site."
+
+#: Licensing_Plugin_Admin.php:218
+msgid "The W3 Total Cache license key can't be verified."
+msgstr "The W3 Total Cache licence key can't be verified."
+
+#: Licensing_Plugin_Admin.php:190
+msgid "The W3 Total Cache license key is not active for this site."
+msgstr "The W3 Total Cache licence key is not active for this site."
+
+#: Licensing_Plugin_Admin.php:215
+msgid "The W3 Total Cache license key is not active."
+msgstr "The W3 Total Cache licence key is not active."
+
+#: Licensing_Plugin_Admin.php:188
+msgid "Please enter it again."
+msgstr "Please enter it again."
+
+#: Licensing_Plugin_Admin.php:186
+msgid "The W3 Total Cache license key you entered is not valid."
+msgstr "The W3 Total Cache licence key you entered is not valid."
+
+#: Generic_Environment.php:101 ObjectCache_Environment.php:137
+msgid "Yes, remove it for me"
+msgstr "Yes, remove it for me"
+
+#: Generic_Environment.php:99
+msgid ""
+"The Page Cache add-in file advanced-cache.php is not a W3 Total Cache drop-in.\n"
+"                    It should be removed. %s"
+msgstr ""
+"The Page Cache add-in file advanced-cache.php is not a W3 Total Cache drop-in.\n"
+"                    It should be removed. %s"
+
+#: Generic_Plugin_AdminRowActions.php:36 Generic_Plugin_AdminRowActions.php:55
+#: Generic_Plugin_AdminRowActions.php:80
+msgid "Purge from cache"
+msgstr "Purge from cache"
+
+#: Enterprise_Dbcache_WpdbInjection_Cluster.php:668
+msgid "<strong>ERROR</strong>: WordPress %s requires MySQL 4.1.2 or higher"
+msgstr "<strong>ERROR</strong>: WordPress %s requires MySQL 4.1.2 or higher"
+
+#: DbCache_Environment.php:124
+msgid "Remove it for me"
+msgstr "Remove it for me"
+
+#: DbCache_WpdbInjection_QueryCaching.php:863
+msgid "User is logged in"
+msgstr "User is logged in"
+
+#: DbCache_WpdbInjection_QueryCaching.php:861
+msgid "Query is rejected"
+msgstr "Query is rejected"
+
+#: Cdn_Plugin.php:542 DbCache_WpdbInjection_QueryCaching.php:859
+msgid "Short init"
+msgstr "Short init"
+
+#: Cdn_Plugin.php:535 DbCache_WpdbInjection_QueryCaching.php:857
+msgid "wp-admin"
+msgstr "wp-admin"
+
+#: DbCache_WpdbInjection_QueryCaching.php:855
+msgid "XMLRPC request"
+msgstr "XMLRPC request"
+
+#: DbCache_WpdbInjection_QueryCaching.php:853
+msgid "Application request"
+msgstr "Application request"
+
+#: DbCache_WpdbInjection_QueryCaching.php:851
+msgid "Doing cron"
+msgstr "Doing cron"
+
+#: DbCache_WpdbInjection_QueryCaching.php:849
+msgid "Cookie is rejected"
+msgstr "Cookie is rejected"
+
+#: DbCache_WpdbInjection_QueryCaching.php:847
+msgid "Request URI is rejected"
+msgstr "Request URI is rejected"
+
+#: DbCache_WpdbInjection_QueryCaching.php:845
+msgid "Doing AJAX"
+msgstr "Doing AJAX"
+
+#: DbCache_WpdbInjection_QueryCaching.php:843
+msgid "DONOTCACHEDB constant is defined"
+msgstr "DONOTCACHEDB constant is defined"
+
+#: DbCache_WpdbInjection_QueryCaching.php:841
+msgid "Database caching is disabled"
+msgstr "Database caching is disabled"
+
+#: Cli.php:384
+msgid "PageCache Garbage cleanup triggered successfully."
+msgstr "PageCache Garbage cleanup triggered successfully."
+
+#: Cli.php:368
+msgid "Files purged successfully."
+msgstr "Files purged successfully."
+
+#: Cli.php:366
+msgid "Files did not successfully purge with error %s"
+msgstr "Files did not successfully purge with error %s"
+
+#: Cli.php:339
+msgid "The query string was updated successfully."
+msgstr "The query string was updated successfully."
+
+#: Cli.php:335
+msgid "updating the query string failed. with error %s"
+msgstr "updating the query string failed. with error %s"
+
+#: Cli.php:164
+msgid "The page cache is flushed successfully."
+msgstr "The page cache is flushed successfully."
+
+#: Cli.php:162
+msgid "Flushing the page cache failed."
+msgstr "Flushing the page cache failed."
+
+#: Cli.php:143
+msgid "This is not a valid post id."
+msgstr "This is not a valid post id."
+
+#: Cli.php:141 Cli.php:153
+msgid "The page is flushed from cache successfully."
+msgstr "The page is flushed from cache successfully."
+
+#: Cli.php:139 Cli.php:151
+msgid "Flushing the page from cache failed."
+msgstr "Flushing the page from cache failed."
+
+#: Cli.php:129
+msgid "The object cache is flushed successfully."
+msgstr "The object cache is flushed successfully."
+
+#: Cli.php:127
+msgid "Flushing the object cache failed."
+msgstr "Flushing the object cache failed."
+
+#: Cli.php:118
+msgid "The minify cache is flushed successfully."
+msgstr "The minify cache is flushed successfully."
+
+#: Cli.php:116
+msgid "Flushing the minify cache failed."
+msgstr "Flushing the minify cache failed."
+
+#: Cli.php:107
+msgid "The DB cache is flushed successfully."
+msgstr "The DB cache is flushed successfully."
+
+#: Cli.php:105
+msgid "Flushing the DB cache failed."
+msgstr "Flushing the DB cache failed."
+
+#: Cdn_Environment.php:156
+msgid "CDN module: Required Database SQL"
+msgstr "CDN module: Required Database SQL"
+
+#: CdnEngine_Mirror_StackPath.php:68 CdnEngine_Mirror_StackPath.php:108
+#: CdnEngine_Mirror_StackPath2.php:54 CdnEngine_Mirror_StackPath2.php:87
+msgid "Failure to pull zone: "
+msgstr "Failure to pull zone: "
+
+#: CdnEngine_Mirror_StackPath.php:41 CdnEngine_Mirror_StackPath.php:88
+msgid "Malformed Authorization Key."
+msgstr "Malformed Authorisation Key."
+
+#: CdnEngine_Mirror_StackPath.php:33 CdnEngine_Mirror_StackPath.php:82
+#: CdnEngine_Mirror_StackPath2.php:32 CdnEngine_Mirror_StackPath2.php:68
+msgid "Empty Authorization Key."
+msgstr "Empty Authorisation Key."
+
+#: CdnEngine_Mirror_Edgecast.php:134 Cdnfsd_TransparentCDN_Engine.php:160
+msgid "Server Error"
+msgstr "Server Error"
+
+#: CdnEngine_Mirror_Edgecast.php:130
+msgid "Invalid Request"
+msgstr "Invalid Request"
+
+#: CdnEngine_Mirror_Edgecast.php:126 Cdnfsd_TransparentCDN_Engine.php:156
+msgid "Invalid Request URI"
+msgstr "Invalid Request URI"
+
+#: CdnEngine_Mirror_Edgecast.php:122 Cdnfsd_TransparentCDN_Engine.php:152
+msgid "Authentication Failure or Insufficient Access Rights"
+msgstr "Authentication Failure or Insufficient Access Rights"
+
+#: CdnEngine_Mirror_Edgecast.php:118 Cdnfsd_TransparentCDN_Engine.php:148
+msgid "Invalid Request Parameter"
+msgstr "Invalid Request Parameter"
+
+#: CdnEngine_Mirror_Edgecast.php:44
+msgid "Empty token."
+msgstr "Empty token."
+
+#: CdnEngine_Mirror_Edgecast.php:38
+msgid "Empty account #."
+msgstr "Empty account #."
+
+#: CdnEngine_Mirror_Cotendo.php:48
+msgid "Empty zones list."
+msgstr "Empty zones list."
+
+#: CdnEngine_Mirror_Akamai.php:95 CdnEngine_Mirror_Akamai.php:100
+#: CdnEngine_Mirror_Cotendo.php:100 CdnEngine_Mirror_Edgecast.php:63
+msgid "Unable to purge (%s)."
+msgstr "Unable to purge (%s)."
+
+#: CdnEngine_Mirror_Akamai.php:85 CdnEngine_Mirror_Cotendo.php:92
+msgid "Invalid response."
+msgstr "Invalid response."
+
+#: CdnEngine_Mirror_Akamai.php:55 CdnEngine_Mirror_Cotendo.php:63
+msgid "Constructor error (%s)."
+msgstr "Constructor error (%s)."
+
+#: CdnEngine_Mirror_Akamai.php:40 CdnEngine_Mirror_Cotendo.php:42
+msgid "Empty password."
+msgstr "Empty password."
+
+#: CdnEngine_Mirror_Akamai.php:34 CdnEngine_Mirror_Cotendo.php:36
+msgid "Empty username."
+msgstr "Empty username."
+
+#: Generic_Plugin_AdminCompatibility.php:103
+msgid "Network Deactivate"
+msgstr "Network Deactivate"
+
+#: Generic_Plugin_AdminCompatibility.php:103
+#: Generic_Plugin_AdminCompatibility.php:105
+msgid "Deactivate this plugin"
+msgstr "Deactivate this plugin"
+
+#: Generic_Plugin_AdminCompatibility.php:97
+msgid "The following plugins are not compatible with W3 Total Cache and will cause unintended results:"
+msgstr "The following plugins are not compatible with W3 Total Cache and will cause unintended results:"
+
+#: Generic_AdminActions_Test.php:153
+msgid "Invalid engine."
+msgstr "Invalid engine."
+
+#: Generic_AdminActions_Test.php:118
+msgid "Empty JAR file path."
+msgstr "Empty JAR file path."
+
+#: Generic_AdminActions_Test.php:116
+msgid "Empty JAVA executable path."
+msgstr "Empty JAVA executable path."
+
+#: Generic_AdminActions_Test.php:93
+msgid "Test failed."
+msgstr "Test failed."
+
+#: Generic_AdminActions_Test.php:88
+msgid "Test passed."
+msgstr "Test passed."
+
+#: Generic_WidgetServices.php:59
+msgid "Suggest a New Feature"
+msgstr "Suggest a New Feature"
+
+#: Generic_WidgetServices.php:58
+msgid "Submit a Bug Report"
+msgstr "Submit a Bug Report"
+
+#: Generic_AdminActions_Default.php:615
+msgid "Added by W3 Total Cache"
+msgstr "Added by W3 Total Cache"
+
+#: Generic_AdminActions_Default.php:228
+msgid "You do not have the rights to perform this action."
+msgstr "You do not have the rights to perform this action."
+
+#: Generic_AdminActions_Config.php:149
+msgid "Database Cluster configuration file has been successfully saved"
+msgstr "Database Cluster configuration file has been successfully saved"
+
+#: Cdn_AdminActions.php:477
+msgid "Created successfully."
+msgstr "Created successfully."
+
+#: Cdn_AdminActions.php:486
+msgid "Incorrect type."
+msgstr "Incorrect type."
+
+#: Cdn_AdminActions.php:429
+msgid "Test passed"
+msgstr "Test passed"
+
+#: Cdn_AdminActions.php:345
+msgid "Empty files list."
+msgstr "Empty files list."
+
+#: Cdn_AdminActions.php:313 Cdn_AdminActions.php:326
+msgid "Content Delivery Network (CDN): Purge Tool"
+msgstr "Content Delivery Network (CDN): Purge Tool"
+
+#: Cdn_AdminActions.php:257
+msgid "Custom files export"
+msgstr "Custom files export"
+
+#: Cdn_AdminActions.php:251
+msgid "Minify files export"
+msgstr "Minify files export"
+
+#: Cdn_AdminActions.php:246
+msgid "Theme files export"
+msgstr "Theme files export"
+
+#: Cdn_AdminActions.php:241
+msgid "Includes files export"
+msgstr "Includes files export"
+
+#: Cdn_AdminActions.php:195
+msgid "Modify attachment URLs"
+msgstr "Modify attachment URLs"
+
+#: Cdn_AdminActions.php:148
+msgid "Media Library import"
+msgstr "Media Library import"
+
+#: Cdn_AdminActions.php:75
+msgid "Media Library export"
+msgstr "Media Library export"
+
+#: Cdn_AdminActions.php:61
+msgid "Unsuccessful file transfer queue."
+msgstr "Unsuccessful file transfer queue."
+
+#: Cdn_AdminActions.php:55
+msgid "Number of processed queue items: %d"
+msgstr "Number of processed queue items: %d"
+
+#: Cdn_AdminActions.php:48
+msgid "Queue successfully emptied."
+msgstr "Queue successfully emptied."
+
+#: Cdn_AdminActions.php:40
+msgid "File successfully deleted from the queue."
+msgstr "File successfully deleted from the queue."
+
+#: lib/NetDNA/NetDNAPresentation.php:72
+msgid "Fraud"
+msgstr "Fraud"
+
+#: lib/NetDNA/NetDNAPresentation.php:70
+msgid "Suspended"
+msgstr "Suspended"
+
+#: Extension_NewRelic_Widget_View_Browser.php:11
+msgid "Upgrade your New Relic account to enable more metrics."
+msgstr "Upgrade your New Relic account to enable more metrics."
+
+#: Extension_NewRelic_Widget_View_Apm.php:64
+msgid "Subscription level:"
+msgstr "Subscription level:"
+
+#: Extension_NewRelic_Widget_View_Apm.php:60
+msgid "PHP agent:"
+msgstr "PHP agent:"
+
+#: Extension_NewRelic_Widget_View_Apm.php:51
+msgid "Database times"
+msgstr "Database times"
+
+#: Extension_NewRelic_Widget_View_Apm.php:45
+msgid "Web Transaction times"
+msgstr "Web Transaction times"
+
+#: Extension_NewRelic_Widget_View_Apm.php:39
+msgid "Page load times"
+msgstr "Page load times"
+
+#: Extension_NewRelic_Widget_View_Apm.php:37
+msgid "Top 5 slowest times"
+msgstr "Top 5 slowest times"
+
+#: Extension_NewRelic_Widget_View_Apm.php:28
+msgid "Average times"
+msgstr "Average times"
+
+#: Extension_NewRelic_Widget_View_NotConfigured.php:8
+msgid "You have not configured API key and Account Id."
+msgstr "You have not configured API key and Account ID."
+
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:50
+#: Cdn_StackPath_Widget_View_Unauthorized.php:25
+#: Extension_Swarmify_Widget_View_NotConfigured.php:14
+msgid "Current customers"
+msgstr "Current customers"
+
+#: Cdn_StackPath_Widget_View_Unauthorized.php:21
+#: Extension_Swarmify_Widget_View_NotConfigured.php:10
+msgid "New customers"
+msgstr "New customers"
+
+#: Cdn_StackPath_Widget_View_Authorized.php:61
+msgid "Content Breakdown"
+msgstr "Content Breakdown"
+
+#: inc/widget/latest.php:12 inc/widget/latest_news.php:12
+msgid "This widget requires JavaScript."
+msgstr "This widget requires JavaScript."
+
+#: inc/widget/latest.php:9
+msgid "Loading&#8230;"
+msgstr "Loading&#8230;"
+
+#: PageSpeed_Page_View.php:44 PageSpeed_Widget_View.php:32
+msgid "Refresh Analysis"
+msgstr "Refresh Analysis"
+
+#: inc/popup/cdn_rename_domain.php:62
+msgid "e.g.: domain.com"
+msgstr "e.g.: domain.com"
+
+#: inc/popup/cdn_rename_domain.php:59
+msgid "Domains to rename:"
+msgstr "Domains to rename:"
+
+#: Cdn_StackPath_Popup_View_Intro.php:32
+msgid "click here"
+msgstr "click here"
+
+#: inc/email/support_request.php:11
+msgid "Date:"
+msgstr "Date:"
+
+#: DbCache_Environment.php:122
+msgid ""
+"The Database add-in file db.php is not a W3 Total Cache drop-in.\n"
+"                Remove it or disable Database Caching. %s"
+msgstr ""
+"The Database add-in file db.php is not a W3 Total Cache drop-in.\n"
+"                Remove it or disable Database Caching. %s"
+
+#. translators: 1 HTML button link to remove object-cache.php file.
+#: ObjectCache_Environment.php:132
+msgid "The Object Cache add-in file object-cache.php is not a W3 Total Cache drop-in. Remove it or disable Object Caching. %1$s"
+msgstr "The Object Cache add-in file object-cache.php is not a W3 Total Cache drop-in. Remove it or disable Object Caching. %1$s"
+
+#: inc/popup/cdn_queue.php:24 inc/popup/cdn_queue.php:57
+#: inc/popup/cdn_queue.php:87
+msgid "Date"
+msgstr "Date"
+
+#: inc/options/minify/csstidy2.php:23 SetupGuide_Plugin_Admin.php:969
+msgid "None"
+msgstr "None"
+
+#: inc/options/general.php:1179
+msgid "Download"
+msgstr "Download"
+
+#: inc/options/general.php:1172
+msgid "Upload"
+msgstr "Upload"
+
+#: Extension_FragmentCache_Page_View.php:39
+#: Extension_NewRelic_Widget_View_Apm.php:14 Util_Ui.php:1858
+msgid "Overview"
+msgstr "Overview"
+
+#: inc/options/install.php:282 Util_Ui.php:1828
+msgid "Other"
+msgstr "Other"
+
+#: inc/popup/cdn_export_file.php:38 inc/popup/cdn_export_library.php:28
+#: inc/popup/cdn_import_library.php:29 inc/popup/cdn_rename_domain.php:47
+msgid "Status:"
+msgstr "Status:"
+
+#: inc/popup/cdn_queue.php:106
+msgid "Purge queue is empty"
+msgstr "Purge queue is empty"
+
+#: inc/popup/cdn_queue.php:103
+msgid "Empty purge queue"
+msgstr "Empty purge queue"
+
+#: inc/popup/cdn_queue.php:76
+msgid "Delete queue is empty"
+msgstr "Delete queue is empty"
+
+#: inc/popup/cdn_queue.php:73
+msgid "Empty delete queue"
+msgstr "Empty delete queue"
+
+#: inc/popup/cdn_queue.php:46
+msgid "Upload queue is empty"
+msgstr "Upload queue is empty"
+
+#: inc/popup/cdn_queue.php:43
+msgid "Process CDN queue now"
+msgstr "Process CDN queue now"
+
+#: inc/popup/cdn_queue.php:40
+msgid "Empty upload queue"
+msgstr "Empty upload queue"
+
+#: inc/popup/cdn_queue.php:23 inc/popup/cdn_queue.php:56
+#: inc/popup/cdn_queue.php:86
+msgid "Last Error"
+msgstr "Last Error"
+
+#: inc/popup/cdn_queue.php:22 inc/popup/cdn_queue.php:55
+#: inc/popup/cdn_queue.php:85
+msgid "Remote Path"
+msgstr "Remote Path"
+
+#: inc/popup/cdn_queue.php:21 inc/popup/cdn_queue.php:54
+#: inc/popup/cdn_queue.php:84
+msgid "Local Path"
+msgstr "Local Path"
+
+#: inc/popup/cdn_queue.php:14
+msgid "Purge queue"
+msgstr "Purge queue"
+
+#: inc/popup/cdn_queue.php:13
+msgid "Delete queue"
+msgstr "Delete queue"
+
+#: inc/popup/cdn_queue.php:12
+msgid "Upload queue"
+msgstr "Upload queue"
+
+#: inc/popup/cdn_queue.php:10
+msgid "This tool lists the pending file uploads and deletions."
+msgstr "This tool lists the pending file uploads and deletions."
+
+#: inc/popup/cdn_purge.php:58
+msgid "Files to purge:"
+msgstr "Files to purge:"
+
+#: inc/popup/cdn_purge.php:42
+msgid "the specific file with its extension, with the specific parameters."
+msgstr "the specific file with its extension, with the specific parameters."
+
+#: inc/popup/cdn_purge.php:41
+msgid "the specific file with its extension, with all variation of parameters."
+msgstr "the specific file with its extension, with all variation of parameters."
+
+#: inc/popup/cdn_purge.php:40
+msgid "the specific file with its extension, and without parameters."
+msgstr "the specific file with its extension, and without parameters."
+
+#: inc/popup/cdn_purge.php:39
+msgid "the specific file (when the file does not have an extension), and without parameters."
+msgstr "the specific file (when the file does not have an extension), and without parameters."
+
+#: inc/popup/cdn_purge.php:38
+msgid "all files in the directory whose extension is \"jpg\"."
+msgstr "all files in the directory whose extension is \"jpg\"."
+
+#: inc/popup/cdn_purge.php:37
+msgid "all files in the directory with no extension, with all parameter variations."
+msgstr "all files in the directory with no extension, with all parameter variations."
+
+#: inc/popup/cdn_purge.php:36
+msgid "the directory itself (only when accessed directly without any file)."
+msgstr "the directory itself (only when accessed directly without any file)."
+
+#: inc/popup/cdn_import_library.php:90
+msgid "Add the following directives to your .htaccess file or if there are several hundred they should be added directly to your configuration file:"
+msgstr "Add the following directives to your .htaccess file or if there are several hundred they should be added directly to your configuration file:"
+
+#: inc/popup/cdn_import_library.php:42
+msgid "Create a list of permanent (301) redirects for use in your site's .htaccess file"
+msgstr "Create a list of permanent (301) redirects for use in your site's .htaccess file"
+
+#: inc/popup/cdn_import_library.php:21 inc/popup/cdn_rename_domain.php:39
+msgid "Total posts:"
+msgstr "Total posts:"
+
+#: inc/popup/cdn_import_library.php:18
+msgid "This tool will copy post or page attachments into the Media Library allowing WordPress to work as intended."
+msgstr "This tool will copy post or page attachments into the Media Library allowing WordPress to work as intended."
+
+#: inc/popup/cdn_export_library.php:20
+msgid "Total media library attachments:"
+msgstr "Total media library attachments:"
+
+#: inc/popup/cdn_export_file.php:52 inc/popup/cdn_export_library.php:42
+#: inc/popup/cdn_import_library.php:79 inc/popup/cdn_rename_domain.php:68
+msgid "Start"
+msgstr "Start"
+
+#: inc/popup/cdn_export_file.php:46 inc/popup/cdn_export_library.php:36
+#: inc/popup/cdn_import_library.php:37 inc/popup/cdn_rename_domain.php:55
+msgid "Last response:"
+msgstr "Last response:"
+
+#: inc/popup/cdn_export_file.php:42 inc/popup/cdn_export_library.php:32
+#: inc/popup/cdn_import_library.php:33 inc/popup/cdn_rename_domain.php:51
+msgid "Time elapsed:"
+msgstr "Time elapsed:"
+
+#: inc/popup/cdn_export_file.php:34 inc/popup/cdn_export_library.php:24
+#: inc/popup/cdn_import_library.php:25 inc/popup/cdn_rename_domain.php:43
+msgid "Processed:"
+msgstr "Processed:"
+
+#: inc/popup/cdn_export_file.php:30
+msgid "Total files:"
+msgstr "Total files:"
+
+#: inc/popup/cdn_export_file.php:27 inc/popup/cdn_export_library.php:17
+msgid "This tool will upload files of the selected type to content delivery network provider."
+msgstr "This tool will upload files of the selected type to content delivery network provider."
+
+#: inc/options/support.php:15
+msgid "Request premium services, suggest a feature or submit a bug using the form below:"
+msgstr "Request premium services, suggest a feature or submit a bug using the form below:"
+
+#: CacheGroups_Plugin_Admin_View.php:226
+msgid "No groups added. All referrers recieve the same page and minify cache results."
+msgstr "No groups added. All referrers recieve the same page and minify cache results."
+
+#: CacheGroups_Plugin_Admin_View.php:219
+msgid "Specify the referrers for this group. Remember to escape special characters like spaces, dots or dashes with a backslash. Regular expressions are also supported."
+msgstr "Specify the referrers for this group. Remember to escape special characters like spaces, dots or dashes with a backslash. Regular expressions are also supported."
+
+#: CacheGroups_Plugin_Admin_View.php:215 Generic_ConfigLabels.php:20
+msgid "Referrers:"
+msgstr "Referrers:"
+
+#: CacheGroups_Plugin_Admin_View.php:210
+msgid "A 302 redirect is used to send this group of referrers to another hostname (domain)."
+msgstr "A 302 redirect is used to send this group of referrers to another hostname (domain)."
+
+#: CacheGroups_Plugin_Admin_View.php:201
+msgid "Assign this group of referrers to a specific theme. Selecting \"Pass-through\" allows any plugin(s) (e.g. referrer plugins) to properly handle requests for these referrers. If the \"redirect users to\" field is not empty, this setting is ignored."
+msgstr "Assign this group of referrers to a specific theme. Selecting \"Pass-through\" allows any plugin(s) (e.g. referrer plugins) to properly handle requests for these referrers. If the \"redirect users to\" field is not empty, this setting is ignored."
+
+#: CacheGroups_Plugin_Admin_View.php:85 CacheGroups_Plugin_Admin_View.php:196
+msgid "-- Pass-through --"
+msgstr "-- Pass-through --"
+
+#: CacheGroups_Plugin_Admin_View.php:60 CacheGroups_Plugin_Admin_View.php:178
+#: CacheGroups_Plugin_Admin_View.php:258
+msgid "Delete group"
+msgstr "Delete group"
+
+#: CacheGroups_Plugin_Admin_View.php:161
+msgid "of referrers by specifying names in the referrers field. Assign a set of referrers to use a specific theme, redirect them to another domain, create referrer groups to ensure that a unique cache is created for each referrer group. Drag and drop groups into order (if needed) to determine their priority (top -&gt; down)."
+msgstr "of referrers by specifying names in the referrers field. Assign a set of referrers to use a specific theme, redirect them to another domain, create referrer groups to ensure that a unique cache is created for each referrer group. Drag and drop groups into order (if needed) to determine their priority (top -&gt; down)."
+
+#: Extension_FragmentCache_Page_View.php:92
+msgid "Specify fragment groups that should be managed by W3 Total Cache. Enter one action per line comma delimited, e.g. (group, action1, action2). Include the prefix used for a transient by a theme or plugin."
+msgstr "Specify fragment groups that should be managed by W3 Total Cache. Enter one action per line, comma delimited, e.g. (group, action1, action2). Include the prefix used for a transient by a theme or plugin."
+
+#: Extension_FragmentCache_Page_View.php:54
+msgid "No groups have been registered."
+msgstr "No groups have been registered."
+
+#: Extension_FragmentCache_Page_View.php:52
+msgid "The groups above will be flushed upon setting changes."
+msgstr "The groups above will be flushed upon setting changes."
+
+#: Extension_FragmentCache_Page_View.php:42
+msgid "Registered fragment groups:"
+msgstr "Registered fragment groups:"
+
+#: Extension_CloudFlare_Page_View.php:35
+msgid "if needed."
+msgstr "if needed."
+
+#: inc/options/pgcache.php:751
+msgid "Specify additional page headers to cache."
+msgstr "Specify additional page headers to cache."
+
+#: inc/options/pgcache.php:741
+msgid "Cache the specified pages even if they don't have trailing slash."
+msgstr "Cache the specified pages even if they don't have a trailing slash."
+
+#: inc/options/pgcache.php:624
+msgid "Never cache pages that use the specified cookies."
+msgstr "Never cache pages that use the specified cookies."
+
+#: inc/options/pgcache.php:615
+msgid "Never send cache pages for these user agents."
+msgstr "Never send cache pages for these user agents."
+
+#: inc/options/pgcache.php:501
+msgid "Reject HEAD requests:"
+msgstr "Reject HEAD requests:"
+
+#: inc/options/pgcache.php:496
+msgid "Resolve issues incorrect odd character encoding that may appear in cached pages."
+msgstr "Resolve issues incorrect odd character encoding that may appear in cached pages."
+
+#: inc/options/pgcache.php:493
+msgid "Charset:"
+msgstr "Charset:"
+
+#: inc/options/pgcache.php:463
+msgid "Enables support for WordPress functionality in fragment caching for the page caching engine. Use of this feature may increase response times."
+msgstr "Enables support for WordPress functionality in fragment caching for the page caching engine. Use of this feature may increase response times."
+
+#: inc/options/pgcache.php:459
+msgid "Late initialization:"
+msgstr "Late initialisation:"
+
+#: inc/options/pgcache.php:358
+msgid "Specify a regular expression that matches your sitemaps."
+msgstr "Specify a regular expression that matches your sitemaps."
+
+#: inc/options/pgcache.php:351
+msgid "Specify additional pages to purge. Including parent page in path. Ex: parent/posts."
+msgstr "Specify additional pages to purge. Including parent page in path. Ex: parent/posts."
+
+#: inc/options/pgcache.php:274
+msgid "Specify the pages and feeds to purge when posts are created, edited, or comments posted. The defaults are recommended because additional options may reduce server performance:"
+msgstr "Specify the pages and feeds to purge when posts are created, edited, or comments posted. The defaults are recommended because additional options may reduce server performance:"
+
+#: inc/options/pgcache.php:269
+msgid "Purge Policy: "
+msgstr "Purge Policy: "
+
+#: inc/options/pgcache.php:212
+msgid "Limit the number of pages to create per batch. Fewer pages may be better for under-powered servers."
+msgstr "Limit the number of pages to create per batch. Fewer pages may be better for under-powered servers."
+
+#: inc/options/pgcache.php:203
+msgid "The number of seconds to wait before creating another set of cached pages."
+msgstr "The number of seconds to wait before creating another set of cached pages."
+
+#: inc/options/pgcache.php:112
+msgid "Select user roles that should not receive cached pages:"
+msgstr "Select user roles that should not receive cached pages:"
+
+#: inc/options/pgcache.php:106
+msgid "Unauthenticated users may view a cached version of the last authenticated user's view of a given page. Disabling this option is not recommended."
+msgstr "Unauthenticated users may view a cached version of the last authenticated user's view of a given page. Disabling this option is not recommended."
+
+#: inc/options/pgcache.php:100
+msgid "Reduce server load by caching 404 pages. If the disk enhanced method of disk caching is used, 404 pages will be returned with a 200 response code. Use at your own risk."
+msgstr "Reduce server load by caching 404 pages. If the disk enhanced method of disk caching is used, 404 pages will be returned with a 200 response code. Use at your own risk."
+
+#: inc/options/pgcache.php:94
+msgid "Search result (and similar) pages will be cached if enabled."
+msgstr "Search result (and similar) pages will be cached if enabled."
+
+#: inc/options/pgcache.php:47
+msgid "By default the front page is cached when using static front page in reading settings."
+msgstr "By default the front page is cached when using static front page in reading settings."
+
+#: inc/options/pgcache.php:40
+msgid "For many blogs this is your most visited page, it is recommended that you cache it."
+msgstr "For many blogs this is your most visited page, it is recommended that you cache it."
+
+#. translators: 1 HTML strong tag containing PageCache Engine name, 2 HTML span
+#. tag containing PageCache Engine enabled/disabled.
+#: inc/options/pgcache.php:15
+msgid "Page caching via %1$s is currently %2$s"
+msgstr "Page caching via %1$s is currently %2$s"
+
+#: inc/options/objectcache.php:75
+msgid "Groups that should not be cached."
+msgstr "Groups that should not be cached."
+
+#: inc/options/objectcache.php:67
+msgid "Groups shared amongst sites in network mode."
+msgstr "Groups shared amongst sites in network mode."
+
+#: Extension_NewRelic_Page_View_Apm.php:330
+msgid "This is required when using New Relic on a network install to set the proper names for sites."
+msgstr "This is required when using New Relic on a network install to set the proper names for sites."
+
+#: Extension_NewRelic_Page_View_Apm.php:188 Extension_Swarmify_Page_View.php:39
+#: Util_Ui.php:1908
+msgid "Behavior Settings"
+msgstr "Behaviour Settings"
+
+#: Extension_NewRelic_Page_View_Apm.php:180
+msgid "How many minutes data retrieved from New Relic should be stored. Minimum is 1 minute."
+msgstr "How many minutes data retrieved from New Relic should be stored. Minimum is 1 minute."
+
+#: Extension_NewRelic_Page_View_Apm.php:168
+msgid "Dashboard Settings"
+msgstr "Dashboard Settings"
+
+#: Extension_NewRelic_Page_View_Apm.php:164
+msgid "Application settings are only visible when New Relic is enabled"
+msgstr "Application settings are only visible when New Relic is enabled"
+
+#: Extension_NewRelic_Page_View_Apm.php:23
+msgid "Application Settings"
+msgstr "Application Settings"
+
+#: CacheGroups_Plugin_Admin.php:48 CacheGroups_Plugin_Admin_View.php:328
+msgid "Per the above, make sure that visitors are notified about the cookie as per any regulations in your market."
+msgstr "Per the above, make sure that visitors are notified about the cookie as per any regulations in your market."
+
+#: CacheGroups_Plugin_Admin_View.php:125
+msgid "No groups added. All user agents recieve the same page and minify cache results."
+msgstr "No groups added. All user agents recieve the same page and minify cache results."
+
+#: CacheGroups_Plugin_Admin_View.php:117
+msgid "Specify the user agents for this group. Remember to escape special characters like spaces, dots or dashes with a backslash. Regular expressions are also supported."
+msgstr "Specify the user agents for this group. Remember to escape special characters like spaces, dots or dashes with a backslash. Regular expressions are also supported."
+
+#: CacheGroups_Plugin_Admin_View.php:110
+msgid "User agents:"
+msgstr "User agents:"
+
+#: CacheGroups_Plugin_Admin_View.php:105
+msgid "A 302 redirect is used to send this group of users to another hostname (domain); recommended if a 3rd party service provides a mobile version of your site."
+msgstr "A 302 redirect is used to send this group of users to another hostname (domain); recommended if a 3rd party service provides a mobile version of your site."
+
+#: CacheGroups_Plugin_Admin_View.php:97 CacheGroups_Plugin_Admin_View.php:206
+msgid "Redirect users to:"
+msgstr "Redirect users to:"
+
+#: CacheGroups_Plugin_Admin_View.php:91
+msgid "Assign this group of user agents to a specific theme. Selecting \"Pass-through\" allows any plugin(s) (e.g. mobile plugins) to properly handle requests for these user agents. If the \"redirect users to\" field is not empty, this setting is ignored."
+msgstr "Assign this group of user agents to a specific theme. Selecting \"Pass-through\" allows any plugin(s) (e.g. mobile plugins) to properly handle requests for these user agents. If the \"redirect users to\" field is not empty, this setting is ignored."
+
+#: CacheGroups_Plugin_Admin_View.php:66 CacheGroups_Plugin_Admin_View.php:183
+#: CacheGroups_Plugin_Admin_View.php:265
+msgid "Enabled:"
+msgstr "Enabled:"
+
+#: CacheGroups_Plugin_Admin_View.php:55 CacheGroups_Plugin_Admin_View.php:175
+#: CacheGroups_Plugin_Admin_View.php:252
+msgid "Group name:"
+msgstr "Group name:"
+
+#: CacheGroups_Plugin_Admin_View.php:41
+msgid "of user agents by specifying names in the user agents field. Assign a set of user agents to use a specific theme, redirect them to another domain or if an existing mobile plugin is active, create user agent groups to ensure that a unique cache is created for each user agent group. Drag and drop groups into order (if needed) to determine their priority (top -&gt; down)."
+msgstr "of user agents by specifying names in the user agents field. Assign a set of user agents to use a specific theme, redirect them to another domain or if an existing mobile plugin is active, create user agent groups to ensure that a unique cache is created for each user agent group. Drag and drop groups into order (if needed) to determine their priority (top -&gt; down)."
+
+#: CacheGroups_Plugin_Admin_View.php:40 CacheGroups_Plugin_Admin_View.php:161
+#: CacheGroups_Plugin_Admin_View.php:238
+msgid "Create a group"
+msgstr "Create a group"
+
+#: inc/options/minify.php:969
+msgid "Specify external files/libraries that should be combined."
+msgstr "Specify external files/libraries that should be combined."
+
+#: inc/options/minify.php:961
+msgid "Specify user agents that will never receive minified content."
+msgstr "Specify user agents that will never receive minified content."
+
+#: inc/options/minify.php:875
+msgid "Specify the interval between download and update of external files in the minify cache. Hint: 6 hours is 21600 seconds. 12 hours is 43200 seconds. 24 hours is 86400 seconds."
+msgstr "Specify the interval between download and update of external files in the minify cache. Hint: 6 hours is 21600 seconds. 12 hours is 43200 seconds. 24 hours is 86400 seconds."
+
+#: inc/options/minify.php:805
+msgid "Add a style sheet"
+msgstr "Add a style sheet"
+
+#: inc/options/minify.php:732
+msgid "Files are minified by template. First select the theme to manage, then add style sheets used in all templates to the \"All Templates\" group. Use the menu above to manage style sheets unique to a specific template. If necessary drag &amp; drop to resolve dependency issues (due to incorrect order)."
+msgstr "Files are minified by template. First select the theme to manage, then add style sheets used in all templates to the \"All Templates\" group. Use the menu above to manage style sheets unique to a specific template. If necessary drag &amp; drop to resolve dependency issues (due to incorrect order)."
+
+#: inc/options/minify.php:531
+msgid "Add a script"
+msgstr "Add a script"
+
+#: inc/options/minify.php:450
+msgid "Files are minified by template. First select the theme to manage, then add scripts used in all templates to the \"All Templates\" group. Use the menu above to manage scripts unique to a specific template. If necessary drag &amp; drop to resolve dependency issues (due to incorrect order)."
+msgstr "Files are minified by template. First select the theme to manage, then add scripts used in all templates to the \"All Templates\" group. Use the menu above to manage scripts unique to a specific template. If necessary drag &amp; drop to resolve dependency issues (due to incorrect order)."
+
+#: CacheGroups_Plugin_Admin_View.php:79 CacheGroups_Plugin_Admin_View.php:192
+#: inc/options/minify.php:435 inc/options/minify.php:717
+msgid "Theme:"
+msgstr "Theme:"
+
+#: inc/options/minify.php:332 inc/options/minify.php:351
+#: inc/options/minify.php:369
+msgid "Non-blocking using \"asyncsrc\""
+msgstr "Non-blocking using \"asyncsrc\""
+
+#: inc/options/minify.php:331 inc/options/minify.php:350
+#: inc/options/minify.php:368
+msgid "Non-blocking using \"extsrc\""
+msgstr "Non-blocking using \"extsrc\""
+
+#: inc/options/minify.php:329 inc/options/minify.php:348
+#: inc/options/minify.php:367
+msgid "Non-blocking using \"defer\""
+msgstr "Non-blocking using \"defer\""
+
+#: inc/options/minify.php:328 inc/options/minify.php:347
+#: inc/options/minify.php:366
+msgid "Non-blocking using \"async\""
+msgstr "Non-blocking using \"async\""
+
+#: inc/options/minify.php:327 inc/options/minify.php:346
+#: inc/options/minify.php:365
+msgid "Non-blocking using JS"
+msgstr "Non-blocking using JS"
+
+#: inc/options/minify.php:326 inc/options/minify.php:345
+#: inc/options/minify.php:364
+msgid "Default (blocking)"
+msgstr "Default (blocking)"
+
+#: inc/options/minify.php:291
+msgid "Operations in areas:"
+msgstr "Operations in areas:"
+
+#: inc/options/minify.php:211
+msgid "Do not remove comments that contain these terms."
+msgstr "Do not remove comments that contain these terms."
+
+#: inc/options/minify.php:129
+msgid "Notify when minify cache creation errors occur."
+msgstr "Notify when minify cache creation errors occur."
+
+#: inc/options/minify.php:127
+msgid "Both Admin &amp; Email Notification"
+msgstr "Both Admin &amp; Email Notification"
+
+#: inc/options/minify.php:126
+msgid "Email Notification"
+msgstr "Email Notification"
+
+#: inc/options/minify.php:125
+msgid "Admin Notification"
+msgstr "Admin Notification"
+
+#: inc/options/minify.php:115
+msgid "Authenticated users will not receive minified pages if this option is enabled."
+msgstr "Authenticated users will not receive minified pages if this option is enabled."
+
+#: inc/options/minify.php:45
+msgid "wizard."
+msgstr "wizard."
+
+#: inc/options/minify.php:44
+msgid "help"
+msgstr "help"
+
+#: inc/options/minify.php:43
+msgid "Get minify hints using the"
+msgstr "Get minify hints using the"
+
+#: inc/options/minify/yuijs2.php:40
+msgid "symbols (set to 0 to disable)"
+msgstr "symbols (set to 0 to disable)"
+
+#: inc/options/minify/yuijs2.php:18 Minify_ConfigLabels.php:42
+#: Minify_ConfigLabels.php:77
+msgid "Path to JAR file:"
+msgstr "Path to JAR file:"
+
+#: inc/options/minify/yuijs2.php:9 Minify_ConfigLabels.php:41
+#: Minify_ConfigLabels.php:76
+msgid "Path to JAVA executable:"
+msgstr "Path to JAVA executable:"
+
+#: inc/options/minify/yuicss2.php:38 inc/options/minify/yuijs2.php:30
+msgid "Test YUI Compressor"
+msgstr "Test YUI Compressor"
+
+#: inc/options/minify/csstidy2.php:31
+msgid "Merge selectors with the same properties (fast)"
+msgstr "Merge selectors with the same properties (fast)"
+
+#: inc/options/minify/csstidy2.php:30
+msgid "Only seperate selectors (split at ,)"
+msgstr "Only separate selectors (split at ,)"
+
+#: inc/options/minify/csstidy2.php:29
+msgid "Do not change anything"
+msgstr "Do not change anything"
+
+#: inc/options/minify/csstidy2.php:25
+msgid "Uppercase"
+msgstr "Uppercase"
+
+#: inc/options/minify/csstidy2.php:24
+msgid "Lowercase"
+msgstr "Lowercase"
+
+#: inc/options/minify/csstidy2.php:19
+msgid "All optimisations"
+msgstr "All optimisations"
+
+#: inc/options/minify/csstidy2.php:17
+msgid "Safe optimisations"
+msgstr "Safe optimisations"
+
+#: inc/options/minify/csstidy2.php:16
+msgid "Don't optimise"
+msgstr "Don't optimise"
+
+#: inc/options/minify/csstidy2.php:12
+msgid "Low (higher readability)"
+msgstr "Low (higher readability)"
+
+#: inc/options/minify/csstidy2.php:11
+msgid "Standard (balance between readability and size)"
+msgstr "Standard (balance between readability and size)"
+
+#: inc/options/minify/csstidy2.php:10
+msgid "High (moderate readability, smaller size)"
+msgstr "High (moderate readability, smaller size)"
+
+#: inc/options/minify/csstidy2.php:9
+msgid "Highest (no readability, smallest size)"
+msgstr "Highest (no readability, smallest size)"
+
+#: inc/options/minify/ccjs2.php:51 inc/options/minify/googleccjs2.php:20
+msgid "Test Closure Compiler"
+msgstr "Test Closure Compiler"
+
+#: inc/options/minify/ccjs2.php:11 inc/options/minify/googleccjs2.php:11
+msgid "Advanced optimizations"
+msgstr "Advanced optimisations"
+
+#: inc/options/minify/ccjs2.php:10 inc/options/minify/googleccjs2.php:10
+msgid "Simple optimizations"
+msgstr "Simple optimisations"
+
+#: inc/options/minify/ccjs2.php:9 inc/options/minify/googleccjs2.php:9
+msgid "Whitespace only"
+msgstr "Whitespace only"
+
+#: inc/options/install.php:412
+msgid "Restarting the web server will empty the opcode cache, which means it will have to be rebuilt over time and your site's performance will suffer during this period. Still, an opcode cache should be installed in any case to maximize WordPress performance."
+msgstr "Restarting the web server will empty the opcode cache, which means it will have to be rebuilt over time and your site's performance will suffer during this period. Still, an opcode cache should be installed in any case to maximise WordPress performance."
+
+#: inc/options/install.php:411
+msgid "In the case where Apache is not used, the .htaccess file located in the root directory of the WordPress installation, wp-content/w3tc/pgcache/.htaccess and wp-content/w3tc/min/.htaccess contain directives that must be manually created for your web server software."
+msgstr "In the case where Apache is not used, the .htaccess file located in the root directory of the WordPress installation, wp-content/w3tc/pgcache/.htaccess and wp-content/w3tc/min/.htaccess contain directives that must be manually created for your web server software."
+
+#: inc/options/install.php:14
+msgid "Set the permissions of wp-content/ back to 755, e.g.:"
+msgstr "Set the permissions of wp-content/ back to 755, e.g.:"
+
+#: inc/options/general.php:1187
+msgid "Revert all settings to the defaults. Any settings staged in preview mode will not be modified."
+msgstr "Revert all settings to the defaults. Any settings staged in preview mode will not be modified."
+
+#: inc/options/general.php:1186
+msgid "Restore Default Settings"
+msgstr "Restore Default Settings"
+
+#: inc/options/general.php:1184
+msgid "Reset configuration:"
+msgstr "Reset configuration:"
+
+#: inc/options/general.php:1180
+msgid "Download the active settings file."
+msgstr "Download the active settings file."
+
+#: inc/options/general.php:1177
+msgid "Export configuration:"
+msgstr "Export configuration:"
+
+#: inc/options/general.php:1173
+msgid "Upload and replace the active settings file."
+msgstr "Upload and replace the active settings file."
+
+#: inc/options/general.php:1169
+msgid "Import configuration:"
+msgstr "Import configuration:"
+
+#: inc/options/general.php:835
+msgid "Try this option if your hosting environment uses a network based file system for a possible performance improvement."
+msgstr "Try this option if your hosting environment uses a network based file system for a possible performance improvement."
+
+#: inc/options/general.php:788
+msgid "Enable file locking"
+msgstr "Enable file locking"
+
+#: CacheGroups_Plugin_Admin.php:42
+msgid "Enabling even a single user agent group will set a cookie called \"w3tc_referrer.\" It is used to ensure a consistent user experience across page views. Make sure any reverse proxy servers etc respect this cookie for proper operation."
+msgstr "Enabling even a single user agent group will set a cookie called \"w3tc_referrer\". It is used to ensure a consistent user experience across page views. Make sure any reverse proxy servers, etc., respect this cookie for proper operation."
+
+#. translators: %1 HTML input submit.
+#: inc/options/minify.php:51
+msgid "%1$s to make existing file modifications visible to visitors with a primed cache."
+msgstr "%1$s to make existing file modifications visible to visitors with a primed cache."
+
+#. translators: 3 opening HTML a tag to W3TC DatabaseCache admin page, 4
+#. closing HTML a tag.
+#: inc/options/install.php:177
+msgid "%1$sOptional:%2$s On the \"%3$sDatabase Cache%4$s\" tab the recommended settings are preset. If using a shared hosting account use the \"disk\" method with caution; in either of these cases the response time of the disk may not be fast enough, so this option is disabled by default."
+msgstr "%1$sOptional:%2$s On the \"%3$sDatabase Cache%4$s\" tab the recommended settings are preset. If using a shared hosting account use the \"disk\" method with caution; in either of these cases the response time of the disk may not be fast enough, so this option is disabled by default."
+
+#. translators: 2 opening HTML acronym tag, 3 closing HTML acronym tag, 4
+#. closing HTML acronym tag.
+#: inc/options/pgcache.php:640
+msgid "Always ignore the specified pages / directories. Supports regular expressions (See %1$s%2$sFAQ%3$s%4$s)"
+msgstr "Always ignore the specified pages / directories. Supports regular expressions (See %1$s%2$sFAQ%3$s%4$s)"
+
+#. translators: 1 opening HTML a tag to W3TC monitoring settings page, 2
+#. closing HTML a tag.
+#: Extension_NewRelic_Page_View_Apm.php:148
+msgid "Application settings could not be retrieved. New Relic may not be properly configured, %1$sreview the settings%2$s."
+msgstr "Application settings could not be retrieved. New Relic may not be properly configured, %1$sreview the settings%2$s."
+
+#. translators: 3 opening HTML a tag to W3TC ObjectCache admin page, 4 closing
+#. HTML a tag.
+#: inc/options/install.php:201
+msgid "%1$sOptional:%2$s On the \"%3$sObject Cache%4$s\" tab the recommended settings are preset. If using a shared hosting account use the \"disk\" method with caution, the response time of the disk may not be fast enough, so this option is disabled by default. Test this option with and without database cache to ensure that it provides a performance increase."
+msgstr "%1$sOptional:%2$s On the \"%3$sObject Cache%4$s\" tab the recommended settings are preset. If using a shared hosting account use the \"disk\" method with caution, the response time of the disk may not be fast enough, so this option is disabled by default. Test this option with and without database cache to ensure that it provides a performance increase."
+
+#. translators: 1 opening HTML a tag to W3TC PageCache admin page, 2 closing
+#. HTML a tag.
+#: inc/options/install.php:42
+msgid "1. The \"Compatibility Mode\" option found in the advanced section of the %1$s\"Page Cache Settings\"%2$s tab will enable functionality that optimizes the interoperablity of caching with WordPress, is disabled by default, but highly recommended. Years of testing in hundreds of thousands of installations have helped us learn how to make caching behave well with WordPress. The tradeoff is that disk enhanced page cache performance under load tests will be decreased by ~20%% at scale."
+msgstr "1. The \"Compatibility Mode\" option found in the advanced section of the %1$s\"Page Cache Settings\"%2$s tab will enable functionality that optimises the interoperablity of caching with WordPress, is disabled by default, but highly recommended. Years of testing in hundreds of thousands of installations have helped us learn how to make caching behave well with WordPress. The tradeoff is that disk enhanced page cache performance under load tests will be decreased by ~20%% at scale."
+
+#. translators: 3 closing HTML acronym tag, 4 closing HTML acronym tag.
+#: inc/options/pgcache.php:711
+msgid "Cache the specified pages / directories even if listed in the \"never cache the following pages\" field. Supports regular expression (See %1$s%2$sFAQ%3$s%4$s)"
+msgstr "Cache the specified pages / directories even if listed in the \"never cache the following pages\" field. Supports regular expression (See %1$s%2$sFAQ%3$s%4$s)"
+
+#: inc/email/support_request.php:15
+msgid "E-Mail: "
+msgstr "Email: "
+
+#: inc/email/support_request.php:26
+msgid "Forum Topic URL: "
+msgstr "Forum Topic URL: "
+
+#. translators: 1 minify engine name, HTML span tag indicating engine
+#. enabled/disabled.
+#: inc/options/minify.php:26
+msgid "Minify via %1$s is currently %2$s."
+msgstr "Minify via %1$s is currently %2$s."
+
+#. translators: 1 opening HTML a tag to W3TC General admin page, 2 closing HTML
+#. a tag.
+#: inc/options/install.php:22
+msgid "On the \"%1$sGeneral%2$s\" tab and select your caching methods for page, database and minify. In most cases, \"disk enhanced\" mode for page cache, \"disk\" mode for minify and \"disk\" mode for database caching are \"good\" settings."
+msgstr "On the \"%1$sGeneral%2$s\" tab and select your caching methods for page, database and minify. In most cases, \"disk enhanced\" mode for page cache, \"disk\" mode for minify and \"disk\" mode for database caching are \"good\" settings."
+
+#: inc/email/support_request.php:22
+msgid "Phone: "
+msgstr "Phone: "
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: inc/popup/cdn_purge.php:15
+msgid "Remove objects from the %1$sCDN%2$s by specifying the relative path on individual lines below and clicking the \"Purge\" button when done. For example:"
+msgstr "Remove objects from the %1$sCDN%2$s by specifying the relative path on individual lines below and clicking the \"Purge\" button when done. For example:"
+
+#. translators: 1 HTML line break tag.
+#: inc/options/pgcache.php:331
+msgid "Specify number of pages that lists posts (archive etc) that should be purged on post updates etc, i.e example.com/ ... example.com/page/5. %1$s0 means all pages that lists posts are purged, i.e example.com/page/2 ... ."
+msgstr "Specify number of pages that lists posts (archive etc) that should be purged on post updates etc, i.e example.com/ ... example.com/page/5. %1$s0 means all pages that lists posts are purged, i.e example.com/page/2 ... ."
+
+#: inc/email/support_request.php:33
+msgid "Subject: "
+msgstr "Subject: "
+
+#: inc/options/cdn/common/cnames.php:58 inc/options/minify.php:496
+#: inc/options/minify.php:770 inc/popup/cdn_queue.php:25
+#: inc/popup/cdn_queue.php:34 inc/popup/cdn_queue.php:58
+#: inc/popup/cdn_queue.php:67 inc/popup/cdn_queue.php:88
+#: inc/popup/cdn_queue.php:97
+msgid "Delete"
+msgstr "Delete"
+
+#: inc/options/extensions/list.php:64 inc/options/extensions/list.php:69
+msgid "Description"
+msgstr "Description"
+
+#: FeatureShowcase_Plugin_Admin.php:210 inc/options/extensions/list.php:32
+#: inc/options/extensions/list.php:140 inc/options/extensions/list.php:235
+msgid "Activate"
+msgstr "Activate"
+
+#: inc/options/general.php:242
+msgid "Auto"
+msgstr "Auto"
+
+#: inc/options/general.php:730 Util_Ui.php:1592
+msgid "Miscellaneous"
+msgstr "Miscellaneous"
+
+#: inc/options/cdn/cf.php:55 inc/options/cdn/cf2.php:55
+#: inc/options/cdn/s3.php:61 inc/options/cdn/s3_compatible.php:47
+msgid "Secret key:"
+msgstr "Secret key:"
+
+#: inc/options/cdn/att.php:16 inc/options/cdn/edgecast.php:16
+msgid "Token:"
+msgstr "Token:"
+
+#: Extension_FragmentCache_Page_View.php:61 inc/options/cdn.php:378
+#: inc/options/dbcache.php:46 inc/options/minify.php:858
+#: inc/options/objectcache.php:35 inc/options/pgcache.php:456 Util_Ui.php:1639
+#: Util_Ui.php:1712 Util_Ui.php:1722 Util_Ui.php:1730 Util_Ui.php:1806
+#: Util_Ui.php:1859
+msgid "Advanced"
+msgstr "Advanced"
+
+#: Cdnfsd_CloudFront_Page_View.php:26 Cdnfsd_LimeLight_Page_View.php:26
+#: Cdnfsd_StackPath2_Page_View.php:35 Cdnfsd_StackPath_Page_View.php:29
+#: Cdn_GoogleDrive_Page_View.php:16 Cdn_Highwinds_Page_View.php:14
+#: Cdn_LimeLight_Page_View.php:15 Cdn_RackSpaceCdn_Page_View.php:17
+#: Cdn_RackSpaceCloudFiles_Page_View.php:13 Cdn_StackPath2_Page_View.php:61
+#: Cdn_StackPath2_Widget_View_Unauthorized.php:68
+#: Cdn_StackPath_Page_View.php:33 Cdn_StackPath_Widget_View_Unauthorized.php:38
+#: Extension_CloudFlare_Page_View.php:61 inc/options/general.php:1119
+msgid "Authorize"
+msgstr "Authorise"
+
+#: Extension_Amp_Page_View.php:11 Extension_ImageService_Page_View.php:45
+#: Extension_Swarmify_Page_View.php:22 Util_Ui.php:1805 Util_Ui.php:1877
+#: Util_Ui.php:1899 Util_Ui.php:1907
+msgid "Configuration"
+msgstr "Configuration"
+
+#: inc/options/common/top_nav_bar.php:132
+#: inc/options/common/top_nav_bar.php:133 inc/options/dashboard.php:72
+#: Root_AdminMenu.php:43 Root_AdminMenu.php:44 Util_PageUrls.php:884
+#: Util_Ui.php:1868
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: inc/options/general.php:869 Util_Ui.php:1596
+msgid "Debug"
+msgstr "Debug"
+
+#: inc/options/general.php:243
+msgid "Manual"
+msgstr "Manual"
+
+#. translators: 1 HTML a tag to extension author page.
+#: inc/options/extensions/list.php:203
+msgid "By %s"
+msgstr "By %s"
+
+#: inc/options/general.php:45
+msgid "Disable"
+msgstr "Disable"
+
+#: Generic_Plugin_AdminCompatibility.php:105 inc/options/extensions/list.php:33
+#: inc/options/extensions/list.php:131 inc/options/extensions/list.php:236
+msgid "Deactivate"
+msgstr "Deactivate"
+
+#. translators: 1 extension version number.
+#: inc/options/extensions/list.php:190
+msgid "Version %s"
+msgstr "Version %s"
+
+#: inc/options/edd/buy.php:46 PageSpeed_Instructions.php:258
+#: PageSpeed_Instructions.php:483 PageSpeed_Page.php:113
+#: PageSpeed_Widget.php:132
+msgid "here"
+msgstr "here"
+
+#: Cdn_Highwinds_Widget_View.php:18
+#: Cdn_StackPath2_Widget_View_Authorized.php:20
+#: Cdn_StackPath_Widget_View_Authorized.php:32 inc/options/cdn.php:84
+#: inc/popup/cdn_purge.php:75
+msgid "Purge"
+msgstr "Purge"
+
+#: inc/options/extensions/list.php:31 inc/options/extensions/list.php:234
+msgid "Bulk Actions"
+msgstr "Bulk Actions"
+
+#: Cdnfsd_CloudFront_Popup_View_Distribution.php:75
+#: Cdnfsd_CloudFront_Popup_View_Distributions.php:52
+#: Cdnfsd_StackPath2_Popup_View_Sites.php:50
+#: Cdnfsd_StackPath2_Popup_View_Stacks.php:45
+#: Cdnfsd_StackPath_Popup_View_Zone.php:61
+#: Cdnfsd_StackPath_Popup_View_Zones.php:45
+#: Cdn_GoogleDrive_Popup_AuthReturn_View.php:50
+#: Cdn_Highwinds_Popup_View_ConfigureCnamesForm.php:66
+#: Cdn_Highwinds_Popup_View_SelectHost.php:56
+#: Cdn_RackSpaceCdn_Popup_View_ConfigureDomains.php:66
+#: Cdn_RackSpaceCdn_Popup_View_Services.php:59
+#: Cdn_RackSpaceCdn_Popup_View_Service_Actualize.php:54
+#: Cdn_RackSpaceCloudFiles_Popup_View_Containers.php:55
+#: Cdn_StackPath2_Popup_View_Sites.php:48
+#: Cdn_StackPath2_Popup_View_Stacks.php:47 Cdn_StackPath_Popup_View_Zone.php:39
+#: Cdn_StackPath_Popup_View_Zones.php:51
+#: Extension_NewRelic_Popup_View_Intro.php:51
+#: Extension_NewRelic_Popup_View_ListApplications.php:63
+#: inc/options/extensions/list.php:35 inc/options/extensions/list.php:238
+msgid "Apply"
+msgstr "Apply"
+
+#: inc/options/extensions/list.php:64 inc/options/extensions/list.php:69
+msgid "Select All"
+msgstr "Select All"
+
+#: inc/options/general.php:755
+msgid "If empty the default path will be used.."
+msgstr "If empty the default path will be used.."
+
+#: inc/options/general.php:746
+msgid "Only one configuration file for whole network will be created and used. Recommended if all sites have the same configuration."
+msgstr "Only one configuration file for the whole network will be created and used. Recommended if all sites have the same configuration."
+
+#: inc/options/general.php:708
+msgid "upgrading"
+msgstr "upgrading"
+
+#: inc/options/general.php:697
+msgid "Verify license key"
+msgstr "Verify licence key"
+
+#: Extension_NewRelic_GeneralPage_View.php:85
+#: Extension_NewRelic_Page_View_Apm.php:36
+msgid "Application name:"
+msgstr "Application name:"
+
+#: Generic_ConfigLabels.php:26 inc/options/general.php:468 Util_Ui.php:1583
+msgid "Reverse Proxy"
+msgstr "Reverse Proxy"
+
+#: Cdn_Plugin_Admin.php:207
+msgid "Self-hosted / File Transfer Protocol Upload"
+msgstr "Self-hosted / File Transfer Protocol Upload"
+
+#: Cdn_Plugin_Admin.php:202
+msgid "Rackspace Cloud Files"
+msgstr "Rackspace Cloud Files"
+
+#: Cdn_Plugin_Admin.php:197
+msgid "Microsoft Azure Storage"
+msgstr "Microsoft Azure Storage"
+
+#: Cdn_Plugin_Admin.php:184
+msgid "Amazon Simple Storage Service (S3)"
+msgstr "Amazon Simple Storage Service (S3)"
+
+#: Cdn_Plugin_Admin.php:150
+msgid "Generic Mirror"
+msgstr "Generic Mirror"
+
+#: Cdn_Plugin_Admin.php:146
+msgid "Cotendo (Akamai)"
+msgstr "Cotendo (Akamai)"
+
+#: Cdn_Plugin_Admin.php:142
+msgid "AT&amp;T"
+msgstr "AT&amp;T"
+
+#: Cdnfsd_Plugin_Admin.php:66 Cdn_Plugin_Admin.php:137
+msgid "Amazon CloudFront"
+msgstr "Amazon CloudFront"
+
+#: Cdn_Plugin_Admin.php:133
+msgid "Akamai"
+msgstr "Akamai"
+
+#: Cdn_ConfigLabels.php:9
+msgid "<acronym title=\"Content Delivery Network\">CDN</acronym>"
+msgstr "<acronym title=\"Content Delivery Network\">CDN</acronym>"
+
+#: FeatureShowcase_Plugin_Admin.php:458
+msgid "Reduce server load and decrease response time by using the cache available in site visitor's web browser."
+msgstr "Reduce server load and decrease response time by using the cache available in site visitor's web browser."
+
+#: Util_Ui.php:1249
+msgid "Shared Server:"
+msgstr "Shared Server:"
+
+#: inc/options/general.php:342
+msgid "Caching database objects decreases the response time of your site. Best used if object caching is not possible."
+msgstr "Caching database objects decreases the response time of your site. Best used if object caching is not possible."
+
+#: inc/options/general.php:301
+msgid "CSS Tidy"
+msgstr "CSS Tidy"
+
+#: inc/options/general.php:290 inc/options/general.php:305
+msgid "YUI Compressor"
+msgstr "YUI Compressor"
+
+#: inc/options/general.php:286
+msgid "JSMin (default)"
+msgstr "JSMin (default)"
+
+#: inc/options/general.php:272
+msgid "HTML Tidy"
+msgstr "HTML Tidy"
+
+#: SetupGuide_Plugin_Admin.php:970 Util_Ui.php:1208
+msgid "Disk"
+msgstr "Disk"
+
+#: inc/options/general.php:245
+msgid "Select manual mode to use fields on the minify settings tab to specify files to be minified, otherwise files will be minified automatically."
+msgstr "Select manual mode to use fields on the minify settings tab to specify files to be minified, otherwise files will be minified automatically."
+
+#: Extension_NewRelic_AdminNotes.php:21 FeatureShowcase_Plugin_Admin.php:384
+#: inc/options/common/top_nav_bar.php:28 inc/options/general.php:186
+#: inc/options/minify.php:321 inc/options/minify.php:340
+#: inc/options/minify.php:360 Minify_ConfigLabels.php:9
+#: PageSpeed_Instructions.php:67 PageSpeed_Instructions.php:84
+#: PageSpeed_Instructions.php:275 PageSpeed_Instructions.php:356
+#: PageSpeed_Instructions.php:576 Root_AdminMenu.php:67 Root_AdminMenu.php:68
+#: UsageStatistics_Page_View.php:214 Util_PageUrls.php:898 Util_Ui.php:1544
+msgid "Minify"
+msgstr "Minify"
+
+#: inc/options/general.php:158 UsageStatistics_Page_View.php:405
+#: Util_Ui.php:1233
+msgid "Memcached"
+msgstr "Memcached"
+
+#: inc/options/general.php:175 Util_Ui.php:1251
+msgid "Multiple Servers:"
+msgstr "Multiple Servers:"
+
+#: inc/options/general.php:153 Util_Ui.php:1228
+msgid "Opcode: WinCache"
+msgstr "Opcode: WinCache"
+
+#: inc/options/general.php:148 Util_Ui.php:1223
+msgid "Opcode: XCache"
+msgstr "Opcode: XCache"
+
+#: inc/options/general.php:143 Util_Ui.php:1218
+msgid "Opcode: eAccelerator"
+msgstr "Opcode: eAccelerator"
+
+#: inc/options/general.php:174 Util_Ui.php:1250
+msgid "Dedicated / Virtual Server:"
+msgstr "Dedicated / Virtual Server:"
+
+#: inc/options/general.php:133 SetupGuide_Plugin_Admin.php:972
+msgid "Disk: Enhanced"
+msgstr "Disk: Enhanced"
+
+#: inc/options/general.php:129 SetupGuide_Plugin_Admin.php:971
+msgid "Disk: Basic"
+msgstr "Disk: Basic"
+
+#: inc/options/general.php:173
+msgid "Shared Server (disk enhanced is best):"
+msgstr "Shared Server (disk enhanced is best):"
+
+#: inc/options/general.php:120
+msgid "Caching pages will reduce the response time of your site and increase the scale of your web server."
+msgstr "Caching pages will reduce the response time of your site and increase the scale of your web server."
+
+#: inc/options/general.php:89
+msgid "Use preview mode to test configuration scenarios prior to releasing them (deploy) on the actual site. Preview mode remains active even after deploying settings until the feature is disabled."
+msgstr "Use preview mode to test configuration scenarios prior to releasing them (deploy) on the actual site. Preview mode remains active even after deploying settings until the feature is disabled."
+
+#: inc/options/general.php:49
+msgid "Deploy"
+msgstr "Deploy"
+
+#: inc/options/extensions/list.php:219 inc/options/extensions/list.php:220
+msgid "Visit extension site"
+msgstr "Visit extension site"
+
+#: inc/options/extensions/list.php:207
+msgid "Visit author homepage"
+msgstr "Visit author homepage"
+
+#. translators: 1 plugin requirements.
+#: inc/options/extensions/list.php:171
+msgid "Requirements: %s"
+msgstr "Requirements: %s"
+
+#: inc/options/extensions/list.php:139
+msgid "Activate this extension"
+msgstr "Activate this extension"
+
+#: inc/options/extensions/list.php:130
+msgid "Deactivate this extension"
+msgstr "Deactivate this extension"
+
+#: inc/options/extensions/list.php:64 inc/options/extensions/list.php:69
+msgid "Extension"
+msgstr "Extension"
+
+#. translators: 1 count of extensions.
+#: inc/options/extensions/list.php:46 inc/options/extensions/list.php:249
+msgid "%s extension"
+msgid_plural "%s extensions"
+msgstr[0] "%s extension"
+msgstr[1] "%s extensions"
+
+#: inc/options/enterprise/dbcluster-config.php:54
+msgid "Save configuration file"
+msgstr "Save configuration file"
+
+#: inc/options/enterprise/dbcluster-config.php:12
+msgid "Database Cluster Configuration File"
+msgstr "Database Cluster Configuration File"
+
+#: inc/options/edd/buy.php:24 UsageStatistics_Page_View_Free.php:17
+msgid "upgrade"
+msgstr "upgrade"
+
+#: inc/options/dbcache.php:120
+msgid "Do not cache queries that contain these words or regular expressions."
+msgstr "Do not cache queries that contain these words or regular expressions."
+
+#: inc/options/dbcache.php:112
+msgid "Do not cache queries that contain these terms. Any entered prefix (set in wp-config.php) will be replaced with current database prefix (default: wp_). Query stems can be identified using debug mode."
+msgstr "Do not cache queries that contain these terms. Any entered prefix (set in wp-config.php) will be replaced with current database prefix (default: wp_). Query stems can be identified using debug mode."
+
+#: Extension_FragmentCache_Page_View.php:83 inc/options/dbcache.php:71
+#: inc/options/minify.php:890 inc/options/objectcache.php:59
+#: inc/options/pgcache.php:548
+msgid "If caching to disk, specify how frequently expired cache data is removed. For busy sites, a lower value is best."
+msgstr "If caching to disk, specify how frequently expired cache data is removed. For busy sites, a lower value is best."
+
+#: Extension_FragmentCache_Page_View.php:76 inc/options/dbcache.php:63
+#: inc/options/objectcache.php:51 inc/options/pgcache.php:538
+msgid "Determines the natural expiration time of unchanged cache items. The higher the value, the larger the cache."
+msgstr "Determines the natural expiration time of unchanged cache items. The higher the value, the larger the cache."
+
+#: Cdn_Highwinds_Page_View.php:164 Cdn_LimeLight_Page_View.php:114
+#: Cdn_RackSpaceCdn_Page_View.php:167 Cdn_RackSpaceCloudFiles_Page_View.php:162
+#: inc/options/parts/memcached.php:21
+#: inc/options/parts/memcached_extension.php:23 inc/options/parts/redis.php:28
+#: inc/options/parts/redis_extension.php:30
+msgid "Test"
+msgstr "Test"
+
+#: inc/options/dbcache.php:39
+msgid "Enabling this option is recommended to maintain default WordPress behavior."
+msgstr "Enabling this option is recommended to maintain default WordPress behaviour."
+
+#: CacheGroups_Plugin_Admin_View.php:159 Util_Ui.php:1795
+msgid "Manage Referrer Groups"
+msgstr "Manage Referrer Groups"
+
+#: CacheGroups_Plugin_Admin_View.php:36 Util_Ui.php:1794
+msgid "Manage User Agent Groups"
+msgstr "Manage User Agent Groups"
+
+#: Util_Ui.php:1785
+msgid "Media"
+msgstr "Media"
+
+#: inc/options/pgcache.php:786 Util_Ui.php:1640 Util_Ui.php:1713
+#: Util_Ui.php:1807
+msgid "Note(s)"
+msgstr "Note(s)"
+
+#: Util_Ui.php:1637
+msgid "Purge Policy"
+msgstr "Purge Policy"
+
+#: inc/options/pgcache.php:190 Util_Ui.php:1636
+msgid "Cache Preload"
+msgstr "Cache Preload"
+
+#: extension-example/Extension_Example_Page_View.php:9
+msgid "Main Menu"
+msgstr "Main Menu"
+
+#: inc/options/general.php:1146 Util_Ui.php:1604
+msgid "Import / Export Settings"
+msgstr "Import / Export Settings"
+
+#: inc/options/general.php:677 Util_Ui.php:1527
+msgid "Licensing"
+msgstr "Licencing"
+
+#: Extension_NewRelic_GeneralPage_View.php:9
+#: Extension_NewRelic_Plugin_Admin.php:97
+#: Extension_NewRelic_Plugin_Admin.php:98 Util_PageUrls.php:961
+msgid "Monitoring"
+msgstr "Monitoring"
+
+#: BrowserCache_Plugin.php:380 FeatureShowcase_Plugin_Admin.php:456
+#: inc/options/common/top_nav_bar.php:40 inc/options/general.php:418
+#: PageSpeed_Instructions.php:307 PageSpeed_Instructions.php:517
+#: PageSpeed_Instructions.php:578 Root_AdminMenu.php:85 Root_AdminMenu.php:86
+#: SetupGuide_Plugin_Admin.php:1136 SetupGuide_Plugin_Admin.php:1301
+#: SetupGuide_Plugin_Admin.php:1334 Util_PageUrls.php:913 Util_Ui.php:1560
+msgid "Browser Cache"
+msgstr "Browser Cache"
+
+#: Extension_FragmentCache_GeneralPage_View.php:11
+#: Extension_FragmentCache_Plugin_Admin.php:107
+#: Extension_FragmentCache_Plugin_Admin.php:108
+#: Extension_FragmentCache_Plugin_Admin.php:124
+#: Extension_FragmentCache_Plugin_Admin.php:159
+#: Extension_FragmentCache_Plugin_Admin.php:167
+#: FeatureShowcase_Plugin_Admin.php:299 inc/options/common/footer.php:64
+#: inc/options/common/footer.php:65 inc/options/common/top_nav_bar.php:52
+#: inc/options/general.php:900 Util_PageUrls.php:928
+msgid "Fragment Cache"
+msgstr "Fragment Cache"
+
+#: FeatureShowcase_Plugin_Admin.php:444 inc/options/common/top_nav_bar.php:36
+#: inc/options/general.php:357 ObjectCache_ConfigLabels.php:9
+#: ObjectCache_Plugin.php:251 ObjectCache_Plugin.php:311
+#: ObjectCache_Plugin.php:319 ObjectCache_Plugin.php:328 Root_AdminMenu.php:79
+#: Root_AdminMenu.php:80 SetupGuide_Plugin_Admin.php:1132
+#: SetupGuide_Plugin_Admin.php:1272 SetupGuide_Plugin_Admin.php:1286
+#: UsageStatistics_Page_View.php:250 UsageStatistics_Page_View.php:255
+#: Util_PageUrls.php:908 Util_Ui.php:1556
+msgid "Object Cache"
+msgstr "Object Cache"
+
+#: DbCache_ConfigLabels.php:9 DbCache_Plugin.php:240 DbCache_Plugin.php:247
+#: DbCache_Plugin.php:256 FeatureShowcase_Plugin_Admin.php:432
+#: inc/options/common/top_nav_bar.php:32 inc/options/general.php:319
+#: Root_AdminMenu.php:73 Root_AdminMenu.php:74 SetupGuide_Plugin_Admin.php:1128
+#: SetupGuide_Plugin_Admin.php:1238 SetupGuide_Plugin_Admin.php:1249
+#: UsageStatistics_Page_View.php:316 Util_PageUrls.php:903 Util_Ui.php:1552
+msgid "Database Cache"
+msgstr "Database Cache"
+
+#: Extension_NewRelic_AdminNotes.php:19 FeatureShowcase_Plugin_Admin.php:372
+#: inc/options/common/top_nav_bar.php:24 inc/options/general.php:98
+#: PageSpeed_Instructions.php:190 PageSpeed_Instructions.php:577
+#: PgCache_ConfigLabels.php:9 PgCache_Plugin.php:298 PgCache_Plugin.php:306
+#: PgCache_Plugin.php:314 PgCache_Plugin.php:330 Root_AdminMenu.php:61
+#: Root_AdminMenu.php:62 SetupGuide_Plugin_Admin.php:1124
+#: SetupGuide_Plugin_Admin.php:1195 UsageStatistics_Page_View.php:28
+#: Util_PageUrls.php:893 Util_Ui.php:1540
+msgid "Page Cache"
+msgstr "Page Cache"
+
+#: inc/options/cdn.php:862
+msgid "You can use placeholders {wp_content_dir}, {plugins_dir}, {uploads_dir} instead of writing folder paths (wp-content, wp-content/plugins, wp-content/uploads)."
+msgstr "You can use placeholders {wp_content_dir}, {plugins_dir}, {uploads_dir} instead of writing folder paths (wp-content, wp-content/plugins, wp-content/uploads)."
+
+#: CacheGroups_Plugin_Admin_View.php:131 CacheGroups_Plugin_Admin_View.php:315
+#: inc/options/cdn.php:857 inc/options/install.php:361
+#: inc/options/minify.php:984
+msgid "Note(s):"
+msgstr "Note(s):"
+
+#: inc/options/cdn.php:750
+msgid "To upload files in blogs.dir for current blog write wp-content/&lt;currentblog&gt;/."
+msgstr "To upload files in blogs.dir for current blog write wp-content/&lt;currentblog&gt;/."
+
+#: inc/options/cdn.php:720
+msgid "Automatically import files hosted with 3rd parties of these types (if used in your posts / pages) to your media library."
+msgstr "Automatically import files hosted with 3rd parties of these types (if used in your posts / pages) to your media library."
+
+#: inc/options/cdn.php:654
+msgid "Number of files processed per upload attempt."
+msgstr "Number of files processed per upload attempt."
+
+#: inc/options/cdn.php:645
+msgid "The number of seconds to wait before upload attempt."
+msgstr "The number of seconds to wait before upload attempt."
+
+#: inc/options/cdn.php:636
+msgid "Specify the interval between upload of changed files."
+msgstr "Specify the interval between upload of changed files."
+
+#: inc/options/cdn.php:626
+msgid "Automatically attempt to find and upload changed files."
+msgstr "Automatically attempt to find and upload changed files."
+
+#: inc/options/cdn.php:583
+msgid "Automatically upload minify files"
+msgstr "Automatically upload minify files"
+
+#: inc/options/cdn.php:535
+msgid "Select user roles that will use the origin server exclusively:"
+msgstr "Select user roles that will use the origin server exclusively:"
+
+#: inc/options/cdn.php:321
+msgid "If modified files are not always detected and replaced, use this option to over-write them."
+msgstr "If modified files are not always detected and replaced, use this option to over-write them."
+
+#: inc/options/cdn.php:280
+msgid "Upload minify files"
+msgstr "Upload minify files"
+
+#: inc/options/cdn.php:242
+msgid "Upload theme files"
+msgstr "Upload theme files"
+
+#: inc/options/cdn.php:211
+msgid "Upload includes files"
+msgstr "Upload includes files"
+
+#: inc/options/cdn.php:179
+msgid "Upload attachments"
+msgstr "Upload attachments"
+
+#: inc/options/cdn.php:119
+msgid "to make existing file modifications visible to visitors with a primed cache."
+msgstr "to make existing file modifications visible to visitors with a primed cache."
+
+#: inc/options/browsercache.php:60 inc/options/cdn.php:119
+#: inc/options/minify.php:55
+msgid "Update media query string"
+msgstr "Update media query string"
+
+#: inc/options/cdn.php:104
+msgid "if the domain name of your site has ever changed."
+msgstr "if the domain name of your site has ever changed."
+
+#: inc/options/cdn.php:82
+msgid "if some objects appear to be missing."
+msgstr "if some objects appear to be missing."
+
+#: inc/options/cdn.php:82
+msgid "unsuccessful file transfers"
+msgstr "unsuccessful file transfers"
+
+#: inc/options/cdn.php:81
+msgid "importing attachments into the Media Library"
+msgstr "importing attachments into the Media Library"
+
+#. translators: 1 HTML strong tag containing CDNFSD engine name, 2 HTML span
+#. tag containing CDNFSD engine enabled/disabled.
+#. translators: 1 HTML strong element with CDN engine content, 2 HTML span
+#. element with CDN enabled/disabled status.
+#. translators: 1 HTML strong tag containing CDN Engine value, 2 HTML span tag
+#. containing CDN Engine enabled/disabled value.
+#: Cdnfsd_Page_View_Header.php:14 Cdn_Page_View_Header.php:15
+#: inc/options/cdn.php:28
+msgid "Content Delivery Network support via %1$s is currently %2$s."
+msgstr "Content Delivery Network support via %1$s is currently %2$s."
+
+#: inc/options/cdn/s3.php:194 inc/options/cdn/s3_compatible.php:152
+msgid "Test S3 upload"
+msgstr "Test S3 upload"
+
+#: inc/options/cdn/rscf.php:150
+msgid "Test Cloud Files upload"
+msgstr "Test Cloud Files upload"
+
+#: Cdn_ConfigLabels.php:31
+msgid "Location:"
+msgstr "Location:"
+
+#: Generic_ConfigLabels.php:9
+msgid "<acronym title=\"Application Programming Interface\">API</acronym> key:"
+msgstr "<acronym title=\"Application Programming Interface\">API</acronym> key:"
+
+#: inc/options/cdn/mirror.php:96
+msgid "Test Mirror"
+msgstr "Test Mirror"
+
+#: Cdnfsd_CloudFront_Page_View.php:17 Cdnfsd_LimeLight_Page_View.php:17
+#: Cdnfsd_StackPath2_Page_View.php:23 Cdnfsd_StackPath_Page_View.php:17
+#: Cdn_StackPath2_Page_View.php:45 Cdn_StackPath_Page_View.php:21
+#: Extension_CloudFlare_Page_View.php:48
+msgid "Specify account credentials:"
+msgstr "Specify account credentials:"
+
+#: Extension_Swarmify_Widget_View_NotConfigured.php:12
+msgid "Sign Up Now and Save 25%"
+msgstr "Sign Up Now and Save 25%"
+
+#: Cdn_StackPath2_Page_View.php:10 Cdn_StackPath_Page_View.php:10
+msgid "Create account:"
+msgstr "Create account:"
+
+#: inc/options/cdn/ftp.php:346
+msgid "Test FTP server"
+msgstr "Test FTP server"
+
+#: inc/options/cdn/ftp.php:172
+msgid "Specify the directory where files must be uploaded to be accessible in a web browser (the document root)."
+msgstr "Specify the directory where files must be uploaded to be accessible in a web browser (the document root)."
+
+#: inc/options/cdn/ftp.php:56
+msgid "Specify the server's address, e.g.: \"ftp.domain.com\". Try \"127.0.0.1\" if using a sub-domain on the same server as your site."
+msgstr "Specify the server's address, e.g.: \"ftp.domain.com\". Try \"127.0.0.1\" if using a sub-domain on the same server as your site."
+
+#: inc/options/cdn/ftp.php:29
+msgid "Enable this option only if there are connectivity issues, otherwise it's not recommended."
+msgstr "Enable this option only if there are connectivity issues, otherwise it's not recommended."
+
+#: inc/options/cdn/edgecast.php:110
+msgid "Test EdgeCast"
+msgstr "Test EdgeCast"
+
+#: inc/options/cdn/cotendo.php:117
+msgid "Test Cotendo"
+msgstr "Test Cotendo"
+
+#: inc/options/cdn/cotendo.php:23
+msgid "Zones to purge:"
+msgstr "Zones to purge:"
+
+#: inc/options/cdn/common/cnames.php:66
+msgid "Add CNAME"
+msgstr "Add CNAME"
+
+#: inc/options/cdn/common/cnames-readonly.php:24
+#: inc/options/cdn/common/cnames.php:45
+msgid "(reserved for JS before </body>)"
+msgstr "(reserved for JS before </body>)"
+
+#: inc/options/cdn/common/cnames-readonly.php:22
+#: inc/options/cdn/common/cnames.php:41
+msgid "(reserved for JS after <body>)"
+msgstr "(reserved for JS after <body>)"
+
+#: inc/options/cdn/common/cnames-readonly.php:20
+#: inc/options/cdn/common/cnames.php:37
+msgid "(reserved for JS in <head>)"
+msgstr "(reserved for JS in <head>)"
+
+#: inc/options/cdn/common/cnames-readonly.php:18
+#: inc/options/cdn/common/cnames.php:33
+msgid "(reserved for CSS)"
+msgstr "(reserved for CSS)"
+
+#: inc/options/cdn/cf2.php:167
+msgid "Test CloudFront distribution"
+msgstr "Test CloudFront distribution"
+
+#: inc/options/cdn/cf2.php:66
+msgid "Create distribution"
+msgstr "Create distribution"
+
+#: Cdnfsd_CloudFront_Popup_View_Distribution.php:24
+#: Cdn_RackSpaceCdn_Popup_View_Service_Create.php:63 inc/options/cdn/cf2.php:62
+msgid "Origin:"
+msgstr "Origin:"
+
+#: inc/options/cdn/cf.php:185
+msgid "Test S3 upload &amp; CloudFront distribution"
+msgstr "Test S3 upload &amp; CloudFront distribution"
+
+#: inc/options/cdn/cf.php:62 inc/options/cdn/s3.php:68
+#: inc/options/cdn/s3_compatible.php:54
+msgid "Bucket:"
+msgstr "Bucket:"
+
+#: inc/options/cdn/cf.php:48 inc/options/cdn/cf2.php:48
+#: inc/options/cdn/s3.php:54 inc/options/cdn/s3_compatible.php:20
+msgid "Access key ID:"
+msgstr "Access key ID:"
+
+#: inc/options/cdn/azure.php:120
+msgid "Test Microsoft Azure Storage upload"
+msgstr "Test Microsoft Azure Storage upload"
+
+#: inc/options/cdn/s3.php:149
+msgid "or CNAME:"
+msgstr "or CNAME:"
+
+#: inc/options/cdn/azure.php:27 inc/options/cdn/rscf.php:61
+msgid "Create container"
+msgstr "Create container"
+
+#: Cdn_RackSpaceCloudFiles_Page_View.php:35 inc/options/cdn/azure.php:23
+#: inc/options/cdn/rscf.php:56
+msgid "Container:"
+msgstr "Container:"
+
+#: inc/options/cdn/azure.php:16
+msgid "Account key:"
+msgstr "Account key:"
+
+#: inc/options/cdn/azure.php:9
+msgid "Account name:"
+msgstr "Account name:"
+
+#: inc/options/cdn/att.php:9 inc/options/cdn/edgecast.php:9
+msgid "Account #:"
+msgstr "Account #:"
+
+#: inc/options/cdn/akamai.php:136
+msgid "Test akamai"
+msgstr "Test akamai"
+
+#: inc/options/cdn.php:312
+msgid "Upload custom files"
+msgstr "Upload custom files"
+
+#: Cdn_Highwinds_Page_View.php:108 Cdn_LimeLight_Page_View.php:79
+#: Cdn_RackSpaceCdn_Page_View.php:73 Cdn_RackSpaceCdn_Page_View.php:108
+#: Cdn_RackSpaceCloudFiles_Page_View.php:126 Cdn_StackPath2_Page_View.php:288
+#: Cdn_StackPath_Page_View.php:215 inc/options/cdn/akamai.php:103
+#: inc/options/cdn/att.php:77 inc/options/cdn/azure.php:86
+#: inc/options/cdn/cf.php:133 inc/options/cdn/cf2.php:125
+#: inc/options/cdn/cotendo.php:84 inc/options/cdn/edgecast.php:77
+#: inc/options/cdn/ftp.php:310 inc/options/cdn/mirror.php:63
+#: inc/options/cdn/rscf.php:120 inc/options/cdn/s3.php:139
+#: inc/options/cdn/s3_compatible.php:115
+msgid "Replace site's hostname with:"
+msgstr "Replace site's hostname with:"
+
+#: Cdn_Highwinds_Page_View.php:80 Cdn_LimeLight_Page_View.php:51
+#: Cdn_RackSpaceCloudFiles_Page_View.php:98 inc/options/cdn/akamai.php:75
+#: inc/options/cdn/att.php:49 inc/options/cdn/azure.php:58
+#: inc/options/cdn/cf.php:105 inc/options/cdn/cf2.php:97
+#: inc/options/cdn/cotendo.php:56 inc/options/cdn/edgecast.php:49
+#: inc/options/cdn/ftp.php:202 inc/options/cdn/mirror.php:35
+#: inc/options/cdn/rscf.php:92 inc/options/cdn/s3.php:111
+#: inc/options/cdn/s3_compatible.php:87
+msgid "Disabled (always use HTTP)"
+msgstr "Disabled (always use HTTP)"
+
+#: Cdn_Highwinds_Page_View.php:79 Cdn_LimeLight_Page_View.php:50
+#: Cdn_RackSpaceCloudFiles_Page_View.php:97 inc/options/cdn/akamai.php:74
+#: inc/options/cdn/att.php:48 inc/options/cdn/azure.php:57
+#: inc/options/cdn/cf.php:104 inc/options/cdn/cf2.php:96
+#: inc/options/cdn/cotendo.php:55 inc/options/cdn/edgecast.php:48
+#: inc/options/cdn/ftp.php:201 inc/options/cdn/mirror.php:34
+#: inc/options/cdn/rscf.php:91 inc/options/cdn/s3.php:110
+#: inc/options/cdn/s3_compatible.php:86
+msgid "Enabled (always use SSL)"
+msgstr "Enabled (always use SSL)"
+
+#. translators: 3 closing HTML acronym tag, 4 closing HTML a tag.
+#: inc/options/cdn.php:560
+msgid "Always ignore the specified pages / directories. Supports regular expression (See %1$s%2$sFAQ%3$s%4$s)"
+msgstr "Always ignore the specified pages / directories. Supports regular expression (See %1$s%2$sFAQ%3$s%4$s)"
+
+#. translators: 3 closing HTML acronym tag, 4 closing HTML a tag.
+#: inc/options/dbcache.php:85
+msgid "Always ignore the specified pages / directories. Supports regular expressions (See %1$s%2$sFAQ%3$s%4$s)."
+msgstr "Always ignore the specified pages / directories. Supports regular expressions (See %1$s%2$sFAQ%3$s%4$s)."
+
+#. translators: 1 Database cache engine name, 2 HTML span indicating DB cache
+#. enabled/disabled.
+#: inc/options/dbcache.php:15
+msgid "Database caching via %1$s is currently %2$s."
+msgstr "Database caching via %1$s is currently %2$s."
+
+#. translators: 1 opening HTML strong tag, 2 closing HTML strong tag.
+#: inc/options/enterprise/dbcluster-config.php:24
+msgid "Note: Changes will have immediate effect on your database configuration. If the application stops working creating the settings file, edit or remove this configuration file manually at %1$s/wp-content/db-cluster-config.php%2$s."
+msgstr "Note: Changes will have immediate effect on your database configuration. If the application stops working creating the settings file, edit or remove this configuration file manually at %1$s/wp-content/db-cluster-config.php%2$s."
+
+#. translators: 1 HTML a tag to W3TC licencing page.
+#: inc/options/edd/buy.php:42
+msgid "Please enter the license key you received after successful checkout %1$s."
+msgstr "Please enter the licence key you received after successful checkout %1$s."
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: inc/options/general.php:559
+msgid "Specify the Amazon %1$sSNS%2$s service endpoint hostname. If empty, then default \"sns.us-east-1.amazonaws.com\" will be used."
+msgstr "Specify the Amazon %1$sSNS%2$s service endpoint hostname. If empty, then default \"sns.us-east-1.amazonaws.com\" will be used."
+
+#. translators: 1 HTML input submit to preview changes.
+#: inc/options/general.php:68
+msgid "To preview any changed settings (without deploying): %1$s"
+msgstr "To preview any changed settings (without deploying): %1$s"
+
+#: Extension_FragmentCache_Plugin_Admin.php:95
+#: Extension_ImageService_Plugin_Admin.php:132
+#: Extension_ImageService_Plugin_Admin.php:559
+#: Extension_ImageService_Plugin_Admin.php:735
+#: Extension_NewRelic_Plugin_Admin.php:120 FeatureShowcase_Plugin_Admin.php:209
+#: FeatureShowcase_Plugin_Admin.php:256 FeatureShowcase_Plugin_Admin.php:268
+#: FeatureShowcase_Plugin_Admin.php:280 FeatureShowcase_Plugin_Admin.php:292
+#: FeatureShowcase_Plugin_Admin.php:304 FeatureShowcase_Plugin_Admin.php:316
+#: FeatureShowcase_Plugin_Admin.php:328 FeatureShowcase_Plugin_Admin.php:340
+#: FeatureShowcase_Plugin_Admin.php:377 FeatureShowcase_Plugin_Admin.php:389
+#: FeatureShowcase_Plugin_Admin.php:401 FeatureShowcase_Plugin_Admin.php:413
+#: FeatureShowcase_Plugin_Admin.php:425 FeatureShowcase_Plugin_Admin.php:437
+#: FeatureShowcase_Plugin_Admin.php:449 FeatureShowcase_Plugin_Admin.php:461
+#: FeatureShowcase_Plugin_Admin.php:473 FeatureShowcase_Plugin_Admin.php:485
+#: Generic_Plugin_Admin.php:775 inc/options/common/top_nav_bar.php:136
+#: inc/options/common/top_nav_bar.php:137 inc/options/extensions/list.php:102
+msgid "Settings"
+msgstr "Settings"
+
+#: Extension_CloudFlare_Plugin.php:163
+msgid "Analytics"
+msgstr "Analytics"
+
+#: inc/lightbox/self_test.php:503 inc/options/minify.php:124
+msgid "Disabled"
+msgstr "Disabled"
+
+#: inc/lightbox/self_test.php:501 SetupGuide_Plugin_Admin.php:973
+msgid "Enabled"
+msgstr "Enabled"
+
+#: inc/lightbox/self_test.php:283 inc/lightbox/self_test.php:510
+msgid "On"
+msgstr "On"
+
+#: inc/lightbox/self_test.php:519
+msgid "Close"
+msgstr "Close"
+
+#: Util_Ui.php:1380
+msgid "Preview"
+msgstr "Preview"
+
+#: CdnEngine_Mirror_Akamai.php:105 CdnEngine_Mirror_Cotendo.php:106
+#: CdnEngine_Mirror_Edgecast.php:59 inc/lightbox/self_test.php:440
+#: inc/lightbox/self_test.php:460 inc/lightbox/self_test.php:474
+msgid "OK"
+msgstr "OK"
+
+#: Extension_CloudFlare_Page_View.php:80 inc/options/browsercache.php:80
+#: inc/options/cdn.php:125 inc/options/dbcache.php:34
+#: inc/options/general.php:22 inc/options/minify.php:73
+#: inc/options/pgcache.php:35 Util_Ui.php:1536 Util_Ui.php:1634
+#: Util_Ui.php:1648 Util_Ui.php:1721 Util_Ui.php:1738 Util_Ui.php:1804
+#: Util_Ui.php:1891
+msgid "General"
+msgstr "General"
+
+#: inc/lightbox/minify_recommendations.php:134
+msgid "Notes"
+msgstr "Notes"
+
+#: Util_Widget.php:160
+msgid "Cancel"
+msgstr "Cancel"
+
+#: BrowserCache_Page_View_QuickReference.php:12 inc/lightbox/self_test.php:11
+#: PageSpeed_Page_View_FromAPI.php:66
+msgid "Legend"
+msgstr "Legend"
+
+#: Extension_CloudFlare_Page_View.php:347
+#: Extension_CloudFlare_Page_View.php:515
+#: Extension_CloudFlare_Page_View.php:535
+#: Extension_CloudFlare_Page_View.php:725 inc/lightbox/self_test.php:276
+#: inc/lightbox/self_test.php:285 inc/lightbox/self_test.php:483
+#: inc/lightbox/self_test.php:512
+msgid "Off"
+msgstr "Off"
+
+#: Util_Widget.php:193
+msgid "Submit"
+msgstr "Submit"
+
+#: inc/lightbox/self_test.php:470
+msgid "Error:"
+msgstr "Error:"
+
+#: inc/options/cdn/akamai.php:16 inc/options/cdn/cotendo.php:16
+msgid "Password:"
+msgstr "Password:"
+
+#: Extension_FragmentCache_Page_View.php:75
+#: Extension_FragmentCache_Page_View.php:82 inc/options/browsercache.php:398
+#: inc/options/browsercache.php:544 inc/options/browsercache.php:625
+#: inc/options/cdn.php:635 inc/options/cdn.php:644 inc/options/dbcache.php:62
+#: inc/options/dbcache.php:70 inc/options/minify.php:874
+#: inc/options/minify.php:889 inc/options/objectcache.php:50
+#: inc/options/objectcache.php:58 inc/options/pgcache.php:202
+#: inc/options/pgcache.php:537 inc/options/pgcache.php:547
+#: inc/options/pgcache.php:554
+msgid "seconds"
+msgstr "seconds"
+
+#: Cdnfsd_GeneralPage_View.php:78 Cdn_GeneralPage_View.php:86
+#: extension-example/Extension_Example_Page_View.php:27
+#: Extension_Genesis_Page_View.php:29 Extension_Genesis_Page_View.php:38
+#: Extension_Genesis_Page_View.php:47 Extension_Genesis_Page_View.php:56
+#: Extension_Genesis_Page_View.php:72 Extension_Genesis_Page_View.php:81
+#: Extension_Genesis_Page_View.php:98 Extension_Genesis_Page_View.php:107
+#: Extension_Genesis_Page_View.php:124 Extension_Genesis_Page_View.php:133
+#: Extension_Genesis_Page_View.php:150 Extension_Genesis_Page_View.php:175
+#: Extension_Genesis_Page_View.php:184 Extension_Genesis_Page_View.php:193
+#: inc/options/general.php:87 inc/options/general.php:119
+#: inc/options/general.php:207 inc/options/general.php:341
+#: inc/options/general.php:381 inc/options/general.php:440
+#: inc/options/minify.php:262 inc/options/minify.php:541
+#: inc/options/minify.php:620 inc/options/minify.php:815
+#: inc/options/pgcache.php:136 inc/options/pgcache.php:462
+#: inc/options/pgcache.php:470 Minify_ConfigLabels.php:17
+#: Minify_ConfigLabels.php:22 Minify_ConfigLabels.php:29
+#: PgCache_ConfigLabels.php:40 SystemOpCache_GeneralPage_View.php:55
+#: UsageStatistics_GeneralPage_View.php:41
+msgid "Enable"
+msgstr "Enable"
+
+#: inc/lightbox/self_test.php:138 inc/lightbox/self_test.php:148
+#: inc/lightbox/self_test.php:158 inc/lightbox/self_test.php:168
+#: inc/lightbox/self_test.php:195 inc/lightbox/self_test.php:204
+#: inc/lightbox/self_test.php:213 inc/lightbox/self_test.php:222
+#: inc/lightbox/self_test.php:301 inc/lightbox/self_test.php:393
+msgid "Installed"
+msgstr "Installed"
+
+#: Extension_Swarmify_Widget_View_NotConfigured.php:16 Util_Widget.php:144
+#: Util_Widget.php:169
+msgid "Configure"
+msgstr "Configure"
+
+#: Cdnfsd_Page_View_Header.php:19 Cdn_Page_View_Header.php:20
+#: Extension_CloudFlare_Page_View.php:14
+#: Extension_FragmentCache_Page_View.php:24 Extension_Genesis_Page_View.php:14
+#: Extension_NewRelic_Page_View_Apm.php:15 Extension_Swarmify_Page_View.php:14
+#: inc/options/browsercache.php:27 inc/options/cdn.php:33
+#: inc/options/dashboard.php:27 inc/options/dbcache.php:20
+#: inc/options/minify.php:31 inc/options/objectcache.php:20
+#: inc/options/pgcache.php:20
+msgid "disabled"
+msgstr "disabled"
+
+#: Cdnfsd_Page_View_Header.php:19 Cdn_Page_View_Header.php:20
+#: extension-example/Extension_Example_Page_View.php:12
+#: Extension_CloudFlare_Page_View.php:12
+#: Extension_FragmentCache_Page_View.php:22 Extension_Genesis_Page_View.php:12
+#: Extension_NewRelic_Page_View_Apm.php:13 Extension_Swarmify_Page_View.php:12
+#: inc/options/browsercache.php:27 inc/options/cdn.php:33
+#: inc/options/dashboard.php:27 inc/options/dbcache.php:20
+#: inc/options/minify.php:31 inc/options/objectcache.php:20
+#: inc/options/pgcache.php:20
+msgid "enabled"
+msgstr "enabled"
+
+#: Cdn_LimeLight_Popup_View_Intro.php:26 Cdn_RackSpaceCdn_Page_View.php:24
+#: Cdn_RackSpaceCdn_Popup_View_Intro.php:19
+#: Cdn_RackSpaceCloudFiles_Page_View.php:23
+#: Cdn_RackSpaceCloudFiles_Popup_View_Intro.php:20 inc/options/cdn/akamai.php:9
+#: inc/options/cdn/cotendo.php:9 inc/options/cdn/rscf.php:9
+msgid "Username:"
+msgstr "Username:"
+
+#: Cdn_Highwinds_Page_View.php:78 Cdn_LimeLight_Page_View.php:49
+#: Cdn_RackSpaceCloudFiles_Page_View.php:96 Cdn_StackPath2_Page_View.php:219
+#: Cdn_StackPath_Page_View.php:146 inc/options/cdn/akamai.php:73
+#: inc/options/cdn/att.php:47 inc/options/cdn/azure.php:56
+#: inc/options/cdn/cf.php:103 inc/options/cdn/cf2.php:95
+#: inc/options/cdn/cotendo.php:54 inc/options/cdn/edgecast.php:47
+#: inc/options/cdn/ftp.php:200 inc/options/cdn/mirror.php:33
+#: inc/options/cdn/rscf.php:90 inc/options/cdn/s3.php:109
+#: inc/options/cdn/s3_compatible.php:85
+msgid "Auto (determine connection type automatically)"
+msgstr "Auto (determine connection type automatically)"
+
+#: inc/options/cdn/akamai.php:40
+msgid "Purge action:"
+msgstr "Purge action:"
+
+#: inc/options/cdn/akamai.php:31
+msgid "Domain to purge:"
+msgstr "Domain to purge:"
+
+#: inc/options/cdn/akamai.php:27
+msgid "Specify email addresses for completed removal notifications. One email per line."
+msgstr "Specify email addresses for completed removal notifications. One email per line."
+
+#: inc/options/cdn/akamai.php:23
+msgid "Email notification:"
+msgstr "Email notification:"
+
+#: inc/options/browsercache.php:646
+msgid "cache (\"public\")"
+msgstr "cache (\"public\")"
+
+#: inc/options/browsercache.php:604
+msgid "Media &amp; Other Files"
+msgstr "Media &amp; Other Files"
+
+#: inc/options/browsercache.php:569 inc/options/browsercache.php:651
+msgid "no-cache (\"max-age=0, private, no-store, no-cache, must-revalidate\")"
+msgstr "no-cache (\"max-age=0, private, no-store, no-cache, must-revalidate\")"
+
+#: inc/options/browsercache.php:421 inc/options/browsercache.php:566
+#: inc/options/browsercache.php:648
+msgid "cache with validation (\"public, must-revalidate, proxy-revalidate\")"
+msgstr "cache with validation (\"public, must-revalidate, proxy-revalidate\")"
+
+#: inc/options/browsercache.php:521
+msgid "Specify browser cache policy for posts, pages, feeds and text-based files."
+msgstr "Specify browser cache policy for posts, pages, feeds and text-based files."
+
+#: inc/options/browsercache.php:423 inc/options/browsercache.php:568
+#: inc/options/browsercache.php:650
+msgid "cache without proxy (\"private, must-revalidate\")"
+msgstr "cache without proxy (\"private, must-revalidate\")"
+
+#: inc/options/browsercache.php:422 inc/options/browsercache.php:567
+#: inc/options/browsercache.php:649
+msgid "cache with max-age and validation (\"max-age=EXPIRES_SECONDS, public, must-revalidate, proxy-revalidate\")"
+msgstr "cache with max-age and validation (\"max-age=EXPIRES_SECONDS, public, must-revalidate, proxy-revalidate\")"
+
+#: inc/options/browsercache.php:420 inc/options/browsercache.php:565
+#: inc/options/browsercache.php:647
+msgid "cache with max-age (\"public, max-age=EXPIRES_SECONDS\")"
+msgstr "cache with max-age (\"public, max-age=EXPIRES_SECONDS\")"
+
+#: inc/options/browsercache.php:376
+msgid "Specify browser cache policy for Cascading Style Sheets and JavaScript files."
+msgstr "Specify browser cache policy for Cascading Style Sheets and JavaScript files."
+
+#: inc/options/browsercache.php:254
+msgid "Reduce server load by allowing the web server to handle 404 (not found) errors for static files (images etc)."
+msgstr "Reduce server load by allowing the web server to handle 404 (not found) errors for static files (images etc)."
+
+#: inc/options/browsercache.php:248 inc/options/browsercache.php:489
+#: inc/options/browsercache.php:716
+msgid "Removes Set-Cookie header for responses."
+msgstr "Removes Set-Cookie header for responses."
+
+#: inc/options/browsercache.php:247
+msgid "Don't set cookies for static files"
+msgstr "Don't set cookies for static files"
+
+#: inc/options/browsercache.php:185 inc/options/browsercache.php:458
+#: inc/options/browsercache.php:685
+msgid "Whenever settings are changed, a new query string will be generated and appended to objects allowing the new policy to be applied."
+msgstr "Whenever settings are changed, a new query string will be generated and appended to objects allowing the new policy to be applied."
+
+#: BrowserCache_ConfigLabels.php:20 BrowserCache_ConfigLabels.php:40
+#: inc/options/browsercache.php:184
+msgid "Prevent caching of objects after settings change"
+msgstr "Prevent caching of objects after settings change"
+
+#: inc/options/browsercache.php:149 inc/options/browsercache.php:177
+#: inc/options/browsercache.php:446 inc/options/browsercache.php:452
+#: inc/options/browsercache.php:591 inc/options/browsercache.php:597
+#: inc/options/browsercache.php:673 inc/options/browsercache.php:679
+msgid "Reduce the download time for text-based files."
+msgstr "Reduce the download time for text-based files."
+
+#: BrowserCache_ConfigLabels.php:18 BrowserCache_ConfigLabels.php:29
+msgid "Enable <acronym title=\"Hypertext Transfer Protocol\">HTTP</acronym> (gzip) compression"
+msgstr "Enable <acronym title=\"Hypertext Transfer Protocol\">HTTP</acronym> (gzip) compression"
+
+#: inc/options/browsercache.php:122 inc/options/browsercache.php:440
+#: inc/options/browsercache.php:585 inc/options/browsercache.php:667
+msgid "Set this header to assist in identifying optimized files."
+msgstr "Set this header to assist in identifying optimised files."
+
+#: BrowserCache_ConfigLabels.php:17 BrowserCache_ConfigLabels.php:28
+#: BrowserCache_ConfigLabels.php:37 inc/options/browsercache.php:121
+msgid "Set W3 Total Cache header"
+msgstr "Set W3 Total Cache header"
+
+#: BrowserCache_ConfigLabels.php:16
+msgid "Set entity tag (eTag)"
+msgstr "Set entity tag (eTag)"
+
+#: inc/options/browsercache.php:107 inc/options/browsercache.php:404
+#: inc/options/browsercache.php:550 inc/options/browsercache.php:631
+msgid "Set pragma and cache-control headers to encourage browser caching of files."
+msgstr "Set pragma and cache-control headers to encourage browser caching of files."
+
+#: BrowserCache_ConfigLabels.php:14 BrowserCache_ConfigLabels.php:25
+#: BrowserCache_ConfigLabels.php:34 inc/options/browsercache.php:106
+msgid "Set cache control header"
+msgstr "Set cache control header"
+
+#: inc/options/browsercache.php:100 inc/options/browsercache.php:388
+#: inc/options/browsercache.php:533 inc/options/browsercache.php:615
+msgid "Set the expires header to encourage browser caching of files."
+msgstr "Set the expires header to encourage browser caching of files."
+
+#: BrowserCache_ConfigLabels.php:12 BrowserCache_ConfigLabels.php:23
+#: BrowserCache_ConfigLabels.php:32 inc/options/browsercache.php:99
+msgid "Set expires header"
+msgstr "Set expires header"
+
+#: inc/options/browsercache.php:91 inc/options/browsercache.php:382
+#: inc/options/browsercache.php:527 inc/options/browsercache.php:609
+msgid "Set the Last-Modified header to enable 304 Not Modified response."
+msgstr "Set the Last-Modified header to enable 304 Not Modified response."
+
+#: BrowserCache_ConfigLabels.php:11 BrowserCache_ConfigLabels.php:22
+#: BrowserCache_ConfigLabels.php:31 inc/options/browsercache.php:89
+msgid "Set Last-Modified header"
+msgstr "Set Last-Modified header"
+
+#: inc/options/browsercache.php:81
+msgid "Specify global browser cache policy."
+msgstr "Specify global browser cache policy."
+
+#: inc/options/about.php:260
+msgid "Please reach out to all of these people and support their projects if you're so inclined."
+msgstr "Please reach out to all of these people and support their projects if you're so inclined."
+
+#: inc/options/about.php:243
+msgid "It's quite difficult to recall all of the innovators that have shared their thoughts, code and experiences in the blogosphere over the years, but here are some names to get you started:"
+msgstr "It's quite difficult to recall all of the innovators that have shared their thoughts, code and experiences in the blogosphere over the years, but here are some names to get you started:"
+
+#: inc/options/about.php:241
+msgid "Who do I thank for all of this?"
+msgstr "Who do I thank for all of this?"
+
+#: inc/options/about.php:239
+msgid "Your users have less data to download, you can now serve more visitors at once without upgrading your hardware and you don't have to change how you do anything; just set it and forget it."
+msgstr "Your users have less data to download, you can now serve more visitors at once without upgrading your hardware and you don't have to change how you do anything; just set it and forget it."
+
+#: inc/options/about.php:216
+msgid "JavaScript embedding group and location management"
+msgstr "JavaScript embedding group and location management"
+
+#: inc/options/about.php:175
+msgid "Minification of posts / pages and feeds"
+msgstr "Minification of posts / pages and feeds"
+
+#: inc/options/about.php:154
+msgid "Caching of feeds (site, categories, tags, comments, search results) in memory or on disk"
+msgstr "Caching of feeds (site, categories, tags, comments, search results) in memory or on disk"
+
+#: inc/options/about.php:153
+msgid "Caching of objects in memory or on disk"
+msgstr "Caching of objects in memory or on disk"
+
+#: inc/options/about.php:152
+msgid "Caching of database objects in memory or on disk"
+msgstr "Caching of database objects in memory or on disk"
+
+#: inc/options/about.php:89
+msgid "Increased web server concurrency and increased scale (easily sustain high traffic spikes)"
+msgstr "Increased web server concurrency and increased scale (easily sustain high traffic spikes)"
+
+#: inc/options/about.php:39
+msgid "Optimized progressive render (pages start rendering immediately)"
+msgstr "Optimised progressive render (pages start rendering immediately)"
+
+#: inc/options/about.php:38
+msgid "Increased visitor time on site"
+msgstr "Increased visitor time on site"
+
+#: inc/options/about.php:37
+msgid "Improved Google search engine ranking"
+msgstr "Improved Google search engine ranking"
+
+#: inc/lightbox/support_us.php:115
+msgid "Yes, sign me up."
+msgstr "Yes, sign me up."
+
+#: inc/lightbox/support_us.php:52
+msgid "Login & Rate Us"
+msgstr "Log In & Rate Us"
+
+#: inc/lightbox/support_us.php:76
+msgid "Tell Your Friends"
+msgstr "Tell Your Friends"
+
+#: inc/lightbox/self_test.php:508
+msgid "Network mode:"
+msgstr "Network mode:"
+
+#: inc/lightbox/self_test.php:499
+msgid "URL rewrite:"
+msgstr "URL rewrite:"
+
+#: inc/lightbox/self_test.php:494
+msgid "Not defined"
+msgstr "Not defined"
+
+#: inc/lightbox/self_test.php:488
+msgid "WP_CACHE define:"
+msgstr "WP_CACHE define:"
+
+#: inc/lightbox/self_test.php:479
+msgid "Fancy permalinks:"
+msgstr "Fancy permalinks:"
+
+#: inc/lightbox/self_test.php:446
+msgid "Write-able"
+msgstr "Writable"
+
+#: inc/lightbox/self_test.php:442 inc/lightbox/self_test.php:448
+#: inc/lightbox/self_test.php:462 inc/lightbox/self_test.php:472
+msgid "Not write-able"
+msgstr "Not writable"
+
+#: inc/lightbox/self_test.php:421
+msgid "WordPress Resources"
+msgstr "WordPress Resources"
+
+#: inc/lightbox/self_test.php:409
+msgid "Additional Server Modules"
+msgstr "Additional Server Modules"
+
+#: inc/lightbox/self_test.php:400
+msgid "(required for disk enhanced Page Cache and Browser Cache)"
+msgstr "(required for disk enhanced Page Cache and Browser Cache)"
+
+#: inc/lightbox/self_test.php:170 inc/lightbox/self_test.php:303
+#: inc/lightbox/self_test.php:398
+msgid "Not detected"
+msgstr "Not detected"
+
+#: inc/lightbox/self_test.php:197 inc/lightbox/self_test.php:206
+#: inc/lightbox/self_test.php:215 inc/lightbox/self_test.php:294
+msgid "Not available"
+msgstr "Not available"
+
+#: inc/lightbox/self_test.php:292
+msgid "Available"
+msgstr "Available"
+
+#: inc/lightbox/self_test.php:290
+msgid "set_time_limit:"
+msgstr "set_time_limit:"
+
+#: inc/lightbox/self_test.php:281
+msgid "zlib output compression:"
+msgstr "zlib output compression:"
+
+#: inc/lightbox/self_test.php:274
+msgid "On:"
+msgstr "On:"
+
+#: inc/lightbox/self_test.php:272
+msgid "Open basedir:"
+msgstr "Open basedir:"
+
+#: inc/lightbox/self_test.php:265
+msgid "Installed (mhash)"
+msgstr "Installed (mhash)"
+
+#: inc/lightbox/self_test.php:263
+msgid "Installed (hash)"
+msgstr "Installed (hash)"
+
+#: inc/lightbox/self_test.php:261
+msgid "Hash function:"
+msgstr "Hash function:"
+
+#: inc/lightbox/self_test.php:234
+msgid "Installed (mime_content_type)"
+msgstr "Installed (mime_content_type)"
+
+#: inc/lightbox/self_test.php:232
+msgid "Installed (Fileinfo)"
+msgstr "Installed (Fileinfo)"
+
+#: inc/lightbox/self_test.php:230
+msgid "Mime type detection:"
+msgstr "Mime type detection:"
+
+#: inc/lightbox/self_test.php:220
+msgid "HTML Tidy extension:"
+msgstr "HTML Tidy extension:"
+
+#: inc/lightbox/self_test.php:202
+msgid "Memcache extension:"
+msgstr "Memcache extension:"
+
+#: inc/lightbox/self_test.php:186
+msgid "PHP6"
+msgstr "PHP6"
+
+#: inc/lightbox/self_test.php:184
+msgid "Installed (XCache)"
+msgstr "Installed (XCache)"
+
+#: inc/lightbox/self_test.php:182
+msgid "Installed (eAccelerator)"
+msgstr "Installed (eAccelerator)"
+
+#: inc/lightbox/self_test.php:180
+msgid "Installed (APC)"
+msgstr "Installed (APC)"
+
+#: inc/lightbox/self_test.php:152
+msgid "(required for Amazon S3, Amazon CloudFront, Rackspace CloudFiles support)"
+msgstr "(required for Amazon S3, Amazon CloudFront, Rackspace CloudFiles support)"
+
+#: inc/lightbox/self_test.php:146
+msgid "cURL extension:"
+msgstr "cURL extension:"
+
+#: inc/lightbox/self_test.php:142
+msgid "(required for Rackspace Cloud Files support)"
+msgstr "(required for Rackspace Cloud Files support)"
+
+#: inc/lightbox/self_test.php:140 inc/lightbox/self_test.php:150
+#: inc/lightbox/self_test.php:160 inc/lightbox/self_test.php:188
+#: inc/lightbox/self_test.php:224 inc/lightbox/self_test.php:236
+#: inc/lightbox/self_test.php:267 inc/lightbox/self_test.php:395
+msgid "Not installed"
+msgstr "Not installed"
+
+#: inc/lightbox/self_test.php:136
+msgid "Multibyte String support:"
+msgstr "Multibyte String support:"
+
+#: inc/lightbox/self_test.php:82
+msgid "PHP Version:"
+msgstr "PHP Version:"
+
+#: inc/lightbox/self_test.php:78
+msgid "Plugin Version:"
+msgstr "Plugin Version:"
+
+#: inc/lightbox/self_test.php:74
+msgid "Server Modules &amp; Resources:"
+msgstr "Server Modules &amp; Resources:"
+
+#: inc/options/common/top_nav_bar.php:92
+msgid "Compatibility Test"
+msgstr "Compatibility Test"
+
+#: inc/lightbox/minify_recommendations.php:137
+msgid "Typically minification of advertiser code, analytics/statistics or any other types of tracking code is not recommended."
+msgstr "Typically minification of advertiser code, analytics/statistics or any other types of tracking code is not recommended."
+
+#: inc/lightbox/minify_recommendations.php:130
+msgid "Apply &amp; close"
+msgstr "Apply &amp; close"
+
+#: inc/lightbox/minify_recommendations.php:78
+msgid "Cascading Style Sheets:"
+msgstr "Cascading Style Sheets:"
+
+#: inc/lightbox/minify_recommendations.php:75
+msgid "No files found."
+msgstr "No files found."
+
+#: inc/lightbox/minify_recommendations.php:72
+#: inc/lightbox/minify_recommendations.php:121
+msgid "Check / Uncheck All"
+msgstr "Check / Uncheck All"
+
+#: inc/lightbox/minify_recommendations.php:63
+#: inc/lightbox/minify_recommendations.php:112 inc/options/minify.php:497
+#: inc/options/minify.php:771
+msgid "Verify URI"
+msgstr "Verify URI"
+
+#: inc/lightbox/minify_recommendations.php:59 inc/options/minify.php:492
+msgid "Embed before &lt;/body&gt;"
+msgstr "Embed before &lt;/body&gt;"
+
+#: inc/lightbox/minify_recommendations.php:58 inc/options/minify.php:491
+msgid "Embed after &lt;body&gt;"
+msgstr "Embed after &lt;body&gt;"
+
+#: inc/lightbox/minify_recommendations.php:57 inc/options/minify.php:490
+msgid "Embed in &lt;head&gt;"
+msgstr "Embed in &lt;head&gt;"
+
+#: inc/lightbox/minify_recommendations.php:37 inc/options/minify.php:469
+msgid "Embed Location:"
+msgstr "Embed Location:"
+
+#: inc/lightbox/minify_recommendations.php:36
+#: inc/lightbox/minify_recommendations.php:94 inc/options/minify.php:468
+#: inc/options/minify.php:750
+msgid "Template:"
+msgstr "Template:"
+
+#: inc/lightbox/minify_recommendations.php:35
+#: inc/lightbox/minify_recommendations.php:93 inc/options/minify.php:467
+#: inc/options/minify.php:749
+msgid "File URI:"
+msgstr "File URI:"
+
+#: inc/lightbox/minify_recommendations.php:33
+#: inc/lightbox/minify_recommendations.php:91
+msgid "Add:"
+msgstr "Add:"
+
+#: inc/lightbox/minify_recommendations.php:17
+msgid "theme. Select \"add\" the files you wish to minify, then click \"apply &amp; close\" to save the settings."
+msgstr "theme. Select \"add\" the files you wish to minify, then click \"apply &amp; close\" to save the settings."
+
+#: inc/lightbox/minify_recommendations.php:11
+msgid "To get started with minify, we've identified the following external CSS and JS objects in the"
+msgstr "To get started with minify, we've identified the following external CSS and JS objects in the"
+
+#: Cdnfsd_StackPath_Popup_View_Zone.php:19
+#: Cdn_RackSpaceCdn_Popup_View_Service_Actualize.php:37
+#: Cdn_RackSpaceCdn_Popup_View_Service_Create.php:35
+msgid "Name:"
+msgstr "Name:"
+
+#: Util_Widget.php:54
+msgid "View all"
+msgstr "View all"
+
+#: Util_Theme.php:80
+msgid "All Templates"
+msgstr "All Templates"
+
+#: Extension_Genesis_Plugin_Admin.php:130
+#: Extension_WordPressSeo_Plugin_Admin.php:95
+#: Extension_Wpml_Plugin_Admin.php:126 Util_Ui.php:103
+msgid "Hide this message"
+msgstr "Hide this message"
+
+#: Generic_Plugin_Admin.php:844
+msgid "Take a minute to update, here's why:"
+msgstr "Take a minute to update, here's why:"
+
+#: Util_Activation.php:249
+msgid "Update via FTP"
+msgstr "Update via FTP"
+
+#: Generic_Plugin_Admin.php:1091 Util_Activation.php:244
+msgid "View required changes"
+msgstr "View required changes"
+
+#: Util_Activation.php:185
+msgid "Execute next commands in a shell:"
+msgstr "Execute next commands in a shell:"
+
+#: Util_Activation.php:172
+msgid "Technical info"
+msgstr "Technical info"
+
+#: Util_WpFile.php:270
+msgid "FTP credentials don't allow to delete "
+msgstr "FTP credentials don't allow to delete "
+
+#: Util_WpFile.php:236
+msgid "FTP credentials don't allow to chmod "
+msgstr "FTP credentials don't allow to chmod "
+
+#: Util_WpFile.php:206
+msgid "FTP credentials don't allow to delete folder "
+msgstr "FTP credentials don't allow to delete folder "
+
+#: Util_Activation.php:80
+msgid "<strong>%s</strong> could not be created, please run following command:<br />%s"
+msgstr "<strong>%s</strong> could not be created, please run following command:<br />%s"
+
+#: Util_Activation.php:72
+msgid "<li><strong style=\"color: #f00;\">chmod 777 %s</strong></li>"
+msgstr "<li><strong style=\"color: #f00;\">chmod 777 %s</strong></li>"
+
+#: Util_Activation.php:57
+msgid "%s<br />then %s."
+msgstr "%s<br />then %s."
+
+#: Extension_Genesis_Page_View.php:261
+msgid "Select user roles that should not use the fragment cache."
+msgstr "Select user roles that should not use the fragment cache."
+
+#: Extension_Genesis_Page_View.php:243
+msgid "Select roles:"
+msgstr "Select roles:"
+
+#: Extension_Genesis_Page_View.php:238
+msgid "Select hooks from the list that should not be cached if user belongs to any of the roles selected below."
+msgstr "Select hooks from the list that should not be cached if user belongs to any of the roles selected below."
+
+#: Extension_Genesis_Page_View.php:194
+msgid "Disable fragment cache:"
+msgstr "Disable fragment cache:"
+
+#: Extension_Genesis_Page_View.php:186
+msgid "Caches wp_footer loop."
+msgstr "Caches wp_footer loop."
+
+#: Extension_Genesis_Page_View.php:177
+msgid "Caches footer loop."
+msgstr "Caches footer loop."
+
+#: Extension_Genesis_Page_View.php:185
+msgid "Cache footer:"
+msgstr "Cache footer:"
+
+#: Extension_Genesis_Page_View.php:160
+msgid "List of pages that should not have sidebar cached. Specify one page / post per line. This area supports regular expressions."
+msgstr "List of pages that should not have sidebar cached. Specify one page / post per line. This area supports regular expressions."
+
+#: Extension_Genesis_Page_View.php:159
+msgid "Exclude pages:"
+msgstr "Exclude pages:"
+
+#: Extension_Genesis_Page_View.php:152
+msgid "Caches sidebar loop, the widget area."
+msgstr "Caches sidebar loop, the widget area."
+
+#: Extension_Genesis_Page_View.php:151
+msgid "Cache sidebar:"
+msgstr "Cache sidebar:"
+
+#: Extension_Genesis_Page_View.php:135
+msgid "Caches the ping loop, pagination is supported. One per line."
+msgstr "Caches the ping loop, pagination is supported. One per line."
+
+#: Extension_Genesis_Page_View.php:134
+msgid "Cache pings:"
+msgstr "Cache pings:"
+
+#: Extension_Genesis_Page_View.php:126
+msgid "Caches the comments loop, pagination is supported."
+msgstr "Caches the comments loop, pagination is supported."
+
+#: Extension_Genesis_Page_View.php:125
+msgid "Cache comments:"
+msgstr "Cache comments:"
+
+#: Extension_Genesis_Page_View.php:117
+msgid "List of pages / posts that should not have the single post / post loop cached. Specify one page / post per line. This area supports regular expressions."
+msgstr "List of pages / posts that should not have the single post / post loop cached. Specify one page / post per line. This area supports regular expressions."
+
+#: Extension_Genesis_Page_View.php:116
+msgid "Excluded single pages / posts:"
+msgstr "Excluded single pages / posts:"
+
+#: Extension_Genesis_Page_View.php:109
+msgid "Caches the single post / page loop, pagination is supported."
+msgstr "Caches the single post / page loop, pagination is supported."
+
+#: Extension_Genesis_Page_View.php:108
+msgid "Cache single post / page:"
+msgstr "Cache single post / page:"
+
+#: Extension_Genesis_Page_View.php:100
+msgid "Flushes the posts loop cache on post updates. See setting above for affected loops."
+msgstr "Flushes the posts loop cache on post updates. See setting above for affected loops."
+
+#: Extension_Genesis_Page_View.php:99
+msgid "Flush posts loop:"
+msgstr "Flush posts loop:"
+
+#: Extension_Genesis_Page_View.php:83
+msgid "Caches the posts listed on tag, categories, author and other term pages, pagination is supported."
+msgstr "Caches the posts listed on tag, categories, author and other term pages, pagination is supported."
+
+#: Extension_Genesis_Page_View.php:82
+msgid "Cache author/tag/categories/term post loop:"
+msgstr "Cache author/tag/categories/term post loop:"
+
+#: Extension_Genesis_Page_View.php:73
+msgid "Cache front page post loop:"
+msgstr "Cache front-page post loop:"
+
+#: Extension_Genesis_Page_View.php:74
+msgid "Caches the front page post loop, pagination is supported."
+msgstr "Caches the front-page post loop, pagination is supported."
+
+#: Extension_Genesis_Page_View.php:57
+msgid "Caches secondary navigation filter; per page."
+msgstr "Caches secondary navigation filter; per page."
+
+#: Extension_Genesis_Page_View.php:55
+msgid "Cache secondary navigation:"
+msgstr "Cache secondary navigation:"
+
+#: Extension_Genesis_Page_View.php:48
+msgid "Caches the navigation filter; per page."
+msgstr "Caches the navigation filter; per page."
+
+#: Extension_Genesis_Page_View.php:46
+msgid "Cache primary navigation:"
+msgstr "Cache primary navigation:"
+
+#: Extension_Genesis_Page_View.php:39
+msgid "Cache header loop. This is the area where the logo is located."
+msgstr "Cache header loop. This is the area where the logo is located."
+
+#: Extension_Genesis_Page_View.php:37
+msgid "Cache header:"
+msgstr "Cache header:"
+
+#: Extension_Genesis_Page_View.php:30
+msgid "Cache wp_head. This includes the embedded CSS, JS etc."
+msgstr "Cache wp_head. This includes the embedded CSS, JS, etc."
+
+#: Extension_Genesis_Page_View.php:28
+msgid "Cache wp_head loop:"
+msgstr "Cache wp_head loop:"
+
+#: Extension_CloudFlare_Plugin.php:169
+msgid "Account"
+msgstr "Account"
+
+#: Extension_CloudFlare_Plugin.php:157
+msgid "My Websites"
+msgstr "My Websites"
+
+#: Extension_CloudFlare_Plugin.php:151
+#: Extension_CloudFlare_Plugin_Admin.php:162
+msgid "CloudFlare"
+msgstr "CloudFlare"
+
+#: Util_Ui.php:250
+msgid "Save all settings"
+msgstr "Save all settings"
+
+#: Extension_CloudFlare_Page_View.php:159
+msgid "Development mode:"
+msgstr "Development mode:"
+
+#: Extension_CloudFlare_Page_View.php:344
+msgid "Rocket Loader:"
+msgstr "Rocket Loader:"
+
+#: Extension_CloudFlare_Page_View.php:532
+msgid "Security level:"
+msgstr "Security level:"
+
+#: Extension_CloudFlare_GeneralPage_View.php:9
+msgid "Network Performance &amp; Security powered by CloudFlare"
+msgstr "Network Performance &amp; Security powered by CloudFlare"
+
+#. translators: 3 closing HTML p tag followed by closing HTML div tag.
+#: Extension_CloudFlare_Plugin_Admin.php:134
+msgid "%1$sCloudFlare plugin detected. We recommend removing the plugin as it offers no additional capabilities when W3 Total Cache is installed. This message will disappear when CloudFlare is removed. %2$s%3$s"
+msgstr "%1$sCloudFlare plugin detected. We recommend removing the plugin as it offers no additional capabilities when W3 Total Cache is installed. This message will disappear when CloudFlare is removed. %2$s%3$s"
+
+#. translators: 1 HTML span tag indicating Browsercache enabled/disabled.
+#: inc/options/browsercache.php:23
+msgid "Browser caching is currently %1$s."
+msgstr "Browser caching is currently %1$s."
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: inc/options/about.php:115
+msgid "Caching of pages / posts in memory or on disk or on %1$sCDN%2$s (mirror only)"
+msgstr "Caching of pages / posts in memory or on disk or on %1$sCDN%2$s (mirror only)"
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: inc/options/browsercache.php:226
+msgid "Do not add the prevent caching query string to the specified %1$sURI%2$ss. Supports regular expressions."
+msgstr "Do not add the prevent caching query string to the specified %1$sURI%2$ss. Supports regular expressions."
+
+#: Cdnfsd_StackPath_Popup_View_Zone.php:49
+msgid "Domain "
+msgstr "Domain "
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: inc/options/browsercache.php:260
+msgid "If enabled - you may get 404 File Not Found response for some files generated on-the-fly by WordPress plugins. You may add those file %1$sURI%2$ss to 404 error exception list below to avoid that."
+msgstr "If enabled - you may get 404 File Not Found response for some files generated on-the-fly by WordPress plugins. You may add those file %1$sURI%2$ss to 404 error exception list below to avoid that."
+
+#. translators: 1 opening HTML acronym tag, 2 closing HTML acronym tag.
+#: inc/options/browsercache.php:288
+msgid "Never process 404 (not found) events for the specified %1$sURI%2$ss."
+msgstr "Never process 404 (not found) events for the specified %1$sURI%2$ss."

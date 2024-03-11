@@ -1,0 +1,22 @@
+FROM osx/app-base
+
+ARG HOSTNAME
+
+COPY docker/sql-ssl/aws /var/www/.sql-ssl/aws
+COPY docker/config/wildcard.dev.psycle.com.crt /etc/pki/tls/certs/wildcard.dev.psycle.com.crt
+COPY docker/config/wildcard.dev.psycle.com.key /etc/pki/tls/private/wildcard.dev.psycle.com.key
+COPY docker/config/httpd.conf /etc/apache2/httpd.conf
+COPY docker/config/php-fpm.conf /etc/php82/php-fpm.d/www.conf
+
+COPY docker/config/osx.dev.psycle.com/apache-82.conf /etc/apache2/conf.d/osx-apache-82.conf
+COPY docker/config/osx.dev.psycle.com/apache-8443.conf /etc/apache2/conf.d/osx-apache-8443.conf
+COPY docker/config/osx.dev.psycle.com/nginx-80.conf /etc/nginx/http.d/osx-nginx-80.conf
+COPY docker/config/osx.dev.psycle.com/nginx-443.conf /etc/nginx/http.d/osx-nginx-443.conf
+
+RUN sed -i'' 's/user nginx;/user vagrant;/g' /etc/nginx/nginx.conf && \
+    mkdir -p /var/empty /var/log/php-fpm /var/lib/nginx/tmp /var/run/nginx /var/run/php-fpm && \
+    chown -R vagrant.vagrant /var/log/php-fpm /var/lib/nginx/tmp /var/run/nginx /var/run/php-fpm && \
+    curl -LkSso /usr/bin/mhsendmail 'https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64'&& \
+    chmod 0755 /usr/bin/mhsendmail
+
+VOLUME [ "/var/www/osx" ]
