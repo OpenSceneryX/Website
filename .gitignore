@@ -16,15 +16,15 @@ public/local-config.php
 public/doc/*
 public/extras/*
 public/decals
+public/downloads
 public/facades
 public/forests
 public/lines
 public/objects
 public/polygons
 nbproject/*
-downloads/*
 repository/*
-versioninfo/*
+public/versioninfo
 public/library-sitemap.xml
 public/manifest.xml
 public/manifest.xml.zip
